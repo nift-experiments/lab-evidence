@@ -1,0 +1,63 @@
+[
+  {
+    "project": "ai-sdk",
+    "suite": "body",
+    "case": "baseline",
+    "command": [
+      "python3",
+      "scripts/build-content.py"
+    ],
+    "source_revision": "7bb3b9f1713aed61291e73136ab100c2a6f5457c",
+    "supplemental_elapsed_s": 53.12983697419986,
+    "maximum_process_phase_rss_kib": 926468,
+    "sampled_peak_sum_rss_bytes": 4645724160,
+    "memory_samples": 830,
+    "exit_code": 0
+  },
+  {
+    "project": "ai-sdk",
+    "suite": "body",
+    "case": "body-1",
+    "command": [
+      "python3",
+      "scripts/build-content.py"
+    ],
+    "source_revision": "7bb3b9f1713aed61291e73136ab100c2a6f5457c",
+    "supplemental_elapsed_s": 14.230296541005373,
+    "maximum_process_phase_rss_kib": 609944,
+    "sampled_peak_sum_rss_bytes": 1263276032,
+    "memory_samples": 240,
+    "exit_code": 0
+  },
+  {
+    "project": "ai-sdk",
+    "suite": "body",
+    "case": "body-1-forced",
+    "command": [
+      "python3",
+      "scripts/build-content.py",
+      "--force"
+    ],
+    "source_revision": "7bb3b9f1713aed61291e73136ab100c2a6f5457c",
+    "supplemental_elapsed_s": 64.34751473693177,
+    "maximum_process_phase_rss_kib": 945244,
+    "sampled_peak_sum_rss_bytes": 4778946560,
+    "memory_samples": 1031,
+    "exit_code": 0
+  },
+  {
+    "project": "ai-sdk",
+    "suite": "body",
+    "case": "emergency-restoration",
+    "command": [
+      "python3",
+      "scripts/build-content.py"
+    ],
+    "source_revision": "7bb3b9f1713aed61291e73136ab100c2a6f5457c",
+    "supplemental_elapsed_s": 14.692674629157409,
+    "maximum_process_phase_rss_kib": 612112,
+    "sampled_peak_sum_rss_bytes": 1313288192,
+    "memory_samples": 244,
+    "exit_code": 0
+  }
+]

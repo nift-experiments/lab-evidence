@@ -1,0 +1,1502 @@
+{
+  "schema": 5,
+  "publishable": true,
+  "machine": {
+    "kernel": "6.8.0-134-generic",
+    "os_release": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+    "cpuinfo": "processor\t: 0\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 1\nmodel name\t: AMD EPYC 7601 32-Core Processor\nstepping\t: 2\nmicrocode\t: 0x800126f\ncpu MHz\t\t: 2200.000\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 0\ncpu cores\t: 4\napicid\t\t: 0\ninitial apicid\t: 0\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 13\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibpb vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr virt_ssbd arat overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0 ibpb_no_ret\nbogomips\t: 4400.00\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 1\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 1\nmodel name\t: AMD EPYC 7601 32-Core Processor\nstepping\t: 2\nmicrocode\t: 0x800126f\ncpu MHz\t\t: 2200.000\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 1\ncpu cores\t: 4\napicid\t\t: 1\ninitial apicid\t: 1\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 13\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibpb vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr virt_ssbd arat overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0 ibpb_no_ret\nbogomips\t: 4400.00\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 2\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 1\nmodel name\t: AMD EPYC 7601 32-Core Processor\nstepping\t: 2\nmicrocode\t: 0x800126f\ncpu MHz\t\t: 2200.000\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 2\ncpu cores\t: 4\napicid\t\t: 2\ninitial apicid\t: 2\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 13\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibpb vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr virt_ssbd arat overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0 ibpb_no_ret\nbogomips\t: 4400.00\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 3\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 1\nmodel name\t: AMD EPYC 7601 32-Core Processor\nstepping\t: 2\nmicrocode\t: 0x800126f\ncpu MHz\t\t: 2200.000\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 3\ncpu cores\t: 4\napicid\t\t: 3\ninitial apicid\t: 3\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 13\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibpb vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr virt_ssbd arat overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0 ibpb_no_ret\nbogomips\t: 4400.00\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\n",
+    "meminfo": "MemTotal:        8131784 kB\nMemFree:         6691496 kB\nMemAvailable:    7611172 kB\nBuffers:           85804 kB\nCached:           968852 kB\nSwapCached:           48 kB\nActive:          1040240 kB\nInactive:          62004 kB\nActive(anon):      37844 kB\nInactive(anon):    10680 kB\nActive(file):    1002396 kB\nInactive(file):    51324 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507388 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               160 kB\nWriteback:             0 kB\nAnonPages:         47548 kB\nMapped:            75136 kB\nShmem:               936 kB\nKReclaimable:     175484 kB\nSlab:             247812 kB\nSReclaimable:     175484 kB\nSUnreclaim:        72328 kB\nKernelStack:        2448 kB\nPageTables:         2624 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     396584 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16700 kB\nVmallocChunk:          0 kB\nPercpu:             2496 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      110452 kB\nDirectMap2M:     4083712 kB\nDirectMap1G:     6291456 kB\n",
+    "cpu_affinity": [
+      0
+    ],
+    "python": "3.12.3",
+    "revision": "4947b42c863782ba6be0fdbbd2003d60d6d0d3d4",
+    "dirty": false,
+    "cache_policy": "OS caches uncontrolled; no machine-cold claim",
+    "rss_policy": "Linux wait4 waited-child high-water RSS; not aggregate process-tree RSS"
+  },
+  "pages": 1000,
+  "workload": "minimal generated HTML page throughput; not a real-site migration",
+  "notes": [
+    "Tool-native sources; VitePress custom minimal theme still hydrates client assets.",
+    "One CPU affinity recommended; Nift build threads=1; GOMAXPROCS=1.",
+    "Cold means entire fresh fixture; warm-full cleans output and retains internal build state.",
+    "VitePress also generates one 404 page; validated and disclosed, excluded from corpus count.",
+    "wait4 RSS not aggregate tree RSS; see measurement policy."
+  ],
+  "tools": {
+    "Nift": {
+      "version": "Nift v4.7.2",
+      "sha256": "a1654dbf879bf0517141612fbcdb55f441e5e60009a5954faaa274bfa6868bf2"
+    },
+    "Hugo": {
+      "version": "hugo v0.167.0-3fff6fb5c267dacb26280c78dbe8c344054249c8 linux/amd64 BuildDate=2026-09-28T14:50:38Z VendorInfo=gohugoio",
+      "sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89"
+    },
+    "Node.js": {
+      "version": "v24.21.0",
+      "sha256": "7fde7b8afa198da66257f42ee2001d874c7355631e6d1579a5fb5ef1f246df4c"
+    },
+    "Astro": "7.3.6",
+    "VitePress": "1.6.4"
+  },
+  "jobs": [
+    {
+      "id": "Nift/application-cold",
+      "samples": [
+        {
+          "wall_ms": 355.016921,
+          "peak_rss_kib": 7464,
+          "cpu_ms": 350.862,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "5a66d52389f39c8808f7ab1d52b2d86f53f389d5529f88f61e11d59ad95fb1be",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 382.789613,
+          "peak_rss_kib": 7468,
+          "cpu_ms": 377.789,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "348d33532be578c9d7d5d02b3712457e2fc1002f005a85a7a7dd592cc8521eea",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 341.11584,
+          "peak_rss_kib": 7424,
+          "cpu_ms": 333.269,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "4cd1bfbc4345b6bd6bd61e6a8eb1027c87f3a3a7f92edadc1881263432e95533",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 334.169056,
+          "peak_rss_kib": 7552,
+          "cpu_ms": 329.043,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "d710f483f7da1898120a88c85ec516ed76d0111263132d08bd0982b5bdb0e237",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 323.436755,
+          "peak_rss_kib": 7464,
+          "cpu_ms": 317.933,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "6b7af03871792863e00b10f550c394cc82ac71db1e8569343fa2c502d52f3ff8",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 336.729652,
+          "peak_rss_kib": 7424,
+          "cpu_ms": 328.503,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "ef729be1495cb28baab27159fb14bbaa1759626d0308e3080b9d77e0b9102d4c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        }
+      ],
+      "command": [
+        "/opt/campaign/tools/bin/nift",
+        "build",
+        "--all"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 336.729652,
+        "min_ms": 323.436755,
+        "max_ms": 382.789613,
+        "p90_ms": 366.1201038,
+        "p95_ms": 374.4548584,
+        "p99_ms": 381.12266208,
+        "median_peak_rss_kib": 7464
+      }
+    },
+    {
+      "id": "Hugo/application-cold",
+      "samples": [
+        {
+          "wall_ms": 515.648321,
+          "peak_rss_kib": 69376,
+          "cpu_ms": 514.088,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 516.437939,
+          "peak_rss_kib": 68608,
+          "cpu_ms": 514.497,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 465.936082,
+          "peak_rss_kib": 68352,
+          "cpu_ms": 464.446,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 455.015649,
+          "peak_rss_kib": 69760,
+          "cpu_ms": 453.659,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 500.467746,
+          "peak_rss_kib": 68736,
+          "cpu_ms": 498.876,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 494.506985,
+          "peak_rss_kib": 69248,
+          "cpu_ms": 493.111,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        }
+      ],
+      "command": [
+        "/opt/campaign/tools/bin/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 494.506985,
+        "min_ms": 455.015649,
+        "max_ms": 516.437939,
+        "p90_ms": 510.04986180000003,
+        "p95_ms": 513.2439004,
+        "p99_ms": 515.79913128,
+        "median_peak_rss_kib": 68736
+      }
+    },
+    {
+      "id": "Astro/application-cold",
+      "samples": [
+        {
+          "wall_ms": 14057.789157,
+          "peak_rss_kib": 824396,
+          "cpu_ms": 14001.288,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 12898.948458,
+          "peak_rss_kib": 776248,
+          "cpu_ms": 12852.341,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 14331.043244,
+          "peak_rss_kib": 798396,
+          "cpu_ms": 14274.533,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 12294.378552,
+          "peak_rss_kib": 797772,
+          "cpu_ms": 12241.532,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 12352.603537,
+          "peak_rss_kib": 773884,
+          "cpu_ms": 12304.663,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 13923.593463,
+          "peak_rss_kib": 798508,
+          "cpu_ms": 13862.39,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        }
+      ],
+      "command": [
+        "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/astro",
+        "build",
+        "--silent"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 12898.948458,
+        "min_ms": 12294.378552,
+        "max_ms": 14331.043244,
+        "p90_ms": 14168.0633316,
+        "p95_ms": 14249.5532878,
+        "p99_ms": 14314.74525276,
+        "median_peak_rss_kib": 797772
+      }
+    },
+    {
+      "id": "VitePress/application-cold",
+      "samples": [
+        {
+          "wall_ms": 27827.462127,
+          "peak_rss_kib": 690756,
+          "cpu_ms": 21020.495,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "dd737835c08e6afff75d35b2b992d33ad2622c47f06be55d507fcdb35eb83f97",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 0,
+          "warmup": true,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 26554.659073,
+          "peak_rss_kib": 674664,
+          "cpu_ms": 20121.297,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e0c3b7785a3697a81eb72a4ba538ed1947e0967a969b1416682f7f1495763a45",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 1,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 26069.443782,
+          "peak_rss_kib": 705720,
+          "cpu_ms": 19881.392,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "765f2dec80ed3555e5b22adac797a14ea6642e389bf7819fe6fec51ce171cba8",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 2,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 27391.968022,
+          "peak_rss_kib": 695296,
+          "cpu_ms": 21489.805,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "c7026d72d6892f11a0bd25b597c2b2e6a4bf863fa2398bc6971b686717b777ec",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 3,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 25918.381134,
+          "peak_rss_kib": 667524,
+          "cpu_ms": 19977.182,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "3617c44ef68a84bbf8b6f63492c812613346ec2877d101ea3ae7e34e29a4603b",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 4,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 26861.798719,
+          "peak_rss_kib": 670372,
+          "cpu_ms": 20704.386,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "69d8b2aec58ca448b5d1be8081a6c66b7bdad9487545fa3f649e607f8c3a248a",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 5,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        }
+      ],
+      "command": [
+        "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/vitepress",
+        "build",
+        "docs"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 26554.659073,
+        "min_ms": 25918.381134,
+        "max_ms": 27391.968022,
+        "p90_ms": 27179.9003008,
+        "p95_ms": 27285.9341614,
+        "p99_ms": 27370.76124988,
+        "median_peak_rss_kib": 674664
+      }
+    },
+    {
+      "id": "Nift/warm-full",
+      "samples": [
+        {
+          "wall_ms": 334.876364,
+          "peak_rss_kib": 7464,
+          "cpu_ms": 331.218,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "3358afeb669660573901ebda22d466b7154aab8c087e08588e536125e130be3a",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 491.799941,
+          "peak_rss_kib": 7552,
+          "cpu_ms": 485.246,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "14abe0f293b20d7fca67847787c6d37c29380b7a949e6cff6aa12179a227e449",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 462.611375,
+          "peak_rss_kib": 7600,
+          "cpu_ms": 456.723,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "ea56477ebfef56c2b98c61eeed7fb1f32fdbbcbf217114d47980e598ccd980a9",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 415.99308,
+          "peak_rss_kib": 7552,
+          "cpu_ms": 411.841,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "dd89cc18bbe994ba869c6f8c5a055ae99ece3402736c07c035438e6db6dbefd0",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 487.384574,
+          "peak_rss_kib": 7468,
+          "cpu_ms": 481.527,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "098a490739c95f5028ac3049708a9e80f2d42f4229b6f3de3db5e9eccfd300fe",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 460.530022,
+          "peak_rss_kib": 7472,
+          "cpu_ms": 456.072,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "dafd59b9469efd3bbb5e264aa7720794ae336039be6793067392ebff5050442d",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        }
+      ],
+      "command": [
+        "/opt/campaign/tools/bin/nift",
+        "build",
+        "--all"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 462.611375,
+        "min_ms": 415.99308,
+        "max_ms": 491.799941,
+        "p90_ms": 490.0337942,
+        "p95_ms": 490.9168676,
+        "p99_ms": 491.62332632,
+        "median_peak_rss_kib": 7552
+      }
+    },
+    {
+      "id": "Hugo/warm-full",
+      "samples": [
+        {
+          "wall_ms": 488.591716,
+          "peak_rss_kib": 68352,
+          "cpu_ms": 487.182,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 474.415394,
+          "peak_rss_kib": 69504,
+          "cpu_ms": 471.532,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 524.422506,
+          "peak_rss_kib": 68480,
+          "cpu_ms": 522.343,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 533.163046,
+          "peak_rss_kib": 69760,
+          "cpu_ms": 530.315,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 461.056431,
+          "peak_rss_kib": 69248,
+          "cpu_ms": 458.097,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 457.66122,
+          "peak_rss_kib": 68608,
+          "cpu_ms": 453.039,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        }
+      ],
+      "command": [
+        "/opt/campaign/tools/bin/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 474.415394,
+        "min_ms": 457.66122,
+        "max_ms": 533.163046,
+        "p90_ms": 529.66683,
+        "p95_ms": 531.414938,
+        "p99_ms": 532.8134244,
+        "median_peak_rss_kib": 69248
+      }
+    },
+    {
+      "id": "Astro/warm-full",
+      "samples": [
+        {
+          "wall_ms": 12295.310982,
+          "peak_rss_kib": 839012,
+          "cpu_ms": 12247.256,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 12245.245436,
+          "peak_rss_kib": 798664,
+          "cpu_ms": 12198.789,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 12774.598461,
+          "peak_rss_kib": 745916,
+          "cpu_ms": 12716.685,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 13667.599977,
+          "peak_rss_kib": 754004,
+          "cpu_ms": 13607.511,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 11774.644456,
+          "peak_rss_kib": 801612,
+          "cpu_ms": 11727.247,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 13881.171117,
+          "peak_rss_kib": 781492,
+          "cpu_ms": 13816.288,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        }
+      ],
+      "command": [
+        "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/astro",
+        "build",
+        "--silent"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 12774.598461,
+        "min_ms": 11774.644456,
+        "max_ms": 13881.171117,
+        "p90_ms": 13795.742661,
+        "p95_ms": 13838.456889,
+        "p99_ms": 13872.628271399999,
+        "median_peak_rss_kib": 781492
+      }
+    },
+    {
+      "id": "VitePress/warm-full",
+      "samples": [
+        {
+          "wall_ms": 27069.025968,
+          "peak_rss_kib": 708084,
+          "cpu_ms": 21089.738,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "d96f34a1d46f0f7ae6ccf290f9ed9090a258883184e86c13fd3ef5bdce62edd3",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 0,
+          "warmup": true,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 26631.324642,
+          "peak_rss_kib": 695292,
+          "cpu_ms": 19884.577,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e9cfdac39258fc615c86392f68f8e06f4090606c735a9919f692929962acd64d",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 1,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 25775.674872,
+          "peak_rss_kib": 625900,
+          "cpu_ms": 19776.949,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "807e67b69f98378ad013884ed43fcb6e0e2a83719adb3f2457d5ca25ffbc251c",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 2,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 27064.16711,
+          "peak_rss_kib": 703632,
+          "cpu_ms": 21054.268,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "9bc191cb33153234f8b45a77869c8ff50439dcadc0f3fe051e6cb9095eb32b50",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 3,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 24128.163081,
+          "peak_rss_kib": 679700,
+          "cpu_ms": 18369.142,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "dd8ad87297cccfc0d2a9fdad62f9adf40ba31d97c9c1a2a3c2e48a2da9433e46",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 4,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        },
+        {
+          "wall_ms": 25544.938942,
+          "peak_rss_kib": 706736,
+          "cpu_ms": 19357.528,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "d7629a0ffff883096908ce5c21636dc810ce7639196aadaebb4d71a16d4fac72",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 5,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 1000,
+            "content_checked": 1000
+          }
+        }
+      ],
+      "command": [
+        "/opt/campaign/verify/website-generator-benchmark/node_modules/.bin/vitepress",
+        "build",
+        "docs"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 25775.674872,
+        "min_ms": 24128.163081,
+        "max_ms": 27064.16711,
+        "p90_ms": 26891.0301228,
+        "p95_ms": 26977.5986164,
+        "p99_ms": 27046.853411279997,
+        "median_peak_rss_kib": 695292
+      }
+    },
+    {
+      "id": "Nift/incremental/no-op",
+      "samples": [
+        {
+          "wall_ms": 118.232302,
+          "peak_rss_kib": 5888,
+          "cpu_ms": 116.144,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "fcfefd713df8bdbf615bb21a255e20d7bbaa22ea9d78d583a35146b6fb6da5fb",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true
+        },
+        {
+          "wall_ms": 112.375735,
+          "peak_rss_kib": 5804,
+          "cpu_ms": 110.598,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "569d282724a305c1aa4cc72df7d681364541c38970cf862e5e9f42391f030ed2",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 109.935808,
+          "peak_rss_kib": 5800,
+          "cpu_ms": 107.15,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "5161febca03a7da157cedca43fd618f60354833eadc83c37e3ff5d30a1dfb0c6",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 121.683963,
+          "peak_rss_kib": 5888,
+          "cpu_ms": 118.471,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "f7295144ad56457eefcfee533b90e82b99e1bec4e2f086584d505926017c0a5f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 139.291115,
+          "peak_rss_kib": 5888,
+          "cpu_ms": 136.869,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "97cbc439a697f9fc5907dfdc61c0939a7e5071d0a7b6c33a7de8b1e80dad566e",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 133.342977,
+          "peak_rss_kib": 5888,
+          "cpu_ms": 130.869,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "1cf916db72e8107f015bacb61827284d0398cf2afdcc56e56a93b6441a828989",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true
+        }
+      ],
+      "command": [
+        "/opt/campaign/tools/bin/nift",
+        "build"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 121.683963,
+        "min_ms": 109.935808,
+        "max_ms": 139.291115,
+        "p90_ms": 136.9118598,
+        "p95_ms": 138.1014874,
+        "p99_ms": 139.05318948,
+        "median_peak_rss_kib": 5888
+      }
+    },
+    {
+      "id": "Nift/incremental/one-page",
+      "samples": [
+        {
+          "wall_ms": 131.174125,
+          "peak_rss_kib": 7000,
+          "cpu_ms": 128.278,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "ccac1beff91e559fe67db8108bb6f933b2663402d301be876ae67cbbda904a7c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true
+        },
+        {
+          "wall_ms": 117.626453,
+          "peak_rss_kib": 7040,
+          "cpu_ms": 115.275,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "a7e044816fd96db414d0853220c0c9f5e8c532e0eb91c75b9ed28f7fe1d5fed9",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 126.473034,
+          "peak_rss_kib": 7040,
+          "cpu_ms": 124.169,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "cc97d153f3103f7a3922f03bf319c212f2a3e8f1c361ea6ef51336ee1a168b5e",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 125.371458,
+          "peak_rss_kib": 7040,
+          "cpu_ms": 123.151,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "d1b59274578e66d4672c0a58c5216cdfcb85421788cd2ec996c2e692ad85d7df",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 126.957292,
+          "peak_rss_kib": 7000,
+          "cpu_ms": 124.632,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "020de5d1fae1619af089b6ef1423f1e87c448eaf797ac6bc0e5d3302c203071d",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 123.45604,
+          "peak_rss_kib": 7040,
+          "cpu_ms": 121.192,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "63efbf2c3b6ac2742878b6442fefa277318c1156348c8e1aabadf8c68a19e69b",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true
+        }
+      ],
+      "command": [
+        "/opt/campaign/tools/bin/nift",
+        "build"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 125.371458,
+        "min_ms": 117.626453,
+        "max_ms": 126.957292,
+        "p90_ms": 126.7635888,
+        "p95_ms": 126.8604404,
+        "p99_ms": 126.93792168,
+        "median_peak_rss_kib": 7040
+      }
+    },
+    {
+      "id": "Nift/incremental/shared-template",
+      "samples": [
+        {
+          "wall_ms": 1129.251794,
+          "peak_rss_kib": 7680,
+          "cpu_ms": 1111.07,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "eb87165339389a19edc77995daed1f13869e3a47a0aaf5ec0ce63619c9b1c21b",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true
+        },
+        {
+          "wall_ms": 721.191295,
+          "peak_rss_kib": 7584,
+          "cpu_ms": 708.246,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "3400fa5846f623ef8336decd4167bcbfaa0401ac08cdde3d508196927c296927",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 571.382904,
+          "peak_rss_kib": 7552,
+          "cpu_ms": 567.467,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "38b02cfb23915ae5a3c2190e83fd6ed9ff754c750daf17f329503cd7e531003b",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 557.074589,
+          "peak_rss_kib": 7580,
+          "cpu_ms": 554.099,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "cd42ddcf571fa56b285faf122206e26ef731dee31ed9522185945a2558c1a139",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 531.750803,
+          "peak_rss_kib": 7580,
+          "cpu_ms": 527.292,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e8fa7bf472ff0133722845eed418e7ec1c7d694f10602431ac7fb69279f0e2f5",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 564.718804,
+          "peak_rss_kib": 7584,
+          "cpu_ms": 557.753,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "cf314f47e38849ad5f8c12c3ed8c7365530fe0bb7c77632050071ab01bd065de",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true
+        }
+      ],
+      "command": [
+        "/opt/campaign/tools/bin/nift",
+        "build"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 564.718804,
+        "min_ms": 531.750803,
+        "max_ms": 721.191295,
+        "p90_ms": 661.2679386,
+        "p95_ms": 691.2296167999999,
+        "p99_ms": 715.19895936,
+        "median_peak_rss_kib": 7580
+      }
+    }
+  ],
+  "samples": 5,
+  "warmups": 1
+}

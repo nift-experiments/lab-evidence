@@ -1,0 +1,478 @@
+{
+  "discovery": "Current catalogue + tracked report routes + two published series archives; three index pages excluded as catalogues",
+  "reports": [
+    {
+      "report_url": "https://lab.nift.dev/sites/cloudflare-docs/",
+      "source": "content/sites/cloudflare-docs/index.html",
+      "template": "templates/sites/cloudflare-docs/template.html",
+      "repository": "https://github.com/nift-experiments/cloudflare-docs",
+      "original_platform": "Controlled 6-vCPU, 16GB no-swap host; exact provider unspecified",
+      "pins": [
+        "bc2bdaee16098ec1b0bb782b80cf3a73f9557ddf"
+      ],
+      "revision_context": {
+        "upstream": "bc2bdaee16098ec1b0bb782b80cf3a73f9557ddf",
+        "experiment_revision": "Unknown original capture binding; use stated published provenance rather than current HEAD"
+      },
+      "displayed_incremental_cases": "Normal/targeted 1 and 5 pages, shared-template, no-change; original Astro production observations",
+      "timing_evidence": true,
+      "memory_metric": "Aggregate cgroup peak bytes",
+      "action": "Already exposed; retained correctness-failure and narrow validation caveats preserved",
+      "evidence": "Existing report and linked original evidence",
+      "status": "complete",
+      "incremental_applicability": "applicable",
+      "memory_evidence_status": "original exact-workload evidence exists"
+    },
+    {
+      "report_url": "https://lab.nift.dev/sites/omarchy/",
+      "source": "content/sites/omarchy/index.html",
+      "template": "templates/sites/omarchy/template.html",
+      "repository": "https://github.com/nift-experiments/omarchy",
+      "original_platform": "Original container platform unspecified; separate informal Intel NUC12 observation",
+      "pins": [],
+      "revision_context": {
+        "upstream": null,
+        "experiment_revision": "Unknown original capture binding; use stated published provenance rather than current HEAD"
+      },
+      "displayed_incremental_cases": "Container no-op and one page; informal NUC no-op",
+      "timing_evidence": true,
+      "memory_metric": "Published process-tree Peak RSS; raw mechanism not retained locally",
+      "action": "Container already exposed; historical NUC RSS unavailable: exact Nift executable and benchmark input binding unrecorded; no current-HEAD replacement",
+      "evidence": "Existing report and linked original evidence",
+      "status": "partial provenance gap",
+      "incremental_applicability": "applicable",
+      "memory_evidence_status": "original container evidence exists; historical NUC memory missing/unreproducible"
+    },
+    {
+      "report_url": "https://lab.nift.dev/sites/capgo/",
+      "source": "content/sites/capgo/index.html",
+      "template": "templates/sites/capgo/template.html",
+      "repository": "https://github.com/nift-experiments/capgo",
+      "original_platform": "Local i7-12700H / 20 CPUs / Ubuntu 26.04.1 / active desktop",
+      "pins": [
+        "22bb53653f47c22defff863e3465e8df9a11da99",
+        "6371356bb4a7afe892a8b9492ab61c139fb12c38",
+        "7bb03eecc49e142367cb4451a3dcd6fcb4b18b4e",
+        "7d5b69d6ba8a6630384dffc7d012431ee3ed22ec",
+        "fbc7bb5021097631eb43a6ca4b56ac96a348210f"
+      ],
+      "revision_context": {
+        "faithful_methodology": {
+          "projectArchitectureRevision": "ba9be82a",
+          "correctnessFix": "tools/prepare-rich-components.mjs creates build/faithful before writing fingerprint",
+          "upstreamRevision": "7d5b69d6ba8a6630384dffc7d012431ee3ed22ec",
+          "niftVersion": "4.6.0",
+          "niftCommit": "not exposed by installed executable",
+          "niftBinarySha256": "03ed5ed8344280c736e78a18f4ad80c6e92e3f45e63ff3784523aa122f0ac0b6",
+          "mdxPackageCommit": "22bb53653f47c22defff863e3465e8df9a11da99",
+          "niftNode": "22.22.1",
+          "upstreamNode": "24.21.0",
+          "bun": "1.4.2",
+          "buildThreads": -1,
+          "logicalCpus": 20,
+          "cpu": "Intel Core i7-12700H",
+          "os": "Ubuntu 26.04.1 LTS",
+          "kernel": "7.0.0-29-generic",
+          "memoryStatistic": "GNU time -v maximum RSS, KiB; not sum of concurrent process RSS",
+          "execution": "Serial builds, no overlapping benchmark workloads; dependency installation excluded",
+          "cacheClasses": {
+            "warm-full": "All prepared docs, code, web, metadata and Nift output caches present; nift build --all",
+            "no-op": "Same caches and unchanged authored sources; nift build",
+            "web-regeneration": "Delete build/faithful/web-fingerprints.json only; code/docs and metadata caches retained; nift build --all",
+            "cold-intermediates": "Remove build/faithful, .nift/mdx-prepared and .nift/mdx-cache; retain installed dependencies, public assets and Nift output state; nift build --all",
+            "clean-checkout": "Separately measured from fresh clone with no copied caches; tools/build.mjs --all initializes assets; installation excluded",
+            "incremental": "Edit actual authored docs/rich MDX text, marketing title or blog text; nift build; restore source then rebuild unmeasured after each class",
+            "upstream-astro": "bun run build explicitly clears per-app output/Astro/deploy caches every run; dependencies and committed data/script snapshots retained; recorded fetch preload for plans/credits/rankings. Other optional external requests preserve upstream behavior."
+          },
+          "upstreamEnvironment": {
+            "NODE_OPTIONS": "--max-old-space-size=16384 --import <repo>/golden/snapshot-fetch.mjs",
+            "BUILD_CONCURRENCY": "upstream default 1",
+            "UV_THREADPOOL_SIZE": "upstream default 16"
+          },
+          "historicalUpstream": {
+            "seconds": 78.1,
+            "peakRssKiB": 3634760,
+            "superseded": true
+          },
+          "failedPreFixRun": "Preserved in pre-fix; excluded from successful benchmark medians",
+          "priming": "Final Nift suite runs an unmeasured full build before warm samples. The earlier partial-cache recovery sample is retained only in before-inline-space-fix.",
+          "sourceClosureRevision": "7bb03eecc49e142367cb4451a3dcd6fcb4b18b4e",
+          "finalNiftSuite": "Post inline-spacing fix; all classes repeated. Earlier data retained under before-inline-space-fix and pre-fix.",
+          "upstreamRuns": 5,
+          "niftRunsPerClass": 3
+        },
+        "agent_methodology": {
+          "architectureRevision": "fbc7bb5021097631eb43a6ca4b56ac96a348210f",
+          "measurementRevision": "6371356bb4a7afe892a8b9492ab61c139fb12c38",
+          "niftExecutable": "/usr/local/bin/nift",
+          "niftVersion": "Nift v4.6.0",
+          "niftSourceRevision": null,
+          "niftSourceRevisionReason": "Installed executable does not expose its source commit; binary hash is the exact identity.",
+          "niftSha256": "03ed5ed8344280c736e78a18f4ad80c6e92e3f45e63ff3784523aa122f0ac0b6",
+          "nodeVersion": "v22.22.1",
+          "os": "Linux-7.0.0-29-generic-x86_64-with-glibc2.43",
+          "cpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           39 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  20\nOn-line CPU(s) list:                     0-19\nVendor ID:                               GenuineIntel\nModel name:                              12th Gen Intel(R) Core(TM) i7-12700H\nCPU family:                              6\nModel:                                   154\nThread(s) per core:                      2\nCore(s) per socket:                      14\nSocket(s):                               1\nStepping:                                3\nCPU(s) scaling MHz:                      69%\nCPU max MHz:                             4700.0000\nCPU min MHz:                             400.0000\nBogoMIPS:                                5376.00\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities\nVirtualization:                          VT-x\nL1d cache:                               544 KiB (14 instances)\nL1i cache:                               704 KiB (14 instances)\nL2 cache:                                11.5 MiB (8 instances)\nL3 cache:                                24 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-19\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Mitigation; Clear Register File\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Mitigation; IBPB before exit to userspace\n",
+          "threads": -1,
+          "lockSha256": "9debe70ec90797ee3bf138d3594328e07e7ae414d41a14bb75ea67f3c23f562d",
+          "directDependencies": {
+            "@docsearch/js": "3.9.0",
+            "@nekuda/webmcp-sdk": "0.7.1",
+            "@std/semver": "npm:@jsr/std__semver@1.0.8",
+            "@supabase/supabase-js": "2.117.1",
+            "bowser": "2.14.1",
+            "esbuild": "0.25.10",
+            "mermaid": "12.0.0",
+            "node-forge": "1.4.0",
+            "parse5": "7.3.0",
+            "preact": "10.29.8",
+            "toastify-js": "1.12.0"
+          },
+          "mdx": "Not used; bodies remain converted HTML",
+          "cacheState": "Warm output/assets/dependencies and normal Nift hash state. Native esbuild preparation executes on every build; no benchmark-specific cache.",
+          "memoryMethod": "GNU time -v maximum process RSS (KiB), not aggregate concurrent process memory.",
+          "order": "Unmeasured full prime, three full, three no-op, three real edits for each content family. Restore source and output unmeasured after each edit.",
+          "installation": "Excluded",
+          "systemPageCache": "Not flushed; ordinary warm local working-copy builds."
+        }
+      },
+      "displayed_incremental_cases": "No-op, docs, rich docs, marketing, blog; explicit targeted four families",
+      "timing_evidence": true,
+      "memory_metric": "GNU time maximum individual process RSS; maximum across three runs",
+      "action": "Ordinary RSS added from existing exact three-run evidence; targeted RSS already exposed",
+      "evidence": "content/data/incremental-memory/capgo.json",
+      "status": "complete",
+      "incremental_applicability": "applicable",
+      "memory_evidence_status": "original exact-workload evidence exists"
+    },
+    {
+      "report_url": "https://lab.nift.dev/benchmarks/scripting/",
+      "source": "content/benchmarks/scripting/index.html",
+      "template": "templates/benchmarks/scripting/template.html",
+      "repository": "https://github.com/nift-dev/scripting-benchmark",
+      "original_platform": "Linode g6-standard-4 / us-east / Ubuntu24.04; original campaign frozen per series",
+      "pins": [
+        "05f572601152f34842498afb46b18df67dcc0ad1",
+        "94772ff14db177b05a7b84dc3360ca92853af154",
+        "aaadeb31219251b7cc02a62fbf75360ac3e11aaf"
+      ],
+      "revision_context": {
+        "upstream": null,
+        "experiment_revision": "Unknown original capture binding; use stated published provenance rather than current HEAD"
+      },
+      "displayed_incremental_cases": "Not applicable: computation/structured-data invocation workloads",
+      "timing_evidence": false,
+      "memory_metric": "Kernel waited-child high-water RSS",
+      "action": "Incremental not applicable; no invented incremental site build",
+      "evidence": "Existing report and linked original evidence",
+      "status": "not applicable",
+      "incremental_applicability": "not applicable",
+      "memory_evidence_status": "not applicable"
+    },
+    {
+      "report_url": "https://lab.nift.dev/benchmarks/website-generator/",
+      "source": "content/benchmarks/website-generator/index.html",
+      "template": "templates/benchmarks/website-generator/template.html",
+      "repository": "https://github.com/nift-dev/website-generator-benchmark",
+      "original_platform": "Linode g6-standard-4 / us-east / Ubuntu24.04 / EPYC7601; targeted follow-up EPYC7542",
+      "pins": [
+        "3fff6fb5c267dacb26280c78dbe8c344054249c8",
+        "4947b42c863782ba6be0fdbbd2003d60d6d0d3d4",
+        "803f35667049ff36330468467a522c356292927d"
+      ],
+      "revision_context": {
+        "original_machine": {
+          "kernel": "6.8.0-134-generic",
+          "os_release": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+          "cpuinfo": "processor\t: 0\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 1\nmodel name\t: AMD EPYC 7601 32-Core Processor\nstepping\t: 2\nmicrocode\t: 0x800126f\ncpu MHz\t\t: 2200.000\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 0\ncpu cores\t: 4\napicid\t\t: 0\ninitial apicid\t: 0\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 13\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibpb vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr virt_ssbd arat overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0 ibpb_no_ret\nbogomips\t: 4400.00\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 1\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 1\nmodel name\t: AMD EPYC 7601 32-Core Processor\nstepping\t: 2\nmicrocode\t: 0x800126f\ncpu MHz\t\t: 2200.000\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 1\ncpu cores\t: 4\napicid\t\t: 1\ninitial apicid\t: 1\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 13\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibpb vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr virt_ssbd arat overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0 ibpb_no_ret\nbogomips\t: 4400.00\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 2\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 1\nmodel name\t: AMD EPYC 7601 32-Core Processor\nstepping\t: 2\nmicrocode\t: 0x800126f\ncpu MHz\t\t: 2200.000\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 2\ncpu cores\t: 4\napicid\t\t: 2\ninitial apicid\t: 2\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 13\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibpb vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr virt_ssbd arat overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0 ibpb_no_ret\nbogomips\t: 4400.00\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 3\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 1\nmodel name\t: AMD EPYC 7601 32-Core Processor\nstepping\t: 2\nmicrocode\t: 0x800126f\ncpu MHz\t\t: 2200.000\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 3\ncpu cores\t: 4\napicid\t\t: 3\ninitial apicid\t: 3\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 13\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibpb vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr virt_ssbd arat overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0 ibpb_no_ret\nbogomips\t: 4400.00\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\n",
+          "meminfo": "MemTotal:        8131784 kB\nMemFree:         5498484 kB\nMemAvailable:    7657632 kB\nBuffers:           95452 kB\nCached:          2202336 kB\nSwapCached:            0 kB\nActive:           203408 kB\nInactive:        2128476 kB\nActive(anon):      35080 kB\nInactive(anon):        0 kB\nActive(file):     168328 kB\nInactive(file):  2128476 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              1392 kB\nWriteback:             0 kB\nAnonPages:         34128 kB\nMapped:            37096 kB\nShmem:               976 kB\nKReclaimable:     171872 kB\nSlab:             237736 kB\nSReclaimable:     171872 kB\nSUnreclaim:        65864 kB\nKernelStack:        2192 kB\nPageTables:         1780 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     112504 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16256 kB\nVmallocChunk:          0 kB\nPercpu:             2496 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      110452 kB\nDirectMap2M:     4083712 kB\nDirectMap1G:     6291456 kB\n",
+          "cpu_affinity": [
+            0
+          ],
+          "python": "3.12.3",
+          "revision": "4947b42c863782ba6be0fdbbd2003d60d6d0d3d4",
+          "dirty": false,
+          "cache_policy": "OS caches uncontrolled; no machine-cold claim",
+          "rss_policy": "Linux wait4 waited-child high-water RSS; not aggregate process-tree RSS"
+        },
+        "target_machine": {
+          "kernel": "6.8.0-134-generic",
+          "os_release": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+          "cpuinfo": "processor\t: 0\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7542 32-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2899.996\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 0\ncpu cores\t: 4\napicid\t\t: 0\ninitial apicid\t: 0\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 5799.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 1\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7542 32-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2899.996\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 1\ncpu cores\t: 4\napicid\t\t: 1\ninitial apicid\t: 1\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 5799.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 2\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7542 32-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2899.996\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 2\ncpu cores\t: 4\napicid\t\t: 2\ninitial apicid\t: 2\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 5799.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 3\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7542 32-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2899.996\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 3\ncpu cores\t: 4\napicid\t\t: 3\ninitial apicid\t: 3\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 5799.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\n",
+          "meminfo": "MemTotal:        8131780 kB\nMemFree:         6972292 kB\nMemAvailable:    7695040 kB\nBuffers:           36084 kB\nCached:           884748 kB\nSwapCached:            0 kB\nActive:           216952 kB\nInactive:         753676 kB\nActive(anon):      50948 kB\nInactive(anon):        0 kB\nActive(file):     166004 kB\nInactive(file):   753676 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:             63568 kB\nWriteback:             0 kB\nAnonPages:         50024 kB\nMapped:            48080 kB\nShmem:               980 kB\nKReclaimable:      56408 kB\nSlab:             110044 kB\nSReclaimable:      56408 kB\nSUnreclaim:        53636 kB\nKernelStack:        2432 kB\nPageTables:         2076 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573788 kB\nCommitted_AS:     172996 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16484 kB\nVmallocChunk:          0 kB\nPercpu:             2096 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      102260 kB\nDirectMap2M:     3043328 kB\nDirectMap1G:     7340032 kB\n",
+          "cpu_affinity": [
+            0
+          ],
+          "python": "3.12.3",
+          "revision": "803f35667049ff36330468467a522c356292927d",
+          "dirty": false,
+          "cache_policy": "OS caches uncontrolled; no machine-cold claim",
+          "rss_policy": "Linux wait4 waited-child high-water RSS; not aggregate process-tree RSS"
+        },
+        "nift": "4.7.2"
+      },
+      "displayed_incremental_cases": "No-op/leaf/shared-template at100/1000/10000; explicit target at each size",
+      "timing_evidence": true,
+      "memory_metric": "Kernel waited-child high-water RSS, not aggregate tree RSS",
+      "action": "10k ordinary RSS already exposed; all sizes and targeted RSS added from retained five-run raw evidence; no new Linode",
+      "evidence": "content/data/incremental-memory/website-generator.json",
+      "status": "complete",
+      "incremental_applicability": "applicable",
+      "memory_evidence_status": "original exact-workload evidence exists"
+    },
+    {
+      "report_url": "https://lab.nift.dev/benchmarks/shell/",
+      "source": "content/benchmarks/shell/index.html",
+      "template": "templates/benchmarks/shell/template.html",
+      "repository": "https://github.com/nift-dev/shell-benchmark",
+      "original_platform": "Linode g6-standard-4 / us-east / Ubuntu24.04; original campaign frozen per series",
+      "pins": [
+        "7f0742ab965db3c6d76a2dcbd9c7bfaf84457494",
+        "aaadeb31219251b7cc02a62fbf75360ac3e11aaf",
+        "c70a61cdf7a491ef794e0c9d40c1a151509a93d3"
+      ],
+      "revision_context": {
+        "upstream": null,
+        "experiment_revision": "Unknown original capture binding; use stated published provenance rather than current HEAD"
+      },
+      "displayed_incremental_cases": "Not applicable: process startup/RC and external invocation workloads",
+      "timing_evidence": false,
+      "memory_metric": "Kernel waited-child high-water RSS",
+      "action": "Incremental not applicable; existing memory belongs to invocation workloads",
+      "evidence": "Existing report and linked original evidence",
+      "status": "not applicable",
+      "incremental_applicability": "not applicable",
+      "memory_evidence_status": "not applicable"
+    },
+    {
+      "report_url": "https://lab.nift.dev/sites/docker/",
+      "source": "content/sites/docker/index.html",
+      "template": "templates/sites/docker/template.html",
+      "repository": "https://github.com/nift-experiments/docker",
+      "original_platform": "Local i7-12700H / 20 CPUs / ~61GiB / active desktop",
+      "pins": [
+        "0d7b54012d3662b1cf4d84b3c6881cd8bdcd7034",
+        "6789288037b2ac9b4e1daaa741441e948765abaf",
+        "68c110f356b809527903c7c9860845c4416e3569",
+        "6cf1b1c167f032e8a6629da211602300b623b20e",
+        "77f79f065e3076d02bf591ee41f487bbbaa038e9",
+        "78e7817c780913601db8af54b396aa4392d0624a",
+        "90ef2aed2180a2c6c20124507538058d91d12039"
+      ],
+      "revision_context": {
+        "implementation_commits": {
+          "docker": "90ef2aed2180a2c6c20124507538058d91d12039",
+          "docker-agent": "68c110f356b809527903c7c9860845c4416e3569"
+        },
+        "measurement_environment": {
+          "timestamp": "2026-10-07T13:02:47.378261+00:00",
+          "platform": "Linux-7.0.0-29-generic-x86_64-with-glibc2.43",
+          "cpu_logical": 20,
+          "load_average": [
+            40.970703125,
+            18.4072265625,
+            15.69091796875
+          ],
+          "measurement": "serialized experimental builds; existing desktop activity; uncontrolled OS caches; prepared tools excluded; RSS per measured process/phase, not aggregate pool memory",
+          "initial_snapshot_sha256": {
+            "runs.json": "407e4e72e6e100d11887c2656d11e3ed34b5568359f6b015743880afa3942db0",
+            "summary.json": "66ea8ad274cb38dd36985d56faebaa5f49094d612bde16c82934182e0c58479b",
+            "environment.json": "c300631f07e4459085243e73042c898f4abca4e58d2881a2b6e487c2df34585a",
+            "fresh/runs.json": "3b4ca6b54e7542c67c35a2d99e3805e4810509605032478cf494eb6e9c764713",
+            "fresh/summary.json": "1d488116cef21a089a6d7b9059e9a867e4b56d5b3ce6e7ebee6cef5774b9f35a",
+            "changed/runs.json": "028ed6e616b7251bd1fd4afde97ebcf0abb319e08bfb345dfb73285e28a46756",
+            "changed/summary.json": "0e7368f6b39cfa5f09687b1f36e7f2c67e5aabeeb811a76161e4cd2de87e8a8e",
+            "hugo-changed/runs.json": "8361d0ca2cae2e6301e696e4c8063ea68733b334ea399b524c16f9f54956d67f",
+            "hugo-changed/summary.json": "01e741926ab71f5941ee4616d8b98899ecf2cafaaff57c3ee16fabdfc983ffc1"
+          },
+          "projects": {
+            "docker": "0d7b54012d3662b1cf4d84b3c6881cd8bdcd7034",
+            "docker-agent": "6789288037b2ac9b4e1daaa741441e948765abaf"
+          }
+        },
+        "upstream": "6cf1b1c167f032e8a6629da211602300b623b20e",
+        "nift": "4.7.2"
+      },
+      "displayed_incremental_cases": "1/10/100 pages, layout, navigation, metadata",
+      "timing_evidence": true,
+      "memory_metric": "GNU time maximum individual process/phase RSS; median across five",
+      "action": "Six case medians/ranges added from original sixty runs; no rerun",
+      "evidence": "content/data/incremental-memory/docker.json",
+      "status": "complete",
+      "incremental_applicability": "applicable",
+      "memory_evidence_status": "original exact-workload evidence exists"
+    },
+    {
+      "report_url": "https://lab.nift.dev/sites/deno/",
+      "source": "content/sites/deno/index.html",
+      "template": "templates/sites/deno/template.html",
+      "repository": "https://github.com/nift-experiments/deno",
+      "original_platform": "Local i7-12700H / 20 CPUs / active desktop",
+      "pins": [
+        "0b42efec8239f49214c821e32fe5f0cc8e389f15",
+        "380baeb4667b8f45a1bbba5e66e3cb0bc0944352",
+        "4a81df53caa1f181227e7b790699c37373db6c3a",
+        "7d663e4212d8f976b8ba0b29d819b9331db24522",
+        "9e5dd8d930c8734defe1c3172986e6312353ac1c"
+      ],
+      "revision_context": {
+        "nift": "4.8.0",
+        "authored_evidence_pin": "7d663e4212d8f976b8ba0b29d819b9331db24522",
+        "rendered_evidence_pin": "0b42efec8239f49214c821e32fe5f0cc8e389f15",
+        "upstream": "9e5dd8d930c8734defe1c3172986e6312353ac1c"
+      },
+      "displayed_incremental_cases": "Unchanged, 1/10/100 bodies, layout, navigation, metadata, reference, add/rename/delete; upstream body",
+      "timing_evidence": true,
+      "memory_metric": "Maximum measured individual process/phase RSS",
+      "action": "Original twenty single-case measurements plus five-run unchanged and upstream production phase maxima surfaced",
+      "evidence": "content/data/incremental-memory/deno.json",
+      "status": "complete",
+      "incremental_applicability": "applicable",
+      "memory_evidence_status": "original exact-workload evidence exists"
+    },
+    {
+      "report_url": "https://lab.nift.dev/sites/ai-sdk/",
+      "source": "content/sites/ai-sdk/index.html",
+      "template": "templates/sites/ai-sdk/template.html",
+      "repository": "https://github.com/nift-experiments/ai-sdk",
+      "original_platform": "Local i7-12700H / 20 CPUs / ~61GiB / active desktop",
+      "pins": [
+        "3ebefff610f96892c50be48cf1838c453e2349f7",
+        "524b1840a0a36d0dafdfbc368f52fb526951bad8",
+        "6d07d2f06a96d33deac0384514574d069cce98b7",
+        "7bb3b9f1713aed61291e73136ab100c2a6f5457c",
+        "dd568e4ec671dd6ddde38f06f7e24836840f3cb4"
+      ],
+      "revision_context": {
+        "implementation_revisions": {
+          "ai-sdk": "7bb3b9f1713aed61291e73136ab100c2a6f5457c",
+          "ai-sdk-agent": "dd568e4ec671dd6ddde38f06f7e24836840f3cb4"
+        },
+        "upstream": "3ebefff610f96892c50be48cf1838c453e2349f7",
+        "nift": "4.8.0",
+        "supplemental_environment": {
+          "platform": "Linux-7.0.0-29-generic-x86_64-with-glibc2.43",
+          "python": "3.14.4",
+          "logical_cpus": 20,
+          "affinity": 20,
+          "ram_bytes": 65626243072,
+          "cpu": "12th Gen Intel(R) Core(TM) i7-12700H",
+          "active_desktop": true,
+          "source_revisions": {
+            "ai-sdk": "7bb3b9f1713aed61291e73136ab100c2a6f5457c",
+            "ai-sdk-agent": "dd568e4ec671dd6ddde38f06f7e24836840f3cb4"
+          },
+          "upstream_revision": "3ebefff610f96892c50be48cf1838c453e2349f7",
+          "nift_version": "4.8.0",
+          "nift_sha256": "a77deda5ef4124886a6ad344cd0fe0a43a5fa02d793cdf7e7eef2ed19645d8c4",
+          "node_version": "v24.21.0",
+          "sample_policy": "Single observation per changed-input case, matching accepted lifecycle protocol; supplementary timings do not replace accepted timings.",
+          "cache_state": "Disposable pinned exports receive an unmeasured forced warm prime to replace relocated generated products, followed by each unchanged original harness normal baseline. Force equality and output restoration are required; dependencies reused outside timing, OS caches uncontrolled.",
+          "worker_cap": 4,
+          "metric": "GNU maximum individual process/phase RSS, KiB / 1024 = MiB; sampled 50ms descendant resident-page sum bytes / 1048576 = MiB, not PSS, shared pages double-counted and short peaks may be missed.",
+          "rejected_setup": "Initial relocated-cache probe failed forced equality; raw attempt retained and excluded. Location-correct warm prime restored equality without implementation changes.",
+          "physical_cores": 14,
+          "worker_scope": "Four workers apply to the authored MDX compiler; rendered-source normal publication has no Markdown renderer.",
+          "nift_source_revision": null,
+          "nift_identity_basis": "Exact frozen original installed v4.8.0 executable SHA-256; no source commit was recorded for this binary.",
+          "node_sha256": "7fde7b8afa198da66257f42ee2001d874c7355631e6d1579a5fb5ef1f246df4c",
+          "dependency_policy": "Accepted locked dependencies reused via read-only-in-practice node_modules symlinks; no install or package upgrade in this campaign."
+        }
+      },
+      "displayed_incremental_cases": "Unchanged and thirteen changed-input cases per migration; thirteen upstream production cases",
+      "timing_evidence": true,
+      "memory_metric": "GNU maximum individual process/phase plus separate sampled ~50ms descendant RSS sum",
+      "action": "Original unchanged/upstream RSS exists; migration changed-input RSS requires supplemental pinned local reproduction and independent forced/restoration gates",
+      "evidence": "content/data/incremental-memory/ai-sdk.json",
+      "status": "complete / supplemental local evidence",
+      "incremental_applicability": "applicable",
+      "memory_evidence_status": "original unchanged/upstream plus supplemental migration memory"
+    },
+    {
+      "report_url": "https://lab.nift.dev/sites/temporal/",
+      "source": "content/sites/temporal/index.html",
+      "template": "templates/sites/temporal/template.html",
+      "repository": "https://github.com/nift-experiments/temporal",
+      "original_platform": "Local i7-12700H / 20 CPUs / ~61GiB / active desktop",
+      "pins": [
+        "2385cc030f9ca1cc67b05082f1990d20cfc3a38c",
+        "5d9703a237a9efc9a7da48ac09f79526823b8182",
+        "5e80384aa5d95c18138b0ac58340a08a7055f34e",
+        "756db298c972e4d31d9d3b75f0ceed0473168a93",
+        "8d82e1a1f746a8c690abb700fb493855ae822bcc",
+        "bdc0c2637636822466f4e033c14acbfbf1f2e0a0"
+      ],
+      "revision_context": {
+        "upstream": "5d9703a237a9efc9a7da48ac09f79526823b8182",
+        "temporal": "756db298c972e4d31d9d3b75f0ceed0473168a93",
+        "temporal-agent": "5e80384aa5d95c18138b0ac58340a08a7055f34e",
+        "nift_version": "4.9.0",
+        "nift_sha256": "790bbce6325b0eadce6d98fbb27527ccd4c43fa082b23d1ca3667e54022bc862"
+      },
+      "displayed_incremental_cases": "Unchanged, 1/10/100 bodies, metadata/layout/navigation/diagram/synced/search/island/add/rename/delete; two upstream edits",
+      "timing_evidence": true,
+      "memory_metric": "Maximum individual process/phase plus separate sampled ~50ms descendant RSS sum",
+      "action": "Original twenty-six cases and five-run unchanged surfaced, scopes separate; no rerun",
+      "evidence": "content/data/incremental-memory/temporal.json",
+      "status": "complete",
+      "incremental_applicability": "applicable",
+      "memory_evidence_status": "original exact-workload evidence exists"
+    },
+    {
+      "report_url": "https://lab.nift.dev/benchmarks/shell/series/20261008-v480/",
+      "source": "content/benchmarks/archives/20261008-v480/shell/index.html",
+      "template": "Frozen published standalone archive",
+      "repository": "https://github.com/nift-dev/shell-benchmark",
+      "original_platform": "Linode g6-standard-4 / us-east / Ubuntu24.04; original campaign frozen per series",
+      "pins": [
+        "2312c899f437c704a366137a42c770bb89195bc2",
+        "cefb746bf37865fe11c7afe5a59c48ab8693ec09",
+        "3de03a3438f2cd1dae40c5568949cebb67fb5d03",
+        "2192ee2f535cf02cdda04bb9d77ea3f653cbcc70",
+        "f1bf50a503a3ad52171718d89352487f70ad5880",
+        "263e353f6801d9dc224c53602d041a8ee8c4537d",
+        "947fef0471e3f430cce6dff5f52a1d16741b998c",
+        "7c9c31fc3ae3203e58a79b5351de258b218335f8",
+        "5ead9d0a4f4b16bcf5ed449cde2a37759d0cbbd5",
+        "5d38b154a291d6efdfc52f265d00f89ca25dc6b0"
+      ],
+      "displayed_incremental_cases": "None; archived invocation benchmark",
+      "timing_evidence": false,
+      "memory_metric": "Kernel waited-child high-water RSS",
+      "action": "Incremental not applicable; archive identity/content preserved",
+      "evidence": "content/benchmarks/archives/20261008-v480/shell/archive-identity.json",
+      "status": "not applicable",
+      "incremental_applicability": "not applicable",
+      "memory_evidence_status": "not applicable"
+    },
+    {
+      "report_url": "https://lab.nift.dev/benchmarks/scripting/series/20261008-v480/",
+      "source": "content/benchmarks/archives/20261008-v480/scripting/index.html",
+      "template": "Frozen published standalone archive",
+      "repository": "https://github.com/nift-dev/scripting-benchmark",
+      "original_platform": "Linode g6-standard-4 / us-east / Ubuntu24.04; original campaign frozen per series",
+      "pins": [
+        "2312c899f437c704a366137a42c770bb89195bc2",
+        "29cbbf85f9cfe05fd39ebbfa1169483b5fe0fa42",
+        "2a7a4e114297a1294bef10314f24a1552bd0a929",
+        "a7ea6c6a3b6bfc853898b9abdff1ac2bf6fa2f85",
+        "fa675add2a581d4e7eb6054122392716e9ddadcb",
+        "122bdbe09f37e86418a6bba17286dfdfda0c39bf",
+        "4a354d217e509df3a096c53fadd90d6f5a5e9b99",
+        "9304dde6514162f87023b31da0a3eff0e1d1261f",
+        "dcfd1508578414aa733a1a75d6ad7387be93e06b",
+        "ebd6952373d69f7356d56de87ad7718e49339ae9"
+      ],
+      "displayed_incremental_cases": "None; archived invocation benchmark",
+      "timing_evidence": false,
+      "memory_metric": "Kernel waited-child high-water RSS",
+      "action": "Incremental not applicable; archive identity/content preserved",
+      "evidence": "content/benchmarks/archives/20261008-v480/scripting/archive-identity.json",
+      "status": "not applicable",
+      "incremental_applicability": "not applicable",
+      "memory_evidence_status": "not applicable"
+    }
+  ],
+  "cloud_instances_created": 0,
+  "cloud_instances_deleted": 0,
+  "credentials_accessed": false
+}

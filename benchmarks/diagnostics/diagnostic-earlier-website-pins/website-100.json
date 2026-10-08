@@ -1,0 +1,1498 @@
+{
+  "schema": 5,
+  "publishable": true,
+  "machine": {
+    "kernel": "6.8.0-134-generic",
+    "os_release": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+    "cpuinfo": "processor\t: 0\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 1\nmodel name\t: AMD EPYC 7601 32-Core Processor\nstepping\t: 2\nmicrocode\t: 0x800126f\ncpu MHz\t\t: 2200.000\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 0\ncpu cores\t: 4\napicid\t\t: 0\ninitial apicid\t: 0\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 13\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibpb vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr virt_ssbd arat overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0 ibpb_no_ret\nbogomips\t: 4400.00\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 1\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 1\nmodel name\t: AMD EPYC 7601 32-Core Processor\nstepping\t: 2\nmicrocode\t: 0x800126f\ncpu MHz\t\t: 2200.000\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 1\ncpu cores\t: 4\napicid\t\t: 1\ninitial apicid\t: 1\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 13\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibpb vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr virt_ssbd arat overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0 ibpb_no_ret\nbogomips\t: 4400.00\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 2\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 1\nmodel name\t: AMD EPYC 7601 32-Core Processor\nstepping\t: 2\nmicrocode\t: 0x800126f\ncpu MHz\t\t: 2200.000\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 2\ncpu cores\t: 4\napicid\t\t: 2\ninitial apicid\t: 2\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 13\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibpb vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr virt_ssbd arat overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0 ibpb_no_ret\nbogomips\t: 4400.00\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 3\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 1\nmodel name\t: AMD EPYC 7601 32-Core Processor\nstepping\t: 2\nmicrocode\t: 0x800126f\ncpu MHz\t\t: 2200.000\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 3\ncpu cores\t: 4\napicid\t\t: 3\ninitial apicid\t: 3\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 13\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibpb vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr virt_ssbd arat overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0 ibpb_no_ret\nbogomips\t: 4400.00\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\n",
+    "meminfo": "MemTotal:        8131784 kB\nMemFree:         5565496 kB\nMemAvailable:    7646168 kB\nBuffers:           89324 kB\nCached:          2133812 kB\nSwapCached:            0 kB\nActive:           204512 kB\nInactive:        2054088 kB\nActive(anon):      36440 kB\nInactive(anon):        0 kB\nActive(file):     168072 kB\nInactive(file):  2054088 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:                20 kB\nWriteback:            80 kB\nAnonPages:         35476 kB\nMapped:            37492 kB\nShmem:               976 kB\nKReclaimable:     166876 kB\nSlab:             231044 kB\nSReclaimable:     166876 kB\nSUnreclaim:        64168 kB\nKernelStack:        2176 kB\nPageTables:         1768 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     113692 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16256 kB\nVmallocChunk:          0 kB\nPercpu:             2352 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      110452 kB\nDirectMap2M:     4083712 kB\nDirectMap1G:     6291456 kB\n",
+    "cpu_affinity": [
+      0
+    ],
+    "python": "3.12.3",
+    "revision": "8b266c982dc6cba52e95f8afd1233cd7488c3ff9",
+    "dirty": false,
+    "cache_policy": "OS caches uncontrolled; no machine-cold claim",
+    "rss_policy": "Linux wait4 waited-child high-water RSS; not aggregate process-tree RSS"
+  },
+  "pages": 100,
+  "workload": "minimal generated HTML page throughput; not a real-site migration",
+  "notes": [
+    "Tool-native sources; VitePress custom minimal theme still hydrates client assets.",
+    "One CPU affinity recommended; Nift build threads=1; GOMAXPROCS=1.",
+    "Cold means entire fresh fixture; warm-full cleans output and retains internal build state.",
+    "VitePress also generates one 404 page; validated and disclosed, excluded from corpus count.",
+    "wait4 RSS not aggregate tree RSS; see measurement policy."
+  ],
+  "tools": {
+    "Nift": {
+      "version": "Nift v4.7.2",
+      "sha256": "a1654dbf879bf0517141612fbcdb55f441e5e60009a5954faaa274bfa6868bf2"
+    },
+    "Hugo": {
+      "version": "hugo v0.164.0-ce2470e7012b5ab5fc4e10ebe4027e9f8d9e00dc linux/amd64 BuildDate=2026-07-06T16:39:30Z VendorInfo=gohugoio",
+      "sha256": "2a257dbb1cc6cb7166935c79bcf0b02475bb69b4b4a48cd21fc19273ded74661"
+    },
+    "Astro": "7.2.4",
+    "VitePress": "1.6.4"
+  },
+  "jobs": [
+    {
+      "id": "Nift/application-cold",
+      "samples": [
+        {
+          "wall_ms": 38.640876,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 36.494,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "0e1f18371b3404711c76b37d7ea5a9d0d94390a35e45f4b5975968a710cc6591",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 68.178455,
+          "peak_rss_kib": 6784,
+          "cpu_ms": 57.214,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e23871bcbe71789ddfa175c9bd927ac2d0d3618394f3b5345aecf36e83fa483f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 43.182552,
+          "peak_rss_kib": 6784,
+          "cpu_ms": 40.554,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "4da2dfaf0f95ce9473c687c30176343e7b7bc1da32bd6853bec6fa45a3c76dbb",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 35.735448,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 32.281,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "389c1e6c63bedec39278d002822ae0664013608ffbc0bf070238004b49e418db",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 38.682558,
+          "peak_rss_kib": 6784,
+          "cpu_ms": 36.377,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "9d38af86bccbc7d562610973182cf1969aa5c78f522ecc97139b13130a8693a6",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 34.981663,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 32.529,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "ef4f1b17851456ebda09a0b36dac55482978897561be39c6a2fda89679e1dd64",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        }
+      ],
+      "command": [
+        "/opt/campaign/tools/bin/nift",
+        "build",
+        "--all"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 38.682558,
+        "min_ms": 34.981663,
+        "max_ms": 68.178455,
+        "p90_ms": 58.1800938,
+        "p95_ms": 63.1792744,
+        "p99_ms": 67.17861888,
+        "median_peak_rss_kib": 6784
+      }
+    },
+    {
+      "id": "Hugo/application-cold",
+      "samples": [
+        {
+          "wall_ms": 140.678307,
+          "peak_rss_kib": 50816,
+          "cpu_ms": 139.936,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 137.980201,
+          "peak_rss_kib": 51328,
+          "cpu_ms": 137.159,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 132.938935,
+          "peak_rss_kib": 50432,
+          "cpu_ms": 132.076,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 123.819974,
+          "peak_rss_kib": 50688,
+          "cpu_ms": 122.795,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 149.440847,
+          "peak_rss_kib": 50560,
+          "cpu_ms": 148.479,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 128.071225,
+          "peak_rss_kib": 50304,
+          "cpu_ms": 127.357,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        }
+      ],
+      "command": [
+        "/opt/campaign/tools/bin/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 132.938935,
+        "min_ms": 123.819974,
+        "max_ms": 149.440847,
+        "p90_ms": 144.85658859999998,
+        "p95_ms": 147.1487178,
+        "p99_ms": 148.98242116,
+        "median_peak_rss_kib": 50560
+      }
+    },
+    {
+      "id": "Astro/application-cold",
+      "samples": [
+        {
+          "wall_ms": 4793.474534,
+          "peak_rss_kib": 403796,
+          "cpu_ms": 4757.178,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 4187.238639,
+          "peak_rss_kib": 386896,
+          "cpu_ms": 4156.878,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 5072.493186,
+          "peak_rss_kib": 376936,
+          "cpu_ms": 5035.952,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 3473.853983,
+          "peak_rss_kib": 388400,
+          "cpu_ms": 3447.751,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 3548.642712,
+          "peak_rss_kib": 393916,
+          "cpu_ms": 3518.261,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 3358.107724,
+          "peak_rss_kib": 379396,
+          "cpu_ms": 3329.883,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        }
+      ],
+      "command": [
+        "/opt/campaign/website-generator-benchmark/node_modules/.bin/astro",
+        "build",
+        "--silent"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 3548.642712,
+        "min_ms": 3358.107724,
+        "max_ms": 5072.493186,
+        "p90_ms": 4718.3913672,
+        "p95_ms": 4895.4422766,
+        "p99_ms": 5037.08300412,
+        "median_peak_rss_kib": 386896
+      }
+    },
+    {
+      "id": "VitePress/application-cold",
+      "samples": [
+        {
+          "wall_ms": 6845.400999,
+          "peak_rss_kib": 375572,
+          "cpu_ms": 5811.974,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "1a5ded9862e759f8e484000128043a6b9931d0c9c7b36c0ac160f1e25ee04d72",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 0,
+          "warmup": true,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 7384.988093,
+          "peak_rss_kib": 373764,
+          "cpu_ms": 6338.366,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "d54c0a225c36b9039449785f51904668696b30df12521c15b3cf77b3c1e1cdfc",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 1,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 6741.132865,
+          "peak_rss_kib": 370300,
+          "cpu_ms": 5775.227,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "a0ff3f1a7595e7812d35afcbaad27156285d8d560db582f47f950355b807d5dc",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 2,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 6624.871349,
+          "peak_rss_kib": 377468,
+          "cpu_ms": 5641.054,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "fd5f31f29f498b27c9cd3a8c130bc1120cbf6309d98cd673c85936c6299ce66a",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 3,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 6506.274079,
+          "peak_rss_kib": 372708,
+          "cpu_ms": 5556.622,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "f0c1686bac691a210d46fa3d55a691b3c257ffab49f6a2221edf5f129a5276c7",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 4,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 6376.900185,
+          "peak_rss_kib": 371648,
+          "cpu_ms": 5468.798,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "8eff791e81cd02d3633a2a8fc3dd33a620a7ddc71d988288c69c289378747308",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 5,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        }
+      ],
+      "command": [
+        "/opt/campaign/website-generator-benchmark/node_modules/.bin/vitepress",
+        "build",
+        "docs"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 6624.871349,
+        "min_ms": 6376.900185,
+        "max_ms": 7384.988093,
+        "p90_ms": 7127.4460018,
+        "p95_ms": 7256.2170473999995,
+        "p99_ms": 7359.23388388,
+        "median_peak_rss_kib": 372708
+      }
+    },
+    {
+      "id": "Nift/warm-full",
+      "samples": [
+        {
+          "wall_ms": 33.967619,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 31.924,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "7866beccac3b87de46f0b4871cb3ffdb4736ecbc4f2f905185c6254e30bccdcb",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 45.064428,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 43.014,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "d86855f0aff2ee72733adad1a182d4a6b1479d6dd18f08337a48476bb2ead2b8",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 42.940617,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 41.203,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "6a6bf1d020242cc5adb85f72b4cc3837b0e3b88ba26fac06d8747f372a861b2a",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 44.496528,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 42.315,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e046336579a235bf457b00716b152ae44cdbde810987b1e9d0b7b86e703bb9a3",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 61.882584,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 59.854,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "1aec8abad241f9d3dcfcfb919f34daefed39c04f8083a1447dc1c921131544bb",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 42.994663,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 41.188,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "3e86a1bdddf586fe8d72ac5cdc563be3e6e230471f6fda0d0dc8fea9345a1c4d",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/nift",
+            "build",
+            "--all"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        }
+      ],
+      "command": [
+        "/opt/campaign/tools/bin/nift",
+        "build",
+        "--all"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 44.496528,
+        "min_ms": 42.940617,
+        "max_ms": 61.882584,
+        "p90_ms": 55.1553216,
+        "p95_ms": 58.518952799999994,
+        "p99_ms": 61.209857760000006,
+        "median_peak_rss_kib": 6912
+      }
+    },
+    {
+      "id": "Hugo/warm-full",
+      "samples": [
+        {
+          "wall_ms": 137.218335,
+          "peak_rss_kib": 50688,
+          "cpu_ms": 136.503,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 146.542336,
+          "peak_rss_kib": 50304,
+          "cpu_ms": 145.673,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 128.901103,
+          "peak_rss_kib": 50304,
+          "cpu_ms": 128.116,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 127.929716,
+          "peak_rss_kib": 50688,
+          "cpu_ms": 127.172,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 135.202133,
+          "peak_rss_kib": 50944,
+          "cpu_ms": 134.29,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 132.799036,
+          "peak_rss_kib": 50688,
+          "cpu_ms": 131.924,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/tools/bin/hugo",
+            "--quiet",
+            "--destination",
+            "public"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        }
+      ],
+      "command": [
+        "/opt/campaign/tools/bin/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 132.799036,
+        "min_ms": 127.929716,
+        "max_ms": 146.542336,
+        "p90_ms": 142.0062548,
+        "p95_ms": 144.2742954,
+        "p99_ms": 146.08872788,
+        "median_peak_rss_kib": 50688
+      }
+    },
+    {
+      "id": "Astro/warm-full",
+      "samples": [
+        {
+          "wall_ms": 4292.586342,
+          "peak_rss_kib": 419804,
+          "cpu_ms": 4262.821,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 3478.796624,
+          "peak_rss_kib": 381920,
+          "cpu_ms": 3451.437,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 3302.557674,
+          "peak_rss_kib": 383304,
+          "cpu_ms": 3278.675,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 3455.943267,
+          "peak_rss_kib": 375736,
+          "cpu_ms": 3422.51,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 3618.096934,
+          "peak_rss_kib": 375608,
+          "cpu_ms": 3586.316,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 3625.068062,
+          "peak_rss_kib": 388012,
+          "cpu_ms": 3596.005,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/astro",
+            "build",
+            "--silent"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        }
+      ],
+      "command": [
+        "/opt/campaign/website-generator-benchmark/node_modules/.bin/astro",
+        "build",
+        "--silent"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 3478.796624,
+        "min_ms": 3302.557674,
+        "max_ms": 3625.068062,
+        "p90_ms": 3622.2796108,
+        "p95_ms": 3623.6738364,
+        "p99_ms": 3624.78921688,
+        "median_peak_rss_kib": 381920
+      }
+    },
+    {
+      "id": "VitePress/warm-full",
+      "samples": [
+        {
+          "wall_ms": 8635.437382,
+          "peak_rss_kib": 372328,
+          "cpu_ms": 7559.25,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "ceaf8eb62460cdacbd39796bd268abb4f0c91a9b8beffc1d5418383e31b238af",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 0,
+          "warmup": true,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 6573.463595,
+          "peak_rss_kib": 376084,
+          "cpu_ms": 5617.919,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "1cee33dc34eaa1db94439612c5399e6e7fdfe9d73c6c079a45c5de4d34f57793",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 1,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 6426.53765,
+          "peak_rss_kib": 371804,
+          "cpu_ms": 5494.957,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "f0c1686bac691a210d46fa3d55a691b3c257ffab49f6a2221edf5f129a5276c7",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 2,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 6651.945996,
+          "peak_rss_kib": 372720,
+          "cpu_ms": 5679.402,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "5770204c75fc87781331c32e28a5c5c6b62002843037bb630586d430e28ce531",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 3,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 6812.220516,
+          "peak_rss_kib": 371440,
+          "cpu_ms": 5867.287,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "031c80fd60454c8a3c6609f7feaba0c72c68c88a1625dd59dbcdb3267f6edb57",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 4,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        },
+        {
+          "wall_ms": 8113.634198,
+          "peak_rss_kib": 376892,
+          "cpu_ms": 6913.888,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "a7035adbac10332c7cc0061047157852cd096f7e618e5c79ce8c916bfdf7ec7a",
+          "stderr_sha256": "fc7c6405aac8fbf4c47ba4c22feb0b41275820b184b493e71c8b989328869cf8",
+          "round": 5,
+          "warmup": false,
+          "correct": true,
+          "command": [
+            "/opt/campaign/website-generator-benchmark/node_modules/.bin/vitepress",
+            "build",
+            "docs"
+          ],
+          "validation": {
+            "routes": 100,
+            "content_checked": 100
+          }
+        }
+      ],
+      "command": [
+        "/opt/campaign/website-generator-benchmark/node_modules/.bin/vitepress",
+        "build",
+        "docs"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 6651.945996,
+        "min_ms": 6426.53765,
+        "max_ms": 8113.634198,
+        "p90_ms": 7593.0687252,
+        "p95_ms": 7853.351461599999,
+        "p99_ms": 8061.57765072,
+        "median_peak_rss_kib": 372720
+      }
+    },
+    {
+      "id": "Nift/incremental/no-op",
+      "samples": [
+        {
+          "wall_ms": 16.119169,
+          "peak_rss_kib": 5632,
+          "cpu_ms": 14.634,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "0a7ba6da52f7768d2836a71ad3ba5fc3088f89b19061fb1317a55c10ef1eb450",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true
+        },
+        {
+          "wall_ms": 16.164269,
+          "peak_rss_kib": 5632,
+          "cpu_ms": 14.766,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "9a8a95cee1881c67660a295ff0680959362c179f2d70dae25d59f2971b3263d8",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 16.2823,
+          "peak_rss_kib": 5760,
+          "cpu_ms": 14.592,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "420331c9dfe18966942c07199759f850ae58ad412cef242812027d2adf682978",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 16.579505,
+          "peak_rss_kib": 5760,
+          "cpu_ms": 14.736,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "a013839c7120c09ea0df4767c77cbd02c43733564b500c009b8895053f708aa9",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 20.324855,
+          "peak_rss_kib": 5760,
+          "cpu_ms": 18.675,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "c15ae7b6b9868ca9ffb45fa41ffb68a089783217477b7b7876ffe8ef1ed884f9",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 16.596074,
+          "peak_rss_kib": 5632,
+          "cpu_ms": 15.126,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "2fc6b175e3d61f20a6d927703874d882ed7630607305cdab5b4bc3e17ad77611",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true
+        }
+      ],
+      "command": [
+        "/opt/campaign/tools/bin/nift",
+        "build"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 16.579505,
+        "min_ms": 16.164269,
+        "max_ms": 20.324855,
+        "p90_ms": 18.8333426,
+        "p95_ms": 19.5790988,
+        "p99_ms": 20.175703759999998,
+        "median_peak_rss_kib": 5760
+      }
+    },
+    {
+      "id": "Nift/incremental/one-page",
+      "samples": [
+        {
+          "wall_ms": 18.760874,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 17.085,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "a944c7636f3bf5d314ae387e4c2966efb60532fae34cc8cabc830d32de189138",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true
+        },
+        {
+          "wall_ms": 17.115542,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 15.843,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "ac586f213b35fb4090157e6f4f4891f519e794fa707d9ac8a4e6b425647a9cf3",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 18.649753,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 17.164,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "597980c5e61f9b7837ff960d8379d61fead5f7aafcddb198bb54e77054aa9517",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 19.422023,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 17.769,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "8da9f4802c2c0c8175895da5dc09ecaa93cbe42f79af25ea24faffc9bf9b2387",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 16.97617,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 15.576,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "4f4b067ab456d921ab7b5c9e8e9ca2e56b9ee1e4b381ce4cffb7423498f2a27f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 18.489061,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 16.983,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "376592d7f6ac551e492ef70cb2ae7ae1c8043af707edebeb4b2a4b9e7aee6e92",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true
+        }
+      ],
+      "command": [
+        "/opt/campaign/tools/bin/nift",
+        "build"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 18.489061,
+        "min_ms": 16.97617,
+        "max_ms": 19.422023,
+        "p90_ms": 19.113115,
+        "p95_ms": 19.267568999999998,
+        "p99_ms": 19.391132199999998,
+        "median_peak_rss_kib": 6912
+      }
+    },
+    {
+      "id": "Nift/incremental/shared-template",
+      "samples": [
+        {
+          "wall_ms": 58.417312,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 57.15,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "52e3384358e88b0598a7033a8004eac9119343aae572901509fdb630194ba690",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true
+        },
+        {
+          "wall_ms": 60.560401,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 58.825,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "93075e9cac6a359b05b563d87dab14aadce297aeadb1766677210e2e0352f7c2",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 64.446752,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 62.914,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e1a21076f4e5e69a5c6333e0621c477b2d3cdd39af9c8de524ba38fb76c26206",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 66.44915,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 64.565,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "0cff208be5a49acde0e8346e0faa82da0a9a6a47839d7eb21ab2ebe17f114bf4",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 62.512646,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 61.002,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "c5635ff64fe30010ac71b3e1db43831cc87430511c832a8b9da1dde492014b39",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 58.528383,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 56.752,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "50707548498bc09c3a61e956fe112efd1b21ca2e16933335a635bd7049cb082a",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true
+        }
+      ],
+      "command": [
+        "/opt/campaign/tools/bin/nift",
+        "build"
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 62.512646,
+        "min_ms": 58.528383,
+        "max_ms": 66.44915,
+        "p90_ms": 65.64819080000001,
+        "p95_ms": 66.0486704,
+        "p99_ms": 66.36905408,
+        "median_peak_rss_kib": 6912
+      }
+    }
+  ],
+  "samples": 5,
+  "warmups": 1
+}
