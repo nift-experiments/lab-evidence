@@ -1,0 +1,30 @@
+{
+  "series": "20261009-v4100-shell-expanded",
+  "nift_version": "4.10.0",
+  "nift_status": "development build",
+  "measured_revisions": {
+    "nift": "629b1f23afbb5b3be97dac66b6cea1a9d5b3d1fc",
+    "shell-benchmark": "fc7c4d93dcd525545f97e302501eb08e1b0f9f7e"
+  },
+  "starting_labs_source": "c62831ae18ec15565e681f97ab03bebd2fc4e53e",
+  "starting_deployment": "4cbb9e0697d76dc31d0dbd33582c666ca04ea214",
+  "node": {
+    "label": "nift-shell-20261009-expanded",
+    "type": "g6-standard-4",
+    "region": "us-east",
+    "image": "linode/ubuntu24.04",
+    "created": "2026-10-08T20:28:51",
+    "specs": {
+      "disk": 163840,
+      "memory": 8192,
+      "vcpus": 4,
+      "gpus": 0,
+      "transfer": 5000
+    }
+  },
+  "nift_binary_sha256": "f2117ddafafd3e4c762f66335fc082c96449b3a0f4d1518df7564e908d68b03e",
+  "official_started_utc": "2026-10-08T21:43:52Z",
+  "official_ended_utc": "2026-10-09T00:42:03Z",
+  "build_command": "make -j2; make install PREFIX=/opt/campaign/tools",
+  "build_flags": "Native Make defaults; C++17/C99 -O2; no CPU-specific architecture flags"
+}

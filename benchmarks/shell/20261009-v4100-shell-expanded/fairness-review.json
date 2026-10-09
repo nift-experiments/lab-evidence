@@ -1,0 +1,87 @@
+{
+  "status": "passed with disclosed attribution limits",
+  "official_jobs": 141,
+  "observations_retained": 1530,
+  "classifications": [
+    "end-to-end",
+    "orchestration",
+    "runtime-native"
+  ],
+  "traditional_native_deletion_exclusions": [
+    {
+      "case": "delete-selected-1000",
+      "shell": "bash",
+      "reason": "no native filesystem deletion API; end-to-end batched GNU rm result is published instead"
+    },
+    {
+      "case": "delete-selected-1000",
+      "shell": "zsh",
+      "reason": "no native filesystem deletion API; end-to-end batched GNU rm result is published instead"
+    },
+    {
+      "case": "delete-selected-1000",
+      "shell": "fish",
+      "reason": "no native filesystem deletion API; end-to-end batched GNU rm result is published instead"
+    },
+    {
+      "case": "delete-selected-10000",
+      "shell": "bash",
+      "reason": "no native filesystem deletion API; end-to-end batched GNU rm result is published instead"
+    },
+    {
+      "case": "delete-selected-10000",
+      "shell": "zsh",
+      "reason": "no native filesystem deletion API; end-to-end batched GNU rm result is published instead"
+    },
+    {
+      "case": "delete-selected-10000",
+      "shell": "fish",
+      "reason": "no native filesystem deletion API; end-to-end batched GNU rm result is published instead"
+    },
+    {
+      "case": "delete-selected-100000",
+      "shell": "bash",
+      "reason": "no native filesystem deletion API; end-to-end batched GNU rm result is published instead"
+    },
+    {
+      "case": "delete-selected-100000",
+      "shell": "zsh",
+      "reason": "no native filesystem deletion API; end-to-end batched GNU rm result is published instead"
+    },
+    {
+      "case": "delete-selected-100000",
+      "shell": "fish",
+      "reason": "no native filesystem deletion API; end-to-end batched GNU rm result is published instead"
+    },
+    {
+      "case": "delete-tree-100000",
+      "shell": "bash",
+      "reason": "no native filesystem deletion API; end-to-end batched GNU rm result is published instead"
+    },
+    {
+      "case": "delete-tree-100000",
+      "shell": "zsh",
+      "reason": "no native filesystem deletion API; end-to-end batched GNU rm result is published instead"
+    },
+    {
+      "case": "delete-tree-100000",
+      "shell": "fish",
+      "reason": "no native filesystem deletion API; end-to-end batched GNU rm result is published instead"
+    }
+  ],
+  "raw_sha256": "dcb7cde3f493487bc7ee050b10ee8f4f3f885e83d401c3a23ac7abb0644ff4b8",
+  "checks": [
+    "Every target, keeper and exact inventory validated outside timed interval",
+    "No whole-parent deletion can pass mixed target/keeper fixtures",
+    "Traditional deletion/copy/move utilities batch with NUL manifests",
+    "Common log/source-report Unix engines are explicit orchestration",
+    "Nift/Nushell native APIs versus utility engines disclosed",
+    "Atomic Nift save has different internal work, retained in timing",
+    "CPU 0 serial collection, rotated case and participant order",
+    "No observation or outlier discarded; summaries independently recomputed",
+    "Shared CPU and uncontrolled OS caches prevent universal attribution",
+    "Waited-child RSS is not simultaneous aggregate process-tree memory",
+    "Native script cases use matching exact outputs and bounded inputs",
+    "No overall fastest-shell score or baseline subtraction"
+  ]
+}

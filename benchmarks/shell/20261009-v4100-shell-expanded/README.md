@@ -1,0 +1,3 @@
+# Expanded shell series 20261009-v4100-shell-expanded
+
+Nift 4.10.0 development build; frozen source `629b1f23afbb5b3be97dac66b6cea1a9d5b3d1fc`, suite `fc7c4d93dcd525545f97e302501eb08e1b0f9f7e`. 293 official jobs, 7,855 measured observations, 711 retained warmups. Existing startup/configuration matrices remain intact. New cases classify runtime-native, orchestration, end-to-end and GNU baselines. Fixtures are reconstructed and fully verified outside timing; OS caches are uncontrolled. Native API and batched utility architectures differ. No overall fastest-shell score. All correctness oracles and independent summary checks passed. Full smoke runs and exact scripts are retained. Prior immutable series is unchanged. Teardown follows live verification.
