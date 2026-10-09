@@ -1,0 +1,33 @@
+{
+  "official_raw_files": {
+    "shell-repeated.json": {
+      "schema": 2,
+      "sha256": "378b62cf8eb0194c12fe9c7a9e2d77bc787d8d7d1cae4a40a388b10ae578c759",
+      "jobs": 76,
+      "measured_samples": 4900,
+      "retained_warmups": 228
+    },
+    "shell-application-cold.json": {
+      "schema": 2,
+      "sha256": "9166b90b63038d675135dd80b7cc7b0660d3ac68e9c996c8818556c6c0923c39",
+      "jobs": 76,
+      "measured_samples": 1680,
+      "retained_warmups": 228
+    },
+    "shell-workloads.json": {
+      "schema": 1,
+      "sha256": "15ca2790b1ef16c99f0f8a1844af04db09d008ef69beca1393e8087f8fc56cf6",
+      "jobs": 141,
+      "measured_samples": 1275,
+      "retained_warmups": 255
+    }
+  },
+  "helper_tests_before_and_after": 3,
+  "summary_recomputation": "All retained distribution fields equal independent summarizer output",
+  "clean_checkout": true,
+  "affinity": [
+    0
+  ],
+  "no_discarded_samples": true,
+  "smoke_full_matrix_passed": true
+}

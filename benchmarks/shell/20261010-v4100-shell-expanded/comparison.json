@@ -1,0 +1,2644 @@
+{
+  "note": "Cross-node ratios are review signals, not version speedups. Hardware, runtime versions, cache state and shared CPU scheduling may differ.",
+  "prior_series": "20261009-v4100-shell-expanded",
+  "current_series": "20261010-v4100-shell-expanded",
+  "cases": [
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/immediate-exit",
+      "prior_median_ms": 1.663918,
+      "current_median_ms": 2.483707,
+      "prior_p99_ms": 2.2723074900000046,
+      "current_p99_ms": 3.9574324100000187,
+      "cross_node_ratio_for_internal_review": 1.4926859376483697
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/trivial-command",
+      "prior_median_ms": 1.5279745,
+      "current_median_ms": 1.954619,
+      "prior_p99_ms": 2.2346595200000112,
+      "current_p99_ms": 3.2098428800000005,
+      "cross_node_ratio_for_internal_review": 1.2792222645076865
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/interactive",
+      "prior_median_ms": 1.9332224999999998,
+      "current_median_ms": 2.8134145000000004,
+      "prior_p99_ms": 2.649951150000001,
+      "current_p99_ms": 4.379020630000008,
+      "cross_node_ratio_for_internal_review": 1.455297825263259
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/interactive-login",
+      "prior_median_ms": 1.8665055,
+      "current_median_ms": 2.551784,
+      "prior_p99_ms": 2.3209296000000013,
+      "current_p99_ms": 7.354792380000024,
+      "cross_node_ratio_for_internal_review": 1.367145181195555
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/empty/interactive",
+      "prior_median_ms": 3.4977775,
+      "current_median_ms": 4.83249,
+      "prior_p99_ms": 4.516073980000004,
+      "current_p99_ms": 9.620194530000058,
+      "cross_node_ratio_for_internal_review": 1.38158873741969
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/empty/interactive-login",
+      "prior_median_ms": 17.4729955,
+      "current_median_ms": 22.337249999999997,
+      "prior_p99_ms": 21.80393370000003,
+      "current_p99_ms": 34.36408604000002,
+      "cross_node_ratio_for_internal_review": 1.2783869829303165
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/light/interactive",
+      "prior_median_ms": 3.534554,
+      "current_median_ms": 4.7108975,
+      "prior_p99_ms": 4.35935686000001,
+      "current_p99_ms": 11.807280040000007,
+      "cross_node_ratio_for_internal_review": 1.3328124283855898
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/light/interactive-login",
+      "prior_median_ms": 17.4656855,
+      "current_median_ms": 21.6089575,
+      "prior_p99_ms": 22.290823940000006,
+      "current_p99_ms": 32.27717882000002,
+      "cross_node_ratio_for_internal_review": 1.2372235547239185
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/moderate/interactive",
+      "prior_median_ms": 3.7423045,
+      "current_median_ms": 4.9134174999999995,
+      "prior_p99_ms": 5.882952100000004,
+      "current_p99_ms": 8.274653570000003,
+      "cross_node_ratio_for_internal_review": 1.3129389925378867
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/moderate/interactive-login",
+      "prior_median_ms": 17.6839685,
+      "current_median_ms": 21.7446315,
+      "prior_p99_ms": 22.15848709,
+      "current_p99_ms": 31.09535512000001,
+      "cross_node_ratio_for_internal_review": 1.2296239670411087
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/function-string",
+      "prior_median_ms": 1.6145545000000001,
+      "current_median_ms": 1.9949445,
+      "prior_p99_ms": 2.05926295,
+      "current_p99_ms": 2.34092577,
+      "cross_node_ratio_for_internal_review": 1.23560059446739
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/command-capture",
+      "prior_median_ms": 2.866231,
+      "current_median_ms": 3.237532,
+      "prior_p99_ms": 3.61731576,
+      "current_p99_ms": 4.21472149,
+      "cross_node_ratio_for_internal_review": 1.1295432922189452
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/file-roundtrip",
+      "prior_median_ms": 3.753781,
+      "current_median_ms": 4.375966,
+      "prior_p99_ms": 4.36696045,
+      "current_p99_ms": 5.5304234899999996,
+      "cross_node_ratio_for_internal_review": 1.1657488809283227
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/native-sum",
+      "prior_median_ms": 4.8318275,
+      "current_median_ms": 4.9877375,
+      "prior_p99_ms": 5.74035856,
+      "current_p99_ms": 13.438998269999999,
+      "cross_node_ratio_for_internal_review": 1.032267294310486
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/external-100",
+      "prior_median_ms": 84.2757195,
+      "current_median_ms": 95.3807805,
+      "prior_p99_ms": 92.21980527,
+      "current_p99_ms": 104.74883867,
+      "cross_node_ratio_for_internal_review": 1.1317705866634578
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/short-pipeline",
+      "prior_median_ms": 4.165395,
+      "current_median_ms": 4.694046,
+      "prior_p99_ms": 4.71329859,
+      "current_p99_ms": 5.10632173,
+      "cross_node_ratio_for_internal_review": 1.1269149744502023
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/immediate-exit",
+      "prior_median_ms": 2.0612719999999998,
+      "current_median_ms": 2.814382,
+      "prior_p99_ms": 3.332135830000009,
+      "current_p99_ms": 7.833723530000008,
+      "cross_node_ratio_for_internal_review": 1.3653617766117234
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/trivial-command",
+      "prior_median_ms": 1.9906545,
+      "current_median_ms": 2.5178655,
+      "prior_p99_ms": 2.480582650000002,
+      "current_p99_ms": 4.997754590000001,
+      "cross_node_ratio_for_internal_review": 1.2648430453401132
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/interactive",
+      "prior_median_ms": 2.688091,
+      "current_median_ms": 3.6548974999999997,
+      "prior_p99_ms": 3.3393067700000003,
+      "current_p99_ms": 7.247405190000011,
+      "cross_node_ratio_for_internal_review": 1.3596628611159367
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/interactive-login",
+      "prior_median_ms": 2.59464,
+      "current_median_ms": 3.4896890000000003,
+      "prior_p99_ms": 3.1881032600000014,
+      "current_p99_ms": 6.994724100000009,
+      "cross_node_ratio_for_internal_review": 1.3449607652699411
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/empty/interactive",
+      "prior_median_ms": 25.9983055,
+      "current_median_ms": 32.197055000000006,
+      "prior_p99_ms": 36.610886740000026,
+      "current_p99_ms": 49.10306664,
+      "cross_node_ratio_for_internal_review": 1.2384289814580418
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/empty/interactive-login",
+      "prior_median_ms": 25.674126,
+      "current_median_ms": 30.724655,
+      "prior_p99_ms": 32.42736716,
+      "current_p99_ms": 42.79660051000005,
+      "cross_node_ratio_for_internal_review": 1.1967166866751373
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/light/interactive",
+      "prior_median_ms": 25.820732,
+      "current_median_ms": 30.753048999999997,
+      "prior_p99_ms": 31.139800080000022,
+      "current_p99_ms": 40.5425456,
+      "cross_node_ratio_for_internal_review": 1.1910215790938847
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/light/interactive-login",
+      "prior_median_ms": 25.905431,
+      "current_median_ms": 31.213984,
+      "prior_p99_ms": 36.99536164000002,
+      "current_p99_ms": 40.90227996000001,
+      "cross_node_ratio_for_internal_review": 1.204920466291412
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/moderate/interactive",
+      "prior_median_ms": 25.950768,
+      "current_median_ms": 31.053083,
+      "prior_p99_ms": 30.344491340000005,
+      "current_p99_ms": 42.880911760000004,
+      "cross_node_ratio_for_internal_review": 1.1966151830265679
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/moderate/interactive-login",
+      "prior_median_ms": 26.1052705,
+      "current_median_ms": 30.953867,
+      "prior_p99_ms": 29.60454555,
+      "current_p99_ms": 44.408672750000036,
+      "cross_node_ratio_for_internal_review": 1.1857324749804834
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/function-string",
+      "prior_median_ms": 2.1140305,
+      "current_median_ms": 2.6415675,
+      "prior_p99_ms": 2.29826031,
+      "current_p99_ms": 2.92549235,
+      "cross_node_ratio_for_internal_review": 1.2495408651861928
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/command-capture",
+      "prior_median_ms": 3.3573175,
+      "current_median_ms": 3.870871,
+      "prior_p99_ms": 3.5327360100000003,
+      "current_p99_ms": 4.708386689999999,
+      "cross_node_ratio_for_internal_review": 1.1529654255220128
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/file-roundtrip",
+      "prior_median_ms": 4.2658775,
+      "current_median_ms": 5.0644745,
+      "prior_p99_ms": 4.47802738,
+      "current_p99_ms": 9.79679571,
+      "cross_node_ratio_for_internal_review": 1.187205797634836
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/native-sum",
+      "prior_median_ms": 3.131515,
+      "current_median_ms": 3.5524715000000002,
+      "prior_p99_ms": 3.7288222600000003,
+      "current_p99_ms": 4.0148351,
+      "cross_node_ratio_for_internal_review": 1.134425829031635
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/external-100",
+      "prior_median_ms": 97.1441345,
+      "current_median_ms": 110.6804435,
+      "prior_p99_ms": 101.72580884999999,
+      "current_p99_ms": 139.59575659,
+      "cross_node_ratio_for_internal_review": 1.1393425251011937
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/short-pipeline",
+      "prior_median_ms": 4.8523825,
+      "current_median_ms": 5.44046,
+      "prior_p99_ms": 5.33828187,
+      "current_p99_ms": 7.956249860000002,
+      "cross_node_ratio_for_internal_review": 1.1211935580099055
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/immediate-exit",
+      "prior_median_ms": 2.370767,
+      "current_median_ms": 3.2640405,
+      "prior_p99_ms": 5.6562868200000125,
+      "current_p99_ms": 10.535136930000013,
+      "cross_node_ratio_for_internal_review": 1.3767867107986573
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/trivial-command",
+      "prior_median_ms": 2.1592195,
+      "current_median_ms": 2.927902,
+      "prior_p99_ms": 2.668778760000004,
+      "current_p99_ms": 4.4220107000000155,
+      "cross_node_ratio_for_internal_review": 1.3560001658006517
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/interactive",
+      "prior_median_ms": 18.335945,
+      "current_median_ms": 24.4790255,
+      "prior_p99_ms": 25.31454689000003,
+      "current_p99_ms": 34.589015480000015,
+      "cross_node_ratio_for_internal_review": 1.3350293917221066
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/interactive-login",
+      "prior_median_ms": 19.444891,
+      "current_median_ms": 25.932851499999998,
+      "prior_p99_ms": 24.45919330000008,
+      "current_p99_ms": 41.290952910000016,
+      "cross_node_ratio_for_internal_review": 1.3336588772855553
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/empty/interactive",
+      "prior_median_ms": 37.8804625,
+      "current_median_ms": 49.6685055,
+      "prior_p99_ms": 47.047270200000064,
+      "current_p99_ms": 72.70810267000003,
+      "cross_node_ratio_for_internal_review": 1.3111905774645702
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/empty/interactive-login",
+      "prior_median_ms": 37.6367365,
+      "current_median_ms": 49.5017225,
+      "prior_p99_ms": 43.88993594000001,
+      "current_p99_ms": 64.77353564000002,
+      "cross_node_ratio_for_internal_review": 1.3152501280231883
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/light/interactive",
+      "prior_median_ms": 38.495888,
+      "current_median_ms": 49.4224915,
+      "prior_p99_ms": 43.88140172000001,
+      "current_p99_ms": 68.43644885000035,
+      "cross_node_ratio_for_internal_review": 1.2838381985109681
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/light/interactive-login",
+      "prior_median_ms": 37.243361500000006,
+      "current_median_ms": 48.152350999999996,
+      "prior_p99_ms": 45.24447970000013,
+      "current_p99_ms": 66.8698225,
+      "cross_node_ratio_for_internal_review": 1.2929109795849119
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/moderate/interactive",
+      "prior_median_ms": 35.811153000000004,
+      "current_median_ms": 46.7168925,
+      "prior_p99_ms": 44.435236990000014,
+      "current_p99_ms": 61.51669817000001,
+      "cross_node_ratio_for_internal_review": 1.3045347213478435
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/moderate/interactive-login",
+      "prior_median_ms": 37.5126405,
+      "current_median_ms": 48.021195,
+      "prior_p99_ms": 44.00099809000004,
+      "current_p99_ms": 66.24325456000001,
+      "cross_node_ratio_for_internal_review": 1.2801336925349203
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/function-string",
+      "prior_median_ms": 2.658424,
+      "current_median_ms": 3.1688705,
+      "prior_p99_ms": 2.8453543,
+      "current_p99_ms": 6.42996383,
+      "cross_node_ratio_for_internal_review": 1.1920109433258201
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/command-capture",
+      "prior_median_ms": 3.42096,
+      "current_median_ms": 4.17382,
+      "prior_p99_ms": 5.49679686,
+      "current_p99_ms": 6.31601124,
+      "cross_node_ratio_for_internal_review": 1.2200727281231
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/file-roundtrip",
+      "prior_median_ms": 4.235502,
+      "current_median_ms": 4.9606555,
+      "prior_p99_ms": 4.95069388,
+      "current_p99_ms": 7.30661356,
+      "cross_node_ratio_for_internal_review": 1.1712083951323833
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/native-sum",
+      "prior_median_ms": 104.4474245,
+      "current_median_ms": 114.76416549999999,
+      "prior_p99_ms": 106.37295217,
+      "current_p99_ms": 168.28853564,
+      "cross_node_ratio_for_internal_review": 1.0987744891689502
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/external-100",
+      "prior_median_ms": 70.892369,
+      "current_median_ms": 83.249935,
+      "prior_p99_ms": 74.53666238999999,
+      "current_p99_ms": 111.53516279000002,
+      "cross_node_ratio_for_internal_review": 1.1743144738187545
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/short-pipeline",
+      "prior_median_ms": 4.4847955,
+      "current_median_ms": 5.6125644999999995,
+      "prior_p99_ms": 5.6873252899999995,
+      "current_p99_ms": 8.25906328,
+      "cross_node_ratio_for_internal_review": 1.2514649776115767
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/immediate-exit",
+      "prior_median_ms": 12.9609995,
+      "current_median_ms": 17.9811875,
+      "prior_p99_ms": 16.940271450000015,
+      "current_p99_ms": 45.03323419000003,
+      "cross_node_ratio_for_internal_review": 1.3873303135302182
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/trivial-command",
+      "prior_median_ms": 12.700182999999999,
+      "current_median_ms": 15.900249,
+      "prior_p99_ms": 16.33203816000002,
+      "current_p99_ms": 23.17884865000005,
+      "cross_node_ratio_for_internal_review": 1.2519700700375735
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/interactive",
+      "prior_median_ms": 16.428735,
+      "current_median_ms": 21.237180000000002,
+      "prior_p99_ms": 20.629171860000007,
+      "current_p99_ms": 29.768316550000005,
+      "cross_node_ratio_for_internal_review": 1.292685042396752
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/interactive-login",
+      "prior_median_ms": 17.113947,
+      "current_median_ms": 20.869371,
+      "prior_p99_ms": 23.55692948,
+      "current_p99_ms": 33.26784388000001,
+      "cross_node_ratio_for_internal_review": 1.2194364631373464
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/empty/interactive",
+      "prior_median_ms": 19.381568,
+      "current_median_ms": 24.313307000000002,
+      "prior_p99_ms": 23.997174960000006,
+      "current_p99_ms": 34.41633366000003,
+      "cross_node_ratio_for_internal_review": 1.2544551091015959
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/empty/interactive-login",
+      "prior_median_ms": 19.599648000000002,
+      "current_median_ms": 24.043946,
+      "prior_p99_ms": 25.17045876000001,
+      "current_p99_ms": 38.29292164000001,
+      "cross_node_ratio_for_internal_review": 1.2267539702753842
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/light/interactive",
+      "prior_median_ms": 19.867055,
+      "current_median_ms": 24.455712,
+      "prior_p99_ms": 26.065940010000016,
+      "current_p99_ms": 35.66502702000012,
+      "cross_node_ratio_for_internal_review": 1.2309681530553973
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/light/interactive-login",
+      "prior_median_ms": 19.486156,
+      "current_median_ms": 24.40891,
+      "prior_p99_ms": 26.992258210000063,
+      "current_p99_ms": 33.42726166000002,
+      "cross_node_ratio_for_internal_review": 1.2526282761977272
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/moderate/interactive",
+      "prior_median_ms": 19.819727,
+      "current_median_ms": 25.2688585,
+      "prior_p99_ms": 26.60049271000017,
+      "current_p99_ms": 41.309199930000034,
+      "cross_node_ratio_for_internal_review": 1.2749347405239235
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/moderate/interactive-login",
+      "prior_median_ms": 20.238591,
+      "current_median_ms": 25.503991499999998,
+      "prior_p99_ms": 25.497830780000008,
+      "current_p99_ms": 45.855806670000035,
+      "cross_node_ratio_for_internal_review": 1.2601663574307125
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/function-string",
+      "prior_median_ms": 15.2589435,
+      "current_median_ms": 17.407006000000003,
+      "prior_p99_ms": 16.00311627,
+      "current_p99_ms": 21.407595699999998,
+      "cross_node_ratio_for_internal_review": 1.1407739991959471
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/command-capture",
+      "prior_median_ms": 15.635671,
+      "current_median_ms": 18.895814,
+      "prior_p99_ms": 16.72428948,
+      "current_p99_ms": 26.18400275,
+      "cross_node_ratio_for_internal_review": 1.2085067535636942
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/file-roundtrip",
+      "prior_median_ms": 17.6149575,
+      "current_median_ms": 19.6883155,
+      "prior_p99_ms": 18.51249101,
+      "current_p99_ms": 27.54979932,
+      "cross_node_ratio_for_internal_review": 1.117704399797729
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/native-sum",
+      "prior_median_ms": 15.3583265,
+      "current_median_ms": 16.828179,
+      "prior_p99_ms": 16.668680520000002,
+      "current_p99_ms": 24.982124499999998,
+      "cross_node_ratio_for_internal_review": 1.0957039492551481
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/external-100",
+      "prior_median_ms": 93.6755515,
+      "current_median_ms": 108.3349525,
+      "prior_p99_ms": 115.82840492,
+      "current_p99_ms": 142.40582504999998,
+      "cross_node_ratio_for_internal_review": 1.1564912163874477
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/short-pipeline",
+      "prior_median_ms": 17.852719999999998,
+      "current_median_ms": 18.287799,
+      "prior_p99_ms": 19.72123638,
+      "current_p99_ms": 24.472322780000002,
+      "cross_node_ratio_for_internal_review": 1.0243704600755517
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/immediate-exit",
+      "prior_median_ms": 2.355216,
+      "current_median_ms": 3.534515,
+      "prior_p99_ms": 7.993338650000003,
+      "current_p99_ms": 8.209029560000001,
+      "cross_node_ratio_for_internal_review": 1.5007179808561082
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/trivial-command",
+      "prior_median_ms": 2.0006755,
+      "current_median_ms": 2.9128295,
+      "prior_p99_ms": 2.7870994800000135,
+      "current_p99_ms": 9.095522880000015,
+      "cross_node_ratio_for_internal_review": 1.4559230120026962
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/interactive",
+      "prior_median_ms": 1.8133785,
+      "current_median_ms": 2.59488,
+      "prior_p99_ms": 3.0266315800000028,
+      "current_p99_ms": 4.794036760000016,
+      "cross_node_ratio_for_internal_review": 1.4309643574135238
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/empty/interactive",
+      "prior_median_ms": 1.824559,
+      "current_median_ms": 2.665573,
+      "prior_p99_ms": 2.6017622600000028,
+      "current_p99_ms": 4.6614041200000305,
+      "cross_node_ratio_for_internal_review": 1.4609409725857043
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/light/interactive",
+      "prior_median_ms": 2.203291,
+      "current_median_ms": 3.0174285,
+      "prior_p99_ms": 2.8290190000000077,
+      "current_p99_ms": 4.825379730000002,
+      "cross_node_ratio_for_internal_review": 1.3695097470102677
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/moderate/interactive",
+      "prior_median_ms": 2.6363695,
+      "current_median_ms": 3.5228,
+      "prior_p99_ms": 4.001990570000001,
+      "current_p99_ms": 5.121733550000001,
+      "cross_node_ratio_for_internal_review": 1.336231510795433
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/function-string",
+      "prior_median_ms": 2.1295010000000003,
+      "current_median_ms": 2.5845735000000003,
+      "prior_p99_ms": 2.89671162,
+      "current_p99_ms": 4.02725682,
+      "cross_node_ratio_for_internal_review": 1.2136991248184434
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/command-capture",
+      "prior_median_ms": 3.5359135,
+      "current_median_ms": 4.2926205,
+      "prior_p99_ms": 4.339262740000001,
+      "current_p99_ms": 6.23494547,
+      "cross_node_ratio_for_internal_review": 1.2140060835764224
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/file-roundtrip",
+      "prior_median_ms": 4.983052499999999,
+      "current_median_ms": 6.0004285,
+      "prior_p99_ms": 5.70252835,
+      "current_p99_ms": 9.57925518,
+      "cross_node_ratio_for_internal_review": 1.2041672248084885
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/native-sum",
+      "prior_median_ms": 2.9788255,
+      "current_median_ms": 3.5769375,
+      "prior_p99_ms": 3.37856017,
+      "current_p99_ms": 4.80668428,
+      "cross_node_ratio_for_internal_review": 1.200787860853212
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/external-100",
+      "prior_median_ms": 94.90795800000001,
+      "current_median_ms": 107.2116575,
+      "prior_p99_ms": 101.43969169,
+      "current_p99_ms": 117.6979092,
+      "cross_node_ratio_for_internal_review": 1.1296382280187716
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/short-pipeline",
+      "prior_median_ms": 4.8628374999999995,
+      "current_median_ms": 5.6680565000000005,
+      "prior_p99_ms": 5.594721750000001,
+      "current_p99_ms": 6.71814762,
+      "cross_node_ratio_for_internal_review": 1.1655862446565408
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/immediate-exit",
+      "prior_median_ms": 1.6304535,
+      "current_median_ms": 2.8943895,
+      "prior_p99_ms": 1.7192479600000001,
+      "current_p99_ms": 5.101510250000001,
+      "cross_node_ratio_for_internal_review": 1.7752051806445261
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/trivial-command",
+      "prior_median_ms": 1.490233,
+      "current_median_ms": 1.856616,
+      "prior_p99_ms": 2.0304561600000004,
+      "current_p99_ms": 5.235689230000003,
+      "cross_node_ratio_for_internal_review": 1.2458561849053136
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/interactive",
+      "prior_median_ms": 1.9370845,
+      "current_median_ms": 2.6942895,
+      "prior_p99_ms": 2.2040788,
+      "current_p99_ms": 4.994029180000001,
+      "cross_node_ratio_for_internal_review": 1.390899312859093
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/interactive-login",
+      "prior_median_ms": 1.8893215,
+      "current_median_ms": 2.3347995,
+      "prior_p99_ms": 1.963091,
+      "current_p99_ms": 4.703749840000002,
+      "cross_node_ratio_for_internal_review": 1.2357872918928832
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/empty/interactive",
+      "prior_median_ms": 3.489902,
+      "current_median_ms": 4.4534075,
+      "prior_p99_ms": 3.92843958,
+      "current_p99_ms": 10.624276430000005,
+      "cross_node_ratio_for_internal_review": 1.276083826995715
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/empty/interactive-login",
+      "prior_median_ms": 17.4229455,
+      "current_median_ms": 21.0413985,
+      "prior_p99_ms": 17.987023100000002,
+      "current_p99_ms": 38.08069364,
+      "cross_node_ratio_for_internal_review": 1.2076831957030456
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/light/interactive",
+      "prior_median_ms": 3.5098465,
+      "current_median_ms": 4.232468,
+      "prior_p99_ms": 3.67580578,
+      "current_p99_ms": 12.318843690000001,
+      "cross_node_ratio_for_internal_review": 1.205884074987325
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/light/interactive-login",
+      "prior_median_ms": 17.417899499999997,
+      "current_median_ms": 19.689264,
+      "prior_p99_ms": 19.15990026,
+      "current_p99_ms": 32.83712079,
+      "cross_node_ratio_for_internal_review": 1.130404042117708
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/moderate/interactive",
+      "prior_median_ms": 3.7659435,
+      "current_median_ms": 4.519746,
+      "prior_p99_ms": 4.52214717,
+      "current_p99_ms": 11.122763840000003,
+      "cross_node_ratio_for_internal_review": 1.2001629870442825
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/moderate/interactive-login",
+      "prior_median_ms": 17.636217000000002,
+      "current_median_ms": 20.633020000000002,
+      "prior_p99_ms": 18.981908830000002,
+      "current_p99_ms": 34.18475350000001,
+      "cross_node_ratio_for_internal_review": 1.169923232402958
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/function-string",
+      "prior_median_ms": 1.5742835,
+      "current_median_ms": 2.0600965,
+      "prior_p99_ms": 1.68332221,
+      "current_p99_ms": 3.42670225,
+      "cross_node_ratio_for_internal_review": 1.3085930837743014
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/command-capture",
+      "prior_median_ms": 2.7675080000000003,
+      "current_median_ms": 3.4443745,
+      "prior_p99_ms": 2.84758329,
+      "current_p99_ms": 5.13460989,
+      "cross_node_ratio_for_internal_review": 1.2445761674401663
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/file-roundtrip",
+      "prior_median_ms": 3.540188,
+      "current_median_ms": 4.236085,
+      "prior_p99_ms": 3.70027923,
+      "current_p99_ms": 7.359922540000001,
+      "cross_node_ratio_for_internal_review": 1.1965706341019178
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/native-sum",
+      "prior_median_ms": 4.7029499999999995,
+      "current_median_ms": 5.123305,
+      "prior_p99_ms": 4.77246383,
+      "current_p99_ms": 8.336008190000001,
+      "cross_node_ratio_for_internal_review": 1.0893811331185748
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/external-100",
+      "prior_median_ms": 80.39752,
+      "current_median_ms": 97.3339425,
+      "prior_p99_ms": 81.20470329000001,
+      "current_p99_ms": 110.40244385000001,
+      "cross_node_ratio_for_internal_review": 1.2106585190687476
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/short-pipeline",
+      "prior_median_ms": 3.8150715,
+      "current_median_ms": 4.7667485,
+      "prior_p99_ms": 4.03384717,
+      "current_p99_ms": 6.10177845,
+      "cross_node_ratio_for_internal_review": 1.2494519434301559
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/immediate-exit",
+      "prior_median_ms": 2.032667,
+      "current_median_ms": 2.770339,
+      "prior_p99_ms": 2.2903534000000003,
+      "current_p99_ms": 4.49552416,
+      "cross_node_ratio_for_internal_review": 1.362908435075691
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/trivial-command",
+      "prior_median_ms": 1.9681035,
+      "current_median_ms": 2.354051,
+      "prior_p99_ms": 2.17763119,
+      "current_p99_ms": 3.5496576500000003,
+      "cross_node_ratio_for_internal_review": 1.1961012213026398
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/interactive",
+      "prior_median_ms": 2.682271,
+      "current_median_ms": 3.4682440000000003,
+      "prior_p99_ms": 2.8574962100000003,
+      "current_p99_ms": 8.124742650000002,
+      "cross_node_ratio_for_internal_review": 1.2930252014058237
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/interactive-login",
+      "prior_median_ms": 2.5884375,
+      "current_median_ms": 3.197846,
+      "prior_p99_ms": 2.7083331800000003,
+      "current_p99_ms": 7.20795704,
+      "cross_node_ratio_for_internal_review": 1.23543489074007
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/empty/interactive",
+      "prior_median_ms": 504.68859399999997,
+      "current_median_ms": 579.386966,
+      "prior_p99_ms": 579.8628840900001,
+      "current_p99_ms": 789.88783484,
+      "cross_node_ratio_for_internal_review": 1.1480088373069117
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/empty/interactive-login",
+      "prior_median_ms": 504.8496235,
+      "current_median_ms": 578.1234565,
+      "prior_p99_ms": 520.31181849,
+      "current_p99_ms": 720.5271186900001,
+      "cross_node_ratio_for_internal_review": 1.1451399180849344
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/light/interactive",
+      "prior_median_ms": 505.8492245,
+      "current_median_ms": 582.1147865,
+      "prior_p99_ms": 531.93328509,
+      "current_p99_ms": 668.7162703900001,
+      "cross_node_ratio_for_internal_review": 1.150767379500055
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/light/interactive-login",
+      "prior_median_ms": 507.9622255,
+      "current_median_ms": 575.1767325000001,
+      "prior_p99_ms": 535.09423044,
+      "current_p99_ms": 649.38516486,
+      "cross_node_ratio_for_internal_review": 1.1323218610081471
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/moderate/interactive",
+      "prior_median_ms": 505.3735745,
+      "current_median_ms": 566.109207,
+      "prior_p99_ms": 562.4254309400001,
+      "current_p99_ms": 660.3804488100001,
+      "cross_node_ratio_for_internal_review": 1.1201796761140306
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/moderate/interactive-login",
+      "prior_median_ms": 506.55461749999995,
+      "current_median_ms": 575.844109,
+      "prior_p99_ms": 547.35004882,
+      "current_p99_ms": 695.28190568,
+      "cross_node_ratio_for_internal_review": 1.1367858254692547
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/function-string",
+      "prior_median_ms": 2.168127,
+      "current_median_ms": 2.849866,
+      "prior_p99_ms": 2.48856179,
+      "current_p99_ms": 4.69872407,
+      "cross_node_ratio_for_internal_review": 1.314436838801417
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/command-capture",
+      "prior_median_ms": 3.3356820000000003,
+      "current_median_ms": 4.0104935,
+      "prior_p99_ms": 3.4138343200000003,
+      "current_p99_ms": 6.00874737,
+      "cross_node_ratio_for_internal_review": 1.2023009087796737
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/file-roundtrip",
+      "prior_median_ms": 4.07618,
+      "current_median_ms": 4.8531794999999995,
+      "prior_p99_ms": 4.96505387,
+      "current_p99_ms": 7.3955341599999995,
+      "cross_node_ratio_for_internal_review": 1.1906195261249501
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/native-sum",
+      "prior_median_ms": 3.070914,
+      "current_median_ms": 3.59276,
+      "prior_p99_ms": 3.21981436,
+      "current_p99_ms": 13.757710520000002,
+      "cross_node_ratio_for_internal_review": 1.169931818344636
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/external-100",
+      "prior_median_ms": 94.530223,
+      "current_median_ms": 115.4802205,
+      "prior_p99_ms": 97.65090705,
+      "current_p99_ms": 153.88474173999998,
+      "cross_node_ratio_for_internal_review": 1.2216222159975227
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/short-pipeline",
+      "prior_median_ms": 4.4593215,
+      "current_median_ms": 5.9992965,
+      "prior_p99_ms": 4.59818252,
+      "current_p99_ms": 8.842034779999999,
+      "cross_node_ratio_for_internal_review": 1.3453384107873811
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/immediate-exit",
+      "prior_median_ms": 2.5532814999999998,
+      "current_median_ms": 7.1892075,
+      "prior_p99_ms": 2.6874418099999997,
+      "current_p99_ms": 16.505679800000003,
+      "cross_node_ratio_for_internal_review": 2.815673673271044
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/trivial-command",
+      "prior_median_ms": 2.2997885,
+      "current_median_ms": 2.981302,
+      "prior_p99_ms": 2.42830752,
+      "current_p99_ms": 5.882083860000001,
+      "cross_node_ratio_for_internal_review": 1.2963374675540815
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/interactive",
+      "prior_median_ms": 18.314385,
+      "current_median_ms": 25.242163,
+      "prior_p99_ms": 18.979111760000002,
+      "current_p99_ms": 45.20686353000001,
+      "cross_node_ratio_for_internal_review": 1.3782697589899962
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/interactive-login",
+      "prior_median_ms": 19.380876,
+      "current_median_ms": 24.0281795,
+      "prior_p99_ms": 20.61447647,
+      "current_p99_ms": 38.72174041,
+      "cross_node_ratio_for_internal_review": 1.2397881034892333
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/empty/interactive",
+      "prior_median_ms": 66.321314,
+      "current_median_ms": 86.197587,
+      "prior_p99_ms": 71.99178915,
+      "current_p99_ms": 138.79690307,
+      "cross_node_ratio_for_internal_review": 1.299696610353649
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/empty/interactive-login",
+      "prior_median_ms": 62.996557,
+      "current_median_ms": 77.066306,
+      "prior_p99_ms": 70.05075599,
+      "current_p99_ms": 104.88880065000001,
+      "cross_node_ratio_for_internal_review": 1.223341554999585
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/light/interactive",
+      "prior_median_ms": 62.8294655,
+      "current_median_ms": 77.1257245,
+      "prior_p99_ms": 65.86607546,
+      "current_p99_ms": 127.07110745000006,
+      "cross_node_ratio_for_internal_review": 1.2275406751629936
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/light/interactive-login",
+      "prior_median_ms": 59.963554,
+      "current_median_ms": 72.81787449999999,
+      "prior_p99_ms": 64.00645748000001,
+      "current_p99_ms": 105.3076964,
+      "cross_node_ratio_for_internal_review": 1.2143688898092997
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/moderate/interactive",
+      "prior_median_ms": 61.897422,
+      "current_median_ms": 75.3342245,
+      "prior_p99_ms": 65.58871947,
+      "current_p99_ms": 112.50939708,
+      "cross_node_ratio_for_internal_review": 1.2170817792702255
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/moderate/interactive-login",
+      "prior_median_ms": 60.338702,
+      "current_median_ms": 74.4870855,
+      "prior_p99_ms": 67.76392046000001,
+      "current_p99_ms": 114.70635938000001,
+      "cross_node_ratio_for_internal_review": 1.2344827288462388
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/function-string",
+      "prior_median_ms": 2.7222980000000003,
+      "current_median_ms": 4.3798435,
+      "prior_p99_ms": 3.45698795,
+      "current_p99_ms": 5.5778389200000005,
+      "cross_node_ratio_for_internal_review": 1.6088773161498113
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/command-capture",
+      "prior_median_ms": 3.5231779999999997,
+      "current_median_ms": 4.685343,
+      "prior_p99_ms": 3.66910873,
+      "current_p99_ms": 11.95788128,
+      "cross_node_ratio_for_internal_review": 1.3298626978256562
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/file-roundtrip",
+      "prior_median_ms": 4.151968,
+      "current_median_ms": 5.439045,
+      "prior_p99_ms": 4.30017943,
+      "current_p99_ms": 12.436062370000002,
+      "cross_node_ratio_for_internal_review": 1.3099920326938936
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/native-sum",
+      "prior_median_ms": 101.2893565,
+      "current_median_ms": 117.83336600000001,
+      "prior_p99_ms": 103.65322099000001,
+      "current_p99_ms": 179.35773778,
+      "cross_node_ratio_for_internal_review": 1.1633341357045743
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/external-100",
+      "prior_median_ms": 69.470493,
+      "current_median_ms": 81.8918835,
+      "prior_p99_ms": 72.26829042,
+      "current_p99_ms": 134.77001403000003,
+      "cross_node_ratio_for_internal_review": 1.178800955104781
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/short-pipeline",
+      "prior_median_ms": 4.1173605,
+      "current_median_ms": 5.440409,
+      "prior_p99_ms": 4.498726700000001,
+      "current_p99_ms": 7.88719997,
+      "cross_node_ratio_for_internal_review": 1.3213341411324073
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/immediate-exit",
+      "prior_median_ms": 12.8982125,
+      "current_median_ms": 26.8584715,
+      "prior_p99_ms": 14.07310348,
+      "current_p99_ms": 59.065790680000006,
+      "cross_node_ratio_for_internal_review": 2.0823405956445518
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/trivial-command",
+      "prior_median_ms": 12.591770499999999,
+      "current_median_ms": 15.289995999999999,
+      "prior_p99_ms": 14.41194124,
+      "current_p99_ms": 23.37744145,
+      "cross_node_ratio_for_internal_review": 1.2142848378629518
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/interactive",
+      "prior_median_ms": 16.224213499999998,
+      "current_median_ms": 20.926474,
+      "prior_p99_ms": 17.06742404,
+      "current_p99_ms": 34.100223310000004,
+      "cross_node_ratio_for_internal_review": 1.2898297966801289
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/interactive-login",
+      "prior_median_ms": 16.923186,
+      "current_median_ms": 19.254627499999998,
+      "prior_p99_ms": 21.964229530000004,
+      "current_p99_ms": 32.13212804,
+      "cross_node_ratio_for_internal_review": 1.1377661097620742
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/empty/interactive",
+      "prior_median_ms": 19.2183955,
+      "current_median_ms": 21.939283,
+      "prior_p99_ms": 23.76074613,
+      "current_p99_ms": 34.94209190000001,
+      "cross_node_ratio_for_internal_review": 1.141577245613454
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/empty/interactive-login",
+      "prior_median_ms": 19.205296500000003,
+      "current_median_ms": 22.4477395,
+      "prior_p99_ms": 24.012018690000005,
+      "current_p99_ms": 41.016074550000006,
+      "cross_node_ratio_for_internal_review": 1.1688306660613126
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/light/interactive",
+      "prior_median_ms": 19.486071,
+      "current_median_ms": 22.559813,
+      "prior_p99_ms": 21.569029750000002,
+      "current_p99_ms": 31.887361230000003,
+      "cross_node_ratio_for_internal_review": 1.1577404701029776
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/light/interactive-login",
+      "prior_median_ms": 19.2337995,
+      "current_median_ms": 21.763578,
+      "prior_p99_ms": 21.30293749,
+      "current_p99_ms": 36.981181090000014,
+      "cross_node_ratio_for_internal_review": 1.1315277566452744
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/moderate/interactive",
+      "prior_median_ms": 19.517072,
+      "current_median_ms": 22.917801,
+      "prior_p99_ms": 22.16985183,
+      "current_p99_ms": 42.33176227000001,
+      "cross_node_ratio_for_internal_review": 1.1742438107519408
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/moderate/interactive-login",
+      "prior_median_ms": 19.7854345,
+      "current_median_ms": 22.970087,
+      "prior_p99_ms": 21.105915200000002,
+      "current_p99_ms": 34.43529686000001,
+      "cross_node_ratio_for_internal_review": 1.160959442159332
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/function-string",
+      "prior_median_ms": 12.991492000000001,
+      "current_median_ms": 15.507218,
+      "prior_p99_ms": 13.57703235,
+      "current_p99_ms": 22.01120125,
+      "cross_node_ratio_for_internal_review": 1.193644117242269
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/command-capture",
+      "prior_median_ms": 13.9553595,
+      "current_median_ms": 16.639159499999998,
+      "prior_p99_ms": 14.34384094,
+      "current_p99_ms": 26.091273330000003,
+      "cross_node_ratio_for_internal_review": 1.1923132112791504
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/file-roundtrip",
+      "prior_median_ms": 15.193471500000001,
+      "current_median_ms": 17.9824275,
+      "prior_p99_ms": 15.743688310000001,
+      "current_p99_ms": 27.549762310000002,
+      "cross_node_ratio_for_internal_review": 1.1835627887938578
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/native-sum",
+      "prior_median_ms": 13.5150745,
+      "current_median_ms": 15.572878,
+      "prior_p99_ms": 13.66190339,
+      "current_p99_ms": 23.40597465,
+      "cross_node_ratio_for_internal_review": 1.1522598710055205
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/external-100",
+      "prior_median_ms": 88.23135049999999,
+      "current_median_ms": 105.12736699999999,
+      "prior_p99_ms": 89.81964009,
+      "current_p99_ms": 145.08289815,
+      "cross_node_ratio_for_internal_review": 1.19149674581939
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/short-pipeline",
+      "prior_median_ms": 15.0230685,
+      "current_median_ms": 17.3190285,
+      "prior_p99_ms": 15.32087501,
+      "current_p99_ms": 27.85372684,
+      "cross_node_ratio_for_internal_review": 1.152828964335748
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/immediate-exit",
+      "prior_median_ms": 2.184684,
+      "current_median_ms": 4.3831305,
+      "prior_p99_ms": 3.9277695400000003,
+      "current_p99_ms": 11.291578830000002,
+      "cross_node_ratio_for_internal_review": 2.0062995380567625
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/trivial-command",
+      "prior_median_ms": 1.978144,
+      "current_median_ms": 2.9136284999999997,
+      "prior_p99_ms": 2.1316501000000003,
+      "current_p99_ms": 5.375454,
+      "cross_node_ratio_for_internal_review": 1.472910212805539
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/interactive",
+      "prior_median_ms": 1.8068095,
+      "current_median_ms": 2.288925,
+      "prior_p99_ms": 1.91363097,
+      "current_p99_ms": 5.650374010000001,
+      "cross_node_ratio_for_internal_review": 1.2668325022643505
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/empty/interactive",
+      "prior_median_ms": 1.8179349999999999,
+      "current_median_ms": 2.3898260000000002,
+      "prior_p99_ms": 1.8800211199999999,
+      "current_p99_ms": 8.386375680000004,
+      "cross_node_ratio_for_internal_review": 1.3145827546089384
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/light/interactive",
+      "prior_median_ms": 2.1571185,
+      "current_median_ms": 2.983997,
+      "prior_p99_ms": 2.36209751,
+      "current_p99_ms": 6.01051377,
+      "cross_node_ratio_for_internal_review": 1.3833254872182497
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/moderate/interactive",
+      "prior_median_ms": 2.6125439999999998,
+      "current_median_ms": 3.202117,
+      "prior_p99_ms": 3.2709307500000007,
+      "current_p99_ms": 14.03456422000001,
+      "cross_node_ratio_for_internal_review": 1.225670074838931
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/function-string",
+      "prior_median_ms": 2.0638435,
+      "current_median_ms": 2.747095,
+      "prior_p99_ms": 2.1362824000000002,
+      "current_p99_ms": 4.75745893,
+      "cross_node_ratio_for_internal_review": 1.3310578054973645
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/command-capture",
+      "prior_median_ms": 3.3388755,
+      "current_median_ms": 4.7842225,
+      "prior_p99_ms": 3.4257263,
+      "current_p99_ms": 6.79886822,
+      "cross_node_ratio_for_internal_review": 1.4328843648108474
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/file-roundtrip",
+      "prior_median_ms": 4.7262355,
+      "current_median_ms": 6.246593000000001,
+      "prior_p99_ms": 4.85512965,
+      "current_p99_ms": 9.32780469,
+      "cross_node_ratio_for_internal_review": 1.321684668485098
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/native-sum",
+      "prior_median_ms": 2.8416575,
+      "current_median_ms": 3.914352,
+      "prior_p99_ms": 2.9263524199999997,
+      "current_p99_ms": 6.1529590700000005,
+      "cross_node_ratio_for_internal_review": 1.3774890182930208
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/external-100",
+      "prior_median_ms": 91.5933925,
+      "current_median_ms": 110.45170350000001,
+      "prior_p99_ms": 92.55986425,
+      "current_p99_ms": 150.09895071,
+      "cross_node_ratio_for_internal_review": 1.205891609484822
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/short-pipeline",
+      "prior_median_ms": 4.5494835,
+      "current_median_ms": 5.964893,
+      "prior_p99_ms": 4.8666082699999995,
+      "current_p99_ms": 9.20263738,
+      "cross_node_ratio_for_internal_review": 1.311114327593451
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-empty-1000/bash",
+      "prior_median_ms": 32.535349,
+      "current_median_ms": 37.255163499999995,
+      "prior_p99_ms": 38.6342663,
+      "current_p99_ms": 43.66766803,
+      "cross_node_ratio_for_internal_review": 1.1450672774403003
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-1000/bash",
+      "prior_median_ms": 22.0426195,
+      "current_median_ms": 25.536157,
+      "prior_p99_ms": 23.73162072,
+      "current_p99_ms": 30.09023597,
+      "cross_node_ratio_for_internal_review": 1.1584901240980001
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-empty-10000/bash",
+      "prior_median_ms": 313.528419,
+      "current_median_ms": 361.1835845,
+      "prior_p99_ms": 325.20309775,
+      "current_p99_ms": 429.5029713,
+      "cross_node_ratio_for_internal_review": 1.1519963187132967
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-10000/bash",
+      "prior_median_ms": 192.80187999999998,
+      "current_median_ms": 228.30838849999998,
+      "prior_p99_ms": 201.51420059,
+      "current_p99_ms": 253.60429319000002,
+      "cross_node_ratio_for_internal_review": 1.18416059272866
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-empty-100000/bash",
+      "prior_median_ms": 3284.67033,
+      "current_median_ms": 3848.08041,
+      "prior_p99_ms": 3341.17053368,
+      "current_p99_ms": 4234.82423672,
+      "cross_node_ratio_for_internal_review": 1.1715271316132356
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-100000/bash",
+      "prior_median_ms": 2256.578291,
+      "current_median_ms": 2760.351996,
+      "prior_p99_ms": 2530.89085736,
+      "current_p99_ms": 2931.97362428,
+      "cross_node_ratio_for_internal_review": 1.2232467213786558
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-small-100000/bash",
+      "prior_median_ms": 4382.860996,
+      "current_median_ms": 6514.449819,
+      "prior_p99_ms": 4619.728132,
+      "current_p99_ms": 6940.43128912,
+      "cross_node_ratio_for_internal_review": 1.4863464355692289
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-tree-100000/bash",
+      "prior_median_ms": 2467.873657,
+      "current_median_ms": 2614.269059,
+      "prior_p99_ms": 2606.24602584,
+      "current_p99_ms": 2949.0775656,
+      "cross_node_ratio_for_internal_review": 1.059320460585475
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "copy-small-10000/bash",
+      "prior_median_ms": 490.406403,
+      "current_median_ms": 598.232609,
+      "prior_p99_ms": 503.14197187,
+      "current_p99_ms": 876.50812642,
+      "cross_node_ratio_for_internal_review": 1.2198711218703235
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "rename-selected-10000/bash",
+      "prior_median_ms": 332.17412,
+      "current_median_ms": 376.203507,
+      "prior_p99_ms": 344.84843713000004,
+      "current_p99_ms": 456.41515792,
+      "cross_node_ratio_for_internal_review": 1.1325491191186117
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "concat-small-10000/bash",
+      "prior_median_ms": 99.7772895,
+      "current_median_ms": 121.193367,
+      "prior_p99_ms": 104.95397335999999,
+      "current_p99_ms": 166.33355915,
+      "cross_node_ratio_for_internal_review": 1.2146387981405329
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "metadata-10000/bash",
+      "prior_median_ms": 38.025316000000004,
+      "current_median_ms": 50.311071999999996,
+      "prior_p99_ms": 38.817926240000006,
+      "current_p99_ms": 57.03549746,
+      "cross_node_ratio_for_internal_review": 1.323094119717506
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "traverse-100000/bash",
+      "prior_median_ms": 454.618411,
+      "current_median_ms": 539.545127,
+      "prior_p99_ms": 465.17435608,
+      "current_p99_ms": 562.2838208,
+      "cross_node_ratio_for_internal_review": 1.1868087916043506
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "log-filter-group/bash",
+      "prior_median_ms": 43.636934999999994,
+      "current_median_ms": 51.08434,
+      "prior_p99_ms": 45.16696137,
+      "current_p99_ms": 68.76057612,
+      "cross_node_ratio_for_internal_review": 1.17066746323957
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-1/bash",
+      "prior_median_ms": 2.5065165,
+      "current_median_ms": 3.1991750000000003,
+      "prior_p99_ms": 2.8740739100000003,
+      "current_p99_ms": 4.7322216,
+      "cross_node_ratio_for_internal_review": 1.276343084116941
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-10/bash",
+      "prior_median_ms": 9.5659445,
+      "current_median_ms": 11.658988,
+      "prior_p99_ms": 9.80597574,
+      "current_p99_ms": 15.218353570000001,
+      "cross_node_ratio_for_internal_review": 1.2188015516920467
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-100/bash",
+      "prior_median_ms": 80.61273249999999,
+      "current_median_ms": 96.8281425,
+      "prior_p99_ms": 83.51426181999999,
+      "current_p99_ms": 105.38744795,
+      "cross_node_ratio_for_internal_review": 1.2011519706269727
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-1000/bash",
+      "prior_median_ms": 790.4357765,
+      "current_median_ms": 958.2538605,
+      "prior_p99_ms": 818.2899046699999,
+      "current_p99_ms": 1103.93407385,
+      "cross_node_ratio_for_internal_review": 1.21231084041146
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "pipeline-2/bash",
+      "prior_median_ms": 3.9840335,
+      "current_median_ms": 4.78002,
+      "prior_p99_ms": 4.05117225,
+      "current_p99_ms": 6.6395252000000005,
+      "cross_node_ratio_for_internal_review": 1.1997941282371247
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "pipeline-4/bash",
+      "prior_median_ms": 6.3467445,
+      "current_median_ms": 7.7708425000000005,
+      "prior_p99_ms": 6.46813994,
+      "current_p99_ms": 9.80813731,
+      "cross_node_ratio_for_internal_review": 1.2243824373267271
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "pipeline-8/bash",
+      "prior_median_ms": 10.820402,
+      "current_median_ms": 13.4675195,
+      "prior_p99_ms": 11.169678829999999,
+      "current_p99_ms": 14.6592299,
+      "cross_node_ratio_for_internal_review": 1.2446413266346297
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "arithmetic/bash",
+      "prior_median_ms": 63.952111,
+      "current_median_ms": 66.413256,
+      "prior_p99_ms": 64.46144394,
+      "current_p99_ms": 101.40105704999999,
+      "cross_node_ratio_for_internal_review": 1.0384841870192527
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "function-calls/bash",
+      "prior_median_ms": 51.196688,
+      "current_median_ms": 55.273392,
+      "prior_p99_ms": 54.02122787,
+      "current_p99_ms": 62.933561409999996,
+      "cross_node_ratio_for_internal_review": 1.0796282759541007
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "fibonacci-mod/bash",
+      "prior_median_ms": 7.4755005,
+      "current_median_ms": 8.145141500000001,
+      "prior_p99_ms": 11.45861516,
+      "current_p99_ms": 10.46527961,
+      "cross_node_ratio_for_internal_review": 1.089578082430735
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "string-transform/bash",
+      "prior_median_ms": 34.681956,
+      "current_median_ms": 36.5169805,
+      "prior_p99_ms": 37.567258030000005,
+      "current_p99_ms": 49.26565388,
+      "cross_node_ratio_for_internal_review": 1.0529100636653828
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "source-tree-report/bash",
+      "prior_median_ms": 211.1241695,
+      "current_median_ms": 257.104245,
+      "prior_p99_ms": 222.67838249,
+      "current_p99_ms": 319.33335919,
+      "cross_node_ratio_for_internal_review": 1.2177868863091017
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "selected-cleanup/bash",
+      "prior_median_ms": 30.9347265,
+      "current_median_ms": 36.641737500000005,
+      "prior_p99_ms": 37.46006679,
+      "current_p99_ms": 51.24292199,
+      "cross_node_ratio_for_internal_review": 1.1844855812770805
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-empty-1000/zsh",
+      "prior_median_ms": 50.222468500000005,
+      "current_median_ms": 56.656305,
+      "prior_p99_ms": 54.85821942,
+      "current_p99_ms": 59.78634789,
+      "cross_node_ratio_for_internal_review": 1.1281067357332306
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-1000/zsh",
+      "prior_median_ms": 22.650471500000002,
+      "current_median_ms": 26.2006575,
+      "prior_p99_ms": 24.4321876,
+      "current_p99_ms": 31.75440104,
+      "cross_node_ratio_for_internal_review": 1.1567378409760696
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-empty-10000/zsh",
+      "prior_median_ms": 488.3311735,
+      "current_median_ms": 564.4805295,
+      "prior_p99_ms": 504.08023047,
+      "current_p99_ms": 641.17195492,
+      "cross_node_ratio_for_internal_review": 1.1559379374743113
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-10000/zsh",
+      "prior_median_ms": 193.4184385,
+      "current_median_ms": 220.7285985,
+      "prior_p99_ms": 219.59818428,
+      "current_p99_ms": 276.33653544,
+      "cross_node_ratio_for_internal_review": 1.1411972933490515
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-empty-100000/zsh",
+      "prior_median_ms": 5108.552689,
+      "current_median_ms": 5920.048343,
+      "prior_p99_ms": 5161.96060572,
+      "current_p99_ms": 6464.71636668,
+      "cross_node_ratio_for_internal_review": 1.1588504031185496
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-100000/zsh",
+      "prior_median_ms": 2043.680872,
+      "current_median_ms": 2590.502154,
+      "prior_p99_ms": 2415.42900196,
+      "current_p99_ms": 3079.8689572000003,
+      "cross_node_ratio_for_internal_review": 1.2675668640304227
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-small-100000/zsh",
+      "prior_median_ms": 6100.810514,
+      "current_median_ms": 7848.619274,
+      "prior_p99_ms": 6352.80332824,
+      "current_p99_ms": 8946.566872719999,
+      "cross_node_ratio_for_internal_review": 1.2864879602454737
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-tree-100000/zsh",
+      "prior_median_ms": 2271.487291,
+      "current_median_ms": 2374.243885,
+      "prior_p99_ms": 2447.0821482799997,
+      "current_p99_ms": 2492.0978777600003,
+      "cross_node_ratio_for_internal_review": 1.045237582621368
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "copy-small-10000/zsh",
+      "prior_median_ms": 486.5581685,
+      "current_median_ms": 606.0930579999999,
+      "prior_p99_ms": 524.58920857,
+      "current_p99_ms": 802.4937385000001,
+      "cross_node_ratio_for_internal_review": 1.2456744069645598
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "rename-selected-10000/zsh",
+      "prior_median_ms": 330.29169049999996,
+      "current_median_ms": 382.77130550000004,
+      "prior_p99_ms": 337.24352975,
+      "current_p99_ms": 429.02407251,
+      "cross_node_ratio_for_internal_review": 1.1588886929627438
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "concat-small-10000/zsh",
+      "prior_median_ms": 99.9283925,
+      "current_median_ms": 129.334777,
+      "prior_p99_ms": 104.16022878,
+      "current_p99_ms": 168.81183012,
+      "cross_node_ratio_for_internal_review": 1.2942745676610379
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "metadata-10000/zsh",
+      "prior_median_ms": 38.4800125,
+      "current_median_ms": 46.6449115,
+      "prior_p99_ms": 39.69323794,
+      "current_p99_ms": 78.52151445000001,
+      "cross_node_ratio_for_internal_review": 1.2121854560208367
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "traverse-100000/zsh",
+      "prior_median_ms": 456.504201,
+      "current_median_ms": 496.453021,
+      "prior_p99_ms": 472.62098072,
+      "current_p99_ms": 516.89097724,
+      "cross_node_ratio_for_internal_review": 1.0875103009183478
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "log-filter-group/zsh",
+      "prior_median_ms": 44.4448635,
+      "current_median_ms": 56.6030455,
+      "prior_p99_ms": 45.60094749,
+      "current_p99_ms": 64.90070761,
+      "cross_node_ratio_for_internal_review": 1.2735565157040027
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-1/zsh",
+      "prior_median_ms": 2.936733,
+      "current_median_ms": 3.776198,
+      "prior_p99_ms": 3.40133994,
+      "current_p99_ms": 4.77053704,
+      "cross_node_ratio_for_internal_review": 1.2858499563971257
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-10/zsh",
+      "prior_median_ms": 11.235516,
+      "current_median_ms": 13.5692245,
+      "prior_p99_ms": 11.65397999,
+      "current_p99_ms": 17.878594470000003,
+      "cross_node_ratio_for_internal_review": 1.2077081729045644
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-100/zsh",
+      "prior_median_ms": 93.9057715,
+      "current_median_ms": 114.453192,
+      "prior_p99_ms": 97.27764705,
+      "current_p99_ms": 138.57387527999998,
+      "cross_node_ratio_for_internal_review": 1.2188089205997312
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-1000/zsh",
+      "prior_median_ms": 926.186839,
+      "current_median_ms": 1087.9363915,
+      "prior_p99_ms": 974.59943138,
+      "current_p99_ms": 1150.02773274,
+      "cross_node_ratio_for_internal_review": 1.1746403054859214
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "pipeline-2/zsh",
+      "prior_median_ms": 4.559283499999999,
+      "current_median_ms": 5.4817105,
+      "prior_p99_ms": 4.82914555,
+      "current_p99_ms": 7.784695650000001,
+      "cross_node_ratio_for_internal_review": 1.2023184125312674
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "pipeline-4/zsh",
+      "prior_median_ms": 7.021836,
+      "current_median_ms": 8.717775,
+      "prior_p99_ms": 7.18987716,
+      "current_p99_ms": 21.0465921,
+      "cross_node_ratio_for_internal_review": 1.241523584430055
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "pipeline-8/zsh",
+      "prior_median_ms": 12.071842,
+      "current_median_ms": 14.3173105,
+      "prior_p99_ms": 12.489300440000001,
+      "current_p99_ms": 20.48406903,
+      "cross_node_ratio_for_internal_review": 1.1860087714865717
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "arithmetic/zsh",
+      "prior_median_ms": 25.072569,
+      "current_median_ms": 26.4578075,
+      "prior_p99_ms": 25.62670704,
+      "current_p99_ms": 39.04766747,
+      "cross_node_ratio_for_internal_review": 1.0552491649339961
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "function-calls/zsh",
+      "prior_median_ms": 137.9192415,
+      "current_median_ms": 186.014591,
+      "prior_p99_ms": 140.18804556,
+      "current_p99_ms": 237.77918956000002,
+      "cross_node_ratio_for_internal_review": 1.3487210992238527
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "fibonacci-mod/zsh",
+      "prior_median_ms": 4.1916665,
+      "current_median_ms": 4.917053,
+      "prior_p99_ms": 6.48564509,
+      "current_p99_ms": 5.94295812,
+      "cross_node_ratio_for_internal_review": 1.1730544402804945
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "string-transform/zsh",
+      "prior_median_ms": 13.8335115,
+      "current_median_ms": 15.972822,
+      "prior_p99_ms": 14.17485938,
+      "current_p99_ms": 20.7736011,
+      "cross_node_ratio_for_internal_review": 1.1546469600289124
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "source-tree-report/zsh",
+      "prior_median_ms": 211.8495065,
+      "current_median_ms": 255.791683,
+      "prior_p99_ms": 220.55904625,
+      "current_p99_ms": 390.23579412000004,
+      "cross_node_ratio_for_internal_review": 1.2074216609043649
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "selected-cleanup/zsh",
+      "prior_median_ms": 31.6558,
+      "current_median_ms": 39.5641805,
+      "prior_p99_ms": 32.97016598,
+      "current_p99_ms": 43.74012806,
+      "cross_node_ratio_for_internal_review": 1.249824060677664
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-empty-1000/fish",
+      "prior_median_ms": 48.7848275,
+      "current_median_ms": 58.5723955,
+      "prior_p99_ms": 50.08359771,
+      "current_p99_ms": 64.4480433,
+      "cross_node_ratio_for_internal_review": 1.200627295443445
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-1000/fish",
+      "prior_median_ms": 22.913152500000002,
+      "current_median_ms": 26.938933499999997,
+      "prior_p99_ms": 23.55452731,
+      "current_p99_ms": 39.4610726,
+      "cross_node_ratio_for_internal_review": 1.175697386031887
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-empty-10000/fish",
+      "prior_median_ms": 474.470065,
+      "current_median_ms": 610.679609,
+      "prior_p99_ms": 491.40799896,
+      "current_p99_ms": 778.0814493700001,
+      "cross_node_ratio_for_internal_review": 1.2870772131851986
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-10000/fish",
+      "prior_median_ms": 193.7868835,
+      "current_median_ms": 231.9823365,
+      "prior_p99_ms": 223.23060595,
+      "current_p99_ms": 281.31666538,
+      "cross_node_ratio_for_internal_review": 1.1971003006506373
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-empty-100000/fish",
+      "prior_median_ms": 4922.951521,
+      "current_median_ms": 6397.615547,
+      "prior_p99_ms": 4963.12917312,
+      "current_p99_ms": 6935.10281604,
+      "cross_node_ratio_for_internal_review": 1.2995487604762055
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-100000/fish",
+      "prior_median_ms": 2514.986341,
+      "current_median_ms": 2544.716801,
+      "prior_p99_ms": 2591.4946658,
+      "current_p99_ms": 3122.21389268,
+      "cross_node_ratio_for_internal_review": 1.0118213206629898
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-small-100000/fish",
+      "prior_median_ms": 7089.225661,
+      "current_median_ms": 9610.062646,
+      "prior_p99_ms": 7328.33713612,
+      "current_p99_ms": 11168.31396404,
+      "cross_node_ratio_for_internal_review": 1.3555870705129187
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-tree-100000/fish",
+      "prior_median_ms": 2370.00827,
+      "current_median_ms": 2347.947656,
+      "prior_p99_ms": 2650.9690250400004,
+      "current_p99_ms": 2899.20113648,
+      "cross_node_ratio_for_internal_review": 0.9906917565312968
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "copy-small-10000/fish",
+      "prior_median_ms": 487.01428599999997,
+      "current_median_ms": 626.1054509999999,
+      "prior_p99_ms": 501.70511073,
+      "current_p99_ms": 685.5978943499999,
+      "cross_node_ratio_for_internal_review": 1.2855997636997447
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "rename-selected-10000/fish",
+      "prior_median_ms": 333.07412650000003,
+      "current_median_ms": 380.59789,
+      "prior_p99_ms": 345.66538509000003,
+      "current_p99_ms": 431.70958595999997,
+      "cross_node_ratio_for_internal_review": 1.1426822431372494
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "concat-small-10000/fish",
+      "prior_median_ms": 101.8688865,
+      "current_median_ms": 125.29431500000001,
+      "prior_p99_ms": 104.05062179000001,
+      "current_p99_ms": 148.45621875999998,
+      "cross_node_ratio_for_internal_review": 1.229956656098327
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "metadata-10000/fish",
+      "prior_median_ms": 38.588826999999995,
+      "current_median_ms": 55.327693,
+      "prior_p99_ms": 45.01450908,
+      "current_p99_ms": 75.7860074,
+      "cross_node_ratio_for_internal_review": 1.4337749369785198
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "traverse-100000/fish",
+      "prior_median_ms": 459.371932,
+      "current_median_ms": 543.076196,
+      "prior_p99_ms": 462.27758604,
+      "current_p99_ms": 726.8266116,
+      "cross_node_ratio_for_internal_review": 1.1822145807550122
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "log-filter-group/fish",
+      "prior_median_ms": 43.297774000000004,
+      "current_median_ms": 54.9982745,
+      "prior_p99_ms": 48.11848013,
+      "current_p99_ms": 67.01238792,
+      "cross_node_ratio_for_internal_review": 1.27023330344881
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-1/fish",
+      "prior_median_ms": 3.5636105000000002,
+      "current_median_ms": 5.226227,
+      "prior_p99_ms": 3.63997592,
+      "current_p99_ms": 7.051751830000001,
+      "cross_node_ratio_for_internal_review": 1.466553934555979
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-10/fish",
+      "prior_median_ms": 9.409468,
+      "current_median_ms": 11.579919499999999,
+      "prior_p99_ms": 9.82493805,
+      "current_p99_ms": 15.722795000000001,
+      "cross_node_ratio_for_internal_review": 1.2306667603311896
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-100/fish",
+      "prior_median_ms": 68.78590750000001,
+      "current_median_ms": 83.887112,
+      "prior_p99_ms": 71.45999327999999,
+      "current_p99_ms": 87.00819731,
+      "cross_node_ratio_for_internal_review": 1.2195392202974134
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-1000/fish",
+      "prior_median_ms": 652.459362,
+      "current_median_ms": 763.0986075,
+      "prior_p99_ms": 659.8261588800001,
+      "current_p99_ms": 859.32337917,
+      "cross_node_ratio_for_internal_review": 1.1695726231298984
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "pipeline-2/fish",
+      "prior_median_ms": 4.3904985,
+      "current_median_ms": 5.6986740000000005,
+      "prior_p99_ms": 4.57395306,
+      "current_p99_ms": 14.77050602,
+      "cross_node_ratio_for_internal_review": 1.2979560293665973
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "pipeline-4/fish",
+      "prior_median_ms": 6.1165295,
+      "current_median_ms": 7.852239000000001,
+      "prior_p99_ms": 6.27488113,
+      "current_p99_ms": 11.73737859,
+      "cross_node_ratio_for_internal_review": 1.2837735843504066
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "pipeline-8/fish",
+      "prior_median_ms": 9.743393999999999,
+      "current_median_ms": 11.8234165,
+      "prior_p99_ms": 9.99577131,
+      "current_p99_ms": 16.25911609,
+      "cross_node_ratio_for_internal_review": 1.2134802821275628
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "arithmetic/fish",
+      "prior_median_ms": 2890.9696805,
+      "current_median_ms": 3949.486651,
+      "prior_p99_ms": 3002.81909285,
+      "current_p99_ms": 4448.68026568,
+      "cross_node_ratio_for_internal_review": 1.366145995110169
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "function-calls/fish",
+      "prior_median_ms": 1282.3044425,
+      "current_median_ms": 1601.0617065000001,
+      "prior_p99_ms": 1344.1130506700001,
+      "current_p99_ms": 2188.4589328,
+      "cross_node_ratio_for_internal_review": 1.248581579721073
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "fibonacci-mod/fish",
+      "prior_median_ms": 137.0976225,
+      "current_median_ms": 171.34601600000002,
+      "prior_p99_ms": 140.36302389,
+      "current_p99_ms": 194.80403772,
+      "cross_node_ratio_for_internal_review": 1.249810265674009
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "string-transform/fish",
+      "prior_median_ms": 799.832731,
+      "current_median_ms": 900.1164935,
+      "prior_p99_ms": 828.37103695,
+      "current_p99_ms": 1158.56624131,
+      "cross_node_ratio_for_internal_review": 1.1253809185510815
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "source-tree-report/fish",
+      "prior_median_ms": 209.8834605,
+      "current_median_ms": 262.3246705,
+      "prior_p99_ms": 215.86709653,
+      "current_p99_ms": 314.95875067000003,
+      "cross_node_ratio_for_internal_review": 1.2498587067083355
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "selected-cleanup/fish",
+      "prior_median_ms": 31.476881499999998,
+      "current_median_ms": 39.98752399999999,
+      "prior_p99_ms": 32.94758821,
+      "current_p99_ms": 52.24366181,
+      "cross_node_ratio_for_internal_review": 1.27037756265658
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-empty-1000/nu",
+      "prior_median_ms": 45.8110715,
+      "current_median_ms": 55.372567000000004,
+      "prior_p99_ms": 54.41224014,
+      "current_p99_ms": 75.86568317,
+      "cross_node_ratio_for_internal_review": 1.208715823204441
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-1000/nu",
+      "prior_median_ms": 61.3709975,
+      "current_median_ms": 71.396521,
+      "prior_p99_ms": 65.56610565,
+      "current_p99_ms": 86.56754996,
+      "cross_node_ratio_for_internal_review": 1.1633593050202582
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-empty-10000/nu",
+      "prior_median_ms": 341.7833995,
+      "current_median_ms": 419.651018,
+      "prior_p99_ms": 367.92968497,
+      "current_p99_ms": 569.03347436,
+      "cross_node_ratio_for_internal_review": 1.2278273860401463
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-10000/nu",
+      "prior_median_ms": 506.510559,
+      "current_median_ms": 596.9510760000001,
+      "prior_p99_ms": 541.5506037199999,
+      "current_p99_ms": 654.47312444,
+      "cross_node_ratio_for_internal_review": 1.178556034801241
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-empty-100000/nu",
+      "prior_median_ms": 3534.623238,
+      "current_median_ms": 4076.042262,
+      "prior_p99_ms": 3709.8688308,
+      "current_p99_ms": 4696.117926479999,
+      "cross_node_ratio_for_internal_review": 1.1531758797314848
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-100000/nu",
+      "prior_median_ms": 6288.551362,
+      "current_median_ms": 8048.719926,
+      "prior_p99_ms": 6892.3078862,
+      "current_p99_ms": 8475.003802360001,
+      "cross_node_ratio_for_internal_review": 1.2799004830645446
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-small-100000/nu",
+      "prior_median_ms": 4145.883389,
+      "current_median_ms": 5863.296261,
+      "prior_p99_ms": 4320.4082081999995,
+      "current_p99_ms": 8468.06970332,
+      "cross_node_ratio_for_internal_review": 1.414245339499104
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-tree-100000/nu",
+      "prior_median_ms": 6714.992532,
+      "current_median_ms": 7842.286612,
+      "prior_p99_ms": 7273.806253719999,
+      "current_p99_ms": 8777.61674848,
+      "cross_node_ratio_for_internal_review": 1.1678771904254441
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "copy-small-10000/nu",
+      "prior_median_ms": 1540.46471,
+      "current_median_ms": 1937.112212,
+      "prior_p99_ms": 1721.42070327,
+      "current_p99_ms": 2468.1299673000003,
+      "cross_node_ratio_for_internal_review": 1.2574856141949529
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "rename-selected-10000/nu",
+      "prior_median_ms": 1104.0510695,
+      "current_median_ms": 1316.4949405,
+      "prior_p99_ms": 1145.2568866899999,
+      "current_p99_ms": 1481.24715503,
+      "cross_node_ratio_for_internal_review": 1.192422141392618
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "concat-small-10000/nu",
+      "prior_median_ms": 508.6101785,
+      "current_median_ms": 644.527557,
+      "prior_p99_ms": 524.71473224,
+      "current_p99_ms": 818.30014529,
+      "cross_node_ratio_for_internal_review": 1.2672329108726241
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "metadata-10000/nu",
+      "prior_median_ms": 1684.5966525,
+      "current_median_ms": 2083.681908,
+      "prior_p99_ms": 1808.95556829,
+      "current_p99_ms": 2551.3256019200003,
+      "cross_node_ratio_for_internal_review": 1.2369025575990216
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "traverse-100000/nu",
+      "prior_median_ms": 240.809675,
+      "current_median_ms": 261.149724,
+      "prior_p99_ms": 252.13353664,
+      "current_p99_ms": 302.75603988,
+      "cross_node_ratio_for_internal_review": 1.0844652483335646
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "log-filter-group/nu",
+      "prior_median_ms": 54.3394055,
+      "current_median_ms": 79.587536,
+      "prior_p99_ms": 56.42458151,
+      "current_p99_ms": 110.62768390000001,
+      "cross_node_ratio_for_internal_review": 1.464637591590876
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-1/nu",
+      "prior_median_ms": 13.8256005,
+      "current_median_ms": 16.860104,
+      "prior_p99_ms": 14.07408674,
+      "current_p99_ms": 31.81640792,
+      "cross_node_ratio_for_internal_review": 1.219484390569509
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-10/nu",
+      "prior_median_ms": 20.664773,
+      "current_median_ms": 26.595824,
+      "prior_p99_ms": 21.07943365,
+      "current_p99_ms": 34.291910630000004,
+      "cross_node_ratio_for_internal_review": 1.2870126373998882
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-100/nu",
+      "prior_median_ms": 88.06209050000001,
+      "current_median_ms": 108.0148385,
+      "prior_p99_ms": 90.29800035,
+      "current_p99_ms": 123.05007924,
+      "cross_node_ratio_for_internal_review": 1.2265759066893829
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-1000/nu",
+      "prior_median_ms": 760.7645685,
+      "current_median_ms": 900.4891225,
+      "prior_p99_ms": 797.18647002,
+      "current_p99_ms": 1114.7196850999999,
+      "cross_node_ratio_for_internal_review": 1.1836633300043073
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "pipeline-2/nu",
+      "prior_median_ms": 15.213884,
+      "current_median_ms": 19.025987,
+      "prior_p99_ms": 15.75064744,
+      "current_p99_ms": 44.50479243,
+      "cross_node_ratio_for_internal_review": 1.2505673764832177
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "pipeline-4/nu",
+      "prior_median_ms": 17.265783499999998,
+      "current_median_ms": 20.0260055,
+      "prior_p99_ms": 18.06092979,
+      "current_p99_ms": 31.95257043,
+      "cross_node_ratio_for_internal_review": 1.1598665939486617
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "pipeline-8/nu",
+      "prior_median_ms": 21.385208,
+      "current_median_ms": 25.797319,
+      "prior_p99_ms": 22.176631790000002,
+      "current_p99_ms": 31.986303009999997,
+      "cross_node_ratio_for_internal_review": 1.2063160199330305
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "arithmetic/nu",
+      "prior_median_ms": 29.280604,
+      "current_median_ms": 34.3666755,
+      "prior_p99_ms": 30.713881,
+      "current_p99_ms": 58.81648012,
+      "cross_node_ratio_for_internal_review": 1.1737010445549552
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "function-calls/nu",
+      "prior_median_ms": 41.6476825,
+      "current_median_ms": 48.3010085,
+      "prior_p99_ms": 42.85373146,
+      "current_p99_ms": 73.428823,
+      "cross_node_ratio_for_internal_review": 1.159752610484389
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "fibonacci-mod/nu",
+      "prior_median_ms": 14.6306035,
+      "current_median_ms": 17.114410499999998,
+      "prior_p99_ms": 20.13993603,
+      "current_p99_ms": 23.69468296,
+      "cross_node_ratio_for_internal_review": 1.1697679114877249
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "string-transform/nu",
+      "prior_median_ms": 44.622563,
+      "current_median_ms": 52.514394499999995,
+      "prior_p99_ms": 45.64181195,
+      "current_p99_ms": 68.06000401,
+      "cross_node_ratio_for_internal_review": 1.1768574230036943
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "source-tree-report/nu",
+      "prior_median_ms": 220.629793,
+      "current_median_ms": 273.65367249999997,
+      "prior_p99_ms": 224.76989848,
+      "current_p99_ms": 342.87627642999996,
+      "cross_node_ratio_for_internal_review": 1.2403296435128321
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "selected-cleanup/nu",
+      "prior_median_ms": 102.514163,
+      "current_median_ms": 130.4950005,
+      "prior_p99_ms": 104.37246214000001,
+      "current_p99_ms": 173.30698932,
+      "cross_node_ratio_for_internal_review": 1.272946065998705
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-empty-1000/nift",
+      "prior_median_ms": 35.784535000000005,
+      "current_median_ms": 40.3792885,
+      "prior_p99_ms": 36.84907704,
+      "current_p99_ms": 61.270320250000005,
+      "cross_node_ratio_for_internal_review": 1.1284005367122976
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-1000/nift",
+      "prior_median_ms": 24.012947500000003,
+      "current_median_ms": 28.136328,
+      "prior_p99_ms": 24.53630877,
+      "current_p99_ms": 34.65659107,
+      "cross_node_ratio_for_internal_review": 1.1717148842306842
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-empty-10000/nift",
+      "prior_median_ms": 336.367261,
+      "current_median_ms": 393.2591,
+      "prior_p99_ms": 343.59668992,
+      "current_p99_ms": 546.3186258000001,
+      "cross_node_ratio_for_internal_review": 1.169136077128505
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-10000/nift",
+      "prior_median_ms": 230.67922299999998,
+      "current_median_ms": 251.01507850000002,
+      "prior_p99_ms": 258.26926947,
+      "current_p99_ms": 283.83325984000004,
+      "cross_node_ratio_for_internal_review": 1.0881564244734778
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-empty-100000/nift",
+      "prior_median_ms": 3605.162641,
+      "current_median_ms": 4139.349559,
+      "prior_p99_ms": 3720.5788706,
+      "current_p99_ms": 4424.17499336,
+      "cross_node_ratio_for_internal_review": 1.148172765335166
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-100000/nift",
+      "prior_median_ms": 2631.455399,
+      "current_median_ms": 2759.560069,
+      "prior_p99_ms": 2996.13707928,
+      "current_p99_ms": 3538.66313204,
+      "cross_node_ratio_for_internal_review": 1.048682060143859
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "create-small-100000/nift",
+      "prior_median_ms": 15499.079919,
+      "current_median_ms": 13962.735409,
+      "prior_p99_ms": 15868.04216712,
+      "current_p99_ms": 15767.1961876,
+      "cross_node_ratio_for_internal_review": 0.9008751152952875
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-tree-100000/nift",
+      "prior_median_ms": 2549.100941,
+      "current_median_ms": 3020.401201,
+      "prior_p99_ms": 2665.15277244,
+      "current_p99_ms": 3425.4597128799996,
+      "cross_node_ratio_for_internal_review": 1.1848888180218988
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "copy-small-10000/nift",
+      "prior_median_ms": 1332.9196729999999,
+      "current_median_ms": 952.683677,
+      "prior_p99_ms": 1368.6716077800002,
+      "current_p99_ms": 1176.83529671,
+      "cross_node_ratio_for_internal_review": 0.7147345007338639
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "rename-selected-10000/nift",
+      "prior_median_ms": 1091.1065945,
+      "current_median_ms": 597.1523765,
+      "prior_p99_ms": 1128.60237804,
+      "current_p99_ms": 708.9220276899999,
+      "cross_node_ratio_for_internal_review": 0.5472905942555001
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "concat-small-10000/nift",
+      "prior_median_ms": 238.1466775,
+      "current_median_ms": 278.988196,
+      "prior_p99_ms": 246.38831731,
+      "current_p99_ms": 396.231968,
+      "cross_node_ratio_for_internal_review": 1.1714973264743531
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "metadata-10000/nift",
+      "prior_median_ms": 163.0569975,
+      "current_median_ms": 150.7252005,
+      "prior_p99_ms": 171.3990078,
+      "current_p99_ms": 173.60290454,
+      "cross_node_ratio_for_internal_review": 0.9243712493847436
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "traverse-100000/nift",
+      "prior_median_ms": 2881.466864,
+      "current_median_ms": 1384.549645,
+      "prior_p99_ms": 2919.66463776,
+      "current_p99_ms": 1875.11694168,
+      "cross_node_ratio_for_internal_review": 0.48050167166524116
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "log-filter-group/nift",
+      "prior_median_ms": 44.164435,
+      "current_median_ms": 52.7632545,
+      "prior_p99_ms": 46.31039491,
+      "current_p99_ms": 70.79768972000001,
+      "cross_node_ratio_for_internal_review": 1.1947000906951488
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-1/nift",
+      "prior_median_ms": 3.3830074999999997,
+      "current_median_ms": 4.346049000000001,
+      "prior_p99_ms": 3.51394803,
+      "current_p99_ms": 6.4842245400000005,
+      "cross_node_ratio_for_internal_review": 1.2846702231668128
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-10/nift",
+      "prior_median_ms": 11.341884499999999,
+      "current_median_ms": 13.97312,
+      "prior_p99_ms": 11.55415772,
+      "current_p99_ms": 18.07477003,
+      "cross_node_ratio_for_internal_review": 1.2319927962588582
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-100/nift",
+      "prior_median_ms": 91.35432449999999,
+      "current_median_ms": 111.91214,
+      "prior_p99_ms": 96.41189525,
+      "current_p99_ms": 122.35187655,
+      "cross_node_ratio_for_internal_review": 1.2250338515720731
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "processes-1000/nift",
+      "prior_median_ms": 896.0776330000001,
+      "current_median_ms": 1098.7214935,
+      "prior_p99_ms": 932.48610104,
+      "current_p99_ms": 1295.17260493,
+      "cross_node_ratio_for_internal_review": 1.2261454287409936
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "pipeline-2/nift",
+      "prior_median_ms": 4.86397,
+      "current_median_ms": 6.1820935,
+      "prior_p99_ms": 5.23369246,
+      "current_p99_ms": 8.744652409999999,
+      "cross_node_ratio_for_internal_review": 1.270997456809972
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "pipeline-4/nift",
+      "prior_median_ms": 6.981586500000001,
+      "current_median_ms": 8.595312499999999,
+      "prior_p99_ms": 7.1491704700000005,
+      "current_p99_ms": 19.92305687,
+      "cross_node_ratio_for_internal_review": 1.2311403002741566
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "pipeline-8/nift",
+      "prior_median_ms": 11.407256,
+      "current_median_ms": 13.696261,
+      "prior_p99_ms": 11.92516894,
+      "current_p99_ms": 19.009792410000003,
+      "cross_node_ratio_for_internal_review": 1.200662192555335
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "arithmetic/nift",
+      "prior_median_ms": 17.558400499999998,
+      "current_median_ms": 18.232363,
+      "prior_p99_ms": 21.671766950000002,
+      "current_p99_ms": 26.43802684,
+      "cross_node_ratio_for_internal_review": 1.0383840487064868
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "function-calls/nift",
+      "prior_median_ms": 20.6088145,
+      "current_median_ms": 22.5858855,
+      "prior_p99_ms": 21.24842825,
+      "current_p99_ms": 28.216085460000002,
+      "cross_node_ratio_for_internal_review": 1.0959332716590757
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "fibonacci-mod/nift",
+      "prior_median_ms": 3.9995675,
+      "current_median_ms": 4.799733,
+      "prior_p99_ms": 5.5595466,
+      "current_p99_ms": 5.82216204,
+      "cross_node_ratio_for_internal_review": 1.2000630068126117
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "string-transform/nift",
+      "prior_median_ms": 126.6735625,
+      "current_median_ms": 61.131073,
+      "prior_p99_ms": 129.13425442000002,
+      "current_p99_ms": 75.58907021,
+      "cross_node_ratio_for_internal_review": 0.48258746176811756
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "source-tree-report/nift",
+      "prior_median_ms": 209.957757,
+      "current_median_ms": 262.671625,
+      "prior_p99_ms": 216.82859700999998,
+      "current_p99_ms": 358.2664311,
+      "cross_node_ratio_for_internal_review": 1.2510689233549015
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "selected-cleanup/nift",
+      "prior_median_ms": 53.2917085,
+      "current_median_ms": 50.148132000000004,
+      "prior_p99_ms": 82.37376785000001,
+      "current_p99_ms": 69.92023703,
+      "cross_node_ratio_for_internal_review": 0.9410119024425724
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-1000/external-baseline",
+      "prior_median_ms": 20.133816,
+      "current_median_ms": 23.3338705,
+      "prior_p99_ms": 24.12639514,
+      "current_p99_ms": 27.56401825,
+      "cross_node_ratio_for_internal_review": 1.1589392939718928
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-10000/external-baseline",
+      "prior_median_ms": 193.9715285,
+      "current_median_ms": 216.8159665,
+      "prior_p99_ms": 227.51138326,
+      "current_p99_ms": 295.41169459,
+      "cross_node_ratio_for_internal_review": 1.1177721193242027
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-selected-100000/external-baseline",
+      "prior_median_ms": 2443.174354,
+      "current_median_ms": 2338.075163,
+      "prior_p99_ms": 2709.0026063200003,
+      "current_p99_ms": 2954.92751508,
+      "cross_node_ratio_for_internal_review": 0.9569825252839895
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "delete-tree-100000/external-baseline",
+      "prior_median_ms": 2095.917367,
+      "current_median_ms": 2471.872733,
+      "prior_p99_ms": 2437.87659484,
+      "current_p99_ms": 2781.79684108,
+      "cross_node_ratio_for_internal_review": 1.1793750898386444
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "copy-small-10000/external-baseline",
+      "prior_median_ms": 484.0157745,
+      "current_median_ms": 664.1900665000001,
+      "prior_p99_ms": 594.8117103,
+      "current_p99_ms": 976.55875827,
+      "cross_node_ratio_for_internal_review": 1.3722488015728918
+    },
+    {
+      "file": "shell-workloads.json",
+      "id": "rename-selected-10000/external-baseline",
+      "prior_median_ms": 328.30420300000003,
+      "current_median_ms": 364.838308,
+      "prior_p99_ms": 340.61936217000004,
+      "current_p99_ms": 398.57498134,
+      "cross_node_ratio_for_internal_review": 1.1112812588634449
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Official shell series 20261010-v4100-shell-expanded
+
+Nift 4.10.0 development build, exact source `2eaec7d70e9ce2e698d0ba23a605fb9cf85317ff`. Measured suite `48a4a8e3e1f3e1ccf2c61fc7f8a7fd3a490ab4a1`. Expanded shell series 20261010-v4100-shell-expanded. Frozen native build, CPU 0, unchanged workload/oracles and sample treatment. Raw JSON includes every observation and warmup. Smoke results are separate from official samples. Shared virtual CPUs and uncontrolled OS caches limit cross-node attribution. Prior immutable series is unchanged. See run-identity.json, validation.json and exact setup/smoke/official scripts for reproduction. Teardown follows live verification.
