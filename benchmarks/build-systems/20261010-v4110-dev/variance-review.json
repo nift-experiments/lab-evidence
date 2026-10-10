@@ -1,0 +1,313 @@
+{
+  "observations_sha256": "bbe87a57f5067581a431f431fd3c249a0395de602ff36cc8a3484f0b826d6591",
+  "outliers_removed": 0,
+  "large_tails": [
+    {
+      "cell": [
+        "native",
+        1000,
+        "light",
+        4,
+        "noop",
+        "ninja"
+      ],
+      "n": 100,
+      "largest_observation_index": 1125,
+      "median_wall_ms": 20.724259,
+      "largest_metrics": {
+        "wall_ms": 186.84277,
+        "peak_rss_kib": 6700,
+        "cpu_ms": 186.592,
+        "exit_code": 0
+      },
+      "max_over_median": 9.015655035000286,
+      "executed_actions": 0,
+      "exact_action_oracle_passed": true,
+      "observation_retained": true
+    },
+    {
+      "cell": [
+        "native",
+        100,
+        "light",
+        2,
+        "private",
+        "nift"
+      ],
+      "n": 20,
+      "largest_observation_index": 4069,
+      "median_wall_ms": 118.9016365,
+      "largest_metrics": {
+        "wall_ms": 492.033209,
+        "peak_rss_kib": 21888,
+        "cpu_ms": 653.023,
+        "exit_code": 0
+      },
+      "max_over_median": 4.138153380252256,
+      "executed_actions": 3,
+      "exact_action_oracle_passed": true,
+      "observation_retained": true
+    },
+    {
+      "cell": [
+        "native",
+        100,
+        "heavy",
+        4,
+        "noop",
+        "nift"
+      ],
+      "n": 100,
+      "largest_observation_index": 5368,
+      "median_wall_ms": 21.644959,
+      "largest_metrics": {
+        "wall_ms": 90.453172,
+        "peak_rss_kib": 6016,
+        "cpu_ms": 174.8,
+        "exit_code": 0
+      },
+      "max_over_median": 4.1789486411131564,
+      "executed_actions": 0,
+      "exact_action_oracle_passed": true,
+      "observation_retained": true
+    },
+    {
+      "cell": [
+        "tiny",
+        100,
+        "light",
+        1,
+        "noop",
+        "nift"
+      ],
+      "n": 100,
+      "largest_observation_index": 6679,
+      "median_wall_ms": 28.319922,
+      "largest_metrics": {
+        "wall_ms": 116.005949,
+        "peak_rss_kib": 6144,
+        "cpu_ms": 129.577,
+        "exit_code": 0
+      },
+      "max_over_median": 4.096266543389492,
+      "executed_actions": 0,
+      "exact_action_oracle_passed": true,
+      "observation_retained": true
+    },
+    {
+      "cell": [
+        "tiny",
+        100,
+        "light",
+        2,
+        "batch10",
+        "nift"
+      ],
+      "n": 20,
+      "largest_observation_index": 7451,
+      "median_wall_ms": 35.175219,
+      "largest_metrics": {
+        "wall_ms": 152.934845,
+        "peak_rss_kib": 7552,
+        "cpu_ms": 262.981,
+        "exit_code": 0
+      },
+      "max_over_median": 4.347800791233169,
+      "executed_actions": 10,
+      "exact_action_oracle_passed": true,
+      "observation_retained": true
+    },
+    {
+      "cell": [
+        "tiny",
+        100,
+        "light",
+        2,
+        "batch10",
+        "ninja"
+      ],
+      "n": 20,
+      "largest_observation_index": 7450,
+      "median_wall_ms": 19.068769500000002,
+      "largest_metrics": {
+        "wall_ms": 78.502156,
+        "peak_rss_kib": 4992,
+        "cpu_ms": 94.366,
+        "exit_code": 0
+      },
+      "max_over_median": 4.1167919094097805,
+      "executed_actions": 10,
+      "exact_action_oracle_passed": true,
+      "observation_retained": true
+    },
+    {
+      "cell": [
+        "tiny",
+        100,
+        "light",
+        4,
+        "batch10",
+        "nift"
+      ],
+      "n": 20,
+      "largest_observation_index": 7818,
+      "median_wall_ms": 27.200585500000003,
+      "largest_metrics": {
+        "wall_ms": 132.666624,
+        "peak_rss_kib": 7552,
+        "cpu_ms": 241.268,
+        "exit_code": 0
+      },
+      "max_over_median": 4.877344423339711,
+      "executed_actions": 10,
+      "exact_action_oracle_passed": true,
+      "observation_retained": true
+    },
+    {
+      "cell": [
+        "tiny",
+        100,
+        "light",
+        4,
+        "batch10",
+        "ninja"
+      ],
+      "n": 20,
+      "largest_observation_index": 7820,
+      "median_wall_ms": 15.0200155,
+      "largest_metrics": {
+        "wall_ms": 88.077903,
+        "peak_rss_kib": 4992,
+        "cpu_ms": 95.794,
+        "exit_code": 0
+      },
+      "max_over_median": 5.8640354265946,
+      "executed_actions": 10,
+      "exact_action_oracle_passed": true,
+      "observation_retained": true
+    }
+  ],
+  "small_sample_spreads_over_25pct": [
+    {
+      "cell": [
+        "native",
+        1000,
+        "light",
+        4,
+        "global",
+        "nift"
+      ],
+      "n": 5,
+      "range_over_median": 0.2881515840986048,
+      "median_ms": 6162.678649,
+      "min_ms": 5792.815187,
+      "max_ms": 7568.600802
+    },
+    {
+      "cell": [
+        "native",
+        1000,
+        "light",
+        4,
+        "clean-rebuild",
+        "make"
+      ],
+      "n": 5,
+      "range_over_median": 0.25752458791784405,
+      "median_ms": 5826.503322,
+      "min_ms": 5489.779123,
+      "max_ms": 6990.24699
+    },
+    {
+      "cell": [
+        "native",
+        1000,
+        "light",
+        4,
+        "clean-rebuild",
+        "nift"
+      ],
+      "n": 5,
+      "range_over_median": 0.31565730278034304,
+      "median_ms": 6343.013212,
+      "min_ms": 5867.906451,
+      "max_ms": 7870.124893
+    },
+    {
+      "cell": [
+        "native",
+        1000,
+        "light",
+        4,
+        "full",
+        "ninja"
+      ],
+      "n": 5,
+      "range_over_median": 0.3155691631561952,
+      "median_ms": 6206.005829,
+      "min_ms": 6013.16506,
+      "max_ms": 7971.589126
+    },
+    {
+      "cell": [
+        "native",
+        1000,
+        "light",
+        4,
+        "full",
+        "make"
+      ],
+      "n": 5,
+      "range_over_median": 0.252366400902018,
+      "median_ms": 5976.452252,
+      "min_ms": 5571.929039,
+      "max_ms": 7080.184784
+    },
+    {
+      "cell": [
+        "tiny",
+        1000,
+        "light",
+        4,
+        "full",
+        "nift"
+      ],
+      "n": 5,
+      "range_over_median": 1.5902908327719596,
+      "median_ms": 1141.602811,
+      "min_ms": 1100.044215,
+      "max_ms": 2915.5247
+    },
+    {
+      "cell": [
+        "tiny",
+        10000,
+        "light",
+        4,
+        "full",
+        "ninja"
+      ],
+      "n": 5,
+      "range_over_median": 0.3143025486373854,
+      "median_ms": 7384.456811,
+      "min_ms": 7134.242321,
+      "max_ms": 9455.195917
+    },
+    {
+      "cell": [
+        "tiny",
+        10000,
+        "light",
+        4,
+        "batch10",
+        "ninja"
+      ],
+      "n": 5,
+      "range_over_median": 0.27969452175730314,
+      "median_ms": 117.08919,
+      "min_ms": 102.056517,
+      "max_ms": 134.805722
+    }
+  ],
+  "interpretation": "Wide spreads are descriptive flags, not confidence intervals. Action traces and validated output hashes rule out missing or extra native work. CPU well below elapsed time suggests time waiting or off-CPU, but does not distinguish scheduling contention from I/O. CPU above elapsed time includes parallel work. Shared-vCPU variability and copied warm fixtures are methodological limits. No outliers are discarded or pooled from rejected trials."
+}

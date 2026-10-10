@@ -1,0 +1,178 @@
+{
+  "suite_sha": "24671011425ef8bd0b9f05adb1c87682e9ca33b7",
+  "suite_dirty": false,
+  "cpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "plan": {
+    "kind": "final-local-smoke-not-official",
+    "graphs": [
+      {
+        "kind": "native",
+        "size": 100,
+        "profile": "light",
+        "jobs": 1,
+        "cases": [
+          {
+            "name": "noop",
+            "warmups": 0,
+            "samples": 1
+          },
+          {
+            "name": "leaf",
+            "warmups": 0,
+            "samples": 1
+          },
+          {
+            "name": "target",
+            "warmups": 0,
+            "samples": 1
+          },
+          {
+            "name": "full",
+            "warmups": 0,
+            "samples": 1
+          },
+          {
+            "name": "clean-rebuild",
+            "warmups": 0,
+            "samples": 1
+          }
+        ]
+      },
+      {
+        "kind": "native",
+        "size": 100,
+        "profile": "light",
+        "jobs": 2,
+        "cases": [
+          {
+            "name": "noop",
+            "warmups": 0,
+            "samples": 1
+          },
+          {
+            "name": "leaf",
+            "warmups": 0,
+            "samples": 1
+          },
+          {
+            "name": "target",
+            "warmups": 0,
+            "samples": 1
+          },
+          {
+            "name": "full",
+            "warmups": 0,
+            "samples": 1
+          },
+          {
+            "name": "clean-rebuild",
+            "warmups": 0,
+            "samples": 1
+          }
+        ]
+      },
+      {
+        "kind": "native",
+        "size": 100,
+        "profile": "light",
+        "jobs": 4,
+        "cases": [
+          {
+            "name": "noop",
+            "warmups": 0,
+            "samples": 1
+          },
+          {
+            "name": "leaf",
+            "warmups": 0,
+            "samples": 1
+          },
+          {
+            "name": "target",
+            "warmups": 0,
+            "samples": 1
+          },
+          {
+            "name": "full",
+            "warmups": 0,
+            "samples": 1
+          },
+          {
+            "name": "clean-rebuild",
+            "warmups": 0,
+            "samples": 1
+          }
+        ]
+      },
+      {
+        "kind": "tiny",
+        "size": 100,
+        "jobs": 4,
+        "cases": [
+          {
+            "name": "noop",
+            "warmups": 0,
+            "samples": 1
+          },
+          {
+            "name": "leaf",
+            "warmups": 0,
+            "samples": 1
+          },
+          {
+            "name": "full",
+            "warmups": 0,
+            "samples": 1
+          }
+        ]
+      }
+    ]
+  },
+  "toolchain": {
+    "make": {
+      "version": "GNU Make 4.4.1",
+      "binary_sha256": "f8885cb7885e983b10c44c39350cb3cdeb1205398d290fb706d491dde28927f0"
+    },
+    "ninja": {
+      "version": "1.13.2",
+      "binary_sha256": "684d6e09759a4758ceb2b6e76dce5cf3cffa6dce5b07e6c2253537888c10ce38"
+    },
+    "nift": {
+      "version": "Nift v4.11.0",
+      "binary_sha256": "e0a2b2b953e389f69e8ea4fec128773344c6217bf4d23110bcb5632d6f6c08dc"
+    },
+    "compiler": {
+      "version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+      "binary_sha256": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769"
+    },
+    "linker": {
+      "version": "GNU ld (GNU Binutils for Ubuntu) 2.42",
+      "binary_sha256": "e9ceb054c12207970f2726dfc07e9a66b411602748628baf27399f02a9bbb31b"
+    },
+    "archiver": {
+      "version": "GNU ar (GNU Binutils for Ubuntu) 2.42",
+      "binary_sha256": "6452af2eea333b8c65e1adb92964fc8f97863ab003fa13f9d12bff5345cd7dbe"
+    },
+    "python": {
+      "version": "Python 3.12.3",
+      "binary_sha256": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f"
+    }
+  },
+  "nift_source_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+  "machine": {
+    "kernel": "Linux 6.8.0-134-generic",
+    "architecture": "x86_64",
+    "cpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           48 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  4\nOn-line CPU(s) list:                     0-3\nVendor ID:                               AuthenticAMD\nBIOS Vendor ID:                          QEMU\nModel name:                              AMD EPYC 7642 48-Core Processor\nBIOS Model name:                         pc-q35-10.1  CPU @ 2.0GHz\nBIOS CPU family:                         1\nCPU family:                              23\nModel:                                   49\nThread(s) per core:                      1\nCore(s) per socket:                      4\nSocket(s):                               1\nStepping:                                0\nBogoMIPS:                                4599.99\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nHypervisor vendor:                       KVM\nVirtualization type:                     full\nL1d cache:                               256 KiB (4 instances)\nL1i cache:                               256 KiB (4 instances)\nL2 cache:                                2 MiB (4 instances)\nL3 cache:                                64 MiB (4 instances)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-3\nVulnerability Gather data sampling:      Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Mitigation; untrained return thunk; SMT disabled\nVulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected\n",
+    "os_release": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+    "memory": "MemTotal:        8131788 kB\nMemFree:         5044536 kB\nMemAvailable:    7613768 kB\nBuffers:           52908 kB\nCached:          2559296 kB\nSwapCached:            0 kB\nActive:           174392 kB\nInactive:        2497932 kB\nActive(anon):      61132 kB\nInactive(anon):        0 kB\nActive(file):     113260 kB\nInactive(file):  2497932 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:             12008 kB\nWriteback:             0 kB\nAnonPages:         60120 kB\nMapped:            63808 kB\nShmem:              1012 kB\nKReclaimable:     267568 kB\nSlab:             343700 kB\nSReclaimable:     267568 kB\nSUnreclaim:        76132 kB\nKernelStack:        2476 kB\nPageTables:         2348 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     233696 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16704 kB\nVmallocChunk:          0 kB\nPercpu:             2688 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      104308 kB\nDirectMap2M:     3041280 kB\nDirectMap1G:     7340032 kB\n",
+    "filesystem": "Filesystem     Type 1K-blocks    Used Available Use% Mounted on\n/dev/sda       ext4 164532852 4274452 151880656   3% /\n"
+  },
+  "nift_binary_sha256": "e0a2b2b953e389f69e8ea4fec128773344c6217bf4d23110bcb5632d6f6c08dc",
+  "boundary": "C CLOCK_MONOTONIC before fork/exec through wait4; setup and correctness outside timing",
+  "peak_rss_scope": "Linux wait4 maximum-child high-water RSS; not summed concurrent memory"
+}
