@@ -1,0 +1,270 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 254  of event 'cpu-clock'
+# Event count (approx.): 2565656540
+#
+# Overhead  Command       Shared Object        Symbol                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+# ........  ............  ...................  ..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+#
+     9.84%  nift-adapter  libc.so.6            [.] 0x000000000018b7f0
+            |
+            ---0x72e57d18b7f0
+               |          
+               |--4.72%--std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::compare(unsigned long, unsigned long, char const*) const
+               |          |          
+               |          |--3.54%--Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               |          |          Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               |          |          0xffffffffffffffff
+               |          |          
+               |           --1.18%--Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+               |                     Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+               |                     Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+               |                     Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+               |                     Parser::evaluate_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView)
+               |                     Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+               |                     Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               |                     0xffffffffffffffff
+               |          
+               |--3.15%--std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [clone .constprop.0]
+               |          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+               |          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+               |          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+               |          Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+               |          Parser::evaluate_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView)
+               |          Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+               |          Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               |          0xffffffffffffffff
+               |          
+                --1.18%--std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [clone .isra.0]
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+                          Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+                          Parser::evaluate_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView)
+                          Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+                          Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+                          0xffffffffffffffff
+
+     5.91%  nift-adapter  nift-adapter         [.] Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+            |
+            ---Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+               Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+               Parser::evaluate_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView)
+               Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               0xffffffffffffffff
+
+     5.51%  nift-adapter  libc.so.6            [.] 0x0000000000188411
+            |
+            ---0x72e57d188411
+               |          
+               |--2.76%--std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::compare(unsigned long, unsigned long, char const*) const
+               |          |          
+               |           --1.57%--Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               |                     Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               |                     0xffffffffffffffff
+               |          
+                --1.97%--Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const::{lambda(std::basic_string_view<char, std::char_traits<char> >, std::vector<nift::detail::SourceText, std::allocator<nift::detail::SourceText> >&, std::vector<bool, std::allocator<bool> >&)#1}::operator()(std::basic_string_view<char, std::char_traits<char> >, std::vector<nift::detail::SourceText, std::allocator<nift::detail::SourceText> >&, std::vector<bool, std::allocator<bool> >&) const
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+                          Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+                          Parser::evaluate_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView)
+                          Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+                          Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+                          0xffffffffffffffff
+
+     5.51%  nift-adapter  nift-adapter         [.] Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const::{lambda(std::basic_string_view<char, std::char_traits<char> >, std::vector<nift::detail::SourceText, std::allocator<nift::detail::SourceText> >&, std::vector<bool, std::allocator<bool> >&)#1}::operator()(std::basic_string_view<char, std::char_traits<char> >, std::vector<nift::detail::SourceText, std::allocator<nift::detail::SourceText> >&, std::vector<bool, std::allocator<bool> >&) const
+            |
+            ---Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const::{lambda(std::basic_string_view<char, std::char_traits<char> >, std::vector<nift::detail::SourceText, std::allocator<nift::detail::SourceText> >&, std::vector<bool, std::allocator<bool> >&)#1}::operator()(std::basic_string_view<char, std::char_traits<char> >, std::vector<nift::detail::SourceText, std::allocator<nift::detail::SourceText> >&, std::vector<bool, std::allocator<bool> >&) const
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+               |          
+                --5.12%--Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+                          Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+                          Parser::evaluate_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView)
+                          Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+                          Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+                          0xffffffffffffffff
+
+     5.51%  nift-adapter  nift-adapter         [.] Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+            |
+            ---Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               |          
+                --5.12%--Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+                          0xffffffffffffffff
+
+     4.33%  nift-adapter  libstdc++.so.6.0.33  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::compare(unsigned long, unsigned long, char const*) const
+            |
+            ---std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::compare(unsigned long, unsigned long, char const*) const
+               |          
+                --2.76%--Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+                          Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+                          0xffffffffffffffff
+
+     3.54%  nift-adapter  libc.so.6            [.] 0x00000000001880c7
+            |
+            ---0x72e57d1880c7
+               |          
+               |--1.57%--std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::find_first_of(char const*, unsigned long, unsigned long) const
+               |          Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               |          Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               |          0xffffffffffffffff
+               |          
+                --1.18%--std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::find(char, unsigned long) const
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+                          Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+                          Parser::evaluate_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView)
+                          Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+                          Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+                          0xffffffffffffffff
+
+     3.54%  nift-adapter  nift-adapter         [.] nift::RuntimeValue::~RuntimeValue()
+            |
+            ---nift::RuntimeValue::~RuntimeValue()
+               |          
+                --1.57%--nift::RuntimeValue::~RuntimeValue()
+                          nift::RuntimeValue::~RuntimeValue()
+
+     1.97%  nift-adapter  libstdc++.so.6.0.33  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)
+            |
+            ---std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)
+               |          
+                --1.18%--nift::detail::strip_presentation_chain(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, bool&, bool&)
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+                          Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+                          Parser::evaluate_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView)
+                          Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+                          Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+                          0xffffffffffffffff
+
+     1.97%  nift-adapter  nift-adapter         [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [clone .isra.0]
+            |
+            ---std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [clone .isra.0]
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+               Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+               Parser::evaluate_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView)
+               Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               0xffffffffffffffff
+
+     1.57%  nift-adapter  libc.so.6            [.] 0x0000000000188092
+            |
+            ---0x72e57d188092
+
+     1.57%  nift-adapter  libc.so.6            [.] 0x0000000000188408
+            |
+            ---0x72e57d188408
+               |          
+                --1.18%--Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const::{lambda(std::basic_string_view<char, std::char_traits<char> >, std::vector<nift::detail::SourceText, std::allocator<nift::detail::SourceText> >&, std::vector<bool, std::allocator<bool> >&)#1}::operator()(std::basic_string_view<char, std::char_traits<char> >, std::vector<nift::detail::SourceText, std::allocator<nift::detail::SourceText> >&, std::vector<bool, std::allocator<bool> >&) const
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+                          Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+                          Parser::evaluate_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView)
+                          Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+                          Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+                          0xffffffffffffffff
+
+     1.57%  nift-adapter  libc.so.6            [.] 0x0000000000188623
+            |
+            ---0x72e57d188623
+
+     1.57%  nift-adapter  nift-adapter         [.] void std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, nift::RuntimeValue>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, nift::RuntimeValue> > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue>(__gnu_cxx::__normal_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, nift::RuntimeValue>*, std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, nift::RuntimeValue>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, nift::RuntimeValue> > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&&)
+            |
+            ---void std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, nift::RuntimeValue>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, nift::RuntimeValue> > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue>(__gnu_cxx::__normal_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, nift::RuntimeValue>*, std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, nift::RuntimeValue>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, nift::RuntimeValue> > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&&)
+               nift::RuntimeValue::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+               nift::detail::make_loop_metadata(unsigned long, unsigned long)
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               Parser::render_composed(RenderSource const&, std::optional<RenderSource> const&, bool)
+               nift::Engine::render(nift::Source const&, nift::Context const&)
+               0xffffffffffffffff
+
+     1.18%  nift-adapter  libc.so.6            [.] 0x0000000000188320
+            |
+            ---0x72e57d188320
+
+     1.18%  nift-adapter  libc.so.6            [.] 0x000000000018b7e7
+            |
+            ---0x72e57d18b7e7
+
+     1.18%  nift-adapter  libstdc++.so.6.0.33  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_create(unsigned long&, unsigned long)
+            |
+            ---std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_create(unsigned long&, unsigned long)
+               std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long)
+               nift::RuntimeValue::dump[abi:cxx11](int) const
+               Parser::render_expression_value[abi:cxx11](nift::RuntimeValue const&) const
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               0xffffffffffffffff
+
+     1.18%  nift-adapter  libstdc++.so.6.0.33  [.] void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)
+            |
+            ---void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)
+               std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::substr(unsigned long, unsigned long) const
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&)#3}::operator()(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&) const
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+               Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+               Parser::evaluate_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView)
+               Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               0xffffffffffffffff
+
+     1.18%  nift-adapter  nift-adapter         [.] nift::RuntimeValue::operator=(nift::RuntimeValue&&) [clone .isra.0]
+            |
+            ---nift::RuntimeValue::operator=(nift::RuntimeValue&&) [clone .isra.0]
+               nift::detail::make_loop_metadata(unsigned long, unsigned long)
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               Parser::render_composed(RenderSource const&, std::optional<RenderSource> const&, bool)
+               nift::Engine::render(nift::Source const&, nift::Context const&)
+               0xffffffffffffffff
+
+     1.18%  nift-adapter  nift-adapter         [.] nift::detail::SourceText::substr(unsigned long, unsigned long) const
+            |
+            ---nift::detail::SourceText::substr(unsigned long, unsigned long) const
+
+     1.18%  nift-adapter  nift-adapter         [.] nift::detail::append_indented(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, bool)
+            |
+            ---nift::detail::append_indented(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, bool)
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               Parser::render_composed(RenderSource const&, std::optional<RenderSource> const&, bool)
+               nift::Engine::render(nift::Source const&, nift::Context const&)
+               0xffffffffffffffff
+
+     1.18%  nift-adapter  nift-adapter         [.] nift::detail::strip_presentation_chain(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, bool&, bool&)
+            |
+            ---nift::detail::strip_presentation_chain(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, bool&, bool&)
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+               Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+               Parser::evaluate_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView)
+               Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               0xffffffffffffffff
+
+     1.18%  nift-adapter  nift-adapter         [.] std::_Function_base::~_Function_base()
+            |
+            ---std::_Function_base::~_Function_base()
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+               0xffffffffffffffff
+
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

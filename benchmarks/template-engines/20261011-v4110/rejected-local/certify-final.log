@@ -1,0 +1,23 @@
+FAIL {'engine': 'jinja', 'case': 'literal', 'mode': 'fresh', 'ok': False, 'stderr': ''}
+FAIL {'engine': 'jinja', 'case': 'literal', 'mode': 'render', 'ok': False, 'stderr': 'Traceback (most recent call last):\n  File "/home/nick/Repositories/nift/nift-experiments/template-engines/adapters/python.py", line 24, in <module>\n    assert out==expected,(name,mode,v,k,out[:80],expected[:80])\n           ^^^^^^^^^^^^^\nAssertionError: (\'literal\', \'render\', 0, 0, \'template-engine baseline\', \'template-engine baseline\\n\')\n'}
+FAIL {'engine': 'jinja', 'case': 'literal', 'mode': 'reuse', 'ok': False, 'stderr': 'Traceback (most recent call last):\n  File "/home/nick/Repositories/nift/nift-experiments/template-engines/adapters/python.py", line 24, in <module>\n    assert out==expected,(name,mode,v,k,out[:80],expected[:80])\n           ^^^^^^^^^^^^^\nAssertionError: (\'literal\', \'reuse\', 0, 0, \'template-engine baseline\', \'template-engine baseline\\n\')\n'}
+checked literal
+checked interpolation
+checked condition
+checked nested-object
+checked loop-10
+checked loop-100
+checked loop-1000
+checked loop-10000
+checked nested-loops
+checked includes-1
+checked includes-4
+checked includes-8
+checked article
+checked collection
+checked many-renders-100
+checked many-renders-1000
+checked many-templates-10
+checked many-templates-100
+checked many-templates-1000
+checked transform
