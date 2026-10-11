@@ -1,0 +1,126 @@
+{
+  "diagnostic": "Single walk request per engine/size; /proc VmHWM after complete response before exit, after exec; separate from official wait4 distributions",
+  "pass": true,
+  "rows": [
+    {
+      "engine": "nift",
+      "files": 1000,
+      "postexec_vmhwm_mib": 8.84765625,
+      "postexec_vmrss_mib": 8.41015625,
+      "correct": true,
+      "output_sha256": "c35524587bac8106a86fdb7b8f5c705d47504b470ce69acb50589ae5c87513e4"
+    },
+    {
+      "engine": "python",
+      "files": 1000,
+      "postexec_vmhwm_mib": 16.04296875,
+      "postexec_vmrss_mib": 16.04296875,
+      "correct": true,
+      "output_sha256": "c35524587bac8106a86fdb7b8f5c705d47504b470ce69acb50589ae5c87513e4"
+    },
+    {
+      "engine": "node",
+      "files": 1000,
+      "postexec_vmhwm_mib": 53.25,
+      "postexec_vmrss_mib": 53.25,
+      "correct": true,
+      "output_sha256": "c35524587bac8106a86fdb7b8f5c705d47504b470ce69acb50589ae5c87513e4"
+    },
+    {
+      "engine": "bun",
+      "files": 1000,
+      "postexec_vmhwm_mib": 27.80078125,
+      "postexec_vmrss_mib": 27.80078125,
+      "correct": true,
+      "output_sha256": "c35524587bac8106a86fdb7b8f5c705d47504b470ce69acb50589ae5c87513e4"
+    },
+    {
+      "engine": "go",
+      "files": 1000,
+      "postexec_vmhwm_mib": 4.4765625,
+      "postexec_vmrss_mib": 4.4765625,
+      "correct": true,
+      "output_sha256": "c35524587bac8106a86fdb7b8f5c705d47504b470ce69acb50589ae5c87513e4"
+    },
+    {
+      "engine": "nift",
+      "files": 10000,
+      "postexec_vmhwm_mib": 26.18359375,
+      "postexec_vmrss_mib": 21.44140625,
+      "correct": true,
+      "output_sha256": "ca2a28ca858e126547a0616fd122efff80ab43e442e317e06464dd07907366d2"
+    },
+    {
+      "engine": "python",
+      "files": 10000,
+      "postexec_vmhwm_mib": 18.953125,
+      "postexec_vmrss_mib": 18.14453125,
+      "correct": true,
+      "output_sha256": "ca2a28ca858e126547a0616fd122efff80ab43e442e317e06464dd07907366d2"
+    },
+    {
+      "engine": "node",
+      "files": 10000,
+      "postexec_vmhwm_mib": 67.54296875,
+      "postexec_vmrss_mib": 67.4375,
+      "correct": true,
+      "output_sha256": "ca2a28ca858e126547a0616fd122efff80ab43e442e317e06464dd07907366d2"
+    },
+    {
+      "engine": "bun",
+      "files": 10000,
+      "postexec_vmhwm_mib": 33.08984375,
+      "postexec_vmrss_mib": 33.08984375,
+      "correct": true,
+      "output_sha256": "ca2a28ca858e126547a0616fd122efff80ab43e442e317e06464dd07907366d2"
+    },
+    {
+      "engine": "go",
+      "files": 10000,
+      "postexec_vmhwm_mib": 9.26171875,
+      "postexec_vmrss_mib": 8.3984375,
+      "correct": true,
+      "output_sha256": "ca2a28ca858e126547a0616fd122efff80ab43e442e317e06464dd07907366d2"
+    },
+    {
+      "engine": "nift",
+      "files": 100000,
+      "postexec_vmhwm_mib": 193.87109375,
+      "postexec_vmrss_mib": 143.19921875,
+      "correct": true,
+      "output_sha256": "fe51d95376693242e9668fb575e2dc6d7e21a66fb19346e02f88e38d12e9a306"
+    },
+    {
+      "engine": "python",
+      "files": 100000,
+      "postexec_vmhwm_mib": 45.9609375,
+      "postexec_vmrss_mib": 20.09375,
+      "correct": true,
+      "output_sha256": "fe51d95376693242e9668fb575e2dc6d7e21a66fb19346e02f88e38d12e9a306"
+    },
+    {
+      "engine": "node",
+      "files": 100000,
+      "postexec_vmhwm_mib": 128.73828125,
+      "postexec_vmrss_mib": 124.46484375,
+      "correct": true,
+      "output_sha256": "fe51d95376693242e9668fb575e2dc6d7e21a66fb19346e02f88e38d12e9a306"
+    },
+    {
+      "engine": "bun",
+      "files": 100000,
+      "postexec_vmhwm_mib": 79.5,
+      "postexec_vmrss_mib": 63.6875,
+      "correct": true,
+      "output_sha256": "fe51d95376693242e9668fb575e2dc6d7e21a66fb19346e02f88e38d12e9a306"
+    },
+    {
+      "engine": "go",
+      "files": 100000,
+      "postexec_vmhwm_mib": 64.14453125,
+      "postexec_vmrss_mib": 58.59765625,
+      "correct": true,
+      "output_sha256": "fe51d95376693242e9668fb575e2dc6d7e21a66fb19346e02f88e38d12e9a306"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "diagnostic": "fork/preexec wait4 RSS floor; no runtime work in true child",
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "kernel": "7.0.0-29-generic",
+  "pass": true,
+  "controls": [
+    {
+      "parent_allocated_mib": 0,
+      "parent_status": [
+        "VmHWM:\t   12500 kB",
+        "VmRSS:\t   12500 kB"
+      ],
+      "true_child_wait4_maxrss_mib": 8.9296875,
+      "returncode": 0
+    },
+    {
+      "parent_allocated_mib": 64,
+      "parent_status": [
+        "VmHWM:\t   78076 kB",
+        "VmRSS:\t   78076 kB"
+      ],
+      "true_child_wait4_maxrss_mib": 73.08984375,
+      "returncode": 0
+    }
+  ]
+}

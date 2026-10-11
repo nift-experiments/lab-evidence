@@ -1,0 +1,85 @@
+[
+  {
+    "engine": "nift",
+    "edge_paths_pass": true,
+    "rows_sha256": "c510a8f34cf72d044c6414fa0fd4c743a9c7f49701720350facb0ecee7a82b39"
+  },
+  {
+    "engine": "python",
+    "edge_paths_pass": true,
+    "rows_sha256": "c510a8f34cf72d044c6414fa0fd4c743a9c7f49701720350facb0ecee7a82b39"
+  },
+  {
+    "engine": "node",
+    "edge_paths_pass": true,
+    "rows_sha256": "c510a8f34cf72d044c6414fa0fd4c743a9c7f49701720350facb0ecee7a82b39"
+  },
+  {
+    "engine": "bun",
+    "edge_paths_pass": true,
+    "rows_sha256": "c510a8f34cf72d044c6414fa0fd4c743a9c7f49701720350facb0ecee7a82b39"
+  },
+  {
+    "engine": "go",
+    "edge_paths_pass": true,
+    "rows_sha256": "c510a8f34cf72d044c6414fa0fd4c743a9c7f49701720350facb0ecee7a82b39"
+  },
+  {
+    "engine": "nift",
+    "missing_directory_exit": 1,
+    "stdout": "BOOT\n",
+    "stderr": "error: /home/nick/Repositories/nift/nift-experiments/filesystem-automation/adapters/nift.f:3:2: ls: No such file or directory\n"
+  },
+  {
+    "engine": "python",
+    "missing_directory_exit": 0,
+    "stdout": "BOOT\n[]\n",
+    "stderr": ""
+  },
+  {
+    "engine": "node",
+    "missing_directory_exit": 1,
+    "stdout": "BOOT\n",
+    "stderr": "/nift/nift-experiments/filesystem-automation/work/semantics/missing'\n    at Object.readdirSync (node:fs:1630:26)\n    at walk (file:///home/nick/Repositories/nift/nift-experiments/filesystem-automation/adapters/js.mjs:2:59)\n    at execute (file:///home/nick/Repositories/nift/nift-experiments/filesystem-automation/adapters/js.mjs:4:79)\n    at file:///home/nick/Repositories/nift/nift-experiments/filesystem-automation/adapters/js.mjs:20:143\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {\n  errno: -2,\n  code: 'ENOENT',\n  syscall: 'scandir',\n  path: '/home/nick/Repositories/nift/nift-experiments/filesystem-automation/work/semantics/missing'\n}\n\nNode.js v24.21.0\n"
+  },
+  {
+    "engine": "bun",
+    "missing_directory_exit": 1,
+    "stdout": "BOOT\n",
+    "stderr": "t;}\n                                                              ^\nENOENT: no such file or directory, scandir '/home/nick/Repositories/nift/nift-experiments/filesystem-automation/work/semantics/missing'\n    path: \"/home/nick/Repositories/nift/nift-experiments/filesystem-automation/work/semantics/missing\",\n syscall: \"scandir\",\n   errno: -2,\n    code: \"ENOENT\"\n\n      at walk (/home/nick/Repositories/nift/nift-experiments/filesystem-automation/adapters/js.mjs:2:59)\n      at execute (/home/nick/Repositories/nift/nift-experiments/filesystem-automation/adapters/js.mjs:4:79)\n      at /home/nick/Repositories/nift/nift-experiments/filesystem-automation/adapters/js.mjs:20:143\n\nBun v1.4.3 (Linux x64)\n"
+  },
+  {
+    "engine": "go",
+    "missing_directory_exit": 2,
+    "stdout": "BOOT\n",
+    "stderr": "panic: lstat /home/nick/Repositories/nift/nift-experiments/filesystem-automation/work/semantics/missing: no such file or directory\n\ngoroutine 1 [running]:\nmain.must(...)\n\t/home/nick/Repositories/nift/nift-experiments/filesystem-automation/adapters/go.go:4\nmain.walk({0x25fceeeaa005?, 0x25fceedc4b78?})\n\t/home/nick/Repositories/nift/nift-experiments/filesystem-automation/adapters/go.go:5 +0x72\nmain.execute({0x25fceeeaa000, 0x4}, {0x25fceeeaa005, 0x5a}, {0x25fceeeaa060, 0x57}, 0x42b714?, 0x0)\n\t/home/nick/Repositories/nift/nift-experiments/filesystem-automation/adapters/go.go:10 +0x71\nmain.main()\n\t/home/nick/Repositories/nift/nift-experiments/filesystem-automation/adapters/go.go:25 +0x1da\n"
+  },
+  {
+    "engine": "nift",
+    "expression": "print(stat(\"README.md\").stringify())",
+    "exit": 0,
+    "stdout": "{\"exists\":true,\"type\":\"file\",\"size\":227}\n",
+    "stderr": ""
+  },
+  {
+    "engine": "nift",
+    "expression": "print(sha256(\"abc\"))",
+    "exit": 1,
+    "stdout": "",
+    "stderr": "error: <command-line>:1:7: undefined callable: sha256\n"
+  },
+  {
+    "engine": "nift",
+    "expression": "make_dir(\"work/semantics/remove-dir\"); remove(\"work/semantics/remove-dir\")",
+    "exit": 1,
+    "stdout": "",
+    "stderr": "error: <command-line>:1:40: remove: directories are not removed recursively\n"
+  },
+  {
+    "engine": "nift",
+    "inline_form_execute_count": 3,
+    "stdout": "BOOT\nEXECUTE\nEXECUTE\nEXECUTE\n[[\"empty.dat\",0,0],[\"space dir\",-1,0],[\"space dir/a b.txt\",0,0],[\"unicode-\u00fc\",-1,0],[\"unicode-\u00fc/na\u00efve.txt\",0,0]]\n",
+    "stderr": "",
+    "exit": 0
+  }
+]

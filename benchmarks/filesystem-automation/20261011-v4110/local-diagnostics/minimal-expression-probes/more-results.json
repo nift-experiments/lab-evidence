@@ -1,0 +1,26 @@
+[
+  {
+    "case": "ls-return",
+    "calls": 1,
+    "stdout": "CALLED\n[\"empty.dat\",\"space dir\",\"unicode-\u00fc\"]\n",
+    "exit": 0
+  },
+  {
+    "case": "ls-loop",
+    "calls": 1,
+    "stdout": "CALLED\n[\"empty.dat\",\"space dir\",\"unicode-\u00fc\"]\n",
+    "exit": 0
+  },
+  {
+    "case": "stdin-loop",
+    "calls": 3,
+    "stdout": "CALLED\nCALLED\nCALLED\n[[\"walk\",3,0]]\n",
+    "exit": 0
+  },
+  {
+    "case": "five-stdin",
+    "calls": 3,
+    "stdout": "CALLED\nCALLED\nCALLED\n[[\"walk\",3,0]]\n",
+    "exit": 0
+  }
+]
