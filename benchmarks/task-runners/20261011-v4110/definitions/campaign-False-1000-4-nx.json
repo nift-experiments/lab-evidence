@@ -1,0 +1,8020 @@
+{
+  "schema": 1,
+  "tasks": [
+    {
+      "id": "generate-schema",
+      "prerequisites": [],
+      "kind": "json",
+      "input": "inputs/generate-schema.json",
+      "output": "out/generate-schema.json"
+    },
+    {
+      "id": "generate-client",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/generate-client.json",
+      "output": "out/generate-client.json"
+    },
+    {
+      "id": "lint",
+      "prerequisites": [],
+      "kind": "check",
+      "input": "inputs/lint.json",
+      "output": "out/lint.json",
+      "receipt": true
+    },
+    {
+      "id": "typecheck",
+      "prerequisites": [
+        "generate-client"
+      ],
+      "kind": "check",
+      "input": "inputs/typecheck.json",
+      "output": "out/typecheck.json",
+      "receipt": true
+    },
+    {
+      "id": "unit-test",
+      "prerequisites": [
+        "generate-client"
+      ],
+      "kind": "check",
+      "input": "inputs/unit-test.json",
+      "output": "out/unit-test.json",
+      "receipt": true
+    },
+    {
+      "id": "build-web",
+      "prerequisites": [
+        "typecheck",
+        "lint",
+        "unit-test"
+      ],
+      "kind": "transform",
+      "input": "inputs/build-web.json",
+      "output": "out/build-web.json"
+    },
+    {
+      "id": "build-helper",
+      "prerequisites": [],
+      "kind": "compile",
+      "input": "inputs/build-helper.json",
+      "output": "out/build-helper.json"
+    },
+    {
+      "id": "docs",
+      "prerequisites": [
+        "generate-client"
+      ],
+      "kind": "transform",
+      "input": "inputs/docs.json",
+      "output": "out/docs.json"
+    },
+    {
+      "id": "package",
+      "prerequisites": [
+        "build-web",
+        "build-helper",
+        "docs"
+      ],
+      "kind": "archive",
+      "input": "inputs/package.json",
+      "output": "out/package.json"
+    },
+    {
+      "id": "integration-test",
+      "prerequisites": [
+        "package"
+      ],
+      "kind": "check",
+      "input": "inputs/integration-test.json",
+      "output": "out/integration-test.json",
+      "receipt": true
+    },
+    {
+      "id": "verify",
+      "prerequisites": [
+        "integration-test"
+      ],
+      "kind": "check",
+      "input": "inputs/verify.json",
+      "output": "out/verify.json",
+      "receipt": true
+    },
+    {
+      "id": "release-prep",
+      "prerequisites": [
+        "verify"
+      ],
+      "kind": "json",
+      "input": "inputs/release-prep.json",
+      "output": "out/release-prep.json"
+    },
+    {
+      "id": "asset-00000",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00000.json",
+      "output": "out/asset-00000.json"
+    },
+    {
+      "id": "asset-00001",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00001.json",
+      "output": "out/asset-00001.json"
+    },
+    {
+      "id": "asset-00002",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00002.json",
+      "output": "out/asset-00002.json"
+    },
+    {
+      "id": "asset-00003",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00003.json",
+      "output": "out/asset-00003.json"
+    },
+    {
+      "id": "asset-00004",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00004.json",
+      "output": "out/asset-00004.json"
+    },
+    {
+      "id": "asset-00005",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00005.json",
+      "output": "out/asset-00005.json"
+    },
+    {
+      "id": "asset-00006",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00006.json",
+      "output": "out/asset-00006.json"
+    },
+    {
+      "id": "asset-00007",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00007.json",
+      "output": "out/asset-00007.json"
+    },
+    {
+      "id": "asset-00008",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00008.json",
+      "output": "out/asset-00008.json"
+    },
+    {
+      "id": "asset-00009",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00009.json",
+      "output": "out/asset-00009.json"
+    },
+    {
+      "id": "asset-00010",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00010.json",
+      "output": "out/asset-00010.json"
+    },
+    {
+      "id": "asset-00011",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00011.json",
+      "output": "out/asset-00011.json"
+    },
+    {
+      "id": "asset-00012",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00012.json",
+      "output": "out/asset-00012.json"
+    },
+    {
+      "id": "asset-00013",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00013.json",
+      "output": "out/asset-00013.json"
+    },
+    {
+      "id": "asset-00014",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00014.json",
+      "output": "out/asset-00014.json"
+    },
+    {
+      "id": "asset-00015",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00015.json",
+      "output": "out/asset-00015.json"
+    },
+    {
+      "id": "asset-00016",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00016.json",
+      "output": "out/asset-00016.json"
+    },
+    {
+      "id": "asset-00017",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00017.json",
+      "output": "out/asset-00017.json"
+    },
+    {
+      "id": "asset-00018",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00018.json",
+      "output": "out/asset-00018.json"
+    },
+    {
+      "id": "asset-00019",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00019.json",
+      "output": "out/asset-00019.json"
+    },
+    {
+      "id": "asset-00020",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00020.json",
+      "output": "out/asset-00020.json"
+    },
+    {
+      "id": "asset-00021",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00021.json",
+      "output": "out/asset-00021.json"
+    },
+    {
+      "id": "asset-00022",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00022.json",
+      "output": "out/asset-00022.json"
+    },
+    {
+      "id": "asset-00023",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00023.json",
+      "output": "out/asset-00023.json"
+    },
+    {
+      "id": "asset-00024",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00024.json",
+      "output": "out/asset-00024.json"
+    },
+    {
+      "id": "asset-00025",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00025.json",
+      "output": "out/asset-00025.json"
+    },
+    {
+      "id": "asset-00026",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00026.json",
+      "output": "out/asset-00026.json"
+    },
+    {
+      "id": "asset-00027",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00027.json",
+      "output": "out/asset-00027.json"
+    },
+    {
+      "id": "asset-00028",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00028.json",
+      "output": "out/asset-00028.json"
+    },
+    {
+      "id": "asset-00029",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00029.json",
+      "output": "out/asset-00029.json"
+    },
+    {
+      "id": "asset-00030",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00030.json",
+      "output": "out/asset-00030.json"
+    },
+    {
+      "id": "asset-00031",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00031.json",
+      "output": "out/asset-00031.json"
+    },
+    {
+      "id": "asset-00032",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00032.json",
+      "output": "out/asset-00032.json"
+    },
+    {
+      "id": "asset-00033",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00033.json",
+      "output": "out/asset-00033.json"
+    },
+    {
+      "id": "asset-00034",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00034.json",
+      "output": "out/asset-00034.json"
+    },
+    {
+      "id": "asset-00035",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00035.json",
+      "output": "out/asset-00035.json"
+    },
+    {
+      "id": "asset-00036",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00036.json",
+      "output": "out/asset-00036.json"
+    },
+    {
+      "id": "asset-00037",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00037.json",
+      "output": "out/asset-00037.json"
+    },
+    {
+      "id": "asset-00038",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00038.json",
+      "output": "out/asset-00038.json"
+    },
+    {
+      "id": "asset-00039",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00039.json",
+      "output": "out/asset-00039.json"
+    },
+    {
+      "id": "asset-00040",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00040.json",
+      "output": "out/asset-00040.json"
+    },
+    {
+      "id": "asset-00041",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00041.json",
+      "output": "out/asset-00041.json"
+    },
+    {
+      "id": "asset-00042",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00042.json",
+      "output": "out/asset-00042.json"
+    },
+    {
+      "id": "asset-00043",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00043.json",
+      "output": "out/asset-00043.json"
+    },
+    {
+      "id": "asset-00044",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00044.json",
+      "output": "out/asset-00044.json"
+    },
+    {
+      "id": "asset-00045",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00045.json",
+      "output": "out/asset-00045.json"
+    },
+    {
+      "id": "asset-00046",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00046.json",
+      "output": "out/asset-00046.json"
+    },
+    {
+      "id": "asset-00047",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00047.json",
+      "output": "out/asset-00047.json"
+    },
+    {
+      "id": "asset-00048",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00048.json",
+      "output": "out/asset-00048.json"
+    },
+    {
+      "id": "asset-00049",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00049.json",
+      "output": "out/asset-00049.json"
+    },
+    {
+      "id": "asset-00050",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00050.json",
+      "output": "out/asset-00050.json"
+    },
+    {
+      "id": "asset-00051",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00051.json",
+      "output": "out/asset-00051.json"
+    },
+    {
+      "id": "asset-00052",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00052.json",
+      "output": "out/asset-00052.json"
+    },
+    {
+      "id": "asset-00053",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00053.json",
+      "output": "out/asset-00053.json"
+    },
+    {
+      "id": "asset-00054",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00054.json",
+      "output": "out/asset-00054.json"
+    },
+    {
+      "id": "asset-00055",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00055.json",
+      "output": "out/asset-00055.json"
+    },
+    {
+      "id": "asset-00056",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00056.json",
+      "output": "out/asset-00056.json"
+    },
+    {
+      "id": "asset-00057",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00057.json",
+      "output": "out/asset-00057.json"
+    },
+    {
+      "id": "asset-00058",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00058.json",
+      "output": "out/asset-00058.json"
+    },
+    {
+      "id": "asset-00059",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00059.json",
+      "output": "out/asset-00059.json"
+    },
+    {
+      "id": "asset-00060",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00060.json",
+      "output": "out/asset-00060.json"
+    },
+    {
+      "id": "asset-00061",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00061.json",
+      "output": "out/asset-00061.json"
+    },
+    {
+      "id": "asset-00062",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00062.json",
+      "output": "out/asset-00062.json"
+    },
+    {
+      "id": "asset-00063",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00063.json",
+      "output": "out/asset-00063.json"
+    },
+    {
+      "id": "asset-00064",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00064.json",
+      "output": "out/asset-00064.json"
+    },
+    {
+      "id": "asset-00065",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00065.json",
+      "output": "out/asset-00065.json"
+    },
+    {
+      "id": "asset-00066",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00066.json",
+      "output": "out/asset-00066.json"
+    },
+    {
+      "id": "asset-00067",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00067.json",
+      "output": "out/asset-00067.json"
+    },
+    {
+      "id": "asset-00068",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00068.json",
+      "output": "out/asset-00068.json"
+    },
+    {
+      "id": "asset-00069",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00069.json",
+      "output": "out/asset-00069.json"
+    },
+    {
+      "id": "asset-00070",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00070.json",
+      "output": "out/asset-00070.json"
+    },
+    {
+      "id": "asset-00071",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00071.json",
+      "output": "out/asset-00071.json"
+    },
+    {
+      "id": "asset-00072",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00072.json",
+      "output": "out/asset-00072.json"
+    },
+    {
+      "id": "asset-00073",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00073.json",
+      "output": "out/asset-00073.json"
+    },
+    {
+      "id": "asset-00074",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00074.json",
+      "output": "out/asset-00074.json"
+    },
+    {
+      "id": "asset-00075",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00075.json",
+      "output": "out/asset-00075.json"
+    },
+    {
+      "id": "asset-00076",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00076.json",
+      "output": "out/asset-00076.json"
+    },
+    {
+      "id": "asset-00077",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00077.json",
+      "output": "out/asset-00077.json"
+    },
+    {
+      "id": "asset-00078",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00078.json",
+      "output": "out/asset-00078.json"
+    },
+    {
+      "id": "asset-00079",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00079.json",
+      "output": "out/asset-00079.json"
+    },
+    {
+      "id": "asset-00080",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00080.json",
+      "output": "out/asset-00080.json"
+    },
+    {
+      "id": "asset-00081",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00081.json",
+      "output": "out/asset-00081.json"
+    },
+    {
+      "id": "asset-00082",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00082.json",
+      "output": "out/asset-00082.json"
+    },
+    {
+      "id": "asset-00083",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00083.json",
+      "output": "out/asset-00083.json"
+    },
+    {
+      "id": "asset-00084",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00084.json",
+      "output": "out/asset-00084.json"
+    },
+    {
+      "id": "asset-00085",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00085.json",
+      "output": "out/asset-00085.json"
+    },
+    {
+      "id": "asset-00086",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00086.json",
+      "output": "out/asset-00086.json"
+    },
+    {
+      "id": "asset-00087",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00087.json",
+      "output": "out/asset-00087.json"
+    },
+    {
+      "id": "asset-00088",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00088.json",
+      "output": "out/asset-00088.json"
+    },
+    {
+      "id": "asset-00089",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00089.json",
+      "output": "out/asset-00089.json"
+    },
+    {
+      "id": "asset-00090",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00090.json",
+      "output": "out/asset-00090.json"
+    },
+    {
+      "id": "asset-00091",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00091.json",
+      "output": "out/asset-00091.json"
+    },
+    {
+      "id": "asset-00092",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00092.json",
+      "output": "out/asset-00092.json"
+    },
+    {
+      "id": "asset-00093",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00093.json",
+      "output": "out/asset-00093.json"
+    },
+    {
+      "id": "asset-00094",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00094.json",
+      "output": "out/asset-00094.json"
+    },
+    {
+      "id": "asset-00095",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00095.json",
+      "output": "out/asset-00095.json"
+    },
+    {
+      "id": "asset-00096",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00096.json",
+      "output": "out/asset-00096.json"
+    },
+    {
+      "id": "asset-00097",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00097.json",
+      "output": "out/asset-00097.json"
+    },
+    {
+      "id": "asset-00098",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00098.json",
+      "output": "out/asset-00098.json"
+    },
+    {
+      "id": "asset-00099",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00099.json",
+      "output": "out/asset-00099.json"
+    },
+    {
+      "id": "asset-00100",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00100.json",
+      "output": "out/asset-00100.json"
+    },
+    {
+      "id": "asset-00101",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00101.json",
+      "output": "out/asset-00101.json"
+    },
+    {
+      "id": "asset-00102",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00102.json",
+      "output": "out/asset-00102.json"
+    },
+    {
+      "id": "asset-00103",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00103.json",
+      "output": "out/asset-00103.json"
+    },
+    {
+      "id": "asset-00104",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00104.json",
+      "output": "out/asset-00104.json"
+    },
+    {
+      "id": "asset-00105",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00105.json",
+      "output": "out/asset-00105.json"
+    },
+    {
+      "id": "asset-00106",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00106.json",
+      "output": "out/asset-00106.json"
+    },
+    {
+      "id": "asset-00107",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00107.json",
+      "output": "out/asset-00107.json"
+    },
+    {
+      "id": "asset-00108",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00108.json",
+      "output": "out/asset-00108.json"
+    },
+    {
+      "id": "asset-00109",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00109.json",
+      "output": "out/asset-00109.json"
+    },
+    {
+      "id": "asset-00110",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00110.json",
+      "output": "out/asset-00110.json"
+    },
+    {
+      "id": "asset-00111",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00111.json",
+      "output": "out/asset-00111.json"
+    },
+    {
+      "id": "asset-00112",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00112.json",
+      "output": "out/asset-00112.json"
+    },
+    {
+      "id": "asset-00113",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00113.json",
+      "output": "out/asset-00113.json"
+    },
+    {
+      "id": "asset-00114",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00114.json",
+      "output": "out/asset-00114.json"
+    },
+    {
+      "id": "asset-00115",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00115.json",
+      "output": "out/asset-00115.json"
+    },
+    {
+      "id": "asset-00116",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00116.json",
+      "output": "out/asset-00116.json"
+    },
+    {
+      "id": "asset-00117",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00117.json",
+      "output": "out/asset-00117.json"
+    },
+    {
+      "id": "asset-00118",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00118.json",
+      "output": "out/asset-00118.json"
+    },
+    {
+      "id": "asset-00119",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00119.json",
+      "output": "out/asset-00119.json"
+    },
+    {
+      "id": "asset-00120",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00120.json",
+      "output": "out/asset-00120.json"
+    },
+    {
+      "id": "asset-00121",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00121.json",
+      "output": "out/asset-00121.json"
+    },
+    {
+      "id": "asset-00122",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00122.json",
+      "output": "out/asset-00122.json"
+    },
+    {
+      "id": "asset-00123",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00123.json",
+      "output": "out/asset-00123.json"
+    },
+    {
+      "id": "asset-00124",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00124.json",
+      "output": "out/asset-00124.json"
+    },
+    {
+      "id": "asset-00125",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00125.json",
+      "output": "out/asset-00125.json"
+    },
+    {
+      "id": "asset-00126",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00126.json",
+      "output": "out/asset-00126.json"
+    },
+    {
+      "id": "asset-00127",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00127.json",
+      "output": "out/asset-00127.json"
+    },
+    {
+      "id": "asset-00128",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00128.json",
+      "output": "out/asset-00128.json"
+    },
+    {
+      "id": "asset-00129",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00129.json",
+      "output": "out/asset-00129.json"
+    },
+    {
+      "id": "asset-00130",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00130.json",
+      "output": "out/asset-00130.json"
+    },
+    {
+      "id": "asset-00131",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00131.json",
+      "output": "out/asset-00131.json"
+    },
+    {
+      "id": "asset-00132",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00132.json",
+      "output": "out/asset-00132.json"
+    },
+    {
+      "id": "asset-00133",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00133.json",
+      "output": "out/asset-00133.json"
+    },
+    {
+      "id": "asset-00134",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00134.json",
+      "output": "out/asset-00134.json"
+    },
+    {
+      "id": "asset-00135",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00135.json",
+      "output": "out/asset-00135.json"
+    },
+    {
+      "id": "asset-00136",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00136.json",
+      "output": "out/asset-00136.json"
+    },
+    {
+      "id": "asset-00137",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00137.json",
+      "output": "out/asset-00137.json"
+    },
+    {
+      "id": "asset-00138",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00138.json",
+      "output": "out/asset-00138.json"
+    },
+    {
+      "id": "asset-00139",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00139.json",
+      "output": "out/asset-00139.json"
+    },
+    {
+      "id": "asset-00140",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00140.json",
+      "output": "out/asset-00140.json"
+    },
+    {
+      "id": "asset-00141",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00141.json",
+      "output": "out/asset-00141.json"
+    },
+    {
+      "id": "asset-00142",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00142.json",
+      "output": "out/asset-00142.json"
+    },
+    {
+      "id": "asset-00143",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00143.json",
+      "output": "out/asset-00143.json"
+    },
+    {
+      "id": "asset-00144",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00144.json",
+      "output": "out/asset-00144.json"
+    },
+    {
+      "id": "asset-00145",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00145.json",
+      "output": "out/asset-00145.json"
+    },
+    {
+      "id": "asset-00146",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00146.json",
+      "output": "out/asset-00146.json"
+    },
+    {
+      "id": "asset-00147",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00147.json",
+      "output": "out/asset-00147.json"
+    },
+    {
+      "id": "asset-00148",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00148.json",
+      "output": "out/asset-00148.json"
+    },
+    {
+      "id": "asset-00149",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00149.json",
+      "output": "out/asset-00149.json"
+    },
+    {
+      "id": "asset-00150",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00150.json",
+      "output": "out/asset-00150.json"
+    },
+    {
+      "id": "asset-00151",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00151.json",
+      "output": "out/asset-00151.json"
+    },
+    {
+      "id": "asset-00152",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00152.json",
+      "output": "out/asset-00152.json"
+    },
+    {
+      "id": "asset-00153",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00153.json",
+      "output": "out/asset-00153.json"
+    },
+    {
+      "id": "asset-00154",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00154.json",
+      "output": "out/asset-00154.json"
+    },
+    {
+      "id": "asset-00155",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00155.json",
+      "output": "out/asset-00155.json"
+    },
+    {
+      "id": "asset-00156",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00156.json",
+      "output": "out/asset-00156.json"
+    },
+    {
+      "id": "asset-00157",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00157.json",
+      "output": "out/asset-00157.json"
+    },
+    {
+      "id": "asset-00158",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00158.json",
+      "output": "out/asset-00158.json"
+    },
+    {
+      "id": "asset-00159",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00159.json",
+      "output": "out/asset-00159.json"
+    },
+    {
+      "id": "asset-00160",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00160.json",
+      "output": "out/asset-00160.json"
+    },
+    {
+      "id": "asset-00161",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00161.json",
+      "output": "out/asset-00161.json"
+    },
+    {
+      "id": "asset-00162",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00162.json",
+      "output": "out/asset-00162.json"
+    },
+    {
+      "id": "asset-00163",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00163.json",
+      "output": "out/asset-00163.json"
+    },
+    {
+      "id": "asset-00164",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00164.json",
+      "output": "out/asset-00164.json"
+    },
+    {
+      "id": "asset-00165",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00165.json",
+      "output": "out/asset-00165.json"
+    },
+    {
+      "id": "asset-00166",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00166.json",
+      "output": "out/asset-00166.json"
+    },
+    {
+      "id": "asset-00167",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00167.json",
+      "output": "out/asset-00167.json"
+    },
+    {
+      "id": "asset-00168",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00168.json",
+      "output": "out/asset-00168.json"
+    },
+    {
+      "id": "asset-00169",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00169.json",
+      "output": "out/asset-00169.json"
+    },
+    {
+      "id": "asset-00170",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00170.json",
+      "output": "out/asset-00170.json"
+    },
+    {
+      "id": "asset-00171",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00171.json",
+      "output": "out/asset-00171.json"
+    },
+    {
+      "id": "asset-00172",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00172.json",
+      "output": "out/asset-00172.json"
+    },
+    {
+      "id": "asset-00173",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00173.json",
+      "output": "out/asset-00173.json"
+    },
+    {
+      "id": "asset-00174",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00174.json",
+      "output": "out/asset-00174.json"
+    },
+    {
+      "id": "asset-00175",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00175.json",
+      "output": "out/asset-00175.json"
+    },
+    {
+      "id": "asset-00176",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00176.json",
+      "output": "out/asset-00176.json"
+    },
+    {
+      "id": "asset-00177",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00177.json",
+      "output": "out/asset-00177.json"
+    },
+    {
+      "id": "asset-00178",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00178.json",
+      "output": "out/asset-00178.json"
+    },
+    {
+      "id": "asset-00179",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00179.json",
+      "output": "out/asset-00179.json"
+    },
+    {
+      "id": "asset-00180",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00180.json",
+      "output": "out/asset-00180.json"
+    },
+    {
+      "id": "asset-00181",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00181.json",
+      "output": "out/asset-00181.json"
+    },
+    {
+      "id": "asset-00182",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00182.json",
+      "output": "out/asset-00182.json"
+    },
+    {
+      "id": "asset-00183",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00183.json",
+      "output": "out/asset-00183.json"
+    },
+    {
+      "id": "asset-00184",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00184.json",
+      "output": "out/asset-00184.json"
+    },
+    {
+      "id": "asset-00185",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00185.json",
+      "output": "out/asset-00185.json"
+    },
+    {
+      "id": "asset-00186",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00186.json",
+      "output": "out/asset-00186.json"
+    },
+    {
+      "id": "asset-00187",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00187.json",
+      "output": "out/asset-00187.json"
+    },
+    {
+      "id": "asset-00188",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00188.json",
+      "output": "out/asset-00188.json"
+    },
+    {
+      "id": "asset-00189",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00189.json",
+      "output": "out/asset-00189.json"
+    },
+    {
+      "id": "asset-00190",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00190.json",
+      "output": "out/asset-00190.json"
+    },
+    {
+      "id": "asset-00191",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00191.json",
+      "output": "out/asset-00191.json"
+    },
+    {
+      "id": "asset-00192",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00192.json",
+      "output": "out/asset-00192.json"
+    },
+    {
+      "id": "asset-00193",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00193.json",
+      "output": "out/asset-00193.json"
+    },
+    {
+      "id": "asset-00194",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00194.json",
+      "output": "out/asset-00194.json"
+    },
+    {
+      "id": "asset-00195",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00195.json",
+      "output": "out/asset-00195.json"
+    },
+    {
+      "id": "asset-00196",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00196.json",
+      "output": "out/asset-00196.json"
+    },
+    {
+      "id": "asset-00197",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00197.json",
+      "output": "out/asset-00197.json"
+    },
+    {
+      "id": "asset-00198",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00198.json",
+      "output": "out/asset-00198.json"
+    },
+    {
+      "id": "asset-00199",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00199.json",
+      "output": "out/asset-00199.json"
+    },
+    {
+      "id": "asset-00200",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00200.json",
+      "output": "out/asset-00200.json"
+    },
+    {
+      "id": "asset-00201",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00201.json",
+      "output": "out/asset-00201.json"
+    },
+    {
+      "id": "asset-00202",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00202.json",
+      "output": "out/asset-00202.json"
+    },
+    {
+      "id": "asset-00203",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00203.json",
+      "output": "out/asset-00203.json"
+    },
+    {
+      "id": "asset-00204",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00204.json",
+      "output": "out/asset-00204.json"
+    },
+    {
+      "id": "asset-00205",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00205.json",
+      "output": "out/asset-00205.json"
+    },
+    {
+      "id": "asset-00206",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00206.json",
+      "output": "out/asset-00206.json"
+    },
+    {
+      "id": "asset-00207",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00207.json",
+      "output": "out/asset-00207.json"
+    },
+    {
+      "id": "asset-00208",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00208.json",
+      "output": "out/asset-00208.json"
+    },
+    {
+      "id": "asset-00209",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00209.json",
+      "output": "out/asset-00209.json"
+    },
+    {
+      "id": "asset-00210",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00210.json",
+      "output": "out/asset-00210.json"
+    },
+    {
+      "id": "asset-00211",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00211.json",
+      "output": "out/asset-00211.json"
+    },
+    {
+      "id": "asset-00212",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00212.json",
+      "output": "out/asset-00212.json"
+    },
+    {
+      "id": "asset-00213",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00213.json",
+      "output": "out/asset-00213.json"
+    },
+    {
+      "id": "asset-00214",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00214.json",
+      "output": "out/asset-00214.json"
+    },
+    {
+      "id": "asset-00215",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00215.json",
+      "output": "out/asset-00215.json"
+    },
+    {
+      "id": "asset-00216",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00216.json",
+      "output": "out/asset-00216.json"
+    },
+    {
+      "id": "asset-00217",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00217.json",
+      "output": "out/asset-00217.json"
+    },
+    {
+      "id": "asset-00218",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00218.json",
+      "output": "out/asset-00218.json"
+    },
+    {
+      "id": "asset-00219",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00219.json",
+      "output": "out/asset-00219.json"
+    },
+    {
+      "id": "asset-00220",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00220.json",
+      "output": "out/asset-00220.json"
+    },
+    {
+      "id": "asset-00221",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00221.json",
+      "output": "out/asset-00221.json"
+    },
+    {
+      "id": "asset-00222",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00222.json",
+      "output": "out/asset-00222.json"
+    },
+    {
+      "id": "asset-00223",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00223.json",
+      "output": "out/asset-00223.json"
+    },
+    {
+      "id": "asset-00224",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00224.json",
+      "output": "out/asset-00224.json"
+    },
+    {
+      "id": "asset-00225",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00225.json",
+      "output": "out/asset-00225.json"
+    },
+    {
+      "id": "asset-00226",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00226.json",
+      "output": "out/asset-00226.json"
+    },
+    {
+      "id": "asset-00227",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00227.json",
+      "output": "out/asset-00227.json"
+    },
+    {
+      "id": "asset-00228",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00228.json",
+      "output": "out/asset-00228.json"
+    },
+    {
+      "id": "asset-00229",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00229.json",
+      "output": "out/asset-00229.json"
+    },
+    {
+      "id": "asset-00230",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00230.json",
+      "output": "out/asset-00230.json"
+    },
+    {
+      "id": "asset-00231",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00231.json",
+      "output": "out/asset-00231.json"
+    },
+    {
+      "id": "asset-00232",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00232.json",
+      "output": "out/asset-00232.json"
+    },
+    {
+      "id": "asset-00233",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00233.json",
+      "output": "out/asset-00233.json"
+    },
+    {
+      "id": "asset-00234",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00234.json",
+      "output": "out/asset-00234.json"
+    },
+    {
+      "id": "asset-00235",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00235.json",
+      "output": "out/asset-00235.json"
+    },
+    {
+      "id": "asset-00236",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00236.json",
+      "output": "out/asset-00236.json"
+    },
+    {
+      "id": "asset-00237",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00237.json",
+      "output": "out/asset-00237.json"
+    },
+    {
+      "id": "asset-00238",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00238.json",
+      "output": "out/asset-00238.json"
+    },
+    {
+      "id": "asset-00239",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00239.json",
+      "output": "out/asset-00239.json"
+    },
+    {
+      "id": "asset-00240",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00240.json",
+      "output": "out/asset-00240.json"
+    },
+    {
+      "id": "asset-00241",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00241.json",
+      "output": "out/asset-00241.json"
+    },
+    {
+      "id": "asset-00242",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00242.json",
+      "output": "out/asset-00242.json"
+    },
+    {
+      "id": "asset-00243",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00243.json",
+      "output": "out/asset-00243.json"
+    },
+    {
+      "id": "asset-00244",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00244.json",
+      "output": "out/asset-00244.json"
+    },
+    {
+      "id": "asset-00245",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00245.json",
+      "output": "out/asset-00245.json"
+    },
+    {
+      "id": "asset-00246",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00246.json",
+      "output": "out/asset-00246.json"
+    },
+    {
+      "id": "asset-00247",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00247.json",
+      "output": "out/asset-00247.json"
+    },
+    {
+      "id": "asset-00248",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00248.json",
+      "output": "out/asset-00248.json"
+    },
+    {
+      "id": "asset-00249",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00249.json",
+      "output": "out/asset-00249.json"
+    },
+    {
+      "id": "asset-00250",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00250.json",
+      "output": "out/asset-00250.json"
+    },
+    {
+      "id": "asset-00251",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00251.json",
+      "output": "out/asset-00251.json"
+    },
+    {
+      "id": "asset-00252",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00252.json",
+      "output": "out/asset-00252.json"
+    },
+    {
+      "id": "asset-00253",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00253.json",
+      "output": "out/asset-00253.json"
+    },
+    {
+      "id": "asset-00254",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00254.json",
+      "output": "out/asset-00254.json"
+    },
+    {
+      "id": "asset-00255",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00255.json",
+      "output": "out/asset-00255.json"
+    },
+    {
+      "id": "asset-00256",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00256.json",
+      "output": "out/asset-00256.json"
+    },
+    {
+      "id": "asset-00257",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00257.json",
+      "output": "out/asset-00257.json"
+    },
+    {
+      "id": "asset-00258",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00258.json",
+      "output": "out/asset-00258.json"
+    },
+    {
+      "id": "asset-00259",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00259.json",
+      "output": "out/asset-00259.json"
+    },
+    {
+      "id": "asset-00260",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00260.json",
+      "output": "out/asset-00260.json"
+    },
+    {
+      "id": "asset-00261",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00261.json",
+      "output": "out/asset-00261.json"
+    },
+    {
+      "id": "asset-00262",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00262.json",
+      "output": "out/asset-00262.json"
+    },
+    {
+      "id": "asset-00263",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00263.json",
+      "output": "out/asset-00263.json"
+    },
+    {
+      "id": "asset-00264",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00264.json",
+      "output": "out/asset-00264.json"
+    },
+    {
+      "id": "asset-00265",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00265.json",
+      "output": "out/asset-00265.json"
+    },
+    {
+      "id": "asset-00266",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00266.json",
+      "output": "out/asset-00266.json"
+    },
+    {
+      "id": "asset-00267",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00267.json",
+      "output": "out/asset-00267.json"
+    },
+    {
+      "id": "asset-00268",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00268.json",
+      "output": "out/asset-00268.json"
+    },
+    {
+      "id": "asset-00269",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00269.json",
+      "output": "out/asset-00269.json"
+    },
+    {
+      "id": "asset-00270",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00270.json",
+      "output": "out/asset-00270.json"
+    },
+    {
+      "id": "asset-00271",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00271.json",
+      "output": "out/asset-00271.json"
+    },
+    {
+      "id": "asset-00272",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00272.json",
+      "output": "out/asset-00272.json"
+    },
+    {
+      "id": "asset-00273",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00273.json",
+      "output": "out/asset-00273.json"
+    },
+    {
+      "id": "asset-00274",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00274.json",
+      "output": "out/asset-00274.json"
+    },
+    {
+      "id": "asset-00275",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00275.json",
+      "output": "out/asset-00275.json"
+    },
+    {
+      "id": "asset-00276",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00276.json",
+      "output": "out/asset-00276.json"
+    },
+    {
+      "id": "asset-00277",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00277.json",
+      "output": "out/asset-00277.json"
+    },
+    {
+      "id": "asset-00278",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00278.json",
+      "output": "out/asset-00278.json"
+    },
+    {
+      "id": "asset-00279",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00279.json",
+      "output": "out/asset-00279.json"
+    },
+    {
+      "id": "asset-00280",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00280.json",
+      "output": "out/asset-00280.json"
+    },
+    {
+      "id": "asset-00281",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00281.json",
+      "output": "out/asset-00281.json"
+    },
+    {
+      "id": "asset-00282",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00282.json",
+      "output": "out/asset-00282.json"
+    },
+    {
+      "id": "asset-00283",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00283.json",
+      "output": "out/asset-00283.json"
+    },
+    {
+      "id": "asset-00284",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00284.json",
+      "output": "out/asset-00284.json"
+    },
+    {
+      "id": "asset-00285",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00285.json",
+      "output": "out/asset-00285.json"
+    },
+    {
+      "id": "asset-00286",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00286.json",
+      "output": "out/asset-00286.json"
+    },
+    {
+      "id": "asset-00287",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00287.json",
+      "output": "out/asset-00287.json"
+    },
+    {
+      "id": "asset-00288",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00288.json",
+      "output": "out/asset-00288.json"
+    },
+    {
+      "id": "asset-00289",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00289.json",
+      "output": "out/asset-00289.json"
+    },
+    {
+      "id": "asset-00290",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00290.json",
+      "output": "out/asset-00290.json"
+    },
+    {
+      "id": "asset-00291",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00291.json",
+      "output": "out/asset-00291.json"
+    },
+    {
+      "id": "asset-00292",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00292.json",
+      "output": "out/asset-00292.json"
+    },
+    {
+      "id": "asset-00293",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00293.json",
+      "output": "out/asset-00293.json"
+    },
+    {
+      "id": "asset-00294",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00294.json",
+      "output": "out/asset-00294.json"
+    },
+    {
+      "id": "asset-00295",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00295.json",
+      "output": "out/asset-00295.json"
+    },
+    {
+      "id": "asset-00296",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00296.json",
+      "output": "out/asset-00296.json"
+    },
+    {
+      "id": "asset-00297",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00297.json",
+      "output": "out/asset-00297.json"
+    },
+    {
+      "id": "asset-00298",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00298.json",
+      "output": "out/asset-00298.json"
+    },
+    {
+      "id": "asset-00299",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00299.json",
+      "output": "out/asset-00299.json"
+    },
+    {
+      "id": "asset-00300",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00300.json",
+      "output": "out/asset-00300.json"
+    },
+    {
+      "id": "asset-00301",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00301.json",
+      "output": "out/asset-00301.json"
+    },
+    {
+      "id": "asset-00302",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00302.json",
+      "output": "out/asset-00302.json"
+    },
+    {
+      "id": "asset-00303",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00303.json",
+      "output": "out/asset-00303.json"
+    },
+    {
+      "id": "asset-00304",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00304.json",
+      "output": "out/asset-00304.json"
+    },
+    {
+      "id": "asset-00305",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00305.json",
+      "output": "out/asset-00305.json"
+    },
+    {
+      "id": "asset-00306",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00306.json",
+      "output": "out/asset-00306.json"
+    },
+    {
+      "id": "asset-00307",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00307.json",
+      "output": "out/asset-00307.json"
+    },
+    {
+      "id": "asset-00308",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00308.json",
+      "output": "out/asset-00308.json"
+    },
+    {
+      "id": "asset-00309",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00309.json",
+      "output": "out/asset-00309.json"
+    },
+    {
+      "id": "asset-00310",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00310.json",
+      "output": "out/asset-00310.json"
+    },
+    {
+      "id": "asset-00311",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00311.json",
+      "output": "out/asset-00311.json"
+    },
+    {
+      "id": "asset-00312",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00312.json",
+      "output": "out/asset-00312.json"
+    },
+    {
+      "id": "asset-00313",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00313.json",
+      "output": "out/asset-00313.json"
+    },
+    {
+      "id": "asset-00314",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00314.json",
+      "output": "out/asset-00314.json"
+    },
+    {
+      "id": "asset-00315",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00315.json",
+      "output": "out/asset-00315.json"
+    },
+    {
+      "id": "asset-00316",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00316.json",
+      "output": "out/asset-00316.json"
+    },
+    {
+      "id": "asset-00317",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00317.json",
+      "output": "out/asset-00317.json"
+    },
+    {
+      "id": "asset-00318",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00318.json",
+      "output": "out/asset-00318.json"
+    },
+    {
+      "id": "asset-00319",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00319.json",
+      "output": "out/asset-00319.json"
+    },
+    {
+      "id": "asset-00320",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00320.json",
+      "output": "out/asset-00320.json"
+    },
+    {
+      "id": "asset-00321",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00321.json",
+      "output": "out/asset-00321.json"
+    },
+    {
+      "id": "asset-00322",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00322.json",
+      "output": "out/asset-00322.json"
+    },
+    {
+      "id": "asset-00323",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00323.json",
+      "output": "out/asset-00323.json"
+    },
+    {
+      "id": "asset-00324",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00324.json",
+      "output": "out/asset-00324.json"
+    },
+    {
+      "id": "asset-00325",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00325.json",
+      "output": "out/asset-00325.json"
+    },
+    {
+      "id": "asset-00326",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00326.json",
+      "output": "out/asset-00326.json"
+    },
+    {
+      "id": "asset-00327",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00327.json",
+      "output": "out/asset-00327.json"
+    },
+    {
+      "id": "asset-00328",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00328.json",
+      "output": "out/asset-00328.json"
+    },
+    {
+      "id": "asset-00329",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00329.json",
+      "output": "out/asset-00329.json"
+    },
+    {
+      "id": "asset-00330",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00330.json",
+      "output": "out/asset-00330.json"
+    },
+    {
+      "id": "asset-00331",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00331.json",
+      "output": "out/asset-00331.json"
+    },
+    {
+      "id": "asset-00332",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00332.json",
+      "output": "out/asset-00332.json"
+    },
+    {
+      "id": "asset-00333",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00333.json",
+      "output": "out/asset-00333.json"
+    },
+    {
+      "id": "asset-00334",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00334.json",
+      "output": "out/asset-00334.json"
+    },
+    {
+      "id": "asset-00335",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00335.json",
+      "output": "out/asset-00335.json"
+    },
+    {
+      "id": "asset-00336",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00336.json",
+      "output": "out/asset-00336.json"
+    },
+    {
+      "id": "asset-00337",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00337.json",
+      "output": "out/asset-00337.json"
+    },
+    {
+      "id": "asset-00338",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00338.json",
+      "output": "out/asset-00338.json"
+    },
+    {
+      "id": "asset-00339",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00339.json",
+      "output": "out/asset-00339.json"
+    },
+    {
+      "id": "asset-00340",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00340.json",
+      "output": "out/asset-00340.json"
+    },
+    {
+      "id": "asset-00341",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00341.json",
+      "output": "out/asset-00341.json"
+    },
+    {
+      "id": "asset-00342",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00342.json",
+      "output": "out/asset-00342.json"
+    },
+    {
+      "id": "asset-00343",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00343.json",
+      "output": "out/asset-00343.json"
+    },
+    {
+      "id": "asset-00344",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00344.json",
+      "output": "out/asset-00344.json"
+    },
+    {
+      "id": "asset-00345",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00345.json",
+      "output": "out/asset-00345.json"
+    },
+    {
+      "id": "asset-00346",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00346.json",
+      "output": "out/asset-00346.json"
+    },
+    {
+      "id": "asset-00347",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00347.json",
+      "output": "out/asset-00347.json"
+    },
+    {
+      "id": "asset-00348",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00348.json",
+      "output": "out/asset-00348.json"
+    },
+    {
+      "id": "asset-00349",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00349.json",
+      "output": "out/asset-00349.json"
+    },
+    {
+      "id": "asset-00350",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00350.json",
+      "output": "out/asset-00350.json"
+    },
+    {
+      "id": "asset-00351",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00351.json",
+      "output": "out/asset-00351.json"
+    },
+    {
+      "id": "asset-00352",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00352.json",
+      "output": "out/asset-00352.json"
+    },
+    {
+      "id": "asset-00353",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00353.json",
+      "output": "out/asset-00353.json"
+    },
+    {
+      "id": "asset-00354",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00354.json",
+      "output": "out/asset-00354.json"
+    },
+    {
+      "id": "asset-00355",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00355.json",
+      "output": "out/asset-00355.json"
+    },
+    {
+      "id": "asset-00356",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00356.json",
+      "output": "out/asset-00356.json"
+    },
+    {
+      "id": "asset-00357",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00357.json",
+      "output": "out/asset-00357.json"
+    },
+    {
+      "id": "asset-00358",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00358.json",
+      "output": "out/asset-00358.json"
+    },
+    {
+      "id": "asset-00359",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00359.json",
+      "output": "out/asset-00359.json"
+    },
+    {
+      "id": "asset-00360",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00360.json",
+      "output": "out/asset-00360.json"
+    },
+    {
+      "id": "asset-00361",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00361.json",
+      "output": "out/asset-00361.json"
+    },
+    {
+      "id": "asset-00362",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00362.json",
+      "output": "out/asset-00362.json"
+    },
+    {
+      "id": "asset-00363",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00363.json",
+      "output": "out/asset-00363.json"
+    },
+    {
+      "id": "asset-00364",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00364.json",
+      "output": "out/asset-00364.json"
+    },
+    {
+      "id": "asset-00365",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00365.json",
+      "output": "out/asset-00365.json"
+    },
+    {
+      "id": "asset-00366",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00366.json",
+      "output": "out/asset-00366.json"
+    },
+    {
+      "id": "asset-00367",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00367.json",
+      "output": "out/asset-00367.json"
+    },
+    {
+      "id": "asset-00368",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00368.json",
+      "output": "out/asset-00368.json"
+    },
+    {
+      "id": "asset-00369",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00369.json",
+      "output": "out/asset-00369.json"
+    },
+    {
+      "id": "asset-00370",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00370.json",
+      "output": "out/asset-00370.json"
+    },
+    {
+      "id": "asset-00371",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00371.json",
+      "output": "out/asset-00371.json"
+    },
+    {
+      "id": "asset-00372",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00372.json",
+      "output": "out/asset-00372.json"
+    },
+    {
+      "id": "asset-00373",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00373.json",
+      "output": "out/asset-00373.json"
+    },
+    {
+      "id": "asset-00374",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00374.json",
+      "output": "out/asset-00374.json"
+    },
+    {
+      "id": "asset-00375",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00375.json",
+      "output": "out/asset-00375.json"
+    },
+    {
+      "id": "asset-00376",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00376.json",
+      "output": "out/asset-00376.json"
+    },
+    {
+      "id": "asset-00377",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00377.json",
+      "output": "out/asset-00377.json"
+    },
+    {
+      "id": "asset-00378",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00378.json",
+      "output": "out/asset-00378.json"
+    },
+    {
+      "id": "asset-00379",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00379.json",
+      "output": "out/asset-00379.json"
+    },
+    {
+      "id": "asset-00380",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00380.json",
+      "output": "out/asset-00380.json"
+    },
+    {
+      "id": "asset-00381",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00381.json",
+      "output": "out/asset-00381.json"
+    },
+    {
+      "id": "asset-00382",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00382.json",
+      "output": "out/asset-00382.json"
+    },
+    {
+      "id": "asset-00383",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00383.json",
+      "output": "out/asset-00383.json"
+    },
+    {
+      "id": "asset-00384",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00384.json",
+      "output": "out/asset-00384.json"
+    },
+    {
+      "id": "asset-00385",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00385.json",
+      "output": "out/asset-00385.json"
+    },
+    {
+      "id": "asset-00386",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00386.json",
+      "output": "out/asset-00386.json"
+    },
+    {
+      "id": "asset-00387",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00387.json",
+      "output": "out/asset-00387.json"
+    },
+    {
+      "id": "asset-00388",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00388.json",
+      "output": "out/asset-00388.json"
+    },
+    {
+      "id": "asset-00389",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00389.json",
+      "output": "out/asset-00389.json"
+    },
+    {
+      "id": "asset-00390",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00390.json",
+      "output": "out/asset-00390.json"
+    },
+    {
+      "id": "asset-00391",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00391.json",
+      "output": "out/asset-00391.json"
+    },
+    {
+      "id": "asset-00392",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00392.json",
+      "output": "out/asset-00392.json"
+    },
+    {
+      "id": "asset-00393",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00393.json",
+      "output": "out/asset-00393.json"
+    },
+    {
+      "id": "asset-00394",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00394.json",
+      "output": "out/asset-00394.json"
+    },
+    {
+      "id": "asset-00395",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00395.json",
+      "output": "out/asset-00395.json"
+    },
+    {
+      "id": "asset-00396",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00396.json",
+      "output": "out/asset-00396.json"
+    },
+    {
+      "id": "asset-00397",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00397.json",
+      "output": "out/asset-00397.json"
+    },
+    {
+      "id": "asset-00398",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00398.json",
+      "output": "out/asset-00398.json"
+    },
+    {
+      "id": "asset-00399",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00399.json",
+      "output": "out/asset-00399.json"
+    },
+    {
+      "id": "asset-00400",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00400.json",
+      "output": "out/asset-00400.json"
+    },
+    {
+      "id": "asset-00401",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00401.json",
+      "output": "out/asset-00401.json"
+    },
+    {
+      "id": "asset-00402",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00402.json",
+      "output": "out/asset-00402.json"
+    },
+    {
+      "id": "asset-00403",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00403.json",
+      "output": "out/asset-00403.json"
+    },
+    {
+      "id": "asset-00404",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00404.json",
+      "output": "out/asset-00404.json"
+    },
+    {
+      "id": "asset-00405",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00405.json",
+      "output": "out/asset-00405.json"
+    },
+    {
+      "id": "asset-00406",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00406.json",
+      "output": "out/asset-00406.json"
+    },
+    {
+      "id": "asset-00407",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00407.json",
+      "output": "out/asset-00407.json"
+    },
+    {
+      "id": "asset-00408",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00408.json",
+      "output": "out/asset-00408.json"
+    },
+    {
+      "id": "asset-00409",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00409.json",
+      "output": "out/asset-00409.json"
+    },
+    {
+      "id": "asset-00410",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00410.json",
+      "output": "out/asset-00410.json"
+    },
+    {
+      "id": "asset-00411",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00411.json",
+      "output": "out/asset-00411.json"
+    },
+    {
+      "id": "asset-00412",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00412.json",
+      "output": "out/asset-00412.json"
+    },
+    {
+      "id": "asset-00413",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00413.json",
+      "output": "out/asset-00413.json"
+    },
+    {
+      "id": "asset-00414",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00414.json",
+      "output": "out/asset-00414.json"
+    },
+    {
+      "id": "asset-00415",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00415.json",
+      "output": "out/asset-00415.json"
+    },
+    {
+      "id": "asset-00416",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00416.json",
+      "output": "out/asset-00416.json"
+    },
+    {
+      "id": "asset-00417",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00417.json",
+      "output": "out/asset-00417.json"
+    },
+    {
+      "id": "asset-00418",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00418.json",
+      "output": "out/asset-00418.json"
+    },
+    {
+      "id": "asset-00419",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00419.json",
+      "output": "out/asset-00419.json"
+    },
+    {
+      "id": "asset-00420",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00420.json",
+      "output": "out/asset-00420.json"
+    },
+    {
+      "id": "asset-00421",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00421.json",
+      "output": "out/asset-00421.json"
+    },
+    {
+      "id": "asset-00422",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00422.json",
+      "output": "out/asset-00422.json"
+    },
+    {
+      "id": "asset-00423",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00423.json",
+      "output": "out/asset-00423.json"
+    },
+    {
+      "id": "asset-00424",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00424.json",
+      "output": "out/asset-00424.json"
+    },
+    {
+      "id": "asset-00425",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00425.json",
+      "output": "out/asset-00425.json"
+    },
+    {
+      "id": "asset-00426",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00426.json",
+      "output": "out/asset-00426.json"
+    },
+    {
+      "id": "asset-00427",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00427.json",
+      "output": "out/asset-00427.json"
+    },
+    {
+      "id": "asset-00428",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00428.json",
+      "output": "out/asset-00428.json"
+    },
+    {
+      "id": "asset-00429",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00429.json",
+      "output": "out/asset-00429.json"
+    },
+    {
+      "id": "asset-00430",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00430.json",
+      "output": "out/asset-00430.json"
+    },
+    {
+      "id": "asset-00431",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00431.json",
+      "output": "out/asset-00431.json"
+    },
+    {
+      "id": "asset-00432",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00432.json",
+      "output": "out/asset-00432.json"
+    },
+    {
+      "id": "asset-00433",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00433.json",
+      "output": "out/asset-00433.json"
+    },
+    {
+      "id": "asset-00434",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00434.json",
+      "output": "out/asset-00434.json"
+    },
+    {
+      "id": "asset-00435",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00435.json",
+      "output": "out/asset-00435.json"
+    },
+    {
+      "id": "asset-00436",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00436.json",
+      "output": "out/asset-00436.json"
+    },
+    {
+      "id": "asset-00437",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00437.json",
+      "output": "out/asset-00437.json"
+    },
+    {
+      "id": "asset-00438",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00438.json",
+      "output": "out/asset-00438.json"
+    },
+    {
+      "id": "asset-00439",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00439.json",
+      "output": "out/asset-00439.json"
+    },
+    {
+      "id": "asset-00440",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00440.json",
+      "output": "out/asset-00440.json"
+    },
+    {
+      "id": "asset-00441",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00441.json",
+      "output": "out/asset-00441.json"
+    },
+    {
+      "id": "asset-00442",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00442.json",
+      "output": "out/asset-00442.json"
+    },
+    {
+      "id": "asset-00443",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00443.json",
+      "output": "out/asset-00443.json"
+    },
+    {
+      "id": "asset-00444",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00444.json",
+      "output": "out/asset-00444.json"
+    },
+    {
+      "id": "asset-00445",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00445.json",
+      "output": "out/asset-00445.json"
+    },
+    {
+      "id": "asset-00446",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00446.json",
+      "output": "out/asset-00446.json"
+    },
+    {
+      "id": "asset-00447",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00447.json",
+      "output": "out/asset-00447.json"
+    },
+    {
+      "id": "asset-00448",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00448.json",
+      "output": "out/asset-00448.json"
+    },
+    {
+      "id": "asset-00449",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00449.json",
+      "output": "out/asset-00449.json"
+    },
+    {
+      "id": "asset-00450",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00450.json",
+      "output": "out/asset-00450.json"
+    },
+    {
+      "id": "asset-00451",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00451.json",
+      "output": "out/asset-00451.json"
+    },
+    {
+      "id": "asset-00452",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00452.json",
+      "output": "out/asset-00452.json"
+    },
+    {
+      "id": "asset-00453",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00453.json",
+      "output": "out/asset-00453.json"
+    },
+    {
+      "id": "asset-00454",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00454.json",
+      "output": "out/asset-00454.json"
+    },
+    {
+      "id": "asset-00455",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00455.json",
+      "output": "out/asset-00455.json"
+    },
+    {
+      "id": "asset-00456",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00456.json",
+      "output": "out/asset-00456.json"
+    },
+    {
+      "id": "asset-00457",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00457.json",
+      "output": "out/asset-00457.json"
+    },
+    {
+      "id": "asset-00458",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00458.json",
+      "output": "out/asset-00458.json"
+    },
+    {
+      "id": "asset-00459",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00459.json",
+      "output": "out/asset-00459.json"
+    },
+    {
+      "id": "asset-00460",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00460.json",
+      "output": "out/asset-00460.json"
+    },
+    {
+      "id": "asset-00461",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00461.json",
+      "output": "out/asset-00461.json"
+    },
+    {
+      "id": "asset-00462",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00462.json",
+      "output": "out/asset-00462.json"
+    },
+    {
+      "id": "asset-00463",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00463.json",
+      "output": "out/asset-00463.json"
+    },
+    {
+      "id": "asset-00464",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00464.json",
+      "output": "out/asset-00464.json"
+    },
+    {
+      "id": "asset-00465",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00465.json",
+      "output": "out/asset-00465.json"
+    },
+    {
+      "id": "asset-00466",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00466.json",
+      "output": "out/asset-00466.json"
+    },
+    {
+      "id": "asset-00467",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00467.json",
+      "output": "out/asset-00467.json"
+    },
+    {
+      "id": "asset-00468",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00468.json",
+      "output": "out/asset-00468.json"
+    },
+    {
+      "id": "asset-00469",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00469.json",
+      "output": "out/asset-00469.json"
+    },
+    {
+      "id": "asset-00470",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00470.json",
+      "output": "out/asset-00470.json"
+    },
+    {
+      "id": "asset-00471",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00471.json",
+      "output": "out/asset-00471.json"
+    },
+    {
+      "id": "asset-00472",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00472.json",
+      "output": "out/asset-00472.json"
+    },
+    {
+      "id": "asset-00473",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00473.json",
+      "output": "out/asset-00473.json"
+    },
+    {
+      "id": "asset-00474",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00474.json",
+      "output": "out/asset-00474.json"
+    },
+    {
+      "id": "asset-00475",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00475.json",
+      "output": "out/asset-00475.json"
+    },
+    {
+      "id": "asset-00476",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00476.json",
+      "output": "out/asset-00476.json"
+    },
+    {
+      "id": "asset-00477",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00477.json",
+      "output": "out/asset-00477.json"
+    },
+    {
+      "id": "asset-00478",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00478.json",
+      "output": "out/asset-00478.json"
+    },
+    {
+      "id": "asset-00479",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00479.json",
+      "output": "out/asset-00479.json"
+    },
+    {
+      "id": "asset-00480",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00480.json",
+      "output": "out/asset-00480.json"
+    },
+    {
+      "id": "asset-00481",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00481.json",
+      "output": "out/asset-00481.json"
+    },
+    {
+      "id": "asset-00482",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00482.json",
+      "output": "out/asset-00482.json"
+    },
+    {
+      "id": "asset-00483",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00483.json",
+      "output": "out/asset-00483.json"
+    },
+    {
+      "id": "asset-00484",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00484.json",
+      "output": "out/asset-00484.json"
+    },
+    {
+      "id": "asset-00485",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00485.json",
+      "output": "out/asset-00485.json"
+    },
+    {
+      "id": "asset-00486",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00486.json",
+      "output": "out/asset-00486.json"
+    },
+    {
+      "id": "asset-00487",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00487.json",
+      "output": "out/asset-00487.json"
+    },
+    {
+      "id": "asset-00488",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00488.json",
+      "output": "out/asset-00488.json"
+    },
+    {
+      "id": "asset-00489",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00489.json",
+      "output": "out/asset-00489.json"
+    },
+    {
+      "id": "asset-00490",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00490.json",
+      "output": "out/asset-00490.json"
+    },
+    {
+      "id": "asset-00491",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00491.json",
+      "output": "out/asset-00491.json"
+    },
+    {
+      "id": "asset-00492",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00492.json",
+      "output": "out/asset-00492.json"
+    },
+    {
+      "id": "asset-00493",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00493.json",
+      "output": "out/asset-00493.json"
+    },
+    {
+      "id": "asset-00494",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00494.json",
+      "output": "out/asset-00494.json"
+    },
+    {
+      "id": "asset-00495",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00495.json",
+      "output": "out/asset-00495.json"
+    },
+    {
+      "id": "asset-00496",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00496.json",
+      "output": "out/asset-00496.json"
+    },
+    {
+      "id": "asset-00497",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00497.json",
+      "output": "out/asset-00497.json"
+    },
+    {
+      "id": "asset-00498",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00498.json",
+      "output": "out/asset-00498.json"
+    },
+    {
+      "id": "asset-00499",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00499.json",
+      "output": "out/asset-00499.json"
+    },
+    {
+      "id": "asset-00500",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00500.json",
+      "output": "out/asset-00500.json"
+    },
+    {
+      "id": "asset-00501",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00501.json",
+      "output": "out/asset-00501.json"
+    },
+    {
+      "id": "asset-00502",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00502.json",
+      "output": "out/asset-00502.json"
+    },
+    {
+      "id": "asset-00503",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00503.json",
+      "output": "out/asset-00503.json"
+    },
+    {
+      "id": "asset-00504",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00504.json",
+      "output": "out/asset-00504.json"
+    },
+    {
+      "id": "asset-00505",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00505.json",
+      "output": "out/asset-00505.json"
+    },
+    {
+      "id": "asset-00506",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00506.json",
+      "output": "out/asset-00506.json"
+    },
+    {
+      "id": "asset-00507",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00507.json",
+      "output": "out/asset-00507.json"
+    },
+    {
+      "id": "asset-00508",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00508.json",
+      "output": "out/asset-00508.json"
+    },
+    {
+      "id": "asset-00509",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00509.json",
+      "output": "out/asset-00509.json"
+    },
+    {
+      "id": "asset-00510",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00510.json",
+      "output": "out/asset-00510.json"
+    },
+    {
+      "id": "asset-00511",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00511.json",
+      "output": "out/asset-00511.json"
+    },
+    {
+      "id": "asset-00512",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00512.json",
+      "output": "out/asset-00512.json"
+    },
+    {
+      "id": "asset-00513",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00513.json",
+      "output": "out/asset-00513.json"
+    },
+    {
+      "id": "asset-00514",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00514.json",
+      "output": "out/asset-00514.json"
+    },
+    {
+      "id": "asset-00515",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00515.json",
+      "output": "out/asset-00515.json"
+    },
+    {
+      "id": "asset-00516",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00516.json",
+      "output": "out/asset-00516.json"
+    },
+    {
+      "id": "asset-00517",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00517.json",
+      "output": "out/asset-00517.json"
+    },
+    {
+      "id": "asset-00518",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00518.json",
+      "output": "out/asset-00518.json"
+    },
+    {
+      "id": "asset-00519",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00519.json",
+      "output": "out/asset-00519.json"
+    },
+    {
+      "id": "asset-00520",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00520.json",
+      "output": "out/asset-00520.json"
+    },
+    {
+      "id": "asset-00521",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00521.json",
+      "output": "out/asset-00521.json"
+    },
+    {
+      "id": "asset-00522",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00522.json",
+      "output": "out/asset-00522.json"
+    },
+    {
+      "id": "asset-00523",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00523.json",
+      "output": "out/asset-00523.json"
+    },
+    {
+      "id": "asset-00524",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00524.json",
+      "output": "out/asset-00524.json"
+    },
+    {
+      "id": "asset-00525",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00525.json",
+      "output": "out/asset-00525.json"
+    },
+    {
+      "id": "asset-00526",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00526.json",
+      "output": "out/asset-00526.json"
+    },
+    {
+      "id": "asset-00527",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00527.json",
+      "output": "out/asset-00527.json"
+    },
+    {
+      "id": "asset-00528",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00528.json",
+      "output": "out/asset-00528.json"
+    },
+    {
+      "id": "asset-00529",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00529.json",
+      "output": "out/asset-00529.json"
+    },
+    {
+      "id": "asset-00530",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00530.json",
+      "output": "out/asset-00530.json"
+    },
+    {
+      "id": "asset-00531",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00531.json",
+      "output": "out/asset-00531.json"
+    },
+    {
+      "id": "asset-00532",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00532.json",
+      "output": "out/asset-00532.json"
+    },
+    {
+      "id": "asset-00533",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00533.json",
+      "output": "out/asset-00533.json"
+    },
+    {
+      "id": "asset-00534",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00534.json",
+      "output": "out/asset-00534.json"
+    },
+    {
+      "id": "asset-00535",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00535.json",
+      "output": "out/asset-00535.json"
+    },
+    {
+      "id": "asset-00536",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00536.json",
+      "output": "out/asset-00536.json"
+    },
+    {
+      "id": "asset-00537",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00537.json",
+      "output": "out/asset-00537.json"
+    },
+    {
+      "id": "asset-00538",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00538.json",
+      "output": "out/asset-00538.json"
+    },
+    {
+      "id": "asset-00539",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00539.json",
+      "output": "out/asset-00539.json"
+    },
+    {
+      "id": "asset-00540",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00540.json",
+      "output": "out/asset-00540.json"
+    },
+    {
+      "id": "asset-00541",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00541.json",
+      "output": "out/asset-00541.json"
+    },
+    {
+      "id": "asset-00542",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00542.json",
+      "output": "out/asset-00542.json"
+    },
+    {
+      "id": "asset-00543",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00543.json",
+      "output": "out/asset-00543.json"
+    },
+    {
+      "id": "asset-00544",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00544.json",
+      "output": "out/asset-00544.json"
+    },
+    {
+      "id": "asset-00545",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00545.json",
+      "output": "out/asset-00545.json"
+    },
+    {
+      "id": "asset-00546",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00546.json",
+      "output": "out/asset-00546.json"
+    },
+    {
+      "id": "asset-00547",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00547.json",
+      "output": "out/asset-00547.json"
+    },
+    {
+      "id": "asset-00548",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00548.json",
+      "output": "out/asset-00548.json"
+    },
+    {
+      "id": "asset-00549",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00549.json",
+      "output": "out/asset-00549.json"
+    },
+    {
+      "id": "asset-00550",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00550.json",
+      "output": "out/asset-00550.json"
+    },
+    {
+      "id": "asset-00551",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00551.json",
+      "output": "out/asset-00551.json"
+    },
+    {
+      "id": "asset-00552",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00552.json",
+      "output": "out/asset-00552.json"
+    },
+    {
+      "id": "asset-00553",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00553.json",
+      "output": "out/asset-00553.json"
+    },
+    {
+      "id": "asset-00554",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00554.json",
+      "output": "out/asset-00554.json"
+    },
+    {
+      "id": "asset-00555",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00555.json",
+      "output": "out/asset-00555.json"
+    },
+    {
+      "id": "asset-00556",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00556.json",
+      "output": "out/asset-00556.json"
+    },
+    {
+      "id": "asset-00557",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00557.json",
+      "output": "out/asset-00557.json"
+    },
+    {
+      "id": "asset-00558",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00558.json",
+      "output": "out/asset-00558.json"
+    },
+    {
+      "id": "asset-00559",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00559.json",
+      "output": "out/asset-00559.json"
+    },
+    {
+      "id": "asset-00560",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00560.json",
+      "output": "out/asset-00560.json"
+    },
+    {
+      "id": "asset-00561",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00561.json",
+      "output": "out/asset-00561.json"
+    },
+    {
+      "id": "asset-00562",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00562.json",
+      "output": "out/asset-00562.json"
+    },
+    {
+      "id": "asset-00563",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00563.json",
+      "output": "out/asset-00563.json"
+    },
+    {
+      "id": "asset-00564",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00564.json",
+      "output": "out/asset-00564.json"
+    },
+    {
+      "id": "asset-00565",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00565.json",
+      "output": "out/asset-00565.json"
+    },
+    {
+      "id": "asset-00566",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00566.json",
+      "output": "out/asset-00566.json"
+    },
+    {
+      "id": "asset-00567",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00567.json",
+      "output": "out/asset-00567.json"
+    },
+    {
+      "id": "asset-00568",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00568.json",
+      "output": "out/asset-00568.json"
+    },
+    {
+      "id": "asset-00569",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00569.json",
+      "output": "out/asset-00569.json"
+    },
+    {
+      "id": "asset-00570",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00570.json",
+      "output": "out/asset-00570.json"
+    },
+    {
+      "id": "asset-00571",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00571.json",
+      "output": "out/asset-00571.json"
+    },
+    {
+      "id": "asset-00572",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00572.json",
+      "output": "out/asset-00572.json"
+    },
+    {
+      "id": "asset-00573",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00573.json",
+      "output": "out/asset-00573.json"
+    },
+    {
+      "id": "asset-00574",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00574.json",
+      "output": "out/asset-00574.json"
+    },
+    {
+      "id": "asset-00575",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00575.json",
+      "output": "out/asset-00575.json"
+    },
+    {
+      "id": "asset-00576",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00576.json",
+      "output": "out/asset-00576.json"
+    },
+    {
+      "id": "asset-00577",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00577.json",
+      "output": "out/asset-00577.json"
+    },
+    {
+      "id": "asset-00578",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00578.json",
+      "output": "out/asset-00578.json"
+    },
+    {
+      "id": "asset-00579",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00579.json",
+      "output": "out/asset-00579.json"
+    },
+    {
+      "id": "asset-00580",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00580.json",
+      "output": "out/asset-00580.json"
+    },
+    {
+      "id": "asset-00581",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00581.json",
+      "output": "out/asset-00581.json"
+    },
+    {
+      "id": "asset-00582",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00582.json",
+      "output": "out/asset-00582.json"
+    },
+    {
+      "id": "asset-00583",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00583.json",
+      "output": "out/asset-00583.json"
+    },
+    {
+      "id": "asset-00584",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00584.json",
+      "output": "out/asset-00584.json"
+    },
+    {
+      "id": "asset-00585",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00585.json",
+      "output": "out/asset-00585.json"
+    },
+    {
+      "id": "asset-00586",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00586.json",
+      "output": "out/asset-00586.json"
+    },
+    {
+      "id": "asset-00587",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00587.json",
+      "output": "out/asset-00587.json"
+    },
+    {
+      "id": "asset-00588",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00588.json",
+      "output": "out/asset-00588.json"
+    },
+    {
+      "id": "asset-00589",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00589.json",
+      "output": "out/asset-00589.json"
+    },
+    {
+      "id": "asset-00590",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00590.json",
+      "output": "out/asset-00590.json"
+    },
+    {
+      "id": "asset-00591",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00591.json",
+      "output": "out/asset-00591.json"
+    },
+    {
+      "id": "asset-00592",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00592.json",
+      "output": "out/asset-00592.json"
+    },
+    {
+      "id": "asset-00593",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00593.json",
+      "output": "out/asset-00593.json"
+    },
+    {
+      "id": "asset-00594",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00594.json",
+      "output": "out/asset-00594.json"
+    },
+    {
+      "id": "asset-00595",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00595.json",
+      "output": "out/asset-00595.json"
+    },
+    {
+      "id": "asset-00596",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00596.json",
+      "output": "out/asset-00596.json"
+    },
+    {
+      "id": "asset-00597",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00597.json",
+      "output": "out/asset-00597.json"
+    },
+    {
+      "id": "asset-00598",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00598.json",
+      "output": "out/asset-00598.json"
+    },
+    {
+      "id": "asset-00599",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00599.json",
+      "output": "out/asset-00599.json"
+    },
+    {
+      "id": "asset-00600",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00600.json",
+      "output": "out/asset-00600.json"
+    },
+    {
+      "id": "asset-00601",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00601.json",
+      "output": "out/asset-00601.json"
+    },
+    {
+      "id": "asset-00602",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00602.json",
+      "output": "out/asset-00602.json"
+    },
+    {
+      "id": "asset-00603",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00603.json",
+      "output": "out/asset-00603.json"
+    },
+    {
+      "id": "asset-00604",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00604.json",
+      "output": "out/asset-00604.json"
+    },
+    {
+      "id": "asset-00605",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00605.json",
+      "output": "out/asset-00605.json"
+    },
+    {
+      "id": "asset-00606",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00606.json",
+      "output": "out/asset-00606.json"
+    },
+    {
+      "id": "asset-00607",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00607.json",
+      "output": "out/asset-00607.json"
+    },
+    {
+      "id": "asset-00608",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00608.json",
+      "output": "out/asset-00608.json"
+    },
+    {
+      "id": "asset-00609",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00609.json",
+      "output": "out/asset-00609.json"
+    },
+    {
+      "id": "asset-00610",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00610.json",
+      "output": "out/asset-00610.json"
+    },
+    {
+      "id": "asset-00611",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00611.json",
+      "output": "out/asset-00611.json"
+    },
+    {
+      "id": "asset-00612",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00612.json",
+      "output": "out/asset-00612.json"
+    },
+    {
+      "id": "asset-00613",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00613.json",
+      "output": "out/asset-00613.json"
+    },
+    {
+      "id": "asset-00614",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00614.json",
+      "output": "out/asset-00614.json"
+    },
+    {
+      "id": "asset-00615",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00615.json",
+      "output": "out/asset-00615.json"
+    },
+    {
+      "id": "asset-00616",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00616.json",
+      "output": "out/asset-00616.json"
+    },
+    {
+      "id": "asset-00617",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00617.json",
+      "output": "out/asset-00617.json"
+    },
+    {
+      "id": "asset-00618",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00618.json",
+      "output": "out/asset-00618.json"
+    },
+    {
+      "id": "asset-00619",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00619.json",
+      "output": "out/asset-00619.json"
+    },
+    {
+      "id": "asset-00620",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00620.json",
+      "output": "out/asset-00620.json"
+    },
+    {
+      "id": "asset-00621",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00621.json",
+      "output": "out/asset-00621.json"
+    },
+    {
+      "id": "asset-00622",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00622.json",
+      "output": "out/asset-00622.json"
+    },
+    {
+      "id": "asset-00623",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00623.json",
+      "output": "out/asset-00623.json"
+    },
+    {
+      "id": "asset-00624",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00624.json",
+      "output": "out/asset-00624.json"
+    },
+    {
+      "id": "asset-00625",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00625.json",
+      "output": "out/asset-00625.json"
+    },
+    {
+      "id": "asset-00626",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00626.json",
+      "output": "out/asset-00626.json"
+    },
+    {
+      "id": "asset-00627",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00627.json",
+      "output": "out/asset-00627.json"
+    },
+    {
+      "id": "asset-00628",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00628.json",
+      "output": "out/asset-00628.json"
+    },
+    {
+      "id": "asset-00629",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00629.json",
+      "output": "out/asset-00629.json"
+    },
+    {
+      "id": "asset-00630",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00630.json",
+      "output": "out/asset-00630.json"
+    },
+    {
+      "id": "asset-00631",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00631.json",
+      "output": "out/asset-00631.json"
+    },
+    {
+      "id": "asset-00632",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00632.json",
+      "output": "out/asset-00632.json"
+    },
+    {
+      "id": "asset-00633",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00633.json",
+      "output": "out/asset-00633.json"
+    },
+    {
+      "id": "asset-00634",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00634.json",
+      "output": "out/asset-00634.json"
+    },
+    {
+      "id": "asset-00635",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00635.json",
+      "output": "out/asset-00635.json"
+    },
+    {
+      "id": "asset-00636",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00636.json",
+      "output": "out/asset-00636.json"
+    },
+    {
+      "id": "asset-00637",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00637.json",
+      "output": "out/asset-00637.json"
+    },
+    {
+      "id": "asset-00638",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00638.json",
+      "output": "out/asset-00638.json"
+    },
+    {
+      "id": "asset-00639",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00639.json",
+      "output": "out/asset-00639.json"
+    },
+    {
+      "id": "asset-00640",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00640.json",
+      "output": "out/asset-00640.json"
+    },
+    {
+      "id": "asset-00641",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00641.json",
+      "output": "out/asset-00641.json"
+    },
+    {
+      "id": "asset-00642",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00642.json",
+      "output": "out/asset-00642.json"
+    },
+    {
+      "id": "asset-00643",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00643.json",
+      "output": "out/asset-00643.json"
+    },
+    {
+      "id": "asset-00644",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00644.json",
+      "output": "out/asset-00644.json"
+    },
+    {
+      "id": "asset-00645",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00645.json",
+      "output": "out/asset-00645.json"
+    },
+    {
+      "id": "asset-00646",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00646.json",
+      "output": "out/asset-00646.json"
+    },
+    {
+      "id": "asset-00647",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00647.json",
+      "output": "out/asset-00647.json"
+    },
+    {
+      "id": "asset-00648",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00648.json",
+      "output": "out/asset-00648.json"
+    },
+    {
+      "id": "asset-00649",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00649.json",
+      "output": "out/asset-00649.json"
+    },
+    {
+      "id": "asset-00650",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00650.json",
+      "output": "out/asset-00650.json"
+    },
+    {
+      "id": "asset-00651",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00651.json",
+      "output": "out/asset-00651.json"
+    },
+    {
+      "id": "asset-00652",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00652.json",
+      "output": "out/asset-00652.json"
+    },
+    {
+      "id": "asset-00653",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00653.json",
+      "output": "out/asset-00653.json"
+    },
+    {
+      "id": "asset-00654",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00654.json",
+      "output": "out/asset-00654.json"
+    },
+    {
+      "id": "asset-00655",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00655.json",
+      "output": "out/asset-00655.json"
+    },
+    {
+      "id": "asset-00656",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00656.json",
+      "output": "out/asset-00656.json"
+    },
+    {
+      "id": "asset-00657",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00657.json",
+      "output": "out/asset-00657.json"
+    },
+    {
+      "id": "asset-00658",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00658.json",
+      "output": "out/asset-00658.json"
+    },
+    {
+      "id": "asset-00659",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00659.json",
+      "output": "out/asset-00659.json"
+    },
+    {
+      "id": "asset-00660",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00660.json",
+      "output": "out/asset-00660.json"
+    },
+    {
+      "id": "asset-00661",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00661.json",
+      "output": "out/asset-00661.json"
+    },
+    {
+      "id": "asset-00662",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00662.json",
+      "output": "out/asset-00662.json"
+    },
+    {
+      "id": "asset-00663",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00663.json",
+      "output": "out/asset-00663.json"
+    },
+    {
+      "id": "asset-00664",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00664.json",
+      "output": "out/asset-00664.json"
+    },
+    {
+      "id": "asset-00665",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00665.json",
+      "output": "out/asset-00665.json"
+    },
+    {
+      "id": "asset-00666",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00666.json",
+      "output": "out/asset-00666.json"
+    },
+    {
+      "id": "asset-00667",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00667.json",
+      "output": "out/asset-00667.json"
+    },
+    {
+      "id": "asset-00668",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00668.json",
+      "output": "out/asset-00668.json"
+    },
+    {
+      "id": "asset-00669",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00669.json",
+      "output": "out/asset-00669.json"
+    },
+    {
+      "id": "asset-00670",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00670.json",
+      "output": "out/asset-00670.json"
+    },
+    {
+      "id": "asset-00671",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00671.json",
+      "output": "out/asset-00671.json"
+    },
+    {
+      "id": "asset-00672",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00672.json",
+      "output": "out/asset-00672.json"
+    },
+    {
+      "id": "asset-00673",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00673.json",
+      "output": "out/asset-00673.json"
+    },
+    {
+      "id": "asset-00674",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00674.json",
+      "output": "out/asset-00674.json"
+    },
+    {
+      "id": "asset-00675",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00675.json",
+      "output": "out/asset-00675.json"
+    },
+    {
+      "id": "asset-00676",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00676.json",
+      "output": "out/asset-00676.json"
+    },
+    {
+      "id": "asset-00677",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00677.json",
+      "output": "out/asset-00677.json"
+    },
+    {
+      "id": "asset-00678",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00678.json",
+      "output": "out/asset-00678.json"
+    },
+    {
+      "id": "asset-00679",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00679.json",
+      "output": "out/asset-00679.json"
+    },
+    {
+      "id": "asset-00680",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00680.json",
+      "output": "out/asset-00680.json"
+    },
+    {
+      "id": "asset-00681",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00681.json",
+      "output": "out/asset-00681.json"
+    },
+    {
+      "id": "asset-00682",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00682.json",
+      "output": "out/asset-00682.json"
+    },
+    {
+      "id": "asset-00683",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00683.json",
+      "output": "out/asset-00683.json"
+    },
+    {
+      "id": "asset-00684",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00684.json",
+      "output": "out/asset-00684.json"
+    },
+    {
+      "id": "asset-00685",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00685.json",
+      "output": "out/asset-00685.json"
+    },
+    {
+      "id": "asset-00686",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00686.json",
+      "output": "out/asset-00686.json"
+    },
+    {
+      "id": "asset-00687",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00687.json",
+      "output": "out/asset-00687.json"
+    },
+    {
+      "id": "asset-00688",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00688.json",
+      "output": "out/asset-00688.json"
+    },
+    {
+      "id": "asset-00689",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00689.json",
+      "output": "out/asset-00689.json"
+    },
+    {
+      "id": "asset-00690",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00690.json",
+      "output": "out/asset-00690.json"
+    },
+    {
+      "id": "asset-00691",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00691.json",
+      "output": "out/asset-00691.json"
+    },
+    {
+      "id": "asset-00692",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00692.json",
+      "output": "out/asset-00692.json"
+    },
+    {
+      "id": "asset-00693",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00693.json",
+      "output": "out/asset-00693.json"
+    },
+    {
+      "id": "asset-00694",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00694.json",
+      "output": "out/asset-00694.json"
+    },
+    {
+      "id": "asset-00695",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00695.json",
+      "output": "out/asset-00695.json"
+    },
+    {
+      "id": "asset-00696",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00696.json",
+      "output": "out/asset-00696.json"
+    },
+    {
+      "id": "asset-00697",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00697.json",
+      "output": "out/asset-00697.json"
+    },
+    {
+      "id": "asset-00698",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00698.json",
+      "output": "out/asset-00698.json"
+    },
+    {
+      "id": "asset-00699",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00699.json",
+      "output": "out/asset-00699.json"
+    },
+    {
+      "id": "asset-00700",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00700.json",
+      "output": "out/asset-00700.json"
+    },
+    {
+      "id": "asset-00701",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00701.json",
+      "output": "out/asset-00701.json"
+    },
+    {
+      "id": "asset-00702",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00702.json",
+      "output": "out/asset-00702.json"
+    },
+    {
+      "id": "asset-00703",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00703.json",
+      "output": "out/asset-00703.json"
+    },
+    {
+      "id": "asset-00704",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00704.json",
+      "output": "out/asset-00704.json"
+    },
+    {
+      "id": "asset-00705",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00705.json",
+      "output": "out/asset-00705.json"
+    },
+    {
+      "id": "asset-00706",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00706.json",
+      "output": "out/asset-00706.json"
+    },
+    {
+      "id": "asset-00707",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00707.json",
+      "output": "out/asset-00707.json"
+    },
+    {
+      "id": "asset-00708",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00708.json",
+      "output": "out/asset-00708.json"
+    },
+    {
+      "id": "asset-00709",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00709.json",
+      "output": "out/asset-00709.json"
+    },
+    {
+      "id": "asset-00710",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00710.json",
+      "output": "out/asset-00710.json"
+    },
+    {
+      "id": "asset-00711",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00711.json",
+      "output": "out/asset-00711.json"
+    },
+    {
+      "id": "asset-00712",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00712.json",
+      "output": "out/asset-00712.json"
+    },
+    {
+      "id": "asset-00713",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00713.json",
+      "output": "out/asset-00713.json"
+    },
+    {
+      "id": "asset-00714",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00714.json",
+      "output": "out/asset-00714.json"
+    },
+    {
+      "id": "asset-00715",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00715.json",
+      "output": "out/asset-00715.json"
+    },
+    {
+      "id": "asset-00716",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00716.json",
+      "output": "out/asset-00716.json"
+    },
+    {
+      "id": "asset-00717",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00717.json",
+      "output": "out/asset-00717.json"
+    },
+    {
+      "id": "asset-00718",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00718.json",
+      "output": "out/asset-00718.json"
+    },
+    {
+      "id": "asset-00719",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00719.json",
+      "output": "out/asset-00719.json"
+    },
+    {
+      "id": "asset-00720",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00720.json",
+      "output": "out/asset-00720.json"
+    },
+    {
+      "id": "asset-00721",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00721.json",
+      "output": "out/asset-00721.json"
+    },
+    {
+      "id": "asset-00722",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00722.json",
+      "output": "out/asset-00722.json"
+    },
+    {
+      "id": "asset-00723",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00723.json",
+      "output": "out/asset-00723.json"
+    },
+    {
+      "id": "asset-00724",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00724.json",
+      "output": "out/asset-00724.json"
+    },
+    {
+      "id": "asset-00725",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00725.json",
+      "output": "out/asset-00725.json"
+    },
+    {
+      "id": "asset-00726",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00726.json",
+      "output": "out/asset-00726.json"
+    },
+    {
+      "id": "asset-00727",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00727.json",
+      "output": "out/asset-00727.json"
+    },
+    {
+      "id": "asset-00728",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00728.json",
+      "output": "out/asset-00728.json"
+    },
+    {
+      "id": "asset-00729",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00729.json",
+      "output": "out/asset-00729.json"
+    },
+    {
+      "id": "asset-00730",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00730.json",
+      "output": "out/asset-00730.json"
+    },
+    {
+      "id": "asset-00731",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00731.json",
+      "output": "out/asset-00731.json"
+    },
+    {
+      "id": "asset-00732",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00732.json",
+      "output": "out/asset-00732.json"
+    },
+    {
+      "id": "asset-00733",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00733.json",
+      "output": "out/asset-00733.json"
+    },
+    {
+      "id": "asset-00734",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00734.json",
+      "output": "out/asset-00734.json"
+    },
+    {
+      "id": "asset-00735",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00735.json",
+      "output": "out/asset-00735.json"
+    },
+    {
+      "id": "asset-00736",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00736.json",
+      "output": "out/asset-00736.json"
+    },
+    {
+      "id": "asset-00737",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00737.json",
+      "output": "out/asset-00737.json"
+    },
+    {
+      "id": "asset-00738",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00738.json",
+      "output": "out/asset-00738.json"
+    },
+    {
+      "id": "asset-00739",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00739.json",
+      "output": "out/asset-00739.json"
+    },
+    {
+      "id": "asset-00740",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00740.json",
+      "output": "out/asset-00740.json"
+    },
+    {
+      "id": "asset-00741",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00741.json",
+      "output": "out/asset-00741.json"
+    },
+    {
+      "id": "asset-00742",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00742.json",
+      "output": "out/asset-00742.json"
+    },
+    {
+      "id": "asset-00743",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00743.json",
+      "output": "out/asset-00743.json"
+    },
+    {
+      "id": "asset-00744",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00744.json",
+      "output": "out/asset-00744.json"
+    },
+    {
+      "id": "asset-00745",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00745.json",
+      "output": "out/asset-00745.json"
+    },
+    {
+      "id": "asset-00746",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00746.json",
+      "output": "out/asset-00746.json"
+    },
+    {
+      "id": "asset-00747",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00747.json",
+      "output": "out/asset-00747.json"
+    },
+    {
+      "id": "asset-00748",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00748.json",
+      "output": "out/asset-00748.json"
+    },
+    {
+      "id": "asset-00749",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00749.json",
+      "output": "out/asset-00749.json"
+    },
+    {
+      "id": "asset-00750",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00750.json",
+      "output": "out/asset-00750.json"
+    },
+    {
+      "id": "asset-00751",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00751.json",
+      "output": "out/asset-00751.json"
+    },
+    {
+      "id": "asset-00752",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00752.json",
+      "output": "out/asset-00752.json"
+    },
+    {
+      "id": "asset-00753",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00753.json",
+      "output": "out/asset-00753.json"
+    },
+    {
+      "id": "asset-00754",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00754.json",
+      "output": "out/asset-00754.json"
+    },
+    {
+      "id": "asset-00755",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00755.json",
+      "output": "out/asset-00755.json"
+    },
+    {
+      "id": "asset-00756",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00756.json",
+      "output": "out/asset-00756.json"
+    },
+    {
+      "id": "asset-00757",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00757.json",
+      "output": "out/asset-00757.json"
+    },
+    {
+      "id": "asset-00758",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00758.json",
+      "output": "out/asset-00758.json"
+    },
+    {
+      "id": "asset-00759",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00759.json",
+      "output": "out/asset-00759.json"
+    },
+    {
+      "id": "asset-00760",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00760.json",
+      "output": "out/asset-00760.json"
+    },
+    {
+      "id": "asset-00761",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00761.json",
+      "output": "out/asset-00761.json"
+    },
+    {
+      "id": "asset-00762",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00762.json",
+      "output": "out/asset-00762.json"
+    },
+    {
+      "id": "asset-00763",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00763.json",
+      "output": "out/asset-00763.json"
+    },
+    {
+      "id": "asset-00764",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00764.json",
+      "output": "out/asset-00764.json"
+    },
+    {
+      "id": "asset-00765",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00765.json",
+      "output": "out/asset-00765.json"
+    },
+    {
+      "id": "asset-00766",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00766.json",
+      "output": "out/asset-00766.json"
+    },
+    {
+      "id": "asset-00767",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00767.json",
+      "output": "out/asset-00767.json"
+    },
+    {
+      "id": "asset-00768",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00768.json",
+      "output": "out/asset-00768.json"
+    },
+    {
+      "id": "asset-00769",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00769.json",
+      "output": "out/asset-00769.json"
+    },
+    {
+      "id": "asset-00770",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00770.json",
+      "output": "out/asset-00770.json"
+    },
+    {
+      "id": "asset-00771",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00771.json",
+      "output": "out/asset-00771.json"
+    },
+    {
+      "id": "asset-00772",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00772.json",
+      "output": "out/asset-00772.json"
+    },
+    {
+      "id": "asset-00773",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00773.json",
+      "output": "out/asset-00773.json"
+    },
+    {
+      "id": "asset-00774",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00774.json",
+      "output": "out/asset-00774.json"
+    },
+    {
+      "id": "asset-00775",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00775.json",
+      "output": "out/asset-00775.json"
+    },
+    {
+      "id": "asset-00776",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00776.json",
+      "output": "out/asset-00776.json"
+    },
+    {
+      "id": "asset-00777",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00777.json",
+      "output": "out/asset-00777.json"
+    },
+    {
+      "id": "asset-00778",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00778.json",
+      "output": "out/asset-00778.json"
+    },
+    {
+      "id": "asset-00779",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00779.json",
+      "output": "out/asset-00779.json"
+    },
+    {
+      "id": "asset-00780",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00780.json",
+      "output": "out/asset-00780.json"
+    },
+    {
+      "id": "asset-00781",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00781.json",
+      "output": "out/asset-00781.json"
+    },
+    {
+      "id": "asset-00782",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00782.json",
+      "output": "out/asset-00782.json"
+    },
+    {
+      "id": "asset-00783",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00783.json",
+      "output": "out/asset-00783.json"
+    },
+    {
+      "id": "asset-00784",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00784.json",
+      "output": "out/asset-00784.json"
+    },
+    {
+      "id": "asset-00785",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00785.json",
+      "output": "out/asset-00785.json"
+    },
+    {
+      "id": "asset-00786",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00786.json",
+      "output": "out/asset-00786.json"
+    },
+    {
+      "id": "asset-00787",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00787.json",
+      "output": "out/asset-00787.json"
+    },
+    {
+      "id": "asset-00788",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00788.json",
+      "output": "out/asset-00788.json"
+    },
+    {
+      "id": "asset-00789",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00789.json",
+      "output": "out/asset-00789.json"
+    },
+    {
+      "id": "asset-00790",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00790.json",
+      "output": "out/asset-00790.json"
+    },
+    {
+      "id": "asset-00791",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00791.json",
+      "output": "out/asset-00791.json"
+    },
+    {
+      "id": "asset-00792",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00792.json",
+      "output": "out/asset-00792.json"
+    },
+    {
+      "id": "asset-00793",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00793.json",
+      "output": "out/asset-00793.json"
+    },
+    {
+      "id": "asset-00794",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00794.json",
+      "output": "out/asset-00794.json"
+    },
+    {
+      "id": "asset-00795",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00795.json",
+      "output": "out/asset-00795.json"
+    },
+    {
+      "id": "asset-00796",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00796.json",
+      "output": "out/asset-00796.json"
+    },
+    {
+      "id": "asset-00797",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00797.json",
+      "output": "out/asset-00797.json"
+    },
+    {
+      "id": "asset-00798",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00798.json",
+      "output": "out/asset-00798.json"
+    },
+    {
+      "id": "asset-00799",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00799.json",
+      "output": "out/asset-00799.json"
+    },
+    {
+      "id": "asset-00800",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00800.json",
+      "output": "out/asset-00800.json"
+    },
+    {
+      "id": "asset-00801",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00801.json",
+      "output": "out/asset-00801.json"
+    },
+    {
+      "id": "asset-00802",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00802.json",
+      "output": "out/asset-00802.json"
+    },
+    {
+      "id": "asset-00803",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00803.json",
+      "output": "out/asset-00803.json"
+    },
+    {
+      "id": "asset-00804",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00804.json",
+      "output": "out/asset-00804.json"
+    },
+    {
+      "id": "asset-00805",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00805.json",
+      "output": "out/asset-00805.json"
+    },
+    {
+      "id": "asset-00806",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00806.json",
+      "output": "out/asset-00806.json"
+    },
+    {
+      "id": "asset-00807",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00807.json",
+      "output": "out/asset-00807.json"
+    },
+    {
+      "id": "asset-00808",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00808.json",
+      "output": "out/asset-00808.json"
+    },
+    {
+      "id": "asset-00809",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00809.json",
+      "output": "out/asset-00809.json"
+    },
+    {
+      "id": "asset-00810",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00810.json",
+      "output": "out/asset-00810.json"
+    },
+    {
+      "id": "asset-00811",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00811.json",
+      "output": "out/asset-00811.json"
+    },
+    {
+      "id": "asset-00812",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00812.json",
+      "output": "out/asset-00812.json"
+    },
+    {
+      "id": "asset-00813",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00813.json",
+      "output": "out/asset-00813.json"
+    },
+    {
+      "id": "asset-00814",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00814.json",
+      "output": "out/asset-00814.json"
+    },
+    {
+      "id": "asset-00815",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00815.json",
+      "output": "out/asset-00815.json"
+    },
+    {
+      "id": "asset-00816",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00816.json",
+      "output": "out/asset-00816.json"
+    },
+    {
+      "id": "asset-00817",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00817.json",
+      "output": "out/asset-00817.json"
+    },
+    {
+      "id": "asset-00818",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00818.json",
+      "output": "out/asset-00818.json"
+    },
+    {
+      "id": "asset-00819",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00819.json",
+      "output": "out/asset-00819.json"
+    },
+    {
+      "id": "asset-00820",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00820.json",
+      "output": "out/asset-00820.json"
+    },
+    {
+      "id": "asset-00821",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00821.json",
+      "output": "out/asset-00821.json"
+    },
+    {
+      "id": "asset-00822",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00822.json",
+      "output": "out/asset-00822.json"
+    },
+    {
+      "id": "asset-00823",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00823.json",
+      "output": "out/asset-00823.json"
+    },
+    {
+      "id": "asset-00824",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00824.json",
+      "output": "out/asset-00824.json"
+    },
+    {
+      "id": "asset-00825",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00825.json",
+      "output": "out/asset-00825.json"
+    },
+    {
+      "id": "asset-00826",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00826.json",
+      "output": "out/asset-00826.json"
+    },
+    {
+      "id": "asset-00827",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00827.json",
+      "output": "out/asset-00827.json"
+    },
+    {
+      "id": "asset-00828",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00828.json",
+      "output": "out/asset-00828.json"
+    },
+    {
+      "id": "asset-00829",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00829.json",
+      "output": "out/asset-00829.json"
+    },
+    {
+      "id": "asset-00830",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00830.json",
+      "output": "out/asset-00830.json"
+    },
+    {
+      "id": "asset-00831",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00831.json",
+      "output": "out/asset-00831.json"
+    },
+    {
+      "id": "asset-00832",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00832.json",
+      "output": "out/asset-00832.json"
+    },
+    {
+      "id": "asset-00833",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00833.json",
+      "output": "out/asset-00833.json"
+    },
+    {
+      "id": "asset-00834",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00834.json",
+      "output": "out/asset-00834.json"
+    },
+    {
+      "id": "asset-00835",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00835.json",
+      "output": "out/asset-00835.json"
+    },
+    {
+      "id": "asset-00836",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00836.json",
+      "output": "out/asset-00836.json"
+    },
+    {
+      "id": "asset-00837",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00837.json",
+      "output": "out/asset-00837.json"
+    },
+    {
+      "id": "asset-00838",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00838.json",
+      "output": "out/asset-00838.json"
+    },
+    {
+      "id": "asset-00839",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00839.json",
+      "output": "out/asset-00839.json"
+    },
+    {
+      "id": "asset-00840",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00840.json",
+      "output": "out/asset-00840.json"
+    },
+    {
+      "id": "asset-00841",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00841.json",
+      "output": "out/asset-00841.json"
+    },
+    {
+      "id": "asset-00842",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00842.json",
+      "output": "out/asset-00842.json"
+    },
+    {
+      "id": "asset-00843",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00843.json",
+      "output": "out/asset-00843.json"
+    },
+    {
+      "id": "asset-00844",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00844.json",
+      "output": "out/asset-00844.json"
+    },
+    {
+      "id": "asset-00845",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00845.json",
+      "output": "out/asset-00845.json"
+    },
+    {
+      "id": "asset-00846",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00846.json",
+      "output": "out/asset-00846.json"
+    },
+    {
+      "id": "asset-00847",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00847.json",
+      "output": "out/asset-00847.json"
+    },
+    {
+      "id": "asset-00848",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00848.json",
+      "output": "out/asset-00848.json"
+    },
+    {
+      "id": "asset-00849",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00849.json",
+      "output": "out/asset-00849.json"
+    },
+    {
+      "id": "asset-00850",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00850.json",
+      "output": "out/asset-00850.json"
+    },
+    {
+      "id": "asset-00851",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00851.json",
+      "output": "out/asset-00851.json"
+    },
+    {
+      "id": "asset-00852",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00852.json",
+      "output": "out/asset-00852.json"
+    },
+    {
+      "id": "asset-00853",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00853.json",
+      "output": "out/asset-00853.json"
+    },
+    {
+      "id": "asset-00854",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00854.json",
+      "output": "out/asset-00854.json"
+    },
+    {
+      "id": "asset-00855",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00855.json",
+      "output": "out/asset-00855.json"
+    },
+    {
+      "id": "asset-00856",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00856.json",
+      "output": "out/asset-00856.json"
+    },
+    {
+      "id": "asset-00857",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00857.json",
+      "output": "out/asset-00857.json"
+    },
+    {
+      "id": "asset-00858",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00858.json",
+      "output": "out/asset-00858.json"
+    },
+    {
+      "id": "asset-00859",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00859.json",
+      "output": "out/asset-00859.json"
+    },
+    {
+      "id": "asset-00860",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00860.json",
+      "output": "out/asset-00860.json"
+    },
+    {
+      "id": "asset-00861",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00861.json",
+      "output": "out/asset-00861.json"
+    },
+    {
+      "id": "asset-00862",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00862.json",
+      "output": "out/asset-00862.json"
+    },
+    {
+      "id": "asset-00863",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00863.json",
+      "output": "out/asset-00863.json"
+    },
+    {
+      "id": "asset-00864",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00864.json",
+      "output": "out/asset-00864.json"
+    },
+    {
+      "id": "asset-00865",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00865.json",
+      "output": "out/asset-00865.json"
+    },
+    {
+      "id": "asset-00866",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00866.json",
+      "output": "out/asset-00866.json"
+    },
+    {
+      "id": "asset-00867",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00867.json",
+      "output": "out/asset-00867.json"
+    },
+    {
+      "id": "asset-00868",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00868.json",
+      "output": "out/asset-00868.json"
+    },
+    {
+      "id": "asset-00869",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00869.json",
+      "output": "out/asset-00869.json"
+    },
+    {
+      "id": "asset-00870",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00870.json",
+      "output": "out/asset-00870.json"
+    },
+    {
+      "id": "asset-00871",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00871.json",
+      "output": "out/asset-00871.json"
+    },
+    {
+      "id": "asset-00872",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00872.json",
+      "output": "out/asset-00872.json"
+    },
+    {
+      "id": "asset-00873",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00873.json",
+      "output": "out/asset-00873.json"
+    },
+    {
+      "id": "asset-00874",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00874.json",
+      "output": "out/asset-00874.json"
+    },
+    {
+      "id": "asset-00875",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00875.json",
+      "output": "out/asset-00875.json"
+    },
+    {
+      "id": "asset-00876",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00876.json",
+      "output": "out/asset-00876.json"
+    },
+    {
+      "id": "asset-00877",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00877.json",
+      "output": "out/asset-00877.json"
+    },
+    {
+      "id": "asset-00878",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00878.json",
+      "output": "out/asset-00878.json"
+    },
+    {
+      "id": "asset-00879",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00879.json",
+      "output": "out/asset-00879.json"
+    },
+    {
+      "id": "asset-00880",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00880.json",
+      "output": "out/asset-00880.json"
+    },
+    {
+      "id": "asset-00881",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00881.json",
+      "output": "out/asset-00881.json"
+    },
+    {
+      "id": "asset-00882",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00882.json",
+      "output": "out/asset-00882.json"
+    },
+    {
+      "id": "asset-00883",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00883.json",
+      "output": "out/asset-00883.json"
+    },
+    {
+      "id": "asset-00884",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00884.json",
+      "output": "out/asset-00884.json"
+    },
+    {
+      "id": "asset-00885",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00885.json",
+      "output": "out/asset-00885.json"
+    },
+    {
+      "id": "asset-00886",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00886.json",
+      "output": "out/asset-00886.json"
+    },
+    {
+      "id": "asset-00887",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00887.json",
+      "output": "out/asset-00887.json"
+    },
+    {
+      "id": "asset-00888",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00888.json",
+      "output": "out/asset-00888.json"
+    },
+    {
+      "id": "asset-00889",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00889.json",
+      "output": "out/asset-00889.json"
+    },
+    {
+      "id": "asset-00890",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00890.json",
+      "output": "out/asset-00890.json"
+    },
+    {
+      "id": "asset-00891",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00891.json",
+      "output": "out/asset-00891.json"
+    },
+    {
+      "id": "asset-00892",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00892.json",
+      "output": "out/asset-00892.json"
+    },
+    {
+      "id": "asset-00893",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00893.json",
+      "output": "out/asset-00893.json"
+    },
+    {
+      "id": "asset-00894",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00894.json",
+      "output": "out/asset-00894.json"
+    },
+    {
+      "id": "asset-00895",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00895.json",
+      "output": "out/asset-00895.json"
+    },
+    {
+      "id": "asset-00896",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00896.json",
+      "output": "out/asset-00896.json"
+    },
+    {
+      "id": "asset-00897",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00897.json",
+      "output": "out/asset-00897.json"
+    },
+    {
+      "id": "asset-00898",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00898.json",
+      "output": "out/asset-00898.json"
+    },
+    {
+      "id": "asset-00899",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00899.json",
+      "output": "out/asset-00899.json"
+    },
+    {
+      "id": "asset-00900",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00900.json",
+      "output": "out/asset-00900.json"
+    },
+    {
+      "id": "asset-00901",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00901.json",
+      "output": "out/asset-00901.json"
+    },
+    {
+      "id": "asset-00902",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00902.json",
+      "output": "out/asset-00902.json"
+    },
+    {
+      "id": "asset-00903",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00903.json",
+      "output": "out/asset-00903.json"
+    },
+    {
+      "id": "asset-00904",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00904.json",
+      "output": "out/asset-00904.json"
+    },
+    {
+      "id": "asset-00905",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00905.json",
+      "output": "out/asset-00905.json"
+    },
+    {
+      "id": "asset-00906",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00906.json",
+      "output": "out/asset-00906.json"
+    },
+    {
+      "id": "asset-00907",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00907.json",
+      "output": "out/asset-00907.json"
+    },
+    {
+      "id": "asset-00908",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00908.json",
+      "output": "out/asset-00908.json"
+    },
+    {
+      "id": "asset-00909",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00909.json",
+      "output": "out/asset-00909.json"
+    },
+    {
+      "id": "asset-00910",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00910.json",
+      "output": "out/asset-00910.json"
+    },
+    {
+      "id": "asset-00911",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00911.json",
+      "output": "out/asset-00911.json"
+    },
+    {
+      "id": "asset-00912",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00912.json",
+      "output": "out/asset-00912.json"
+    },
+    {
+      "id": "asset-00913",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00913.json",
+      "output": "out/asset-00913.json"
+    },
+    {
+      "id": "asset-00914",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00914.json",
+      "output": "out/asset-00914.json"
+    },
+    {
+      "id": "asset-00915",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00915.json",
+      "output": "out/asset-00915.json"
+    },
+    {
+      "id": "asset-00916",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00916.json",
+      "output": "out/asset-00916.json"
+    },
+    {
+      "id": "asset-00917",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00917.json",
+      "output": "out/asset-00917.json"
+    },
+    {
+      "id": "asset-00918",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00918.json",
+      "output": "out/asset-00918.json"
+    },
+    {
+      "id": "asset-00919",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00919.json",
+      "output": "out/asset-00919.json"
+    },
+    {
+      "id": "asset-00920",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00920.json",
+      "output": "out/asset-00920.json"
+    },
+    {
+      "id": "asset-00921",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00921.json",
+      "output": "out/asset-00921.json"
+    },
+    {
+      "id": "asset-00922",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00922.json",
+      "output": "out/asset-00922.json"
+    },
+    {
+      "id": "asset-00923",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00923.json",
+      "output": "out/asset-00923.json"
+    },
+    {
+      "id": "asset-00924",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00924.json",
+      "output": "out/asset-00924.json"
+    },
+    {
+      "id": "asset-00925",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00925.json",
+      "output": "out/asset-00925.json"
+    },
+    {
+      "id": "asset-00926",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00926.json",
+      "output": "out/asset-00926.json"
+    },
+    {
+      "id": "asset-00927",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00927.json",
+      "output": "out/asset-00927.json"
+    },
+    {
+      "id": "asset-00928",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00928.json",
+      "output": "out/asset-00928.json"
+    },
+    {
+      "id": "asset-00929",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00929.json",
+      "output": "out/asset-00929.json"
+    },
+    {
+      "id": "asset-00930",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00930.json",
+      "output": "out/asset-00930.json"
+    },
+    {
+      "id": "asset-00931",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00931.json",
+      "output": "out/asset-00931.json"
+    },
+    {
+      "id": "asset-00932",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00932.json",
+      "output": "out/asset-00932.json"
+    },
+    {
+      "id": "asset-00933",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00933.json",
+      "output": "out/asset-00933.json"
+    },
+    {
+      "id": "asset-00934",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00934.json",
+      "output": "out/asset-00934.json"
+    },
+    {
+      "id": "asset-00935",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00935.json",
+      "output": "out/asset-00935.json"
+    },
+    {
+      "id": "asset-00936",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00936.json",
+      "output": "out/asset-00936.json"
+    },
+    {
+      "id": "asset-00937",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00937.json",
+      "output": "out/asset-00937.json"
+    },
+    {
+      "id": "asset-00938",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00938.json",
+      "output": "out/asset-00938.json"
+    },
+    {
+      "id": "asset-00939",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00939.json",
+      "output": "out/asset-00939.json"
+    },
+    {
+      "id": "asset-00940",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00940.json",
+      "output": "out/asset-00940.json"
+    },
+    {
+      "id": "asset-00941",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00941.json",
+      "output": "out/asset-00941.json"
+    },
+    {
+      "id": "asset-00942",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00942.json",
+      "output": "out/asset-00942.json"
+    },
+    {
+      "id": "asset-00943",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00943.json",
+      "output": "out/asset-00943.json"
+    },
+    {
+      "id": "asset-00944",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00944.json",
+      "output": "out/asset-00944.json"
+    },
+    {
+      "id": "asset-00945",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00945.json",
+      "output": "out/asset-00945.json"
+    },
+    {
+      "id": "asset-00946",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00946.json",
+      "output": "out/asset-00946.json"
+    },
+    {
+      "id": "asset-00947",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00947.json",
+      "output": "out/asset-00947.json"
+    },
+    {
+      "id": "asset-00948",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00948.json",
+      "output": "out/asset-00948.json"
+    },
+    {
+      "id": "asset-00949",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00949.json",
+      "output": "out/asset-00949.json"
+    },
+    {
+      "id": "asset-00950",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00950.json",
+      "output": "out/asset-00950.json"
+    },
+    {
+      "id": "asset-00951",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00951.json",
+      "output": "out/asset-00951.json"
+    },
+    {
+      "id": "asset-00952",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00952.json",
+      "output": "out/asset-00952.json"
+    },
+    {
+      "id": "asset-00953",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00953.json",
+      "output": "out/asset-00953.json"
+    },
+    {
+      "id": "asset-00954",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00954.json",
+      "output": "out/asset-00954.json"
+    },
+    {
+      "id": "asset-00955",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00955.json",
+      "output": "out/asset-00955.json"
+    },
+    {
+      "id": "asset-00956",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00956.json",
+      "output": "out/asset-00956.json"
+    },
+    {
+      "id": "asset-00957",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00957.json",
+      "output": "out/asset-00957.json"
+    },
+    {
+      "id": "asset-00958",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00958.json",
+      "output": "out/asset-00958.json"
+    },
+    {
+      "id": "asset-00959",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00959.json",
+      "output": "out/asset-00959.json"
+    },
+    {
+      "id": "asset-00960",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00960.json",
+      "output": "out/asset-00960.json"
+    },
+    {
+      "id": "asset-00961",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00961.json",
+      "output": "out/asset-00961.json"
+    },
+    {
+      "id": "asset-00962",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00962.json",
+      "output": "out/asset-00962.json"
+    },
+    {
+      "id": "asset-00963",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00963.json",
+      "output": "out/asset-00963.json"
+    },
+    {
+      "id": "asset-00964",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00964.json",
+      "output": "out/asset-00964.json"
+    },
+    {
+      "id": "asset-00965",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00965.json",
+      "output": "out/asset-00965.json"
+    },
+    {
+      "id": "asset-00966",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00966.json",
+      "output": "out/asset-00966.json"
+    },
+    {
+      "id": "asset-00967",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00967.json",
+      "output": "out/asset-00967.json"
+    },
+    {
+      "id": "asset-00968",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00968.json",
+      "output": "out/asset-00968.json"
+    },
+    {
+      "id": "asset-00969",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00969.json",
+      "output": "out/asset-00969.json"
+    },
+    {
+      "id": "asset-00970",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00970.json",
+      "output": "out/asset-00970.json"
+    },
+    {
+      "id": "asset-00971",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00971.json",
+      "output": "out/asset-00971.json"
+    },
+    {
+      "id": "asset-00972",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00972.json",
+      "output": "out/asset-00972.json"
+    },
+    {
+      "id": "asset-00973",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00973.json",
+      "output": "out/asset-00973.json"
+    },
+    {
+      "id": "asset-00974",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00974.json",
+      "output": "out/asset-00974.json"
+    },
+    {
+      "id": "asset-00975",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00975.json",
+      "output": "out/asset-00975.json"
+    },
+    {
+      "id": "asset-00976",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00976.json",
+      "output": "out/asset-00976.json"
+    },
+    {
+      "id": "asset-00977",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00977.json",
+      "output": "out/asset-00977.json"
+    },
+    {
+      "id": "asset-00978",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00978.json",
+      "output": "out/asset-00978.json"
+    },
+    {
+      "id": "asset-00979",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00979.json",
+      "output": "out/asset-00979.json"
+    },
+    {
+      "id": "asset-00980",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00980.json",
+      "output": "out/asset-00980.json"
+    },
+    {
+      "id": "asset-00981",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00981.json",
+      "output": "out/asset-00981.json"
+    },
+    {
+      "id": "asset-00982",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00982.json",
+      "output": "out/asset-00982.json"
+    },
+    {
+      "id": "asset-00983",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00983.json",
+      "output": "out/asset-00983.json"
+    },
+    {
+      "id": "asset-00984",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00984.json",
+      "output": "out/asset-00984.json"
+    },
+    {
+      "id": "asset-00985",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00985.json",
+      "output": "out/asset-00985.json"
+    },
+    {
+      "id": "asset-00986",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00986.json",
+      "output": "out/asset-00986.json"
+    },
+    {
+      "id": "asset-00987",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00987.json",
+      "output": "out/asset-00987.json"
+    }
+  ]
+}

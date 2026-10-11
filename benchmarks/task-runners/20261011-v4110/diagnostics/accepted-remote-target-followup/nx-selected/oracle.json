@@ -1,0 +1,71 @@
+{
+  "starts": [
+    "generate-schema",
+    "generate-client",
+    "unit-test",
+    "typecheck",
+    "docs",
+    "build-web",
+    "package",
+    "integration-test",
+    "verify",
+    "release-prep"
+  ],
+  "complete": [
+    "build-web",
+    "docs",
+    "generate-client",
+    "generate-schema",
+    "integration-test",
+    "package",
+    "release-prep",
+    "typecheck",
+    "unit-test",
+    "verify"
+  ],
+  "failed": [],
+  "peak_concurrency": 1,
+  "output_hashes": {
+    "generate-schema": "fca2df09bb6daf90b16563921fe6ad61efdc3d056e61dfc2a739fdcf96a73092",
+    "generate-client": "5957a8276c75a83293430749a080e85e0d4b82733d7bce49e6ecf36d9e235624",
+    "docs": "1ec24fea96227f3e621bab476cd292499334e6c4b0c07c10bbfa878a52af6b88",
+    "typecheck": "32853e404e38161e9a702bbcbe5b238abb15619ec69190535f3fcbfd6d1275a1",
+    "lint": "b90e3b8fd36b88c6992f7cfbe501cdf0f5cd4f455a65a1a54ae00880a9226bd8",
+    "unit-test": "053a6b19ec07b031e2ad2d3c47037ceb2c166045f1178fb8635df892e0ca6e5a",
+    "build-web": "18d6e749d53ef339a91fc0e7bc7ba02e027c01dd15bc809e3c2ea834684010c9",
+    "build-helper": "e85a9cc4eab1f80f703e508fa3165d93da888b3c36145223616b453d91283586",
+    "package": "021b27f832f74f53c9391a78434d3aa629b8eabb3b833281c3df488d21b6891c",
+    "integration-test": "2ba8748575526f12af7080bb6a7b4b3149abe842a6558c35f4f7ecc3634c09fa",
+    "verify": "0cf6e2e975abc5451b573a31779a565a0c13730539004dcebd80b75e15d014fc",
+    "release-prep": "c9ab27c265292a32c625d3ef859840bd4cc0465daa30823936911dad63c1c200"
+  },
+  "runner": "nx",
+  "case": "selected",
+  "exit_code": 0,
+  "expected": [
+    "build-web",
+    "docs",
+    "generate-client",
+    "generate-schema",
+    "integration-test",
+    "package",
+    "release-prep",
+    "typecheck",
+    "unit-test",
+    "verify"
+  ],
+  "scope": [
+    "build-helper",
+    "build-web",
+    "docs",
+    "generate-client",
+    "generate-schema",
+    "integration-test",
+    "lint",
+    "package",
+    "release-prep",
+    "typecheck",
+    "unit-test",
+    "verify"
+  ]
+}

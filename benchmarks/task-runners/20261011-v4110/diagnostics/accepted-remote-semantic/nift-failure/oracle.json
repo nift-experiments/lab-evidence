@@ -1,0 +1,35 @@
+{
+  "starts": [
+    "generate-schema",
+    "asset-00000",
+    "lint",
+    "build-helper",
+    "asset-00002",
+    "asset-00004",
+    "asset-00006"
+  ],
+  "complete": [
+    "asset-00000",
+    "asset-00002",
+    "asset-00004",
+    "asset-00006",
+    "build-helper",
+    "lint"
+  ],
+  "failed": [
+    "generate-schema"
+  ],
+  "peak_concurrency": 2,
+  "output_hashes": {
+    "lint": "b90e3b8fd36b88c6992f7cfbe501cdf0f5cd4f455a65a1a54ae00880a9226bd8",
+    "build-helper": "e85a9cc4eab1f80f703e508fa3165d93da888b3c36145223616b453d91283586",
+    "asset-00000": "b6b758d98480b535762529797a1d31128e65f820901f648b9d0c7820d971b002",
+    "asset-00002": "cdd4c9b62949964f2be8821e030d39ded02b39eabbd8618eb98c631efd22e37e",
+    "asset-00004": "d72a46974a2b1b07dcc2f247997f5221ae31d8e28a3a284585a7047375fd9fcf",
+    "asset-00006": "47dbd5fb131419b40ed685a146a9103f50a3bd3b534933323ff59a70f9728062"
+  },
+  "exit_code": 1,
+  "wall_seconds": 0.2467387350000081,
+  "label": "failure",
+  "runner": "nift"
+}
