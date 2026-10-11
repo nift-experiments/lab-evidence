@@ -1,0 +1,14 @@
+{
+  "command": [
+    "strace",
+    "-f",
+    "-c",
+    "-o",
+    "work/diagnostics/schedule-1000-syscalls.txt",
+    "work/nift-source/nift",
+    "adapters/nift.f"
+  ],
+  "stdin": "schedule|1000|4|0|0",
+  "accepted_timing": false,
+  "stderr": ""
+}

@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/nick/Repositories/nift/nift-experiments/concurrency/scripts/run.py", line 127, in <module>
+    (dest/'unsupported.json').write_text(json.dumps(unsupported_rows,indent=2)+'\n');(dest/'acceptance.json').write_text(json.dumps({'pass':True,'observations':len(results),'unsupported_cells':len(unsupported_rows),'certification':args.certify,'pilot':args.pilot},indent=2)+'\n')
+                           ^^^^^^
+  File "/home/nick/Repositories/nift/nift-experiments/concurrency/scripts/run.py", line 118, in main
+    if mode=='persistent' and e not in workers:workers[e]=persistent(e)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nick/Repositories/nift/nift-experiments/concurrency/scripts/run.py", line 75, in trial
+    line=reader.line(timeout)
+  File "/home/nick/Repositories/nift/nift-experiments/concurrency/scripts/run.py", line 53, in line
+    if not select.select([self.p.stdout],[],[],max(0,end-time.monotonic()))[0]:raise TimeoutError('response watchdog')
+                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: response watchdog

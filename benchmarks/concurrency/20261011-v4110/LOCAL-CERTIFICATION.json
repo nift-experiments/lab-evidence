@@ -1,0 +1,28 @@
+{
+  "pass": true,
+  "supported_cells": 608,
+  "unsupported_cells": 32,
+  "scenarios": 64,
+  "observations": 610,
+  "local_affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "official_estimate_minutes": 60.1,
+  "decision": "64 scenarios, 608 supported official cells. Nift 10000 held futures used ~13700MiB locally, beyond 8GiB official machine; mark these two boundaries outside practical range, retain local diagnostic. All remaining cells under 200MiB locally. No official observation before amended freeze.",
+  "semantics": {
+    "pass": true,
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "nift_cancel": "No public future/thread cancellation API in frozen source; explicit cooperative atomic stop token required",
+    "nift_error": "Recoverable future error arrives on await; successful sibling finishes; repeated await re-observes same error",
+    "worker_limits": "Nift/JS/Go active concurrency never exceeds 1/2/4; Python distinct worker process count <= requested max_workers"
+  },
+  "local_supported_correct_cells": 610
+}

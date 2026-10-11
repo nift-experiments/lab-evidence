@@ -1,0 +1,15 @@
+cpu-1 fresh PASS
+cpu-1 persistent PASS
+Traceback (most recent call last):
+  File "/home/nick/Repositories/nift/nift-experiments/concurrency/scripts/run.py", line 128, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/nick/Repositories/nift/nift-experiments/concurrency/scripts/run.py", line 119, in main
+    row=trial(e,c,workers[e][:2] if mode=='persistent' else None,timeout=60 if args.certify or args.pilot else 120)
+  File "/home/nick/Repositories/nift/nift-experiments/concurrency/scripts/run.py", line 76, in trial
+    if line==b'BOOT':line=reader.line(timeout)
+                          ~~~~~~~~~~~^^^^^^^^^
+  File "/home/nick/Repositories/nift/nift-experiments/concurrency/scripts/run.py", line 53, in line
+    if not select.select([self.p.stdout],[],[],max(0,end-time.monotonic()))[0]:raise TimeoutError('response watchdog')
+                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: response watchdog

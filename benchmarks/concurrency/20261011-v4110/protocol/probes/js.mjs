@@ -1,0 +1,4 @@
+import {Worker,isMainThread,parentPort,workerData} from 'node:worker_threads';
+import {setTimeout} from 'node:timers/promises';
+if(!isMainThread){const a=new Int32Array(workerData);let active=Atomics.add(a,0,1)+1;while(true){let old=Atomics.load(a,1);if(old>=active||Atomics.compareExchange(a,1,old,active)===old)break;}await setTimeout(20);Atomics.sub(a,0,1);parentPort.close();}
+else{for(const w of [1,2,4]){let sab=new SharedArrayBuffer(8);await Promise.all(Array.from({length:w},()=>new Promise((r,j)=>{let t=new Worker(new URL(import.meta.url),{workerData:sab});t.on('error',j);t.on('exit',c=>c?j(Error(c)):r())})));let a=new Int32Array(sab);if(a[1]>w||a[0]!==0)throw Error('bound');console.log(JSON.stringify({workers:w,max_active:a[1],remaining:a[0]}));}let c=new AbortController(),p=setTimeout(1000,null,{signal:c.signal});c.abort();try{await p}catch(e){console.log(JSON.stringify({cancel:e.name}))}}

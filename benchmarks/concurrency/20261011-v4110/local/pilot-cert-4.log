@@ -1,0 +1,21 @@
+files-100 fresh PASS
+files-100 persistent PASS
+queue-1000-1-1 fresh PASS
+queue-1000-1-1 persistent PASS
+atomic-4 fresh PASS
+atomic-4 persistent PASS
+mutex-1-4 fresh PASS
+mutex-1-4 persistent PASS
+Traceback (most recent call last):
+  File "/home/nick/Repositories/nift/nift-experiments/concurrency/scripts/run.py", line 134, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/nick/Repositories/nift/nift-experiments/concurrency/scripts/run.py", line 125, in main
+    row=trial(e,c,workers[e][:2] if mode=='persistent' else None,timeout=60 if args.certify or args.pilot else 120)
+  File "/home/nick/Repositories/nift/nift-experiments/concurrency/scripts/run.py", line 82, in trial
+    if line==b'BOOT':line=reader.line(timeout)
+                          ~~~~~~~~~~~^^^^^^^^^
+  File "/home/nick/Repositories/nift/nift-experiments/concurrency/scripts/run.py", line 61, in line
+    if not data:raise RuntimeError('participant exited before complete response')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: participant exited before complete response

@@ -1,0 +1,642 @@
+[
+  {
+    "name": "schedule-10",
+    "kind": "schedule",
+    "n": 10,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 50,
+    "warmups": 2
+  },
+  {
+    "name": "schedule-100",
+    "kind": "schedule",
+    "n": 100,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 50,
+    "warmups": 2
+  },
+  {
+    "name": "schedule-1000",
+    "kind": "schedule",
+    "n": 1000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 50,
+    "warmups": 2
+  },
+  {
+    "name": "schedule-10000",
+    "kind": "schedule",
+    "n": 10000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 5,
+    "warmups": 2
+  },
+  {
+    "name": "tiny-10",
+    "kind": "tiny",
+    "n": 10,
+    "workers": 4,
+    "iterations": 8,
+    "extra": 0,
+    "samples": 50,
+    "warmups": 2
+  },
+  {
+    "name": "tiny-100",
+    "kind": "tiny",
+    "n": 100,
+    "workers": 4,
+    "iterations": 8,
+    "extra": 0,
+    "samples": 50,
+    "warmups": 2
+  },
+  {
+    "name": "tiny-1000",
+    "kind": "tiny",
+    "n": 1000,
+    "workers": 4,
+    "iterations": 8,
+    "extra": 0,
+    "samples": 50,
+    "warmups": 2
+  },
+  {
+    "name": "tiny-10000",
+    "kind": "tiny",
+    "n": 10000,
+    "workers": 4,
+    "iterations": 8,
+    "extra": 0,
+    "samples": 5,
+    "warmups": 2
+  },
+  {
+    "name": "fan-10",
+    "kind": "fan",
+    "n": 10,
+    "workers": 4,
+    "iterations": 8,
+    "extra": 0,
+    "samples": 50,
+    "warmups": 2
+  },
+  {
+    "name": "fan-100",
+    "kind": "fan",
+    "n": 100,
+    "workers": 4,
+    "iterations": 8,
+    "extra": 0,
+    "samples": 50,
+    "warmups": 2
+  },
+  {
+    "name": "fan-1000",
+    "kind": "fan",
+    "n": 1000,
+    "workers": 4,
+    "iterations": 8,
+    "extra": 0,
+    "samples": 50,
+    "warmups": 2
+  },
+  {
+    "name": "wait-100",
+    "kind": "wait",
+    "n": 100,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 10,
+    "samples": 20,
+    "warmups": 2
+  },
+  {
+    "name": "wait-1000",
+    "kind": "wait",
+    "n": 1000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 10,
+    "samples": 20,
+    "warmups": 2
+  },
+  {
+    "name": "stagger-100",
+    "kind": "stagger",
+    "n": 100,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 20,
+    "warmups": 2
+  },
+  {
+    "name": "mixed-wait-100",
+    "kind": "mixed-wait",
+    "n": 100,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 20,
+    "warmups": 2
+  },
+  {
+    "name": "pool-light-1",
+    "kind": "pool",
+    "n": 64,
+    "workers": 1,
+    "iterations": 8,
+    "extra": 0,
+    "samples": 20,
+    "warmups": 2
+  },
+  {
+    "name": "pool-light-2",
+    "kind": "pool",
+    "n": 64,
+    "workers": 2,
+    "iterations": 8,
+    "extra": 0,
+    "samples": 20,
+    "warmups": 2
+  },
+  {
+    "name": "pool-light-4",
+    "kind": "pool",
+    "n": 64,
+    "workers": 4,
+    "iterations": 8,
+    "extra": 0,
+    "samples": 20,
+    "warmups": 2
+  },
+  {
+    "name": "pool-medium-1",
+    "kind": "pool",
+    "n": 64,
+    "workers": 1,
+    "iterations": 200,
+    "extra": 0,
+    "samples": 20,
+    "warmups": 2
+  },
+  {
+    "name": "pool-medium-2",
+    "kind": "pool",
+    "n": 64,
+    "workers": 2,
+    "iterations": 200,
+    "extra": 0,
+    "samples": 20,
+    "warmups": 2
+  },
+  {
+    "name": "pool-medium-4",
+    "kind": "pool",
+    "n": 64,
+    "workers": 4,
+    "iterations": 200,
+    "extra": 0,
+    "samples": 20,
+    "warmups": 2
+  },
+  {
+    "name": "pool-heavy-1",
+    "kind": "pool",
+    "n": 64,
+    "workers": 1,
+    "iterations": 5000,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "pool-heavy-2",
+    "kind": "pool",
+    "n": 64,
+    "workers": 2,
+    "iterations": 5000,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "pool-heavy-4",
+    "kind": "pool",
+    "n": 64,
+    "workers": 4,
+    "iterations": 5000,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "cpu-1",
+    "kind": "cpu",
+    "n": 64,
+    "workers": 1,
+    "iterations": 200000,
+    "extra": 0,
+    "samples": 5,
+    "warmups": 2
+  },
+  {
+    "name": "cpu-2",
+    "kind": "cpu",
+    "n": 64,
+    "workers": 2,
+    "iterations": 200000,
+    "extra": 0,
+    "samples": 5,
+    "warmups": 2
+  },
+  {
+    "name": "cpu-4",
+    "kind": "cpu",
+    "n": 64,
+    "workers": 4,
+    "iterations": 200000,
+    "extra": 0,
+    "samples": 5,
+    "warmups": 2
+  },
+  {
+    "name": "process-10",
+    "kind": "process",
+    "n": 10,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "process-100",
+    "kind": "process",
+    "n": 100,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "process-1000",
+    "kind": "process",
+    "n": 1000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "process-mixed",
+    "kind": "process-mixed",
+    "n": 100,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "process-one-failure",
+    "kind": "process-fail",
+    "n": 100,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 1,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "process-many-failures",
+    "kind": "process-fail",
+    "n": 100,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 4,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "files-100",
+    "kind": "files",
+    "n": 100,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "files-1000",
+    "kind": "files",
+    "n": 1000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "files-10000",
+    "kind": "files",
+    "n": 10000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "queue-1000-1-1",
+    "kind": "queue",
+    "n": 1000,
+    "workers": 1,
+    "iterations": 0,
+    "extra": 1,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "queue-1000-1-4",
+    "kind": "queue",
+    "n": 1000,
+    "workers": 1,
+    "iterations": 0,
+    "extra": 4,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "queue-1000-4-1",
+    "kind": "queue",
+    "n": 1000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 1,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "queue-1000-4-4",
+    "kind": "queue",
+    "n": 1000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 4,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "queue-10000-1-1",
+    "kind": "queue",
+    "n": 10000,
+    "workers": 1,
+    "iterations": 0,
+    "extra": 1,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "queue-10000-1-4",
+    "kind": "queue",
+    "n": 10000,
+    "workers": 1,
+    "iterations": 0,
+    "extra": 4,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "queue-10000-4-1",
+    "kind": "queue",
+    "n": 10000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 1,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "queue-10000-4-4",
+    "kind": "queue",
+    "n": 10000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 4,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "queue-100000-1-1",
+    "kind": "queue",
+    "n": 100000,
+    "workers": 1,
+    "iterations": 0,
+    "extra": 1,
+    "samples": 5,
+    "warmups": 2
+  },
+  {
+    "name": "queue-100000-1-4",
+    "kind": "queue",
+    "n": 100000,
+    "workers": 1,
+    "iterations": 0,
+    "extra": 4,
+    "samples": 5,
+    "warmups": 2
+  },
+  {
+    "name": "queue-100000-4-1",
+    "kind": "queue",
+    "n": 100000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 1,
+    "samples": 5,
+    "warmups": 2
+  },
+  {
+    "name": "queue-100000-4-4",
+    "kind": "queue",
+    "n": 100000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 4,
+    "samples": 5,
+    "warmups": 2
+  },
+  {
+    "name": "atomic-1",
+    "kind": "atomic",
+    "n": 20000,
+    "workers": 1,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "mutex-1-1",
+    "kind": "mutex",
+    "n": 10000,
+    "workers": 1,
+    "iterations": 1,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "mutex-8-1",
+    "kind": "mutex",
+    "n": 10000,
+    "workers": 1,
+    "iterations": 8,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "atomic-2",
+    "kind": "atomic",
+    "n": 20000,
+    "workers": 2,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "mutex-1-2",
+    "kind": "mutex",
+    "n": 10000,
+    "workers": 2,
+    "iterations": 1,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "mutex-8-2",
+    "kind": "mutex",
+    "n": 10000,
+    "workers": 2,
+    "iterations": 8,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "atomic-4",
+    "kind": "atomic",
+    "n": 20000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "mutex-1-4",
+    "kind": "mutex",
+    "n": 10000,
+    "workers": 4,
+    "iterations": 1,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "mutex-8-4",
+    "kind": "mutex",
+    "n": 10000,
+    "workers": 4,
+    "iterations": 8,
+    "extra": 0,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "failures",
+    "kind": "failure",
+    "n": 10,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 2,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "mixed-64",
+    "kind": "mixed",
+    "n": 64,
+    "workers": 4,
+    "iterations": 200,
+    "extra": 2,
+    "samples": 10,
+    "warmups": 2
+  },
+  {
+    "name": "nested-10",
+    "kind": "nested",
+    "n": 10,
+    "workers": 4,
+    "iterations": 4,
+    "extra": 0,
+    "samples": 20,
+    "warmups": 2
+  },
+  {
+    "name": "nested-100",
+    "kind": "nested",
+    "n": 100,
+    "workers": 4,
+    "iterations": 4,
+    "extra": 0,
+    "samples": 20,
+    "warmups": 2
+  },
+  {
+    "name": "waiting-memory-100",
+    "kind": "memory",
+    "n": 100,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 10,
+    "samples": 5,
+    "warmups": 2
+  },
+  {
+    "name": "waiting-memory-1000",
+    "kind": "memory",
+    "n": 1000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 10,
+    "samples": 5,
+    "warmups": 2
+  },
+  {
+    "name": "waiting-memory-10000",
+    "kind": "memory",
+    "n": 10000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 10,
+    "samples": 5,
+    "warmups": 2
+  }
+]
