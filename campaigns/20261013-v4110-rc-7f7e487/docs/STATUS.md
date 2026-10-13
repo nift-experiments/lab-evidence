@@ -23,8 +23,10 @@ User requested same-node old/new A/B and focused regression investigation. Offic
 
 Same-node scripting diagnostic independently audited: all 720 observations correct, 13 higher / 17 lower medians. Large function calls +145.76%, small +65.63%; sort/index large −30.71%. Separated instrumentation identifies extra call-path allocation churn; exact root-cause attribution remains provisional. Release recommendation remains held.
 
-Scripting closeout: official accepted results and720-observation paired A/B plus24instrumented runs safely pushed at2b98e06. Node108024446 deleted; CLIabsence/API404 verified; per-host temporary access removed. Shared temporary access remains only for build and filesystem hosts.
+Scripting closeout: official accepted results and720-observation paired A/B plus24instrumented runs safely pushed at2b98e06. Node108024446 deleted; CLIabsence/API404 verified; per-host temporary access removed. Shared temporary access remains only for the build host.
 
-Latest collector checkpoint: build9,348/9,348; timing complete; postprocessing/local audit pending; shellfull8,566observations independently audited; targeted A/B/profiles complete; host deleted; filesystem15,016observations independently accepted; targeted stat/walk/filter A/B pending. No failures reported; no new audited engineering conclusions. Partial timing values are excluded from synthesis/rankings. Six completed hosts remain CLI/API-confirmed absent. Labs source/public trees remain clean.
+Latest collector checkpoint: build9,348/9,348; timing complete; postprocessing/local audit pending; shellfull8,566observations independently audited; targeted A/B/profiles complete; host deleted; filesystem15,016observations independently accepted; targeted stat/walk/filter A/B pending. No failures reported; no new audited engineering conclusions. Partial timing values are excluded from synthesis/rankings. Seven completed hosts remain CLI/API-confirmed absent. Labs source/public trees remain clean.
 
 All eight full measurement plans completed. Build audit/collection and filesystem targetedsame-nodecontrols remain beforefinaldiagnosticcloseout. Do not confuse completionofmeasurement withreleaseapproval.
+
+Filesystemclosed:primary/filter15,016observationsindependentlyaccepted;24-observationmatched-nodegaincontrolsretained/pushed4206b47. Host108024451deletedandCLIabsence/API404verified. Onlybuildaudit/collection/diagnosticdecisionremainsbeforefinalcloseout.
