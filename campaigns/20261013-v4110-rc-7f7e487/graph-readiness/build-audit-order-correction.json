@@ -1,0 +1,19 @@
+{
+  "scope": "post-collection orchestration only; measurement harness unchanged",
+  "discovered_before_collection_complete": true,
+  "original_wrapper_order": [
+    "campaign.py",
+    "validate_campaign.py --official",
+    "audit_campaign.py",
+    "summarize.py"
+  ],
+  "required_order": [
+    "campaign.py",
+    "validate_campaign.py --official",
+    "summarize.py",
+    "audit_campaign.py"
+  ],
+  "reason": "audit_campaign.py independently verifies summary.json distributions; campaign.py does not create summary.json",
+  "action": "After official collector completes preserve any missing-summary orchestration error, generate summary, then independently audit all9348 unchanged observations. Do not rerun timings.",
+  "applied": false
+}

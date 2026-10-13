@@ -1,0 +1,54 @@
+{
+  "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "candidate_git_status": "",
+  "suite_sha": "f37b63bd13cf71256607ba4652bcc911e270f94e",
+  "suite_git_status": "",
+  "nift": {
+    "path": "/opt/nift/nift",
+    "sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606",
+    "version": "Nift v4.11.0"
+  },
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "CPU": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           48 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  4\nOn-line CPU(s) list:                     0-3\nVendor ID:                               AuthenticAMD\nBIOS Vendor ID:                          QEMU\nModel name:                              AMD EPYC 7642 48-Core Processor\nBIOS Model name:                         pc-q35-10.1  CPU @ 2.0GHz\nBIOS CPU family:                         1\nCPU family:                              23\nModel:                                   49\nThread(s) per core:                      1\nCore(s) per socket:                      4\nSocket(s):                               1\nStepping:                                0\nBogoMIPS:                                4599.99\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nHypervisor vendor:                       KVM\nVirtualization type:                     full\nL1d cache:                               256 KiB (4 instances)\nL1i cache:                               256 KiB (4 instances)\nL2 cache:                                2 MiB (4 instances)\nL3 cache:                                64 MiB (4 instances)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-3\nVulnerability Gather data sampling:      Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Mitigation; untrained return thunk; SMT disabled\nVulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected",
+  "kernel": "Linux 6.8.0-134-generic",
+  "os": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "filesystem": "Filesystem     Type 1K-blocks    Used Available Use% Mounted on\n/dev/sda       ext4 164532852 3927044 152228064   3% /",
+  "comparators": {
+    "node": {
+      "path": "/opt/refresh-tools/node-v22.22.1-linux-x64/bin/node",
+      "sha256": "243fd8938011479f41b3de101842150fa990f33fbbb3f7aabd330857f2d79e1d",
+      "version": "v22.22.1"
+    },
+    "npm": "9.2.0",
+    "nx": "23.3.0",
+    "turbo": "2.11.7"
+  },
+  "comparator_file_hashes": {
+    "/opt/suite/work/tools/node_modules/turbo/bin/turbo": {
+      "sha256": "dd000efaa64f567f0986a84d363bbe7cf95a831010f6f6dbfd21770c89a8523d",
+      "bytes": 17037
+    },
+    "/opt/suite/work/tools/node_modules/nx/dist/bin/nx.js": {
+      "sha256": "7a62af690997dd5a584bb9762057e5203b6d94d281fefc488a7b9869c401a969",
+      "bytes": 14860
+    },
+    "/opt/suite/work/tools/node_modules/@nx/nx-linux-x64-gnu/nx.linux-x64-gnu.node": {
+      "sha256": "828ba340aecc1b5a56a0cb4efe76c9f3ed1052fe99369516445351828b500ecf",
+      "bytes": 26908048
+    },
+    "/opt/refresh-tools/node-v22.22.1-linux-x64/lib/node_modules/npm/bin/npm-cli.js": {
+      "sha256": "8e5f6f3429f8cdbe693cdc29904e9d5a7b127a494bd15c804bd54c7403bfcbe7",
+      "bytes": 54
+    },
+    "/opt/suite/work/tools/node_modules/@turbo/linux-64/bin/turbo": {
+      "sha256": "04245f51c406f7e6ac1b5037dd77cb272ad9faafbb95380eff8020b8475fb59d",
+      "bytes": 41102560
+    }
+  }
+}

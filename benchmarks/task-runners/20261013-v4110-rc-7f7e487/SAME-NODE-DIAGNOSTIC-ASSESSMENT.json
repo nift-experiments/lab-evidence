@@ -1,0 +1,17 @@
+{
+  "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "previous_accepted_nift_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+  "assessed_after_independent_acceptance": true,
+  "wall_cases": 31,
+  "wall_regression_cases": 0,
+  "wall_improvement_percent_range": [
+    13.829613363744098,
+    33.4634947185513
+  ],
+  "largest_memory_regression_percent": 3.3898305084745672,
+  "same_node_AB_required": false,
+  "reason": "No severe or material wall/CPU regression, no capability/correctness regression, and no new surprising competitive inversion. Historical wall improvements are modest and broad (13.83\u201333.46%), not attributed to core; previous task preference already favoured Nift. Maximum memory increase is3.4%. Same-node A/B remains optional if another cross-suite finding requires isolating task-runtime overhead.",
+  "historical_percentage_claim": "cross-node trend only; not a controlled core optimization claim",
+  "release_approval": false,
+  "node_retention": "await safe canonical push and parent teardown decision; not needed for a currently identified required task-specific diagnostic"
+}
