@@ -1,3 +1,7 @@
+# SUPERSEDED — Labs publication is on hold
+
+The latest user-authorized [diagnostic sweep brief](DIAGNOSTIC-SWEEP-BRIEF.md) supersedes this plan. Do not publish this candidate generation. Preserve this previous plan solely for future reference after core fixes, a new frozen candidate and full rerun. Teardown does not wait for publication.
+
 # Refresh publication and historical preservation
 
 Keep existing report identities and graph designs. Publish each new audited series as current on its existing route. Before replacing an index.html, preserve its exact bytes in the SAME report directory as index.<prior-series>.html. Keeping directory depth unchanged preserves original relative links. Leave every old CSS/JS/JSON/SVG asset byte-identical; new charts/data use new-series filenames or an assets/<series>/ namespace, and only new current HTML points to them. This preserves genuinely viewable old reports without cloning whole asset trees. Link history explicitly from each new method section. Shared favicon stays unchanged.

@@ -1,3 +1,7 @@
+# PRE-RELEASE DIAGNOSTIC SWEEP — NO LABS PUBLICATION
+
+Candidate remains frozen; release recommendation held. Current Labs must remain unchanged. Teardown gates are completed measurement, independent audit, safely pushed evidence and completed required diagnostics; no live-publication requirement. See [full brief](DIAGNOSTIC-SWEEP-BRIEF.md).
+
 # Campaign dashboard
 
 Preparation checkpoint COMPLETE. Candidate7f7e487; all8CLIhashes identical. Five suites measuring; template/concurrency completed with cloud audits and local collection in progress; scripting independently accepted. All eight local/cloud certification gates pass.
