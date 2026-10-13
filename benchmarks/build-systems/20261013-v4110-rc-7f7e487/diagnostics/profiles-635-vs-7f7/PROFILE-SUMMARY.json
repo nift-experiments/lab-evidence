@@ -1,0 +1,566 @@
+{
+  "scope": "one paired instrumented capture per tool; not timing distributions",
+  "both_variants_correctness_checked": true,
+  "profiles": {
+    "old": {
+      "syscalls": {
+        "wait4": {
+          "calls": 10070,
+          "errors": 70
+        },
+        "futex": {
+          "calls": 38190,
+          "errors": 1528
+        },
+        "newfstatat": {
+          "calls": 570021,
+          "errors": 10002
+        },
+        "readlink": {
+          "calls": 370029,
+          "errors": 370029
+        },
+        "openat": {
+          "calls": 230015,
+          "errors": 0
+        },
+        "clone": {
+          "calls": 10064,
+          "errors": 64
+        },
+        "execve": {
+          "calls": 20001,
+          "errors": 0
+        },
+        "close": {
+          "calls": 250015,
+          "errors": 0
+        },
+        "lseek": {
+          "calls": 180006,
+          "errors": 0
+        },
+        "read": {
+          "calls": 120008,
+          "errors": 0
+        },
+        "mmap": {
+          "calls": 160033,
+          "errors": 0
+        },
+        "unlink": {
+          "calls": 20001,
+          "errors": 0
+        },
+        "write": {
+          "calls": 30001,
+          "errors": 0
+        },
+        "mprotect": {
+          "calls": 60219,
+          "errors": 0
+        },
+        "chmod": {
+          "calls": 10000,
+          "errors": 0
+        },
+        "brk": {
+          "calls": 60027,
+          "errors": 0
+        },
+        "fstat": {
+          "calls": 60010,
+          "errors": 0
+        },
+        "munmap": {
+          "calls": 20008,
+          "errors": 0
+        },
+        "pread64": {
+          "calls": 40002,
+          "errors": 0
+        },
+        "getrandom": {
+          "calls": 20915,
+          "errors": 0
+        },
+        "access": {
+          "calls": 20001,
+          "errors": 20001
+        },
+        "prlimit64": {
+          "calls": 20001,
+          "errors": 0
+        },
+        "arch_prctl": {
+          "calls": 20001,
+          "errors": 0
+        },
+        "rseq": {
+          "calls": 20009,
+          "errors": 0
+        },
+        "set_robust_list": {
+          "calls": 30009,
+          "errors": 0
+        },
+        "set_tid_address": {
+          "calls": 20001,
+          "errors": 0
+        },
+        "dup2": {
+          "calls": 20000,
+          "errors": 0
+        },
+        "chdir": {
+          "calls": 10000,
+          "errors": 0
+        },
+        "getdents64": {
+          "calls": 37,
+          "errors": 0
+        },
+        "rt_sigprocmask": {
+          "calls": 33,
+          "errors": 0
+        },
+        "madvise": {
+          "calls": 8,
+          "errors": 0
+        },
+        "clone3": {
+          "calls": 8,
+          "errors": 0
+        },
+        "ioctl": {
+          "calls": 16,
+          "errors": 16
+        },
+        "getcwd": {
+          "calls": 1,
+          "errors": 0
+        },
+        "fsync": {
+          "calls": 2,
+          "errors": 0
+        },
+        "flock": {
+          "calls": 3,
+          "errors": 0
+        },
+        "rt_sigaction": {
+          "calls": 1,
+          "errors": 0
+        }
+      },
+      "top_self": [
+        {
+          "self_percent": 8.91,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "copy_present_pte"
+        },
+        {
+          "self_percent": 7.6,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "smp_call_function_many_cond"
+        },
+        {
+          "self_percent": 7.03,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "native_write_msr"
+        },
+        {
+          "self_percent": 4.65,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "clear_page_rep"
+        },
+        {
+          "self_percent": 2.13,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "do_user_addr_fault"
+        },
+        {
+          "self_percent": 2.01,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "_raw_spin_unlock_irqrestore"
+        },
+        {
+          "self_percent": 1.82,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "memcpy_orig"
+        },
+        {
+          "self_percent": 1.82,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "srso_safe_ret"
+        },
+        {
+          "self_percent": 1.32,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "memset_orig"
+        },
+        {
+          "self_percent": 1.19,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "kmem_cache_alloc"
+        },
+        {
+          "self_percent": 1.19,
+          "command": "nift",
+          "object": "libc.so.6",
+          "symbol": "malloc"
+        },
+        {
+          "self_percent": 1.13,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "link_path_walk.part.0.constprop.0"
+        },
+        {
+          "self_percent": 1.07,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "do_wp_page"
+        },
+        {
+          "self_percent": 1.0,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "__d_lookup_rcu"
+        },
+        {
+          "self_percent": 0.94,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "__send_ipi_mask"
+        },
+        {
+          "self_percent": 0.94,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "finish_task_switch.isra.0"
+        },
+        {
+          "self_percent": 0.94,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "wp_page_copy"
+        },
+        {
+          "self_percent": 0.88,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "inode_permission"
+        },
+        {
+          "self_percent": 0.82,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "copy_pte_range"
+        },
+        {
+          "self_percent": 0.75,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "down_write"
+        }
+      ],
+      "perf_samples": 1593,
+      "lost_samples": 0,
+      "event": "cpu-clock99Hz DWARF callgraph"
+    },
+    "candidate": {
+      "syscalls": {
+        "wait4": {
+          "calls": 10061,
+          "errors": 61
+        },
+        "futex": {
+          "calls": 54802,
+          "errors": 1804
+        },
+        "newfstatat": {
+          "calls": 510257,
+          "errors": 10002
+        },
+        "readlink": {
+          "calls": 370029,
+          "errors": 370029
+        },
+        "clone": {
+          "calls": 10057,
+          "errors": 57
+        },
+        "execve": {
+          "calls": 20001,
+          "errors": 0
+        },
+        "openat": {
+          "calls": 260251,
+          "errors": 0
+        },
+        "lseek": {
+          "calls": 240714,
+          "errors": 0
+        },
+        "close": {
+          "calls": 280251,
+          "errors": 0
+        },
+        "read": {
+          "calls": 150244,
+          "errors": 0
+        },
+        "mmap": {
+          "calls": 160034,
+          "errors": 0
+        },
+        "unlink": {
+          "calls": 20001,
+          "errors": 0
+        },
+        "fcntl": {
+          "calls": 20000,
+          "errors": 0
+        },
+        "mprotect": {
+          "calls": 61698,
+          "errors": 0
+        },
+        "utimensat": {
+          "calls": 10000,
+          "errors": 0
+        },
+        "brk": {
+          "calls": 60034,
+          "errors": 0
+        },
+        "fstat": {
+          "calls": 60010,
+          "errors": 0
+        },
+        "write": {
+          "calls": 20001,
+          "errors": 0
+        },
+        "munmap": {
+          "calls": 20009,
+          "errors": 0
+        },
+        "pread64": {
+          "calls": 40002,
+          "errors": 0
+        },
+        "getrandom": {
+          "calls": 20902,
+          "errors": 0
+        },
+        "access": {
+          "calls": 20001,
+          "errors": 20001
+        },
+        "prlimit64": {
+          "calls": 20001,
+          "errors": 0
+        },
+        "arch_prctl": {
+          "calls": 20001,
+          "errors": 0
+        },
+        "rseq": {
+          "calls": 20009,
+          "errors": 0
+        },
+        "set_robust_list": {
+          "calls": 30009,
+          "errors": 0
+        },
+        "set_tid_address": {
+          "calls": 20001,
+          "errors": 0
+        },
+        "dup2": {
+          "calls": 20000,
+          "errors": 0
+        },
+        "chdir": {
+          "calls": 10000,
+          "errors": 0
+        },
+        "getdents64": {
+          "calls": 37,
+          "errors": 0
+        },
+        "clone3": {
+          "calls": 8,
+          "errors": 0
+        },
+        "rt_sigprocmask": {
+          "calls": 33,
+          "errors": 0
+        },
+        "madvise": {
+          "calls": 8,
+          "errors": 0
+        },
+        "getcwd": {
+          "calls": 1,
+          "errors": 0
+        },
+        "ioctl": {
+          "calls": 16,
+          "errors": 16
+        },
+        "fsync": {
+          "calls": 2,
+          "errors": 0
+        },
+        "flock": {
+          "calls": 3,
+          "errors": 0
+        },
+        "rt_sigaction": {
+          "calls": 1,
+          "errors": 0
+        }
+      },
+      "top_self": [
+        {
+          "self_percent": 16.11,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "copy_present_pte"
+        },
+        {
+          "self_percent": 9.83,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "smp_call_function_many_cond"
+        },
+        {
+          "self_percent": 6.15,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "native_write_msr"
+        },
+        {
+          "self_percent": 2.94,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "clear_page_rep"
+        },
+        {
+          "self_percent": 2.43,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "_raw_spin_unlock_irqrestore"
+        },
+        {
+          "self_percent": 2.25,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "memcpy_orig"
+        },
+        {
+          "self_percent": 1.6,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "__send_ipi_mask"
+        },
+        {
+          "self_percent": 1.47,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "do_user_addr_fault"
+        },
+        {
+          "self_percent": 1.39,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "copy_pte_range"
+        },
+        {
+          "self_percent": 1.26,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "__d_lookup_rcu"
+        },
+        {
+          "self_percent": 1.21,
+          "command": "nift",
+          "object": "libc.so.6",
+          "symbol": "malloc"
+        },
+        {
+          "self_percent": 1.13,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "srso_safe_ret"
+        },
+        {
+          "self_percent": 1.08,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "memset_orig"
+        },
+        {
+          "self_percent": 0.95,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "finish_task_switch.isra.0"
+        },
+        {
+          "self_percent": 0.78,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "__handle_mm_fault"
+        },
+        {
+          "self_percent": 0.78,
+          "command": "nift",
+          "object": "libc.so.6",
+          "symbol": "cfree"
+        },
+        {
+          "self_percent": 0.74,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "link_path_walk.part.0.constprop.0"
+        },
+        {
+          "self_percent": 0.74,
+          "command": "nift",
+          "object": "libstdc++.so.6.0.33",
+          "symbol": "std::filesystem::__cxx11::path::_M_split_cmpts()"
+        },
+        {
+          "self_percent": 0.69,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "rep_movs_alternative"
+        },
+        {
+          "self_percent": 0.65,
+          "command": "nift",
+          "object": "[kernel.kallsyms]",
+          "symbol": "kmem_cache_alloc"
+        }
+      ],
+      "perf_samples": 2309,
+      "lost_samples": 0,
+      "event": "cpu-clock99Hz DWARF callgraph"
+    }
+  },
+  "observed_signal": "larger parent RSS and greater fork page-table-copy sampled share, plus extra metadata I/O; exact allocation source not isolated",
+  "causal_attribution": "hypothesis only; shared caches existed in both sources; no source ablation/core edits"
+}

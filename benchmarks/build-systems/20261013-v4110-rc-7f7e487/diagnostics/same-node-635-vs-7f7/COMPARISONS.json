@@ -1,0 +1,82 @@
+{
+  "audit_pass": true,
+  "observations": 120,
+  "measured": 110,
+  "warmups": 10,
+  "prior_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+  "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "comparisons": [
+    {
+      "kind": "native",
+      "size": 1000,
+      "profile": "heavy",
+      "jobs": 1,
+      "scenario": "noop",
+      "samples_per_variant": 30,
+      "basis": "controlled same-node exact-source diagnostic; alternating old/candidate, independent audit passed",
+      "wall_ms": {
+        "old": 335.3812475,
+        "candidate": 176.276369,
+        "regression_percent": -47.440004378897186
+      },
+      "cpu_ms": {
+        "old": 330.528,
+        "candidate": 172.0255,
+        "regression_percent": -47.954333672185115
+      },
+      "peak_rss_kib": {
+        "old": 6784.0,
+        "candidate": 7808.0,
+        "regression_percent": 15.094339622641506
+      }
+    },
+    {
+      "kind": "tiny",
+      "size": 10000,
+      "profile": "light",
+      "jobs": 4,
+      "scenario": "full",
+      "samples_per_variant": 5,
+      "basis": "controlled same-node exact-source diagnostic; alternating old/candidate, independent audit passed",
+      "wall_ms": {
+        "old": 13743.691824,
+        "candidate": 16663.643987,
+        "regression_percent": 21.24576278624799
+      },
+      "cpu_ms": {
+        "old": 43226.293,
+        "candidate": 50330.091,
+        "regression_percent": 16.4339745719116
+      },
+      "peak_rss_kib": {
+        "old": 19492,
+        "candidate": 31780,
+        "regression_percent": 63.04124769136057
+      }
+    },
+    {
+      "kind": "tiny",
+      "size": 10000,
+      "profile": "light",
+      "jobs": 4,
+      "scenario": "noop",
+      "samples_per_variant": 20,
+      "basis": "controlled same-node exact-source diagnostic; alternating old/candidate, independent audit passed",
+      "wall_ms": {
+        "old": 640.4346885,
+        "candidate": 539.484074,
+        "regression_percent": -15.762827390946367
+      },
+      "cpu_ms": {
+        "old": 2020.4765,
+        "candidate": 1505.6239999999998,
+        "regression_percent": -25.481736610151128
+      },
+      "peak_rss_kib": {
+        "old": 12416.0,
+        "candidate": 20132.0,
+        "regression_percent": 62.145618556701024
+      }
+    }
+  ]
+}
