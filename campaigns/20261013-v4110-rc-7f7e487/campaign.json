@@ -31,7 +31,7 @@
       "stage": "official_measurement",
       "local_certification": "pass",
       "cloud_measurements": "running",
-      "observations_completed": 1783,
+      "observations_completed": 2251,
       "audit": "pending",
       "diagnostics": "pending",
       "publication": "held: diagnostic sweep, no Labs publication",
@@ -164,7 +164,8 @@
       "launcher_pid": 10722,
       "output_directory": "/opt/filesystem/suite/work/refresh-official",
       "supplement_suite_sha": "1ab31488eb949eb8f8cd6d50b0eb9fd59e1ad78e",
-      "supplement_output_directory": "/opt/filesystem/filter-supplement/work/refresh-official"
+      "supplement_output_directory": "/opt/filesystem/filter-supplement/work/refresh-official",
+      "progress_note": "Primary mirror-0-10000; filter queued; no complete marker"
     },
     "scripting-benchmark": {
       "repository": "git@github.com:nift-dev/scripting-benchmark.git",
@@ -258,7 +259,9 @@
       "observations_planned": 8566,
       "cloud_certification": "pass",
       "launcher_pid": 38847,
-      "output_directory": "/opt/campaign/evidence/official-refresh"
+      "output_directory": "/opt/campaign/evidence/official-refresh",
+      "expanded_checkpoint_observations": 564,
+      "progress_note": "Expanded round checkpoint only; startup cohorts complete. Partial observations not accepted."
     },
     "task-runners": {
       "repository": "https://github.com/nift-experiments/task-runners.git",
@@ -423,5 +426,6 @@
     "reason": "User requires core regressions addressed, new frozen candidate and full rerun before Labs publication",
     "existing_labs_unchanged": true
   },
-  "teardown_policy": "After measurements complete, independent audit passes, evidence collected/pushed and required diagnostics complete; no Labs live gate. Verify CLI absence/API404 and retain lifecycle receipts; keep hosts needed for diagnostics."
+  "teardown_policy": "After measurements complete, independent audit passes, evidence collected/pushed and required diagnostics complete; no Labs live gate. Verify CLI absence/API404 and retain lifecycle receipts; keep hosts needed for diagnostics.",
+  "last_reconciled_utc": "2026-10-13T10:29:16.747679+00:00"
 }

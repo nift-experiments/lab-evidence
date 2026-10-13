@@ -1,0 +1,29 @@
+{
+  "template-engines": {
+    "status": "accepted independent cloud/local audit",
+    "cells": 375,
+    "measured": 17950,
+    "warmups": 750,
+    "accepted_path": "benchmarks/template-engines/20261013-v4110-rc-7f7e487",
+    "memory": "launch floor confirmed; raw memory preserved/unranked",
+    "diagnostic": "RSS floor confirmed; targeted same-node A/B independently audited and preserved",
+    "teardown_eligibility": "all assigned gates and diagnostics complete; eligible after canonical evidence/diagnostics push"
+  },
+  "concurrency": {
+    "status": "accepted independent cloud/local audit",
+    "cells": 608,
+    "measured": 10290,
+    "warmups": 1216,
+    "accepted_path": "benchmarks/concurrency/20261013-v4110-rc-7f7e487",
+    "diagnostic": "targeted same-node A/B and ten-request retained-runtime trajectories independently audited and preserved; persistent slowdown remains",
+    "teardown_eligibility": "all assigned gates and diagnostics complete; eligible after canonical evidence/diagnostics push"
+  },
+  "filesystem-automation": {
+    "status": "official primary running, filter queued serial after audit",
+    "wrapper_pid": 10722,
+    "diagnostics": "none during timing",
+    "last_observed": "wrapper alive at 1h42; relocate-10000; no diagnostics during timing"
+  },
+  "publication": "none authorized in pre-release diagnostic sweep",
+  "teardown": "retain until accepted evidence and required diagnostics safely pushed"
+}

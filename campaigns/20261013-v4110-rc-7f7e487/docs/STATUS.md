@@ -23,4 +23,6 @@ User requested same-node old/new A/B and focused regression investigation. Offic
 
 Same-node scripting diagnostic independently audited: all 720 observations correct, 13 higher / 17 lower medians. Large function calls +145.76%, small +65.63%; sort/index large −30.71%. Separated instrumentation identifies extra call-path allocation churn; exact root-cause attribution remains provisional. Release recommendation remains held.
 
-Scripting closeout: official accepted results and720-observation paired A/B plus24instrumented runs safely pushed at2b98e06. Node108024446 deleted; CLIabsence/API404 verified; per-host temporary access removed. Shared access stays for remaining seven hosts.
+Scripting closeout: official accepted results and720-observation paired A/B plus24instrumented runs safely pushed at2b98e06. Node108024446 deleted; CLIabsence/API404 verified; per-host temporary access removed. Shared temporary access remains only for the three active hosts.
+
+Latest collector checkpoint: build2,251/9,348; shellexpanded564observations (partial round checkpoints, not total suite acceptance); filesystemprimary mirror-0-10000, filter queued. No failures reported; no new audited engineering conclusions. Partial timing values are excluded from synthesis/rankings. Five completed hosts remain CLI/API-confirmed absent. Labs source/public trees remain clean.
