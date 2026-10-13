@@ -1,0 +1,650 @@
+{
+  "candidate": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "status": "interim five-suite diagnostic; no release approval",
+  "regressions": [
+    {
+      "benchmark": "scripting",
+      "scenario": "sanity/function-calls/large",
+      "old_ms": 228.284339,
+      "candidate_ms": 561.025909,
+      "percent": 145.7575107681828,
+      "basis": "same-node 10 paired samples; clear nonoverlap/10 slower pairs",
+      "subsystem": "call argument/value staging"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "sanity/function-calls/small",
+      "old_ms": 6.0795705,
+      "candidate_ms": 10.0693225,
+      "percent": 65.62555693695798,
+      "basis": "same-node 10 paired samples; clear nonoverlap/10 slower pairs",
+      "subsystem": "call argument/value staging"
+    },
+    {
+      "benchmark": "website-generator",
+      "scenario": "application-cold",
+      "old_ms": 2561.444901,
+      "candidate_ms": 3542.236821,
+      "percent": 38.290572622393505,
+      "basis": "independently audited same-node targeted diagnostic; all observed ranges disjoint",
+      "subsystem": "fresh build path/filesystem probes"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "arrays-strings-hash/frequency-count/small",
+      "old_ms": 8.3034395,
+      "candidate_ms": 10.659021,
+      "percent": 28.368744060819616,
+      "basis": "same-node 10 paired samples; descriptive increase, significance unestablished",
+      "subsystem": "collections/value paths; attribution unresolved"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "graphs-trees-search/bfs/small",
+      "old_ms": 12.7230255,
+      "candidate_ms": 15.270377,
+      "percent": 20.02158606064257,
+      "basis": "same-node 10 paired samples; descriptive increase, significance unestablished",
+      "subsystem": "collections/value paths; attribution unresolved"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "structured-data/json-transform/large",
+      "old_ms": 586.316944,
+      "candidate_ms": 703.6477845,
+      "percent": 20.011504306790062,
+      "basis": "same-node 10 paired samples; descriptive increase, significance unestablished",
+      "subsystem": "collections/value paths; attribution unresolved"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "arrays-strings-hash/frequency-count/large",
+      "old_ms": 473.1560035,
+      "candidate_ms": 567.2626065,
+      "percent": 19.889127962845343,
+      "basis": "same-node 10 paired samples; descriptive increase, significance unestablished",
+      "subsystem": "collections/value paths; attribution unresolved"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "graphs-trees-search/bfs/large",
+      "old_ms": 844.177429,
+      "candidate_ms": 999.0760225,
+      "percent": 18.34905651096246,
+      "basis": "same-node 10 paired samples; descriptive increase, significance unestablished",
+      "subsystem": "collections/value paths; attribution unresolved"
+    }
+  ],
+  "same_node_improvements": [
+    {
+      "benchmark": "template-engines",
+      "scenario": "loop-10000 / source-render",
+      "old_ms": 119.508033,
+      "candidate_ms": 33.682796,
+      "percent": 71.81545444731735,
+      "basis": "independently audited same-node targeted diagnostic; descriptive three-pair control"
+    },
+    {
+      "benchmark": "concurrency",
+      "scenario": "queue-100000-4-4 / fresh runtime/readiness request",
+      "old_ms": 36066.073134,
+      "candidate_ms": 11887.314455,
+      "percent": 67.04017537247863,
+      "basis": "independently audited same-node targeted diagnostic; descriptive three-pair control"
+    },
+    {
+      "benchmark": "template-engines",
+      "scenario": "loop-10000 / fresh",
+      "old_ms": 168.237997,
+      "candidate_ms": 75.854284,
+      "percent": 54.91251361010914,
+      "basis": "independently audited same-node targeted diagnostic; descriptive three-pair control"
+    },
+    {
+      "benchmark": "template-engines",
+      "scenario": "article / source-render",
+      "old_ms": 0.42996,
+      "candidate_ms": 0.266374,
+      "percent": 38.04679505070239,
+      "basis": "independently audited same-node targeted diagnostic; descriptive three-pair control"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "arrays-strings-hash/sort-index/large",
+      "old_ms": 1088.854638,
+      "candidate_ms": 754.4371464999999,
+      "percent": 30.71277651112876,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "arrays-strings-hash/scan/large",
+      "old_ms": 110.63487649999999,
+      "candidate_ms": 93.9884665,
+      "percent": 15.046258943489665,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    },
+    {
+      "benchmark": "website-generator",
+      "scenario": "incremental/no-op / 10000pages targeted adjacent paired versions",
+      "old_ms": 932.930507,
+      "candidate_ms": 813.535745,
+      "percent": 12.797819462880955,
+      "basis": "independently audited same-node targeted diagnostic; all observed ranges disjoint"
+    },
+    {
+      "benchmark": "website-generator",
+      "scenario": "warm-full / 10000pages targeted adjacent paired versions",
+      "old_ms": 3176.786345,
+      "candidate_ms": 2776.981235,
+      "percent": 12.58520613541606,
+      "basis": "independently audited same-node targeted diagnostic; all observed ranges disjoint"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "structured-data/json-parse/small",
+      "old_ms": 6.811803,
+      "candidate_ms": 5.9789835,
+      "percent": 12.22612427282469,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    },
+    {
+      "benchmark": "website-generator",
+      "scenario": "incremental/one-page / 10000pages targeted adjacent paired versions",
+      "old_ms": 920.90838,
+      "candidate_ms": 821.309993,
+      "percent": 10.815232998531298,
+      "basis": "independently audited same-node targeted diagnostic; all observed ranges disjoint"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "dynamic-programming/fibonacci/large",
+      "old_ms": 182.1065365,
+      "candidate_ms": 164.11128050000002,
+      "percent": 9.881718880530121,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "arrays-strings-hash/sliding-window/large",
+      "old_ms": 339.16434100000004,
+      "candidate_ms": 307.06410700000004,
+      "percent": 9.46450735515264,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "arrays-strings-hash/sort-index/small",
+      "old_ms": 10.8230705,
+      "candidate_ms": 9.842524000000001,
+      "percent": 9.059781140666123,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "arrays-strings-hash/scan/small",
+      "old_ms": 4.900930000000001,
+      "candidate_ms": 4.541314,
+      "percent": 7.33770937352708,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "arrays-strings-hash/map-set/large",
+      "old_ms": 295.96247100000005,
+      "candidate_ms": 278.6166095,
+      "percent": 5.860831422778623,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "arrays-strings-hash/map-set/small",
+      "old_ms": 7.0073045,
+      "candidate_ms": 6.6152265,
+      "percent": 5.595275615609396,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "sanity/loops/large",
+      "old_ms": 92.53852649999999,
+      "candidate_ms": 88.1149115,
+      "percent": 4.780295480499119,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "sanity/output/small",
+      "old_ms": 3.719924,
+      "candidate_ms": 3.5620089999999998,
+      "percent": 4.245113609847939,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "sanity/loops/small",
+      "old_ms": 4.945401,
+      "candidate_ms": 4.77965,
+      "percent": 3.3516190092572895,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "arrays-strings-hash/sliding-window/small",
+      "old_ms": 7.380618999999999,
+      "candidate_ms": 7.157403,
+      "percent": 3.024353377406408,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "structured-data/json-traverse/small",
+      "old_ms": 8.9688885,
+      "candidate_ms": 8.7722905,
+      "percent": 2.191999599504435,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "sanity/noop/large",
+      "old_ms": 3.426079,
+      "candidate_ms": 3.358798,
+      "percent": 1.9637900935734365,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "sanity/output/large",
+      "old_ms": 3.7783800000000003,
+      "candidate_ms": 3.7074385000000003,
+      "percent": 1.8775639295147695,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "structured-data/json-traverse/large",
+      "old_ms": 491.2113455,
+      "candidate_ms": 489.0250355,
+      "percent": 0.44508540367173,
+      "basis": "same-node 10 paired samples; sort large nonoverlap, others descriptive"
+    }
+  ],
+  "top_official_wall_deficits": [
+    {
+      "benchmark": "concurrency",
+      "scenario": "schedule-10000",
+      "boundary": "persistent",
+      "metric": "wall_time",
+      "unit": "ms",
+      "contract_sha256": "af8377c16756c53503a62defe66dd9cc78686c912cb6545d0a5c097128392d02",
+      "cohort": "official median",
+      "series": "20261013-v4110-rc-7f7e487",
+      "engine": "nift",
+      "value": 20311.090249,
+      "audit_pass": true,
+      "evidence": "https://github.com/nift-experiments/lab-evidence/tree/main/benchmarks/concurrency/20261013-v4110-rc-7f7e487",
+      "peer": "go",
+      "peer_value": 14.75152,
+      "rank_value": 1376.8811789564738,
+      "severity": "severe",
+      "statistical_significance_claim": false
+    },
+    {
+      "benchmark": "concurrency",
+      "scenario": "tiny-10000",
+      "boundary": "persistent",
+      "metric": "wall_time",
+      "unit": "ms",
+      "contract_sha256": "e3ec03d4e6e84c37e2fe9330459b88682a8ccf0fc7f67b21b4c47b00d91bba41",
+      "cohort": "official median",
+      "series": "20261013-v4110-rc-7f7e487",
+      "engine": "nift",
+      "value": 19978.450552,
+      "audit_pass": true,
+      "evidence": "https://github.com/nift-experiments/lab-evidence/tree/main/benchmarks/concurrency/20261013-v4110-rc-7f7e487",
+      "peer": "go",
+      "peer_value": 16.164151,
+      "rank_value": 1235.9727740726994,
+      "severity": "severe",
+      "statistical_significance_claim": false
+    },
+    {
+      "benchmark": "concurrency",
+      "scenario": "schedule-10000",
+      "boundary": "fresh",
+      "metric": "wall_time",
+      "unit": "ms",
+      "contract_sha256": "8b6a770ee18605b7f81f8fb9ba5a9bd37201ea9fd1db2417cea842807bbc2097",
+      "cohort": "official median",
+      "series": "20261013-v4110-rc-7f7e487",
+      "engine": "nift",
+      "value": 19493.458232,
+      "audit_pass": true,
+      "evidence": "https://github.com/nift-experiments/lab-evidence/tree/main/benchmarks/concurrency/20261013-v4110-rc-7f7e487",
+      "peer": "go",
+      "peer_value": 18.540112,
+      "rank_value": 1051.420737479903,
+      "severity": "severe",
+      "statistical_significance_claim": false
+    },
+    {
+      "benchmark": "concurrency",
+      "scenario": "tiny-10000",
+      "boundary": "fresh",
+      "metric": "wall_time",
+      "unit": "ms",
+      "contract_sha256": "48562d398a5843fe025e72630b302031d0c221d6e56b382081b7fa2635ac8c5b",
+      "cohort": "official median",
+      "series": "20261013-v4110-rc-7f7e487",
+      "engine": "nift",
+      "value": 17297.852204,
+      "audit_pass": true,
+      "evidence": "https://github.com/nift-experiments/lab-evidence/tree/main/benchmarks/concurrency/20261013-v4110-rc-7f7e487",
+      "peer": "go",
+      "peer_value": 21.36988,
+      "rank_value": 809.4501328037406,
+      "severity": "severe",
+      "statistical_significance_claim": false
+    },
+    {
+      "benchmark": "scripting",
+      "scenario": "sanity/function-calls/large",
+      "boundary": "fresh-process-repeated",
+      "metric": "wall_time",
+      "unit": "ms",
+      "contract_sha256": "49080d08c578e0f96bf243c58ad59ed8cfac75e39b707c9327f411d3ca335b65",
+      "cohort": "official median",
+      "series": "20261013-v4110-rc-7f7e487",
+      "engine": "nift",
+      "value": 546.05646,
+      "audit_pass": true,
+      "evidence": "https://github.com/nift-experiments/lab-evidence/tree/main/campaigns/20261013-v4110-rc-7f7e487/accepted-working/scripting",
+      "peer": "luajit",
+      "peer_value": 1.8889019999999999,
+      "rank_value": 289.0867075157949,
+      "severity": "severe",
+      "statistical_significance_claim": false
+    },
+    {
+      "benchmark": "concurrency",
+      "scenario": "mutex-8-2",
+      "boundary": "persistent",
+      "metric": "wall_time",
+      "unit": "ms",
+      "contract_sha256": "70e4a7266f8fd4664a26a1a4fa3a5dc50a2440cd3fe7b132082eda987dc1dcf3",
+      "cohort": "official median",
+      "series": "20261013-v4110-rc-7f7e487",
+      "engine": "nift",
+      "value": 257.46151299999997,
+      "audit_pass": true,
+      "evidence": "https://github.com/nift-experiments/lab-evidence/tree/main/benchmarks/concurrency/20261013-v4110-rc-7f7e487",
+      "peer": "go",
+      "peer_value": 0.895089,
+      "rank_value": 287.6378918744393,
+      "severity": "severe",
+      "statistical_significance_claim": false
+    },
+    {
+      "benchmark": "concurrency",
+      "scenario": "mutex-8-1",
+      "boundary": "persistent",
+      "metric": "wall_time",
+      "unit": "ms",
+      "contract_sha256": "7901d79d868c1389d58e056f5ef79a71fd20a98fa4924c4756395284590b196e",
+      "cohort": "official median",
+      "series": "20261013-v4110-rc-7f7e487",
+      "engine": "nift",
+      "value": 227.5226135,
+      "audit_pass": true,
+      "evidence": "https://github.com/nift-experiments/lab-evidence/tree/main/benchmarks/concurrency/20261013-v4110-rc-7f7e487",
+      "peer": "go",
+      "peer_value": 0.851154,
+      "rank_value": 267.3107492886129,
+      "severity": "severe",
+      "statistical_significance_claim": false
+    },
+    {
+      "benchmark": "concurrency",
+      "scenario": "mutex-8-4",
+      "boundary": "persistent",
+      "metric": "wall_time",
+      "unit": "ms",
+      "contract_sha256": "8a52b8cf1e755fb3bc838493a804c0974dd5146d3c75018431b0a1ef82fca452",
+      "cohort": "official median",
+      "series": "20261013-v4110-rc-7f7e487",
+      "engine": "nift",
+      "value": 264.1530455,
+      "audit_pass": true,
+      "evidence": "https://github.com/nift-experiments/lab-evidence/tree/main/benchmarks/concurrency/20261013-v4110-rc-7f7e487",
+      "peer": "go",
+      "peer_value": 0.990675,
+      "rank_value": 266.63945845004673,
+      "severity": "severe",
+      "statistical_significance_claim": false
+    },
+    {
+      "benchmark": "concurrency",
+      "scenario": "mutex-1-2",
+      "boundary": "persistent",
+      "metric": "wall_time",
+      "unit": "ms",
+      "contract_sha256": "43482a3530bbf86ddcf303394a30c56ff4f6d45e33ad9ffceada4614111f0b24",
+      "cohort": "official median",
+      "series": "20261013-v4110-rc-7f7e487",
+      "engine": "nift",
+      "value": 209.272623,
+      "audit_pass": true,
+      "evidence": "https://github.com/nift-experiments/lab-evidence/tree/main/benchmarks/concurrency/20261013-v4110-rc-7f7e487",
+      "peer": "go",
+      "peer_value": 0.868459,
+      "rank_value": 240.9700665201236,
+      "severity": "severe",
+      "statistical_significance_claim": false
+    },
+    {
+      "benchmark": "concurrency",
+      "scenario": "mutex-1-4",
+      "boundary": "persistent",
+      "metric": "wall_time",
+      "unit": "ms",
+      "contract_sha256": "6d76dd64cd57e858eea2ee1e23c305460083afa73ea2cc00e11d982b2eaa2542",
+      "cohort": "official median",
+      "series": "20261013-v4110-rc-7f7e487",
+      "engine": "nift",
+      "value": 220.9420035,
+      "audit_pass": true,
+      "evidence": "https://github.com/nift-experiments/lab-evidence/tree/main/benchmarks/concurrency/20261013-v4110-rc-7f7e487",
+      "peer": "go",
+      "peer_value": 0.9353100000000001,
+      "rank_value": 236.22328800076977,
+      "severity": "severe",
+      "statistical_significance_claim": false
+    },
+    {
+      "benchmark": "concurrency",
+      "scenario": "queue-100000-4-4",
+      "boundary": "persistent",
+      "metric": "wall_time",
+      "unit": "ms",
+      "contract_sha256": "7a6baf49f77e7c48930c03cb1878540296002d9ee0981a74cc4a63c1292ba273",
+      "cohort": "official median",
+      "series": "20261013-v4110-rc-7f7e487",
+      "engine": "nift",
+      "value": 11745.836741,
+      "audit_pass": true,
+      "evidence": "https://github.com/nift-experiments/lab-evidence/tree/main/benchmarks/concurrency/20261013-v4110-rc-7f7e487",
+      "peer": "bun",
+      "peer_value": 56.266007,
+      "rank_value": 208.75547008338444,
+      "severity": "severe",
+      "statistical_significance_claim": false
+    },
+    {
+      "benchmark": "concurrency",
+      "scenario": "cpu-1",
+      "boundary": "persistent",
+      "metric": "wall_time",
+      "unit": "ms",
+      "contract_sha256": "e4ff7407902f026e901388fe0c7825e03edab4b3ab1059e7fda70256d90dccc2",
+      "cohort": "official median",
+      "series": "20261013-v4110-rc-7f7e487",
+      "engine": "nift",
+      "value": 10807.809206,
+      "audit_pass": true,
+      "evidence": "https://github.com/nift-experiments/lab-evidence/tree/main/benchmarks/concurrency/20261013-v4110-rc-7f7e487",
+      "peer": "go",
+      "peer_value": 52.766767,
+      "rank_value": 204.82227395133,
+      "severity": "severe",
+      "statistical_significance_claim": false
+    },
+    {
+      "benchmark": "concurrency",
+      "scenario": "cpu-2",
+      "boundary": "persistent",
+      "metric": "wall_time",
+      "unit": "ms",
+      "contract_sha256": "953e034ad641433c3a4ab9e37973129c13a87164f08242861ff509e4621de1d1",
+      "cohort": "official median",
+      "series": "20261013-v4110-rc-7f7e487",
+      "engine": "nift",
+      "value": 5482.126614,
+      "audit_pass": true,
+      "evidence": "https://github.com/nift-experiments/lab-evidence/tree/main/benchmarks/concurrency/20261013-v4110-rc-7f7e487",
+      "peer": "go",
+      "peer_value": 26.945097,
+      "rank_value": 203.4554417822285,
+      "severity": "severe",
+      "statistical_significance_claim": false
+    },
+    {
+      "benchmark": "concurrency",
+      "scenario": "mutex-1-1",
+      "boundary": "persistent",
+      "metric": "wall_time",
+      "unit": "ms",
+      "contract_sha256": "c306230db2cd89ac5b9be319f9d3414f437927aa2a1b2c0efa87c9e9e094560a",
+      "cohort": "official median",
+      "series": "20261013-v4110-rc-7f7e487",
+      "engine": "nift",
+      "value": 187.1046495,
+      "audit_pass": true,
+      "evidence": "https://github.com/nift-experiments/lab-evidence/tree/main/benchmarks/concurrency/20261013-v4110-rc-7f7e487",
+      "peer": "go",
+      "peer_value": 0.9538044999999999,
+      "rank_value": 196.16666675403607,
+      "severity": "severe",
+      "statistical_significance_claim": false
+    },
+    {
+      "benchmark": "concurrency",
+      "scenario": "cpu-1",
+      "boundary": "fresh",
+      "metric": "wall_time",
+      "unit": "ms",
+      "contract_sha256": "8ca1e8c1a8ef575ecfac6a909f301b83b0623f488e00cb72afdfcc78ccdb1bf5",
+      "cohort": "official median",
+      "series": "20261013-v4110-rc-7f7e487",
+      "engine": "nift",
+      "value": 10791.348575,
+      "audit_pass": true,
+      "evidence": "https://github.com/nift-experiments/lab-evidence/tree/main/benchmarks/concurrency/20261013-v4110-rc-7f7e487",
+      "peer": "go",
+      "peer_value": 57.827694,
+      "rank_value": 186.61212005099148,
+      "severity": "severe",
+      "statistical_significance_claim": false
+    }
+  ],
+  "preferences": [
+    [
+      "Scripting",
+      "Python for new general data/automation; Nift for bounded Nift-owned policy",
+      "Same choices",
+      "Calls/collections/JSON costs remain; concrete Python libraries and runtime recovery matter. No broad preference reversal."
+    ],
+    [
+      "Task running",
+      "Nift for authored DAGs; Turbo/Nx for required restoration/discovery",
+      "Nift for authored DAGs; same specific exceptions",
+      "Nift lowest wall/RSS31/31; preference unchanged, confidence strengthened."
+    ],
+    [
+      "Template engine",
+      "Nift for Nift-owned composition; native library in Python/JS; prepared peer for hot service",
+      "Nift for programmable authored generation; prepared peer for high-volume hot service",
+      "Loop gains are real; no public prepared-template artifact and15.4\u00d7large source-render gap remain. Scope improves, default hot-service preference unchanged."
+    ],
+    [
+      "Concurrency",
+      "Go for standalone/high fanout; Nift for bounded Nift-owned jobs",
+      "Same choices",
+      "Queue improves67%, but scheduling/memory/waits/reuse still block a general Nift choice."
+    ],
+    [
+      "Website generation",
+      "Hugo for conventional content site; Nift for existing/mixed programmable project",
+      "Nift for mixed authored website/assets/helpers; Hugo for plain content site",
+      "Freshfull regression and current Hugo advantage weaken blanket Nift preference; incremental paths improve."
+    ]
+  ],
+  "priorities": [
+    {
+      "rank": 1,
+      "title": "Fix function-call regression",
+      "reason": "Confirmed+145.76%; central policy-language path. Investigate extra argument parsing/classification/allocation; preserve exactly-once and ownership."
+    },
+    {
+      "rank": 2,
+      "title": "Fix fresh website full-build regression",
+      "reason": "Confirmed+38.29%; strategically central product. Extra filesystem probes merit investigation independent of call cause."
+    },
+    {
+      "rank": 3,
+      "title": "Resolve retained-runtime state/time growth",
+      "reason": "Ten scheduling requests grow7.17\u00d7; prior also grows. Blocks long-lived embedding/service preference; prove lifetime cause before calling it a leak."
+    },
+    {
+      "rank": 4,
+      "title": "Reduce lightweight task creation/retention cost",
+      "reason": "10k scheduling1376.9\u00d7Go and held1k memory26.7\u00d7Go. Tiny work is infeasible despite queue wins."
+    },
+    {
+      "rank": 5,
+      "title": "Improve scalar/value execution throughput",
+      "reason": "4-worker CPU186.5\u00d7Go despite useful parallel scaling; large calls289.1\u00d7LuaJIT. Separate interpreter cost from scheduling."
+    },
+    {
+      "rank": 6,
+      "title": "Add nonblocking waits/timers",
+      "reason": "1k wait2576ms vsGo14.484ms; historical Nift2659.6ms shows little movement. Blocking workers remain the architectural/API boundary to address."
+    },
+    {
+      "rank": 7,
+      "title": "Add public prepared-template artifacts",
+      "reason": "Missing today; source-render cannot be relabelled prepared reuse. High-volume rendering still selects prepared peers."
+    },
+    {
+      "rank": 8,
+      "title": "Reduce remaining collection/JSON costs",
+      "reason": "BFS/frequency/transform paired medians increase; BFS allocations rise39.8%, frequency counts barely change. Investigate independently; keep sorting wins."
+    },
+    {
+      "rank": 9,
+      "title": "Add channels/cancellation with explicit lifetime contracts",
+      "reason": "Queue polling/mutex value copies persist; native bounded channel/condition and public cancellation remain absent. Do not replace semantic safety with terseness."
+    },
+    {
+      "rank": 10,
+      "title": "Close task-runner contract/cache ergonomics gaps",
+      "reason": "Outputless nodes, env invalidation, restoration, ensure,-j,structured graph remain incomplete. Existing repair works; Nift is already preferred for authored tasks."
+    }
+  ],
+  "classification_legend": {
+    "A": "new regression",
+    "B": "old weakness improved",
+    "C": "old weakness unresolved",
+    "D": "competitive in tested scope",
+    "E": "new capability; none established here"
+  }
+}
