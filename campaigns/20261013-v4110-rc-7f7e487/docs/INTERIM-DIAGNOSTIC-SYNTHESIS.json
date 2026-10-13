@@ -95,6 +95,30 @@
   ],
   "same_node_improvements": [
     {
+      "benchmark": "filesystem-automation",
+      "scenario": "stat-10000",
+      "old_ms": 3049.751771,
+      "candidate_ms": 274.114362,
+      "percent": 91.01191235934198,
+      "basis": "same-node3pairedsamples;24totalobservationsindependentlyaudited"
+    },
+    {
+      "benchmark": "filesystem-automation",
+      "scenario": "filter-size-10000",
+      "old_ms": 2353.087746,
+      "candidate_ms": 335.618347,
+      "percent": 85.73710871723694,
+      "basis": "same-node3pairedsamples;24totalobservationsindependentlyaudited"
+    },
+    {
+      "benchmark": "filesystem-automation",
+      "scenario": "walk-10000",
+      "old_ms": 1295.282747,
+      "candidate_ms": 187.531135,
+      "percent": 85.52199236542444,
+      "basis": "same-node3pairedsamples;24totalobservationsindependentlyaudited"
+    },
+    {
       "benchmark": "template-engines",
       "scenario": "loop-10000 / source-render",
       "old_ms": 119.508033,
@@ -3695,6 +3719,6 @@
   "filesystem_preference_draft": {
     "human_agent": "Nift for bounded existing project policy; Go/Bun/Node for bulk processing",
     "agent_primary": "same boundary-specific choices; explicitness does not erase throughput deficit",
-    "same_node_gain_confirmation_pending": true
+    "same_node_gain_confirmation_pending": false
   }
 }

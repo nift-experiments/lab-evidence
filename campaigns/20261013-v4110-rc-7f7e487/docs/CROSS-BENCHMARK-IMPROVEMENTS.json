@@ -4651,5 +4651,31 @@
       "samples_per_version": 3,
       "basis": "independently audited same-node targeted diagnostic; descriptive three-pair control"
     }
+  ],
+  "filesystem_same_node_diagnostic_wins": [
+    {
+      "benchmark": "filesystem-automation",
+      "scenario": "walk-10000",
+      "old_ms": 1295.282747,
+      "candidate_ms": 187.531135,
+      "percent": 85.52199236542444,
+      "basis": "same-node3pairedsamples;24totalobservationsindependentlyaudited"
+    },
+    {
+      "benchmark": "filesystem-automation",
+      "scenario": "stat-10000",
+      "old_ms": 3049.751771,
+      "candidate_ms": 274.114362,
+      "percent": 91.01191235934198,
+      "basis": "same-node3pairedsamples;24totalobservationsindependentlyaudited"
+    },
+    {
+      "benchmark": "filesystem-automation",
+      "scenario": "filter-size-10000",
+      "old_ms": 2353.087746,
+      "candidate_ms": 335.618347,
+      "percent": 85.73710871723694,
+      "basis": "same-node3pairedsamples;24totalobservationsindependentlyaudited"
+    }
   ]
 }

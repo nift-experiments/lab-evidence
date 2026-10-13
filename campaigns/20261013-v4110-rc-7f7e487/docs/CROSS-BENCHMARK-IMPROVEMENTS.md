@@ -302,3 +302,5 @@ These small paired controls are separate from official peer distributions. Sched
 | website-generator / warm-full / 10000pages targeted adjacent paired versions | 3176.786 | 2776.981 | 12.59% | 5 |
 | website-generator / incremental/one-page / 10000pages targeted adjacent paired versions | 920.908 | 821.310 | 10.82% | 5 |
 | concurrency / schedule-1000 / fresh runtime/readiness request | 367.189 | 360.724 | 1.76% | 3 |
+
+Filesystemsame-node:stat91.01%,sizefilter85.74%,walk85.52%lowermedian;threepairs,all24observationsaudited. Theseleadthecurrentcontrolledpercentageimprovements; bulkchecksum/mirrorgapsremainseparate.
