@@ -220,15 +220,15 @@
       "pre_refresh_suite_sha": "86388ac7d43da8409b4f1525c97a427d476a1c05",
       "suite_sha": "aec1349fd0ba986108d9c851944e41e5ed330b6f",
       "nift_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
-      "stage": "measured_independent_audit_pass_diagnostics_pending",
+      "stage": "closed_diagnostic_series",
       "local_certification": "pass",
       "cloud_measurements": "complete",
       "observations_completed": 8566,
       "audit": "independent PASS7855measured711warmups293jobs",
-      "diagnostics": "72-observation same-nodeauditPASS:calls+119.68%,strings+15.32%;traversalflat;separateprofilesrunning",
+      "diagnostics": "complete72-observationpairedA/B+4profiles; pushedd277cf2",
       "publication": "held: diagnostic sweep, no Labs publication",
       "live": "not applicable to this diagnostic candidate",
-      "teardown": "pending evidence/audit/required-diagnostic gates",
+      "teardown": "deleted; CLI absence/API404 verified",
       "linode_id": 108024467,
       "plan": "g6-standard-4",
       "region": "us-east",
@@ -261,7 +261,8 @@
       "launcher_pid": 38847,
       "output_directory": "/opt/campaign/evidence/official-refresh",
       "expanded_checkpoint_observations": 1074,
-      "progress_note": "Expanded round checkpoint only; startup cohorts complete. Partial observations not accepted."
+      "progress_note": "Expanded round checkpoint only; startup cohorts complete. Partial observations not accepted.",
+      "lifecycle_receipt": "lifecycle/shell-benchmark/teardown.json"
     },
     "task-runners": {
       "repository": "https://github.com/nift-experiments/task-runners.git",

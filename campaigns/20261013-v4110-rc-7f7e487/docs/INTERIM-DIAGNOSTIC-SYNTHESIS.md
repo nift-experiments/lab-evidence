@@ -136,3 +136,5 @@ Human+agent: I would choose Bash/Zsh for an everyday interactive shell and exist
 ## Confirmed shell same-node update
 
 72observations independently audited (60measured+12warmups; adjacentversions5/5firstorder). Calls22.086→48.519ms, **+119.68%** (+26.432ms); strings60.516→69.788ms, **+15.32%** (+9.272ms). Both10/10slowercandidatepairs anddisjoint ranges. Traversal1042.490→1051.289ms,+0.84%,overlappingranges/5of10slower:effectivelyflatdescriptively. Historicaltraversalgainnotconfirmed. Calls nowcorroborate the scriptingcall regression acrosssuites; exactsharedrootcause awaitssource/profile attribution. Profilespending; no corechange.
+
+Shellprofilescomplete:old/new72syscallsidentical,23→46CPUsampleswithzeroloss. Thiscorroboratesexecutioncostratherthansyscallamplificationinthisspecimen; noexactcauseproved. ShellnodeclosedafterevidencesafelypushedandCLIabsence/API404verified. Sixsuitesclosed;build/filesystemcontinue.
