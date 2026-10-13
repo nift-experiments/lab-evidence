@@ -30,3 +30,5 @@ Latest collector checkpoint: build9,348/9,348; timing complete; postprocessing/l
 All eight full measurement plans completed. Build audit/collection and filesystem targetedsame-nodecontrols remain beforefinaldiagnosticcloseout. Do not confuse completionofmeasurement withreleaseapproval.
 
 Filesystemclosed:primary/filter15,016observationsindependentlyaccepted;24-observationmatched-nodegaincontrolsretained/pushed4206b47. Host108024451deletedandCLIabsence/API404verified. Onlybuildaudit/collection/diagnosticdecisionremainsbeforefinalcloseout.
+
+All eight official series independently audited. Completepeerleague520cells nowincludesbuild;463matchedhistoricalNifttrendsremaincross-node. Buildsame-nodecontrols stillrunning; holdlastnodeuntilaudit/evidence/diagnosticscomplete.

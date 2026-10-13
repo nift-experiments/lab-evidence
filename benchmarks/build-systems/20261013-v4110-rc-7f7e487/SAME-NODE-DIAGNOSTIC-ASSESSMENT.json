@@ -1,0 +1,41 @@
+{
+  "required": true,
+  "prior_nift_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+  "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "reason": "tiny10000full wall+33.39%, CPU+27.72%, RSS+93.34%; native1000heavyj1noop wall\u221253.47% centralwin with memorytradeoff",
+  "plan": [
+    {
+      "kind": "native",
+      "size": 1000,
+      "profile": "heavy",
+      "jobs": 1,
+      "scenario": "noop",
+      "samples": 30,
+      "warmups": 2
+    },
+    {
+      "kind": "tiny",
+      "size": 10000,
+      "profile": "light",
+      "jobs": 4,
+      "scenario": "noop",
+      "samples": 20,
+      "warmups": 2
+    },
+    {
+      "kind": "tiny",
+      "size": 10000,
+      "profile": "light",
+      "jobs": 4,
+      "scenario": "full",
+      "samples": 5,
+      "warmups": 1
+    }
+  ],
+  "variants": 2,
+  "observations": 120,
+  "measured": 110,
+  "warmups": 10,
+  "scope": "separate diagnostic cohort; not current-vs-peer accepted distributions",
+  "status": "building exactprior artifact"
+}

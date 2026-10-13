@@ -11,3 +11,4 @@ Diagnostic drafts only. Before/after scope is explained in the synthesis; no Lab
 | Website generation | Hugo for conventional content site; Nift for existing/mixed programmable project | Nift for mixed authored website/assets/helpers; Hugo for plain content site | Freshfull regression and current Hugo advantage weaken blanket Nift preference; incremental paths improve. |
 | Shell | Bash/Zsh interactive/compatibility; Nift for project-owned mixed policy | Nift for owned policy; Bash/Zsh for compatibility | Call regression corroborated; no universal shell replacement |
 | Filesystem | Nift bounded existing policy; Go/Bun/Node bulk processing | Same choices | Huge stat/walk/filter gains, bulk policy still far behind |
+| Build systems | Nift procedural/mixed; Make tiny conventional; CMake/Meson→Ninja conventional C++ | Same scope-specific choices | No-op/metadata costs and depfile/multi-output/toolchain gaps persist; explicit policy still preferred for authored work |

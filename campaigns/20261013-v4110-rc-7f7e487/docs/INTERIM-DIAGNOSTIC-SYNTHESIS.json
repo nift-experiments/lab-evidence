@@ -3722,7 +3722,7 @@
     "same_node_gain_confirmation_pending": false
   },
   "league_tables": {
-    "scope": "seven closed suites; build diagnostic pending",
+    "scope": "eight audited suites; build diagnostics pending; build diagnostic pending",
     "regressions": [
       {
         "benchmark": "scripting",
@@ -5777,6 +5777,17 @@
         "previous_deficit": 10.345760946918611
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j1/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 179.197244,
+        "peer": "ninja",
+        "peer_value": 16.839055000000002,
+        "deficit": 10.641763685670009,
+        "previous_deficit": 20.322708710182763
+      },
+      {
         "benchmark": "filesystem-automation",
         "scenario": "filter-50-100000",
         "boundary": "fresh",
@@ -5997,6 +6008,17 @@
         "previous_deficit": 40.235843043038216
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j1/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 17.5865495,
+        "peer": "make",
+        "peer_value": 2.095524,
+        "deficit": 8.392435257243534,
+        "previous_deficit": 10.962076607011179
+      },
+      {
         "benchmark": "filesystem-automation",
         "scenario": "filter-10-10000",
         "boundary": "fresh",
@@ -6096,6 +6118,39 @@
         "previous_deficit": 52.246746387746825
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j1/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 24.861363500000003,
+        "peer": "ninja",
+        "peer_value": 3.722873,
+        "deficit": 6.678004729143327,
+        "previous_deficit": 9.599883636055262
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j2/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 112.423386,
+        "peer": "ninja",
+        "peer_value": 16.937209,
+        "deficit": 6.637657125208763,
+        "previous_deficit": 11.471403834140547
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-1000-light-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 65.3915395,
+        "peer": "make",
+        "peer_value": 9.8968885,
+        "deficit": 6.607282632314186,
+        "previous_deficit": 7.846314133363792
+      },
+      {
         "benchmark": "filesystem-automation",
         "scenario": "filter-extension-100000",
         "boundary": "booted",
@@ -6105,6 +6160,17 @@
         "peer_value": 555.903362,
         "deficit": 6.526743090645312,
         "previous_deficit": 38.02117591739839
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-1000-light-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 61.8467155,
+        "peer": "make",
+        "peer_value": 9.5242095,
+        "deficit": 6.493632411172812,
+        "previous_deficit": 8.148560096278732
       },
       {
         "benchmark": "filesystem-automation",
@@ -6140,6 +6206,28 @@
         "previous_deficit": 36.68012277425515
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 24.7776775,
+        "peer": "ninja",
+        "peer_value": 4.01004,
+        "deficit": 6.178910310121594,
+        "previous_deficit": 9.917153621706403
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-10000-light-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 544.418289,
+        "peer": "make",
+        "peer_value": 88.8812095,
+        "deficit": 6.125234929436913,
+        "previous_deficit": 7.626186847553755
+      },
+      {
         "benchmark": "filesystem-automation",
         "scenario": "filter-size-100000",
         "boundary": "booted",
@@ -6149,6 +6237,17 @@
         "peer_value": 558.048032,
         "deficit": 5.9759136575541225,
         "previous_deficit": 44.63296200737607
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-10000-light-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 542.542007,
+        "peer": "make",
+        "peer_value": 91.06609399999999,
+        "deficit": 5.957672973214378,
+        "previous_deficit": 7.587113762601215
       },
       {
         "benchmark": "filesystem-automation",
@@ -6171,6 +6270,28 @@
         "peer_value": 62.1011915,
         "deficit": 5.918599951500125,
         "previous_deficit": 34.00965821339271
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j2/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 12.8897085,
+        "peer": "make",
+        "peer_value": 2.2091965,
+        "deficit": 5.834568586361602,
+        "previous_deficit": 6.974043183298935
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-10000-light-j4/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 543.636538,
+        "peer": "make",
+        "peer_value": 93.532356,
+        "deficit": 5.812283163272397,
+        "previous_deficit": 6.614095912696979
       },
       {
         "benchmark": "filesystem-automation",
@@ -6226,6 +6347,17 @@
         "peer_value": 584.837189,
         "deficit": 5.672276781290665,
         "previous_deficit": 41.56217090372687
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j1/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 21.516536000000002,
+        "peer": "make",
+        "peer_value": 3.8073745,
+        "deficit": 5.651279116356955,
+        "previous_deficit": 7.1973776301656684
       },
       {
         "benchmark": "concurrency",
@@ -6393,6 +6525,17 @@
         "previous_deficit": 11.617936548730665
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "tiny-1000-light-j4/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 74.4493925,
+        "peer": "make",
+        "peer_value": 14.782838,
+        "deficit": 5.036204313407209,
+        "previous_deficit": 5.935024563212419
+      },
+      {
         "benchmark": "scripting",
         "scenario": "structured-data/json-traverse/large",
         "boundary": "fresh-process-repeated",
@@ -6448,6 +6591,17 @@
         "previous_deficit": 35.20668827975558
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j2/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 16.098533000000003,
+        "peer": "make",
+        "peer_value": 3.2642664999999997,
+        "deficit": 4.931745922093066,
+        "previous_deficit": 5.54533502970037
+      },
+      {
         "benchmark": "filesystem-automation",
         "scenario": "relocate-1000",
         "boundary": "booted",
@@ -6492,6 +6646,17 @@
         "previous_deficit": 10.740671506239625
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 10.628815,
+        "peer": "make",
+        "peer_value": 2.2273075,
+        "deficit": 4.772046518049258,
+        "previous_deficit": 5.370215782406155
+      },
+      {
         "benchmark": "filesystem-automation",
         "scenario": "copy-1000",
         "boundary": "booted",
@@ -6525,6 +6690,17 @@
         "previous_deficit": 4.6448497624481
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 76.235184,
+        "peer": "ninja",
+        "peer_value": 16.2878075,
+        "deficit": 4.680506200727139,
+        "previous_deficit": 6.979741278083815
+      },
+      {
         "benchmark": "filesystem-automation",
         "scenario": "filter-size-1000",
         "boundary": "booted",
@@ -6547,6 +6723,17 @@
         "previous_deficit": 34.25058998511763
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 77.313238,
+        "peer": "ninja",
+        "peer_value": 16.7612285,
+        "deficit": 4.612623591403219,
+        "previous_deficit": 6.786115728321509
+      },
+      {
         "benchmark": "shell",
         "scenario": "string-transform",
         "boundary": "shell-workloads.json",
@@ -6556,6 +6743,17 @@
         "peer_value": 14.948698499999999,
         "deficit": 4.595145055604674,
         "previous_deficit": null
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j2/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 17.882883999999997,
+        "peer": "ninja",
+        "peer_value": 3.933208,
+        "deficit": 4.546640808215583,
+        "previous_deficit": 6.392592304002834
       },
       {
         "benchmark": "template-engines",
@@ -6578,6 +6776,39 @@
         "peer_value": 621.3252,
         "deficit": 4.498227635061317,
         "previous_deficit": 46.618913136885936
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-5000-light-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 349.7478265,
+        "peer": "ninja",
+        "peer_value": 77.977302,
+        "deficit": 4.485251701834978,
+        "previous_deficit": 7.069960603100113
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 17.411548,
+        "peer": "ninja",
+        "peer_value": 3.8933665,
+        "deficit": 4.472106080945629,
+        "previous_deficit": 6.342099147260234
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-10000-light-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 692.3819645000001,
+        "peer": "ninja",
+        "peer_value": 161.856549,
+        "deficit": 4.277750692064984,
+        "previous_deficit": 7.111508802226447
       },
       {
         "benchmark": "shell",
@@ -6668,6 +6899,17 @@
         "previous_deficit": 3.4376159898195624
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 13.3455195,
+        "peer": "make",
+        "peer_value": 3.319827,
+        "deficit": 4.019944262155829,
+        "previous_deficit": 4.3600059371423
+      },
+      {
         "benchmark": "template-engines",
         "scenario": "literal",
         "boundary": "source-render",
@@ -6723,6 +6965,17 @@
         "previous_deficit": 28.952654550336124
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "tiny-10000-light-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 17762.305399,
+        "peer": "make",
+        "peer_value": 4711.694798,
+        "deficit": 3.7698336077582244,
+        "previous_deficit": 2.6426161564093986
+      },
+      {
         "benchmark": "concurrency",
         "scenario": "tiny-100",
         "boundary": "fresh",
@@ -6756,6 +7009,17 @@
         "previous_deficit": 3.0822696503665
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 13.842198,
+        "peer": "ninja",
+        "peer_value": 3.834676,
+        "deficit": 3.609743821903076,
+        "previous_deficit": 4.417667642589703
+      },
+      {
         "benchmark": "concurrency",
         "scenario": "fan-10",
         "boundary": "persistent",
@@ -6776,6 +7040,17 @@
         "peer_value": 1.952072,
         "deficit": 3.5550509919716076,
         "previous_deficit": null
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 13.3546415,
+        "peer": "ninja",
+        "peer_value": 3.830536,
+        "deficit": 3.4863636577230968,
+        "previous_deficit": 4.303399964163084
       },
       {
         "benchmark": "concurrency",
@@ -6965,6 +7240,17 @@
         "previous_deficit": null
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j2/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 26.73514,
+        "peer": "make",
+        "peer_value": 9.191136499999999,
+        "deficit": 2.908795881771531,
+        "previous_deficit": 2.8774605764791743
+      },
+      {
         "benchmark": "concurrency",
         "scenario": "process-1000",
         "boundary": "persistent",
@@ -6998,6 +7284,17 @@
         "previous_deficit": 13.441953396906484
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j4/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 19.537059499999998,
+        "peer": "make",
+        "peer_value": 6.8729865,
+        "deficit": 2.842586625188337,
+        "previous_deficit": 2.861185374103506
+      },
+      {
         "benchmark": "filesystem-automation",
         "scenario": "rename-10000",
         "boundary": "fresh",
@@ -7029,6 +7326,17 @@
         "peer_value": 133.3940365,
         "deficit": 2.7532540332115967,
         "previous_deficit": 2.919448664325087
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j1/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 40.5573885,
+        "peer": "make",
+        "peer_value": 15.034104,
+        "deficit": 2.697692426499112,
+        "previous_deficit": 3.0795437722846883
       },
       {
         "benchmark": "concurrency",
@@ -7185,6 +7493,17 @@
         "previous_deficit": 1.6537096281535546
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "tiny-1000-light-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 1112.796162,
+        "peer": "make",
+        "peer_value": 475.502072,
+        "deficit": 2.3402551272163543,
+        "previous_deficit": 2.317854214061569
+      },
+      {
         "benchmark": "shell",
         "scenario": "create-small-100000",
         "boundary": "shell-workloads.json",
@@ -7273,6 +7592,17 @@
         "previous_deficit": 1.8618693656143361
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 96.93558,
+        "peer": "make",
+        "peer_value": 46.476625,
+        "deficit": 2.0856845780002313,
+        "previous_deficit": 2.402919668302109
+      },
+      {
         "benchmark": "scripting",
         "scenario": "sanity/output/small",
         "boundary": "fresh-process-repeated",
@@ -7339,6 +7669,28 @@
         "previous_deficit": 1.7328401336312396
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j1/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 242.790251,
+        "peer": "make",
+        "peer_value": 132.18264,
+        "deficit": 1.8367786496017935,
+        "previous_deficit": 2.0581676190755047
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j2/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 134.746781,
+        "peer": "make",
+        "peer_value": 73.685374,
+        "deficit": 1.8286774387546707,
+        "previous_deficit": 1.980288531062019
+      },
+      {
         "benchmark": "concurrency",
         "scenario": "fan-10",
         "boundary": "fresh",
@@ -7370,6 +7722,28 @@
         "peer_value": 10.709188999999999,
         "deficit": 1.7916874937962157,
         "previous_deficit": 1.6476011370444044
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j1/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 383.01675550000004,
+        "peer": "ninja",
+        "peer_value": 213.9518945,
+        "deficit": 1.7902003457136952,
+        "previous_deficit": 2.535384857291517
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/target",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 96.0463005,
+        "peer": "ninja",
+        "peer_value": 56.5063745,
+        "deficit": 1.6997427520323394,
+        "previous_deficit": 2.025156191698508
       },
       {
         "benchmark": "shell",
@@ -7427,6 +7801,28 @@
         "previous_deficit": 1.5713871985587207
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/relink",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 196.3408155,
+        "peer": "ninja",
+        "peer_value": 130.909443,
+        "deficit": 1.499821640063047,
+        "previous_deficit": 1.793276473146743
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/relink",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 68.9420765,
+        "peer": "make",
+        "peer_value": 47.391079500000004,
+        "deficit": 1.4547479658065183,
+        "previous_deficit": 1.9188170863569776
+      },
+      {
         "benchmark": "template-engines",
         "scenario": "loop-100",
         "boundary": "source-render",
@@ -7447,6 +7843,39 @@
         "peer_value": 0.015207491,
         "deficit": 1.4149675972190285,
         "previous_deficit": 1.4636059605577914
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-10000-light-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 1986.1836305000002,
+        "peer": "ninja",
+        "peer_value": 1411.246263,
+        "deficit": 1.4073969104993833,
+        "previous_deficit": 1.7831052364959372
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j2/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 310.5768645,
+        "peer": "ninja",
+        "peer_value": 220.99127249999998,
+        "deficit": 1.4053806785514573,
+        "previous_deficit": 1.9168477864712121
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-5000-light-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 1043.8402435,
+        "peer": "ninja",
+        "peer_value": 743.6134460000001,
+        "deficit": 1.4037404099064663,
+        "previous_deficit": 1.7280257301191384
       },
       {
         "benchmark": "concurrency",
@@ -7471,6 +7900,17 @@
         "previous_deficit": 1.3917929955544612
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/target",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 36.5440185,
+        "peer": "make",
+        "peer_value": 26.926153,
+        "deficit": 1.3571941933182954,
+        "previous_deficit": 1.4075071663823793
+      },
+      {
         "benchmark": "shell",
         "scenario": "selected-cleanup",
         "boundary": "shell-workloads.json",
@@ -7480,6 +7920,17 @@
         "peer_value": 35.839488,
         "deficit": 1.3566399162845182,
         "previous_deficit": null
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/private",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 96.9450995,
+        "peer": "make",
+        "peer_value": 71.542097,
+        "deficit": 1.3550776894336771,
+        "previous_deficit": 1.6072358634459212
       },
       {
         "benchmark": "shell",
@@ -7513,6 +7964,28 @@
         "peer_value": 0.015917559999999997,
         "deficit": 1.344372329818278,
         "previous_deficit": 1.4123534197340022
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 97.9952155,
+        "peer": "make",
+        "peer_value": 73.1980115,
+        "deficit": 1.3387688202431562,
+        "previous_deficit": 1.665897644298149
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 243.26178,
+        "peer": "ninja",
+        "peer_value": 181.963706,
+        "deficit": 1.3368697821531508,
+        "previous_deficit": 1.5427452295022925
       },
       {
         "benchmark": "shell",
@@ -7570,6 +8043,50 @@
         "previous_deficit": null
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/private",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 244.6271815,
+        "peer": "ninja",
+        "peer_value": 186.4158825,
+        "deficit": 1.3122657695220792,
+        "previous_deficit": 1.5957907161835063
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/target",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 35.274472,
+        "peer": "make",
+        "peer_value": 26.951815,
+        "deficit": 1.308797644982351,
+        "previous_deficit": 1.275878995163329
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/target",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 36.125443000000004,
+        "peer": "make",
+        "peer_value": 27.734358,
+        "deficit": 1.3025519826346803,
+        "previous_deficit": 1.4137104254271793
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 352.375349,
+        "peer": "ninja",
+        "peer_value": 270.869008,
+        "deficit": 1.3009068538398458,
+        "previous_deficit": 1.3135559121382212
+      },
+      {
         "benchmark": "shell",
         "scenario": "bare/file-roundtrip",
         "boundary": "shell-repeated.json",
@@ -7590,6 +8107,17 @@
         "peer_value": 1.9405635,
         "deficit": 1.2843143241640893,
         "previous_deficit": null
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/relink",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 61.9995555,
+        "peer": "ninja",
+        "peer_value": 48.331906000000004,
+        "deficit": 1.2827873061741035,
+        "previous_deficit": 1.5376798274294163
       },
       {
         "benchmark": "shell",
@@ -7614,6 +8142,17 @@
         "previous_deficit": null
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 87.97823650000001,
+        "peer": "make",
+        "peer_value": 69.0237915,
+        "deficit": 1.2746074156184248,
+        "previous_deficit": 1.321248448462535
+      },
+      {
         "benchmark": "shell",
         "scenario": "processes-100",
         "boundary": "shell-workloads.json",
@@ -7634,6 +8173,17 @@
         "peer_value": 2942.57132,
         "deficit": 1.2706707842853577,
         "previous_deficit": null
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 282.09362550000003,
+        "peer": "ninja",
+        "peer_value": 222.515669,
+        "deficit": 1.2677472412066406,
+        "previous_deficit": 1.524781119329011
       },
       {
         "benchmark": "shell",
@@ -7658,6 +8208,39 @@
         "previous_deficit": null
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/relink",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 57.824723,
+        "peer": "ninja",
+        "peer_value": 46.3232955,
+        "deficit": 1.2482860378532439,
+        "previous_deficit": 1.397864935105632
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 82.7511365,
+        "peer": "make",
+        "peer_value": 66.298958,
+        "deficit": 1.2481513887442997,
+        "previous_deficit": 1.2493458725917321
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/private",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 87.15494100000001,
+        "peer": "make",
+        "peer_value": 70.17333450000001,
+        "deficit": 1.2419951484562843,
+        "previous_deficit": 1.4644810017582213
+      },
+      {
         "benchmark": "shell",
         "scenario": "delete-tree-100000",
         "boundary": "shell-workloads.json",
@@ -7669,6 +8252,50 @@
         "previous_deficit": null
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j1/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 124.8522485,
+        "peer": "make",
+        "peer_value": 101.564296,
+        "deficit": 1.2292927083352205,
+        "previous_deficit": 1.3972803310092456
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/batch10pct",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 334.6633855,
+        "peer": "make",
+        "peer_value": 274.280107,
+        "deficit": 1.220151870146383,
+        "previous_deficit": 1.2523630347955987
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 204.53450650000002,
+        "peer": "make",
+        "peer_value": 168.7257065,
+        "deficit": 1.212230849363787,
+        "previous_deficit": 1.2908647744845116
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/private",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 83.0871445,
+        "peer": "make",
+        "peer_value": 68.7921455,
+        "deficit": 1.2077998715710936,
+        "previous_deficit": 1.3132995050754919
+      },
+      {
         "benchmark": "shell",
         "scenario": "bare/command-capture",
         "boundary": "shell-repeated.json",
@@ -7678,6 +8305,17 @@
         "peer_value": 3.2805065,
         "deficit": 1.1998474930624279,
         "previous_deficit": null
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-10000-light-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 64888.828291,
+        "peer": "make",
+        "peer_value": 54158.282217,
+        "deficit": 1.1981330580428147,
+        "previous_deficit": 1.088093695961614
       },
       {
         "benchmark": "shell",
@@ -7700,6 +8338,17 @@
         "peer_value": 11.3001045,
         "deficit": 1.187232295064174,
         "previous_deficit": null
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j2/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 119.592994,
+        "peer": "make",
+        "peer_value": 101.239884,
+        "deficit": 1.1812833961761553,
+        "previous_deficit": 1.305335951175612
       },
       {
         "benchmark": "shell",
@@ -7735,6 +8384,116 @@
         "previous_deficit": null
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/medium",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 132.002633,
+        "peer": "make",
+        "peer_value": 112.47359349999999,
+        "deficit": 1.1736322179481178,
+        "previous_deficit": 1.1867513824225693
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-10000-light-j4/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 61391.417267,
+        "peer": "make",
+        "peer_value": 52365.77909,
+        "deficit": 1.1723575650710325,
+        "previous_deficit": 1.1242695063944417
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/batch10pct",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 130.2584835,
+        "peer": "make",
+        "peer_value": 111.2387825,
+        "deficit": 1.1709808447427048,
+        "previous_deficit": 1.2233207931608432
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 116.651268,
+        "peer": "make",
+        "peer_value": 100.06912750000001,
+        "deficit": 1.1657068559931232,
+        "previous_deficit": 1.2806177094628701
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/batch10pct",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 825.868017,
+        "peer": "make",
+        "peer_value": 709.697892,
+        "deficit": 1.1636895449592233,
+        "previous_deficit": 1.207902144765956
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/batch10pct",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 198.321439,
+        "peer": "make",
+        "peer_value": 170.49167849999998,
+        "deficit": 1.1632323685522283,
+        "previous_deficit": 1.2471868005617062
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/medium",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 273.028529,
+        "peer": "make",
+        "peer_value": 236.030665,
+        "deficit": 1.1567502426008924,
+        "previous_deficit": 1.2414684783310195
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 133.209423,
+        "peer": "make",
+        "peer_value": 115.31601,
+        "deficit": 1.155168506090351,
+        "previous_deficit": 1.2484898250220169
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/generated",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 5729.142845,
+        "peer": "make",
+        "peer_value": 4961.729765,
+        "deficit": 1.1546664402026336,
+        "previous_deficit": 1.1668049509183864
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/generated",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 662.8496725,
+        "peer": "make",
+        "peer_value": 574.860239,
+        "deficit": 1.1530623054623892,
+        "previous_deficit": 1.1371983992193089
+      },
+      {
         "benchmark": "shell",
         "scenario": "pipeline-2",
         "boundary": "shell-workloads.json",
@@ -7744,6 +8503,17 @@
         "peer_value": 4.7916415,
         "deficit": 1.1441739746180928,
         "previous_deficit": null
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 318.6232455,
+        "peer": "make",
+        "peer_value": 278.867682,
+        "deficit": 1.142560669687067,
+        "previous_deficit": 1.2402465638528215
       },
       {
         "benchmark": "shell",
@@ -7768,6 +8538,17 @@
         "previous_deficit": null
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 600.986992,
+        "peer": "make",
+        "peer_value": 531.7708355,
+        "deficit": 1.130161625796795,
+        "previous_deficit": 1.055835255704587
+      },
+      {
         "benchmark": "shell",
         "scenario": "delete-selected-100000",
         "boundary": "shell-workloads.json",
@@ -7777,6 +8558,94 @@
         "peer_value": 2529.888347,
         "deficit": 1.1256117604465965,
         "previous_deficit": null
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/medium",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 169.120164,
+        "peer": "make",
+        "peer_value": 150.8833415,
+        "deficit": 1.1208670375317742,
+        "previous_deficit": 1.2520524668602762
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/generated",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 2225.9198335,
+        "peer": "make",
+        "peer_value": 1986.1888199999999,
+        "deficit": 1.1206990045891005,
+        "previous_deficit": 1.1317173980653632
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-5000-light-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 29575.271119,
+        "peer": "make",
+        "peer_value": 26434.667335,
+        "deficit": 1.1188062533263576,
+        "previous_deficit": 1.1010136929834349
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/generated",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 1206.5811385,
+        "peer": "make",
+        "peer_value": 1078.511755,
+        "deficit": 1.118746395582865,
+        "previous_deficit": 1.1093275165298537
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 5463.285847,
+        "peer": "make",
+        "peer_value": 4897.443692,
+        "deficit": 1.1155382666112745,
+        "previous_deficit": 1.0840373668867662
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/medium",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 764.766244,
+        "peer": "make",
+        "peer_value": 686.84564,
+        "deficit": 1.1134470388426723,
+        "previous_deficit": 1.2673377902068517
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-5000-light-j4/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 29109.103701,
+        "peer": "make",
+        "peer_value": 26170.598212,
+        "deficit": 1.1122827023362656,
+        "previous_deficit": 1.1331073934430216
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/clean-rebuild",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 660.4509465000001,
+        "peer": "make",
+        "peer_value": 598.021246,
+        "deficit": 1.104393783527885,
+        "previous_deficit": 1.1085820709210468
       },
       {
         "benchmark": "shell",
@@ -7790,6 +8659,50 @@
         "previous_deficit": null
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 5631.813667,
+        "peer": "make",
+        "peer_value": 5114.481637,
+        "deficit": 1.1011504325790193,
+        "previous_deficit": 1.0466987227927074
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 1139.786951,
+        "peer": "make",
+        "peer_value": 1036.589948,
+        "deficit": 1.0995543157630543,
+        "previous_deficit": 1.0818620804745107
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 652.8826915,
+        "peer": "make",
+        "peer_value": 594.97376,
+        "deficit": 1.0973302276389467,
+        "previous_deficit": 1.1209403386269807
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 2135.6808265,
+        "peer": "make",
+        "peer_value": 1962.282839,
+        "deficit": 1.088365440523531,
+        "previous_deficit": 1.0932133411824236
+      },
+      {
         "benchmark": "shell",
         "scenario": "create-empty-1000",
         "boundary": "shell-workloads.json",
@@ -7799,6 +8712,17 @@
         "peer_value": 36.673301,
         "deficit": 1.0871442551626318,
         "previous_deficit": null
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/clean-rebuild",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 2265.4801589999997,
+        "peer": "make",
+        "peer_value": 2084.700229,
+        "deficit": 1.0867174702075593,
+        "previous_deficit": 1.1046190508797475
       },
       {
         "benchmark": "shell",
@@ -7812,6 +8736,17 @@
         "previous_deficit": null
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 1224.3446095,
+        "peer": "make",
+        "peer_value": 1131.5301705,
+        "deficit": 1.0820255980969444,
+        "previous_deficit": 1.0855391980506088
+      },
+      {
         "benchmark": "website-generator",
         "scenario": "1000pages/application-cold",
         "boundary": "official fresh fixture or reused warm fixture as defined",
@@ -7823,6 +8758,28 @@
         "previous_deficit": null
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/clean-rebuild",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 1201.925832,
+        "peer": "make",
+        "peer_value": 1125.5861515,
+        "deficit": 1.0678221568364774,
+        "previous_deficit": 1.0953279806724863
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/clean-rebuild",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 5576.24707,
+        "peer": "make",
+        "peer_value": 5224.529019,
+        "deficit": 1.0673205277874638,
+        "previous_deficit": 1.0886483472942916
+      },
+      {
         "benchmark": "shell",
         "scenario": "delete-selected-1000",
         "boundary": "shell-workloads.json",
@@ -7832,6 +8789,83 @@
         "peer_value": 25.300297,
         "deficit": 1.0671704565365379,
         "previous_deficit": null
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 2223.8576915000003,
+        "peer": "make",
+        "peer_value": 2098.0493735,
+        "deficit": 1.0599644219955247,
+        "previous_deficit": 1.0861981546441162
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 13794.566965,
+        "peer": "make",
+        "peer_value": 13128.810089,
+        "deficit": 1.0507096127894946,
+        "previous_deficit": 1.0878586294827697
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j4/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 1423.2020579999999,
+        "peer": "make",
+        "peer_value": 1359.1462545,
+        "deficit": 1.0471294412120238,
+        "previous_deficit": 0.995283743815832
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j1/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 5491.177394,
+        "peer": "make",
+        "peer_value": 5257.428148000001,
+        "deficit": 1.044460759028903,
+        "previous_deficit": 1.0206067086936625
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j2/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 27520.56947,
+        "peer": "make",
+        "peer_value": 26439.180373,
+        "deficit": 1.0409010068294071,
+        "previous_deficit": 1.079800600933325
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j2/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 2792.003405,
+        "peer": "make",
+        "peer_value": 2682.66516,
+        "deficit": 1.0407573209770242,
+        "previous_deficit": 1.0331883859852526
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j1/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 53716.56376,
+        "peer": "ninja",
+        "peer_value": 51645.611882,
+        "deficit": 1.0400992805106408,
+        "previous_deficit": 1.0305335096172508
       },
       {
         "benchmark": "shell",
@@ -7856,6 +8890,28 @@
         "previous_deficit": null
       },
       {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 1484.603319,
+        "peer": "make",
+        "peer_value": 1439.6586185,
+        "deficit": 1.0312189986726357,
+        "previous_deficit": 1.0421230520074478
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j1/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 5308.100845999999,
+        "peer": "make",
+        "peer_value": 5151.896631,
+        "deficit": 1.030319749441417,
+        "previous_deficit": 1.0526091792612358
+      },
+      {
         "benchmark": "shell",
         "scenario": "source-tree-report",
         "boundary": "shell-workloads.json",
@@ -7865,6 +8921,17 @@
         "peer_value": 241.4085145,
         "deficit": 1.0299211878046663,
         "previous_deficit": null
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j2/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "nift": 2774.1849979999997,
+        "peer": "make",
+        "peer_value": 2710.242937,
+        "deficit": 1.0235927414945236,
+        "previous_deficit": 1.068756601634148
       },
       {
         "benchmark": "shell",
@@ -11068,6 +12135,976 @@
         "old": 154.322263,
         "candidate": 112.5749,
         "change_pct": -27.05206765922037,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j1/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 6286.043617,
+        "candidate": 5491.177394,
+        "change_pct": -12.644936488355896,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j1/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 6134.808994,
+        "candidate": 5308.100845999999,
+        "change_pct": -13.47569498591631,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j1/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 167.6267435,
+        "candidate": 124.8522485,
+        "change_pct": -25.517703265529345,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j1/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 47.997791,
+        "candidate": 24.861363500000003,
+        "change_pct": -48.20310897224416,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j2/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 3176.1971750000002,
+        "candidate": 2792.003405,
+        "change_pct": -12.09603021575637,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j2/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 3209.2421645,
+        "candidate": 2774.1849979999997,
+        "change_pct": -13.556383226934887,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j2/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 142.340054,
+        "candidate": 119.592994,
+        "change_pct": -15.98078640605265,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j2/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 30.6013905,
+        "candidate": 17.882883999999997,
+        "change_pct": -41.56185811229722,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 1726.03678,
+        "candidate": 1484.603319,
+        "change_pct": -13.987735591590344,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j4/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 1584.149669,
+        "candidate": 1423.2020579999999,
+        "change_pct": -10.159874041548033,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 152.126263,
+        "candidate": 116.651268,
+        "change_pct": -23.319441561513933,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-heavy-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 21.644959,
+        "candidate": 13.842198,
+        "change_pct": -36.04886015261105,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 427.60604750000005,
+        "candidate": 318.6232455,
+        "change_pct": -25.486730750691745,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/batch10pct",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 424.911564,
+        "candidate": 334.6633855,
+        "change_pct": -21.239285099804906,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/clean-rebuild",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 2740.1286805,
+        "candidate": 2265.4801589999997,
+        "change_pct": -17.322125230023488,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 2725.794144,
+        "candidate": 2223.8576915000003,
+        "change_pct": -18.41431986362062,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/generated",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 2713.8980495,
+        "candidate": 2225.9198335,
+        "change_pct": -17.98071287496977,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 2591.3486415,
+        "candidate": 2135.6808265,
+        "change_pct": -17.584195646334845,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 137.5730035,
+        "candidate": 97.9952155,
+        "change_pct": -28.768571589701462,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/medium",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 361.0555395,
+        "candidate": 273.028529,
+        "change_pct": -24.38046252438124,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 48.7816605,
+        "candidate": 24.7776775,
+        "change_pct": -49.20698220184613,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/private",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 144.50256000000002,
+        "candidate": 96.9450995,
+        "change_pct": -32.911154307577675,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/relink",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 104.25196299999999,
+        "candidate": 68.9420765,
+        "change_pct": -33.869756965631424,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j1/target",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 46.613608,
+        "candidate": 36.125443000000004,
+        "change_pct": -22.500221394576435,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 247.5796745,
+        "candidate": 204.53450650000002,
+        "change_pct": -17.3863900931819,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/batch10pct",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 246.8331555,
+        "candidate": 198.321439,
+        "change_pct": -19.65364677274889,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/clean-rebuild",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 1408.69795,
+        "candidate": 1201.925832,
+        "change_pct": -14.67824369305003,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 1396.1886565,
+        "candidate": 1224.3446095,
+        "change_pct": -12.30808216353676,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/generated",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 1404.546735,
+        "candidate": 1206.5811385,
+        "change_pct": -14.094625089139523,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 1355.7375655,
+        "candidate": 1139.786951,
+        "change_pct": -15.928644303689909,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 114.31737799999999,
+        "candidate": 87.97823650000001,
+        "change_pct": -23.040365306489086,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/medium",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 214.885106,
+        "candidate": 169.120164,
+        "change_pct": -21.297400667685185,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 32.1738495,
+        "candidate": 17.411548,
+        "change_pct": -45.88291960525272,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/private",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 118.9016365,
+        "candidate": 87.15494100000001,
+        "change_pct": -26.69996514303652,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/relink",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 86.0153285,
+        "candidate": 61.9995555,
+        "change_pct": -27.920340965738443,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j2/target",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 45.074011999999996,
+        "candidate": 35.274472,
+        "change_pct": -21.740997894751402,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 163.26122650000002,
+        "candidate": 133.209423,
+        "change_pct": -18.407189596851413,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/batch10pct",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 157.94245949999998,
+        "candidate": 130.2584835,
+        "change_pct": -17.52788711005224,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/clean-rebuild",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 772.5191465,
+        "candidate": 660.4509465000001,
+        "change_pct": -14.506850802046745,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 760.3389925,
+        "candidate": 652.8826915,
+        "change_pct": -14.132683192622142,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/generated",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 739.5126715,
+        "candidate": 662.8496725,
+        "change_pct": -10.366691735585764,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 648.4013265,
+        "candidate": 600.986992,
+        "change_pct": -7.312498072133411,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 106.0089825,
+        "candidate": 82.7511365,
+        "change_pct": -21.939504984872393,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/medium",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 151.3116575,
+        "candidate": 132.002633,
+        "change_pct": -12.761095092755815,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 21.2666775,
+        "candidate": 13.3546415,
+        "change_pct": -37.203912082646674,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/private",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 110.28078199999999,
+        "candidate": 83.0871445,
+        "change_pct": -24.658546128191215,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/relink",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 76.1903585,
+        "candidate": 57.824723,
+        "change_pct": -24.10493382833998,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-100-light-j4/target",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 44.8577235,
+        "candidate": 36.5440185,
+        "change_pct": -18.533497358598684,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j1/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 59944.311826,
+        "candidate": 53716.56376,
+        "change_pct": -10.389222724046354,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j1/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 613.9024625,
+        "candidate": 383.01675550000004,
+        "change_pct": -37.60950983316832,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j1/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 385.1240485,
+        "candidate": 179.197244,
+        "change_pct": -53.470253364352025,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j2/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 31782.891348,
+        "candidate": 27520.56947,
+        "change_pct": -13.410743004249104,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j2/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 457.9840995,
+        "candidate": 310.5768645,
+        "change_pct": -32.186103220817174,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j2/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 223.84873,
+        "candidate": 112.423386,
+        "change_pct": -49.77707222194202,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 17631.333473,
+        "candidate": 13794.566965,
+        "change_pct": -21.76106823613476,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 389.092029,
+        "candidate": 282.09362550000003,
+        "change_pct": -27.499510533534988,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-heavy-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 141.84659399999998,
+        "candidate": 77.313238,
+        "change_pct": -45.49517487885538,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 428.843194,
+        "candidate": 352.375349,
+        "change_pct": -17.831190064310533,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/batch10pct",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 972.26515,
+        "candidate": 825.868017,
+        "change_pct": -15.05732597738384,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/clean-rebuild",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 6343.013212,
+        "candidate": 5576.24707,
+        "change_pct": -12.088357951854755,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 6255.544939,
+        "candidate": 5631.813667,
+        "change_pct": -9.970854307374033,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/generated",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 6473.937078,
+        "candidate": 5729.142845,
+        "change_pct": -11.504502191270749,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 6162.678649,
+        "candidate": 5463.285847,
+        "change_pct": -11.34884425806445,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 334.2552535,
+        "candidate": 243.26178,
+        "change_pct": -27.222750442125808,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/medium",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 944.938176,
+        "candidate": 764.766244,
+        "change_pct": -19.067060319510254,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 144.649966,
+        "candidate": 76.235184,
+        "change_pct": -47.296784017218506,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/private",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 334.8813415,
+        "candidate": 244.6271815,
+        "change_pct": -26.95108649402015,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/relink",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 276.140963,
+        "candidate": 196.3408155,
+        "change_pct": -28.898337513221463,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-1000-light-j4/target",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 127.69794099999999,
+        "candidate": 96.0463005,
+        "change_pct": -24.786335826667706,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-5000-light-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 33161.803457,
+        "candidate": 29575.271119,
+        "change_pct": -10.815251174896323,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-5000-light-j4/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 33519.083234,
+        "candidate": 29109.103701,
+        "change_pct": -13.156623354563424,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-5000-light-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 1577.8659499999999,
+        "candidate": 1043.8402435,
+        "change_pct": -33.84480833115132,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-5000-light-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 648.1672080000001,
+        "candidate": 349.7478265,
+        "change_pct": -46.040493535735926,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-10000-light-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 69612.512088,
+        "candidate": 64888.828291,
+        "change_pct": -6.785682135746807,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-10000-light-j4/global",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 71765.42757,
+        "candidate": 61391.417267,
+        "change_pct": -14.45544275881474,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-10000-light-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 2959.917234,
+        "candidate": 1986.1836305000002,
+        "change_pct": -32.89732538176775,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "native-10000-light-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 1278.9130165000001,
+        "candidate": 692.3819645000001,
+        "change_pct": -45.86168444865461,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j1/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 59.80648,
+        "candidate": 40.5573885,
+        "change_pct": -32.18562854727447,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j1/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 334.593202,
+        "candidate": 242.790251,
+        "change_pct": -27.437183556407106,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j1/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 32.7171015,
+        "candidate": 21.516536000000002,
+        "change_pct": -34.234589821473016,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j1/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 28.319922,
+        "candidate": 17.5865495,
+        "change_pct": -37.90043101107411,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j2/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 35.175219,
+        "candidate": 26.73514,
+        "change_pct": -23.994389345521906,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j2/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 168.642708,
+        "candidate": 134.746781,
+        "change_pct": -20.09925445457149,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j2/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 24.850540000000002,
+        "candidate": 16.098533000000003,
+        "change_pct": -35.21857875120621,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j2/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 19.133549000000002,
+        "candidate": 12.8897085,
+        "change_pct": -32.63294488649232,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j4/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 27.200585500000003,
+        "candidate": 19.537059499999998,
+        "change_pct": -28.17412147249553,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 135.540889,
+        "candidate": 96.93558,
+        "change_pct": -28.482407991288884,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 18.241528000000002,
+        "candidate": 13.3455195,
+        "change_pct": -26.839903433528168,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-100-light-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 13.9811205,
+        "candidate": 10.628815,
+        "change_pct": -23.977373630389643,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-1000-light-j4/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 101.964087,
+        "candidate": 74.4493925,
+        "change_pct": -26.98469167874764,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-1000-light-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 1141.602811,
+        "candidate": 1112.796162,
+        "change_pct": -2.5233512673962677,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-1000-light-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 92.5316885,
+        "candidate": 65.3915395,
+        "change_pct": -29.330653573883513,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-1000-light-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 88.53846899999999,
+        "candidate": 61.8467155,
+        "change_pct": -30.14706917961275,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-10000-light-j4/batch10",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 774.439133,
+        "candidate": 543.636538,
+        "change_pct": -29.802548084821535,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-10000-light-j4/full",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 13315.921974,
+        "candidate": 17762.305399,
+        "change_pct": 33.39148001679331,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-10000-light-j4/leaf",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 780.1914135,
+        "candidate": 544.418289,
+        "change_pct": -30.219907630398446,
+        "basis": "cross-node trend only"
+      },
+      {
+        "benchmark": "build-systems",
+        "scenario": "tiny-10000-light-j4/noop",
+        "boundary": "C CLOCK_MONOTONIC fork/exec through wait4; setup outside clock",
+        "unit": "ms",
+        "old": 775.7347655000001,
+        "candidate": 542.542007,
+        "change_pct": -30.060887931159776,
         "basis": "cross-node trend only"
       },
       {
