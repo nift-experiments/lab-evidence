@@ -31,7 +31,7 @@
       "stage": "official_measurement",
       "local_certification": "pass",
       "cloud_measurements": "running",
-      "observations_completed": 6313,
+      "observations_completed": 8838,
       "audit": "pending",
       "diagnostics": "pending",
       "publication": "held: diagnostic sweep, no Labs publication",
@@ -165,7 +165,7 @@
       "output_directory": "/opt/filesystem/suite/work/refresh-official",
       "supplement_suite_sha": "1ab31488eb949eb8f8cd6d50b0eb9fd59e1ad78e",
       "supplement_output_directory": "/opt/filesystem/filter-supplement/work/refresh-official",
-      "progress_note": "Primary read-100000; filter queued; no complete marker"
+      "progress_note": "Primary copy-100000; filter queued; no complete marker"
     },
     "scripting-benchmark": {
       "repository": "git@github.com:nift-dev/scripting-benchmark.git",
@@ -428,5 +428,5 @@
     "existing_labs_unchanged": true
   },
   "teardown_policy": "After measurements complete, independent audit passes, evidence collected/pushed and required diagnostics complete; no Labs live gate. Verify CLI absence/API404 and retain lifecycle receipts; keep hosts needed for diagnostics.",
-  "last_reconciled_utc": "2026-10-13T12:31:18.118278+00:00"
+  "last_reconciled_utc": "2026-10-13T12:49:49.114311+00:00"
 }

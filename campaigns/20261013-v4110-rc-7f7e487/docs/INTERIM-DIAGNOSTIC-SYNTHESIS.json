@@ -1,6 +1,6 @@
 {
   "candidate": "7f7e487c47a87e871dfef53345e2b71288008bff",
-  "status": "interim six measured/audited suites; shell profiles pending; no release approval",
+  "status": "interim six closed suites; build/filesystem running; no release approval",
   "regressions": [
     {
       "benchmark": "scripting",
@@ -672,7 +672,7 @@
     "historical_function_call_increase_pct": 106.86,
     "basis": "cross-node screening only; same-node diagnostic pending",
     "same_node_audit_pass": true,
-    "profile_pending": true
+    "profile_pending": false
   },
   "audited_shell_wall_deficits": [
     {
@@ -1240,6 +1240,6 @@
   "shell_preference_draft": {
     "human_agent": "Bash/Zsh interactive or existing scripts; Nift for Nift-owned mixed policy",
     "agent_primary": "Nift for project-owned policy; Bash/Zsh where compatibility required",
-    "regression_diagnostic_pending": true
+    "regression_diagnostic_pending": false
   }
 }
