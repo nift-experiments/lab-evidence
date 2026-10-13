@@ -31,7 +31,7 @@
       "stage": "official_measurement",
       "local_certification": "pass",
       "cloud_measurements": "running",
-      "observations_completed": 2383,
+      "observations_completed": 4208,
       "audit": "pending",
       "diagnostics": "pending",
       "publication": "held: diagnostic sweep, no Labs publication",
@@ -165,7 +165,7 @@
       "output_directory": "/opt/filesystem/suite/work/refresh-official",
       "supplement_suite_sha": "1ab31488eb949eb8f8cd6d50b0eb9fd59e1ad78e",
       "supplement_output_directory": "/opt/filesystem/filter-supplement/work/refresh-official",
-      "progress_note": "Primary mirror-11-10000; filter queued; no complete marker"
+      "progress_note": "Primary detect-mtime-1-10000; filter queued; no complete marker"
     },
     "scripting-benchmark": {
       "repository": "git@github.com:nift-dev/scripting-benchmark.git",
@@ -260,7 +260,7 @@
       "cloud_certification": "pass",
       "launcher_pid": 38847,
       "output_directory": "/opt/campaign/evidence/official-refresh",
-      "expanded_checkpoint_observations": 705,
+      "expanded_checkpoint_observations": 1074,
       "progress_note": "Expanded round checkpoint only; startup cohorts complete. Partial observations not accepted."
     },
     "task-runners": {
@@ -427,5 +427,5 @@
     "existing_labs_unchanged": true
   },
   "teardown_policy": "After measurements complete, independent audit passes, evidence collected/pushed and required diagnostics complete; no Labs live gate. Verify CLI absence/API404 and retain lifecycle receipts; keep hosts needed for diagnostics.",
-  "last_reconciled_utc": "2026-10-13T11:09:02.260809+00:00"
+  "last_reconciled_utc": "2026-10-13T11:31:01.711041+00:00"
 }
