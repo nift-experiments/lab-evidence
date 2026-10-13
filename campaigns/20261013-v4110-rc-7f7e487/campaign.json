@@ -215,9 +215,9 @@
       "pre_refresh_suite_sha": "86388ac7d43da8409b4f1525c97a427d476a1c05",
       "suite_sha": "aec1349fd0ba986108d9c851944e41e5ed330b6f",
       "nift_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
-      "stage": "tool_installation_and_local_certification",
-      "local_certification": "pending",
-      "cloud_measurements": "not_started",
+      "stage": "official_measurement",
+      "local_certification": "pass",
+      "cloud_measurements": "running",
       "observations_completed": 0,
       "audit": "pending",
       "diagnostics": "pending",
@@ -251,7 +251,10 @@
       },
       "measured_planned": 7855,
       "warmups_planned": 711,
-      "observations_planned": 8566
+      "observations_planned": 8566,
+      "cloud_certification": "pass",
+      "launcher_pid": 38847,
+      "output_directory": "/opt/campaign/evidence/official-refresh"
     },
     "task-runners": {
       "repository": "https://github.com/nift-experiments/task-runners.git",
@@ -398,5 +401,7 @@
     "interval_minutes": 20,
     "explicit_user_approval": true,
     "status": "ACTIVE"
-  }
+  },
+  "preparation_checkpoint_complete": true,
+  "preparation_evidence": "All eight hosts provisioned; exact candidate clean checkout and common CLI hash verified on each; primary suite/tool/sample identities frozen; all local/cloud gates passed; seven measuring, scripting accepted."
 }
