@@ -25,4 +25,6 @@ Same-node scripting diagnostic independently audited: all 720 observations corre
 
 Scripting closeout: official accepted results and720-observation paired A/B plus24instrumented runs safely pushed at2b98e06. Node108024446 deleted; CLIabsence/API404 verified; per-host temporary access removed. Shared temporary access remains only for build and filesystem hosts.
 
-Latest collector checkpoint: build9,317/9,348; shellfull8,566observations independently audited; targeted A/B/profiles complete; host deleted; filesystem15,016observations independently accepted; targeted stat/walk/filter A/B pending. No failures reported; no new audited engineering conclusions. Partial timing values are excluded from synthesis/rankings. Six completed hosts remain CLI/API-confirmed absent. Labs source/public trees remain clean.
+Latest collector checkpoint: build9,348/9,348; timing complete; postprocessing/local audit pending; shellfull8,566observations independently audited; targeted A/B/profiles complete; host deleted; filesystem15,016observations independently accepted; targeted stat/walk/filter A/B pending. No failures reported; no new audited engineering conclusions. Partial timing values are excluded from synthesis/rankings. Six completed hosts remain CLI/API-confirmed absent. Labs source/public trees remain clean.
+
+All eight full measurement plans completed. Build audit/collection and filesystem targetedsame-nodecontrols remain beforefinaldiagnosticcloseout. Do not confuse completionofmeasurement withreleaseapproval.
