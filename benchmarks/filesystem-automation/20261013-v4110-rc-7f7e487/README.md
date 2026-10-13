@@ -1,0 +1,5 @@
+# Filesystem automation candidate refresh
+
+Accepted primary and separately frozen filter supplement for exact candidate 7f7e487c47a87e871dfef53345e2b71288008bff. Primary: 68 scenarios, 662 cells, 12074 measured plus662 warmups. Filter supplement: 9 scenarios,90 cells,2190 measured plus90 warmups. Both cloud and independent local fixture/reset/oracle and distribution audits passed, with identical regenerated audit products. See each ACCEPTANCE.json for source identities and collected archive hashes.
+
+This is a diagnostic candidate series, not Labs publication. Historical measurements are unchanged. Protocol archives retain historical documentation as frozen source; environment.json records actual candidate/tool identities. Wall-only normalization preserves fresh/booted boundaries and exact scenario contracts. Cross-node historical comparisons are descriptive, not causal same-node A/B. Inherited wait4 RSS floor means raw process_maxrss_mib is retained and unranked. Missing native SHA-256/stat timestamp APIs remain outside Nift's certified supported matrix; portable checksum work is separate from cryptographic hashing. No core changes.

@@ -1,0 +1,611 @@
+{
+  "suite_sha": "75e77bb4bb6fb0b8c49920f641c77b394aec5985",
+  "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "suite_clean": true,
+  "core_clean": true,
+  "actual_tool_versions": {
+    "nift": "Nift v4.11.0",
+    "python": "Python 3.15.0",
+    "node": "v24.21.0",
+    "bun": "1.4.3",
+    "go": "go version go1.27.2 linux/amd64"
+  },
+  "actual_version_manifest": {
+    "nift_source": "7f7e487c47a87e871dfef53345e2b71288008bff",
+    "nift": "Nift v4.11.0 candidate7f7e487",
+    "python": "3.15.0 ordinary GIL portable build",
+    "node": "24.21.0 LTS",
+    "bun": "1.4.3",
+    "go": "1.27.2",
+    "selection": "Five compact project-automation models; Node LTS and Bun/Go carried forward from Concurrency, Python updated to current portable release. No claim that every participant is the newest patch."
+  },
+  "historical_comparator_lock": {
+    "nift_source": "445f4d3545cf031bcce4bf77a2b4a61ffb3b4c4f",
+    "nift": "4.11.0 source snapshot",
+    "python": "3.15.0 ordinary GIL portable build",
+    "node": "24.21.0 LTS",
+    "bun": "1.4.3",
+    "go": "1.27.2",
+    "selection": "Five compact project-automation models; Node LTS and Bun/Go carried forward from Concurrency, Python updated to current portable release. No claim that every participant is the newest patch."
+  },
+  "binary_sha256": {
+    "nift": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606",
+    "python": "aac3ade3f7d90fbf63e3ea0c46120a0cfbd159e1e503dde04721979507a1548b",
+    "node": "7fde7b8afa198da66257f42ee2001d874c7355631e6d1579a5fb5ef1f246df4c",
+    "bun": "7ce7d6b654eddeec20afddf2396317fba6dc19ab52788a27e894e1806bf8f24b",
+    "go": "bb09ff548151c834715147c10754bb3c43aaffedc5419c5e0671548ada0690ce"
+  },
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+  "download_sha256": "fd8e59d5a511510f6a298afb548f18c7d2b1be404d8b4a27d94fbe49f56cb2d6  work/tools/node.tar\necbadb99091a3f46e31f5f934b068b1864eafa7995211b39eaddf76996045fe5  work/tools/go.tar\n3e730528d89775f03f87f05c06787c4df4099d0a37f3f252e7b829cb23816e18  work/tools/bun.zip\n",
+  "planned_cells": 662,
+  "planned_measured_observations": 12074,
+  "planned_warmups": 662,
+  "planned_total_observations": 12736,
+  "scenario_plan": [
+    {
+      "id": "walk-1000",
+      "kind": "walk",
+      "n": 1000,
+      "variant": 0,
+      "samples": 50
+    },
+    {
+      "id": "stat-1000",
+      "kind": "stat",
+      "n": 1000,
+      "variant": 0,
+      "samples": 50
+    },
+    {
+      "id": "read-1000",
+      "kind": "read",
+      "n": 1000,
+      "variant": 0,
+      "samples": 10
+    },
+    {
+      "id": "hash-sha256-1000",
+      "kind": "hash-sha256",
+      "n": 1000,
+      "variant": 0,
+      "samples": 50
+    },
+    {
+      "id": "manifest-1000",
+      "kind": "manifest",
+      "n": 1000,
+      "variant": 0,
+      "samples": 10
+    },
+    {
+      "id": "write-1000",
+      "kind": "write",
+      "n": 1000,
+      "variant": 0,
+      "samples": 50
+    },
+    {
+      "id": "overwrite-1000",
+      "kind": "overwrite",
+      "n": 1000,
+      "variant": 0,
+      "samples": 50
+    },
+    {
+      "id": "copy-1000",
+      "kind": "copy",
+      "n": 1000,
+      "variant": 0,
+      "samples": 50
+    },
+    {
+      "id": "rename-1000",
+      "kind": "rename",
+      "n": 1000,
+      "variant": 0,
+      "samples": 50
+    },
+    {
+      "id": "relocate-1000",
+      "kind": "relocate",
+      "n": 1000,
+      "variant": 0,
+      "samples": 50
+    },
+    {
+      "id": "delete-1000",
+      "kind": "delete",
+      "n": 1000,
+      "variant": 0,
+      "samples": 50
+    },
+    {
+      "id": "generate-1000",
+      "kind": "generate",
+      "n": 1000,
+      "variant": 0,
+      "samples": 10
+    },
+    {
+      "id": "mixed-1000",
+      "kind": "mixed",
+      "n": 1000,
+      "variant": 0,
+      "samples": 50
+    },
+    {
+      "id": "clean-1000",
+      "kind": "clean",
+      "n": 1000,
+      "variant": 1,
+      "samples": 10
+    },
+    {
+      "id": "filter-1-1000",
+      "kind": "filter",
+      "n": 1000,
+      "variant": 1,
+      "samples": 50
+    },
+    {
+      "id": "filter-10-1000",
+      "kind": "filter",
+      "n": 1000,
+      "variant": 10,
+      "samples": 50
+    },
+    {
+      "id": "filter-50-1000",
+      "kind": "filter",
+      "n": 1000,
+      "variant": 50,
+      "samples": 50
+    },
+    {
+      "id": "mirror-0-1000",
+      "kind": "mirror",
+      "n": 1000,
+      "variant": 0,
+      "samples": 10
+    },
+    {
+      "id": "mirror-1-1000",
+      "kind": "mirror",
+      "n": 1000,
+      "variant": 1,
+      "samples": 10
+    },
+    {
+      "id": "mirror-10-1000",
+      "kind": "mirror",
+      "n": 1000,
+      "variant": 10,
+      "samples": 10
+    },
+    {
+      "id": "mirror-11-1000",
+      "kind": "mirror",
+      "n": 1000,
+      "variant": 11,
+      "samples": 10
+    },
+    {
+      "id": "mirror-12-1000",
+      "kind": "mirror",
+      "n": 1000,
+      "variant": 12,
+      "samples": 10
+    },
+    {
+      "id": "detect-mtime-1-1000",
+      "kind": "detect-mtime",
+      "n": 1000,
+      "variant": 1,
+      "samples": 50
+    },
+    {
+      "id": "detect-mtime-2-1000",
+      "kind": "detect-mtime",
+      "n": 1000,
+      "variant": 2,
+      "samples": 50
+    },
+    {
+      "id": "detect-mtime-3-1000",
+      "kind": "detect-mtime",
+      "n": 1000,
+      "variant": 3,
+      "samples": 50
+    },
+    {
+      "id": "detect-hash-1-1000",
+      "kind": "detect-hash",
+      "n": 1000,
+      "variant": 1,
+      "samples": 10
+    },
+    {
+      "id": "detect-hash-2-1000",
+      "kind": "detect-hash",
+      "n": 1000,
+      "variant": 2,
+      "samples": 10
+    },
+    {
+      "id": "detect-hash-3-1000",
+      "kind": "detect-hash",
+      "n": 1000,
+      "variant": 3,
+      "samples": 10
+    },
+    {
+      "id": "walk-10000",
+      "kind": "walk",
+      "n": 10000,
+      "variant": 0,
+      "samples": 10
+    },
+    {
+      "id": "stat-10000",
+      "kind": "stat",
+      "n": 10000,
+      "variant": 0,
+      "samples": 10
+    },
+    {
+      "id": "read-10000",
+      "kind": "read",
+      "n": 10000,
+      "variant": 0,
+      "samples": 5
+    },
+    {
+      "id": "hash-sha256-10000",
+      "kind": "hash-sha256",
+      "n": 10000,
+      "variant": 0,
+      "samples": 20
+    },
+    {
+      "id": "manifest-10000",
+      "kind": "manifest",
+      "n": 10000,
+      "variant": 0,
+      "samples": 5
+    },
+    {
+      "id": "write-10000",
+      "kind": "write",
+      "n": 10000,
+      "variant": 0,
+      "samples": 5
+    },
+    {
+      "id": "overwrite-10000",
+      "kind": "overwrite",
+      "n": 10000,
+      "variant": 0,
+      "samples": 5
+    },
+    {
+      "id": "copy-10000",
+      "kind": "copy",
+      "n": 10000,
+      "variant": 0,
+      "samples": 5
+    },
+    {
+      "id": "rename-10000",
+      "kind": "rename",
+      "n": 10000,
+      "variant": 0,
+      "samples": 10
+    },
+    {
+      "id": "relocate-10000",
+      "kind": "relocate",
+      "n": 10000,
+      "variant": 0,
+      "samples": 10
+    },
+    {
+      "id": "delete-10000",
+      "kind": "delete",
+      "n": 10000,
+      "variant": 0,
+      "samples": 10
+    },
+    {
+      "id": "generate-10000",
+      "kind": "generate",
+      "n": 10000,
+      "variant": 0,
+      "samples": 5
+    },
+    {
+      "id": "mixed-10000",
+      "kind": "mixed",
+      "n": 10000,
+      "variant": 0,
+      "samples": 5
+    },
+    {
+      "id": "clean-10000",
+      "kind": "clean",
+      "n": 10000,
+      "variant": 1,
+      "samples": 5
+    },
+    {
+      "id": "filter-1-10000",
+      "kind": "filter",
+      "n": 10000,
+      "variant": 1,
+      "samples": 10
+    },
+    {
+      "id": "filter-10-10000",
+      "kind": "filter",
+      "n": 10000,
+      "variant": 10,
+      "samples": 10
+    },
+    {
+      "id": "filter-50-10000",
+      "kind": "filter",
+      "n": 10000,
+      "variant": 50,
+      "samples": 10
+    },
+    {
+      "id": "mirror-0-10000",
+      "kind": "mirror",
+      "n": 10000,
+      "variant": 0,
+      "samples": 5
+    },
+    {
+      "id": "mirror-1-10000",
+      "kind": "mirror",
+      "n": 10000,
+      "variant": 1,
+      "samples": 5
+    },
+    {
+      "id": "mirror-10-10000",
+      "kind": "mirror",
+      "n": 10000,
+      "variant": 10,
+      "samples": 5
+    },
+    {
+      "id": "mirror-11-10000",
+      "kind": "mirror",
+      "n": 10000,
+      "variant": 11,
+      "samples": 5
+    },
+    {
+      "id": "mirror-12-10000",
+      "kind": "mirror",
+      "n": 10000,
+      "variant": 12,
+      "samples": 5
+    },
+    {
+      "id": "detect-mtime-1-10000",
+      "kind": "detect-mtime",
+      "n": 10000,
+      "variant": 1,
+      "samples": 20
+    },
+    {
+      "id": "detect-mtime-2-10000",
+      "kind": "detect-mtime",
+      "n": 10000,
+      "variant": 2,
+      "samples": 20
+    },
+    {
+      "id": "detect-mtime-3-10000",
+      "kind": "detect-mtime",
+      "n": 10000,
+      "variant": 3,
+      "samples": 20
+    },
+    {
+      "id": "detect-hash-1-10000",
+      "kind": "detect-hash",
+      "n": 10000,
+      "variant": 1,
+      "samples": 5
+    },
+    {
+      "id": "detect-hash-2-10000",
+      "kind": "detect-hash",
+      "n": 10000,
+      "variant": 2,
+      "samples": 5
+    },
+    {
+      "id": "detect-hash-3-10000",
+      "kind": "detect-hash",
+      "n": 10000,
+      "variant": 3,
+      "samples": 5
+    },
+    {
+      "id": "walk-100000",
+      "kind": "walk",
+      "n": 100000,
+      "variant": 0,
+      "samples": 3
+    },
+    {
+      "id": "stat-100000",
+      "kind": "stat",
+      "n": 100000,
+      "variant": 0,
+      "samples": 3
+    },
+    {
+      "id": "read-100000",
+      "kind": "read",
+      "n": 100000,
+      "variant": 0,
+      "samples": 3
+    },
+    {
+      "id": "hash-sha256-100000",
+      "kind": "hash-sha256",
+      "n": 100000,
+      "variant": 0,
+      "samples": 3
+    },
+    {
+      "id": "copy-100000",
+      "kind": "copy",
+      "n": 100000,
+      "variant": 0,
+      "samples": 3
+    },
+    {
+      "id": "filter-1-100000",
+      "kind": "filter",
+      "n": 100000,
+      "variant": 1,
+      "samples": 3
+    },
+    {
+      "id": "filter-10-100000",
+      "kind": "filter",
+      "n": 100000,
+      "variant": 10,
+      "samples": 3
+    },
+    {
+      "id": "filter-50-100000",
+      "kind": "filter",
+      "n": 100000,
+      "variant": 50,
+      "samples": 3
+    },
+    {
+      "id": "large-read-10x10485760",
+      "kind": "large-read",
+      "n": 10,
+      "variant": 0,
+      "large_bytes": 10485760,
+      "samples": 20
+    },
+    {
+      "id": "large-write-10x10485760",
+      "kind": "large-write",
+      "n": 10,
+      "variant": 0,
+      "large_bytes": 10485760,
+      "samples": 20
+    },
+    {
+      "id": "large-read-100x1048576",
+      "kind": "large-read",
+      "n": 100,
+      "variant": 0,
+      "large_bytes": 1048576,
+      "samples": 20
+    },
+    {
+      "id": "large-write-100x1048576",
+      "kind": "large-write",
+      "n": 100,
+      "variant": 0,
+      "large_bytes": 1048576,
+      "samples": 20
+    }
+  ],
+  "scenario_plan_sha256": "5d57302dcbc02180eb9a5d0aabc03e36f3bbdadbbfa980cc36b8b9743fafbc7a",
+  "cloud_small_certification_cells": 136,
+  "semantic_acceptance": {
+    "pass": true,
+    "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+    "scope": "untimed refresh semantic/capability gates",
+    "edge_path_engines": 5,
+    "inline_execute_count": 1,
+    "repro": {
+      "inline-loop.f": {
+        "execute_count": 1,
+        "stdout_sha256": "f7723593ab38f8e0ec0eeb536339ccbf5e85073407fb02460c8c038687914d45"
+      },
+      "bound-loop.f": {
+        "execute_count": 1,
+        "stdout_sha256": "f7723593ab38f8e0ec0eeb536339ccbf5e85073407fb02460c8c038687914d45"
+      }
+    },
+    "remaining_gaps": [
+      "native SHA-256",
+      "stat timestamp",
+      "recursive directory removal"
+    ],
+    "missing_directory_behavior": "Nift errors; Python empty-success behavior retained as non-equivalence"
+  },
+  "full_shape_local_receipt": {
+    "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+    "scope": "local correctness only; single-sample full-shape certificate, not official measurements",
+    "pass": true,
+    "full_shape_scenarios": 68,
+    "full_shape_supported_cells": 662,
+    "small20file_cells": 136,
+    "independent_audit": {
+      "pass": true,
+      "quick_certification": true,
+      "scenarios": 68,
+      "supported_cells": 662,
+      "measured": 662,
+      "warmups": 0,
+      "observations": 662,
+      "independent_fixture_specification_and_row_fingerprints": true,
+      "observations_sha256": "1b0fbe0f7652a491a7a2a36e7e4e79171bba3ae9476dd6aa5a8fb1117e65b4ed",
+      "summary_sha256": "bcf9d1985bea0a63fbc2b09694df5f061a9c5f4c81318b074af79869cfec13e0"
+    },
+    "distribution_audit": {
+      "method": "Independent reset-state manifests, nearest-rank p95 and all metric distributions; no dropped observations",
+      "cells": 662,
+      "measured": 662,
+      "summary_sha256": "bcf9d1985bea0a63fbc2b09694df5f061a9c5f4c81318b074af79869cfec13e0",
+      "pass": true
+    },
+    "semantic_acceptance": {
+      "pass": true,
+      "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+      "scope": "untimed refresh semantic/capability gates",
+      "edge_path_engines": 5,
+      "inline_execute_count": 1,
+      "repro": {
+        "inline-loop.f": {
+          "execute_count": 1,
+          "stdout_sha256": "f7723593ab38f8e0ec0eeb536339ccbf5e85073407fb02460c8c038687914d45"
+        },
+        "bound-loop.f": {
+          "execute_count": 1,
+          "stdout_sha256": "f7723593ab38f8e0ec0eeb536339ccbf5e85073407fb02460c8c038687914d45"
+        }
+      },
+      "remaining_gaps": [
+        "native SHA-256",
+        "stat timestamp",
+        "recursive directory removal"
+      ],
+      "missing_directory_behavior": "Nift errors; Python empty-success behavior retained as non-equivalence"
+    },
+    "negative_audit_control": "Default official-count audit rejects quick certification identity",
+    "candidate_cli_sha256": "f13f0b5c99afa3c4afa320d33cad88f0819d3fad384dc3a6d51364d79206e11e",
+    "receipt_directory": "/tmp/runtime-suite-refresh-certification/filesystem-automation/work",
+    "tested_baseline_plus_additive_harness": "97aab31427708f4864b6a685839829a8f4175fb8 with opt-in refresh edits; new suite freeze follows certification"
+  },
+  "library_scope": "CLI benchmark; embedded libraries not required",
+  "official_started": false,
+  "official_wrapper_pid": 10722,
+  "official_output": "/opt/filesystem/suite/work/refresh-official",
+  "official_log": "/opt/filesystem/suite/work/refresh-official.log",
+  "official_sequence": "primary then separately frozen predicate supplement, serial samehost"
+}
