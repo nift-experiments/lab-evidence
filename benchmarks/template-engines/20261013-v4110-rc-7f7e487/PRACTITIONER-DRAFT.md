@@ -1,0 +1,13 @@
+# Template engines practitioner draft
+
+Diagnostic draft for candidate 7f7e487; not a universal template-engine ranking or release endorsement. Measurements passed 375-cell exact/corpus/rotation audits. Historical changes are cross-node trends pending the targeted same-node check.
+
+For a Nift-owned project, I would use Nift for its templates: the same runtime, explicit context/loader boundaries and programmable generation policy are useful to humans and to agents maintaining that project. Fresh article invocation was 4.318 ms versus 75.594 ms Jinja, 51.942 ms Nunjucks, 67.028 ms Handlebars and 66.844 ms LiquidJS. Startup/runtime boundaries contribute to that result; it does not establish hot-render dominance.
+
+For a new agent-authored text-generation workflow, Nift is a credible choice where its programmable project model is required. I would keep explicit inputs, loader roots, output ownership and lifecycle contracts, adding helpers to remove duplicated declarations rather than removing those semantics. In an existing Python or JavaScript application I would normally keep its native template library, avoiding another runtime solely for rendering.
+
+The 10k-record source-render median improved from 113.578 ms historically to 34.408 ms here (69.7% lower cross-node trend); same-host Handlebars source-render was 2.241 ms, a15.4× observed gap. Article source-render was 0.278 ms, close to Nunjucks 0.289 ms. These source-based render boundaries include preparation as each adapter defines it. Prepared-object reuse is a different boundary: Nift has no public parsed-template object API in this candidate, so its source-render must not be silently labelled prepared reuse or scored as identical work against peers' reuse numbers.
+
+I would choose a prepared peer engine for a standalone high-volume hot-render service today, especially large data loops. Nift becomes much more attractive there if a reliable reusable-template API and competitive large-record rendering coexist with its loader/context contracts. That is a concrete boundary/performance gap, not proof that Nift requires another executor underneath.
+
+Repeated 1k-render/source workloads changed little and several medians rose modestly alongside slower peer medians; those cross-node differences do not establish a core regression. Current fresh Nift/Jinja peak-RSS values share a suspicious 27.875 MiB floor; raw memory remains preserved, but memory-efficiency conclusions are withheld pending the separate launch-accounting control. Persistent lifetime peaks include preparation, batch/output retention and validation and must not be presented as a pure template-cache footprint.

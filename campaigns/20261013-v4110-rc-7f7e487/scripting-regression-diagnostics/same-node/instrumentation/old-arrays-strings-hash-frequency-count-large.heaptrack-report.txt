@@ -1,0 +1,2090 @@
+reading file "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/old-arrays-strings-hash-frequency-count-large.heaptrack.zst" - please wait, this might take some time...
+Debuggee command was: /opt/nift-ab-old/nift /opt/campaign/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/large.f
+finished reading file, now analyzing data:
+
+MOST CALLS TO ALLOCATION FUNCTIONS
+399990 calls to allocation functions with 304B peak consumption from
+void std::vector<>::_M_realloc_insert<>(__gnu_cxx::__normal_iterator<>, nift::RuntimeValue&&)
+  in /opt/nift-ab-old/nift
+200000 calls with 304B peak consumption from:
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&)#1}::operator()(nift::ast::Stmt const&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::ast::Stmt const&)
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::vector<> const&, nift::detail::SourceView const&)#1}::operator()(std::vector<> const&, nift::detail::SourceView const&) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+100000 calls with 0B peak consumption from:
+    nift::ast::evaluate(nift::ast::Expr const&, nift::ast::Context&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)::{lambda()#1}::operator()() const
+      in /opt/nift-ab-old/nift
+    nift::ast::evaluate(nift::ast::Expr const&, nift::ast::Context&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&)#1}::operator()(nift::ast::Stmt const&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::ast::Stmt const&)
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::vector<> const&, nift::detail::SourceView const&)#1}::operator()(std::vector<> const&, nift::detail::SourceView const&) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+99990 calls with 0B peak consumption from:
+    nift::ast::evaluate(nift::ast::Expr const&, nift::ast::Context&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)::{lambda()#1}::operator()() const
+      in /opt/nift-ab-old/nift
+    nift::ast::evaluate(nift::ast::Expr const&, nift::ast::Context&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&)#1}::operator()(nift::ast::Stmt const&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::ast::Stmt const&)
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::vector<> const&, nift::detail::SourceView const&)#1}::operator()(std::vector<> const&, nift::detail::SourceView const&) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+200002 calls to allocation functions with 128B peak consumption from
+Parser::VariableBinding::VariableBinding(std::shared_ptr<>, int, bool, bool)
+  in /opt/nift-ab-old/nift
+200000 calls with 64B peak consumption from:
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&)#1}::operator()(nift::ast::Stmt const&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::ast::Stmt const&)
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::vector<> const&, nift::detail::SourceView const&)#1}::operator()(std::vector<> const&, nift::detail::SourceView const&) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+2 calls with 64B peak consumption from:
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+200000 calls to allocation functions with 272B peak consumption from
+std::pair<> std::_Hashtable<>::_M_emplace<>(std::integral_constant<>, std::__cxx11::basic_string<> const&, Parser::VariableBinding&&) [clone .isra.0]
+  in /opt/nift-ab-old/nift
+200000 calls with 272B peak consumption from:
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&)#1}::operator()(nift::ast::Stmt const&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::ast::Stmt const&)
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::vector<> const&, nift::detail::SourceView const&)#1}::operator()(std::vector<> const&, nift::detail::SourceView const&) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+200000 calls to allocation functions with 336B peak consumption from
+std::shared_ptr<>::shared_ptr<>(std::_Sp_alloc_shared_tag<>, nift::RuntimeValue&&)
+  in /opt/nift-ab-old/nift
+200000 calls with 336B peak consumption from:
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&)#1}::operator()(nift::ast::Stmt const&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::ast::Stmt const&)
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::vector<> const&, nift::detail::SourceView const&)#1}::operator()(std::vector<> const&, nift::detail::SourceView const&) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+199990 calls to allocation functions with 168B peak consumption from
+Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::__cxx11::basic_string<> const&, nift::RuntimeValue, std::__cxx11::basic_string<>&)#1}::operator()(std::__cxx11::basic_string<> const&, nift::RuntimeValue, std::__cxx11::basic_string<>&) const
+  in /opt/nift-ab-old/nift
+100000 calls with 168B peak consumption from:
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&)#1}::operator()(nift::ast::Stmt const&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::ast::Stmt const&)
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::vector<> const&, nift::detail::SourceView const&)#1}::operator()(std::vector<> const&, nift::detail::SourceView const&) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+99990 calls with 0B peak consumption from:
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&)#1}::operator()(nift::ast::Stmt const&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::ast::Stmt const&)
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::vector<> const&, nift::detail::SourceView const&)#1}::operator()(std::vector<> const&, nift::detail::SourceView const&) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+100130 calls to allocation functions with 949B peak consumption from
+std::__cxx11::basic_string<>::reserve(unsigned long)
+  in /lib/x86_64-linux-gnu/libstdc++.so.6
+100000 calls with 257B peak consumption from:
+    nift::RuntimeValue::dump[abi:cxx11](int) const
+      in /opt/nift-ab-old/nift
+    Parser::render_expression_value[abi:cxx11](nift::RuntimeValue const&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda()#1}::operator()() const::{lambda(nift::RuntimeValue const&, std::__cxx11::basic_string<> const&, std::vector<>&&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)#1}::operator()(nift::RuntimeValue const&, std::__cxx11::basic_string<> const&, std::vector<>&&, nift::RuntimeValue&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda()#1}::operator()() const::{lambda(nift::RuntimeValue const&, std::__cxx11::basic_string<> const&, std::vector<>&&)#1}::operator()(nift::RuntimeValue const&, std::__cxx11::basic_string<> const&, std::vector<>&&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::RuntimeValue const&, std::__cxx11::basic_string<> const&, std::vector<>&&)
+      in /opt/nift-ab-old/nift
+    nift::ast::evaluate(nift::ast::Expr const&, nift::ast::Context&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)::{lambda()#1}::operator()() const
+      in /opt/nift-ab-old/nift
+    nift::ast::evaluate(nift::ast::Expr const&, nift::ast::Context&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&)#1}::operator()(nift::ast::Stmt const&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::ast::Stmt const&)
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::vector<> const&, nift::detail::SourceView const&)#1}::operator()(std::vector<> const&, nift::detail::SourceView const&) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+10 calls with 0B peak consumption from:
+    std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    std::filesystem::__cxx11::path::lexically_normal() const
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    bool json::Document::for_each_array_item<>(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<> const&, project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)::{lambda(json::Document&&)#1}&&, std::__cxx11::basic_string<>&, json::ParseOptions const&) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+10 calls with 0B peak consumption from:
+    std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    std::filesystem::__cxx11::path::lexically_normal() const
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+10 calls with 0B peak consumption from:
+    std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    std::filesystem::__cxx11::path::lexically_normal() const
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    bool json::Document::for_each_array_item<>(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<> const&, project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)::{lambda(json::Document&&)#1}&&, std::__cxx11::basic_string<>&, json::ParseOptions const&) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+10 calls with 0B peak consumption from:
+    std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    std::filesystem::__cxx11::path::lexically_normal() const
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    bool json::Document::for_each_array_item<>(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<> const&, project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)::{lambda(json::Document&&)#1}&&, std::__cxx11::basic_string<>&, json::ParseOptions const&) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+  and 90 from 27 other places
+
+100002 calls to allocation functions with 208B peak consumption from
+std::_Hashtable<>::_M_rehash(unsigned long, unsigned long const&)
+  in /opt/nift-ab-old/nift
+100000 calls with 104B peak consumption from:
+    std::_Hashtable<>::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<>*, unsigned long)
+      in /opt/nift-ab-old/nift
+    std::pair<> std::_Hashtable<>::_M_emplace<>(std::integral_constant<>, std::__cxx11::basic_string<> const&, Parser::VariableBinding&&) [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&)#1}::operator()(nift::ast::Stmt const&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::ast::Stmt const&)
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::vector<> const&, nift::detail::SourceView const&)#1}::operator()(std::vector<> const&, nift::detail::SourceView const&) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+1 calls with 0B peak consumption from:
+    std::_Hashtable<>::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<>*, unsigned long)
+      in /opt/nift-ab-old/nift
+    std::__detail::_Map_base<>::operator[](std::__cxx11::basic_string<>&&)
+      in /opt/nift-ab-old/nift
+    Parser::install_script_invocation_bindings()
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+1 calls with 104B peak consumption from:
+    std::_Hashtable<>::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<>*, unsigned long)
+      in /opt/nift-ab-old/nift
+    std::__detail::_Map_base<>::operator[](std::__cxx11::basic_string<>&&)
+      in /opt/nift-ab-old/nift
+    Parser::install_script_invocation_bindings()
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+100000 calls to allocation functions with 0B peak consumption from
+nift::ast::(anonymous namespace)::eval_chain(nift::ast::Expr const&, nift::ast::Context&, std::shared_ptr<>&, std::__cxx11::basic_string<>&)::{lambda()#1}::operator()() const
+  in /opt/nift-ab-old/nift
+100000 calls with 0B peak consumption from:
+    nift::ast::(anonymous namespace)::eval_chain(nift::ast::Expr const&, nift::ast::Context&, std::shared_ptr<>&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    nift::ast::evaluate(nift::ast::Expr const&, nift::ast::Context&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)::{lambda()#1}::operator()() const
+      in /opt/nift-ab-old/nift
+    nift::ast::evaluate(nift::ast::Expr const&, nift::ast::Context&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&)#1}::operator()(nift::ast::Stmt const&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::ast::Stmt const&)
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::vector<> const&, nift::detail::SourceView const&)#1}::operator()(std::vector<> const&, nift::detail::SourceView const&) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+402 calls to allocation functions with 77.33K peak consumption from
+0x7310654b738e
+  in /lib/x86_64-linux-gnu/libstdc++.so.6
+20 calls with 0B peak consumption from:
+    std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    std::filesystem::__cxx11::path::lexically_normal() const
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    bool json::Document::for_each_array_item<>(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<> const&, project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)::{lambda(json::Document&&)#1}&&, std::__cxx11::basic_string<>&, json::ParseOptions const&) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+20 calls with 0B peak consumption from:
+    std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    std::filesystem::__cxx11::path::lexically_normal() const
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    bool json::Document::for_each_array_item<>(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<> const&, project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)::{lambda(json::Document&&)#1}&&, std::__cxx11::basic_string<>&, json::ParseOptions const&) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+20 calls with 0B peak consumption from:
+    std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    std::filesystem::__cxx11::path::lexically_normal() const
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+20 calls with 0B peak consumption from:
+    std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    std::filesystem::__cxx11::path::lexically_normal() const
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+20 calls with 0B peak consumption from:
+    std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    std::filesystem::__cxx11::path::lexically_normal() const
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    bool json::Document::for_each_array_item<>(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<> const&, project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)::{lambda(json::Document&&)#1}&&, std::__cxx11::basic_string<>&, json::ParseOptions const&) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+  and 302 from 95 other places
+
+83 calls to allocation functions with 217B peak consumption from
+std::__cxx11::basic_string<>::basic_string<>(char const*, std::allocator<> const&) [clone .constprop.0]
+  in /opt/nift-ab-old/nift
+25 calls with 0B peak consumption from:
+    json::Document::Parser<>::parse_object(unsigned long)
+      in /opt/nift-ab-old/nift
+    json::Document::Parser<>::parse_value(unsigned long)
+      in /opt/nift-ab-old/nift
+    bool json::Document::for_each_array_item<>(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<> const&, project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)::{lambda(json::Document&&)#1}&&, std::__cxx11::basic_string<>&, json::ParseOptions const&) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+20 calls with 0B peak consumption from:
+    json::Document::Parser<>::parse_object(unsigned long)
+      in /opt/nift-ab-old/nift
+    json::Document::Parser<>::parse_value(unsigned long)
+      in /opt/nift-ab-old/nift
+    bool json::Document::for_each_array_item<>(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<> const&, project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)::{lambda(json::Document&&)#1}&&, std::__cxx11::basic_string<>&, json::ParseOptions const&) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+8 calls with 0B peak consumption from:
+    json::Document::Parser<>::parse_object(unsigned long)
+      in /opt/nift-ab-old/nift
+    json::Document::Parser<>::parse_value(unsigned long)
+      in /opt/nift-ab-old/nift
+    json::Document::Parser<>::parse_object(unsigned long)
+      in /opt/nift-ab-old/nift
+    json::Document::Parser<>::parse_value(unsigned long)
+      in /opt/nift-ab-old/nift
+    auto json::Document::parse(std::basic_string_view<>, json::Document&, std::__cxx11::basic_string<>&, json::ParseOptions const&)::{lambda(auto:1)#1}::operator()<>(std::integral_constant<>) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    load_json_file(std::filesystem::__cxx11::path const&, json::Document&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    project_read::load_config(std::filesystem::__cxx11::path const&, Config&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+7 calls with 0B peak consumption from:
+    json::Document::Parser<>::parse_object(unsigned long)
+      in /opt/nift-ab-old/nift
+    json::Document::Parser<>::parse_value(unsigned long)
+      in /opt/nift-ab-old/nift
+    json::Document::Parser<>::parse_object(unsigned long)
+      in /opt/nift-ab-old/nift
+    json::Document::Parser<>::parse_value(unsigned long)
+      in /opt/nift-ab-old/nift
+    auto json::Document::parse(std::basic_string_view<>, json::Document&, std::__cxx11::basic_string<>&, json::ParseOptions const&)::{lambda(auto:1)#1}::operator()<>(std::integral_constant<>) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    load_json_file(std::filesystem::__cxx11::path const&, json::Document&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    project_read::load_config(std::filesystem::__cxx11::path const&, Config&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+5 calls with 24B peak consumption from:
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+  and 18 from 12 other places
+
+
+PEAK MEMORY CONSUMERS
+77.33K peak memory consumed over 402 calls from
+0x7310654b738e
+  in /lib/x86_64-linux-gnu/libstdc++.so.6
+73.73K consumed over 1 calls from:
+    0x7310656c871e
+      in /lib64/ld-linux-x86-64.so.2
+    0x7310656c8823
+      in /lib64/ld-linux-x86-64.so.2
+    0x7310656e259f
+      in /lib64/ld-linux-x86-64.so.2
+440B consumed over 1 calls from:
+    std::filesystem::__cxx11::path::_List::_List(std::filesystem::__cxx11::path::_List const&)
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    std::filesystem::__cxx11::path::path(std::filesystem::__cxx11::path const&)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+440B consumed over 1 calls from:
+    std::filesystem::__cxx11::path::_List::_List(std::filesystem::__cxx11::path::_List const&)
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    std::filesystem::__cxx11::path::path(std::filesystem::__cxx11::path const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+440B consumed over 5 calls from:
+    std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    std::filesystem::__cxx11::path::lexically_normal() const
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+440B consumed over 1 calls from:
+    std::filesystem::__cxx11::path::_M_split_cmpts()
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    std::filesystem::__cxx11::path::path<>(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path::format) [clone .constprop.0] [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+  and 1.84K from 95 other places
+
+8.74K peak memory consumed over 28 calls from
+std::__detail::_MakeUniq<>::__single_object std::make_unique<>()
+  in /opt/nift-ab-old/nift
+672B consumed over 2 calls from:
+    nift::ast::(anonymous namespace)::P::unary()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::mul()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::compare()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_and()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_or()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::coalesce()
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_bounded_expression(std::__cxx11::basic_string<> const&, bool)
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_expression(std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::__cxx11::basic_string<> const&, std::vector<>&)#1}::operator()(std::__cxx11::basic_string<> const&, std::vector<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+672B consumed over 2 calls from:
+    nift::ast::(anonymous namespace)::P::unary()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::mul()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::compare()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_and()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_or()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::coalesce()
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_bounded_expression(std::__cxx11::basic_string<> const&, bool)
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::unary()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::mul()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::compare()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_and()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_or()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::coalesce()
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_bounded_expression(std::__cxx11::basic_string<> const&, bool)
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_expression_at(std::__cxx11::basic_string<> const&, unsigned long, unsigned long)
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_statement(std::__cxx11::basic_string<> const&)::{lambda(unsigned long, unsigned long)#1}::operator()(unsigned long, unsigned long) const
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_statement(std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::__cxx11::basic_string<> const&, std::vector<>&)#1}::operator()(std::__cxx11::basic_string<> const&, std::vector<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+336B consumed over 1 calls from:
+    nift::ast::(anonymous namespace)::P::unary()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::mul()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::compare()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_and()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_or()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::coalesce()
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_bounded_expression(std::__cxx11::basic_string<> const&, bool)
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::unary()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::mul()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::compare()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_and()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_or()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::coalesce()
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_bounded_expression(std::__cxx11::basic_string<> const&, bool)
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_expression_at(std::__cxx11::basic_string<> const&, unsigned long, unsigned long)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::__cxx11::basic_string<> const&, std::vector<>&)#1}::operator()(std::__cxx11::basic_string<> const&, std::vector<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+336B consumed over 1 calls from:
+    nift::ast::(anonymous namespace)::P::unary()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::mul()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::compare()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_and()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_or()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::coalesce()
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_bounded_expression(std::__cxx11::basic_string<> const&, bool)
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_expression_at(std::__cxx11::basic_string<> const&, unsigned long, unsigned long)
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_statement(std::__cxx11::basic_string<> const&)::{lambda(unsigned long, unsigned long)#1}::operator()(unsigned long, unsigned long) const
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_statement(std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::__cxx11::basic_string<> const&, std::vector<>&)#1}::operator()(std::__cxx11::basic_string<> const&, std::vector<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+336B consumed over 1 calls from:
+    nift::ast::(anonymous namespace)::P::unary()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::mul()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::compare()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_and()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_or()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::coalesce()
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_bounded_expression(std::__cxx11::basic_string<> const&, bool)
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_expression(std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::__cxx11::basic_string<> const&, std::vector<>&)#1}::operator()(std::__cxx11::basic_string<> const&, std::vector<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+  and 6.38K from 21 other places
+
+7.30K peak memory consumed over 5 calls from
+void std::vector<>::_M_realloc_insert<>(__gnu_cxx::__normal_iterator<>, std::pair<>&&)
+  in /opt/nift-ab-old/nift
+7.30K consumed over 5 calls from:
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&)#1}::operator()(nift::ast::Stmt const&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::ast::Stmt const&)
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::vector<> const&, nift::detail::SourceView const&)#1}::operator()(std::vector<> const&, nift::detail::SourceView const&) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+3.52K peak memory consumed over 4 calls from
+project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)
+  in /opt/nift-ab-old/nift
+3.26K consumed over 1 calls from:
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+256B consumed over 1 calls from:
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+2.56K peak memory consumed over 18 calls from
+void std::vector<>::_M_realloc_insert<>(__gnu_cxx::__normal_iterator<>, nift::detail::SourceSpanMapping const&)
+  in /opt/nift-ab-old/nift
+2.56K consumed over 2 calls from:
+    nift::detail::SourceBuilder::generated(std::basic_string_view<>, unsigned long, unsigned long)
+      in /opt/nift-ab-old/nift
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const::{lambda(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&)#1}::operator()(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView&&, nift::detail::SourceView&)
+      in /opt/nift-ab-old/nift
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+  and 0B from 9 other places
+
+2.32K peak memory consumed over 52 calls from
+std::_Hashtable<>::_Hashtable<>(char const* const*, char const* const*, unsigned long, std::hash<> const&, std::equal_to<> const&, std::allocator<> const&, std::integral_constant<>)
+  in /opt/nift-ab-old/nift
+912B consumed over 19 calls from:
+    project_read::load_config(std::filesystem::__cxx11::path const&, Config&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+672B consumed over 14 calls from:
+    nift::detail::reserved_binding_name(std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+624B consumed over 13 calls from:
+    nift::detail::built_in_metadata_name(std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(std::__cxx11::basic_string<> const&, nift::RuntimeValue&)#1}::operator()(std::__cxx11::basic_string<> const&, nift::RuntimeValue&) const
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+      in /opt/nift-ab-old/nift
+    std::function<>::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+108B consumed over 6 calls from:
+    project_read::load_config(std::filesystem::__cxx11::path const&, Config&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+1.44K peak memory consumed over 5 calls from
+nift::ast::parse_statement(std::__cxx11::basic_string<> const&)
+  in /opt/nift-ab-old/nift
+1.15K consumed over 4 calls from:
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::__cxx11::basic_string<> const&, std::vector<>&)#1}::operator()(std::__cxx11::basic_string<> const&, std::vector<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+288B consumed over 1 calls from:
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::__cxx11::basic_string<> const&, std::vector<>&)#1}::operator()(std::__cxx11::basic_string<> const&, std::vector<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::__cxx11::basic_string<> const&, std::vector<>&)#1}::operator()(std::__cxx11::basic_string<> const&, std::vector<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+1.28K peak memory consumed over 6 calls from
+void std::vector<>::_M_realloc_insert<>(__gnu_cxx::__normal_iterator<>, nift::detail::SourceSpanMapping&&)
+  in /opt/nift-ab-old/nift
+1.28K consumed over 6 calls from:
+    nift::detail::SourceView::slice(unsigned long, unsigned long) const
+      in /opt/nift-ab-old/nift
+    nift::detail::SourceText::substr(unsigned long, unsigned long) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+1.01K peak memory consumed over 3 calls from
+std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+  in /opt/nift-ab-old/nift
+336B consumed over 1 calls from:
+    nift::ast::(anonymous namespace)::P::mul()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::compare()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_and()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_or()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::unary()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::mul()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::compare()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_and()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_or()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::coalesce()
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_bounded_expression(std::__cxx11::basic_string<> const&, bool)
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_expression_at(std::__cxx11::basic_string<> const&, unsigned long, unsigned long)
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_statement(std::__cxx11::basic_string<> const&)::{lambda(unsigned long, unsigned long)#1}::operator()(unsigned long, unsigned long) const
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_statement(std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::__cxx11::basic_string<> const&, std::vector<>&)#1}::operator()(std::__cxx11::basic_string<> const&, std::vector<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+336B consumed over 1 calls from:
+    nift::ast::(anonymous namespace)::P::compare()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_and()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_or()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::coalesce()
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_bounded_expression(std::__cxx11::basic_string<> const&, bool)
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::unary()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::mul()
+      in /opt/nift-ab-old/nift
+    std::unique_ptr<> nift::ast::(anonymous namespace)::P::chain<>(std::unique_ptr<> (nift::ast::(anonymous namespace)::P::*)(), std::initializer_list<>) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::compare()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_and()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_or()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::coalesce()
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_bounded_expression(std::__cxx11::basic_string<> const&, bool)
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_expression_at(std::__cxx11::basic_string<> const&, unsigned long, unsigned long)
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_statement(std::__cxx11::basic_string<> const&)::{lambda(unsigned long, unsigned long)#1}::operator()(unsigned long, unsigned long) const
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_statement(std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::__cxx11::basic_string<> const&, std::vector<>&)#1}::operator()(std::__cxx11::basic_string<> const&, std::vector<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+336B consumed over 1 calls from:
+    nift::ast::(anonymous namespace)::P::compare()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_and()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::logical_or()
+      in /opt/nift-ab-old/nift
+    nift::ast::(anonymous namespace)::P::coalesce()
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_bounded_expression(std::__cxx11::basic_string<> const&, bool)
+      in /opt/nift-ab-old/nift
+    nift::ast::parse_expression(std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::__cxx11::basic_string<> const&, std::vector<>&)#1}::operator()(std::__cxx11::basic_string<> const&, std::vector<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+992B peak memory consumed over 31 calls from
+Parser::known_file_method(std::basic_string_view<>)
+  in /opt/nift-ab-old/nift
+992B consumed over 31 calls from:
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, bool&)#1}::operator()(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, bool&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda()#1}::operator()() const::{lambda(std::__cxx11::basic_string<> const&, nift::ast::SourceSpan, nift::RuntimeValue&, std::__cxx11::basic_string<>&)#1}::operator()(std::__cxx11::basic_string<> const&, nift::ast::SourceSpan, nift::RuntimeValue&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    nift::ast::evaluate(nift::ast::Expr const&, nift::ast::Context&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)::{lambda()#1}::operator()() const
+      in /opt/nift-ab-old/nift
+    nift::ast::evaluate(nift::ast::Expr const&, nift::ast::Context&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&)#1}::operator()(nift::ast::Stmt const&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::ast::Stmt const&)
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::vector<> const&, nift::detail::SourceView const&)#1}::operator()(std::vector<> const&, nift::detail::SourceView const&) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+
+MOST TEMPORARY ALLOCATIONS
+199990 temporary allocations of 399990 allocations in total (50.00%) from
+void std::vector<>::_M_realloc_insert<>(__gnu_cxx::__normal_iterator<>, nift::RuntimeValue&&)
+  in /opt/nift-ab-old/nift
+100000 temporary allocations of 100000 allocations in total (100.00%) from:
+    nift::ast::evaluate(nift::ast::Expr const&, nift::ast::Context&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)::{lambda()#1}::operator()() const
+      in /opt/nift-ab-old/nift
+    nift::ast::evaluate(nift::ast::Expr const&, nift::ast::Context&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&)#1}::operator()(nift::ast::Stmt const&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::ast::Stmt const&)
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::vector<> const&, nift::detail::SourceView const&)#1}::operator()(std::vector<> const&, nift::detail::SourceView const&) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+99990 temporary allocations of 99990 allocations in total (100.00%) from:
+    nift::ast::evaluate(nift::ast::Expr const&, nift::ast::Context&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)::{lambda()#1}::operator()() const
+      in /opt/nift-ab-old/nift
+    nift::ast::evaluate(nift::ast::Expr const&, nift::ast::Context&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&)#1}::operator()(nift::ast::Stmt const&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::ast::Stmt const&)
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::vector<> const&, nift::detail::SourceView const&)#1}::operator()(std::vector<> const&, nift::detail::SourceView const&) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+99999 temporary allocations of 199990 allocations in total (50.00%) from
+Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::__cxx11::basic_string<> const&, nift::RuntimeValue, std::__cxx11::basic_string<>&)#1}::operator()(std::__cxx11::basic_string<> const&, nift::RuntimeValue, std::__cxx11::basic_string<>&) const
+  in /opt/nift-ab-old/nift
+99999 temporary allocations of 100000 allocations in total (100.00%) from:
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&, std::__cxx11::basic_string<>&)#2}::operator()(nift::ast::Stmt const&, std::__cxx11::basic_string<>&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(nift::ast::Stmt const&)#1}::operator()(nift::ast::Stmt const&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, nift::ast::Stmt const&)
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::vector<> const&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::vector<> const&, nift::detail::SourceView const&)#1}::operator()(std::vector<> const&, nift::detail::SourceView const&) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+68 temporary allocations of 83 allocations in total (81.93%) from
+std::__cxx11::basic_string<>::basic_string<>(char const*, std::allocator<> const&) [clone .constprop.0]
+  in /opt/nift-ab-old/nift
+25 temporary allocations of 25 allocations in total (100.00%) from:
+    json::Document::Parser<>::parse_object(unsigned long)
+      in /opt/nift-ab-old/nift
+    json::Document::Parser<>::parse_value(unsigned long)
+      in /opt/nift-ab-old/nift
+    bool json::Document::for_each_array_item<>(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<> const&, project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)::{lambda(json::Document&&)#1}&&, std::__cxx11::basic_string<>&, json::ParseOptions const&) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+20 temporary allocations of 20 allocations in total (100.00%) from:
+    json::Document::Parser<>::parse_object(unsigned long)
+      in /opt/nift-ab-old/nift
+    json::Document::Parser<>::parse_value(unsigned long)
+      in /opt/nift-ab-old/nift
+    bool json::Document::for_each_array_item<>(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<> const&, project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)::{lambda(json::Document&&)#1}&&, std::__cxx11::basic_string<>&, json::ParseOptions const&) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+8 temporary allocations of 8 allocations in total (100.00%) from:
+    json::Document::Parser<>::parse_object(unsigned long)
+      in /opt/nift-ab-old/nift
+    json::Document::Parser<>::parse_value(unsigned long)
+      in /opt/nift-ab-old/nift
+    json::Document::Parser<>::parse_object(unsigned long)
+      in /opt/nift-ab-old/nift
+    json::Document::Parser<>::parse_value(unsigned long)
+      in /opt/nift-ab-old/nift
+    auto json::Document::parse(std::basic_string_view<>, json::Document&, std::__cxx11::basic_string<>&, json::ParseOptions const&)::{lambda(auto:1)#1}::operator()<>(std::integral_constant<>) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    load_json_file(std::filesystem::__cxx11::path const&, json::Document&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    project_read::load_config(std::filesystem::__cxx11::path const&, Config&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+7 temporary allocations of 7 allocations in total (100.00%) from:
+    json::Document::Parser<>::parse_object(unsigned long)
+      in /opt/nift-ab-old/nift
+    json::Document::Parser<>::parse_value(unsigned long)
+      in /opt/nift-ab-old/nift
+    json::Document::Parser<>::parse_object(unsigned long)
+      in /opt/nift-ab-old/nift
+    json::Document::Parser<>::parse_value(unsigned long)
+      in /opt/nift-ab-old/nift
+    auto json::Document::parse(std::basic_string_view<>, json::Document&, std::__cxx11::basic_string<>&, json::ParseOptions const&)::{lambda(auto:1)#1}::operator()<>(std::integral_constant<>) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    load_json_file(std::filesystem::__cxx11::path const&, json::Document&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    project_read::load_config(std::filesystem::__cxx11::path const&, Config&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+4 temporary allocations of 4 allocations in total (100.00%) from:
+    bool json::Document::for_each_array_item<>(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<> const&, project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)::{lambda(json::Document&&)#1}&&, std::__cxx11::basic_string<>&, json::ParseOptions const&) [clone .constprop.0]
+      in /opt/nift-ab-old/nift
+    project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+  and 4B from 12 other places
+
+7 temporary allocations of 13 allocations in total (53.85%) from
+nift::detail::SourceBuilder::append(std::basic_string_view<>, nift::detail::SourceView const&)
+  in /opt/nift-ab-old/nift
+2 temporary allocations of 4 allocations in total (50.00%) from:
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const::{lambda(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&)#1}::operator()(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&) const::{lambda(unsigned long, unsigned long)#1}::operator()(unsigned long, unsigned long) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const::{lambda(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&)#1}::operator()(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView&&, nift::detail::SourceView&)
+      in /opt/nift-ab-old/nift
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+2 temporary allocations of 4 allocations in total (50.00%) from:
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const::{lambda(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&)#1}::operator()(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&) const::{lambda(unsigned long, unsigned long)#1}::operator()(unsigned long, unsigned long) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const::{lambda(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&)#1}::operator()(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView&&, nift::detail::SourceView&)
+      in /opt/nift-ab-old/nift
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const::{lambda(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&)#1}::operator()(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView&&, nift::detail::SourceView&)
+      in /opt/nift-ab-old/nift
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+1 temporary allocations of 1 allocations in total (100.00%) from:
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const::{lambda(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&)#1}::operator()(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&) const::{lambda(unsigned long, unsigned long)#1}::operator()(unsigned long, unsigned long) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const::{lambda(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&)#1}::operator()(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView&&, nift::detail::SourceView&)
+      in /opt/nift-ab-old/nift
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const::{lambda(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&)#1}::operator()(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView&&, nift::detail::SourceView&)
+      in /opt/nift-ab-old/nift
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+1 temporary allocations of 1 allocations in total (100.00%) from:
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const::{lambda(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&)#1}::operator()(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView&&, nift::detail::SourceView&)
+      in /opt/nift-ab-old/nift
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const::{lambda(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&)#1}::operator()(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView&&, nift::detail::SourceView&)
+      in /opt/nift-ab-old/nift
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+1 temporary allocations of 1 allocations in total (100.00%) from:
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const::{lambda(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&)#1}::operator()(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&) const::{lambda(unsigned long, unsigned long)#1}::operator()(unsigned long, unsigned long) const [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const::{lambda(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&)#1}::operator()(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView&) const
+      in /opt/nift-ab-old/nift
+    std::_Function_handler<>::_M_invoke(std::_Any_data const&, std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, nift::detail::SourceView&&, nift::detail::SourceView&)
+      in /opt/nift-ab-old/nift
+    Parser::translate_function_program(std::__cxx11::basic_string<> const&, std::__cxx11::basic_string<>&, std::__cxx11::basic_string<>&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+  and 0B from 2 other places
+
+6 temporary allocations of 402 allocations in total (1.49%) from
+0x7310654b738e
+  in /lib/x86_64-linux-gnu/libstdc++.so.6
+3 temporary allocations of 5 allocations in total (60.00%) from:
+    std::filesystem::__cxx11::path::_M_split_cmpts()
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    std::filesystem::__cxx11::path::parent_path() const
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+1 temporary allocations of 2 allocations in total (50.00%) from:
+    std::filesystem::__cxx11::path::_M_split_cmpts()
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    std::filesystem::__cxx11::path::path<>(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path::format) [clone .constprop.0] [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+1 temporary allocations of 1 allocations in total (100.00%) from:
+    0x7310656c871e
+      in /lib64/ld-linux-x86-64.so.2
+    0x7310656c8823
+      in /lib64/ld-linux-x86-64.so.2
+    0x7310656e259f
+      in /lib64/ld-linux-x86-64.so.2
+1 temporary allocations of 2 allocations in total (50.00%) from:
+    std::filesystem::__cxx11::path::_M_split_cmpts()
+      in /lib/x86_64-linux-gnu/libstdc++.so.6
+    std::filesystem::__cxx11::path::path<>(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path::format) [clone .constprop.0] [clone .isra.0]
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+  and 0B from 95 other places
+
+3 temporary allocations of 100130 allocations in total (0.00%) from
+std::__cxx11::basic_string<>::reserve(unsigned long)
+  in /lib/x86_64-linux-gnu/libstdc++.so.6
+2 temporary allocations of 2 allocations in total (100.00%) from:
+    nift::RuntimeValue::dump[abi:cxx11](int) const
+      in /opt/nift-ab-old/nift
+    Parser::render_expression_value[abi:cxx11](nift::RuntimeValue const&) const
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+1 temporary allocations of 2 allocations in total (50.00%) from:
+    nift::RuntimeValue::dump[abi:cxx11](int) const
+      in /opt/nift-ab-old/nift
+    Parser::render_expression_value[abi:cxx11](nift::RuntimeValue const&) const
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+  and 0B from 27 other places
+
+2 temporary allocations of 8 allocations in total (25.00%) from
+std::__detail::_Map_base<>::operator[](std::__cxx11::basic_string<>&&)
+  in /opt/nift-ab-old/nift
+1 temporary allocations of 1 allocations in total (100.00%) from:
+    Parser::install_script_invocation_bindings()
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+1 temporary allocations of 1 allocations in total (100.00%) from:
+    Parser::install_script_invocation_bindings()
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+  and 0B from 3 other places
+
+2 temporary allocations of 4 allocations in total (50.00%) from
+std::__detail::_Map_base<>::operator[](std::__cxx11::basic_string<> const&)
+  in /opt/nift-ab-old/nift
+2 temporary allocations of 2 allocations in total (100.00%) from:
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+2 temporary allocations of 2 allocations in total (100.00%) from
+Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const::{lambda(std::__cxx11::basic_string<> const&, Parser::VariableBinding&)#1}::operator()(std::__cxx11::basic_string<> const&, Parser::VariableBinding&) const
+  in /opt/nift-ab-old/nift
+2 temporary allocations of 2 allocations in total (100.00%) from:
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression_impl(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_filesystem_expression(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression(std::__cxx11::basic_string<> const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::evaluate_expression(nift::detail::SourceText const&, nift::RuntimeValue&, std::__cxx11::basic_string<>&)
+      in /opt/nift-ab-old/nift
+    Parser::parse(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::execute_native_program(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, bool, nift::detail::SourceView)
+      in /opt/nift-ab-old/nift
+    Parser::run_script(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, bool)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+1 temporary allocations of 4 allocations in total (25.00%) from
+project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<>&, std::__cxx11::basic_string<>&)
+  in /opt/nift-ab-old/nift
+1 temporary allocations of 1 allocations in total (100.00%) from:
+    ScriptRenderHost::ScriptRenderHost(std::filesystem::__cxx11::path, std::__cxx11::basic_string<>)
+      in /opt/nift-ab-old/nift
+    run_script_source(std::__cxx11::basic_string<> const&, std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<> const&, std::vector<> const&, std::filesystem::__cxx11::path const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_script_file(std::filesystem::__cxx11::path const&, std::vector<> const&, bool, std::__cxx11::basic_string<> const&)
+      in /opt/nift-ab-old/nift
+    run_cli(int, char**)
+      in /opt/nift-ab-old/nift
+    0x73106502a1c9
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main
+      in /lib/x86_64-linux-gnu/libc.so.6
+
+
+total runtime: 1.82s.
+calls to allocation functions: 1501237 (823498/s)
+temporary memory allocations: 300083 (164609/s)
+peak heap memory consumption: 117.13K
+peak RSS (including heaptrack overhead): 8.63M
+total memory leaked: 4.10K

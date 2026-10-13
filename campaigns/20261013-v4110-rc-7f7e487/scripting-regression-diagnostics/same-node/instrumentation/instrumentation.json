@@ -1,0 +1,643 @@
+{
+  "kind": "postpaired-instrumentation-not-timing-observations",
+  "versions": {
+    "old": {
+      "sha": "2eaec7d70e9ce2e698d0ba23a605fb9cf85317ff",
+      "root": "/opt/nift-ab-old",
+      "executable": "/opt/nift-ab-old/nift",
+      "identity": {
+        "version": "Nift v4.10.0",
+        "sha256": "e7cb28d6150c797acbb52a618faff3cf981281b9ea4e91a8c478062242f0c3a2"
+      }
+    },
+    "new": {
+      "sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+      "root": "/opt/nift",
+      "executable": "/opt/nift/nift",
+      "identity": {
+        "version": "Nift v4.11.0",
+        "sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606"
+      }
+    }
+  },
+  "raw_timing_sha256": "370fbc615b7268920bbac92b15d36219d65b80ddd8964c20ef49051ef15087c6",
+  "policy": "same tools/commands and full source sizes for old/new; only executable changes; direct target process; no kernel changes",
+  "records": [
+    {
+      "family": "sanity/function-calls/large",
+      "version": "old",
+      "tool": "heaptrack",
+      "command": [
+        "heaptrack",
+        "--record-only",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/old-sanity-function-calls-large.heaptrack",
+        "/opt/nift-ab-old/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/sanity/function-calls/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "launcher+target; expected target block occurs once",
+      "source_sha256": "c15cf8d1cf4880e499521284b3cc1362b90d2c726f7da32212bc004aca7b0201",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "trace_files": [
+        "old-sanity-function-calls-large.heaptrack.zst"
+      ],
+      "report_exit": 0,
+      "report_timeout": false,
+      "allocation_summary_lines": [
+        "calls to allocation functions: 900967 (681003/s)",
+        "peak heap memory consumption: 116.57K",
+        "total memory leaked: 4.10K"
+      ]
+    },
+    {
+      "family": "sanity/function-calls/large",
+      "version": "old",
+      "tool": "strace",
+      "command": [
+        "strace",
+        "-f",
+        "-c",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/old-sanity-function-calls-large.strace.txt",
+        "/opt/nift-ab-old/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/sanity/function-calls/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "target only",
+      "source_sha256": "c15cf8d1cf4880e499521284b3cc1362b90d2c726f7da32212bc004aca7b0201",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597"
+    },
+    {
+      "family": "sanity/function-calls/large",
+      "version": "old",
+      "tool": "perf",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/old-sanity-function-calls-large.perf.data",
+        "--",
+        "/opt/nift-ab-old/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/sanity/function-calls/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "target only",
+      "source_sha256": "c15cf8d1cf4880e499521284b3cc1362b90d2c726f7da32212bc004aca7b0201",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "report_exit": 0,
+      "report_timeout": false
+    },
+    {
+      "family": "sanity/function-calls/large",
+      "version": "new",
+      "tool": "heaptrack",
+      "command": [
+        "heaptrack",
+        "--record-only",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/new-sanity-function-calls-large.heaptrack",
+        "/opt/nift/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/sanity/function-calls/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "launcher+target; expected target block occurs once",
+      "source_sha256": "c15cf8d1cf4880e499521284b3cc1362b90d2c726f7da32212bc004aca7b0201",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "trace_files": [
+        "new-sanity-function-calls-large.heaptrack.zst"
+      ],
+      "report_exit": 0,
+      "report_timeout": false,
+      "allocation_summary_lines": [
+        "calls to allocation functions: 1701054 (733212/s)",
+        "peak heap memory consumption: 116.55K",
+        "total memory leaked: 4.10K"
+      ]
+    },
+    {
+      "family": "sanity/function-calls/large",
+      "version": "new",
+      "tool": "strace",
+      "command": [
+        "strace",
+        "-f",
+        "-c",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/new-sanity-function-calls-large.strace.txt",
+        "/opt/nift/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/sanity/function-calls/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "target only",
+      "source_sha256": "c15cf8d1cf4880e499521284b3cc1362b90d2c726f7da32212bc004aca7b0201",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597"
+    },
+    {
+      "family": "sanity/function-calls/large",
+      "version": "new",
+      "tool": "perf",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/new-sanity-function-calls-large.perf.data",
+        "--",
+        "/opt/nift/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/sanity/function-calls/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "target only",
+      "source_sha256": "c15cf8d1cf4880e499521284b3cc1362b90d2c726f7da32212bc004aca7b0201",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "report_exit": 0,
+      "report_timeout": false
+    },
+    {
+      "family": "sanity/function-calls/small",
+      "version": "old",
+      "tool": "heaptrack",
+      "command": [
+        "heaptrack",
+        "--record-only",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/old-sanity-function-calls-small.heaptrack",
+        "/opt/nift-ab-old/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/sanity/function-calls/small.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "launcher+target; expected target block occurs once",
+      "source_sha256": "66c5b5cf126ae6b9e47d556a19bba9d7e8896263c3886a5959c254d87acefe62",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "trace_files": [
+        "old-sanity-function-calls-small.heaptrack.zst"
+      ],
+      "report_exit": 0,
+      "report_timeout": false,
+      "allocation_summary_lines": [
+        "calls to allocation functions: 9967 (115895/s)",
+        "peak heap memory consumption: 116.57K",
+        "total memory leaked: 4.10K"
+      ]
+    },
+    {
+      "family": "sanity/function-calls/small",
+      "version": "old",
+      "tool": "strace",
+      "command": [
+        "strace",
+        "-f",
+        "-c",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/old-sanity-function-calls-small.strace.txt",
+        "/opt/nift-ab-old/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/sanity/function-calls/small.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "target only",
+      "source_sha256": "66c5b5cf126ae6b9e47d556a19bba9d7e8896263c3886a5959c254d87acefe62",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9"
+    },
+    {
+      "family": "sanity/function-calls/small",
+      "version": "old",
+      "tool": "perf",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/old-sanity-function-calls-small.perf.data",
+        "--",
+        "/opt/nift-ab-old/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/sanity/function-calls/small.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "target only",
+      "source_sha256": "66c5b5cf126ae6b9e47d556a19bba9d7e8896263c3886a5959c254d87acefe62",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "report_exit": 0,
+      "report_timeout": false
+    },
+    {
+      "family": "sanity/function-calls/small",
+      "version": "new",
+      "tool": "heaptrack",
+      "command": [
+        "heaptrack",
+        "--record-only",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/new-sanity-function-calls-small.heaptrack",
+        "/opt/nift/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/sanity/function-calls/small.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "launcher+target; expected target block occurs once",
+      "source_sha256": "66c5b5cf126ae6b9e47d556a19bba9d7e8896263c3886a5959c254d87acefe62",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "trace_files": [
+        "new-sanity-function-calls-small.heaptrack.zst"
+      ],
+      "report_exit": 0,
+      "report_timeout": false,
+      "allocation_summary_lines": [
+        "calls to allocation functions: 18054 (190042/s)",
+        "peak heap memory consumption: 116.55K",
+        "total memory leaked: 4.10K"
+      ]
+    },
+    {
+      "family": "sanity/function-calls/small",
+      "version": "new",
+      "tool": "strace",
+      "command": [
+        "strace",
+        "-f",
+        "-c",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/new-sanity-function-calls-small.strace.txt",
+        "/opt/nift/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/sanity/function-calls/small.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "target only",
+      "source_sha256": "66c5b5cf126ae6b9e47d556a19bba9d7e8896263c3886a5959c254d87acefe62",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9"
+    },
+    {
+      "family": "sanity/function-calls/small",
+      "version": "new",
+      "tool": "perf",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/new-sanity-function-calls-small.perf.data",
+        "--",
+        "/opt/nift/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/sanity/function-calls/small.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "target only",
+      "source_sha256": "66c5b5cf126ae6b9e47d556a19bba9d7e8896263c3886a5959c254d87acefe62",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "report_exit": 0,
+      "report_timeout": false
+    },
+    {
+      "family": "graphs-trees-search/bfs/large",
+      "version": "old",
+      "tool": "heaptrack",
+      "command": [
+        "heaptrack",
+        "--record-only",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/old-graphs-trees-search-bfs-large.heaptrack",
+        "/opt/nift-ab-old/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "launcher+target; expected target block occurs once",
+      "source_sha256": "20808cc9e18b93d241c114df6b17bb1a25fc9072146ae8751c45402de5c625ec",
+      "oracle_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651",
+      "trace_files": [
+        "old-graphs-trees-search-bfs-large.heaptrack.zst"
+      ],
+      "report_exit": 0,
+      "report_timeout": false,
+      "allocation_summary_lines": [
+        "calls to allocation functions: 2748737 (821499/s)",
+        "peak heap memory consumption: 27.14M",
+        "total memory leaked: 4.10K"
+      ]
+    },
+    {
+      "family": "graphs-trees-search/bfs/large",
+      "version": "old",
+      "tool": "strace",
+      "command": [
+        "strace",
+        "-f",
+        "-c",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/old-graphs-trees-search-bfs-large.strace.txt",
+        "/opt/nift-ab-old/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "target only",
+      "source_sha256": "20808cc9e18b93d241c114df6b17bb1a25fc9072146ae8751c45402de5c625ec",
+      "oracle_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651"
+    },
+    {
+      "family": "graphs-trees-search/bfs/large",
+      "version": "old",
+      "tool": "perf",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/old-graphs-trees-search-bfs-large.perf.data",
+        "--",
+        "/opt/nift-ab-old/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "target only",
+      "source_sha256": "20808cc9e18b93d241c114df6b17bb1a25fc9072146ae8751c45402de5c625ec",
+      "oracle_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651",
+      "report_exit": 0,
+      "report_timeout": false
+    },
+    {
+      "family": "graphs-trees-search/bfs/large",
+      "version": "new",
+      "tool": "heaptrack",
+      "command": [
+        "heaptrack",
+        "--record-only",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/new-graphs-trees-search-bfs-large.heaptrack",
+        "/opt/nift/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "launcher+target; expected target block occurs once",
+      "source_sha256": "20808cc9e18b93d241c114df6b17bb1a25fc9072146ae8751c45402de5c625ec",
+      "oracle_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651",
+      "trace_files": [
+        "new-graphs-trees-search-bfs-large.heaptrack.zst"
+      ],
+      "report_exit": 0,
+      "report_timeout": false,
+      "allocation_summary_lines": [
+        "calls to allocation functions: 3842094 (828751/s)",
+        "peak heap memory consumption: 27.15M",
+        "total memory leaked: 4.10K"
+      ]
+    },
+    {
+      "family": "graphs-trees-search/bfs/large",
+      "version": "new",
+      "tool": "strace",
+      "command": [
+        "strace",
+        "-f",
+        "-c",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/new-graphs-trees-search-bfs-large.strace.txt",
+        "/opt/nift/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "target only",
+      "source_sha256": "20808cc9e18b93d241c114df6b17bb1a25fc9072146ae8751c45402de5c625ec",
+      "oracle_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651"
+    },
+    {
+      "family": "graphs-trees-search/bfs/large",
+      "version": "new",
+      "tool": "perf",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/new-graphs-trees-search-bfs-large.perf.data",
+        "--",
+        "/opt/nift/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "target only",
+      "source_sha256": "20808cc9e18b93d241c114df6b17bb1a25fc9072146ae8751c45402de5c625ec",
+      "oracle_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651",
+      "report_exit": 0,
+      "report_timeout": false
+    },
+    {
+      "family": "arrays-strings-hash/frequency-count/large",
+      "version": "old",
+      "tool": "heaptrack",
+      "command": [
+        "heaptrack",
+        "--record-only",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/old-arrays-strings-hash-frequency-count-large.heaptrack",
+        "/opt/nift-ab-old/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "launcher+target; expected target block occurs once",
+      "source_sha256": "3fee2c5577c435c3358795845ed0d16be013b972a511c9be477ff9b3ca6a1807",
+      "oracle_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "trace_files": [
+        "old-arrays-strings-hash-frequency-count-large.heaptrack.zst"
+      ],
+      "report_exit": 0,
+      "report_timeout": false,
+      "allocation_summary_lines": [
+        "calls to allocation functions: 1501237 (823498/s)",
+        "peak heap memory consumption: 117.13K",
+        "total memory leaked: 4.10K"
+      ]
+    },
+    {
+      "family": "arrays-strings-hash/frequency-count/large",
+      "version": "old",
+      "tool": "strace",
+      "command": [
+        "strace",
+        "-f",
+        "-c",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/old-arrays-strings-hash-frequency-count-large.strace.txt",
+        "/opt/nift-ab-old/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "target only",
+      "source_sha256": "3fee2c5577c435c3358795845ed0d16be013b972a511c9be477ff9b3ca6a1807",
+      "oracle_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634"
+    },
+    {
+      "family": "arrays-strings-hash/frequency-count/large",
+      "version": "old",
+      "tool": "perf",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/old-arrays-strings-hash-frequency-count-large.perf.data",
+        "--",
+        "/opt/nift-ab-old/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "target only",
+      "source_sha256": "3fee2c5577c435c3358795845ed0d16be013b972a511c9be477ff9b3ca6a1807",
+      "oracle_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "report_exit": 0,
+      "report_timeout": false
+    },
+    {
+      "family": "arrays-strings-hash/frequency-count/large",
+      "version": "new",
+      "tool": "heaptrack",
+      "command": [
+        "heaptrack",
+        "--record-only",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/new-arrays-strings-hash-frequency-count-large.heaptrack",
+        "/opt/nift/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "launcher+target; expected target block occurs once",
+      "source_sha256": "3fee2c5577c435c3358795845ed0d16be013b972a511c9be477ff9b3ca6a1807",
+      "oracle_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "trace_files": [
+        "new-arrays-strings-hash-frequency-count-large.heaptrack.zst"
+      ],
+      "report_exit": 0,
+      "report_timeout": false,
+      "allocation_summary_lines": [
+        "calls to allocation functions: 1501254 (748008/s)",
+        "peak heap memory consumption: 119.75K",
+        "total memory leaked: 4.10K"
+      ]
+    },
+    {
+      "family": "arrays-strings-hash/frequency-count/large",
+      "version": "new",
+      "tool": "strace",
+      "command": [
+        "strace",
+        "-f",
+        "-c",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/new-arrays-strings-hash-frequency-count-large.strace.txt",
+        "/opt/nift/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "target only",
+      "source_sha256": "3fee2c5577c435c3358795845ed0d16be013b972a511c9be477ff9b3ca6a1807",
+      "oracle_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634"
+    },
+    {
+      "family": "arrays-strings-hash/frequency-count/large",
+      "version": "new",
+      "tool": "perf",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/campaign/evidence/scripting-ab-diagnostic/instrumentation/new-arrays-strings-hash-frequency-count-large.perf.data",
+        "--",
+        "/opt/nift/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/large.f"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "correct": true,
+      "stdout_scope": "target only",
+      "source_sha256": "3fee2c5577c435c3358795845ed0d16be013b972a511c9be477ff9b3ca6a1807",
+      "oracle_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "report_exit": 0,
+      "report_timeout": false
+    }
+  ]
+}
