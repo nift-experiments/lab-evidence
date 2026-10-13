@@ -14,3 +14,5 @@ Other suites still collecting. No cross-benchmark shared root cause is inferred 
 | Website fresh-build path/filesystem probes | website-generator | Same-node freshfull+38.29%, syscallcount+73,389; profilesretained | regression | Confirmed testedboundary; rootcauseunproven |
 | Prepared template loops | template-engines | Same-node10k fresh−54.91%, source-render−71.82% | improvement | Three-pair diagnostic, rangeswidelyseparated |
 | Async queue | concurrency | Same-node100k4→4queue−67.04%;1kschedule change noisy | improvement inqueue | Three-pair diagnostic; no genericscheduler claim |
+
+Retained-runtime concurrency control: candidate schedule-1000 grows229.567→1646.006ms across ten sequential requests, post-responseRSS9808→18724kB; prior also slows. All60requests independentlyoraclechecked. This is a persistent lifetime/reuse weakness, not a statistically valid candidate-vs-prior regression or a proven leak. Rawrequesttrajectories remain separate from official fresh-runtime medians.

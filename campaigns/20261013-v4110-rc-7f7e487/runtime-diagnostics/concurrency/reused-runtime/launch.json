@@ -1,0 +1,35 @@
+{
+  "scope": "Separate ten-request retained-runtime diagnostic; not pooled with official isolated timings",
+  "case": {
+    "name": "schedule-1000",
+    "kind": "schedule",
+    "n": 1000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 50,
+    "warmups": 2
+  },
+  "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "prior_sha": "445f4d3545cf031bcce4bf77a2b4a61ffb3b4c4f",
+  "requests_per_runtime": 10,
+  "engines": [
+    "nift",
+    "python",
+    "node",
+    "bun",
+    "go",
+    "prior-nift"
+  ],
+  "timeout_per_request_seconds": 60,
+  "rss_guard_mib": 6144,
+  "sampler": "same frozen helper5ms sampled process-tree RSS, plus watchdog",
+  "binary_sha256": {
+    "nift": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606",
+    "python": "4e7a6eebdb5bc100c59217d6ee085d04244495113e347e77af4d589b679f63ce",
+    "node": "7fde7b8afa198da66257f42ee2001d874c7355631e6d1579a5fb5ef1f246df4c",
+    "bun": "7ce7d6b654eddeec20afddf2396317fba6dc19ab52788a27e894e1806bf8f24b",
+    "go": "d51a3308ccf4ff3add27a476ca3fd7fdd86453feda0e04fb5688a075e83dc998",
+    "prior-nift": "067b16513db463bc86c472efd9457679ae9f9a8773d16859b36d657dd2774b5c"
+  }
+}
