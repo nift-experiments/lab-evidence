@@ -1,0 +1,71 @@
+{
+  "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "scope": "local correctness only, historical supported matrix; no official measurements",
+  "pass": true,
+  "cells": 608,
+  "unsupported_cells": 32,
+  "independent_audit": {
+    "pass": true,
+    "supported_cells": 608,
+    "unsupported_cells": 32,
+    "measured_observations": 608,
+    "retained_warmups": 0,
+    "total_observations": 608,
+    "oracle": "Independent modular closed-form CPU oracle and polynomial fixture hash; exact canonical result digest/count in every observation",
+    "coverage": "Exact sample rounds, warmup flags, parameters and rotated participant order; no omitted/outlier observations",
+    "observations_sha256": "5afc828a26e4e44def928fd1230bb86804d0dfaf0e6d5d8b6e13e8baffa4ba5c"
+  },
+  "semantics": {
+    "pass": true,
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "nift_cancel": "No public future/thread cancellation API in frozen source; explicit cooperative atomic stop token required",
+    "nift_error": "Recoverable future error arrives on await; successful sibling finishes; repeated await re-observes same error",
+    "worker_limits": "Nift/JS/Go active concurrency never exceeds 1/2/4; Python distinct worker process count <= requested max_workers"
+  },
+  "versions": {
+    "nift": "Nift v4.11.0",
+    "python": "Python 3.14.4",
+    "node": "v24.21.0",
+    "bun": "1.4.3",
+    "go": "go version go1.27.2 linux/amd64"
+  },
+  "binary_sha256": {
+    "nift": "f13f0b5c99afa3c4afa320d33cad88f0819d3fad384dc3a6d51364d79206e11e",
+    "python": "4e7a6eebdb5bc100c59217d6ee085d04244495113e347e77af4d589b679f63ce",
+    "node": "7fde7b8afa198da66257f42ee2001d874c7355631e6d1579a5fb5ef1f246df4c",
+    "bun": "7ce7d6b654eddeec20afddf2396317fba6dc19ab52788a27e894e1806bf8f24b",
+    "go": "cd6f9c431dc1c17cbd4a33cf35fd3520a4dd3456757628b3907e8cda999ca97c"
+  },
+  "held_10000_bounded_probe": {
+    "case": "waiting-memory-10000",
+    "candidate": "7f7e487c47a87e871dfef53345e2b71288008bff",
+    "scope": "untimed bounded local capability diagnostic",
+    "rss_guard_mib": 1536,
+    "pass_": false,
+    "error": "participant exited before complete response",
+    "guard": [
+      "RSS guard >1536 MiB"
+    ],
+    "peak_sampled_tree_rss_mib": 1541.92578125
+  },
+  "held_probe_conclusion": "Candidate exceeded6144MiB process-tree RSS before READY, watchdog killed process group; censored lower bound, not proof of8GiB infeasibility. No10k held-task supported extension certified; historical matrix retained.",
+  "receipt_directory": "/tmp/runtime-suite-refresh-certification/concurrency/work",
+  "held_10000_bounded_probe_6gib": {
+    "case": "waiting-memory-10000",
+    "candidate": "7f7e487c47a87e871dfef53345e2b71288008bff",
+    "scope": "untimed bounded local capability diagnostic",
+    "rss_guard_mib": 6144,
+    "timeout_seconds": 90,
+    "pass_": false,
+    "error": "participant exited before complete response",
+    "guard": [
+      "RSS guard >6144MiB"
+    ],
+    "peak_sampled_tree_rss_mib": 6144.5625
+  }
+}

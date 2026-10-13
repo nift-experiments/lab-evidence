@@ -1,0 +1,90 @@
+{
+  "kind": "postofficial-one-invocation-softwareCPUprofiles-not-timing-samples",
+  "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "perf_version": "perf version 6.8.12\n",
+  "perf_event_paranoid": "4",
+  "settings_changed": false,
+  "records": [
+    {
+      "family": "sanity/function-calls",
+      "size": "large",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/campaign/evidence/diagnostics/function-calls-large.perf.data",
+        "--",
+        "/opt/nift/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/sanity/function-calls/large.f"
+      ],
+      "exit_code": 0,
+      "source_sha256": "c15cf8d1cf4880e499521284b3cc1362b90d2c726f7da32212bc004aca7b0201",
+      "expected_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "correct": true,
+      "profile_supported": true,
+      "self_report_exit": 0,
+      "cumulative_report_exit": 0
+    },
+    {
+      "family": "sanity/loops",
+      "size": "large",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/campaign/evidence/diagnostics/loops-large.perf.data",
+        "--",
+        "/opt/nift/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/sanity/loops/large.f"
+      ],
+      "exit_code": 0,
+      "source_sha256": "17001bd764deca3758338d11688f75778f2cbef42e5dfdab80dfb06c288821eb",
+      "expected_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "correct": true,
+      "profile_supported": true,
+      "self_report_exit": 0,
+      "cumulative_report_exit": 0
+    },
+    {
+      "family": "structured-data/json-parse",
+      "size": "large",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/campaign/evidence/diagnostics/json-parse-large.perf.data",
+        "--",
+        "/opt/nift/nift",
+        "/opt/campaign/scripting-benchmark/benchmarks/sources/structured-data/json-parse/large.f"
+      ],
+      "exit_code": 0,
+      "source_sha256": "1d94ffa8a0ad98a2e2d507c4d6377cc0abb1116aa83dfc4bcbcaa0dd1d0e5b68",
+      "expected_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "correct": true,
+      "profile_supported": true,
+      "self_report_exit": 0,
+      "cumulative_report_exit": 0
+    }
+  ]
+}

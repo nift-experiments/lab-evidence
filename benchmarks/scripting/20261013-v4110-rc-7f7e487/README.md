@@ -1,0 +1,3 @@
+# Accepted scripting refresh
+
+Candidate7f7e487c47a87e871dfef53345e2b71288008bff; frozen suitef889fff4af94658259932f611d4b0ad681c1eebf. All188jobs/1880measured+376warmup observations independently audited, full distributions regenerated exactly, four negative controls rejected. Source/default protocol preserved. Raw data, tools/hashes, correctness and collection receipts retained here. Current peer comparisons are same-node; old-to-new mappings are cross-node contextual trends, not isolated software A/B. Python binary changed despite unchanged version; other peer binary hashes match prior cohort. No outliers discarded or selective reruns. Subsequent diagnostic/qualitative publication evidence is appended separately.

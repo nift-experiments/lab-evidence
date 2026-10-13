@@ -1,0 +1,306 @@
+{
+  "units": "milliseconds median",
+  "boundary": "freshprocess includingruntime startup andwork; same dedicatedhost, samples10",
+  "rows": [
+    {
+      "family": "sanity/function-calls",
+      "size": "large",
+      "nift_ms": 546.05646,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 1.8889019999999999,
+      "nift_over_lowest_peer": 289.0867075157949,
+      "absolute_gap_ms": 544.167558,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "arrays-strings-hash/frequency-count",
+      "size": "large",
+      "nift_ms": 589.3696805,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 3.9566235,
+      "nift_over_lowest_peer": 148.95773643865786,
+      "absolute_gap_ms": 585.413057,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "arrays-strings-hash/sliding-window",
+      "size": "large",
+      "nift_ms": 328.92620999999997,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 3.7759685000000003,
+      "nift_over_lowest_peer": 87.11042213408294,
+      "absolute_gap_ms": 325.1502415,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "arrays-strings-hash/map-set",
+      "size": "large",
+      "nift_ms": 284.9634285,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 3.7697054999999997,
+      "nift_over_lowest_peer": 75.59302139119357,
+      "absolute_gap_ms": 281.19372300000003,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "dynamic-programming/fibonacci",
+      "size": "large",
+      "nift_ms": 164.16812099999999,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 2.5494065,
+      "nift_over_lowest_peer": 64.39464283157668,
+      "absolute_gap_ms": 161.61871449999998,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "arrays-strings-hash/scan",
+      "size": "large",
+      "nift_ms": 103.6179595,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 1.8849339999999999,
+      "nift_over_lowest_peer": 54.971664525123956,
+      "absolute_gap_ms": 101.7330255,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "graphs-trees-search/bfs",
+      "size": "large",
+      "nift_ms": 1002.5304045,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 21.869147,
+      "nift_over_lowest_peer": 45.84222715682509,
+      "absolute_gap_ms": 980.6612575,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "sanity/loops",
+      "size": "large",
+      "nift_ms": 82.52454800000001,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 1.9445725,
+      "nift_over_lowest_peer": 42.43840124243247,
+      "absolute_gap_ms": 80.5799755,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "arrays-strings-hash/sort-index",
+      "size": "large",
+      "nift_ms": 904.6636874999999,
+      "lowest_peer": "python",
+      "lowest_peer_ms": 30.6326595,
+      "nift_over_lowest_peer": 29.532652478313217,
+      "absolute_gap_ms": 874.0310279999999,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "structured-data/json-transform",
+      "size": "large",
+      "nift_ms": 669.3159880000001,
+      "lowest_peer": "python",
+      "lowest_peer_ms": 95.607223,
+      "nift_over_lowest_peer": 7.000684331140964,
+      "absolute_gap_ms": 573.7087650000001,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "graphs-trees-search/bfs",
+      "size": "small",
+      "nift_ms": 14.470966,
+      "lowest_peer": "lua54",
+      "lowest_peer_ms": 2.5290765,
+      "nift_over_lowest_peer": 5.7218379910611645,
+      "absolute_gap_ms": 11.9418895,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "sanity/function-calls",
+      "size": "small",
+      "nift_ms": 10.0274205,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 1.764357,
+      "nift_over_lowest_peer": 5.683328544053159,
+      "absolute_gap_ms": 8.2630635,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "arrays-strings-hash/frequency-count",
+      "size": "small",
+      "nift_ms": 9.812756499999999,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 1.8285825,
+      "nift_over_lowest_peer": 5.366318719554627,
+      "absolute_gap_ms": 7.984173999999999,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "structured-data/json-traverse",
+      "size": "large",
+      "nift_ms": 473.779096,
+      "lowest_peer": "node",
+      "lowest_peer_ms": 94.393394,
+      "nift_over_lowest_peer": 5.019197593424811,
+      "absolute_gap_ms": 379.385702,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "arrays-strings-hash/sort-index",
+      "size": "small",
+      "nift_ms": 9.5409635,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 1.985697,
+      "nift_over_lowest_peer": 4.8048435889262056,
+      "absolute_gap_ms": 7.5552665,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "arrays-strings-hash/sliding-window",
+      "size": "small",
+      "nift_ms": 7.923267,
+      "lowest_peer": "lua54",
+      "lowest_peer_ms": 1.9041204999999999,
+      "nift_over_lowest_peer": 4.161116378926649,
+      "absolute_gap_ms": 6.0191465,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "filesystem/traverse",
+      "size": "large",
+      "nift_ms": 41.798467,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 10.6082465,
+      "nift_over_lowest_peer": 3.9401862503854903,
+      "absolute_gap_ms": 31.190220500000002,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "arrays-strings-hash/map-set",
+      "size": "small",
+      "nift_ms": 6.9397155,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 1.952072,
+      "nift_over_lowest_peer": 3.5550509919716076,
+      "absolute_gap_ms": 4.9876435,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "structured-data/json-parse",
+      "size": "large",
+      "nift_ms": 295.194681,
+      "lowest_peer": "node",
+      "lowest_peer_ms": 98.648738,
+      "nift_over_lowest_peer": 2.9923817271742497,
+      "absolute_gap_ms": 196.54594300000002,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "arrays-strings-hash/scan",
+      "size": "small",
+      "nift_ms": 5.3154710000000005,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 1.8111985,
+      "nift_over_lowest_peer": 2.934781030350898,
+      "absolute_gap_ms": 3.504272500000001,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "sanity/loops",
+      "size": "small",
+      "nift_ms": 5.250509,
+      "lowest_peer": "lua54",
+      "lowest_peer_ms": 1.8021975000000001,
+      "nift_over_lowest_peer": 2.9133926775506014,
+      "absolute_gap_ms": 3.4483115,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "sanity/noop",
+      "size": "small",
+      "nift_ms": 5.85518,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 2.1798219999999997,
+      "nift_over_lowest_peer": 2.6860817075889685,
+      "absolute_gap_ms": 3.675358,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "dynamic-programming/fibonacci",
+      "size": "small",
+      "nift_ms": 4.146639,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 1.870711,
+      "nift_over_lowest_peer": 2.216611224288519,
+      "absolute_gap_ms": 2.2759280000000004,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "sanity/output",
+      "size": "large",
+      "nift_ms": 3.8140099999999997,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 1.765096,
+      "nift_over_lowest_peer": 2.160794653661897,
+      "absolute_gap_ms": 2.048914,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "sanity/output",
+      "size": "small",
+      "nift_ms": 3.659413,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 1.7616065,
+      "nift_over_lowest_peer": 2.077315791012351,
+      "absolute_gap_ms": 1.8978064999999997,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "sanity/noop",
+      "size": "large",
+      "nift_ms": 3.3099965,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 1.63405,
+      "nift_over_lowest_peer": 2.0256396683088034,
+      "absolute_gap_ms": 1.6759465,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "filesystem/traverse",
+      "size": "small",
+      "nift_ms": 4.674959,
+      "lowest_peer": "luajit",
+      "lowest_peer_ms": 6.718750999999999,
+      "nift_over_lowest_peer": 0.6958077476007074,
+      "absolute_gap_ms": -2.043791999999999,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "structured-data/json-transform",
+      "size": "small",
+      "nift_ms": 10.1851365,
+      "lowest_peer": "python",
+      "lowest_peer_ms": 32.257299,
+      "nift_over_lowest_peer": 0.31574672448551877,
+      "absolute_gap_ms": -22.072162500000005,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "structured-data/json-traverse",
+      "size": "small",
+      "nift_ms": 8.186332499999999,
+      "lowest_peer": "python",
+      "lowest_peer_ms": 34.8040745,
+      "nift_over_lowest_peer": 0.23521190026185007,
+      "absolute_gap_ms": -26.617742,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    },
+    {
+      "family": "structured-data/json-parse",
+      "size": "small",
+      "nift_ms": 6.5213339999999995,
+      "lowest_peer": "python",
+      "lowest_peer_ms": 38.0548105,
+      "nift_over_lowest_peer": 0.1713668762060975,
+      "absolute_gap_ms": -31.533476500000003,
+      "warning": "Lowest descriptive median; not universalranking or statisticalsignificance."
+    }
+  ]
+}

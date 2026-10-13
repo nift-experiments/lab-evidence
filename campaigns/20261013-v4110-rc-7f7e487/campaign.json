@@ -16,7 +16,10 @@
     "official_artifacts": "independently built at identical /opt/nift paths and default release flags on each dedicated host; identity comparison pending",
     "official_cli_sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606",
     "all_eight_cli_hashes_equal": true,
-    "affinity_note": "Hosts expose CPUs0-3; suites preserve their established affinity boundary (shell/scripting single CPU where applicable), actual affinity recorded per run."
+    "affinity_note": "Hosts expose CPUs0-3; suites preserve their established affinity boundary (shell/scripting single CPU where applicable), actual affinity recorded per run.",
+    "embedding_static_sha256": "5a911d8144969c1452209d4772bcc5cffc7bad0045031ec19ec37366d94eeea2",
+    "embedding_shared_sha256": "777c4fb3a3d348aa4f84db86597976b857ec2e849db438fa7040174956621f49",
+    "embedding_host": "template-engines"
   },
   "comparability": "Same-suite same-node peers primary. Cross-node historical changes secondary, matching contracts required. No absolute cross-category machine comparisons.",
   "suites": {
@@ -25,9 +28,9 @@
       "pre_refresh_suite_sha": "b0fcbfe830e9766d18591f40049bd2d0d7d99201",
       "suite_sha": "e95bfe88ac9e1eaf67cfeb8f67020fc3373ab81e",
       "nift_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
-      "stage": "tool_installation_and_local_certification",
-      "local_certification": "pending",
-      "cloud_measurements": "not_started",
+      "stage": "official_measurement",
+      "local_certification": "pass",
+      "cloud_measurements": "running",
       "observations_completed": 0,
       "audit": "pending",
       "diagnostics": "pending",
@@ -58,16 +61,22 @@
         "version": "Nift v4.11.0",
         "binary_sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606",
         "clean_after_build": true
-      }
+      },
+      "observations_planned": 9348,
+      "measured_planned": 8880,
+      "warmups_planned": 468,
+      "output_directory": "/opt/results/build-systems-20261013-v4110-rc-7f7e487",
+      "launcher_pid": 15214,
+      "cloud_certification": "pass"
     },
     "concurrency": {
       "repository": "https://github.com/nift-experiments/concurrency.git",
       "pre_refresh_suite_sha": "787fec146d975a69aea5f99a233b918388fcdc30",
       "suite_sha": "d6d0cac9e7dd65d12b5bbccd0ec5b542d187c0a6",
       "nift_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
-      "stage": "tool_installation_and_local_certification",
-      "local_certification": "pending",
-      "cloud_measurements": "not_started",
+      "stage": "official_measurement",
+      "local_certification": "pass",
+      "cloud_measurements": "running",
       "observations_completed": 0,
       "audit": "pending",
       "diagnostics": "pending",
@@ -98,16 +107,22 @@
         "version": "Nift v4.11.0",
         "binary_sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606",
         "clean_after_build": true
-      }
+      },
+      "measured_planned": 10290,
+      "warmups_planned": 1216,
+      "observations_planned": 11506,
+      "launcher_pid": 27719,
+      "output_directory": "/opt/concurrency/work/refresh-official",
+      "cloud_certification": "pass"
     },
     "filesystem-automation": {
       "repository": "https://github.com/nift-experiments/filesystem-automation.git",
       "pre_refresh_suite_sha": "97aab31427708f4864b6a685839829a8f4175fb8",
-      "suite_sha": null,
+      "suite_sha": "75e77bb4bb6fb0b8c49920f641c77b394aec5985",
       "nift_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
-      "stage": "tool_installation_and_local_certification",
-      "local_certification": "pending",
-      "cloud_measurements": "not_started",
+      "stage": "official_measurement",
+      "local_certification": "pass",
+      "cloud_measurements": "running",
       "observations_completed": 0,
       "audit": "pending",
       "diagnostics": "pending",
@@ -138,18 +153,26 @@
         "version": "Nift v4.11.0",
         "binary_sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606",
         "clean_after_build": true
-      }
+      },
+      "measured_planned": 14264,
+      "warmups_planned": 752,
+      "observations_planned": 15016,
+      "cloud_certification": "pass",
+      "launcher_pid": 10722,
+      "output_directory": "/opt/filesystem/suite/work/refresh-official",
+      "supplement_suite_sha": "1ab31488eb949eb8f8cd6d50b0eb9fd59e1ad78e",
+      "supplement_output_directory": "/opt/filesystem/filter-supplement/work/refresh-official"
     },
     "scripting-benchmark": {
       "repository": "git@github.com:nift-dev/scripting-benchmark.git",
       "pre_refresh_suite_sha": "1a43c3d24822b8c1c69352c2cee44b71845321ba",
       "suite_sha": "f889fff4af94658259932f611d4b0ad681c1eebf",
       "nift_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
-      "stage": "tool_installation_and_local_certification",
-      "local_certification": "pending",
-      "cloud_measurements": "not_started",
-      "observations_completed": 0,
-      "audit": "pending",
+      "stage": "accepted_results_publication_pending",
+      "local_certification": "pass",
+      "cloud_measurements": "complete",
+      "observations_completed": 2256,
+      "audit": "pass",
       "diagnostics": "pending",
       "publication": "pending",
       "live": "pending",
@@ -178,12 +201,19 @@
         "version": "Nift v4.11.0",
         "binary_sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606",
         "clean_after_build": true
-      }
+      },
+      "measured_planned": 1880,
+      "warmups_planned": 376,
+      "observations_planned": 2256,
+      "launcher_pid": 9082,
+      "output_directory": "/opt/campaign/evidence/official-refresh",
+      "cloud_certification": "pass",
+      "evidence_path": "benchmarks/scripting/20261013-v4110-rc-7f7e487"
     },
     "shell-benchmark": {
       "repository": "https://github.com/nift-dev/shell-benchmark.git",
       "pre_refresh_suite_sha": "86388ac7d43da8409b4f1525c97a427d476a1c05",
-      "suite_sha": null,
+      "suite_sha": "aec1349fd0ba986108d9c851944e41e5ed330b6f",
       "nift_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
       "stage": "tool_installation_and_local_certification",
       "local_certification": "pending",
@@ -218,16 +248,19 @@
         "version": "Nift v4.11.0",
         "binary_sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606",
         "clean_after_build": true
-      }
+      },
+      "measured_planned": 7855,
+      "warmups_planned": 711,
+      "observations_planned": 8566
     },
     "task-runners": {
       "repository": "https://github.com/nift-experiments/task-runners.git",
       "pre_refresh_suite_sha": "b3db302064e2baef1a40ca5ad6f62639c6215fe9",
       "suite_sha": "f37b63bd13cf71256607ba4652bcc911e270f94e",
       "nift_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
-      "stage": "tool_installation_and_local_certification",
-      "local_certification": "pending",
-      "cloud_measurements": "not_started",
+      "stage": "official_measurement",
+      "local_certification": "pass",
+      "cloud_measurements": "running",
       "observations_completed": 0,
       "audit": "pending",
       "diagnostics": "pending",
@@ -258,16 +291,22 @@
         "version": "Nift v4.11.0",
         "binary_sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606",
         "clean_after_build": true
-      }
+      },
+      "measured_planned": 1434,
+      "warmups_planned": 93,
+      "observations_planned": 1527,
+      "cloud_certification": "pass",
+      "launcher_pid": 11642,
+      "output_directory": "/opt/results/task-runners-20261013-v4110-rc-7f7e487"
     },
     "template-engines": {
       "repository": "https://github.com/nift-experiments/template-engines.git",
       "pre_refresh_suite_sha": "9370f7128bc13743949b108feaf548d42f460ab8",
       "suite_sha": "3c0dcdd1aad3cbb0a0c638c9041233b1e329dc6f",
       "nift_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
-      "stage": "tool_installation_and_local_certification",
-      "local_certification": "pending",
-      "cloud_measurements": "not_started",
+      "stage": "official_measurement",
+      "local_certification": "pass",
+      "cloud_measurements": "running",
       "observations_completed": 0,
       "audit": "pending",
       "diagnostics": "pending",
@@ -298,16 +337,22 @@
         "version": "Nift v4.11.0",
         "binary_sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606",
         "clean_after_build": true
-      }
+      },
+      "measured_planned": 17950,
+      "warmups_planned": 750,
+      "observations_planned": 18700,
+      "launcher_pid": 10816,
+      "output_directory": "/opt/template-engines/work/refresh-official",
+      "cloud_certification": "pass"
     },
     "website-generator-benchmark": {
       "repository": "git@github.com:nift-dev/website-generator-benchmark.git",
       "pre_refresh_suite_sha": "be3bd5f8eb059d8a54197e4706dd1c11d442b97c",
-      "suite_sha": "13a35abb2f95b3ef6ab8fd65c1d26052476e5690",
+      "suite_sha": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
       "nift_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
-      "stage": "tool_installation_and_local_certification",
-      "local_certification": "pending",
-      "cloud_measurements": "not_started",
+      "stage": "official_measurement",
+      "local_certification": "pass",
+      "cloud_measurements": "running",
       "observations_completed": 0,
       "audit": "pending",
       "diagnostics": "pending",
@@ -338,7 +383,20 @@
         "version": "Nift v4.11.0",
         "binary_sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606",
         "clean_after_build": true
-      }
+      },
+      "measured_planned": 195,
+      "warmups_planned": 39,
+      "observations_planned": 234,
+      "launcher_pid": 8795,
+      "output_directory": "/opt/campaign/evidence/official-refresh",
+      "cloud_certification": "pass"
     }
+  },
+  "observations_planned_all_suites": 67153,
+  "monitoring": {
+    "automation_id": "continue-nift-candidate-benchmark-refresh",
+    "interval_minutes": 20,
+    "explicit_user_approval": true,
+    "status": "ACTIVE"
   }
 }

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/nick/Repositories/nift/nift-benchmarks/website-generator-benchmark/scripts/targeted_campaign.py", line 39, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/nick/Repositories/nift/nift-benchmarks/website-generator-benchmark/scripts/targeted_campaign.py", line 15, in main
+    if a.expected_nift_sha256 and result['tools']['Nift']['sha256']!=a.expected_nift_sha256:raise RuntimeError('Nift binary SHA-256 pin mismatch')
+                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Nift binary SHA-256 pin mismatch

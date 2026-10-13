@@ -1,0 +1,47 @@
+{
+  "pass": true,
+  "raw_sha256": "9d903c3ff954c4e7dff1e73dae621a840a5fe846b6b207cdfb025039a6a77f8d",
+  "summary_sha256": "32fc5fe9cc8648a92d647326fd9f36ad7a8fb1e5227c0c262a909ee82ac02389",
+  "jobs": 188,
+  "measured": 1880,
+  "warmups": 376,
+  "observations": 2256,
+  "complete_expected_matrix": true,
+  "every_source_oracle_checked": true,
+  "all_distribution_fields_exactly_recomputed": true,
+  "correctness": "Every recorded observation correct, exit0 and nottimeout; source/oracle hashes independently checked. Raw stdout text is not retained by this legacy harness; correctness execution gate remains necessary.",
+  "negative_checks": {
+    "wrong-summary": "rejected",
+    "wrong-correctness": "rejected",
+    "wrong-count": "rejected",
+    "wrong-source": "rejected"
+  },
+  "suite_sha": "f889fff4af94658259932f611d4b0ad681c1eebf",
+  "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "comparator_changes_from_prior": {
+    "python": {
+      "version_changed": false,
+      "binary_changed": true
+    },
+    "ruby": {
+      "version_changed": false,
+      "binary_changed": false
+    },
+    "lua54": {
+      "version_changed": false,
+      "binary_changed": false
+    },
+    "luajit": {
+      "version_changed": false,
+      "binary_changed": false
+    },
+    "node": {
+      "version_changed": false,
+      "binary_changed": false
+    },
+    "bash": {
+      "version_changed": false,
+      "binary_changed": false
+    }
+  }
+}

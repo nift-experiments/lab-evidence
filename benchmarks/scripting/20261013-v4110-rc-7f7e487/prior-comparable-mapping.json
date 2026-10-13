@@ -1,0 +1,333 @@
+{
+  "prior_series": "20261010-v4100",
+  "prior_raw_sha256": "3f78c86fbe34857311b65230ce480794be092bdb8eff622972a2a174260e2857",
+  "qualification": "Same sources/oracles/sample policy; different virtual hosts and dates. Do not attribute trend solely to Nift.",
+  "comparator_changes": {
+    "python": {
+      "version_changed": false,
+      "binary_changed": true
+    },
+    "ruby": {
+      "version_changed": false,
+      "binary_changed": false
+    },
+    "lua54": {
+      "version_changed": false,
+      "binary_changed": false
+    },
+    "luajit": {
+      "version_changed": false,
+      "binary_changed": false
+    },
+    "node": {
+      "version_changed": false,
+      "binary_changed": false
+    },
+    "bash": {
+      "version_changed": false,
+      "binary_changed": false
+    }
+  },
+  "rows": [
+    {
+      "id": "sanity/noop/small/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 4.720831,
+      "current_median_ms": 5.85518,
+      "percent_improvement": -24.028587339813676,
+      "prior_over_current": 0.8062657339313225,
+      "current_over_prior": 1.2402858733981368,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "sanity/noop/large/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 2.552508,
+      "current_median_ms": 3.3099965,
+      "percent_improvement": -29.67624391382907,
+      "prior_over_current": 0.7711512685889547,
+      "current_over_prior": 1.2967624391382906,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "sanity/output/small/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 2.9589499999999997,
+      "current_median_ms": 3.659413,
+      "percent_improvement": -23.672687946737867,
+      "prior_over_current": 0.8085859672029366,
+      "current_over_prior": 1.2367268794673787,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "sanity/output/large/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 2.7093485,
+      "current_median_ms": 3.8140099999999997,
+      "percent_improvement": -40.77221885630438,
+      "prior_over_current": 0.7103674347995942,
+      "current_over_prior": 1.4077221885630438,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "sanity/loops/small/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 3.8523180000000004,
+      "current_median_ms": 5.250509,
+      "percent_improvement": -36.29479705465643,
+      "prior_over_current": 0.7337037228200162,
+      "current_over_prior": 1.3629479705465644,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "sanity/loops/large/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 74.996681,
+      "current_median_ms": 82.52454800000001,
+      "percent_improvement": -10.037600197267416,
+      "prior_over_current": 0.9087802698416474,
+      "current_over_prior": 1.1003760019726743,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "sanity/function-calls/small/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 4.986825,
+      "current_median_ms": 10.0274205,
+      "percent_improvement": -101.07825119189064,
+      "prior_over_current": 0.4973188269106696,
+      "current_over_prior": 2.0107825119189062,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "sanity/function-calls/large/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 185.1031385,
+      "current_median_ms": 546.05646,
+      "percent_improvement": -195.00118929642028,
+      "prior_over_current": 0.33898168423829284,
+      "current_over_prior": 2.950011892964203,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "arrays-strings-hash/scan/small/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 4.129462999999999,
+      "current_median_ms": 5.3154710000000005,
+      "percent_improvement": -28.720635104370743,
+      "prior_over_current": 0.7768762166137299,
+      "current_over_prior": 1.2872063510437075,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "arrays-strings-hash/scan/large/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 88.809403,
+      "current_median_ms": 103.6179595,
+      "percent_improvement": -16.674536704182096,
+      "prior_over_current": 0.8570850403592439,
+      "current_over_prior": 1.1667453670418209,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "arrays-strings-hash/frequency-count/small/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 7.111796,
+      "current_median_ms": 9.812756499999999,
+      "percent_improvement": -37.97859921741286,
+      "prior_over_current": 0.7247500740490198,
+      "current_over_prior": 1.3797859921741287,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "arrays-strings-hash/frequency-count/large/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 385.5470675,
+      "current_median_ms": 589.3696805,
+      "percent_improvement": -52.86581851643832,
+      "prior_over_current": 0.6541684790654921,
+      "current_over_prior": 1.5286581851643832,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "arrays-strings-hash/sliding-window/small/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 5.866583,
+      "current_median_ms": 7.923267,
+      "percent_improvement": -35.05761360573948,
+      "prior_over_current": 0.7404247515576593,
+      "current_over_prior": 1.350576136057395,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "arrays-strings-hash/sliding-window/large/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 271.35886800000003,
+      "current_median_ms": 328.92620999999997,
+      "percent_improvement": -21.21446865705525,
+      "prior_over_current": 0.8249840230123348,
+      "current_over_prior": 1.2121446865705525,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "arrays-strings-hash/sort-index/small/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 8.2300735,
+      "current_median_ms": 9.5409635,
+      "percent_improvement": -15.92804730115716,
+      "prior_over_current": 0.8626040231681004,
+      "current_over_prior": 1.1592804730115716,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "arrays-strings-hash/sort-index/large/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 876.8678605,
+      "current_median_ms": 904.6636874999999,
+      "percent_improvement": -3.1698991663522054,
+      "prior_over_current": 0.969274961088786,
+      "current_over_prior": 1.031698991663522,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "arrays-strings-hash/map-set/small/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 5.172631,
+      "current_median_ms": 6.9397155,
+      "percent_improvement": -34.16219908205322,
+      "prior_over_current": 0.7453664346902982,
+      "current_over_prior": 1.3416219908205322,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "arrays-strings-hash/map-set/large/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 215.187962,
+      "current_median_ms": 284.9634285,
+      "percent_improvement": -32.42535774375707,
+      "prior_over_current": 0.7551423813670181,
+      "current_over_prior": 1.3242535774375708,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "dynamic-programming/fibonacci/small/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 3.0833805,
+      "current_median_ms": 4.146639,
+      "percent_improvement": -34.483531954619295,
+      "prior_over_current": 0.7435854676522359,
+      "current_over_prior": 1.344835319546193,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "dynamic-programming/fibonacci/large/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 152.071131,
+      "current_median_ms": 164.16812099999999,
+      "percent_improvement": -7.954823456925547,
+      "prior_over_current": 0.9263134040499862,
+      "current_over_prior": 1.0795482345692555,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "graphs-trees-search/bfs/small/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 10.358252499999999,
+      "current_median_ms": 14.470966,
+      "percent_improvement": -39.70470405119012,
+      "prior_over_current": 0.7157955108180061,
+      "current_over_prior": 1.3970470405119013,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "graphs-trees-search/bfs/large/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 654.593431,
+      "current_median_ms": 1002.5304045,
+      "percent_improvement": -53.15314163303909,
+      "prior_over_current": 0.6529412255845454,
+      "current_over_prior": 1.5315314163303908,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "structured-data/json-parse/small/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 4.877394499999999,
+      "current_median_ms": 6.5213339999999995,
+      "percent_improvement": -33.70528055501765,
+      "prior_over_current": 0.7479136170605585,
+      "current_over_prior": 1.3370528055501765,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "structured-data/json-parse/large/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 192.275902,
+      "current_median_ms": 295.194681,
+      "percent_improvement": -53.526613543074156,
+      "prior_over_current": 0.6513528677029246,
+      "current_over_prior": 1.5352661354307415,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "structured-data/json-transform/small/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 7.4393715,
+      "current_median_ms": 10.1851365,
+      "percent_improvement": -36.90856142887878,
+      "prior_over_current": 0.7304145113813644,
+      "current_over_prior": 1.3690856142887877,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "structured-data/json-transform/large/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 464.0249965,
+      "current_median_ms": 669.3159880000001,
+      "percent_improvement": -44.24136480759611,
+      "prior_over_current": 0.6932824029597212,
+      "current_over_prior": 1.442413648075961,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "structured-data/json-traverse/small/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 6.3799155,
+      "current_median_ms": 8.186332499999999,
+      "percent_improvement": -28.31412108828085,
+      "prior_over_current": 0.7793374505616527,
+      "current_over_prior": 1.2831412108828086,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "structured-data/json-traverse/large/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 357.8462725,
+      "current_median_ms": 473.779096,
+      "percent_improvement": -32.3973818953221,
+      "prior_over_current": 0.755301944558567,
+      "current_over_prior": 1.323973818953221,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "filesystem/traverse/small/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 3.623954,
+      "current_median_ms": 4.674959,
+      "percent_improvement": -29.00160984383357,
+      "prior_over_current": 0.775184124609435,
+      "current_over_prior": 1.2900160984383358,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    },
+    {
+      "id": "filesystem/traverse/large/nift",
+      "same_workload_contract": true,
+      "prior_median_ms": 32.0369135,
+      "current_median_ms": 41.798467,
+      "percent_improvement": -30.469706452839176,
+      "prior_over_current": 0.7664614470190975,
+      "current_over_prior": 1.3046970645283917,
+      "qualification": "Different disposable virtual machines and observation dates; contextual version trend, not isolated causal effect."
+    }
+  ]
+}

@@ -1,0 +1,706 @@
+{
+  "suite_sha": "d6d0cac9e7dd65d12b5bbccd0ec5b542d187c0a6",
+  "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "suite_clean": true,
+  "core_clean": true,
+  "actual_versions": {
+    "nift": "Nift v4.11.0",
+    "python": "Python 3.14.4",
+    "node": "v24.21.0",
+    "bun": "1.4.3",
+    "go": "go version go1.27.2 linux/amd64"
+  },
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "binary_sha256": {
+    "nift": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606",
+    "python": "4e7a6eebdb5bc100c59217d6ee085d04244495113e347e77af4d589b679f63ce",
+    "node": "7fde7b8afa198da66257f42ee2001d874c7355631e6d1579a5fb5ef1f246df4c",
+    "bun": "7ce7d6b654eddeec20afddf2396317fba6dc19ab52788a27e894e1806bf8f24b",
+    "go": "d51a3308ccf4ff3add27a476ca3fd7fdd86453feda0e04fb5688a075e83dc998"
+  },
+  "static_library_sha256": null,
+  "shared_library_sha256": null,
+  "download_sha256": "fd8e59d5a511510f6a298afb548f18c7d2b1be404d8b4a27d94fbe49f56cb2d6  work/tools/node.tar\necbadb99091a3f46e31f5f934b068b1864eafa7995211b39eaddf76996045fe5  work/tools/go.tar\n3e730528d89775f03f87f05c06787c4df4099d0a37f3f252e7b829cb23816e18  work/tools/bun.zip\n",
+  "scenario_plan": [
+    {
+      "name": "schedule-10",
+      "kind": "schedule",
+      "n": 10,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 50,
+      "warmups": 2
+    },
+    {
+      "name": "schedule-100",
+      "kind": "schedule",
+      "n": 100,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 50,
+      "warmups": 2
+    },
+    {
+      "name": "schedule-1000",
+      "kind": "schedule",
+      "n": 1000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 50,
+      "warmups": 2
+    },
+    {
+      "name": "schedule-10000",
+      "kind": "schedule",
+      "n": 10000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 5,
+      "warmups": 2
+    },
+    {
+      "name": "tiny-10",
+      "kind": "tiny",
+      "n": 10,
+      "workers": 4,
+      "iterations": 8,
+      "extra": 0,
+      "samples": 50,
+      "warmups": 2
+    },
+    {
+      "name": "tiny-100",
+      "kind": "tiny",
+      "n": 100,
+      "workers": 4,
+      "iterations": 8,
+      "extra": 0,
+      "samples": 50,
+      "warmups": 2
+    },
+    {
+      "name": "tiny-1000",
+      "kind": "tiny",
+      "n": 1000,
+      "workers": 4,
+      "iterations": 8,
+      "extra": 0,
+      "samples": 50,
+      "warmups": 2
+    },
+    {
+      "name": "tiny-10000",
+      "kind": "tiny",
+      "n": 10000,
+      "workers": 4,
+      "iterations": 8,
+      "extra": 0,
+      "samples": 5,
+      "warmups": 2
+    },
+    {
+      "name": "fan-10",
+      "kind": "fan",
+      "n": 10,
+      "workers": 4,
+      "iterations": 8,
+      "extra": 0,
+      "samples": 50,
+      "warmups": 2
+    },
+    {
+      "name": "fan-100",
+      "kind": "fan",
+      "n": 100,
+      "workers": 4,
+      "iterations": 8,
+      "extra": 0,
+      "samples": 50,
+      "warmups": 2
+    },
+    {
+      "name": "fan-1000",
+      "kind": "fan",
+      "n": 1000,
+      "workers": 4,
+      "iterations": 8,
+      "extra": 0,
+      "samples": 50,
+      "warmups": 2
+    },
+    {
+      "name": "wait-100",
+      "kind": "wait",
+      "n": 100,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 10,
+      "samples": 20,
+      "warmups": 2
+    },
+    {
+      "name": "wait-1000",
+      "kind": "wait",
+      "n": 1000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 10,
+      "samples": 20,
+      "warmups": 2
+    },
+    {
+      "name": "stagger-100",
+      "kind": "stagger",
+      "n": 100,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 20,
+      "warmups": 2
+    },
+    {
+      "name": "mixed-wait-100",
+      "kind": "mixed-wait",
+      "n": 100,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 20,
+      "warmups": 2
+    },
+    {
+      "name": "pool-light-1",
+      "kind": "pool",
+      "n": 64,
+      "workers": 1,
+      "iterations": 8,
+      "extra": 0,
+      "samples": 20,
+      "warmups": 2
+    },
+    {
+      "name": "pool-light-2",
+      "kind": "pool",
+      "n": 64,
+      "workers": 2,
+      "iterations": 8,
+      "extra": 0,
+      "samples": 20,
+      "warmups": 2
+    },
+    {
+      "name": "pool-light-4",
+      "kind": "pool",
+      "n": 64,
+      "workers": 4,
+      "iterations": 8,
+      "extra": 0,
+      "samples": 20,
+      "warmups": 2
+    },
+    {
+      "name": "pool-medium-1",
+      "kind": "pool",
+      "n": 64,
+      "workers": 1,
+      "iterations": 200,
+      "extra": 0,
+      "samples": 20,
+      "warmups": 2
+    },
+    {
+      "name": "pool-medium-2",
+      "kind": "pool",
+      "n": 64,
+      "workers": 2,
+      "iterations": 200,
+      "extra": 0,
+      "samples": 20,
+      "warmups": 2
+    },
+    {
+      "name": "pool-medium-4",
+      "kind": "pool",
+      "n": 64,
+      "workers": 4,
+      "iterations": 200,
+      "extra": 0,
+      "samples": 20,
+      "warmups": 2
+    },
+    {
+      "name": "pool-heavy-1",
+      "kind": "pool",
+      "n": 64,
+      "workers": 1,
+      "iterations": 5000,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "pool-heavy-2",
+      "kind": "pool",
+      "n": 64,
+      "workers": 2,
+      "iterations": 5000,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "pool-heavy-4",
+      "kind": "pool",
+      "n": 64,
+      "workers": 4,
+      "iterations": 5000,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "cpu-1",
+      "kind": "cpu",
+      "n": 64,
+      "workers": 1,
+      "iterations": 200000,
+      "extra": 0,
+      "samples": 5,
+      "warmups": 2
+    },
+    {
+      "name": "cpu-2",
+      "kind": "cpu",
+      "n": 64,
+      "workers": 2,
+      "iterations": 200000,
+      "extra": 0,
+      "samples": 5,
+      "warmups": 2
+    },
+    {
+      "name": "cpu-4",
+      "kind": "cpu",
+      "n": 64,
+      "workers": 4,
+      "iterations": 200000,
+      "extra": 0,
+      "samples": 5,
+      "warmups": 2
+    },
+    {
+      "name": "process-10",
+      "kind": "process",
+      "n": 10,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "process-100",
+      "kind": "process",
+      "n": 100,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "process-1000",
+      "kind": "process",
+      "n": 1000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "process-mixed",
+      "kind": "process-mixed",
+      "n": 100,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "process-one-failure",
+      "kind": "process-fail",
+      "n": 100,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 1,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "process-many-failures",
+      "kind": "process-fail",
+      "n": 100,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 4,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "files-100",
+      "kind": "files",
+      "n": 100,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "files-1000",
+      "kind": "files",
+      "n": 1000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "files-10000",
+      "kind": "files",
+      "n": 10000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "queue-1000-1-1",
+      "kind": "queue",
+      "n": 1000,
+      "workers": 1,
+      "iterations": 0,
+      "extra": 1,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "queue-1000-1-4",
+      "kind": "queue",
+      "n": 1000,
+      "workers": 1,
+      "iterations": 0,
+      "extra": 4,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "queue-1000-4-1",
+      "kind": "queue",
+      "n": 1000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 1,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "queue-1000-4-4",
+      "kind": "queue",
+      "n": 1000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 4,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "queue-10000-1-1",
+      "kind": "queue",
+      "n": 10000,
+      "workers": 1,
+      "iterations": 0,
+      "extra": 1,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "queue-10000-1-4",
+      "kind": "queue",
+      "n": 10000,
+      "workers": 1,
+      "iterations": 0,
+      "extra": 4,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "queue-10000-4-1",
+      "kind": "queue",
+      "n": 10000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 1,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "queue-10000-4-4",
+      "kind": "queue",
+      "n": 10000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 4,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "queue-100000-1-1",
+      "kind": "queue",
+      "n": 100000,
+      "workers": 1,
+      "iterations": 0,
+      "extra": 1,
+      "samples": 5,
+      "warmups": 2
+    },
+    {
+      "name": "queue-100000-1-4",
+      "kind": "queue",
+      "n": 100000,
+      "workers": 1,
+      "iterations": 0,
+      "extra": 4,
+      "samples": 5,
+      "warmups": 2
+    },
+    {
+      "name": "queue-100000-4-1",
+      "kind": "queue",
+      "n": 100000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 1,
+      "samples": 5,
+      "warmups": 2
+    },
+    {
+      "name": "queue-100000-4-4",
+      "kind": "queue",
+      "n": 100000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 4,
+      "samples": 5,
+      "warmups": 2
+    },
+    {
+      "name": "atomic-1",
+      "kind": "atomic",
+      "n": 20000,
+      "workers": 1,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "mutex-1-1",
+      "kind": "mutex",
+      "n": 10000,
+      "workers": 1,
+      "iterations": 1,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "mutex-8-1",
+      "kind": "mutex",
+      "n": 10000,
+      "workers": 1,
+      "iterations": 8,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "atomic-2",
+      "kind": "atomic",
+      "n": 20000,
+      "workers": 2,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "mutex-1-2",
+      "kind": "mutex",
+      "n": 10000,
+      "workers": 2,
+      "iterations": 1,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "mutex-8-2",
+      "kind": "mutex",
+      "n": 10000,
+      "workers": 2,
+      "iterations": 8,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "atomic-4",
+      "kind": "atomic",
+      "n": 20000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "mutex-1-4",
+      "kind": "mutex",
+      "n": 10000,
+      "workers": 4,
+      "iterations": 1,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "mutex-8-4",
+      "kind": "mutex",
+      "n": 10000,
+      "workers": 4,
+      "iterations": 8,
+      "extra": 0,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "failures",
+      "kind": "failure",
+      "n": 10,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 2,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "mixed-64",
+      "kind": "mixed",
+      "n": 64,
+      "workers": 4,
+      "iterations": 200,
+      "extra": 2,
+      "samples": 10,
+      "warmups": 2
+    },
+    {
+      "name": "nested-10",
+      "kind": "nested",
+      "n": 10,
+      "workers": 4,
+      "iterations": 4,
+      "extra": 0,
+      "samples": 20,
+      "warmups": 2
+    },
+    {
+      "name": "nested-100",
+      "kind": "nested",
+      "n": 100,
+      "workers": 4,
+      "iterations": 4,
+      "extra": 0,
+      "samples": 20,
+      "warmups": 2
+    },
+    {
+      "name": "waiting-memory-100",
+      "kind": "memory",
+      "n": 100,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 10,
+      "samples": 5,
+      "warmups": 2
+    },
+    {
+      "name": "waiting-memory-1000",
+      "kind": "memory",
+      "n": 1000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 10,
+      "samples": 5,
+      "warmups": 2
+    },
+    {
+      "name": "waiting-memory-10000",
+      "kind": "memory",
+      "n": 10000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 10,
+      "samples": 5,
+      "warmups": 2
+    }
+  ],
+  "scenario_plan_sha256": "7bb9bbaf484bfa3d7daea996c9681ece0575eaaf745135b3c025d32af77232a1",
+  "planned_cells": 608,
+  "planned_measured_observations": 10290,
+  "planned_warmups": 1216,
+  "planned_total_observations": 11506,
+  "cloud_certification_audit": {
+    "pass": true,
+    "supported_cells": 608,
+    "unsupported_cells": 32,
+    "measured_observations": 608,
+    "retained_warmups": 0,
+    "total_observations": 608,
+    "oracle": "Independent modular closed-form CPU oracle and polynomial fixture hash; exact canonical result digest/count in every observation",
+    "coverage": "Exact sample rounds, warmup flags, parameters and rotated participant order; no omitted/outlier observations",
+    "observations_sha256": "8eabb6047bdfd55af405efa943dda53160ff78e2f85d3780ef1b0d0700723e27"
+  },
+  "cloud_semantics": {
+    "pass": true,
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "nift_cancel": "No public future/thread cancellation API in frozen source; explicit cooperative atomic stop token required",
+    "nift_error": "Recoverable future error arrives on await; successful sibling finishes; repeated await re-observes same error",
+    "worker_limits": "Nift/JS/Go active concurrency never exceeds 1/2/4; Python distinct worker process count <= requested max_workers"
+  },
+  "official_started": true,
+  "library_scope": "CLI benchmark; embedded artifacts not required or built on this host",
+  "official_pid": 27719,
+  "official_output": "/opt/concurrency/work/refresh-official",
+  "official_log": "/opt/concurrency/work/refresh-official.log",
+  "held_10000_qualification": {
+    "primary_matrix": "Historical supported/excluded matrix retained without silent new cells",
+    "historical_runner_reason": "13700MiB refers to old candidate checkpoint; not a refreshed measurement",
+    "candidate_probe": "Watchdog censored before READY at6144.5625MiB sampled process-tree RSS",
+    "claim_limit": "Does not prove8GiB infeasibility; no supported10kheld extension certified",
+    "publication_label": "Outside refreshed certified matrix; \u22656GiB censored diagnostic"
+  }
+}
