@@ -1,0 +1,1787 @@
+{
+  "scope": "Cross-node diagnostic, not causal attribution or official normalized metric; peer ratios are scenario-specific descriptive controls, not corrections. Binary/version and host differences remain confounders.",
+  "rows": [
+    {
+      "scenario": "sanity/function-calls/large",
+      "category": "function/call overhead",
+      "old_ms": 185.1031385,
+      "new_ms": 546.05646,
+      "increase_pct": 195.0011892964203,
+      "delta_ms": 360.9533215,
+      "ratio": 2.950011892964203,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 30.651181,
+          "new_ms": 35.054106000000004,
+          "ratio": 1.1436461779400933,
+          "increase_pct": 14.364617794009327,
+          "nift_ratio_over_peer_ratio": 2.579479518986974,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 74.983492,
+          "new_ms": 98.406308,
+          "ratio": 1.312372968706232,
+          "increase_pct": 31.237296870623197,
+          "nift_ratio_over_peer_ratio": 2.247845668348681,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 3.676817,
+          "new_ms": 4.627803500000001,
+          "ratio": 1.2586439575317458,
+          "increase_pct": 25.864395753174584,
+          "nift_ratio_over_peer_ratio": 2.3438017362346866,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 1.554326,
+          "new_ms": 1.8889019999999999,
+          "ratio": 1.2152547149053672,
+          "increase_pct": 21.525471490536717,
+          "nift_ratio_over_peer_ratio": 2.4274844251017145,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 38.738664,
+          "new_ms": 53.4711255,
+          "ratio": 1.380303809651257,
+          "increase_pct": 38.0303809651257,
+          "nift_ratio_over_peer_ratio": 2.137219264583167,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 508.5612875,
+          "new_ms": 620.794184,
+          "ratio": 1.220687062225514,
+          "increase_pct": 22.06870622255139,
+          "nift_ratio_over_peer_ratio": 2.416681542922102,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 2.379683769094314
+    },
+    {
+      "scenario": "sanity/function-calls/small",
+      "category": "function/call overhead",
+      "old_ms": 4.986825,
+      "new_ms": 10.0274205,
+      "increase_pct": 101.07825119189062,
+      "delta_ms": 5.0405955,
+      "ratio": 2.0107825119189062,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 18.2539335,
+          "new_ms": 23.9528035,
+          "ratio": 1.3121995596182052,
+          "increase_pct": 31.219955961820524,
+          "nift_ratio_over_peer_ratio": 1.5323755424090824,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 69.492684,
+          "new_ms": 90.886953,
+          "ratio": 1.3078636162621091,
+          "increase_pct": 30.786361626210912,
+          "nift_ratio_over_peer_ratio": 1.5374558072543896,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 1.5630315000000001,
+          "new_ms": 2.0423265,
+          "ratio": 1.306644491809666,
+          "increase_pct": 30.664449180966603,
+          "nift_ratio_over_peer_ratio": 1.5388902831052604,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 1.452426,
+          "new_ms": 1.764357,
+          "ratio": 1.214765502683097,
+          "increase_pct": 21.4765502683097,
+          "nift_ratio_over_peer_ratio": 1.6552845034515857,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 34.940456,
+          "new_ms": 43.040579,
+          "ratio": 1.231826482172986,
+          "increase_pct": 23.182648217298606,
+          "nift_ratio_over_peer_ratio": 1.6323585675571886,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 7.028423500000001,
+          "new_ms": 8.9511115,
+          "ratio": 1.2735589282575244,
+          "increase_pct": 27.355892825752438,
+          "nift_ratio_over_peer_ratio": 1.5788688432894478,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.558623243640646
+    },
+    {
+      "scenario": "structured-data/json-parse/large",
+      "category": "JSON/data processing",
+      "old_ms": 192.275902,
+      "new_ms": 295.194681,
+      "increase_pct": 53.526613543074156,
+      "delta_ms": 102.918779,
+      "ratio": 1.5352661354307415,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 80.1170395,
+          "new_ms": 109.774167,
+          "ratio": 1.370172533646853,
+          "increase_pct": 37.01725336468531,
+          "nift_ratio_over_peer_ratio": 1.1204911043899524,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 190.25201950000002,
+          "new_ms": 244.6898245,
+          "ratio": 1.2861352281204035,
+          "increase_pct": 28.613522812040348,
+          "nift_ratio_over_peer_ratio": 1.1937050644934324,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 69.15847099999999,
+          "new_ms": 98.648738,
+          "ratio": 1.4264158327039937,
+          "increase_pct": 42.64158327039937,
+          "nift_ratio_over_peer_ratio": 1.0763103579132356,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.1204911043899524
+    },
+    {
+      "scenario": "graphs-trees-search/bfs/large",
+      "category": "scalar compute / algorithm (inspect workload)",
+      "old_ms": 654.593431,
+      "new_ms": 1002.5304045,
+      "increase_pct": 53.153141633039084,
+      "delta_ms": 347.9369735,
+      "ratio": 1.5315314163303908,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 92.437488,
+          "new_ms": 130.0091685,
+          "ratio": 1.4064550142253973,
+          "increase_pct": 40.64550142253973,
+          "nift_ratio_over_peer_ratio": 1.088930254320206,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 119.4382825,
+          "new_ms": 158.205838,
+          "ratio": 1.3245823256040206,
+          "increase_pct": 32.45823256040205,
+          "nift_ratio_over_peer_ratio": 1.1562372430358376,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 35.363883,
+          "new_ms": 45.172204,
+          "ratio": 1.2773541864732445,
+          "increase_pct": 27.73541864732445,
+          "nift_ratio_over_peer_ratio": 1.1989872758462754,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 16.8882075,
+          "new_ms": 21.869147,
+          "ratio": 1.2949359486493757,
+          "increase_pct": 29.493594864937567,
+          "nift_ratio_over_peer_ratio": 1.1827082396838124,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 88.37583000000001,
+          "new_ms": 124.5586415,
+          "ratio": 1.4094197644310664,
+          "increase_pct": 40.94197644310664,
+          "nift_ratio_over_peer_ratio": 1.0866396619240093,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.1562372430358376
+    },
+    {
+      "scenario": "arrays-strings-hash/frequency-count/large",
+      "category": "collection/sort",
+      "old_ms": 385.5470675,
+      "new_ms": 589.3696805,
+      "increase_pct": 52.865818516438324,
+      "delta_ms": 203.82261299999993,
+      "ratio": 1.5286581851643832,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 51.505819,
+          "new_ms": 65.0919535,
+          "ratio": 1.2637786324686926,
+          "increase_pct": 26.37786324686926,
+          "nift_ratio_over_peer_ratio": 1.2095933147550288,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 102.4756675,
+          "new_ms": 127.078493,
+          "ratio": 1.2400845595858159,
+          "increase_pct": 24.008455958581585,
+          "nift_ratio_over_peer_ratio": 1.2327047969010678,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 21.7435495,
+          "new_ms": 24.9095095,
+          "ratio": 1.145604561941462,
+          "increase_pct": 14.560456194146209,
+          "nift_ratio_over_peer_ratio": 1.3343681021780833,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 3.1862395,
+          "new_ms": 3.9566235,
+          "ratio": 1.241784712040636,
+          "increase_pct": 24.1784712040636,
+          "nift_ratio_over_peer_ratio": 1.2310170759409056,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 42.3233185,
+          "new_ms": 55.187398,
+          "ratio": 1.3039477988948338,
+          "increase_pct": 30.39477988948338,
+          "nift_ratio_over_peer_ratio": 1.1723308145157372,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 645.202981,
+          "new_ms": 807.382449,
+          "ratio": 1.2513619322536886,
+          "increase_pct": 25.136193225368864,
+          "nift_ratio_over_peer_ratio": 1.2215955638120517,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.2262882238899058
+    },
+    {
+      "scenario": "structured-data/json-transform/large",
+      "category": "JSON/data processing",
+      "old_ms": 464.0249965,
+      "new_ms": 669.3159880000001,
+      "increase_pct": 44.241364807596106,
+      "delta_ms": 205.29099150000008,
+      "ratio": 1.442413648075961,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 74.746245,
+          "new_ms": 95.607223,
+          "ratio": 1.2790906486339213,
+          "increase_pct": 27.909064863392132,
+          "nift_ratio_over_peer_ratio": 1.1276868059480147,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 141.06062400000002,
+          "new_ms": 183.4994485,
+          "ratio": 1.3008552159814633,
+          "increase_pct": 30.085521598146325,
+          "nift_ratio_over_peer_ratio": 1.1088195137747865,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 79.105344,
+          "new_ms": 109.19093050000001,
+          "ratio": 1.380323060095662,
+          "increase_pct": 38.0323060095662,
+          "nift_ratio_over_peer_ratio": 1.0449826491893832,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.1088195137747865
+    },
+    {
+      "scenario": "sanity/output/large",
+      "category": "startup-sensitive",
+      "old_ms": 2.7093485,
+      "new_ms": 3.8140099999999997,
+      "increase_pct": 40.77221885630438,
+      "delta_ms": 1.1046614999999997,
+      "ratio": 1.4077221885630438,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 18.048293,
+          "new_ms": 24.219318,
+          "ratio": 1.3419173768954216,
+          "increase_pct": 34.19173768954216,
+          "nift_ratio_over_peer_ratio": 1.0490379011410258,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 70.7841725,
+          "new_ms": 91.859005,
+          "ratio": 1.2977336847442837,
+          "increase_pct": 29.773368474428374,
+          "nift_ratio_over_peer_ratio": 1.084754295208445,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 1.5131264999999998,
+          "new_ms": 1.850126,
+          "ratio": 1.2227173339439896,
+          "increase_pct": 22.271733394398964,
+          "nift_ratio_over_peer_ratio": 1.1513063154362126,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 1.355399,
+          "new_ms": 1.765096,
+          "ratio": 1.3022704015570323,
+          "increase_pct": 30.227040155703232,
+          "nift_ratio_over_peer_ratio": 1.0809753388235885,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 35.645931000000004,
+          "new_ms": 45.135386499999996,
+          "ratio": 1.266214270010229,
+          "increase_pct": 26.6214270010229,
+          "nift_ratio_over_peer_ratio": 1.1117566922947975,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 1.805009,
+          "new_ms": 2.3860859999999997,
+          "ratio": 1.3219247106247114,
+          "increase_pct": 32.19247106247114,
+          "nift_ratio_over_peer_ratio": 1.0649034527070655,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.082861520087551
+    },
+    {
+      "scenario": "graphs-trees-search/bfs/small",
+      "category": "scalar compute / algorithm (inspect workload)",
+      "old_ms": 10.358252499999999,
+      "new_ms": 14.470966,
+      "increase_pct": 39.704704051190134,
+      "delta_ms": 4.112713500000002,
+      "ratio": 1.3970470405119013,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 19.3324725,
+          "new_ms": 27.665138,
+          "ratio": 1.4310191311535552,
+          "increase_pct": 43.101913115355515,
+          "nift_ratio_over_peer_ratio": 0.9762602121089264,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 70.276112,
+          "new_ms": 96.9165405,
+          "ratio": 1.3790822762078814,
+          "increase_pct": 37.90822762078814,
+          "nift_ratio_over_peer_ratio": 1.0130266080667925,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 2.0732030000000004,
+          "new_ms": 2.5290765,
+          "ratio": 1.2198885010295661,
+          "increase_pct": 21.988850102956615,
+          "nift_ratio_over_peer_ratio": 1.1452251901159953,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 2.1971425,
+          "new_ms": 2.6003420000000004,
+          "ratio": 1.1835108555771874,
+          "increase_pct": 18.35108555771874,
+          "nift_ratio_over_peer_ratio": 1.1804260467307452,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 46.750029,
+          "new_ms": 52.073397,
+          "ratio": 1.1138687635894302,
+          "increase_pct": 11.38687635894302,
+          "nift_ratio_over_peer_ratio": 1.2542294803293812,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.1452251901159953
+    },
+    {
+      "scenario": "arrays-strings-hash/frequency-count/small",
+      "category": "collection/sort",
+      "old_ms": 7.111796,
+      "new_ms": 9.812756499999999,
+      "increase_pct": 37.978599217412864,
+      "delta_ms": 2.700960499999999,
+      "ratio": 1.3797859921741287,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 18.443414500000003,
+          "new_ms": 25.210286500000002,
+          "ratio": 1.3668990901874487,
+          "increase_pct": 36.68990901874487,
+          "nift_ratio_over_peer_ratio": 1.0094278371235967,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 72.26684900000001,
+          "new_ms": 92.4675325,
+          "ratio": 1.2795290479594592,
+          "increase_pct": 27.95290479594592,
+          "nift_ratio_over_peer_ratio": 1.0783545667638847,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 1.761749,
+          "new_ms": 2.362371,
+          "ratio": 1.340923707066103,
+          "increase_pct": 34.09237070661031,
+          "nift_ratio_over_peer_ratio": 1.0289817272252237,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 1.5201954999999998,
+          "new_ms": 1.8285825,
+          "ratio": 1.2028600926657131,
+          "increase_pct": 20.286009266571313,
+          "nift_ratio_over_peer_ratio": 1.1470876792631153,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 36.065689500000005,
+          "new_ms": 42.773941,
+          "ratio": 1.1860009220120413,
+          "increase_pct": 18.600092201204134,
+          "nift_ratio_over_peer_ratio": 1.163393692673807,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 8.566181499999999,
+          "new_ms": 10.7545,
+          "ratio": 1.2554602070946081,
+          "increase_pct": 25.546020709460816,
+          "nift_ratio_over_peer_ratio": 1.0990280571036464,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.0885931681353025
+    },
+    {
+      "scenario": "structured-data/json-transform/small",
+      "category": "JSON/data processing",
+      "old_ms": 7.4393715,
+      "new_ms": 10.1851365,
+      "increase_pct": 36.90856142887877,
+      "delta_ms": 2.7457650000000005,
+      "ratio": 1.3690856142887877,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 24.579231,
+          "new_ms": 32.257299,
+          "ratio": 1.3123803181637377,
+          "increase_pct": 31.23803181637377,
+          "nift_ratio_over_peer_ratio": 1.0432079751122687,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 75.06741550000001,
+          "new_ms": 96.33058750000001,
+          "ratio": 1.2832543502180382,
+          "increase_pct": 28.325435021803823,
+          "nift_ratio_over_peer_ratio": 1.0668856209652948,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 35.606742,
+          "new_ms": 46.0854875,
+          "ratio": 1.2942910502735692,
+          "increase_pct": 29.42910502735692,
+          "nift_ratio_over_peer_ratio": 1.0577880562485613,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.0577880562485613
+    },
+    {
+      "scenario": "sanity/loops/small",
+      "category": "scalar compute / algorithm (inspect workload)",
+      "old_ms": 3.8523180000000004,
+      "new_ms": 5.250509,
+      "increase_pct": 36.294797054656435,
+      "delta_ms": 1.3981909999999997,
+      "ratio": 1.3629479705465644,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 18.6405495,
+          "new_ms": 24.1935265,
+          "ratio": 1.2978977095069006,
+          "increase_pct": 29.789770950690063,
+          "nift_ratio_over_peer_ratio": 1.0501197132587419,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 69.178609,
+          "new_ms": 94.571748,
+          "ratio": 1.3670663427187442,
+          "increase_pct": 36.706634271874414,
+          "nift_ratio_over_peer_ratio": 0.9969874379585782,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 1.5096865,
+          "new_ms": 1.8021975000000001,
+          "ratio": 1.1937561208899994,
+          "increase_pct": 19.375612088999937,
+          "nift_ratio_over_peer_ratio": 1.1417306656659694,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 1.577381,
+          "new_ms": 2.0045,
+          "ratio": 1.2707773201274772,
+          "increase_pct": 27.077732012747724,
+          "nift_ratio_over_peer_ratio": 1.0725309217903267,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 35.9276395,
+          "new_ms": 43.633607,
+          "ratio": 1.214485772158786,
+          "increase_pct": 21.448577215878608,
+          "nift_ratio_over_peer_ratio": 1.1222428469654957,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 4.826475,
+          "new_ms": 6.816269500000001,
+          "ratio": 1.4122666127971242,
+          "increase_pct": 41.22666127971242,
+          "nift_ratio_over_peer_ratio": 0.9650783769837342,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.0612070073656337
+    },
+    {
+      "scenario": "arrays-strings-hash/sliding-window/small",
+      "category": "collection/sort",
+      "old_ms": 5.866583,
+      "new_ms": 7.923267,
+      "increase_pct": 35.05761360573949,
+      "delta_ms": 2.0566839999999997,
+      "ratio": 1.350576136057395,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 18.477373,
+          "new_ms": 24.021749,
+          "ratio": 1.3000630013801204,
+          "increase_pct": 30.006300138012044,
+          "nift_ratio_over_peer_ratio": 1.038854374460046,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 70.15839199999999,
+          "new_ms": 90.1798235,
+          "ratio": 1.285374720389829,
+          "increase_pct": 28.53747203898289,
+          "nift_ratio_over_peer_ratio": 1.0507256091420498,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 1.5910125,
+          "new_ms": 1.9041204999999999,
+          "ratio": 1.1967979509903284,
+          "increase_pct": 19.679795099032837,
+          "nift_ratio_over_peer_ratio": 1.128491350557392,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 1.494984,
+          "new_ms": 1.916353,
+          "ratio": 1.2818551904234425,
+          "increase_pct": 28.185519042344254,
+          "nift_ratio_over_peer_ratio": 1.0536105374049711,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 34.8687835,
+          "new_ms": 46.7804115,
+          "ratio": 1.3416129501621414,
+          "increase_pct": 34.16129501621414,
+          "nift_ratio_over_peer_ratio": 1.0066809029341661,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 13.708427,
+          "new_ms": 20.213258500000002,
+          "ratio": 1.4745133413191756,
+          "increase_pct": 47.451334131917555,
+          "nift_ratio_over_peer_ratio": 0.9159470438219975,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.0447562706192839
+    },
+    {
+      "scenario": "dynamic-programming/fibonacci/small",
+      "category": "scalar compute / algorithm (inspect workload)",
+      "old_ms": 3.0833805,
+      "new_ms": 4.146639,
+      "increase_pct": 34.48353195461931,
+      "delta_ms": 1.0632585000000003,
+      "ratio": 1.344835319546193,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 18.4523965,
+          "new_ms": 23.546882,
+          "ratio": 1.2760880138251962,
+          "increase_pct": 27.608801382519623,
+          "nift_ratio_over_peer_ratio": 1.0538734828445886,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 70.16927899999999,
+          "new_ms": 92.01749000000001,
+          "ratio": 1.3113643365211152,
+          "increase_pct": 31.136433652111517,
+          "nift_ratio_over_peer_ratio": 1.025523786252928,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 1.5628769999999998,
+          "new_ms": 1.908655,
+          "ratio": 1.221244538117843,
+          "increase_pct": 22.124453811784296,
+          "nift_ratio_over_peer_ratio": 1.1012006830497894,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 1.3817745000000001,
+          "new_ms": 1.870711,
+          "ratio": 1.3538468107495107,
+          "increase_pct": 35.384681074951075,
+          "nift_ratio_over_peer_ratio": 0.993343788136319,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 35.123191500000004,
+          "new_ms": 46.006482000000005,
+          "ratio": 1.3098605233524978,
+          "increase_pct": 30.98605233524978,
+          "nift_ratio_over_peer_ratio": 1.0267011605969922,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.0267011605969922
+    },
+    {
+      "scenario": "arrays-strings-hash/map-set/small",
+      "category": "collection/sort",
+      "old_ms": 5.172631,
+      "new_ms": 6.9397155,
+      "increase_pct": 34.16219908205322,
+      "delta_ms": 1.7670845000000002,
+      "ratio": 1.3416219908205322,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 18.3689365,
+          "new_ms": 23.653671,
+          "ratio": 1.287699535571915,
+          "increase_pct": 28.769953557191496,
+          "nift_ratio_over_peer_ratio": 1.0418750288860423,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 72.938458,
+          "new_ms": 95.4889435,
+          "ratio": 1.3091714044736182,
+          "increase_pct": 30.917140447361824,
+          "nift_ratio_over_peer_ratio": 1.0247871182001271,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 1.631456,
+          "new_ms": 2.060586,
+          "ratio": 1.2630349822489848,
+          "increase_pct": 26.30349822489848,
+          "nift_ratio_over_peer_ratio": 1.0622207695558945,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 1.4949875000000001,
+          "new_ms": 1.952072,
+          "ratio": 1.3057446968620139,
+          "increase_pct": 30.57446968620139,
+          "nift_ratio_over_peer_ratio": 1.0274764998431465,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 35.675297,
+          "new_ms": 44.122977,
+          "ratio": 1.2367935437229856,
+          "increase_pct": 23.679354372298555,
+          "nift_ratio_over_peer_ratio": 1.0847582424969595,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 4.7522595,
+          "new_ms": 5.929712,
+          "ratio": 1.2477668780503253,
+          "increase_pct": 24.776687805032527,
+          "nift_ratio_over_peer_ratio": 1.0752184678253829,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.0519495317503162
+    },
+    {
+      "scenario": "structured-data/json-parse/small",
+      "category": "JSON/data processing",
+      "old_ms": 4.877394499999999,
+      "new_ms": 6.5213339999999995,
+      "increase_pct": 33.705280555017644,
+      "delta_ms": 1.6439395,
+      "ratio": 1.3370528055501765,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 24.6900755,
+          "new_ms": 38.0548105,
+          "ratio": 1.5412998838338912,
+          "increase_pct": 54.12998838338912,
+          "nift_ratio_over_peer_ratio": 0.8674838813484743,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 76.1622405,
+          "new_ms": 103.59901149999999,
+          "ratio": 1.3602411223708681,
+          "increase_pct": 36.02411223708681,
+          "nift_ratio_over_peer_ratio": 0.9829527894434812,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 34.841868500000004,
+          "new_ms": 45.582415499999996,
+          "ratio": 1.3082655282967959,
+          "increase_pct": 30.82655282967959,
+          "nift_ratio_over_peer_ratio": 1.022004154837633,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 0.9829527894434812
+    },
+    {
+      "scenario": "arrays-strings-hash/map-set/large",
+      "category": "collection/sort",
+      "old_ms": 215.187962,
+      "new_ms": 284.9634285,
+      "increase_pct": 32.425357743757075,
+      "delta_ms": 69.77546650000002,
+      "ratio": 1.3242535774375708,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 29.8026195,
+          "new_ms": 40.217957,
+          "ratio": 1.3494772498102054,
+          "increase_pct": 34.94772498102054,
+          "nift_ratio_over_peer_ratio": 0.981308560499125,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 96.1621925,
+          "new_ms": 130.2267685,
+          "ratio": 1.3542408415864684,
+          "increase_pct": 35.42408415864684,
+          "nift_ratio_over_peer_ratio": 0.9778567716848887,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 7.344621500000001,
+          "new_ms": 9.323909,
+          "ratio": 1.2694880192260418,
+          "increase_pct": 26.948801922604183,
+          "nift_ratio_over_peer_ratio": 1.0431398779524657,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 2.874842,
+          "new_ms": 3.7697054999999997,
+          "ratio": 1.3112739761002516,
+          "increase_pct": 31.127397610025163,
+          "nift_ratio_over_peer_ratio": 1.0098984663570618,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 50.7659555,
+          "new_ms": 60.600953000000004,
+          "ratio": 1.1937321459457215,
+          "increase_pct": 19.373214594572154,
+          "nift_ratio_over_peer_ratio": 1.109338960113573,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 271.3905475,
+          "new_ms": 328.1844565,
+          "ratio": 1.2092700336219337,
+          "increase_pct": 20.927003362193375,
+          "nift_ratio_over_peer_ratio": 1.0950850849013807,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.026250060901212
+    },
+    {
+      "scenario": "structured-data/json-traverse/large",
+      "category": "JSON/data processing",
+      "old_ms": 357.8462725,
+      "new_ms": 473.779096,
+      "increase_pct": 32.397381895322106,
+      "delta_ms": 115.93282349999998,
+      "ratio": 1.323973818953221,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 83.4175935,
+          "new_ms": 116.873439,
+          "ratio": 1.4010646207385498,
+          "increase_pct": 40.10646207385498,
+          "nift_ratio_over_peer_ratio": 0.9449769834708327,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 185.17908,
+          "new_ms": 248.8700095,
+          "ratio": 1.3439423583916714,
+          "increase_pct": 34.394235839167145,
+          "nift_ratio_over_peer_ratio": 0.9851418185357688,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 73.456149,
+          "new_ms": 94.393394,
+          "ratio": 1.2850305288941843,
+          "increase_pct": 28.503052889418434,
+          "nift_ratio_over_peer_ratio": 1.0303053423116328,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 0.9851418185357688
+    },
+    {
+      "scenario": "filesystem/traverse/large",
+      "category": "filesystem traversal",
+      "old_ms": 32.0369135,
+      "new_ms": 41.798467,
+      "increase_pct": 30.469706452839173,
+      "delta_ms": 9.761553500000005,
+      "ratio": 1.3046970645283917,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 30.5603955,
+          "new_ms": 42.495772,
+          "ratio": 1.390550459335515,
+          "increase_pct": 39.05504593355149,
+          "nift_ratio_over_peer_ratio": 0.9382594178940123,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 73.150533,
+          "new_ms": 93.841027,
+          "ratio": 1.282848164619662,
+          "increase_pct": 28.284816461966187,
+          "nift_ratio_over_peer_ratio": 1.0170315556519565,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 8.553383499999999,
+          "new_ms": 11.06315,
+          "ratio": 1.2934238246186438,
+          "increase_pct": 29.342382461864382,
+          "nift_ratio_over_peer_ratio": 1.0087158127870977,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 8.183478000000001,
+          "new_ms": 10.6082465,
+          "ratio": 1.2963004849527302,
+          "increase_pct": 29.63004849527302,
+          "nift_ratio_over_peer_ratio": 1.0064773404570375,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 52.0276485,
+          "new_ms": 68.3182345,
+          "ratio": 1.3131140166751916,
+          "increase_pct": 31.311401667519156,
+          "nift_ratio_over_peer_ratio": 0.9935900827803883,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 10.165296,
+          "new_ms": 12.7857665,
+          "ratio": 1.257785951338751,
+          "increase_pct": 25.778595133875104,
+          "nift_ratio_over_peer_ratio": 1.037296579071908,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.0075953333768817
+    },
+    {
+      "scenario": "sanity/noop/large",
+      "category": "startup-sensitive",
+      "old_ms": 2.552508,
+      "new_ms": 3.3099965,
+      "increase_pct": 29.676243913829058,
+      "delta_ms": 0.7574885,
+      "ratio": 1.2967624391382906,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 18.5421975,
+          "new_ms": 23.639634,
+          "ratio": 1.2749100531369058,
+          "increase_pct": 27.491005313690575,
+          "nift_ratio_over_peer_ratio": 1.0171403354672883,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 68.677952,
+          "new_ms": 94.329174,
+          "ratio": 1.3735001008766248,
+          "increase_pct": 37.350010087662476,
+          "nift_ratio_over_peer_ratio": 0.9441298463033552,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 1.401588,
+          "new_ms": 1.7394885,
+          "ratio": 1.2410840418154265,
+          "increase_pct": 24.108404181542653,
+          "nift_ratio_over_peer_ratio": 1.044862713117654,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 1.3894505000000001,
+          "new_ms": 1.63405,
+          "ratio": 1.176040456281098,
+          "increase_pct": 17.604045628109798,
+          "nift_ratio_over_peer_ratio": 1.1026512159615176,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 31.883338000000002,
+          "new_ms": 39.09101,
+          "ratio": 1.226063908364927,
+          "increase_pct": 22.606390836492697,
+          "nift_ratio_over_peer_ratio": 1.057663006219347,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 1.7896545,
+          "new_ms": 2.4129565,
+          "ratio": 1.348280631820276,
+          "increase_pct": 34.828063182027606,
+          "nift_ratio_over_peer_ratio": 0.9617897109354511,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.0308151690338994
+    },
+    {
+      "scenario": "filesystem/traverse/small",
+      "category": "filesystem traversal",
+      "old_ms": 3.623954,
+      "new_ms": 4.674959,
+      "increase_pct": 29.001609843833577,
+      "delta_ms": 1.0510050000000004,
+      "ratio": 1.2900160984383358,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 23.4231815,
+          "new_ms": 37.4302855,
+          "ratio": 1.5980017701694367,
+          "increase_pct": 59.800177016943664,
+          "nift_ratio_over_peer_ratio": 0.80726825371511,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 70.44719549999999,
+          "new_ms": 92.265215,
+          "ratio": 1.3097074247618559,
+          "increase_pct": 30.970742476185585,
+          "nift_ratio_over_peer_ratio": 0.9849650952943932,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 6.874646,
+          "new_ms": 9.0197485,
+          "ratio": 1.31203097584952,
+          "increase_pct": 31.203097584952012,
+          "nift_ratio_over_peer_ratio": 0.9832207639785867,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 5.226595,
+          "new_ms": 6.718750999999999,
+          "ratio": 1.2854929452157666,
+          "increase_pct": 28.549294521576662,
+          "nift_ratio_over_peer_ratio": 1.0035186138044576,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 36.2085385,
+          "new_ms": 48.1016135,
+          "ratio": 1.3284605093906232,
+          "increase_pct": 32.84605093906232,
+          "nift_ratio_over_peer_ratio": 0.9710609305428867,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 6.904745999999999,
+          "new_ms": 9.251136,
+          "ratio": 1.3398227827642033,
+          "increase_pct": 33.98227827642033,
+          "nift_ratio_over_peer_ratio": 0.9628259162580362,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 0.9771030171082059
+    },
+    {
+      "scenario": "arrays-strings-hash/scan/small",
+      "category": "collection/sort",
+      "old_ms": 4.129462999999999,
+      "new_ms": 5.3154710000000005,
+      "increase_pct": 28.72063510437075,
+      "delta_ms": 1.186008000000001,
+      "ratio": 1.2872063510437075,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 18.227365499999998,
+          "new_ms": 25.011498,
+          "ratio": 1.3721949011227104,
+          "increase_pct": 37.21949011227104,
+          "nift_ratio_over_peer_ratio": 0.9380637910770063,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 69.47736900000001,
+          "new_ms": 95.2283165,
+          "ratio": 1.370637919521679,
+          "increase_pct": 37.06379195216789,
+          "nift_ratio_over_peer_ratio": 0.9391293883748035,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 1.5485855,
+          "new_ms": 1.9129425,
+          "ratio": 1.235283747652293,
+          "increase_pct": 23.52837476522931,
+          "nift_ratio_over_peer_ratio": 1.042032936554128,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 1.435496,
+          "new_ms": 1.8111985,
+          "ratio": 1.2617231256652752,
+          "increase_pct": 26.172312566527523,
+          "nift_ratio_over_peer_ratio": 1.0201971612155365,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 35.0514235,
+          "new_ms": 45.674366000000006,
+          "ratio": 1.3030673632983838,
+          "increase_pct": 30.30673632983838,
+          "nift_ratio_over_peer_ratio": 0.9878279414392452,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 5.479953999999999,
+          "new_ms": 6.891642,
+          "ratio": 1.2576094616852624,
+          "increase_pct": 25.760946168526246,
+          "nift_ratio_over_peer_ratio": 1.0235342451374243,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 1.0037516565837095
+    },
+    {
+      "scenario": "structured-data/json-traverse/small",
+      "category": "JSON/data processing",
+      "old_ms": 6.3799155,
+      "new_ms": 8.186332499999999,
+      "increase_pct": 28.314121088280864,
+      "delta_ms": 1.8064169999999988,
+      "ratio": 1.2831412108828086,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 24.008989,
+          "new_ms": 34.8040745,
+          "ratio": 1.4496268251861835,
+          "increase_pct": 44.962682518618344,
+          "nift_ratio_over_peer_ratio": 0.8851527776591799,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 75.849903,
+          "new_ms": 100.187079,
+          "ratio": 1.3208596852127814,
+          "increase_pct": 32.08596852127814,
+          "nift_ratio_over_peer_ratio": 0.9714439960941827,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 36.2861365,
+          "new_ms": 50.4400585,
+          "ratio": 1.3900641778162302,
+          "increase_pct": 39.006417781623014,
+          "nift_ratio_over_peer_ratio": 0.9230805536609138,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 0.9230805536609138
+    },
+    {
+      "scenario": "sanity/noop/small",
+      "category": "startup-sensitive",
+      "old_ms": 4.720831,
+      "new_ms": 5.85518,
+      "increase_pct": 24.02858733981368,
+      "delta_ms": 1.1343489999999994,
+      "ratio": 1.2402858733981368,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 21.908110999999998,
+          "new_ms": 29.288138500000002,
+          "ratio": 1.3368627947886518,
+          "increase_pct": 33.686279478865174,
+          "nift_ratio_over_peer_ratio": 0.9277585390460484,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 73.22456700000001,
+          "new_ms": 118.374038,
+          "ratio": 1.616589115508187,
+          "increase_pct": 61.65891155081871,
+          "nift_ratio_over_peer_ratio": 0.7672239417548247,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 1.995435,
+          "new_ms": 2.499085,
+          "ratio": 1.252401105523357,
+          "increase_pct": 25.240110552335704,
+          "nift_ratio_over_peer_ratio": 0.9903263961746844,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 1.6755905000000002,
+          "new_ms": 2.1798219999999997,
+          "ratio": 1.30092764312044,
+          "increase_pct": 30.092764312043997,
+          "nift_ratio_over_peer_ratio": 0.9533857474372316,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 48.9432255,
+          "new_ms": 63.62553200000001,
+          "ratio": 1.2999864914910442,
+          "increase_pct": 29.998649149104416,
+          "nift_ratio_over_peer_ratio": 0.9540759704168674,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 2.7772005,
+          "new_ms": 4.992034,
+          "ratio": 1.7975057976548687,
+          "increase_pct": 79.75057976548688,
+          "nift_ratio_over_peer_ratio": 0.6900038236406727,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 0.940397580924798
+    },
+    {
+      "scenario": "sanity/output/small",
+      "category": "startup-sensitive",
+      "old_ms": 2.9589499999999997,
+      "new_ms": 3.659413,
+      "increase_pct": 23.67268794673787,
+      "delta_ms": 0.7004630000000001,
+      "ratio": 1.2367268794673787,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 18.115413500000003,
+          "new_ms": 22.9187985,
+          "ratio": 1.265154587832069,
+          "increase_pct": 26.515458783206892,
+          "nift_ratio_over_peer_ratio": 0.9775302491584028,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 68.741263,
+          "new_ms": 92.70281,
+          "ratio": 1.348575891019052,
+          "increase_pct": 34.8575891019052,
+          "nift_ratio_over_peer_ratio": 0.9170613887608843,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 1.5285484999999999,
+          "new_ms": 1.863823,
+          "ratio": 1.2193417480701465,
+          "increase_pct": 21.93417480701465,
+          "nift_ratio_over_peer_ratio": 1.0142578005097813,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 1.4203294999999998,
+          "new_ms": 1.7616065,
+          "ratio": 1.2402801603430755,
+          "increase_pct": 24.028016034307555,
+          "nift_ratio_over_peer_ratio": 0.9971350981904653,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 35.98966,
+          "new_ms": 45.642516,
+          "ratio": 1.2682119253141042,
+          "increase_pct": 26.82119253141042,
+          "nift_ratio_over_peer_ratio": 0.9751736715147766,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 1.9099564999999998,
+          "new_ms": 2.6290234999999997,
+          "ratio": 1.3764834434710946,
+          "increase_pct": 37.648344347109465,
+          "nift_ratio_over_peer_ratio": 0.8984684017329768,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 0.976350538344722
+    },
+    {
+      "scenario": "arrays-strings-hash/sliding-window/large",
+      "category": "collection/sort",
+      "old_ms": 271.35886800000003,
+      "new_ms": 328.92620999999997,
+      "increase_pct": 21.214468657055253,
+      "delta_ms": 57.56734199999994,
+      "ratio": 1.2121446865705525,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 44.0891815,
+          "new_ms": 55.931217000000004,
+          "ratio": 1.2685927725829975,
+          "increase_pct": 26.859277258299752,
+          "nift_ratio_over_peer_ratio": 0.9555033835660988,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 80.816629,
+          "new_ms": 104.87322800000001,
+          "ratio": 1.2976689240527466,
+          "increase_pct": 29.76689240527466,
+          "nift_ratio_over_peer_ratio": 0.9340939465398512,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 6.5289,
+          "new_ms": 8.478683499999999,
+          "ratio": 1.2986388978235228,
+          "increase_pct": 29.86388978235228,
+          "nift_ratio_over_peer_ratio": 0.933396257113558,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 2.593033,
+          "new_ms": 3.7759685000000003,
+          "ratio": 1.4561976264860494,
+          "increase_pct": 45.61976264860495,
+          "nift_ratio_over_peer_ratio": 0.8324039708096345,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 49.533912,
+          "new_ms": 66.62881250000001,
+          "ratio": 1.3451150900417477,
+          "increase_pct": 34.51150900417477,
+          "nift_ratio_over_peer_ratio": 0.9011457053336096,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 4924.781559,
+          "new_ms": 5644.7872815,
+          "ratio": 1.146200539835964,
+          "increase_pct": 14.620053983596403,
+          "nift_ratio_over_peer_ratio": 1.057532817724921,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 0.9337449714992376
+    },
+    {
+      "scenario": "arrays-strings-hash/scan/large",
+      "category": "collection/sort",
+      "old_ms": 88.809403,
+      "new_ms": 103.6179595,
+      "increase_pct": 16.674536704182085,
+      "delta_ms": 14.808556499999995,
+      "ratio": 1.1667453670418209,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 24.624399,
+          "new_ms": 30.8261115,
+          "ratio": 1.2518523396246137,
+          "increase_pct": 25.185233962461375,
+          "nift_ratio_over_peer_ratio": 0.9320151667341905,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 77.4061475,
+          "new_ms": 102.54512249999999,
+          "ratio": 1.3247671640033498,
+          "increase_pct": 32.47671640033498,
+          "nift_ratio_over_peer_ratio": 0.8807173054591733,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 2.2822345,
+          "new_ms": 3.056455,
+          "ratio": 1.3392379266898298,
+          "increase_pct": 33.923792668982976,
+          "nift_ratio_over_peer_ratio": 0.87120095973211,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 1.528616,
+          "new_ms": 1.8849339999999999,
+          "ratio": 1.2330984367558628,
+          "increase_pct": 23.309843675586283,
+          "nift_ratio_over_peer_ratio": 0.9461899652645663,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 44.767091,
+          "new_ms": 57.1932985,
+          "ratio": 1.2775746027366397,
+          "increase_pct": 27.75746027366397,
+          "nift_ratio_over_peer_ratio": 0.9132502826391382,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 336.81452449999995,
+          "new_ms": 411.57831350000004,
+          "ratio": 1.221973173843933,
+          "increase_pct": 22.1973173843933,
+          "nift_ratio_over_peer_ratio": 0.9548044032518461,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 0.922537312702654
+    },
+    {
+      "scenario": "arrays-strings-hash/sort-index/small",
+      "category": "collection/sort",
+      "old_ms": 8.2300735,
+      "new_ms": 9.5409635,
+      "increase_pct": 15.928047301157156,
+      "delta_ms": 1.3108900000000006,
+      "ratio": 1.1592804730115716,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 18.281381500000002,
+          "new_ms": 24.386063999999998,
+          "ratio": 1.3339289484221963,
+          "increase_pct": 33.39289484221963,
+          "nift_ratio_over_peer_ratio": 0.8690721304030449,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 68.8621055,
+          "new_ms": 89.430463,
+          "ratio": 1.2986890591081333,
+          "increase_pct": 29.868905910813325,
+          "nift_ratio_over_peer_ratio": 0.8926543770282475,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 1.76639,
+          "new_ms": 2.1926829999999997,
+          "ratio": 1.2413357186125373,
+          "increase_pct": 24.133571861253735,
+          "nift_ratio_over_peer_ratio": 0.9338976198214288,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 1.6661185,
+          "new_ms": 1.985697,
+          "ratio": 1.1918101863702972,
+          "increase_pct": 19.181018637029723,
+          "nift_ratio_over_peer_ratio": 0.9727056256686343,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 35.559769,
+          "new_ms": 46.99407,
+          "ratio": 1.3215516107542769,
+          "increase_pct": 32.155161075427685,
+          "nift_ratio_over_peer_ratio": 0.8772116530128635,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 10.355135,
+          "new_ms": 14.435334999999998,
+          "ratio": 1.3940267316650143,
+          "increase_pct": 39.40267316650144,
+          "nift_ratio_over_peer_ratio": 0.8316056261180417,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 0.8848656433322561
+    },
+    {
+      "scenario": "sanity/loops/large",
+      "category": "scalar compute / algorithm (inspect workload)",
+      "old_ms": 74.996681,
+      "new_ms": 82.52454800000001,
+      "increase_pct": 10.037600197267427,
+      "delta_ms": 7.527867000000015,
+      "ratio": 1.1003760019726743,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 26.328286,
+          "new_ms": 31.5166505,
+          "ratio": 1.1970642714835293,
+          "increase_pct": 19.706427148352933,
+          "nift_ratio_over_peer_ratio": 0.9192288402434493,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 76.0568605,
+          "new_ms": 93.233919,
+          "ratio": 1.2258449584571007,
+          "increase_pct": 22.584495845710073,
+          "nift_ratio_over_peer_ratio": 0.8976469612908088,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 1.9653025,
+          "new_ms": 2.3760209999999997,
+          "ratio": 1.2089848763739932,
+          "increase_pct": 20.89848763739932,
+          "nift_ratio_over_peer_ratio": 0.9101652332268536,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 1.5017420000000001,
+          "new_ms": 1.9445725,
+          "ratio": 1.2948778818199131,
+          "increase_pct": 29.487788181991313,
+          "nift_ratio_over_peer_ratio": 0.849791333547321,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 41.986315,
+          "new_ms": 52.792289,
+          "ratio": 1.2573689546224764,
+          "increase_pct": 25.736895462247645,
+          "nift_ratio_over_peer_ratio": 0.8751416980094445,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 289.453152,
+          "new_ms": 360.218936,
+          "ratio": 1.2444809583555683,
+          "increase_pct": 24.448095835556828,
+          "nift_ratio_over_peer_ratio": 0.8842047719449951,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 0.890875163057376
+    },
+    {
+      "scenario": "dynamic-programming/fibonacci/large",
+      "category": "scalar compute / algorithm (inspect workload)",
+      "old_ms": 152.071131,
+      "new_ms": 164.16812099999999,
+      "increase_pct": 7.954823456925553,
+      "delta_ms": 12.096989999999977,
+      "ratio": 1.0795482345692555,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 33.7803465,
+          "new_ms": 44.28486650000001,
+          "ratio": 1.3109654307423995,
+          "increase_pct": 31.096543074239946,
+          "nift_ratio_over_peer_ratio": 0.8234757448622483,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 84.640274,
+          "new_ms": 109.64521049999999,
+          "ratio": 1.2954259871606746,
+          "increase_pct": 29.54259871606746,
+          "nift_ratio_over_peer_ratio": 0.833353850601236,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 2.9027415,
+          "new_ms": 3.9248674999999995,
+          "ratio": 1.3521243624346155,
+          "increase_pct": 35.21243624346155,
+          "nift_ratio_over_peer_ratio": 0.798408981127621,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 2.1656779999999998,
+          "new_ms": 2.5494065,
+          "ratio": 1.1771863130160625,
+          "increase_pct": 17.718631301606248,
+          "nift_ratio_over_peer_ratio": 0.9170580923620757,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 44.315813500000004,
+          "new_ms": 52.6104725,
+          "ratio": 1.1871715386653117,
+          "increase_pct": 18.717153866531167,
+          "nift_ratio_over_peer_ratio": 0.9093447740357281,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 0.833353850601236
+    },
+    {
+      "scenario": "arrays-strings-hash/sort-index/large",
+      "category": "collection/sort",
+      "old_ms": 876.8678605,
+      "new_ms": 904.6636874999999,
+      "increase_pct": 3.169899166352197,
+      "delta_ms": 27.795826999999917,
+      "ratio": 1.031698991663522,
+      "peers": [
+        {
+          "engine": "python",
+          "old_ms": 23.620068500000002,
+          "new_ms": 30.6326595,
+          "ratio": 1.2968912219708422,
+          "increase_pct": 29.689122197084217,
+          "nift_ratio_over_peer_ratio": 0.7955169826006561,
+          "binary_hash_equal": false
+        },
+        {
+          "engine": "ruby",
+          "old_ms": 80.94617,
+          "new_ms": 99.4327575,
+          "ratio": 1.22838125015674,
+          "increase_pct": 22.838125015673995,
+          "nift_ratio_over_peer_ratio": 0.839885004376189,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "lua54",
+          "old_ms": 36.8651525,
+          "new_ms": 45.951181,
+          "ratio": 1.2464665919936178,
+          "increase_pct": 24.646659199361775,
+          "nift_ratio_over_peer_ratio": 0.8276988715866077,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "luajit",
+          "old_ms": 33.929902999999996,
+          "new_ms": 44.3598995,
+          "ratio": 1.3073983589048281,
+          "increase_pct": 30.739835890482816,
+          "nift_ratio_over_peer_ratio": 0.7891236704073485,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "node",
+          "old_ms": 49.615125,
+          "new_ms": 59.784647500000005,
+          "ratio": 1.2049681926630238,
+          "increase_pct": 20.49681926630238,
+          "nift_ratio_over_peer_ratio": 0.8562043363015496,
+          "binary_hash_equal": true
+        },
+        {
+          "engine": "bash",
+          "old_ms": 253.85212,
+          "new_ms": 306.2512365,
+          "ratio": 1.2064159105702958,
+          "increase_pct": 20.641591057029586,
+          "nift_ratio_over_peer_ratio": 0.8551768777451038,
+          "binary_hash_equal": true
+        }
+      ],
+      "nift_ratio_over_median_peer_ratio": 0.8337474119355106
+    }
+  ]
+}
