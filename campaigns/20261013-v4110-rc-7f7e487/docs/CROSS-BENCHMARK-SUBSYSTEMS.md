@@ -10,3 +10,7 @@
 | Async/task retention | concurrency | Official audit complete; targeted same-node follow-up pending | unresolved | No release causal claim yet |
 
 Other suites still collecting. No cross-benchmark shared root cause is inferred from similarly named operations. All practitioner findings are drafts and Labs stays unchanged.
+
+| Website fresh-build path/filesystem probes | website-generator | Same-node freshfull+38.29%, syscallcount+73,389; profilesretained | regression | Confirmed testedboundary; rootcauseunproven |
+| Prepared template loops | template-engines | Same-node10k fresh−54.91%, source-render−71.82% | improvement | Three-pair diagnostic, rangeswidelyseparated |
+| Async queue | concurrency | Same-node100k4→4queue−67.04%;1kschedule change noisy | improvement inqueue | Three-pair diagnostic; no genericscheduler claim |

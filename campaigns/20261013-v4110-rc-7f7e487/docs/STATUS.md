@@ -4,7 +4,7 @@ Candidate remains frozen; release recommendation held. Current Labs must remain 
 
 # Campaign dashboard
 
-Preparation checkpoint COMPLETE. Candidate7f7e487; all8CLIhashes identical. Four suites measuring; task completed/cloud audit collecting; template/concurrency independently accepted; scripting independently accepted. All eight local/cloud certification gates pass.
+Preparation complete. Five official suites independently audited; scripting/task/website diagnostics closed and their hosts deleted. Template/concurrency targeted A/B audited; final reused-runtime controls pending. Build, shell and filesystem official measurements continue. Candidate and Labs remain unchanged.
 
 | Benchmark | Linode | Frozen suite | Planned observations | State | Audit | Labs/live | Teardown |
 |---|---:|---|---:|---|---|---|---|
@@ -15,11 +15,11 @@ Preparation checkpoint COMPLETE. Candidate7f7e487; all8CLIhashes identical. Four
 | shell-benchmark | 108024467 | aec1349 | 8,566 | official_measurement | pending | pending | retained |
 | task-runners | 108024433 | f37b63b | 1,527 | closed diagnostic series | independent pass | pending | deleted; CLI/API verified |
 | template-engines | 108024438 | 3c0dcdd | 18,700 | accepted; targeted A/B pending | independent pass | pending | retained |
-| website-generator-benchmark | 108024456 | a2890bc | 234 | audited; targeted A/B running | independent pass | pending | retained |
+| website-generator-benchmark | 108024456 | a2890bc | 234 | closed diagnostic series | independent pass | pending | deleted; CLI/API verified |
 
 ## Scripting diagnostic follow-up
 
-User requested same-node old/new A/B and focused regression investigation. Official accepted bytes remain immutable. Prior exact core SHA: `2eaec7d70e9ce2e698d0ba23a605fb9cf85317ff`; current candidate remains frozen. Scripting host retained; publication and release recommendation await findings. Other seven campaigns continue. Historical ranking, scenario peer ratios and read-only source hypotheses are under `scripting-regression-diagnostics/`.
+User requested same-node old/new A/B and focused regression investigation. Official accepted bytes remain immutable. Prior exact core SHA: `2eaec7d70e9ce2e698d0ba23a605fb9cf85317ff`; current candidate remains frozen. Scripting host is now deleted after retained audits/diagnostics. Release recommendation remains held; remaining campaigns continue. Historical ranking, scenario peer ratios and read-only source hypotheses are under `scripting-regression-diagnostics/`.
 
 Same-node scripting diagnostic independently audited: all 720 observations correct, 13 higher / 17 lower medians. Large function calls +145.76%, small +65.63%; sort/index large −30.71%. Source attribution awaits separated instrumentation. Release recommendation remains held.
 

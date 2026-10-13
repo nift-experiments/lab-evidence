@@ -1,23 +1,26 @@
 {
-  "checked_at_utc": "2026-10-13T09:16:42.719679+00:00",
+  "checked_at_utc": "2026-10-13T09:48:32.112413+00:00",
   "build-systems": {
     "pid": 15232,
-    "observations": 1992,
+    "observations": 2079,
     "planned": 9348,
-    "stage": "5000 graph completed; native10000/light/j4 collection ongoing",
+    "stage": "native10000/light/j4 global passed; no-op collection active",
     "all_completed_observations_correct": true,
-    "disk_available_gib": 145
+    "disk_available_gib": 145,
+    "active_collector": true
   },
   "task-runners": {
     "pid": 11642,
     "observations": 1527,
     "planned": 1527,
-    "stage": "independently accepted canonical diagnostic evidence; no task-specific A/B required; parent push/teardown pending",
+    "stage": "accepted diagnostic evidence; parent canonical scan/push/teardown authorized",
     "all_completed_observations_correct": true,
     "disk_available_gib": 145,
     "audit": "PASS1527observations/93cells",
     "diagnostics": "required A/B assessment complete: no major regression/inversion; no task-specific A/B required",
-    "canonical_series": "benchmarks/task-runners/20261013-v4110-rc-7f7e487"
+    "canonical_series": "benchmarks/task-runners/20261013-v4110-rc-7f7e487",
+    "active_collector": false,
+    "remaining_diagnostic_need": false
   },
   "provisional_numbers_are_not_accepted_results": true,
   "handoff": "Parent campaign.json and docs/STATUS are authoritative; resume monitoring under authorized20minute heartbeat. Neither node may be deleted before audit/evidence/publication gates.",

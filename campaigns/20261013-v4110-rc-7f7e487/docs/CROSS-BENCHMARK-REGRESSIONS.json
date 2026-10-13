@@ -3492,5 +3492,27 @@
     "throughput": []
   },
   "correctness_regressions": [],
-  "capability_regressions": []
+  "capability_regressions": [],
+  "additional_same_node_diagnostic_increases": [
+    {
+      "benchmark": "website-generator",
+      "scenario": "application-cold",
+      "boundary": "10000pages targeted adjacent paired versions",
+      "old_ms": 2561.444901,
+      "candidate_ms": 3542.236821,
+      "improvement_pct": -38.290572622393505,
+      "samples_per_version": 5,
+      "basis": "independently audited same-node targeted diagnostic; all observed ranges disjoint"
+    },
+    {
+      "benchmark": "template-engines",
+      "scenario": "article",
+      "boundary": "fresh",
+      "old_ms": 3.308914,
+      "candidate_ms": 3.417296,
+      "improvement_pct": -3.2754553306613516,
+      "samples_per_version": 3,
+      "basis": "independently audited same-node targeted diagnostic; descriptive three-pair control"
+    }
+  ]
 }

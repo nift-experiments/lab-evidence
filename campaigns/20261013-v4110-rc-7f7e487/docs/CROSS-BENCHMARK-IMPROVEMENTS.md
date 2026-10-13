@@ -287,3 +287,18 @@ Audited suite exports only. Time, memory and throughput are ranked separately. H
 | sanity/noop/large | 3.426 | 3.359 | 1.96% |
 | sanity/output/large | 3.778 | 3.707 | 1.88% |
 | structured-data/json-traverse/large | 491.211 | 489.025 | 0.45% |
+
+## Additional targeted same-node diagnostic wins
+
+These small paired controls are separate from official peer distributions. Scheduler change is noisy, not an established improvement.
+
+| Benchmark / scenario / boundary | Old ms | Candidate ms | Improvement | Pairs |
+|---|---:|---:|---:|---:|
+| template-engines / loop-10000 / source-render | 119.508 | 33.683 | 71.82% | 3 |
+| concurrency / queue-100000-4-4 / fresh runtime/readiness request | 36066.073 | 11887.314 | 67.04% | 3 |
+| template-engines / loop-10000 / fresh | 168.238 | 75.854 | 54.91% | 3 |
+| template-engines / article / source-render | 0.430 | 0.266 | 38.05% | 3 |
+| website-generator / incremental/no-op / 10000pages targeted adjacent paired versions | 932.931 | 813.536 | 12.80% | 5 |
+| website-generator / warm-full / 10000pages targeted adjacent paired versions | 3176.786 | 2776.981 | 12.59% | 5 |
+| website-generator / incremental/one-page / 10000pages targeted adjacent paired versions | 920.908 | 821.310 | 10.82% | 5 |
+| concurrency / schedule-1000 / fresh runtime/readiness request | 367.189 | 360.724 | 1.76% | 3 |

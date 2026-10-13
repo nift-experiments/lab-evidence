@@ -1,0 +1,102 @@
+[
+  {
+    "benchmark": "template-engines",
+    "scenario": "loop-10000",
+    "boundary": "fresh",
+    "old_ms": 168.237997,
+    "candidate_ms": 75.854284,
+    "improvement_pct": 54.91251361010914,
+    "samples_per_version": 3,
+    "basis": "independently audited same-node targeted diagnostic; descriptive three-pair control"
+  },
+  {
+    "benchmark": "template-engines",
+    "scenario": "loop-10000",
+    "boundary": "source-render",
+    "old_ms": 119.508033,
+    "candidate_ms": 33.682796,
+    "improvement_pct": 71.81545444731735,
+    "samples_per_version": 3,
+    "basis": "independently audited same-node targeted diagnostic; descriptive three-pair control"
+  },
+  {
+    "benchmark": "template-engines",
+    "scenario": "article",
+    "boundary": "fresh",
+    "old_ms": 3.308914,
+    "candidate_ms": 3.417296,
+    "improvement_pct": -3.2754553306613516,
+    "samples_per_version": 3,
+    "basis": "independently audited same-node targeted diagnostic; descriptive three-pair control"
+  },
+  {
+    "benchmark": "template-engines",
+    "scenario": "article",
+    "boundary": "source-render",
+    "old_ms": 0.42996,
+    "candidate_ms": 0.266374,
+    "improvement_pct": 38.04679505070239,
+    "samples_per_version": 3,
+    "basis": "independently audited same-node targeted diagnostic; descriptive three-pair control"
+  },
+  {
+    "benchmark": "concurrency",
+    "scenario": "schedule-1000",
+    "boundary": "fresh runtime/readiness request",
+    "old_ms": 367.188964,
+    "candidate_ms": 360.724147,
+    "improvement_pct": 1.760623993045712,
+    "samples_per_version": 3,
+    "basis": "independently audited same-node targeted diagnostic; descriptive three-pair control"
+  },
+  {
+    "benchmark": "concurrency",
+    "scenario": "queue-100000-4-4",
+    "boundary": "fresh runtime/readiness request",
+    "old_ms": 36066.073134,
+    "candidate_ms": 11887.314455,
+    "improvement_pct": 67.04017537247863,
+    "samples_per_version": 3,
+    "basis": "independently audited same-node targeted diagnostic; descriptive three-pair control"
+  },
+  {
+    "benchmark": "website-generator",
+    "scenario": "application-cold",
+    "boundary": "10000pages targeted adjacent paired versions",
+    "old_ms": 2561.444901,
+    "candidate_ms": 3542.236821,
+    "improvement_pct": -38.290572622393505,
+    "samples_per_version": 5,
+    "basis": "independently audited same-node targeted diagnostic; all observed ranges disjoint"
+  },
+  {
+    "benchmark": "website-generator",
+    "scenario": "warm-full",
+    "boundary": "10000pages targeted adjacent paired versions",
+    "old_ms": 3176.786345,
+    "candidate_ms": 2776.981235,
+    "improvement_pct": 12.58520613541606,
+    "samples_per_version": 5,
+    "basis": "independently audited same-node targeted diagnostic; all observed ranges disjoint"
+  },
+  {
+    "benchmark": "website-generator",
+    "scenario": "incremental/no-op",
+    "boundary": "10000pages targeted adjacent paired versions",
+    "old_ms": 932.930507,
+    "candidate_ms": 813.535745,
+    "improvement_pct": 12.797819462880955,
+    "samples_per_version": 5,
+    "basis": "independently audited same-node targeted diagnostic; all observed ranges disjoint"
+  },
+  {
+    "benchmark": "website-generator",
+    "scenario": "incremental/one-page",
+    "boundary": "10000pages targeted adjacent paired versions",
+    "old_ms": 920.90838,
+    "candidate_ms": 821.309993,
+    "improvement_pct": 10.815232998531298,
+    "samples_per_version": 5,
+    "basis": "independently audited same-node targeted diagnostic; all observed ranges disjoint"
+  }
+]

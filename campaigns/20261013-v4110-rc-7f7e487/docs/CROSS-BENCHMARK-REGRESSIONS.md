@@ -104,3 +104,7 @@ All720observations audited. Callcases have10/10pairs slower and nonoverlapping r
 | 78 | template-engines / includes-1 / source-render | 0.040 | 0.041 | 1.14% |
 
 These historical rankings are cross-node trends, not causal attribution. Targeted template/concurrency/website A/B is in progress. No capability/correctness regression has yet been reported in accepted audits; remaining suites are unfinished. See subsystem report for qualified source leads.
+
+## Additional targeted same-node findings
+
+Website10k freshfull:2561.445→3542.237ms, **+38.29%**, +980.792ms; all observed ranges disjoint in five paired measured samples. Warmfull/no-op/leaf improve10.82–12.80%. Separate profiles show330,820→404,209syscalls; investigatefilesystem/path probes, without assumingthe scriptingcall rootcause. Tinytemplate fresharticle increases3.28% across threepairs with noisyoverlapping values; not aconfirmed materialregression.
