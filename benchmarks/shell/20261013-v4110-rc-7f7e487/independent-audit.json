@@ -1,0 +1,36 @@
+{
+  "pass": true,
+  "checks": [
+    "complete planned counts",
+    "unique IDs/rounds",
+    "all sample correctness",
+    "independently recomputed distribution fields",
+    "bash/zsh/fish/nu/nift present",
+    "expanded source hashes"
+  ],
+  "files": [
+    {
+      "file": "shell-repeated.json",
+      "jobs": 76,
+      "measured": 4900,
+      "warmups": 228,
+      "sha256": "bab56d1192783fd764d1c836ee97553816c66a418ad6fac3f14300de620743ac"
+    },
+    {
+      "file": "shell-application-cold.json",
+      "jobs": 76,
+      "measured": 1680,
+      "warmups": 228,
+      "sha256": "0e893c0707da53fd2fb6a6f25babbebf9169252ee844660ce40d11e7e03498d3"
+    },
+    {
+      "file": "shell-workloads.json",
+      "jobs": 141,
+      "measured": 1275,
+      "warmups": 255,
+      "sha256": "07b32101c8475623cdada6c45de6c288cdb712aa5bd16499783099cdad1abc7e"
+    }
+  ],
+  "measured": 7855,
+  "warmups": 711
+}

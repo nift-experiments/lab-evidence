@@ -12,7 +12,7 @@ Preparation complete. Five official suites independently audited; scripting/task
 | concurrency | 108024477 | d6d0cac | 11,506 | closed diagnostic series | independent pass | pending | deleted; CLI/API verified |
 | filesystem-automation | 108024451 | 75e77bb | 15,016 | official_measurement | pending | pending | retained |
 | scripting-benchmark | 108024446 | f889fff | 2,256 | closed diagnostic series | pass | pending | deleted; CLI/API verified |
-| shell-benchmark | 108024467 | aec1349 | 8,566 | official_measurement | pending | pending | retained |
+| shell-benchmark | 108024467 | aec1349 | 8,566 | measured; targeted A/B pending | independent pass | pending | retained |
 | task-runners | 108024433 | f37b63b | 1,527 | closed diagnostic series | independent pass | pending | deleted; CLI/API verified |
 | template-engines | 108024438 | 3c0dcdd | 18,700 | closed diagnostic series | independent pass | pending | deleted; CLI/API verified |
 | website-generator-benchmark | 108024456 | a2890bc | 234 | closed diagnostic series | independent pass | pending | deleted; CLI/API verified |
@@ -25,4 +25,4 @@ Same-node scripting diagnostic independently audited: all 720 observations corre
 
 Scripting closeout: official accepted results and720-observation paired A/B plus24instrumented runs safely pushed at2b98e06. Node108024446 deleted; CLIabsence/API404 verified; per-host temporary access removed. Shared temporary access remains only for the three active hosts.
 
-Latest collector checkpoint: build4,208/9,348; shellexpanded1,074observations (partial round checkpoints, not total suite acceptance); filesystemprimary detect-mtime-1-10000, filter queued. No failures reported; no new audited engineering conclusions. Partial timing values are excluded from synthesis/rankings. Five completed hosts remain CLI/API-confirmed absent. Labs source/public trees remain clean.
+Latest collector checkpoint: build5,651/9,348; shellfull8,566observations independently audited; targeted A/B pending; filesystemprimary detect-hash-1-10000, filter queued. No failures reported; no new audited engineering conclusions. Partial timing values are excluded from synthesis/rankings. Five completed hosts remain CLI/API-confirmed absent. Labs source/public trees remain clean.

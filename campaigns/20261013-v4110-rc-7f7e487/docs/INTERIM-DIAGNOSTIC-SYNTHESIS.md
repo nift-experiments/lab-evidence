@@ -122,3 +122,7 @@ Newly supported capabilities(E): none established in these five refreshed suites
 ## Campaign status
 
 Five suites closed with retained/pushed evidence and verifiedteardown. Build/shell/filesystem continue unchanged. Do not modify core or publishLabs. Fold remaining acceptedresults into these reports as theyfinish.
+
+## Newly audited shell — diagnostic pending
+
+All8,566observations passed independent count/correctness/distribution audit (7,855measured+711warmups,293jobs; Bash/Zsh/Fish/Nu/Nift). Historical shellfunction-calls22.586→46.722ms (+106.86%) is cross-node screening only; targeted same-node call/string/traversal controls are pending. Do not promote this to a confirmed shared runtime regression yet. Most other historical cases improve or vary modestly.
