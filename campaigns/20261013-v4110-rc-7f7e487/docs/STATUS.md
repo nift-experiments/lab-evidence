@@ -13,9 +13,9 @@ Preparation checkpoint COMPLETE. Candidate7f7e487; all8CLIhashes identical. Four
 | filesystem-automation | 108024451 | 75e77bb | 15,016 | official_measurement | pending | pending | retained |
 | scripting-benchmark | 108024446 | f889fff | 2,256 | closed diagnostic series | pass | pending | deleted; CLI/API verified |
 | shell-benchmark | 108024467 | aec1349 | 8,566 | official_measurement | pending | pending | retained |
-| task-runners | 108024433 | f37b63b | 1,527 | accepted; diagnostic assessment complete | independent pass | pending | retained |
+| task-runners | 108024433 | f37b63b | 1,527 | closed diagnostic series | independent pass | pending | deleted; CLI/API verified |
 | template-engines | 108024438 | 3c0dcdd | 18,700 | accepted; targeted A/B pending | independent pass | pending | retained |
-| website-generator-benchmark | 108024456 | a2890bc | 234 | official_measurement | pending | pending | retained |
+| website-generator-benchmark | 108024456 | a2890bc | 234 | audited; targeted A/B running | independent pass | pending | retained |
 
 ## Scripting diagnostic follow-up
 
