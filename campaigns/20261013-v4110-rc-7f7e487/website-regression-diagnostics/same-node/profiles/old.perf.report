@@ -1,0 +1,935 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 267  of event 'cpu-clock'
+# Event count (approx.): 2696969670
+#
+# Overhead  Command  Shared Object        Symbol                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+# ........  .......  ...................  .......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+#
+     6.74%  nift     [kernel.kallsyms]    [k] clear_page_rep
+            |
+            ---clear_page_rep
+               get_page_from_freelist
+               __alloc_pages
+               |          
+                --6.37%--alloc_pages_mpol
+                          |          
+                          |--5.62%--alloc_pages
+                          |          folio_alloc
+                          |          filemap_alloc_folio
+                          |          __filemap_get_folio
+                          |          ext4_da_write_begin
+                          |          generic_perform_write
+                          |          ext4_buffered_write_iter
+                          |          ext4_file_write_iter
+                          |          vfs_write
+                          |          ksys_write
+                          |          __x64_sys_write
+                          |          x64_sys_call
+                          |          do_syscall_64
+                          |          entry_SYSCALL_64_after_hwframe
+                          |          write
+                          |          std::__basic_file<char>::xsputn(char const*, long)
+                          |          std::basic_filebuf<char, std::char_traits<char> >::_M_convert_to_external(char*, long)
+                          |          std::basic_filebuf<char, std::char_traits<char> >::overflow(int)
+                          |          std::basic_filebuf<char, std::char_traits<char> >::_M_terminate_output()
+                          |          std::basic_filebuf<char, std::char_traits<char> >::close()
+                          |          filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)::{lambda()#1}::operator()() const
+                          |          filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)
+                          |          |          
+                          |          |--3.00%--ProjectInfo::write_page_info(TrackedInfo const&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, unsigned long) const
+                          |          |          ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+                          |          |          ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+                          |          |          0x7662980ecdb3
+                          |          |          0x766297c9caa3
+                          |          |          0x766297d29c6b
+                          |          |          
+                          |           --2.62%--ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+                          |                     ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+                          |                     0x7662980ecdb3
+                          |                     0x766297c9caa3
+                          |                     0x766297d29c6b
+                          |          
+                           --0.75%--vma_alloc_folio
+                                     alloc_anon_folio
+                                     do_anonymous_page
+                                     handle_pte_fault
+                                     __handle_mm_fault
+                                     handle_mm_fault
+                                     do_user_addr_fault
+                                     exc_page_fault
+                                     asm_exc_page_fault
+                                     TrackedInfo::TrackedInfo(TrackedInfo&&)
+                                     project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<TrackedInfo, std::allocator<TrackedInfo> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)::{lambda(json::Document&&)#1}::operator()(json::Document&&) const
+                                     project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<TrackedInfo, std::allocator<TrackedInfo> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+                                     ProjectInfo::load_tracking()
+                                     ProjectInfo::open()
+                                     run_cli(int, char**)
+                                     0xffffffffffffffff
+
+     3.37%  nift     [kernel.kallsyms]    [k] __d_lookup_rcu
+            |
+            ---__d_lookup_rcu
+               lookup_fast
+               walk_component
+               |          
+               |--2.25%--path_lookupat
+               |          filename_lookup
+               |          vfs_statx
+               |          vfs_fstatat
+               |          __do_sys_newfstatat
+               |          __x64_sys_newfstatat
+               |          x64_sys_call
+               |          do_syscall_64
+               |          entry_SYSCALL_64_after_hwframe
+               |          fstatat64
+               |          filesystem::path_exists(std::filesystem::__cxx11::path const&)
+               |          |          
+               |          |--1.50%--ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+               |          |          ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+               |          |          0x7662980ecdb3
+               |          |          0x766297c9caa3
+               |          |          0x766297d29c6b
+               |          |          
+               |           --0.75%--ProjectInfo::load_user_dependencies(TrackedInfo const&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, BuildError*) const
+               |                     ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+               |                     ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+               |                     0x7662980ecdb3
+               |                     0x766297c9caa3
+               |                     0x766297d29c6b
+               |          
+                --1.12%--link_path_walk.part.0.constprop.0
+                          |          
+                           --0.75%--path_lookupat
+                                     filename_lookup
+
+     3.37%  nift     [kernel.kallsyms]    [k] ext4_match
+            |
+            ---ext4_match
+               |          
+               |--1.87%--ext4_search_dir
+               |          |          
+               |           --1.50%--ext4_dx_find_entry
+               |                     __ext4_find_entry
+               |                     ext4_lookup
+               |                     __lookup_slow
+               |                     walk_component
+               |                     path_lookupat
+               |                     filename_lookup
+               |                     vfs_statx
+               |                     vfs_fstatat
+               |                     __do_sys_newfstatat
+               |                     __x64_sys_newfstatat
+               |                     x64_sys_call
+               |                     do_syscall_64
+               |                     entry_SYSCALL_64_after_hwframe
+               |                     fstatat64
+               |                     filesystem::path_exists(std::filesystem::__cxx11::path const&)
+               |                     |          
+               |                      --1.12%--ProjectInfo::load_user_dependencies(TrackedInfo const&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, BuildError*) const
+               |                                ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+               |                                ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+               |                                0x7662980ecdb3
+               |                                0x766297c9caa3
+               |                                0x766297d29c6b
+               |          
+                --1.50%--ext4_find_dest_de
+                          add_dirent_to_buf
+                          ext4_dx_add_entry
+                          ext4_add_entry
+                          ext4_add_nondir
+                          ext4_create
+                          lookup_open.isra.0
+                          open_last_lookups
+                          path_openat
+                          do_filp_open
+                          do_sys_openat2
+                          __x64_sys_openat
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          open64
+                          _IO_file_open
+                          _IO_file_fopen
+                          fopen
+                          std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int)
+                          std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode)
+                          filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)::{lambda()#1}::operator()() const
+                          filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)
+                          ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+                          ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+                          0x7662980ecdb3
+                          0x766297c9caa3
+                          0x766297d29c6b
+
+     2.62%  nift     [kernel.kallsyms]    [k] __ext4_check_dir_entry
+            |
+            ---__ext4_check_dir_entry
+               |          
+                --2.25%--ext4_find_dest_de
+                          add_dirent_to_buf
+                          ext4_dx_add_entry
+                          ext4_add_entry
+                          ext4_add_nondir
+                          ext4_create
+                          lookup_open.isra.0
+                          open_last_lookups
+                          path_openat
+                          do_filp_open
+                          do_sys_openat2
+                          __x64_sys_openat
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          open64
+                          _IO_file_open
+                          _IO_file_fopen
+                          fopen
+                          std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int)
+                          std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode)
+                          filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)::{lambda()#1}::operator()() const
+                          filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)
+                          |          
+                          |--1.50%--ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+                          |          ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+                          |          0x7662980ecdb3
+                          |          0x766297c9caa3
+                          |          0x766297d29c6b
+                          |          
+                           --0.75%--ProjectInfo::write_page_info(TrackedInfo const&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, unsigned long) const
+                                     ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+                                     ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+                                     0x7662980ecdb3
+                                     0x766297c9caa3
+                                     0x766297d29c6b
+
+     2.25%  nift     [kernel.kallsyms]    [k] link_path_walk.part.0.constprop.0
+            |
+            ---link_path_walk.part.0.constprop.0
+               |          
+               |--1.50%--path_lookupat
+               |          filename_lookup
+               |          |          
+               |           --1.12%--user_path_at_empty
+               |                     |          
+               |                      --0.75%--do_readlinkat
+               |                                __x64_sys_readlink
+               |                                x64_sys_call
+               |                                do_syscall_64
+               |                                entry_SYSCALL_64_after_hwframe
+               |                                readlink
+               |                                realpath
+               |                                std::filesystem::canonical(std::filesystem::__cxx11::path const&, std::error_code&)
+               |                                std::filesystem::weakly_canonical(std::filesystem::__cxx11::path const&, std::error_code&)
+               |                                (anonymous namespace)::canonical_authority_path(std::filesystem::__cxx11::path const&)
+               |                                Parser::Parser(RenderHost&, TrackedInfo&, std::shared_ptr<ExecutionOutput>, std::function<std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > ()>)
+               |                                ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+               |                                0xffffffffffffffff
+               |          
+                --0.75%--path_openat
+                          do_filp_open
+                          do_sys_openat2
+                          __x64_sys_openat
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          open64
+                          _IO_file_open
+                          _IO_file_fopen
+                          fopen
+                          std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int)
+                          std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode)
+
+     1.87%  nift     [kernel.kallsyms]    [k] ext4_find_dest_de
+            |
+            ---ext4_find_dest_de
+               add_dirent_to_buf
+               ext4_dx_add_entry
+               ext4_add_entry
+               ext4_add_nondir
+               ext4_create
+               lookup_open.isra.0
+               open_last_lookups
+               path_openat
+               do_filp_open
+               do_sys_openat2
+               __x64_sys_openat
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               open64
+               _IO_file_open
+               _IO_file_fopen
+               fopen
+               std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int)
+               std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode)
+               filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)::{lambda()#1}::operator()() const
+               filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)
+               |          
+                --1.50%--ProjectInfo::write_page_info(TrackedInfo const&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, unsigned long) const
+                          ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+                          ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+                          0x7662980ecdb3
+                          0x766297c9caa3
+                          0x766297d29c6b
+
+     1.87%  nift     [kernel.kallsyms]    [k] ext4_search_dir
+            |
+            ---ext4_search_dir
+               ext4_dx_find_entry
+               __ext4_find_entry
+               ext4_lookup
+               |          
+               |--1.12%--__lookup_slow
+               |          walk_component
+               |          path_lookupat
+               |          filename_lookup
+               |          vfs_statx
+               |          vfs_fstatat
+               |          __do_sys_newfstatat
+               |          __x64_sys_newfstatat
+               |          x64_sys_call
+               |          do_syscall_64
+               |          entry_SYSCALL_64_after_hwframe
+               |          fstatat64
+               |          filesystem::path_exists(std::filesystem::__cxx11::path const&)
+               |          ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+               |          ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+               |          0x7662980ecdb3
+               |          0x766297c9caa3
+               |          0x766297d29c6b
+               |          
+                --0.75%--lookup_open.isra.0
+                          open_last_lookups
+                          path_openat
+                          do_filp_open
+                          do_sys_openat2
+                          __x64_sys_openat
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          open64
+                          _IO_file_open
+                          _IO_file_fopen
+                          fopen
+                          std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int)
+                          std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode)
+                          filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)::{lambda()#1}::operator()() const
+                          filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)
+                          ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+                          ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+                          0x7662980ecdb3
+                          0x766297c9caa3
+                          0x766297d29c6b
+
+     1.87%  nift     libc.so.6            [.] cfree
+            |
+            ---cfree
+
+     1.50%  nift     [kernel.kallsyms]    [k] __ext4_new_inode
+            |
+            ---__ext4_new_inode
+               ext4_create
+               lookup_open.isra.0
+               open_last_lookups
+               path_openat
+               do_filp_open
+               do_sys_openat2
+               __x64_sys_openat
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               open64
+               _IO_file_open
+               _IO_file_fopen
+               fopen
+               std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int)
+               std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode)
+               filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)::{lambda()#1}::operator()() const
+               filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)
+               |          
+                --1.12%--ProjectInfo::write_page_info(TrackedInfo const&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, unsigned long) const
+                          ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+                          ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+                          0x7662980ecdb3
+                          0x766297c9caa3
+                          0x766297d29c6b
+
+     1.50%  nift     [kernel.kallsyms]    [k] rep_movs_alternative
+            |
+            ---rep_movs_alternative
+               |          
+                --0.75%--copy_page_to_iter
+                          filemap_read
+                          generic_file_read_iter
+                          ext4_file_read_iter
+                          vfs_read
+                          ksys_read
+                          __x64_sys_read
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          read
+                          std::__basic_file<char>::xsgetn(char*, long)
+                          std::basic_filebuf<char, std::char_traits<char> >::underflow()
+                          std::basic_streambuf<char, std::char_traits<char> >::xsgetn(char*, long)
+                          std::basic_filebuf<char, std::char_traits<char> >::xsgetn(char*, long)
+                          std::istream::read(char*, long)
+                          filesystem::read_file_checked(std::filesystem::__cxx11::path const&)
+                          filesystem::read_file(std::filesystem::__cxx11::path const&)
+                          compute_tracked_metadata(std::filesystem::__cxx11::path const&, Config const&, TrackedInfo const&, content_model::Model const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*)
+                          ProjectInfoHost::page_project_metadata(TrackedInfo const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) const
+                          Parser::Parser(RenderHost&, TrackedInfo&, std::shared_ptr<ExecutionOutput>, std::function<std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > ()>)
+                          ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+                          0xffffffffffffffff
+
+     1.50%  nift     libstdc++.so.6.0.33  [.] std::filesystem::__cxx11::path::_M_split_cmpts()
+            |
+            ---std::filesystem::__cxx11::path::_M_split_cmpts()
+               |          
+                --0.75%--0x7662981ae9a5
+                          std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+                          std::filesystem::__cxx11::path::lexically_normal() const
+
+     1.12%  nift     [kernel.kallsyms]    [k] fscrypt_match_name
+            |
+            ---fscrypt_match_name
+               ext4_match
+               |          
+                --0.75%--ext4_find_dest_de
+                          add_dirent_to_buf
+                          ext4_dx_add_entry
+                          ext4_add_entry
+                          ext4_add_nondir
+                          ext4_create
+                          lookup_open.isra.0
+                          open_last_lookups
+                          path_openat
+                          do_filp_open
+                          do_sys_openat2
+                          __x64_sys_openat
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          open64
+                          _IO_file_open
+                          _IO_file_fopen
+                          fopen
+                          std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int)
+                          std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode)
+                          filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)::{lambda()#1}::operator()() const
+                          filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)
+                          ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+                          ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+                          0x7662980ecdb3
+                          0x766297c9caa3
+                          0x766297d29c6b
+
+     1.12%  nift     [kernel.kallsyms]    [k] mntput_no_expire
+            |
+            ---mntput_no_expire
+               |          
+                --0.75%--mntput
+                          terminate_walk
+                          path_openat
+                          do_filp_open
+                          do_sys_openat2
+                          __x64_sys_openat
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          open64
+                          _IO_file_open
+                          _IO_file_fopen
+                          fopen
+                          std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int)
+                          std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode)
+                          filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)::{lambda()#1}::operator()() const
+                          filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)
+                          ProjectInfo::write_page_info(TrackedInfo const&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, unsigned long) const
+                          ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+                          ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+                          0x7662980ecdb3
+                          0x766297c9caa3
+                          0x766297d29c6b
+
+     1.12%  nift     [kernel.kallsyms]    [k] srso_safe_ret
+            |
+            ---srso_safe_ret
+
+     1.12%  nift     [kernel.kallsyms]    [k] step_into
+            |
+            ---step_into
+               walk_component
+               link_path_walk.part.0.constprop.0
+               |          
+                --0.75%--path_lookupat
+                          filename_lookup
+                          vfs_statx
+                          vfs_fstatat
+                          __do_sys_newfstatat
+                          __x64_sys_newfstatat
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          fstatat64
+
+     1.12%  nift     libc.so.6            [.] 0x000000000018b7e1
+            |
+            ---0x766297d8b7e1
+
+     1.12%  nift     libc.so.6            [.] 0x000000000018b7f0
+            |
+            ---0x766297d8b7f0
+               std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::compare(unsigned long, unsigned long, char const*) const
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance)
+               |          
+                --0.75%--Parser::render_composed(RenderSource const&, std::optional<RenderSource> const&, bool)
+                          Parser::render()
+                          ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+                          0xffffffffffffffff
+
+     1.12%  nift     libstdc++.so.6.0.33  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::compare(unsigned long, unsigned long, char const*) const
+            |
+            ---std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::compare(unsigned long, unsigned long, char const*) const
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance)
+               |          
+                --0.75%--Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance)
+                          Parser::render_composed(RenderSource const&, std::optional<RenderSource> const&, bool)
+                          0xffffffffffffffff
+
+     1.12%  nift     libstdc++.so.6.0.33  [.] std::filesystem::__cxx11::path::_List::_Impl_deleter::operator()(std::filesystem::__cxx11::path::_List::_Impl*) const
+            |
+            ---std::filesystem::__cxx11::path::_List::_Impl_deleter::operator()(std::filesystem::__cxx11::path::_List::_Impl*) const
+               0x7662981ae90d
+               std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+
+     1.12%  nift     libstdc++.so.6.0.33  [.] std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+            |
+            ---std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+               |          
+                --0.75%--project_read::content_path_of(std::filesystem::__cxx11::path const&, Config const&, TrackedInfo const&)
+
+     1.12%  nift     nift                 [.] Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, int)#1}::operator()(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, int) const
+            |
+            ---Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, int)#1}::operator()(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, int) const
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+               Parser::evaluate_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance)
+               Parser::render_composed(RenderSource const&, std::optional<RenderSource> const&, bool)
+               0xffffffffffffffff
+
+     0.75%  nift     [kernel.kallsyms]    [k] __mark_inode_dirty
+            |
+            ---__mark_inode_dirty
+               mark_buffer_dirty
+               __block_commit_write
+               block_write_end
+               ext4_da_do_write_end
+               ext4_da_write_end
+               generic_perform_write
+               ext4_buffered_write_iter
+               ext4_file_write_iter
+               vfs_write
+               ksys_write
+               __x64_sys_write
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               write
+               std::__basic_file<char>::xsputn(char const*, long)
+               std::basic_filebuf<char, std::char_traits<char> >::_M_convert_to_external(char*, long)
+               std::basic_filebuf<char, std::char_traits<char> >::overflow(int)
+               std::basic_filebuf<char, std::char_traits<char> >::_M_terminate_output()
+               std::basic_filebuf<char, std::char_traits<char> >::close()
+               filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)::{lambda()#1}::operator()() const
+               filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)
+
+     0.75%  nift     [kernel.kallsyms]    [k] _raw_spin_unlock_irqrestore
+            |
+            ---_raw_spin_unlock_irqrestore
+               __folio_mark_dirty
+               mark_buffer_dirty
+               __block_commit_write
+               block_write_end
+               ext4_da_do_write_end
+               ext4_da_write_end
+               generic_perform_write
+               ext4_buffered_write_iter
+               ext4_file_write_iter
+               vfs_write
+               ksys_write
+               __x64_sys_write
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               write
+               std::__basic_file<char>::xsputn(char const*, long)
+               std::basic_filebuf<char, std::char_traits<char> >::_M_convert_to_external(char*, long)
+               std::basic_filebuf<char, std::char_traits<char> >::overflow(int)
+               std::basic_filebuf<char, std::char_traits<char> >::_M_terminate_output()
+               std::basic_filebuf<char, std::char_traits<char> >::close()
+               filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)::{lambda()#1}::operator()() const
+               filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)
+               ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+               ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+               0x7662980ecdb3
+               0x766297c9caa3
+               0x766297d29c6b
+
+     0.75%  nift     [kernel.kallsyms]    [k] check_heap_object
+            |
+            ---check_heap_object
+               __check_object_size.part.0
+               __check_object_size
+               strncpy_from_user
+               getname_flags.part.0
+               getname_flags
+
+     0.75%  nift     [kernel.kallsyms]    [k] cp_new_stat
+            |
+            ---cp_new_stat
+               __do_sys_newfstatat
+               __x64_sys_newfstatat
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               fstatat64
+
+     0.75%  nift     [kernel.kallsyms]    [k] do_sys_openat2
+            |
+            ---do_sys_openat2
+               __x64_sys_openat
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               open64
+               _IO_file_open
+               _IO_file_fopen
+               fopen
+               std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int)
+               std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode)
+
+     0.75%  nift     [kernel.kallsyms]    [k] do_syscall_64
+            |
+            ---do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               __close_nocancel
+               _IO_file_close_it
+               fclose
+               std::__basic_file<char>::close()
+               std::basic_filebuf<char, std::char_traits<char> >::close()
+               filesystem::read_file_checked(std::filesystem::__cxx11::path const&)
+
+     0.75%  nift     [kernel.kallsyms]    [k] dput
+            |
+            ---dput
+
+     0.75%  nift     [kernel.kallsyms]    [k] dx_probe
+            |
+            ---dx_probe
+               ext4_dx_add_entry
+               ext4_add_entry
+               ext4_add_nondir
+               ext4_create
+               lookup_open.isra.0
+               open_last_lookups
+               path_openat
+               do_filp_open
+               do_sys_openat2
+               __x64_sys_openat
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               open64
+               _IO_file_open
+               _IO_file_fopen
+               fopen
+               std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int)
+               std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode)
+               filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)::{lambda()#1}::operator()() const
+               filesystem::write_direct_file(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::perms)
+
+     0.75%  nift     [kernel.kallsyms]    [k] ext4_get_group_desc
+            |
+            ---ext4_get_group_desc
+               __ext4_get_inode_loc
+               ext4_get_inode_loc
+               ext4_reserve_inode_write
+               __ext4_mark_inode_dirty
+
+     0.75%  nift     [kernel.kallsyms]    [k] inode_permission
+            |
+            ---inode_permission
+               link_path_walk.part.0.constprop.0
+               path_lookupat
+               filename_lookup
+               vfs_statx
+               vfs_fstatat
+               __do_sys_newfstatat
+               __x64_sys_newfstatat
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               fstatat64
+               filesystem::file_exists(std::filesystem::__cxx11::path const&)
+               compute_tracked_metadata(std::filesystem::__cxx11::path const&, Config const&, TrackedInfo const&, content_model::Model const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*)
+               ProjectInfoHost::page_project_metadata(TrackedInfo const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) const
+               Parser::Parser(RenderHost&, TrackedInfo&, std::shared_ptr<ExecutionOutput>, std::function<std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > ()>)
+               ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+               ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+               0x7662980ecdb3
+               0x766297c9caa3
+               0x766297d29c6b
+
+     0.75%  nift     [kernel.kallsyms]    [k] jbd2_journal_stop
+            |
+            ---jbd2_journal_stop
+               __ext4_journal_stop
+               ext4_dirty_inode
+               __mark_inode_dirty
+
+     0.75%  nift     [kernel.kallsyms]    [k] kmem_cache_alloc
+            |
+            ---kmem_cache_alloc
+
+     0.75%  nift     [kernel.kallsyms]    [k] lockref_get_not_dead
+            |
+            ---lockref_get_not_dead
+               try_to_unlazy
+               complete_walk
+
+     0.75%  nift     [kernel.kallsyms]    [k] locks_remove_posix
+            |
+            ---locks_remove_posix
+               filp_flush
+               __x64_sys_close
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               __close_nocancel
+               _IO_file_close_it
+               fclose
+               std::__basic_file<char>::close()
+               std::basic_filebuf<char, std::char_traits<char> >::close()
+               filesystem::read_file_checked(std::filesystem::__cxx11::path const&)
+               ProjectInfo::read_shared_source(std::filesystem::__cxx11::path const&) const
+               ProjectInfoHost::read_shared_source(std::filesystem::__cxx11::path const&) const
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance)
+               Parser::render_composed(RenderSource const&, std::optional<RenderSource> const&, bool)
+               Parser::render()
+               ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+               0xffffffffffffffff
+
+     0.75%  nift     [kernel.kallsyms]    [k] memset_orig
+            |
+            ---memset_orig
+               getname_flags.part.0
+               getname_flags
+               vfs_fstatat
+               __do_sys_newfstatat
+               __x64_sys_newfstatat
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               fstatat64
+               filesystem::path_exists(std::filesystem::__cxx11::path const&)
+               ProjectInfo::load_user_dependencies(TrackedInfo const&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, BuildError*) const
+               ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+               ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+               0x7662980ecdb3
+               0x766297c9caa3
+               0x766297d29c6b
+
+     0.75%  nift     [kernel.kallsyms]    [k] vfs_statx
+            |
+            ---vfs_statx
+               vfs_fstatat
+               __do_sys_newfstatat
+               __x64_sys_newfstatat
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               fstatat64
+
+     0.75%  nift     [kernel.kallsyms]    [k] xas_load
+            |
+            ---xas_load
+               filemap_get_entry
+               __filemap_get_folio
+               __find_get_block_slow
+               find_get_block_common
+               bdev_getblk
+
+     0.75%  nift     libc.so.6            [.] 0x0000000000188411
+            |
+            ---0x766297d88411
+
+     0.75%  nift     libstdc++.so.6.0.33  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long)
+            |
+            ---std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long)
+               std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+
+     0.75%  nift     libstdc++.so.6.0.33  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::substr(unsigned long, unsigned long) const
+            |
+            ---std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::substr(unsigned long, unsigned long) const
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance)
+               Parser::render_composed(RenderSource const&, std::optional<RenderSource> const&, bool)
+               Parser::render()
+               ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+               0xffffffffffffffff
+
+     0.75%  nift     libstdc++.so.6.0.33  [.] std::filesystem::__cxx11::path::_List::end() const
+            |
+            ---std::filesystem::__cxx11::path::_List::end() const
+
+     0.75%  nift     libstdc++.so.6.0.33  [.] std::filesystem::__cxx11::path::has_filename() const
+            |
+            ---std::filesystem::__cxx11::path::has_filename() const
+               std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+               std::filesystem::__cxx11::path::lexically_normal() const
+
+     0.75%  nift     nift                 [.] std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unique_ptr<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::default_delete<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unique_ptr<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::default_delete<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const> > > >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_find_before_node(unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long) const
+            |
+            ---std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unique_ptr<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::default_delete<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unique_ptr<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::default_delete<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const> > > >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_ha
+               ProjectInfo::read_shared_source(std::filesystem::__cxx11::path const&) const
+               ProjectInfoHost::read_shared_source(std::filesystem::__cxx11::path const&) const
+               Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance)
+               Parser::render_composed(RenderSource const&, std::optional<RenderSource> const&, bool)
+               Parser::render()
+               ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+               0xffffffffffffffff
+
+     0.75%  nift     nift                 [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::filesystem::__cxx11::path::generic_string<char, std::char_traits<char>, std::allocator<char> >(std::allocator<char> const&) const [clone .isra.0]
+            |
+            ---std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::filesystem::__cxx11::path::generic_string<char, std::char_traits<char>, std::allocator<char> >(std::allocator<char> const&) const [clone .isra.0]
+               project_read::relative_of(std::filesystem::__cxx11::path const&, std::filesystem::__cxx11::path const&)
+               ProjectInfoHost::relative(std::filesystem::__cxx11::path const&) const
+               Parser::render()
+               ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*)
+               ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}::operator()() const
+               0x7662980ecdb3
+               0x766297c9caa3
+               0x766297d29c6b
+
+     0.37%  nift     [kernel.kallsyms]    [k] ___slab_alloc
+     0.37%  nift     [kernel.kallsyms]    [k] __check_block_validity.constprop.0
+     0.37%  nift     [kernel.kallsyms]    [k] __check_object_size
+     0.37%  nift     [kernel.kallsyms]    [k] __check_object_size.part.0
+     0.37%  nift     [kernel.kallsyms]    [k] __d_lookup
+     0.37%  nift     [kernel.kallsyms]    [k] __do_sys_newfstatat
+     0.37%  nift     [kernel.kallsyms]    [k] __dquot_initialize
+     0.37%  nift     [kernel.kallsyms]    [k] __ext4_mark_inode_dirty
+     0.37%  nift     [kernel.kallsyms]    [k] __ext4_xattr_set_credits
+     0.37%  nift     [kernel.kallsyms]    [k] __fput
+     0.37%  nift     [kernel.kallsyms]    [k] __memcg_slab_post_alloc_hook
+     0.37%  nift     [kernel.kallsyms]    [k] __memcg_slab_pre_alloc_hook
+     0.37%  nift     [kernel.kallsyms]    [k] __rcu_read_lock
+     0.37%  nift     [kernel.kallsyms]    [k] __rcu_read_unlock
+     0.37%  nift     [kernel.kallsyms]    [k] __rmqueue_pcplist
+     0.37%  nift     [kernel.kallsyms]    [k] __x64_sys_close
+     0.37%  nift     [kernel.kallsyms]    [k] _copy_to_user
+     0.37%  nift     [kernel.kallsyms]    [k] _raw_spin_unlock
+     0.37%  nift     [kernel.kallsyms]    [k] _raw_spin_unlock_irq
+     0.37%  nift     [kernel.kallsyms]    [k] apparmor_file_permission
+     0.37%  nift     [kernel.kallsyms]    [k] consume_obj_stock
+     0.37%  nift     [kernel.kallsyms]    [k] copy_page_from_iter_atomic
+     0.37%  nift     [kernel.kallsyms]    [k] d_alloc_parallel
+     0.37%  nift     [kernel.kallsyms]    [k] do_anonymous_page
+     0.37%  nift     [kernel.kallsyms]    [k] down_read
+     0.37%  nift     [kernel.kallsyms]    [k] errseq_sample
+     0.37%  nift     [kernel.kallsyms]    [k] ext4_do_update_inode.isra.0
+     0.37%  nift     [kernel.kallsyms]    [k] ext4_es_init_tree
+     0.37%  nift     [kernel.kallsyms]    [k] ext4_es_insert_extent
+     0.37%  nift     [kernel.kallsyms]    [k] ext4_es_lookup_extent
+     0.37%  nift     [kernel.kallsyms]    [k] ext4_fc_track_inode
+     0.37%  nift     [kernel.kallsyms]    [k] ext4_has_free_clusters
+     0.37%  nift     [kernel.kallsyms]    [k] ext4_htree_next_block
+     0.37%  nift     [kernel.kallsyms]    [k] ext4_mb_prefetch
+     0.37%  nift     [kernel.kallsyms]    [k] ext4_setattr
+     0.37%  nift     [kernel.kallsyms]    [k] filemap_alloc_folio
+     0.37%  nift     [kernel.kallsyms]    [k] filemap_get_entry
+     0.37%  nift     [kernel.kallsyms]    [k] filemap_get_read_batch
+     0.37%  nift     [kernel.kallsyms]    [k] filename_lookup
+     0.37%  nift     [kernel.kallsyms]    [k] find_get_block_common
+     0.37%  nift     [kernel.kallsyms]    [k] find_group_other
+     0.37%  nift     [kernel.kallsyms]    [k] fsnotify
+     0.37%  nift     [kernel.kallsyms]    [k] generic_permission
+     0.37%  nift     [kernel.kallsyms]    [k] in_group_or_capable
+     0.37%  nift     [kernel.kallsyms]    [k] init_file
+     0.37%  nift     [kernel.kallsyms]    [k] lookup_bh_lru
+     0.37%  nift     [kernel.kallsyms]    [k] memcg_account_kmem
+     0.37%  nift     [kernel.kallsyms]    [k] memcmp
+     0.37%  nift     [kernel.kallsyms]    [k] mnt_want_write
+     0.37%  nift     [kernel.kallsyms]    [k] path_lookupat
+     0.37%  nift     [kernel.kallsyms]    [k] perf_event_mmap_output
+     0.37%  nift     [kernel.kallsyms]    [k] policy_nodemask
+     0.37%  nift     [kernel.kallsyms]    [k] rb_insert_color
+     0.37%  nift     [kernel.kallsyms]    [k] security_inode_alloc
+     0.37%  nift     [kernel.kallsyms]    [k] set_root
+     0.37%  nift     [kernel.kallsyms]    [k] srso_return_thunk
+     0.37%  nift     [kernel.kallsyms]    [k] terminate_walk
+     0.37%  nift     [kernel.kallsyms]    [k] try_to_unlazy
+     0.37%  nift     [kernel.kallsyms]    [k] up_read
+     0.37%  nift     [kernel.kallsyms]    [k] vfs_read
+     0.37%  nift     [kernel.kallsyms]    [k] x64_sys_call
+     0.37%  nift     libc.so.6            [.] _IO_file_close_it
+     0.37%  nift     libc.so.6            [.] chmod
+     0.37%  nift     libc.so.6            [.] fstatat64
+     0.37%  nift     libc.so.6            [.] llseek
+     0.37%  nift     libc.so.6            [.] open64
+     0.37%  nift     libc.so.6            [.] pthread_once
+     0.37%  nift     libc.so.6            [.] readlink
+     0.37%  nift     libc.so.6            [.] 0x00000000000aab01
+     0.37%  nift     libc.so.6            [.] 0x00000000000ab08f
+     0.37%  nift     libc.so.6            [.] 0x00000000000ab194
+     0.37%  nift     libc.so.6            [.] 0x00000000000ab365
+     0.37%  nift     libc.so.6            [.] 0x00000000000ab7e2
+     0.37%  nift     libc.so.6            [.] 0x00000000000abd1c
+     0.37%  nift     libc.so.6            [.] 0x00000000000abe70
+     0.37%  nift     libc.so.6            [.] 0x00000000000abe9b
+     0.37%  nift     libc.so.6            [.] 0x00000000001880a8
+     0.37%  nift     libc.so.6            [.] 0x00000000001880c7
+     0.37%  nift     libc.so.6            [.] 0x0000000000188336
+     0.37%  nift     libc.so.6            [.] 0x0000000000188590
+     0.37%  nift     libc.so.6            [.] 0x00000000001885f0
+     0.37%  nift     libc.so.6            [.] 0x0000000000188a22
+     0.37%  nift     libc.so.6            [.] 0x0000000000188b05
+     0.37%  nift     libstdc++.so.6.0.33  [.] memcpy@plt
+     0.37%  nift     libstdc++.so.6.0.33  [.] operator delete(void*)
+     0.37%  nift     libstdc++.so.6.0.33  [.] operator new(unsigned long)
+     0.37%  nift     libstdc++.so.6.0.33  [.] std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+     0.37%  nift     libstdc++.so.6.0.33  [.] std::__basic_file<char>::seekoff(long, std::_Ios_Seekdir)
+     0.37%  nift     libstdc++.so.6.0.33  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)
+     0.37%  nift     libstdc++.so.6.0.33  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_create(unsigned long&, unsigned long)
+     0.37%  nift     libstdc++.so.6.0.33  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::find(char, unsigned long) const
+     0.37%  nift     libstdc++.so.6.0.33  [.] std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer()
+     0.37%  nift     libstdc++.so.6.0.33  [.] std::basic_filebuf<char, std::char_traits<char> >::underflow()
+     0.37%  nift     libstdc++.so.6.0.33  [.] std::filesystem::__cxx11::path::has_relative_path() const
+     0.37%  nift     libstdc++.so.6.0.33  [.] std::filesystem::__cxx11::path::has_root_directory() const@plt
+     0.37%  nift     libstdc++.so.6.0.33  [.] std::filesystem::__cxx11::path::lexically_relative(std::filesystem::__cxx11::path const&) const
+     0.37%  nift     libstdc++.so.6.0.33  [.] std::ios_base::~ios_base()
+     0.37%  nift     libstdc++.so.6.0.33  [.] std::locale::~locale()
+     0.37%  nift     libstdc++.so.6.0.33  [.] 0x00000000001ae9a6
+     0.37%  nift     libstdc++.so.6.0.33  [.] 0x00000000001ae9bc
+     0.37%  nift     nift                 [.] Parser::Parser(RenderHost&, TrackedInfo&, std::shared_ptr<ExecutionOutput>, std::function<std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > ()>)
+     0.37%  nift     nift                 [.] Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance)
+     0.37%  nift     nift                 [.] compute_tracked_metadata(std::filesystem::__cxx11::path const&, Config const&, TrackedInfo const&, content_model::Model const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*)
+     0.37%  nift     nift                 [.] filesystem::read_file_checked(std::filesystem::__cxx11::path const&)
+     0.37%  nift     nift                 [.] frontmatter::parse_inline(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+     0.37%  nift     nift                 [.] json::Document::has(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const [clone .part.0]
+     0.37%  nift     nift                 [.] nift::detail::append_indented(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, bool)
+     0.37%  nift     nift                 [.] project_read::output_path_of(std::filesystem::__cxx11::path const&, Config const&, TrackedInfo const&)
+     0.37%  nift     nift                 [.] std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Identity, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, true, true> >::find(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+     0.37%  nift     nift                 [.] std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::clear()
+     0.37%  nift     nift                 [.] std::filesystem::__cxx11::path::~path()
+     0.37%  nift     nift                 [.] std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()
+     0.37%  nift     nift                 [.] void std::__introsort_loop<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const**, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const*, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<TrackedInfo, std::allocator<TrackedInfo> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const*)#1}> >(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const**, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const*, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const*> > >, __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const**, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const*, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<project_read::load_tracking(std::filesystem::__cxx11::path const&, Config const&, std::vector<TrackedInfo, std::allocator<TrackedInfo> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const*)#1}>)
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

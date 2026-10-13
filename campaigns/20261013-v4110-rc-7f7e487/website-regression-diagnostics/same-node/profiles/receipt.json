@@ -1,0 +1,101 @@
+{
+  "kind": "post-timing profiles, never benchmark samples",
+  "rows": [
+    {
+      "version": "old",
+      "tool": "strace",
+      "command": [
+        "strace",
+        "-f",
+        "-c",
+        "-o",
+        "/opt/campaign/evidence/website-ab-diagnostic/profiles/old.strace.txt",
+        "/opt/website-ab-old/nift",
+        "build",
+        "--all"
+      ],
+      "exit_code": 0,
+      "correct": true,
+      "binary_sha256": "a1654dbf879bf0517141612fbcdb55f441e5e60009a5954faaa274bfa6868bf2",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "version": "old",
+      "tool": "perf",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/campaign/evidence/website-ab-diagnostic/profiles/old.perf.data",
+        "--",
+        "/opt/website-ab-old/nift",
+        "build",
+        "--all"
+      ],
+      "exit_code": 0,
+      "correct": true,
+      "binary_sha256": "a1654dbf879bf0517141612fbcdb55f441e5e60009a5954faaa274bfa6868bf2",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "version": "new",
+      "tool": "strace",
+      "command": [
+        "strace",
+        "-f",
+        "-c",
+        "-o",
+        "/opt/campaign/evidence/website-ab-diagnostic/profiles/new.strace.txt",
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "exit_code": 0,
+      "correct": true,
+      "binary_sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "version": "new",
+      "tool": "perf",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/campaign/evidence/website-ab-diagnostic/profiles/new.perf.data",
+        "--",
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "exit_code": 0,
+      "correct": true,
+      "binary_sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    }
+  ]
+}

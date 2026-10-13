@@ -1,0 +1,11 @@
+# Targeted same-node website diagnostic
+
+Exact prior core 495012966756c9d2910a714c453359c8ff60bab1 reproduces the historical 4.7.2 binary SHA byte-for-byte. Candidate 7f7e487 and both clean checkouts used the same GCC 13.3 default native Make flags, CPU 0 and unchanged current fixture/oracles/C supervisor. Four 10,000-page cases ran adjacent old/new pairs with rotated case order, five measured rounds and one warmup. All 48 observations passed full route/content correctness; incremental results matched a full rebuild. Five rounds give a 3/2 first-order split per case.
+
+Fresh full: 2561.445→3542.237 ms, +980.792 ms (+38.29%). Warm full: 3176.786→2776.981 ms, −399.805 ms (−12.59%). No-op: 932.931→813.536 ms, −119.395 ms (−12.80%). One-page: 920.908→821.310 ms, −99.598 ms (−10.82%). The old/new observed ranges are disjoint for each case. These are bounded five-sample observations, not a population significance test.
+
+Historical cross-host fresh-full medians suggested a small gain; the matched-node diagnostic instead establishes a material candidate regression in the fresh path. Warm and incremental paths improve. Warm observations here each receive a fresh untimed baseline; primary warm results reuse a prepared fixture, so the cohorts must remain separate. OS cache remains uncontrolled; source-matched same-node pairing strengthens version attribution but does not identify the causal code change.
+
+Post-timing strace/software CPU profiles are separate from every timed observation. They are diagnostic leads, not benchmark samples. No accepted raw, core, or suite code was changed. No release recommendation or Labs publication is made here.
+
+Collected post-timing fresh-full profiles pass all four correctness gates. Strace counts rise from 330,820 to 404,209 total calls (+73,389); reported error returns rise from 60,009 to 90,023 (many are expected existence probes, not correctness failures). Perf collected 267 old and 350 new software CPU samples with zero lost samples. Filesystem/path handling appears prominently in both reports. These single instrumented runs are leads for a path/probe investigation, not causal proof or comparable instrumented wall-time benchmarks. Full reports and perf.data are retained under same-node/profiles.

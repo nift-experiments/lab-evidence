@@ -1,0 +1,48 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "case": "schedule-1000",
+      "median_ms": {
+        "prior": 367.188964,
+        "candidate": 360.724147
+      },
+      "candidate_change_percent": 1.760623993045712,
+      "samples_per_version": 3,
+      "values_ms": {
+        "prior": [
+          374.982475,
+          330.22858,
+          367.188964
+        ],
+        "candidate": [
+          417.832988,
+          360.724147,
+          236.008874
+        ]
+      }
+    },
+    {
+      "case": "queue-100000-4-4",
+      "median_ms": {
+        "prior": 36066.073134,
+        "candidate": 11887.314455
+      },
+      "candidate_change_percent": 67.04017537247863,
+      "samples_per_version": 3,
+      "values_ms": {
+        "prior": [
+          36047.752699,
+          36119.713703,
+          36066.073134
+        ],
+        "candidate": [
+          11887.314455,
+          11806.045446,
+          12219.4854
+        ]
+      }
+    }
+  ],
+  "scope": "small descriptive same-node paired control; no statistical significance claim"
+}

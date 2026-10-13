@@ -1,0 +1,41 @@
+{
+  "pass": true,
+  "jobs": 39,
+  "measured": 195,
+  "warmups": 39,
+  "observations": 234,
+  "complete_expected_matrix": true,
+  "all_distributions_and_summary_files_exactly_recomputed": true,
+  "all_recorded_correctness_gates_pass": true,
+  "page_route_and_content_counts_checked": true,
+  "negative_checks": {
+    "wrong-summary": "rejected",
+    "wrong-correctness": "rejected",
+    "wrong-count": "rejected"
+  },
+  "files": [
+    {
+      "name": "website-100.json",
+      "sha256": "2dbae2ab1777d4875ded99cf13bc7560d2fc9b84b369b60ad6d2d897b9c9a257",
+      "jobs": 11
+    },
+    {
+      "name": "website-1000.json",
+      "sha256": "2d72609b4bac120bc5e6acd8fb07ab721f9626b9d7cae63065152a321e20b53f",
+      "jobs": 11
+    },
+    {
+      "name": "website-10000.json",
+      "sha256": "85ab55bcae159a5e402c4aa362d7ee21a3c84ddcae3654665de1c5ed81b428da",
+      "jobs": 11
+    },
+    {
+      "name": "targeted-builds.json",
+      "sha256": "edd666fd94ca2222a08be3c3d31e80905fcf40c37ccca11b510dce9641e7c15b",
+      "jobs": 6
+    }
+  ],
+  "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "suite_sha": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
+  "limitations": "Incremental/targeted output parity is enforced by frozen runner and correctness flags; ephemeral generated outputs are not retained in legacy harness."
+}

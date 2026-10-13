@@ -1,0 +1,33 @@
+{
+  "scope": "Post-campaign launch-accounting control only; no benchmark rerun or accepted raw edits",
+  "boundary": "Same Popen/taskset/tempfile/wait4 launch pattern as frozen template fresh runner",
+  "control": "/usr/bin/true does no template work; independent supervisors with0/64MiB allocated payload",
+  "pass": true,
+  "rows": [
+    {
+      "allocated_parent_mib": 0,
+      "parent_fields": {
+        "VmHWM": "17152 kB",
+        "VmRSS": "17152 kB"
+      },
+      "true_taskset_child_maxrss_mib": [
+        16.75,
+        16.75,
+        16.75
+      ]
+    },
+    {
+      "allocated_parent_mib": 64,
+      "parent_fields": {
+        "VmHWM": "82704 kB",
+        "VmRSS": "82704 kB"
+      },
+      "true_taskset_child_maxrss_mib": [
+        80.75,
+        80.75,
+        80.75
+      ]
+    }
+  ],
+  "interpretation": "wait4 child peak inherits launch-supervisor memory floor; cannot subtract medians or rank runtimes from floored cells"
+}

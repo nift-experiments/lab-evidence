@@ -1,0 +1,5 @@
+# Targeted concurrency diagnostic findings
+
+Exact historical 445f4d3 and candidate 7f7e487 CLI builds used the same host/compiler, frozen adapter and readiness-clock helper, with new runtime per request. The 100k4→4 queue median was 36066.073→11887.314 ms (67.0% lower across three alternating pairs), confirming the large scalar/queue improvement direction. Schedule 1000 medians 367.189→360.724 ms had broad overlapping samples; this does not establish a meaningful scheduler improvement. All outputs, digests/counts, warmups/order and distributions independently passed. Samples are descriptive; source changes cannot be attributed to one subsystem without current profile evidence.
+
+The held 1000 checkpoint remains approximately 143.6 MiB. The 10k-task memory guard provides a≥6 GiB censored lower bound, not proof of 8 GiB infeasibility. Existing long-lived reused-runtime diagnostic should be refreshed separately before final diagnosis; primary persistent mode starts a new runtime per request and cannot establish long-lived behavior. No Labs publication is authorized.

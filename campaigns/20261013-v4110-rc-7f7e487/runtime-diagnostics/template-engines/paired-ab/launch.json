@@ -1,0 +1,36 @@
+{
+  "scope": "Separate targeted same-node diagnostic, official data unchanged",
+  "suite_sha": "3c0dcdd1aad3cbb0a0c638c9041233b1e329dc6f",
+  "prior_sha": "30d17733742132a1e474ce90ee4f5bee4a8bce06",
+  "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "binaries": {
+    "prior": {
+      "source_sha": "30d17733742132a1e474ce90ee4f5bee4a8bce06",
+      "sha256": "2d2a097952007f17eefce109d1e718aa18d834e9e3f0ea75b0e5b5011bc71419"
+    },
+    "candidate": {
+      "source_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+      "sha256": "b416f17f445cc366986b07e7291bda96e5351d4832526e632f46276bb38139af"
+    }
+  },
+  "library_sha256": {
+    "prior": "cb8c1dc761e7a499d6b9020f3a9ab661f64983a9ebdae08ac8a5c7b75b18cb1b",
+    "candidate": "5a911d8144969c1452209d4772bcc5cffc7bad0045031ec19ec37366d94eeea2"
+  },
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+  "build_flags": "normal Makefile embed; adapter -std=c++17 -O2 -pthread, no instrumentation",
+  "cpu": 0,
+  "cases": [
+    "loop-10000",
+    "article"
+  ],
+  "boundaries": [
+    "fresh full invocation",
+    "source-render per operation"
+  ],
+  "measured_pairs": 3,
+  "order": "prior/candidate then candidate/prior alternation",
+  "persistent_warmups_per_worker": 2,
+  "fresh_warmups_per_version_case": 1,
+  "timeout_seconds": 120
+}

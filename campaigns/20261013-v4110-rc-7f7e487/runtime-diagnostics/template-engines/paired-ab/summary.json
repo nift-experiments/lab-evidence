@@ -1,0 +1,94 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "case": "loop-10000",
+      "boundary": "fresh",
+      "median_ms": {
+        "prior": 168.237997,
+        "candidate": 75.854284
+      },
+      "candidate_change_percent": 54.91251361010914,
+      "samples_per_version": 3,
+      "values_ms": {
+        "prior": [
+          161.138403,
+          173.208083,
+          168.237997
+        ],
+        "candidate": [
+          73.208214,
+          75.854284,
+          80.169227
+        ]
+      }
+    },
+    {
+      "case": "loop-10000",
+      "boundary": "source-render",
+      "median_ms": {
+        "prior": 119.508033,
+        "candidate": 33.682796
+      },
+      "candidate_change_percent": 71.81545444731735,
+      "samples_per_version": 3,
+      "values_ms": {
+        "prior": [
+          122.276026,
+          116.114557,
+          119.508033
+        ],
+        "candidate": [
+          34.591784,
+          33.682796,
+          33.585375
+        ]
+      }
+    },
+    {
+      "case": "article",
+      "boundary": "fresh",
+      "median_ms": {
+        "prior": 3.308914,
+        "candidate": 3.417296
+      },
+      "candidate_change_percent": -3.2754553306613516,
+      "samples_per_version": 3,
+      "values_ms": {
+        "prior": [
+          3.308914,
+          3.563568,
+          3.277764
+        ],
+        "candidate": [
+          3.09494,
+          4.14696,
+          3.417296
+        ]
+      }
+    },
+    {
+      "case": "article",
+      "boundary": "source-render",
+      "median_ms": {
+        "prior": 0.42996,
+        "candidate": 0.266374
+      },
+      "candidate_change_percent": 38.04679505070239,
+      "samples_per_version": 3,
+      "values_ms": {
+        "prior": [
+          0.427148,
+          0.42996,
+          0.489159
+        ],
+        "candidate": [
+          0.265835,
+          0.280056,
+          0.266374
+        ]
+      }
+    }
+  ],
+  "scope": "small descriptive paired control; no statistical-significance claim"
+}

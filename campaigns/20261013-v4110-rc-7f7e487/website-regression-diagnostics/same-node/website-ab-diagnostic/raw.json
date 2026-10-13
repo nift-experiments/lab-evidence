@@ -1,0 +1,1533 @@
+{
+  "kind": "targeted same-node version diagnostic, not official campaign",
+  "pages": 10000,
+  "cases": [
+    "application-cold",
+    "warm-full",
+    "incremental/no-op",
+    "incremental/one-page"
+  ],
+  "versions": {
+    "old": {
+      "source_sha": "495012966756c9d2910a714c453359c8ff60bab1",
+      "root": "/opt/website-ab-old",
+      "historical_binary_sha256": "a1654dbf879bf0517141612fbcdb55f441e5e60009a5954faaa274bfa6868bf2",
+      "executable": "/opt/website-ab-old/nift",
+      "identity": {
+        "version": "Nift v4.7.2",
+        "sha256": "a1654dbf879bf0517141612fbcdb55f441e5e60009a5954faaa274bfa6868bf2"
+      },
+      "runtime_library_sha256": {
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33": "1fd75fe70354a416d75aef22bcae68c47bd25d20e2d0568c30b1a9838cf62f11",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6": "1b87a1a50b496cfead2b0ad134c2ff536705c82608db240c7e8aa48d6c0e4217",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1": "d93224d2b0dab4247598be683adca02f5cf00586f99c187579cd7e92058fb7cb",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6": "d8db8739a1633c972cec6a4fe0566bdcec6fd088f98723492ab0361f66238f75",
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2": "1cd555ac46b7887edeaf3c42aac5408c8135e52f6b37870da2cf82d5fe14e829"
+      },
+      "historical_binary_reproduced": true
+    },
+    "new": {
+      "source_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+      "root": "/opt/nift",
+      "executable": "/opt/nift/nift",
+      "identity": {
+        "version": "Nift v4.11.0",
+        "sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606"
+      },
+      "runtime_library_sha256": {
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33": "1fd75fe70354a416d75aef22bcae68c47bd25d20e2d0568c30b1a9838cf62f11",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6": "1b87a1a50b496cfead2b0ad134c2ff536705c82608db240c7e8aa48d6c0e4217",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1": "d93224d2b0dab4247598be683adca02f5cf00586f99c187579cd7e92058fb7cb",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6": "d8db8739a1633c972cec6a4fe0566bdcec6fd088f98723492ab0361f66238f75",
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2": "1cd555ac46b7887edeaf3c42aac5408c8135e52f6b37870da2cf82d5fe14e829"
+      }
+    }
+  },
+  "suite_sha": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
+  "machine": {
+    "kernel": "6.8.0-134-generic",
+    "os_release": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+    "cpuinfo": "processor\t: 0\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7642 48-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2300.000\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 0\ncpu cores\t: 4\napicid\t\t: 0\ninitial apicid\t: 0\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 4600.00\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 1\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7642 48-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2300.000\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 1\ncpu cores\t: 4\napicid\t\t: 1\ninitial apicid\t: 1\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 4600.00\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 2\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7642 48-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2300.000\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 2\ncpu cores\t: 4\napicid\t\t: 2\ninitial apicid\t: 2\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 4600.00\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 3\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7642 48-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2300.000\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 3\ncpu cores\t: 4\napicid\t\t: 3\ninitial apicid\t: 3\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 4600.00\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\n",
+    "meminfo": "MemTotal:        8131776 kB\nMemFree:         6881836 kB\nMemAvailable:    7614192 kB\nBuffers:          119484 kB\nCached:           767544 kB\nSwapCached:           24 kB\nActive:           686752 kB\nInactive:         249096 kB\nActive(anon):      49752 kB\nInactive(anon):       28 kB\nActive(file):     637000 kB\nInactive(file):   249068 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507644 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               712 kB\nWriteback:             0 kB\nAnonPages:         48676 kB\nMapped:            72432 kB\nShmem:               960 kB\nKReclaimable:     142844 kB\nSlab:             212440 kB\nSReclaimable:     142844 kB\nSUnreclaim:        69596 kB\nKernelStack:        2464 kB\nPageTables:         2560 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573788 kB\nCommitted_AS:     396736 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16744 kB\nVmallocChunk:          0 kB\nPercpu:             2448 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      110452 kB\nDirectMap2M:     3035136 kB\nDirectMap1G:     7340032 kB\n",
+    "cpu_affinity": [
+      0
+    ],
+    "python": "3.12.3",
+    "revision": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
+    "dirty": false,
+    "cache_policy": "OS caches uncontrolled; no machine-cold claim",
+    "rss_policy": "Linux wait4 waited-child high-water RSS; not aggregate process-tree RSS"
+  },
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "flags": "Native Make default C++17/C99 -O2 no arch flags",
+  "sample_plan": {
+    "samples": 5,
+    "warmups": 1,
+    "planned_observations": 48,
+    "affinity": [
+      0
+    ]
+  },
+  "ordering": "Adjacent version pairs, firstversion reversed by round+originalcaseindex; caseorderrotated perround. Five measuredrounds yield3/2 first-order split percase.",
+  "boundary": "Frozen C supervisor; unchanged10k fixture recipe,fullcontent/routes validation andincremental fullrebuild parity. Fresh fixture each observation; unmeasured baseline primeswarm/incremental cases. OS cache uncontrolled.",
+  "harness_sha256": {
+    "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+    "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+    "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+    "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+  },
+  "official_raw_sha256": {
+    "website-100.json": "2dbae2ab1777d4875ded99cf13bc7560d2fc9b84b369b60ad6d2d897b9c9a257",
+    "website-1000.json": "2d72609b4bac120bc5e6acd8fb07ab721f9626b9d7cae63065152a321e20b53f",
+    "website-10000.json": "85ab55bcae159a5e402c4aa362d7ee21a3c84ddcae3654665de1c5ed81b428da",
+    "targeted-builds.json": "edd666fd94ca2222a08be3c3d31e80905fcf40c37ccca11b510dce9641e7c15b"
+  },
+  "start_utc": "2026-10-13T09:23:41Z",
+  "complete": true,
+  "all_correct": true,
+  "observations": [
+    {
+      "wall_ms": 2607.345755,
+      "peak_rss_kib": 16920,
+      "cpu_ms": 2596.55,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "d083687c0254b83e6af24c1d66582db047bd30960cfa32d0cb398557a78539d2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 0,
+      "case": "application-cold",
+      "version": "old",
+      "warmup": true,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 3598.66084,
+      "peak_rss_kib": 39872,
+      "cpu_ms": 3497.844,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "a9338bc1930c791e7ffe386ecdb97b52fdee3af44ba5edaa4bd6fc957286cf46",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 0,
+      "case": "application-cold",
+      "version": "new",
+      "warmup": true,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 2698.315225,
+      "peak_rss_kib": 28480,
+      "cpu_ms": 2689.665,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "df0d3e1fa3cf0264f3b48905f1058a116ae0e7721d72fc7a14b62c9078d81750",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 0,
+      "case": "warm-full",
+      "version": "new",
+      "warmup": true,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 3322.344366,
+      "peak_rss_kib": 17052,
+      "cpu_ms": 3308.888,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "078180377db26f3a6ae16a47fb33041a235c5af173125690caadc5b34ff28204",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 0,
+      "case": "warm-full",
+      "version": "old",
+      "warmup": true,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 891.759427,
+      "peak_rss_kib": 10908,
+      "cpu_ms": 880.698,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "a8f7d48b0780fee2a202e19143b01fc5a01d4b16db87cecb7ba3b7a9e466875c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 0,
+      "case": "incremental/no-op",
+      "version": "old",
+      "warmup": true,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 795.136785,
+      "peak_rss_kib": 16192,
+      "cpu_ms": 788.423,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "b82cf0dd637f64868e7b3017d517ffa1ad9d81975d1b4a393819050c8f8084b4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 0,
+      "case": "incremental/no-op",
+      "version": "new",
+      "warmup": true,
+      "command": [
+        "/opt/nift/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 815.872291,
+      "peak_rss_kib": 17472,
+      "cpu_ms": 809.687,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "9efb8ad4d8a6d1057fed1d4bfb2993b1475184c65b942641f8e26a1731c99293",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 0,
+      "case": "incremental/one-page",
+      "version": "new",
+      "warmup": true,
+      "command": [
+        "/opt/nift/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 903.516565,
+      "peak_rss_kib": 12184,
+      "cpu_ms": 894.251,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "1ab05f1cf6243aeb3a35b9448799a5dc95293f5a679f788678eab63b0e200cae",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 0,
+      "case": "incremental/one-page",
+      "version": "old",
+      "warmup": true,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 3104.755038,
+      "peak_rss_kib": 17048,
+      "cpu_ms": 3093.865,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "58e326b91c61359c4d8f36cd149a8764f7a2cebe8154a0f79fb54615097b00dd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 1,
+      "case": "warm-full",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 2726.986991,
+      "peak_rss_kib": 28476,
+      "cpu_ms": 2717.11,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "8c1b1ac6db703818f6ffe01290d87cca79aa1eb1c36bc370494d94fb944a51bd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 1,
+      "case": "warm-full",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 802.137263,
+      "peak_rss_kib": 16316,
+      "cpu_ms": 795.685,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "ede7f8ca5a23381e11580c4bd3f0b79364e8bbae0b2eedf76ab34f8d1810bba6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 1,
+      "case": "incremental/no-op",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 935.584283,
+      "peak_rss_kib": 10904,
+      "cpu_ms": 926.147,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "20794a2ee1c000265c28fb498be4cc8c3c4b52b5b35db8ec5e79883dab844521",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 1,
+      "case": "incremental/no-op",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 908.305592,
+      "peak_rss_kib": 12184,
+      "cpu_ms": 898.912,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "936e73e253e5c9c0b4270698c444956458f01010609d2a51eef230c08254b432",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 1,
+      "case": "incremental/one-page",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 821.309993,
+      "peak_rss_kib": 17212,
+      "cpu_ms": 814.607,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "8f4ef568fc8619b1fd3f1aca45d5889ec857e2861f0540f46d842923b69deef4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 1,
+      "case": "incremental/one-page",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 3542.236821,
+      "peak_rss_kib": 39744,
+      "cpu_ms": 3443.911,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "d979f62195dc1580fa72de513d58677c9e3e44cb9daca2f8621295150f9176e1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 1,
+      "case": "application-cold",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 2561.444901,
+      "peak_rss_kib": 16924,
+      "cpu_ms": 2544.438,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "a26dc07b313a9f692460f53903d180b1d05241358a6b748bdc55388620162a60",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 1,
+      "case": "application-cold",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 918.199884,
+      "peak_rss_kib": 10908,
+      "cpu_ms": 907.8,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "132e27a730bc8c342ebf8cf49ecb469dfc3d5ff0d1cd1a70e4246d8d5c732c1a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 2,
+      "case": "incremental/no-op",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 801.610073,
+      "peak_rss_kib": 16188,
+      "cpu_ms": 794.978,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "19a7a996e5ea309c70c434e69d40e6f4ce26860bf61d70c4d673c43d19b20e12",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 2,
+      "case": "incremental/no-op",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 843.706696,
+      "peak_rss_kib": 17468,
+      "cpu_ms": 837.183,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "17ad14f046f136d572a3cf31fd3a3a55eae0d92c0958c2ebf49a341510b0be7a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 2,
+      "case": "incremental/one-page",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 895.059077,
+      "peak_rss_kib": 12056,
+      "cpu_ms": 886.27,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "ec493706ed83e4177f5b54e864c5eb7f00959bfa4e6d2ec06a679f13dfbb9981",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 2,
+      "case": "incremental/one-page",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 2368.641101,
+      "peak_rss_kib": 16920,
+      "cpu_ms": 2362.567,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "5d1eca748825d922ae727d1166ca3263acfe8cda0fe876f350e7af8f56eac394",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 2,
+      "case": "application-cold",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 3677.773308,
+      "peak_rss_kib": 39868,
+      "cpu_ms": 3588.101,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "c3fbcd61c450415135fec67f78904de92fd5641724f9ba65f480010500146703",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 2,
+      "case": "application-cold",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 2987.340236,
+      "peak_rss_kib": 28608,
+      "cpu_ms": 2978.708,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "35d7dd2c264cf2627dd072d759dcd610e1d65f1febaeae5a3e1bedf055717c79",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 2,
+      "case": "warm-full",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 3176.786345,
+      "peak_rss_kib": 17052,
+      "cpu_ms": 3163.268,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "2069f10da0e40571145ccf220cf2adaf44c3c1441c8942b77fc473ff17ffb2da",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 2,
+      "case": "warm-full",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 920.90838,
+      "peak_rss_kib": 12184,
+      "cpu_ms": 912.093,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "3433191da8173d2947b1ae7d9936dd51f931a7f0e8a84931e1db322afdf8e3d0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 3,
+      "case": "incremental/one-page",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 831.289062,
+      "peak_rss_kib": 17468,
+      "cpu_ms": 824.804,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "9d24d5fad1cb124d159fe4cf4bab340a70bd8711d12a8adb948ae139e604668a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 3,
+      "case": "incremental/one-page",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 3712.809427,
+      "peak_rss_kib": 39872,
+      "cpu_ms": 3617.293,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "9a8950643a0e79698432b5729050c8d160c82a84622a970de749160e2950ccf8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 3,
+      "case": "application-cold",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 2723.612684,
+      "peak_rss_kib": 16920,
+      "cpu_ms": 2707.014,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "51a6705a61785c971cb4c1e54973fe827a9d9d946ffb26a3868d08826477d636",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 3,
+      "case": "application-cold",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 3260.848483,
+      "peak_rss_kib": 16920,
+      "cpu_ms": 3244.637,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "54e0541cea4bd9ba37df7588414cc76cbc4abd869d129fb6c30da92bcfc900a2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 3,
+      "case": "warm-full",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 2776.981235,
+      "peak_rss_kib": 28480,
+      "cpu_ms": 2766.159,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "605d595f093a99407471cb4877f664de9e17ef4185768c60752a5022e5d4ed5a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 3,
+      "case": "warm-full",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 813.535745,
+      "peak_rss_kib": 16188,
+      "cpu_ms": 807.657,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "c44e61ca9597fff401c1f13a8f334818234feaf3016a61879e1261226b26ac73",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 3,
+      "case": "incremental/no-op",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 915.531513,
+      "peak_rss_kib": 10780,
+      "cpu_ms": 906.137,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "f5e498891acdeba8075098b1fc89e3eb0a5316f22d8329bc368f053771829d1f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 3,
+      "case": "incremental/no-op",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 2495.613602,
+      "peak_rss_kib": 16924,
+      "cpu_ms": 2488.511,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "563e0f2001966df67319b17103a7fe2ce480f62fe33a4650f7d93589a2b3bbeb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 4,
+      "case": "application-cold",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 3403.518492,
+      "peak_rss_kib": 39740,
+      "cpu_ms": 3309.756,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "bdaf85d9255f64b97a565333101eea27c4e5133fd966df6b2f3df4cfa8eb3153",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 4,
+      "case": "application-cold",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 2664.464312,
+      "peak_rss_kib": 28484,
+      "cpu_ms": 2656.295,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "1755ac750443bc5bd47c44c1209790fba0b06eef8d5197fec2465582ab360ea5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 4,
+      "case": "warm-full",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 3028.418368,
+      "peak_rss_kib": 17052,
+      "cpu_ms": 3020.428,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "63d382e19e70a4dc8f526cf8d2bfffd0b12b4863de0e859f28160f6f7539916c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 4,
+      "case": "warm-full",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 952.83946,
+      "peak_rss_kib": 10780,
+      "cpu_ms": 942.539,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "419abbef9fc1d462591f5a8752d14e5269a166b246da76652d915523a1ba615d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 4,
+      "case": "incremental/no-op",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 848.021784,
+      "peak_rss_kib": 16188,
+      "cpu_ms": 841.597,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "db3d8dc6acaf315f65bbb01e724570cbee752aabfa745a1e049680f673cd6f2e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 4,
+      "case": "incremental/no-op",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 810.021362,
+      "peak_rss_kib": 17344,
+      "cpu_ms": 804.021,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "358aa50800535374545cf477844ffc59db94c41b9959a9ed03d908d98b45e851",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 4,
+      "case": "incremental/one-page",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 996.089546,
+      "peak_rss_kib": 12060,
+      "cpu_ms": 984.716,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "2dc0feb1a0a3296cbd817c57c58f82e32a28f92e8260de0944b0f379b4592d39",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 4,
+      "case": "incremental/one-page",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 3202.776361,
+      "peak_rss_kib": 16920,
+      "cpu_ms": 3189.802,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "4b75ce2e5c0ac4f2c32120d55cd1e8fdf89cebc7f88b6528fe4b5b10488d9404",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 5,
+      "case": "warm-full",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 2998.641677,
+      "peak_rss_kib": 28480,
+      "cpu_ms": 2987.451,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "10daf9001fa55e85f74446202061359178d8b3a0b494c9d2e4a0172098cb192c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 5,
+      "case": "warm-full",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 830.800758,
+      "peak_rss_kib": 16316,
+      "cpu_ms": 824.357,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "2d6ac21a5bfd6d309b477bdb958896ca5f326e929e42ff54ef77994d0ded304b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 5,
+      "case": "incremental/no-op",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 932.930507,
+      "peak_rss_kib": 10780,
+      "cpu_ms": 922.17,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "215d9e87f478ce7cd214ebcf2604b1151c61ca821421579418ede65b46aacf8f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 5,
+      "case": "incremental/no-op",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 959.928843,
+      "peak_rss_kib": 12184,
+      "cpu_ms": 950.575,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "d196b20df7d120159ed3bd4fc4e2e11d363b7b4b7559c5c36e9f2854a31b619c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 5,
+      "case": "incremental/one-page",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 814.777894,
+      "peak_rss_kib": 17468,
+      "cpu_ms": 808.255,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "d81ad259b0c00f74c8e4ad07db318120b35c0df0b5fb3229f79b79fc08f5c710",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 5,
+      "case": "incremental/one-page",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "full_rebuild_parity": true
+    },
+    {
+      "wall_ms": 3481.299611,
+      "peak_rss_kib": 39744,
+      "cpu_ms": 3387.716,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "e8e11c3b247b66ba9f8b78e40e024acb4e0f1edc14614637a9c945b2ab0e2357",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 5,
+      "case": "application-cold",
+      "version": "new",
+      "warmup": false,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "wall_ms": 2743.386749,
+      "peak_rss_kib": 16916,
+      "cpu_ms": 2725.501,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "501bb12325cc90df17880f7dffd283881b182b43ea7d9f87462ddf20e2144c1a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 5,
+      "case": "application-cold",
+      "version": "old",
+      "warmup": false,
+      "command": [
+        "/opt/website-ab-old/nift",
+        "build",
+        "--all"
+      ],
+      "correct": true,
+      "stderr_text": "",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    }
+  ],
+  "launch_order": [
+    {
+      "sequence": 0,
+      "round": 0,
+      "case": "application-cold",
+      "version": "old"
+    },
+    {
+      "sequence": 1,
+      "round": 0,
+      "case": "application-cold",
+      "version": "new"
+    },
+    {
+      "sequence": 2,
+      "round": 0,
+      "case": "warm-full",
+      "version": "new"
+    },
+    {
+      "sequence": 3,
+      "round": 0,
+      "case": "warm-full",
+      "version": "old"
+    },
+    {
+      "sequence": 4,
+      "round": 0,
+      "case": "incremental/no-op",
+      "version": "old"
+    },
+    {
+      "sequence": 5,
+      "round": 0,
+      "case": "incremental/no-op",
+      "version": "new"
+    },
+    {
+      "sequence": 6,
+      "round": 0,
+      "case": "incremental/one-page",
+      "version": "new"
+    },
+    {
+      "sequence": 7,
+      "round": 0,
+      "case": "incremental/one-page",
+      "version": "old"
+    },
+    {
+      "sequence": 8,
+      "round": 1,
+      "case": "warm-full",
+      "version": "old"
+    },
+    {
+      "sequence": 9,
+      "round": 1,
+      "case": "warm-full",
+      "version": "new"
+    },
+    {
+      "sequence": 10,
+      "round": 1,
+      "case": "incremental/no-op",
+      "version": "new"
+    },
+    {
+      "sequence": 11,
+      "round": 1,
+      "case": "incremental/no-op",
+      "version": "old"
+    },
+    {
+      "sequence": 12,
+      "round": 1,
+      "case": "incremental/one-page",
+      "version": "old"
+    },
+    {
+      "sequence": 13,
+      "round": 1,
+      "case": "incremental/one-page",
+      "version": "new"
+    },
+    {
+      "sequence": 14,
+      "round": 1,
+      "case": "application-cold",
+      "version": "new"
+    },
+    {
+      "sequence": 15,
+      "round": 1,
+      "case": "application-cold",
+      "version": "old"
+    },
+    {
+      "sequence": 16,
+      "round": 2,
+      "case": "incremental/no-op",
+      "version": "old"
+    },
+    {
+      "sequence": 17,
+      "round": 2,
+      "case": "incremental/no-op",
+      "version": "new"
+    },
+    {
+      "sequence": 18,
+      "round": 2,
+      "case": "incremental/one-page",
+      "version": "new"
+    },
+    {
+      "sequence": 19,
+      "round": 2,
+      "case": "incremental/one-page",
+      "version": "old"
+    },
+    {
+      "sequence": 20,
+      "round": 2,
+      "case": "application-cold",
+      "version": "old"
+    },
+    {
+      "sequence": 21,
+      "round": 2,
+      "case": "application-cold",
+      "version": "new"
+    },
+    {
+      "sequence": 22,
+      "round": 2,
+      "case": "warm-full",
+      "version": "new"
+    },
+    {
+      "sequence": 23,
+      "round": 2,
+      "case": "warm-full",
+      "version": "old"
+    },
+    {
+      "sequence": 24,
+      "round": 3,
+      "case": "incremental/one-page",
+      "version": "old"
+    },
+    {
+      "sequence": 25,
+      "round": 3,
+      "case": "incremental/one-page",
+      "version": "new"
+    },
+    {
+      "sequence": 26,
+      "round": 3,
+      "case": "application-cold",
+      "version": "new"
+    },
+    {
+      "sequence": 27,
+      "round": 3,
+      "case": "application-cold",
+      "version": "old"
+    },
+    {
+      "sequence": 28,
+      "round": 3,
+      "case": "warm-full",
+      "version": "old"
+    },
+    {
+      "sequence": 29,
+      "round": 3,
+      "case": "warm-full",
+      "version": "new"
+    },
+    {
+      "sequence": 30,
+      "round": 3,
+      "case": "incremental/no-op",
+      "version": "new"
+    },
+    {
+      "sequence": 31,
+      "round": 3,
+      "case": "incremental/no-op",
+      "version": "old"
+    },
+    {
+      "sequence": 32,
+      "round": 4,
+      "case": "application-cold",
+      "version": "old"
+    },
+    {
+      "sequence": 33,
+      "round": 4,
+      "case": "application-cold",
+      "version": "new"
+    },
+    {
+      "sequence": 34,
+      "round": 4,
+      "case": "warm-full",
+      "version": "new"
+    },
+    {
+      "sequence": 35,
+      "round": 4,
+      "case": "warm-full",
+      "version": "old"
+    },
+    {
+      "sequence": 36,
+      "round": 4,
+      "case": "incremental/no-op",
+      "version": "old"
+    },
+    {
+      "sequence": 37,
+      "round": 4,
+      "case": "incremental/no-op",
+      "version": "new"
+    },
+    {
+      "sequence": 38,
+      "round": 4,
+      "case": "incremental/one-page",
+      "version": "new"
+    },
+    {
+      "sequence": 39,
+      "round": 4,
+      "case": "incremental/one-page",
+      "version": "old"
+    },
+    {
+      "sequence": 40,
+      "round": 5,
+      "case": "warm-full",
+      "version": "old"
+    },
+    {
+      "sequence": 41,
+      "round": 5,
+      "case": "warm-full",
+      "version": "new"
+    },
+    {
+      "sequence": 42,
+      "round": 5,
+      "case": "incremental/no-op",
+      "version": "new"
+    },
+    {
+      "sequence": 43,
+      "round": 5,
+      "case": "incremental/no-op",
+      "version": "old"
+    },
+    {
+      "sequence": 44,
+      "round": 5,
+      "case": "incremental/one-page",
+      "version": "old"
+    },
+    {
+      "sequence": 45,
+      "round": 5,
+      "case": "incremental/one-page",
+      "version": "new"
+    },
+    {
+      "sequence": 46,
+      "round": 5,
+      "case": "application-cold",
+      "version": "new"
+    },
+    {
+      "sequence": 47,
+      "round": 5,
+      "case": "application-cold",
+      "version": "old"
+    }
+  ],
+  "end_utc": "2026-10-13T09:31:35Z"
+}

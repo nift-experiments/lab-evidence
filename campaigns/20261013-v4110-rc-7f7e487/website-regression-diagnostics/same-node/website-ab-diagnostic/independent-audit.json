@@ -1,0 +1,39 @@
+{
+  "pass": true,
+  "observations": 48,
+  "measured": 40,
+  "warmups": 8,
+  "checks": [
+    "all correctness/routes/content/parity",
+    "adjacent version pairs",
+    "3/2 first-order split",
+    "all statistics independently recomputed"
+  ],
+  "raw_sha256": "08998f37239fbcfb9f1f4b1e20ad702554c38165f0ce10744f1b8064941ce4f9",
+  "rows": [
+    {
+      "case": "application-cold",
+      "delta_ms": 980.7919200000001,
+      "percent_change": 38.290572622393505,
+      "ranges_disjoint": true
+    },
+    {
+      "case": "warm-full",
+      "delta_ms": -399.8051099999998,
+      "percent_change": -12.58520613541606,
+      "ranges_disjoint": true
+    },
+    {
+      "case": "incremental/no-op",
+      "delta_ms": -119.39476200000001,
+      "percent_change": -12.797819462880955,
+      "ranges_disjoint": true
+    },
+    {
+      "case": "incremental/one-page",
+      "delta_ms": -99.598387,
+      "percent_change": -10.815232998531298,
+      "ranges_disjoint": true
+    }
+  ]
+}
