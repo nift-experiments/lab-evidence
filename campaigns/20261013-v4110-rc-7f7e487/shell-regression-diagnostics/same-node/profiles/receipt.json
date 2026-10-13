@@ -1,0 +1,117 @@
+{
+  "kind": "post-timing function-call diagnostic profiles, not benchmark samples",
+  "rows": [
+    {
+      "version": "old",
+      "tool": "strace",
+      "exit_code": 0,
+      "correct": true,
+      "command": [
+        "strace",
+        "-f",
+        "-c",
+        "-o",
+        "/opt/campaign/evidence/shell-ab-diagnostic/profiles/old.strace.txt",
+        "/opt/shell-ab-old/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      }
+    },
+    {
+      "version": "old",
+      "tool": "perf",
+      "exit_code": 0,
+      "correct": true,
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "999",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/campaign/evidence/shell-ab-diagnostic/profiles/old.perf.data",
+        "--",
+        "/opt/shell-ab-old/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      }
+    },
+    {
+      "version": "new",
+      "tool": "strace",
+      "exit_code": 0,
+      "correct": true,
+      "command": [
+        "strace",
+        "-f",
+        "-c",
+        "-o",
+        "/opt/campaign/evidence/shell-ab-diagnostic/profiles/new.strace.txt",
+        "/opt/nift/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      }
+    },
+    {
+      "version": "new",
+      "tool": "perf",
+      "exit_code": 0,
+      "correct": true,
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "999",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/campaign/evidence/shell-ab-diagnostic/profiles/new.perf.data",
+        "--",
+        "/opt/nift/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      }
+    }
+  ]
+}
