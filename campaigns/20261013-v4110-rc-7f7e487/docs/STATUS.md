@@ -11,7 +11,7 @@ Preparation checkpoint COMPLETE. Candidate7f7e487; all8CLIhashes identical. Four
 | build-systems | 108024443 | e95bfe8 | 9,348 | official_measurement | pending | pending | retained |
 | concurrency | 108024477 | d6d0cac | 11,506 | accepted; targeted A/B pending | independent pass | pending | retained |
 | filesystem-automation | 108024451 | 75e77bb | 15,016 | official_measurement | pending | pending | retained |
-| scripting-benchmark | 108024446 | f889fff | 2,256 | accepted; diagnostics complete | pass | pending | retained |
+| scripting-benchmark | 108024446 | f889fff | 2,256 | closed diagnostic series | pass | pending | deleted; CLI/API verified |
 | shell-benchmark | 108024467 | aec1349 | 8,566 | official_measurement | pending | pending | retained |
 | task-runners | 108024433 | f37b63b | 1,527 | complete; collecting | cloud pass | pending | retained |
 | template-engines | 108024438 | 3c0dcdd | 18,700 | accepted; targeted A/B pending | independent pass | pending | retained |
@@ -22,3 +22,5 @@ Preparation checkpoint COMPLETE. Candidate7f7e487; all8CLIhashes identical. Four
 User requested same-node old/new A/B and focused regression investigation. Official accepted bytes remain immutable. Prior exact core SHA: `2eaec7d70e9ce2e698d0ba23a605fb9cf85317ff`; current candidate remains frozen. Scripting host retained; publication and release recommendation await findings. Other seven campaigns continue. Historical ranking, scenario peer ratios and read-only source hypotheses are under `scripting-regression-diagnostics/`.
 
 Same-node scripting diagnostic independently audited: all 720 observations correct, 13 higher / 17 lower medians. Large function calls +145.76%, small +65.63%; sort/index large −30.71%. Source attribution awaits separated instrumentation. Release recommendation remains held.
+
+Scripting closeout: official accepted results and720-observation paired A/B plus24instrumented runs safely pushed at2b98e06. Node108024446 deleted; CLIabsence/API404 verified; per-host temporary access removed. Shared access stays for remaining seven hosts.
