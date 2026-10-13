@@ -16,3 +16,5 @@ Other suites still collecting. No cross-benchmark shared root cause is inferred 
 | Async queue | concurrency | Same-node100k4→4queue−67.04%;1kschedule change noisy | improvement inqueue | Three-pair diagnostic; no genericscheduler claim |
 
 Retained-runtime concurrency control: candidate schedule-1000 grows229.567→1646.006ms across ten sequential requests, post-responseRSS9808→18724kB; prior also slows. All60requests independentlyoraclechecked. This is a persistent lifetime/reuse weakness, not a statistically valid candidate-vs-prior regression or a proven leak. Rawrequesttrajectories remain separate from official fresh-runtime medians.
+
+Shellsame-nodecalls+119.68%corroboratesthescriptingsuitecall-pathsignal. Stringtransform+15.32%alsoverified; profileattributionpending. Similaritydoesnotproveallcostfromonecommit.

@@ -132,3 +132,7 @@ All8,566observations passed independent count/correctness/distribution audit (7,
 Current shell-peer deficits: stringtransform68.691ms / Zsh14.949ms =4.60×; traverse100k1111.613ms / Nu261.104ms =4.26×; metadata10k124.597ms / Fish44.917ms =2.77×. These are whole-workload native/external-helper boundaries, not isolated intrinsic timings. External baseline is kept separate from the shell-peer ranking.
 
 Human+agent: I would choose Bash/Zsh for an everyday interactive shell and existing shell scripts; Nift for Nift-owned programmable mixed automation. Agent-primary: I would choose Nift for that project-owned policy, Bash/Zsh when shell compatibility is the actual requirement. The callA/B must pass and its regressionfinding remains pending; no release endorsement.
+
+## Confirmed shell same-node update
+
+72observations independently audited (60measured+12warmups; adjacentversions5/5firstorder). Calls22.086→48.519ms, **+119.68%** (+26.432ms); strings60.516→69.788ms, **+15.32%** (+9.272ms). Both10/10slowercandidatepairs anddisjoint ranges. Traversal1042.490→1051.289ms,+0.84%,overlappingranges/5of10slower:effectivelyflatdescriptively. Historicaltraversalgainnotconfirmed. Calls nowcorroborate the scriptingcall regression acrosssuites; exactsharedrootcause awaitssource/profile attribution. Profilespending; no corechange.

@@ -1,6 +1,6 @@
 {
   "candidate": "7f7e487c47a87e871dfef53345e2b71288008bff",
-  "status": "interim five-suite diagnostic; no release approval",
+  "status": "interim six measured/audited suites; shell profiles pending; no release approval",
   "regressions": [
     {
       "benchmark": "scripting",
@@ -10,6 +10,15 @@
       "percent": 145.7575107681828,
       "basis": "same-node 10 paired samples; clear nonoverlap/10 slower pairs",
       "subsystem": "call argument/value staging"
+    },
+    {
+      "benchmark": "shell",
+      "scenario": "function-calls",
+      "old_ms": 22.0861685,
+      "candidate_ms": 48.518591,
+      "percent": 119.67862375042553,
+      "basis": "same-node10pairedsamples;10/10slowerandnonoverlappingranges",
+      "subsystem": "call/value path"
     },
     {
       "benchmark": "scripting",
@@ -73,6 +82,15 @@
       "percent": 18.34905651096246,
       "basis": "same-node 10 paired samples; descriptive increase, significance unestablished",
       "subsystem": "collections/value paths; attribution unresolved"
+    },
+    {
+      "benchmark": "shell",
+      "scenario": "string-transform",
+      "old_ms": 60.515584000000004,
+      "candidate_ms": 69.7879315,
+      "percent": 15.322247406552325,
+      "basis": "same-node10pairedsamples;10/10slowerandnonoverlappingranges",
+      "subsystem": "string/value processing; attribution pending"
     }
   ],
   "same_node_improvements": [
@@ -652,7 +670,9 @@
     "observations": 8566,
     "audit_pass": true,
     "historical_function_call_increase_pct": 106.86,
-    "basis": "cross-node screening only; same-node diagnostic pending"
+    "basis": "cross-node screening only; same-node diagnostic pending",
+    "same_node_audit_pass": true,
+    "profile_pending": true
   },
   "audited_shell_wall_deficits": [
     {

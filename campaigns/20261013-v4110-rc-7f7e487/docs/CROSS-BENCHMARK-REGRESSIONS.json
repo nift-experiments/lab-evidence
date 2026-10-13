@@ -3514,5 +3514,25 @@
       "samples_per_version": 3,
       "basis": "independently audited same-node targeted diagnostic; descriptive three-pair control"
     }
+  ],
+  "shell_same_node_confirmed_regressions": [
+    {
+      "benchmark": "shell",
+      "scenario": "function-calls",
+      "old_ms": 22.0861685,
+      "candidate_ms": 48.518591,
+      "percent": 119.67862375042553,
+      "basis": "same-node10pairedsamples;10/10slowerandnonoverlappingranges",
+      "subsystem": "call/value path"
+    },
+    {
+      "benchmark": "shell",
+      "scenario": "string-transform",
+      "old_ms": 60.515584000000004,
+      "candidate_ms": 69.7879315,
+      "percent": 15.322247406552325,
+      "basis": "same-node10pairedsamples;10/10slowerandnonoverlappingranges",
+      "subsystem": "string/value processing; attribution pending"
+    }
   ]
 }

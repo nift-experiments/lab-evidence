@@ -108,3 +108,7 @@ These historical rankings are cross-node trends, not causal attribution. Targete
 ## Additional targeted same-node findings
 
 Website10k freshfull:2561.445→3542.237ms, **+38.29%**, +980.792ms; all observed ranges disjoint in five paired measured samples. Warmfull/no-op/leaf improve10.82–12.80%. Separate profiles show330,820→404,209syscalls; investigatefilesystem/path probes, without assumingthe scriptingcall rootcause. Tinytemplate fresharticle increases3.28% across threepairs with noisyoverlapping values; not aconfirmed materialregression.
+
+## Confirmed shell additions
+
+Functioncalls+119.68%(22.086→48.519ms),stringtransform+15.32%(60.516→69.788ms);10/10pairedcandidateslower,disjointranges. Callsrankbetweenlargescriptingcalls(+145.76%)andsmallscriptingcalls(+65.63%). Traversalflatdescriptively; do notcountitsoldcross-nodegainasacausalfix.
