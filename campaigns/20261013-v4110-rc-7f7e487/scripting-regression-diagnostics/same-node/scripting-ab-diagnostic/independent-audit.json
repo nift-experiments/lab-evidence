@@ -1,0 +1,223 @@
+{
+  "kind": "independent diagnostic A/B audit",
+  "passed": true,
+  "observations": 720,
+  "measured": 600,
+  "warmups": 120,
+  "cases": 30,
+  "balanced_first_order": true,
+  "raw_sha256": "370fbc615b7268920bbac92b15d36219d65b80ddd8964c20ef49051ef15087c6",
+  "rows": [
+    {
+      "scenario": "sanity/function-calls/large",
+      "old_ms": 228.284339,
+      "new_ms": 561.025909,
+      "delta_ms": 332.74156999999997,
+      "increase_pct": 145.7575107681828
+    },
+    {
+      "scenario": "sanity/function-calls/small",
+      "old_ms": 6.0795705,
+      "new_ms": 10.0693225,
+      "delta_ms": 3.989752,
+      "increase_pct": 65.62555693695798
+    },
+    {
+      "scenario": "arrays-strings-hash/frequency-count/small",
+      "old_ms": 8.3034395,
+      "new_ms": 10.659021,
+      "delta_ms": 2.3555814999999996,
+      "increase_pct": 28.368744060819616
+    },
+    {
+      "scenario": "graphs-trees-search/bfs/small",
+      "old_ms": 12.7230255,
+      "new_ms": 15.270377,
+      "delta_ms": 2.5473514999999995,
+      "increase_pct": 20.02158606064257
+    },
+    {
+      "scenario": "structured-data/json-transform/large",
+      "old_ms": 586.316944,
+      "new_ms": 703.6477845,
+      "delta_ms": 117.33084049999991,
+      "increase_pct": 20.011504306790062
+    },
+    {
+      "scenario": "arrays-strings-hash/frequency-count/large",
+      "old_ms": 473.1560035,
+      "new_ms": 567.2626065,
+      "delta_ms": 94.10660299999995,
+      "increase_pct": 19.889127962845343
+    },
+    {
+      "scenario": "graphs-trees-search/bfs/large",
+      "old_ms": 844.177429,
+      "new_ms": 999.0760225,
+      "delta_ms": 154.89859350000006,
+      "increase_pct": 18.34905651096246
+    },
+    {
+      "scenario": "sanity/noop/small",
+      "old_ms": 3.2932255,
+      "new_ms": 3.6213505,
+      "delta_ms": 0.328125,
+      "increase_pct": 9.963635955084161
+    },
+    {
+      "scenario": "structured-data/json-transform/small",
+      "old_ms": 9.0782855,
+      "new_ms": 9.9556085,
+      "delta_ms": 0.8773230000000005,
+      "increase_pct": 9.663972343676575
+    },
+    {
+      "scenario": "structured-data/json-parse/large",
+      "old_ms": 245.5326135,
+      "new_ms": 262.570802,
+      "delta_ms": 17.038188500000018,
+      "increase_pct": 6.939277131915511
+    },
+    {
+      "scenario": "dynamic-programming/fibonacci/small",
+      "old_ms": 3.785546,
+      "new_ms": 3.908245,
+      "delta_ms": 0.12269899999999989,
+      "increase_pct": 3.2412497431017817
+    },
+    {
+      "scenario": "filesystem/traverse/large",
+      "old_ms": 38.7423275,
+      "new_ms": 39.603284,
+      "delta_ms": 0.8609565000000003,
+      "increase_pct": 2.22226323392678
+    },
+    {
+      "scenario": "filesystem/traverse/small",
+      "old_ms": 4.988886,
+      "new_ms": 5.0715135,
+      "delta_ms": 0.08262750000000008,
+      "increase_pct": 1.65623147131444
+    },
+    {
+      "scenario": "structured-data/json-traverse/large",
+      "old_ms": 491.2113455,
+      "new_ms": 489.0250355,
+      "delta_ms": -2.1863099999999918,
+      "increase_pct": -0.44508540367173
+    },
+    {
+      "scenario": "sanity/output/large",
+      "old_ms": 3.7783800000000003,
+      "new_ms": 3.7074385000000003,
+      "delta_ms": -0.07094149999999999,
+      "increase_pct": -1.8775639295147695
+    },
+    {
+      "scenario": "sanity/noop/large",
+      "old_ms": 3.426079,
+      "new_ms": 3.358798,
+      "delta_ms": -0.06728099999999992,
+      "increase_pct": -1.9637900935734365
+    },
+    {
+      "scenario": "structured-data/json-traverse/small",
+      "old_ms": 8.9688885,
+      "new_ms": 8.7722905,
+      "delta_ms": -0.19659799999999983,
+      "increase_pct": -2.191999599504435
+    },
+    {
+      "scenario": "arrays-strings-hash/sliding-window/small",
+      "old_ms": 7.380618999999999,
+      "new_ms": 7.157403,
+      "delta_ms": -0.22321599999999897,
+      "increase_pct": -3.024353377406408
+    },
+    {
+      "scenario": "sanity/loops/small",
+      "old_ms": 4.945401,
+      "new_ms": 4.77965,
+      "delta_ms": -0.1657510000000002,
+      "increase_pct": -3.3516190092572895
+    },
+    {
+      "scenario": "sanity/output/small",
+      "old_ms": 3.719924,
+      "new_ms": 3.5620089999999998,
+      "delta_ms": -0.15791500000000003,
+      "increase_pct": -4.245113609847939
+    },
+    {
+      "scenario": "sanity/loops/large",
+      "old_ms": 92.53852649999999,
+      "new_ms": 88.1149115,
+      "delta_ms": -4.423614999999984,
+      "increase_pct": -4.780295480499119
+    },
+    {
+      "scenario": "arrays-strings-hash/map-set/small",
+      "old_ms": 7.0073045,
+      "new_ms": 6.6152265,
+      "delta_ms": -0.3920779999999997,
+      "increase_pct": -5.595275615609396
+    },
+    {
+      "scenario": "arrays-strings-hash/map-set/large",
+      "old_ms": 295.96247100000005,
+      "new_ms": 278.6166095,
+      "delta_ms": -17.34586150000007,
+      "increase_pct": -5.860831422778623
+    },
+    {
+      "scenario": "arrays-strings-hash/scan/small",
+      "old_ms": 4.900930000000001,
+      "new_ms": 4.541314,
+      "delta_ms": -0.3596160000000008,
+      "increase_pct": -7.33770937352708
+    },
+    {
+      "scenario": "arrays-strings-hash/sort-index/small",
+      "old_ms": 10.8230705,
+      "new_ms": 9.842524000000001,
+      "delta_ms": -0.9805464999999991,
+      "increase_pct": -9.059781140666123
+    },
+    {
+      "scenario": "arrays-strings-hash/sliding-window/large",
+      "old_ms": 339.16434100000004,
+      "new_ms": 307.06410700000004,
+      "delta_ms": -32.100234,
+      "increase_pct": -9.46450735515264
+    },
+    {
+      "scenario": "dynamic-programming/fibonacci/large",
+      "old_ms": 182.1065365,
+      "new_ms": 164.11128050000002,
+      "delta_ms": -17.995255999999983,
+      "increase_pct": -9.881718880530121
+    },
+    {
+      "scenario": "structured-data/json-parse/small",
+      "old_ms": 6.811803,
+      "new_ms": 5.9789835,
+      "delta_ms": -0.8328195000000003,
+      "increase_pct": -12.22612427282469
+    },
+    {
+      "scenario": "arrays-strings-hash/scan/large",
+      "old_ms": 110.63487649999999,
+      "new_ms": 93.9884665,
+      "delta_ms": -16.64640999999999,
+      "increase_pct": -15.046258943489665
+    },
+    {
+      "scenario": "arrays-strings-hash/sort-index/large",
+      "old_ms": 1088.854638,
+      "new_ms": 754.4371464999999,
+      "delta_ms": -334.4174915000001,
+      "increase_pct": -30.71277651112876
+    }
+  ],
+  "interpretation": "Separate same-node diagnostic; descriptive medians, no significance claim or universal noise cutoff. Review paired samples and tails before calling near-flat values regressions."
+}
