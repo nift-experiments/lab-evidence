@@ -1,0 +1,928 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 2K of event 'cpu-clock'
+# Event count (approx.): 23323232090
+#
+# Overhead  Command      Shared Object         Symbol                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+# ........  ...........  ....................  ...............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+#
+    16.11%  nift         [kernel.kallsyms]     [k] copy_present_pte
+            |
+            ---copy_present_pte
+               |          
+                --15.94%--copy_pte_range
+                          copy_p4d_range
+                          copy_page_range
+                          dup_mmap
+                          dup_mm.constprop.0
+                          copy_process
+                          kernel_clone
+                          __do_sys_clone
+                          __x64_sys_clone
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          _Fork
+                          __libc_fork
+                          nift_run_pipeline(std::vector<ProcessSpec, std::allocator<ProcessSpec> > const&, bool, bool)
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+                          std::function<bool (nift::detail::SourceText const&, nift::RuntimeValue&, int)>::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+                          Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+                          0xffffffffffffffff
+
+     9.83%  nift         [kernel.kallsyms]     [k] smp_call_function_many_cond
+            |
+            ---smp_call_function_many_cond
+               |          
+                --9.79%--on_each_cpu_cond_mask
+                          native_flush_tlb_multi
+                          kvm_flush_tlb_multi
+                          flush_tlb_mm_range
+                          |          
+                           --9.35%--ptep_clear_flush
+                                     wp_page_copy
+                                     do_wp_page
+                                     handle_pte_fault
+                                     __handle_mm_fault
+                                     handle_mm_fault
+                                     do_user_addr_fault
+                                     exc_page_fault
+                                     asm_exc_page_fault
+                                     |          
+                                     |--2.34%--malloc
+                                     |          |          
+                                     |           --2.25%--operator new(unsigned long)
+                                     |          
+                                     |--0.87%--0x7d3bb12ab352
+                                     |          cfree
+                                     |          
+                                      --0.74%--0x7d3bb12a9c10
+                                                0x7d3bb12aba8f
+                                                malloc
+                                                operator new(unsigned long)
+                                                std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer()
+                                                std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode)
+                                                |          
+                                                 --0.56%--read_all(std::filesystem::__cxx11::path const&)
+                                                           nift_run_pipeline(std::vector<ProcessSpec, std::allocator<ProcessSpec> > const&, bool, bool)
+                                                           Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+                                                           Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+                                                           std::function<bool (nift::detail::SourceText const&, nift::RuntimeValue&, int)>::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+                                                           Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+                                                           0xffffffffffffffff
+
+     6.15%  nift         [kernel.kallsyms]     [k] native_write_msr
+            |
+            ---native_write_msr
+               native_send_call_func_single_ipi
+               smp_call_function_many_cond
+               on_each_cpu_cond_mask
+               native_flush_tlb_multi
+               kvm_flush_tlb_multi
+               flush_tlb_mm_range
+               |          
+                --5.93%--ptep_clear_flush
+                          wp_page_copy
+                          do_wp_page
+                          handle_pte_fault
+                          __handle_mm_fault
+                          handle_mm_fault
+                          do_user_addr_fault
+                          exc_page_fault
+                          asm_exc_page_fault
+                          |          
+                          |--1.13%--malloc
+                          |          |          
+                          |           --1.08%--operator new(unsigned long)
+                          |          
+                          |--0.69%--0x7d3bb12ab352
+                          |          cfree
+                          |          
+                           --0.61%--0x7d3bb12a9c10
+                                     0x7d3bb12aba8f
+                                     malloc
+                                     operator new(unsigned long)
+                                     std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer()
+                                     std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode)
+                                     |          
+                                      --0.52%--read_all(std::filesystem::__cxx11::path const&)
+                                                nift_run_pipeline(std::vector<ProcessSpec, std::allocator<ProcessSpec> > const&, bool, bool)
+                                                Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+                                                Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+                                                std::function<bool (nift::detail::SourceText const&, nift::RuntimeValue&, int)>::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+                                                Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+                                                0xffffffffffffffff
+
+     2.94%  nift         [kernel.kallsyms]     [k] clear_page_rep
+            |
+            ---clear_page_rep
+               |          
+                --2.90%--get_page_from_freelist
+                          __alloc_pages
+                          alloc_pages_mpol
+                          |          
+                           --2.43%--vma_alloc_folio
+                                     wp_page_copy
+                                     do_wp_page
+                                     handle_pte_fault
+                                     __handle_mm_fault
+                                     handle_mm_fault
+                                     do_user_addr_fault
+                                     exc_page_fault
+                                     asm_exc_page_fault
+                                     |          
+                                      --0.95%--malloc
+                                                operator new(unsigned long)
+
+     2.43%  nift         [kernel.kallsyms]     [k] _raw_spin_unlock_irqrestore
+            |
+            ---_raw_spin_unlock_irqrestore
+               |          
+                --0.91%--folio_batch_move_lru
+                          folio_add_lru
+                          folio_add_lru_vma
+                          wp_page_copy
+                          do_wp_page
+                          handle_pte_fault
+                          __handle_mm_fault
+                          handle_mm_fault
+                          do_user_addr_fault
+                          exc_page_fault
+                          asm_exc_page_fault
+
+     2.25%  nift         [kernel.kallsyms]     [k] memcpy_orig
+            |
+            ---memcpy_orig
+               __wp_page_copy_user
+               wp_page_copy
+               do_wp_page
+               handle_pte_fault
+               __handle_mm_fault
+               handle_mm_fault
+               do_user_addr_fault
+               exc_page_fault
+               asm_exc_page_fault
+               |          
+                --0.61%--malloc
+                          operator new(unsigned long)
+
+     1.60%  nift         [kernel.kallsyms]     [k] __send_ipi_mask
+            |
+            ---__send_ipi_mask
+               kvm_send_ipi_mask
+               native_send_call_func_ipi
+               kvm_smp_send_call_func_ipi
+               smp_call_function_many_cond
+               on_each_cpu_cond_mask
+               native_flush_tlb_multi
+               kvm_flush_tlb_multi
+               flush_tlb_mm_range
+               |          
+                --1.52%--ptep_clear_flush
+                          wp_page_copy
+                          do_wp_page
+                          handle_pte_fault
+                          __handle_mm_fault
+                          handle_mm_fault
+                          do_user_addr_fault
+                          exc_page_fault
+                          asm_exc_page_fault
+
+     1.47%  nift         [kernel.kallsyms]     [k] do_user_addr_fault
+            |
+            ---do_user_addr_fault
+               exc_page_fault
+               asm_exc_page_fault
+
+     1.39%  nift         [kernel.kallsyms]     [k] copy_pte_range
+            |
+            ---copy_pte_range
+               copy_p4d_range
+               copy_page_range
+               dup_mmap
+               dup_mm.constprop.0
+               copy_process
+               kernel_clone
+               __do_sys_clone
+               __x64_sys_clone
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               _Fork
+               __libc_fork
+               nift_run_pipeline(std::vector<ProcessSpec, std::allocator<ProcessSpec> > const&, bool, bool)
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+               std::function<bool (nift::detail::SourceText const&, nift::RuntimeValue&, int)>::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+               0xffffffffffffffff
+
+     1.26%  nift         [kernel.kallsyms]     [k] __d_lookup_rcu
+            |
+            ---__d_lookup_rcu
+               lookup_fast
+               |          
+                --1.21%--walk_component
+                          |          
+                          |--0.65%--link_path_walk.part.0.constprop.0
+                          |          |          
+                          |           --0.56%--path_lookupat
+                          |                     filename_lookup
+                          |                     |          
+                          |                      --0.52%--vfs_statx
+                          |                                vfs_fstatat
+                          |                                __do_sys_newfstatat
+                          |                                __x64_sys_newfstatat
+                          |                                x64_sys_call
+                          |                                do_syscall_64
+                          |                                entry_SYSCALL_64_after_hwframe
+                          |                                fstatat64
+                          |          
+                           --0.56%--path_lookupat
+                                     filename_lookup
+                                     |          
+                                      --0.52%--vfs_statx
+                                                vfs_fstatat
+                                                __do_sys_newfstatat
+                                                __x64_sys_newfstatat
+                                                x64_sys_call
+                                                do_syscall_64
+                                                entry_SYSCALL_64_after_hwframe
+                                                fstatat64
+
+     1.21%  nift         libc.so.6             [.] malloc
+            |
+            ---malloc
+               |          
+                --1.17%--operator new(unsigned long)
+
+     1.13%  nift         [kernel.kallsyms]     [k] srso_safe_ret
+            |
+            ---srso_safe_ret
+
+     1.08%  nift         [kernel.kallsyms]     [k] memset_orig
+            |
+            ---memset_orig
+               |          
+                --0.74%--getname_flags.part.0
+
+     0.95%  nift         [kernel.kallsyms]     [k] finish_task_switch.isra.0
+            |
+            ---finish_task_switch.isra.0
+               __schedule
+               |          
+                --0.91%--schedule
+                          |          
+                           --0.56%--futex_wait_queue
+                                     __futex_wait
+                                     futex_wait
+                                     do_futex
+                                     __x64_sys_futex
+                                     x64_sys_call
+                                     do_syscall_64
+                                     entry_SYSCALL_64_after_hwframe
+                                     |          
+                                      --0.52%--__lll_lock_wait_private
+
+     0.78%  nift         [kernel.kallsyms]     [k] __handle_mm_fault
+            |
+            ---__handle_mm_fault
+               handle_mm_fault
+               do_user_addr_fault
+               exc_page_fault
+               asm_exc_page_fault
+
+     0.78%  nift         libc.so.6             [.] cfree
+            |
+            ---cfree
+
+     0.74%  nift         [kernel.kallsyms]     [k] link_path_walk.part.0.constprop.0
+            |
+            ---link_path_walk.part.0.constprop.0
+               |          
+                --0.56%--path_lookupat
+                          filename_lookup
+
+     0.74%  nift         libstdc++.so.6.0.33   [.] std::filesystem::__cxx11::path::_M_split_cmpts()
+            |
+            ---std::filesystem::__cxx11::path::_M_split_cmpts()
+
+     0.69%  nift         [kernel.kallsyms]     [k] rep_movs_alternative
+            |
+            ---rep_movs_alternative
+               copy_page_to_iter
+               filemap_read
+               generic_file_read_iter
+               ext4_file_read_iter
+               vfs_read
+               ksys_read
+               __x64_sys_read
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               read
+               std::__basic_file<char>::xsgetn(char*, long)
+               std::basic_filebuf<char, std::char_traits<char> >::underflow()
+               std::basic_streambuf<char, std::char_traits<char> >::xsgetn(char*, long)
+               std::basic_filebuf<char, std::char_traits<char> >::xsgetn(char*, long)
+               std::istream::read(char*, long)
+               filesystem::read_file_checked(std::filesystem::__cxx11::path const&)
+               |          
+                --0.52%--filesystem::read_file(std::filesystem::__cxx11::path const&)
+
+     0.65%  nift         [kernel.kallsyms]     [k] kmem_cache_alloc
+            |
+            ---kmem_cache_alloc
+
+     0.65%  nift         nift                  [.] Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+            |
+            ---Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const
+               Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const
+
+     0.56%  nift         [kernel.kallsyms]     [k] do_syscall_64
+            |
+            ---do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+
+     0.56%  nift         [kernel.kallsyms]     [k] inode_permission
+            |
+            ---inode_permission
+               |          
+                --0.52%--link_path_walk.part.0.constprop.0
+
+     0.56%  nift         [kernel.kallsyms]     [k] should_flush_tlb
+            |
+            ---should_flush_tlb
+               |          
+                --0.52%--smp_call_function_many_cond
+                          on_each_cpu_cond_mask
+                          native_flush_tlb_multi
+                          kvm_flush_tlb_multi
+                          flush_tlb_mm_range
+                          ptep_clear_flush
+                          wp_page_copy
+                          do_wp_page
+                          handle_pte_fault
+                          __handle_mm_fault
+                          handle_mm_fault
+                          do_user_addr_fault
+                          exc_page_fault
+                          asm_exc_page_fault
+
+     0.52%  nift         [kernel.kallsyms]     [k] __rcu_read_unlock
+            |
+            ---__rcu_read_unlock
+
+     0.52%  nift         [kernel.kallsyms]     [k] do_wp_page
+            |
+            ---do_wp_page
+               handle_pte_fault
+               __handle_mm_fault
+               handle_mm_fault
+               do_user_addr_fault
+               exc_page_fault
+               asm_exc_page_fault
+
+     0.52%  nift         [kernel.kallsyms]     [k] wp_page_copy
+            |
+            ---wp_page_copy
+               do_wp_page
+               handle_pte_fault
+               __handle_mm_fault
+               handle_mm_fault
+               do_user_addr_fault
+               exc_page_fault
+               asm_exc_page_fault
+
+     0.48%  nift         [kernel.kallsyms]     [k] zap_pte_range
+     0.43%  nift         [kernel.kallsyms]     [k] generic_permission
+     0.43%  nift         [kernel.kallsyms]     [k] walk_component
+     0.39%  nift         [kernel.kallsyms]     [k] __rcu_read_lock
+     0.39%  nift         [kernel.kallsyms]     [k] mem_cgroup_commit_charge
+     0.35%  nift         [kernel.kallsyms]     [k] __alloc_pages
+     0.35%  nift         [kernel.kallsyms]     [k] __memcg_slab_post_alloc_hook
+     0.35%  nift         [kernel.kallsyms]     [k] _raw_spin_lock
+     0.35%  nift         [kernel.kallsyms]     [k] lock_vma_under_rcu
+     0.35%  nift         [kernel.kallsyms]     [k] lockref_get_not_dead
+     0.35%  nift         [kernel.kallsyms]     [k] vm_normal_page
+     0.35%  nift         libstdc++.so.6.0.33   [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)
+     0.35%  nift         libstdc++.so.6.0.33   [.] std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)
+     0.30%  nift         [kernel.kallsyms]     [k] ___slab_alloc
+     0.30%  nift         [kernel.kallsyms]     [k] handle_mm_fault
+     0.30%  nift         libstdc++.so.6.0.33   [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long)
+     0.30%  nift         libstdc++.so.6.0.33   [.] std::filesystem::__cxx11::path::_List::_Impl_deleter::operator()(std::filesystem::__cxx11::path::_List::_Impl*) const
+     0.26%  nift         [kernel.kallsyms]     [k] __wp_page_copy_user
+     0.26%  nift         [kernel.kallsyms]     [k] get_page_from_freelist
+     0.26%  nift         [kernel.kallsyms]     [k] handle_softirqs
+     0.26%  nift         [kernel.kallsyms]     [k] post_alloc_hook
+     0.26%  nift         [kernel.kallsyms]     [k] ptep_clear_flush
+     0.26%  nift         [kernel.kallsyms]     [k] step_into
+     0.26%  nift         libc.so.6             [.] 0x000000000018b7f0
+     0.22%  nift         [kernel.kallsyms]     [k] _raw_spin_unlock
+     0.22%  nift         [kernel.kallsyms]     [k] _raw_write_unlock_irq
+     0.22%  nift         [kernel.kallsyms]     [k] dup_mmap
+     0.22%  nift         [kernel.kallsyms]     [k] ext4_do_update_inode.isra.0
+     0.22%  nift         [kernel.kallsyms]     [k] flush_tlb_mm_range
+     0.22%  nift         [kernel.kallsyms]     [k] lookup_bh_lru
+     0.22%  nift         [kernel.kallsyms]     [k] pte_write
+     0.22%  nift         libc.so.6             [.] 0x0000000000188411
+     0.22%  nift         libc.so.6             [.] 0x000000000018b7e1
+     0.22%  nift         libstdc++.so.6.0.33   [.] std::filesystem::__cxx11::path::has_filename() const
+     0.17%  nift         [kernel.kallsyms]     [k] __d_lookup
+     0.17%  nift         [kernel.kallsyms]     [k] __mod_memcg_lruvec_state
+     0.17%  nift         [kernel.kallsyms]     [k] __pte_offset_map
+     0.17%  nift         [kernel.kallsyms]     [k] __pte_offset_map_lock
+     0.17%  nift         [kernel.kallsyms]     [k] __rmqueue_pcplist
+     0.17%  nift         [kernel.kallsyms]     [k] blk_cgroup_congested
+     0.17%  nift         [kernel.kallsyms]     [k] ext4_file_getattr
+     0.17%  nift         [kernel.kallsyms]     [k] folio_remove_rmap_ptes
+     0.17%  nift         [kernel.kallsyms]     [k] get_mem_cgroup_from_mm
+     0.17%  nift         [kernel.kallsyms]     [k] llist_add_batch
+     0.17%  nift         [kernel.kallsyms]     [k] lookup_fast
+     0.17%  nift         [kernel.kallsyms]     [k] mas_walk
+     0.17%  nift         [kernel.kallsyms]     [k] mod_objcg_state
+     0.17%  nift         [kernel.kallsyms]     [k] native_send_call_func_single_ipi
+     0.17%  nift         [kernel.kallsyms]     [k] policy_nodemask
+     0.17%  nift         [kernel.kallsyms]     [k] strncpy_from_user
+     0.17%  nift         [kernel.kallsyms]     [k] vm_area_dup
+     0.17%  nift         libc.so.6             [.] fstatat64
+     0.17%  nift         libc.so.6             [.] realpath
+     0.17%  nift         libstdc++.so.6.0.33   [.] std::filesystem::__cxx11::path::lexically_relative(std::filesystem::__cxx11::path const&) const
+     0.17%  nift         nift                  [.] nift::ast::(anonymous namespace)::P::primary()
+     0.13%  nift         [kernel.kallsyms]     [k] __cond_resched
+     0.13%  nift         [kernel.kallsyms]     [k] __mem_cgroup_charge
+     0.13%  nift         [kernel.kallsyms]     [k] __memcg_slab_free_hook
+     0.13%  nift         [kernel.kallsyms]     [k] __raw_callee_save___pv_queued_spin_unlock
+     0.13%  nift         [kernel.kallsyms]     [k] __schedule
+     0.13%  nift         [kernel.kallsyms]     [k] _find_next_bit
+     0.13%  nift         [kernel.kallsyms]     [k] access_error
+     0.13%  nift         [kernel.kallsyms]     [k] anon_vma_fork
+     0.13%  nift         [kernel.kallsyms]     [k] apparmor_file_alloc_security
+     0.13%  nift         [kernel.kallsyms]     [k] apparmor_inode_getattr
+     0.13%  nift         [kernel.kallsyms]     [k] count_memcg_events.constprop.0
+     0.13%  nift         [kernel.kallsyms]     [k] cp_new_stat
+     0.13%  nift         [kernel.kallsyms]     [k] down_write
+     0.13%  nift         [kernel.kallsyms]     [k] folio_add_new_anon_rmap
+     0.13%  nift         [kernel.kallsyms]     [k] generic_fillattr
+     0.13%  nift         [kernel.kallsyms]     [k] get_vma_policy
+     0.13%  nift         [kernel.kallsyms]     [k] handle_pte_fault
+     0.13%  nift         [kernel.kallsyms]     [k] kthread_blkcg
+     0.13%  nift         [kernel.kallsyms]     [k] mas_wr_walk
+     0.13%  nift         [kernel.kallsyms]     [k] mntput
+     0.13%  nift         [kernel.kallsyms]     [k] path_init
+     0.13%  nift         [kernel.kallsyms]     [k] pids_release
+     0.13%  nift         [kernel.kallsyms]     [k] preempt_model_full
+     0.13%  nift         [kernel.kallsyms]     [k] release_pages
+     0.13%  nift         [kernel.kallsyms]     [k] rmqueue
+     0.13%  nift         [kernel.kallsyms]     [k] security_inode_permission
+     0.13%  nift         [kernel.kallsyms]     [k] set_root
+     0.13%  nift         [kernel.kallsyms]     [k] syscall_exit_to_user_mode
+     0.13%  nift         [kernel.kallsyms]     [k] x64_sys_call
+     0.13%  nift         libc.so.6             [.] readlink
+     0.13%  nift         libc.so.6             [.] 0x00000000001880c7
+     0.13%  nift         libc.so.6             [.] 0x0000000000188320
+     0.13%  nift         libc.so.6             [.] 0x00000000001889f0
+     0.13%  nift         libstdc++.so.6.0.33   [.] std::filesystem::__cxx11::path::_List::_List(std::filesystem::__cxx11::path::_List const&)
+     0.13%  nift         libstdc++.so.6.0.33   [.] std::filesystem::__cxx11::path::lexically_normal() const
+     0.13%  nift         libstdc++.so.6.0.33   [.] std::filesystem::status(std::filesystem::__cxx11::path const&, std::error_code&)
+     0.13%  nift         nift                  [.] json::Document::Parser<false>::parse_string[abi:cxx11]()
+     0.13%  nift         nift                  [.] json::Document::has(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const [clone .part.0]
+     0.13%  nift         nift                  [.] nift::ast::(anonymous namespace)::P::unary()
+     0.13%  nift         nift                  [.] niftid::Catalogue::find(std::basic_string_view<char, std::char_traits<char> >) const
+     0.13%  nift         nift                  [.] std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Identity, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, true, true> >::find(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+     0.09%  action-log   [kernel.kallsyms]     [k] zap_pte_range
+     0.09%  nift         [kernel.kallsyms]     [k] __do_sys_newfstatat
+     0.09%  nift         [kernel.kallsyms]     [k] __ext4_get_inode_loc
+     0.09%  nift         [kernel.kallsyms]     [k] __ext4_journal_get_write_access
+     0.09%  nift         [kernel.kallsyms]     [k] __legitimize_mnt
+     0.09%  nift         [kernel.kallsyms]     [k] __memcg_kmem_charge_page
+     0.09%  nift         [kernel.kallsyms]     [k] __mod_lruvec_state
+     0.09%  nift         [kernel.kallsyms]     [k] __mod_node_page_state
+     0.09%  nift         [kernel.kallsyms]     [k] __pv_queued_spin_lock_slowpath
+     0.09%  nift         [kernel.kallsyms]     [k] __raw_spin_lock_irqsave
+     0.09%  nift         [kernel.kallsyms]     [k] __rb_insert_augmented
+     0.09%  nift         [kernel.kallsyms]     [k] __virt_addr_valid
+     0.09%  nift         [kernel.kallsyms]     [k] __x86_indirect_thunk_r14
+     0.09%  nift         [kernel.kallsyms]     [k] _copy_to_user
+     0.09%  nift         [kernel.kallsyms]     [k] alloc_pages_mpol
+     0.09%  nift         [kernel.kallsyms]     [k] anon_vma_clone
+     0.09%  nift         [kernel.kallsyms]     [k] check_heap_object
+     0.09%  nift         [kernel.kallsyms]     [k] consume_obj_stock
+     0.09%  nift         [kernel.kallsyms]     [k] do_dentry_open
+     0.09%  nift         [kernel.kallsyms]     [k] dput
+     0.09%  nift         [kernel.kallsyms]     [k] ext4_getattr
+     0.09%  nift         [kernel.kallsyms]     [k] ext4_llseek
+     0.09%  nift         [kernel.kallsyms]     [k] ext4_match
+     0.09%  nift         [kernel.kallsyms]     [k] folio_mark_accessed
+     0.09%  nift         [kernel.kallsyms]     [k] free_swap_cache
+     0.09%  nift         [kernel.kallsyms]     [k] futex_q_lock
+     0.09%  nift         [kernel.kallsyms]     [k] get_current_fs_domain
+     0.09%  nift         [kernel.kallsyms]     [k] jbd2_write_access_granted
+     0.09%  nift         [kernel.kallsyms]     [k] kmem_cache_free
+     0.09%  nift         [kernel.kallsyms]     [k] ksys_lseek
+     0.09%  nift         [kernel.kallsyms]     [k] ktime_get_coarse_real_ts64
+     0.09%  nift         [kernel.kallsyms]     [k] kvm_flush_tlb_multi
+     0.09%  nift         [kernel.kallsyms]     [k] lockref_put_return
+     0.09%  nift         [kernel.kallsyms]     [k] make_vfsuid
+     0.09%  nift         [kernel.kallsyms]     [k] mas_store
+     0.09%  nift         [kernel.kallsyms]     [k] mas_wr_end_piv
+     0.09%  nift         [kernel.kallsyms]     [k] mas_wr_modify
+     0.09%  nift         [kernel.kallsyms]     [k] mnt_drop_write
+     0.09%  nift         [kernel.kallsyms]     [k] mntput_no_expire
+     0.09%  nift         [kernel.kallsyms]     [k] mod_memcg_state
+     0.09%  nift         [kernel.kallsyms]     [k] page_counter_cancel
+     0.09%  nift         [kernel.kallsyms]     [k] path_put
+     0.09%  nift         [kernel.kallsyms]     [k] perf_iterate_ctx
+     0.09%  nift         [kernel.kallsyms]     [k] pte_pfn
+     0.09%  nift         [kernel.kallsyms]     [k] security_file_alloc
+     0.09%  nift         [kernel.kallsyms]     [k] security_inode_getattr
+     0.09%  nift         [kernel.kallsyms]     [k] should_fail_alloc_page
+     0.09%  nift         [kernel.kallsyms]     [k] srso_return_thunk
+     0.09%  nift         [kernel.kallsyms]     [k] terminate_walk
+     0.09%  nift         [kernel.kallsyms]     [k] touch_atime
+     0.09%  nift         [kernel.kallsyms]     [k] try_to_unlazy
+     0.09%  nift         [kernel.kallsyms]     [k] up_write
+     0.09%  nift         [kernel.kallsyms]     [k] vfs_fstatat
+     0.09%  nift         [kernel.kallsyms]     [k] vfs_statx
+     0.09%  nift         [kernel.kallsyms]     [k] vma_alloc_folio
+     0.09%  nift         [kernel.kallsyms]     [k] wait_task_zombie
+     0.09%  nift         libc.so.6             [.] _IO_file_fopen
+     0.09%  nift         libc.so.6             [.] _IO_link_in
+     0.09%  nift         libc.so.6             [.] __lll_lock_wait_private
+     0.09%  nift         libc.so.6             [.] getenv
+     0.09%  nift         libc.so.6             [.] read
+     0.09%  nift         libc.so.6             [.] 0x00000000000a9c06
+     0.09%  nift         libc.so.6             [.] 0x00000000000a9c10
+     0.09%  nift         libc.so.6             [.] 0x00000000000a9c14
+     0.09%  nift         libc.so.6             [.] 0x00000000000aba38
+     0.09%  nift         libc.so.6             [.] 0x0000000000188619
+     0.09%  nift         libc.so.6             [.] 0x0000000000188633
+     0.09%  nift         libc.so.6             [.] 0x0000000000188a05
+     0.09%  nift         libc.so.6             [.] 0x0000000000188a15
+     0.09%  nift         libc.so.6             [.] 0x0000000000188ad9
+     0.09%  nift         libstdc++.so.6.0.33   [.] operator delete(void*)
+     0.09%  nift         libstdc++.so.6.0.33   [.] operator delete(void*, unsigned long)
+     0.09%  nift         libstdc++.so.6.0.33   [.] operator new(unsigned long)
+     0.09%  nift         libstdc++.so.6.0.33   [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_assign(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+     0.09%  nift         libstdc++.so.6.0.33   [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long)
+     0.09%  nift         libstdc++.so.6.0.33   [.] std::basic_filebuf<char, std::char_traits<char> >::seekoff(long, std::_Ios_Seekdir, std::_Ios_Openmode)
+     0.09%  nift         libstdc++.so.6.0.33   [.] std::codecvt<char, char, __mbstate_t>::do_max_length() const
+     0.09%  nift         libstdc++.so.6.0.33   [.] std::filesystem::__cxx11::path::_List::_List()
+     0.09%  nift         libstdc++.so.6.0.33   [.] std::filesystem::__cxx11::path::compare(std::filesystem::__cxx11::path const&) const
+     0.09%  nift         libstdc++.so.6.0.33   [.] std::filesystem::__cxx11::path::has_root_directory() const
+     0.09%  nift         libstdc++.so.6.0.33   [.] std::filesystem::canonical(std::filesystem::__cxx11::path const&, std::error_code&)
+     0.09%  nift         libstdc++.so.6.0.33   [.] std::ios_base::ios_base()
+     0.09%  nift         libstdc++.so.6.0.33   [.] std::istream::read(char*, long)
+     0.09%  nift         libstdc++.so.6.0.33   [.] std::istream::sentry::sentry(std::istream&, bool)
+     0.09%  nift         libstdc++.so.6.0.33   [.] 0x00000000001ae87d
+     0.09%  nift         libstdc++.so.6.0.33   [.] 0x00000000001ae89d
+     0.09%  nift         nift                  [.] Parser::Parser(RenderHost&, TrackedInfo&, std::shared_ptr<ExecutionOutput>, std::function<std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > ()>)
+     0.09%  nift         nift                  [.] Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const::{lambda(std::basic_string_view<char, std::char_traits<char> >, std::vector<nift::detail::SourceText, std::allocator<nift::detail::SourceText> >&, std::vector<bool, std::allocator<bool> >&)#1}::operator()(std::basic_string_view<char, std::char_traits<char> >, std::vector<nift::detail::SourceText, std::allocator<nift::detail::SourceText> >&, std::vector<bool, std::allocator<bool> >&) const
+     0.09%  nift         nift                  [.] Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, bool&)#1}::operator()(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, bool&) const
+     0.09%  nift         nift                  [.] Parser::translate_function_program(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, nift::detail::SourceView*, nift::detail::DiagnosticOrigin*) const::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, nift::detail::SourceView&)#1}::operator()(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, nift::detail::SourceView&) const
+     0.09%  nift         nift                  [.] ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda(unsigned long)#1}::operator()(unsigned long) const
+     0.09%  nift         nift                  [.] ProjectInfo::build_one(TrackedInfo&, std::optional<BuildError>*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*)::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, RenderResult*)#1}::operator()(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, RenderResult*) const
+     0.09%  nift         nift                  [.] ProjectInfo::write_page_info(TrackedInfo const&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, unsigned long, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&, ProjectInfo::SidecarObservation const*) const
+     0.09%  nift         nift                  [.] filesystem::path_within(std::filesystem::__cxx11::path const&, std::filesystem::__cxx11::path const&)
+     0.09%  nift         nift                  [.] json::Document::Parser<false>::parse_array(unsigned long)
+     0.09%  nift         nift                  [.] nift::detail::SourceView::slice(unsigned long, unsigned long) const
+     0.09%  nift         nift                  [.] nift::detail::reserved_binding_name(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+     0.09%  nift         nift                  [.] operator delete(void*, unsigned long)@plt
+     0.09%  nift         nift                  [.] std::thread::_State_impl<std::thread::_Invoker<std::tuple<ProjectInfo::build_many(std::vector<ProjectInfo::BuildJob, std::allocator<ProjectInfo::BuildJob> > const&, bool, bool, unsigned long)::{lambda()#1}> > >::_M_run()
+     0.09%  nift         nift                  [.] std::unique_ptr<std::filesystem::__cxx11::path::_List::_Impl, std::filesystem::__cxx11::path::_List::_Impl_deleter>::~unique_ptr()
+     0.09%  tiny-action  [kernel.kallsyms]     [k] __task_pid_nr_ns
+     0.04%  action-log   [kernel.kallsyms]     [k] ___slab_alloc
+     0.04%  action-log   [kernel.kallsyms]     [k] __d_lookup_rcu
+     0.04%  action-log   [kernel.kallsyms]     [k] __handle_mm_fault
+     0.04%  action-log   [kernel.kallsyms]     [k] __memcg_slab_post_alloc_hook
+     0.04%  action-log   [kernel.kallsyms]     [k] __slab_free
+     0.04%  action-log   [kernel.kallsyms]     [k] _raw_spin_unlock_irqrestore
+     0.04%  action-log   [kernel.kallsyms]     [k] atime_needs_update
+     0.04%  action-log   [kernel.kallsyms]     [k] clear_page_rep
+     0.04%  action-log   [kernel.kallsyms]     [k] do_user_addr_fault
+     0.04%  action-log   [kernel.kallsyms]     [k] filemap_read
+     0.04%  action-log   [kernel.kallsyms]     [k] lookup_bh_lru
+     0.04%  action-log   [kernel.kallsyms]     [k] perf_event_mmap_output
+     0.04%  action-log   [kernel.kallsyms]     [k] strlen
+     0.04%  action-log   [kernel.kallsyms]     [k] up_write
+     0.04%  action-log   [kernel.kallsyms]     [k] vma_interval_tree_insert
+     0.04%  action-log   ld-linux-x86-64.so.2  [.] 0x0000000000019257
+     0.04%  nift         [kernel.kallsyms]     [k] __bitmap_and
+     0.04%  nift         [kernel.kallsyms]     [k] __check_block_validity.constprop.0
+     0.04%  nift         [kernel.kallsyms]     [k] __check_heap_object
+     0.04%  nift         [kernel.kallsyms]     [k] __check_object_size
+     0.04%  nift         [kernel.kallsyms]     [k] __check_object_size.part.0
+     0.04%  nift         [kernel.kallsyms]     [k] __d_instantiate
+     0.04%  nift         [kernel.kallsyms]     [k] __do_sys_clone
+     0.04%  nift         [kernel.kallsyms]     [k] __dquot_initialize
+     0.04%  nift         [kernel.kallsyms]     [k] __ext4_check_dir_entry
+     0.04%  nift         [kernel.kallsyms]     [k] __ext4_find_entry
+     0.04%  nift         [kernel.kallsyms]     [k] __ext4_handle_dirty_metadata
+     0.04%  nift         [kernel.kallsyms]     [k] __ext4_mark_inode_dirty
+     0.04%  nift         [kernel.kallsyms]     [k] __fdget_pos
+     0.04%  nift         [kernel.kallsyms]     [k] __find_get_block_slow
+     0.04%  nift         [kernel.kallsyms]     [k] __folio_throttle_swaprate
+     0.04%  nift         [kernel.kallsyms]     [k] __fput
+     0.04%  nift         [kernel.kallsyms]     [k] __fput_sync
+     0.04%  nift         [kernel.kallsyms]     [k] __fsnotify_parent
+     0.04%  nift         [kernel.kallsyms]     [k] __lruvec_stat_mod_folio
+     0.04%  nift         [kernel.kallsyms]     [k] __mmdrop
+     0.04%  nift         [kernel.kallsyms]     [k] __radix_tree_lookup
+     0.04%  nift         [kernel.kallsyms]     [k] __raw_callee_save___kvm_vcpu_is_preempted
+     0.04%  nift         [kernel.kallsyms]     [k] __task_pid_nr_ns
+     0.04%  nift         [kernel.kallsyms]     [k] __x64_sys_futex
+     0.04%  nift         [kernel.kallsyms]     [k] __x64_sys_openat
+     0.04%  nift         [kernel.kallsyms]     [k] __x64_sys_readlink
+     0.04%  nift         [kernel.kallsyms]     [k] __x64_sys_wait4
+     0.04%  nift         [kernel.kallsyms]     [k] __x86_indirect_thunk_rbx
+     0.04%  nift         [kernel.kallsyms]     [k] _copy_from_user
+     0.04%  nift         [kernel.kallsyms]     [k] _find_first_and_bit
+     0.04%  nift         [kernel.kallsyms]     [k] _find_next_zero_bit
+     0.04%  nift         [kernel.kallsyms]     [k] _raw_spin_trylock
+     0.04%  nift         [kernel.kallsyms]     [k] _raw_spin_unlock_irq
+     0.04%  nift         [kernel.kallsyms]     [k] _raw_write_lock_irq
+     0.04%  nift         [kernel.kallsyms]     [k] account_event
+     0.04%  nift         [kernel.kallsyms]     [k] alloc_vmap_area
+     0.04%  nift         [kernel.kallsyms]     [k] anon_vma_interval_tree_insert
+     0.04%  nift         [kernel.kallsyms]     [k] anon_vma_name
+     0.04%  nift         [kernel.kallsyms]     [k] apparmor_file_open
+     0.04%  nift         [kernel.kallsyms]     [k] apparmor_inode_unlink
+     0.04%  nift         [kernel.kallsyms]     [k] apparmor_path_unlink
+     0.04%  nift         [kernel.kallsyms]     [k] apparmor_task_alloc
+     0.04%  nift         [kernel.kallsyms]     [k] call_function_single_prep_ipi
+     0.04%  nift         [kernel.kallsyms]     [k] cgroup_css_set_put_fork
+     0.04%  nift         [kernel.kallsyms]     [k] cgroup_post_fork
+     0.04%  nift         [kernel.kallsyms]     [k] cgroup_rstat_updated
+     0.04%  nift         [kernel.kallsyms]     [k] check_stack_object
+     0.04%  nift         [kernel.kallsyms]     [k] clear_posix_cputimers_work
+     0.04%  nift         [kernel.kallsyms]     [k] common_perm_cond
+     0.04%  nift         [kernel.kallsyms]     [k] consume_stock
+     0.04%  nift         [kernel.kallsyms]     [k] copy_mc_to_kernel
+     0.04%  nift         [kernel.kallsyms]     [k] copy_page_to_iter
+     0.04%  nift         [kernel.kallsyms]     [k] d_same_name
+     0.04%  nift         [kernel.kallsyms]     [k] do_filp_open
+     0.04%  nift         [kernel.kallsyms]     [k] do_open
+     0.04%  nift         [kernel.kallsyms]     [k] do_readlinkat
+     0.04%  nift         [kernel.kallsyms]     [k] down_read_trylock
+     0.04%  nift         [kernel.kallsyms]     [k] dup_userfaultfd
+     0.04%  nift         [kernel.kallsyms]     [k] exit_creds
+     0.04%  nift         [kernel.kallsyms]     [k] ext4_fill_raw_inode
+     0.04%  nift         [kernel.kallsyms]     [k] ext4_find_dest_de
+     0.04%  nift         [kernel.kallsyms]     [k] ext4_fname_from_fscrypt_name
+     0.04%  nift         [kernel.kallsyms]     [k] ext4_generic_delete_entry
+     0.04%  nift         [kernel.kallsyms]     [k] ext4_get_group_desc
+     0.04%  nift         [kernel.kallsyms]     [k] ext4_mark_iloc_dirty
+     0.04%  nift         [kernel.kallsyms]     [k] ext4_sb_block_valid
+     0.04%  nift         [kernel.kallsyms]     [k] ext4_search_dir
+     0.04%  nift         [kernel.kallsyms]     [k] fd_install
+     0.04%  nift         [kernel.kallsyms]     [k] file_close_fd_locked
+     0.04%  nift         [kernel.kallsyms]     [k] filemap_get_pages
+     0.04%  nift         [kernel.kallsyms]     [k] filemap_get_read_batch
+     0.04%  nift         [kernel.kallsyms]     [k] filemap_map_pages
+     0.04%  nift         [kernel.kallsyms]     [k] filemap_read
+     0.04%  nift         [kernel.kallsyms]     [k] filename_lookup
+     0.04%  nift         [kernel.kallsyms]     [k] find_get_block_common
+     0.04%  nift         [kernel.kallsyms]     [k] folio_add_lru_vma
+     0.04%  nift         [kernel.kallsyms]     [k] fput
+     0.04%  nift         [kernel.kallsyms]     [k] free_pgtables
+     0.04%  nift         [kernel.kallsyms]     [k] from_kuid_munged
+     0.04%  nift         [kernel.kallsyms]     [k] fscrypt_file_open
+     0.04%  nift         [kernel.kallsyms]     [k] fsnotify
+     0.04%  nift         [kernel.kallsyms]     [k] getname_flags
+     0.04%  nift         [kernel.kallsyms]     [k] getname_flags.part.0
+     0.04%  nift         [kernel.kallsyms]     [k] half_md4_transform.isra.0
+     0.04%  nift         [kernel.kallsyms]     [k] idr_find
+     0.04%  nift         [kernel.kallsyms]     [k] inherit_event.isra.0
+     0.04%  nift         [kernel.kallsyms]     [k] inode_to_bdi
+     0.04%  nift         [kernel.kallsyms]     [k] is_vmalloc_addr
+     0.04%  nift         [kernel.kallsyms]     [k] jbd2_journal_dirty_metadata
+     0.04%  nift         [kernel.kallsyms]     [k] kfree
+     0.04%  nift         [kernel.kallsyms]     [k] kmalloc_trace
+     0.04%  nift         [kernel.kallsyms]     [k] kmem_cache_alloc_lru
+     0.04%  nift         [kernel.kallsyms]     [k] lock_mm_and_find_vma
+     0.04%  nift         [kernel.kallsyms]     [k] lockref_get_not_zero
+     0.04%  nift         [kernel.kallsyms]     [k] map_id_up
+     0.04%  nift         [kernel.kallsyms]     [k] mas_copy_node.isra.0
+     0.04%  nift         [kernel.kallsyms]     [k] memcmp
+     0.04%  nift         [kernel.kallsyms]     [k] mutex_unlock
+     0.04%  nift         [kernel.kallsyms]     [k] native_set_pte
+     0.04%  nift         [kernel.kallsyms]     [k] new_inode
+     0.04%  nift         [kernel.kallsyms]     [k] obj_cgroup_charge
+     0.04%  nift         [kernel.kallsyms]     [k] open_last_lookups
+     0.04%  nift         [kernel.kallsyms]     [k] page_counter_try_charge
+     0.04%  nift         [kernel.kallsyms]     [k] path_lookupat
+     0.04%  nift         [kernel.kallsyms]     [k] pcpu_alloc
+     0.04%  nift         [kernel.kallsyms]     [k] perf_event_mmap_event
+     0.04%  nift         [kernel.kallsyms]     [k] pfn_pte
+     0.04%  nift         [kernel.kallsyms]     [k] propagate_protected_usage
+     0.04%  nift         [kernel.kallsyms]     [k] pte_mkwrite
+     0.04%  nift         [kernel.kallsyms]     [k] pte_val
+     0.04%  nift         [kernel.kallsyms]     [k] put_pid
+     0.04%  nift         [kernel.kallsyms]     [k] putname
+     0.04%  nift         [kernel.kallsyms]     [k] rcu_do_batch
+     0.04%  nift         [kernel.kallsyms]     [k] rebalance_domains
+     0.04%  nift         [kernel.kallsyms]     [k] refill_obj_stock
+     0.04%  nift         [kernel.kallsyms]     [k] security_current_getlsmblob_subj
+     0.04%  nift         [kernel.kallsyms]     [k] security_task_free
+     0.04%  nift         [kernel.kallsyms]     [k] set_ptes.isra.0
+     0.04%  nift         [kernel.kallsyms]     [k] syscall_exit_to_user_mode_prepare
+     0.04%  nift         [kernel.kallsyms]     [k] track_pfn_copy
+     0.04%  nift         [kernel.kallsyms]     [k] try_charge_memcg
+     0.04%  nift         [kernel.kallsyms]     [k] up_read
+     0.04%  nift         [kernel.kallsyms]     [k] uprobe_start_dup_mmap
+     0.04%  nift         [kernel.kallsyms]     [k] user_path_at_empty
+     0.04%  nift         [kernel.kallsyms]     [k] vfs_getattr_nosec
+     0.04%  nift         [kernel.kallsyms]     [k] vfs_read
+     0.04%  nift         [kernel.kallsyms]     [k] vfs_utimes
+     0.04%  nift         [kernel.kallsyms]     [k] vma_interval_tree_augment_rotate
+     0.04%  nift         [kernel.kallsyms]     [k] vma_interval_tree_insert_after
+     0.04%  nift         [kernel.kallsyms]     [k] wake_up_bit
+     0.04%  nift         [kernel.kallsyms]     [k] wb_get_lookup.part.0
+     0.04%  nift         [kernel.kallsyms]     [k] xas_descend
+     0.04%  nift         [kernel.kallsyms]     [k] zap_pmd_range.isra.0
+     0.04%  nift         [vdso]                [.] 0x0000000000000c4e
+     0.04%  nift         libc.so.6             [.] _IO_unsave_markers
+     0.04%  nift         libc.so.6             [.] __close
+     0.04%  nift         libc.so.6             [.] __close_nocancel
+     0.04%  nift         libc.so.6             [.] __libc_fork
+     0.04%  nift         libc.so.6             [.] __mempcpy@plt
+     0.04%  nift         libc.so.6             [.] clock_gettime
+     0.04%  nift         libc.so.6             [.] fclose
+     0.04%  nift         libc.so.6             [.] isalnum
+     0.04%  nift         libc.so.6             [.] open64
+     0.04%  nift         libc.so.6             [.] tolower
+     0.04%  nift         libc.so.6             [.] 0x000000000004e3e4
+     0.04%  nift         libc.so.6             [.] 0x0000000000066b02
+     0.04%  nift         libc.so.6             [.] 0x0000000000094645
+     0.04%  nift         libc.so.6             [.] 0x000000000009466b
+     0.04%  nift         libc.so.6             [.] 0x0000000000094678
+     0.04%  nift         libc.so.6             [.] 0x00000000000946a8
+     0.04%  nift         libc.so.6             [.] 0x000000000009470b
+     0.04%  nift         libc.so.6             [.] 0x0000000000098579
+     0.04%  nift         libc.so.6             [.] 0x0000000000098601
+     0.04%  nift         libc.so.6             [.] 0x00000000000a9b01
+     0.04%  nift         libc.so.6             [.] 0x00000000000a9d13
+     0.04%  nift         libc.so.6             [.] 0x00000000000aafdc
+     0.04%  nift         libc.so.6             [.] 0x00000000000ab1fc
+     0.04%  nift         libc.so.6             [.] 0x00000000000ab2a7
+     0.04%  nift         libc.so.6             [.] 0x00000000000ab2f6
+     0.04%  nift         libc.so.6             [.] 0x00000000000ab34f
+     0.04%  nift         libc.so.6             [.] 0x00000000000ab352
+     0.04%  nift         libc.so.6             [.] 0x00000000000ab42c
+     0.04%  nift         libc.so.6             [.] 0x00000000000ab6ce
+     0.04%  nift         libc.so.6             [.] 0x00000000000ab965
+     0.04%  nift         libc.so.6             [.] 0x00000000000abbce
+     0.04%  nift         libc.so.6             [.] 0x00000000000abbdb
+     0.04%  nift         libc.so.6             [.] 0x00000000000abd14
+     0.04%  nift         libc.so.6             [.] 0x00000000000abd1c
+     0.04%  nift         libc.so.6             [.] 0x00000000000abe05
+     0.04%  nift         libc.so.6             [.] 0x00000000000ad520
+     0.04%  nift         libc.so.6             [.] 0x00000000000ad55f
+     0.04%  nift         libc.so.6             [.] 0x00000000001880c4
+     0.04%  nift         libc.so.6             [.] 0x0000000000188404
+     0.04%  nift         libc.so.6             [.] 0x0000000000188408
+     0.04%  nift         libc.so.6             [.] 0x0000000000188621
+     0.04%  nift         libc.so.6             [.] 0x0000000000188623
+     0.04%  nift         libc.so.6             [.] 0x0000000000188628
+     0.04%  nift         libc.so.6             [.] 0x0000000000188630
+     0.04%  nift         libc.so.6             [.] 0x0000000000188682
+     0.04%  nift         libc.so.6             [.] 0x0000000000188713
+     0.04%  nift         libc.so.6             [.] 0x0000000000188ab3
+     0.04%  nift         libc.so.6             [.] 0x0000000000188ae6
+     0.04%  nift         libc.so.6             [.] 0x0000000000188af6
+     0.04%  nift         libc.so.6             [.] 0x0000000000188b0b
+     0.04%  nift         libc.so.6             [.] 0x0000000000188c3b
+     0.04%  nift         libc.so.6             [.] 0x000000000018b7c4
+     0.04%  nift         libc.so.6             [.] 0x000000000018b7d7
+     0.04%  nift         libstdc++.so.6.0.33   [.] fclose@plt
+     0.04%  nift         libstdc++.so.6.0.33   [.] memcpy@plt
+     0.04%  nift         libstdc++.so.6.0.33   [.] operator new(unsigned long)@plt
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::__basic_file<char>::fd()
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::__basic_file<char>::is_open() const
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int)
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_create(unsigned long&, unsigned long)
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose()
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long)@plt
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::find(char, unsigned long) const
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::push_back(char)
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::resize(unsigned long, char)
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::rfind(char const*, unsigned long, unsigned long) const
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::basic_filebuf<char, std::char_traits<char> >::_M_seek(long, std::_Ios_Seekdir, __mbstate_t)
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::basic_filebuf<char, std::char_traits<char> >::_M_terminate_output()
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate)
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char)
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::basic_streambuf<char, std::char_traits<char> >::xsgetn(char*, long)
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::filesystem::__cxx11::path::_List::end() const@plt
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::filesystem::__cxx11::path::_M_split_cmpts()@plt
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::filesystem::__cxx11::path::operator/=(std::filesystem::__cxx11::path const&)@plt
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::filesystem::__cxx11::path::operator=(std::filesystem::__cxx11::path const&)
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::from_chars(char const*, char const*, double&, std::chars_format)
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::ios_base::_M_dispose_callbacks()
+     0.04%  nift         libstdc++.so.6.0.33   [.] std::locale::id::_M_id() const
+     0.04%  nift         libstdc++.so.6.0.33   [.] void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)
+     0.04%  nift         libstdc++.so.6.0.33   [.] void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag)
+     0.04%  nift         libstdc++.so.6.0.33   [.] 0x00000000000e98be
+     0.04%  nift         libstdc++.so.6.0.33   [.] 0x00000000000f8e43
+     0.04%  nift         libstdc++.so.6.0.33   [.] 0x00000000001acc71
+     0.04%  nift         libstdc++.so.6.0.33   [.] 0x00000000001acc86
+     0.04%  nift         libstdc++.so.6.0.33   [.] 0x00000000001acc8f
+     0.04%  nift         libstdc++.so.6.0.33   [.] 0x00000000001acca3
+     0.04%  nift         libstdc++.so.6.0.33   [.] 0x00000000001accc1
+     0.04%  nift         libstdc++.so.6.0.33   [.] 0x00000000001ae9a6
+     0.04%  nift         libstdc++.so.6.0.33   [.] 0x00000000001ae9ab
+     0.04%  nift         libstdc++.so.6.0.33   [.] 0x00000000001ae9b3
+     0.04%  nift         libstdc++.so.6.0.33   [.] 0x00000000001ae9bc
+     0.04%  nift         libstdc++.so.6.0.33   [.] 0x00000000001aea8c
+     0.04%  nift         libstdc++.so.6.0.33   [.] 0x00000000001aea95
+     0.04%  nift         libstdc++.so.6.0.33   [.] 0x00000000001af434
+     0.04%  nift         libstdc++.so.6.0.33   [.] 0x00000000001af43c
+     0.04%  nift         nift                  [.] Parser::SourceContext& std::vector<Parser::SourceContext, std::allocator<Parser::SourceContext> >::emplace_back<Parser::SourceContext>(Parser::SourceContext&&) [clone .isra.0]
+     0.04%  nift         nift                  [.] Parser::evaluate_condition(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool&)#1}::operator()(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool&) const::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)#2}::operator()(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+     0.04%  nift         nift                  [.] Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)
+     0.04%  nift         nift                  [.] Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const::{lambda(nift::detail::SourceText&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceText&)#1}::operator()(nift::detail::SourceText&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceText&) const
+     0.04%  nift         nift                  [.] Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(nift::detail::SourceText const&, nift::RuntimeValue&, int)#1}::operator()(nift::detail::SourceText const&, nift::RuntimeValue&, int) const::{lambda()#1}::operator()() const::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)#2}::operator()(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+     0.04%  nift         nift                  [.] Parser::evaluate_expression_impl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::SourceView, Parser::PreparedFilesystemOperation const*, Parser::OrdinaryArgumentFrame*, int)::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&)#1}::operator()(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, nift::RuntimeValue&) const
+     0.04%  nift         nift                  [.] Parser::expression_type(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+     0.04%  nift         nift                  [.] Parser::expression_type(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)#1}::operator()(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+     0.04%  nift         nift                  [.] Parser::find_balanced(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long, char, char, unsigned long&) const
+     0.04%  nift         nift                  [.] Parser::parse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path const&, int, Parser::SourceProvenance, nift::detail::SourceView)
+     0.04%  nift         nift                  [.] Parser::resolve_json_value(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::shared_ptr<nift::RuntimeValue const>&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, nift::detail::EvaluatedOperand<Parser::PathComponent>*, nift::detail::SourceView)
+     0.04%  nift         nift                  [.] Parser::~Parser()
+     0.04%  nift         nift                  [.] PreparedProcessPOSIX::PreparedProcessPOSIX(ProcessSpec const&)
+     0.04%  nift         nift                  [.] ProjectInfo::build_reasons[abi:cxx11](TrackedInfo const&) const
+     0.04%  nift         nift                  [.] ProjectInfo::cached_user_dependencies_match(TrackedInfo const&, json::Document const&) const
+     0.04%  nift         nift                  [.] ProjectInfo::load_user_dependencies(TrackedInfo const&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, BuildError*, ProjectInfo::SidecarObservation*) const
+     0.04%  nift         nift                  [.] RenderResult::operator=(RenderResult&&) [clone .isra.0]
+     0.04%  nift         nift                  [.] auto json::Document::parse(std::basic_string_view<char, std::char_traits<char> >, json::Document&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, json::ParseOptions const&)::{lambda(auto:1)#1}::operator()<std::integral_constant<bool, false> >(std::integral_constant<bool, false>) const [clone .isra.0]
+     0.04%  nift         nift                  [.] filesystem::remove_stale_temporaries(std::filesystem::__cxx11::path const&)
+     0.04%  nift         nift                  [.] json::Document::Parser<false>::parse_value(unsigned long)
+     0.04%  nift         nift                  [.] json::Document::Parser<true>::parse_object(unsigned long)
+     0.04%  nift         nift                  [.] json::Document::has(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const [clone .part.0]
+     0.04%  nift         nift                  [.] json::Document::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+     0.04%  nift         nift                  [.] nift::RuntimeValue::find_member(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+     0.04%  nift         nift                  [.] nift::RuntimeValue::operator=(nift::RuntimeValue const&) [clone .isra.0]
+     0.04%  nift         nift                  [.] nift::RuntimeValue::~RuntimeValue()
+     0.04%  nift         nift                  [.] nift::ast::(anonymous namespace)::P::compare()
+     0.04%  nift         nift                  [.] nift::ast::parse_expression(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+     0.04%  nift         nift                  [.] nift::detail::DiagnosticOrigin::~DiagnosticOrigin()
+     0.04%  nift         nift                  [.] nift::detail::EvaluatedOperand<Parser::PathComponent>::~EvaluatedOperand()
+     0.04%  nift         nift                  [.] nift::detail::SourceBuilder::append(std::basic_string_view<char, std::char_traits<char> >, nift::detail::SourceView const&)
+     0.04%  nift         nift                  [.] nift::detail::SourceView::~SourceView()
+     0.04%  nift         nift                  [.] nift::detail::nift_binding_type(nift::RuntimeValue const&)
+     0.04%  nift         nift                  [.] nift::detail::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool&, std::vector<bool, std::allocator<bool> >*)
+     0.04%  nift         nift                  [.] nift::detail::strip_presentation_chain(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, bool&, bool&)
+     0.04%  nift         nift                  [.] nift_run_pipeline(std::vector<ProcessSpec, std::allocator<ProcessSpec> > const&, bool, bool)
+     0.04%  nift         nift                  [.] niftid::Catalogue::load_manifest(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+     0.04%  nift         nift                  [.] project_read::content_path_of(std::filesystem::__cxx11::path const&, Config const&, TrackedInfo const&)
+     0.04%  nift         nift                  [.] read_all(std::filesystem::__cxx11::path const&)
+     0.04%  nift         nift                  [.] std::_Function_handler<bool (std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool&), Parser::evaluate_condition(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool&)#1}>::_M_invoke(std::_Any_data const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool&)
+     0.04%  nift         nift                  [.] std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, Parser::Callable>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, Parser::Callable> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::find(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+     0.04%  nift         nift                  [.] std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, Parser::VariableBinding>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, Parser::VariableBinding> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_find_before_node(unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long) const
+     0.04%  nift         nift                  [.] std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_get_insert_unique_pos(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+     0.04%  nift         nift                  [.] std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::find(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+     0.04%  nift         nift                  [.] std::_Rb_tree_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_insert_<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Alloc_node>(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Alloc_node&) [clone .isra.0]
+     0.04%  nift         nift                  [.] std::_Sp_counted_ptr_inplace<Parser::CommandInstance, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()
+     0.04%  nift         nift                  [.] std::_Sp_counted_ptr_inplace<nift::RuntimeValue const, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+     0.04%  nift         nift                  [.] std::_Sp_counted_ptr_inplace<nift::detail::SourceDocument const, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+     0.04%  nift         nift                  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::filesystem::__cxx11::path::generic_string<char, std::char_traits<char>, std::allocator<char> >(std::allocator<char> const&) const [clone .isra.0]
+     0.04%  nift         nift                  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, unsigned long, std::allocator<char> const&) [clone .isra.0]
+     0.04%  nift         nift                  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [clone .constprop.0]
+     0.04%  nift         nift                  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator=(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&) [clone .isra.0]
+     0.04%  nift         nift                  [.] std::shared_ptr<nift::RuntimeValue>::shared_ptr<std::allocator<void>, nift::RuntimeValue&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, nift::RuntimeValue&)
+     0.04%  nift         nift                  [.] std::vector<nift::RuntimeValue, std::allocator<nift::RuntimeValue> >::~vector()
+     0.04%  nift         nift                  [.] std::vector<nift::detail::SourceText, std::allocator<nift::detail::SourceText> >::~vector()
+     0.04%  nift         nift                  [.] void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [clone .isra.0]
+     0.04%  nift         nift                  [.] void std::__detail::__to_chars_10_impl<unsigned int>(char*, unsigned int, unsigned int)
+     0.04%  nift         nift                  [.] void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)
+     0.04%  nift         nift                  [.] void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+     0.04%  nift         nift                  [.] void std::vector<std::unique_ptr<nift::ast::Expr, std::default_delete<nift::ast::Expr> >, std::allocator<std::unique_ptr<nift::ast::Expr, std::default_delete<nift::ast::Expr> > > >::_M_realloc_insert<std::unique_ptr<nift::ast::Expr, std::default_delete<nift::ast::Expr> > >(__gnu_cxx::__normal_iterator<std::unique_ptr<nift::ast::Expr, std::default_delete<nift::ast::Expr> >*, std::vector<std::unique_ptr<nift::ast::Expr, std::default_delete<nift::ast::Expr> >, std::allocator<std::unique_ptr<nift::ast::Expr, std::default_delete<nift::ast::Expr> > > > >, std::unique_ptr<nift::ast::Expr, std::default_delete<nift::ast::Expr> >&&)
+     0.04%  tiny-action  [kernel.kallsyms]     [k] __pte_offset_map_lock
+     0.04%  tiny-action  [kernel.kallsyms]     [k] __rcu_read_unlock
+     0.04%  tiny-action  [kernel.kallsyms]     [k] do_user_addr_fault
+     0.04%  tiny-action  [kernel.kallsyms]     [k] filemap_map_pages
+     0.04%  tiny-action  [kernel.kallsyms]     [k] finish_fault
+     0.04%  tiny-action  [kernel.kallsyms]     [k] folio_add_file_rmap_ptes
+     0.04%  tiny-action  [kernel.kallsyms]     [k] folio_add_lru_vma
+     0.04%  tiny-action  [kernel.kallsyms]     [k] kfree
+     0.04%  tiny-action  [kernel.kallsyms]     [k] lookup_bh_lru
+     0.04%  tiny-action  [kernel.kallsyms]     [k] mas_wr_modify
+     0.04%  tiny-action  [kernel.kallsyms]     [k] memfd_file_seals_ptr
+     0.04%  tiny-action  [kernel.kallsyms]     [k] next_uptodate_folio
+     0.04%  tiny-action  [kernel.kallsyms]     [k] perf_event_mmap_output
+     0.04%  tiny-action  [kernel.kallsyms]     [k] release_pages
+     0.04%  tiny-action  [kernel.kallsyms]     [k] set_pte_range
+     0.04%  tiny-action  [kernel.kallsyms]     [k] srso_safe_ret
+     0.04%  tiny-action  [kernel.kallsyms]     [k] touch_atime
+     0.04%  tiny-action  ld-linux-x86-64.so.2  [.] 0x00000000000197e3
+     0.04%  tiny-action  ld-linux-x86-64.so.2  [.] 0x00000000000210fa
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

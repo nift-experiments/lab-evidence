@@ -1,0 +1,86 @@
+[
+  {
+    "variant": "old",
+    "profiler": "strace",
+    "command": [
+      "strace",
+      "-f",
+      "-c",
+      "-o",
+      "/opt/results/build-systems-profile-635-vs-7f7/old.strace",
+      "/opt/nift-build-prior/nift",
+      "build"
+    ],
+    "exit_code": 0,
+    "correctness_pass": true,
+    "executed_actions": 10000,
+    "timing_scope": "instrumented diagnostic only; excluded from accepted timing distributions",
+    "binary_sha256": "e0a2b2b953e389f69e8ea4fec128773344c6217bf4d23110bcb5632d6f6c08dc"
+  },
+  {
+    "variant": "old",
+    "profiler": "perf",
+    "command": [
+      "perf",
+      "record",
+      "-e",
+      "cpu-clock",
+      "-F",
+      "99",
+      "--call-graph",
+      "dwarf",
+      "-o",
+      "/opt/results/build-systems-profile-635-vs-7f7/old.perf.data",
+      "--",
+      "/opt/nift-build-prior/nift",
+      "build"
+    ],
+    "exit_code": 0,
+    "correctness_pass": true,
+    "executed_actions": 10000,
+    "timing_scope": "instrumented diagnostic only; excluded from accepted timing distributions",
+    "binary_sha256": "e0a2b2b953e389f69e8ea4fec128773344c6217bf4d23110bcb5632d6f6c08dc"
+  },
+  {
+    "variant": "candidate",
+    "profiler": "strace",
+    "command": [
+      "strace",
+      "-f",
+      "-c",
+      "-o",
+      "/opt/results/build-systems-profile-635-vs-7f7/candidate.strace",
+      "/opt/nift/nift",
+      "build"
+    ],
+    "exit_code": 0,
+    "correctness_pass": true,
+    "executed_actions": 10000,
+    "timing_scope": "instrumented diagnostic only; excluded from accepted timing distributions",
+    "binary_sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606"
+  },
+  {
+    "variant": "candidate",
+    "profiler": "perf",
+    "command": [
+      "perf",
+      "record",
+      "-e",
+      "cpu-clock",
+      "-F",
+      "99",
+      "--call-graph",
+      "dwarf",
+      "-o",
+      "/opt/results/build-systems-profile-635-vs-7f7/candidate.perf.data",
+      "--",
+      "/opt/nift/nift",
+      "build"
+    ],
+    "exit_code": 0,
+    "correctness_pass": true,
+    "executed_actions": 10000,
+    "timing_scope": "instrumented diagnostic only; excluded from accepted timing distributions",
+    "binary_sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606"
+  }
+]

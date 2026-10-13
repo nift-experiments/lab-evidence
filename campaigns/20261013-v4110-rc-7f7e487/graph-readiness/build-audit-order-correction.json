@@ -15,5 +15,7 @@
   ],
   "reason": "audit_campaign.py independently verifies summary.json distributions; campaign.py does not create summary.json",
   "action": "After official collector completes preserve any missing-summary orchestration error, generate summary, then independently audit all9348 unchanged observations. Do not rerun timings.",
-  "applied": false
+  "applied": true,
+  "cloud_and_local_independent_audits_pass": true,
+  "observations_unchanged": 9348
 }

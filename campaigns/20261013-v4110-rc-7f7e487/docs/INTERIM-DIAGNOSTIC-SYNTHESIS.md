@@ -1,6 +1,6 @@
-# Diagnostic league tables — eight audited suites; build diagnostics pending
+# Diagnostic league tables — complete eight-suite diagnostic sweep
 
-All rows derive from retained audited evidence. Build official peer data is included; its same-node diagnostic closeout is pending. Same-node measured direction does not imply a population significance test. Weak/near-flat controls are separately noted, not promoted to established changes.
+All rows derive from retained audited evidence. All eight official audits and required diagnostics are retained. Release approval remains held. Same-node measured direction does not imply a population significance test. Weak/near-flat controls are separately noted, not promoted to established changes.
 
 ## Confirmed regressions — worst first
 
@@ -13,17 +13,18 @@ Same-node version observations, with confidence stated per row. Cross-node trend
 | 3 | scripting / sanity/function-calls/small | 6.080 | 10.069 | +65.63% | 10 paired measured samples/version; 10/10 pairs and disjoint ranges |
 | 4 | website-generator / application-cold / 10000pages targeted adjacent paired versions | 2561.445 | 3542.237 | +38.29% | independently audited same-node targeted diagnostic; all observed ranges disjoint; small paired diagnostic; descriptive |
 | 5 | scripting / arrays-strings-hash/frequency-count/small | 8.303 | 10.659 | +28.37% | 10 paired measured samples/version; descriptive median; significance not established |
-| 6 | scripting / graphs-trees-search/bfs/small | 12.723 | 15.270 | +20.02% | 10 paired measured samples/version; descriptive median; significance not established |
-| 7 | scripting / structured-data/json-transform/large | 586.317 | 703.648 | +20.01% | 10 paired measured samples/version; descriptive median; significance not established |
-| 8 | scripting / arrays-strings-hash/frequency-count/large | 473.156 | 567.263 | +19.89% | 10 paired measured samples/version; descriptive median; significance not established |
-| 9 | scripting / graphs-trees-search/bfs/large | 844.177 | 999.076 | +18.35% | 10 paired measured samples/version; descriptive median; significance not established |
-| 10 | shell / string-transform | 60.516 | 69.788 | +15.32% | 10 paired measured samples/version; 10/10 slower pairs; disjoint ranges |
-| 11 | scripting / sanity/noop/small | 3.293 | 3.621 | +9.96% | 10 paired measured samples/version; descriptive median; significance not established |
-| 12 | scripting / structured-data/json-transform/small | 9.078 | 9.956 | +9.66% | 10 paired measured samples/version; descriptive median; significance not established |
-| 13 | scripting / structured-data/json-parse/large | 245.533 | 262.571 | +6.94% | 10 paired measured samples/version; descriptive median; significance not established |
-| 14 | scripting / dynamic-programming/fibonacci/small | 3.786 | 3.908 | +3.24% | 10 paired measured samples/version; descriptive median; significance not established |
-| 15 | scripting / filesystem/traverse/large | 38.742 | 39.603 | +2.22% | 10 paired measured samples/version; descriptive median; significance not established |
-| 16 | scripting / filesystem/traverse/small | 4.989 | 5.072 | +1.66% | 10 paired measured samples/version; descriptive median; significance not established |
+| 6 | build-systems / tiny/10000/light/4/full | 13743.692 | 16663.644 | +21.25% | same-node rotated controlled diagnostic;5 measured/version; disjoint ranges |
+| 7 | scripting / graphs-trees-search/bfs/small | 12.723 | 15.270 | +20.02% | 10 paired measured samples/version; descriptive median; significance not established |
+| 8 | scripting / structured-data/json-transform/large | 586.317 | 703.648 | +20.01% | 10 paired measured samples/version; descriptive median; significance not established |
+| 9 | scripting / arrays-strings-hash/frequency-count/large | 473.156 | 567.263 | +19.89% | 10 paired measured samples/version; descriptive median; significance not established |
+| 10 | scripting / graphs-trees-search/bfs/large | 844.177 | 999.076 | +18.35% | 10 paired measured samples/version; descriptive median; significance not established |
+| 11 | shell / string-transform | 60.516 | 69.788 | +15.32% | 10 paired measured samples/version; 10/10 slower pairs; disjoint ranges |
+| 12 | scripting / sanity/noop/small | 3.293 | 3.621 | +9.96% | 10 paired measured samples/version; descriptive median; significance not established |
+| 13 | scripting / structured-data/json-transform/small | 9.078 | 9.956 | +9.66% | 10 paired measured samples/version; descriptive median; significance not established |
+| 14 | scripting / structured-data/json-parse/large | 245.533 | 262.571 | +6.94% | 10 paired measured samples/version; descriptive median; significance not established |
+| 15 | scripting / dynamic-programming/fibonacci/small | 3.786 | 3.908 | +3.24% | 10 paired measured samples/version; descriptive median; significance not established |
+| 16 | scripting / filesystem/traverse/large | 38.742 | 39.603 | +2.22% | 10 paired measured samples/version; descriptive median; significance not established |
+| 17 | scripting / filesystem/traverse/small | 4.989 | 5.072 | +1.66% | 10 paired measured samples/version; descriptive median; significance not established |
 
 ## Confirmed improvements — best first
 
@@ -37,27 +38,29 @@ Same-node measured improvements; small/overlapping changes retain descriptive qu
 | 4 | template-engines / loop-10000 / source-render | 119.508 | 33.683 | 71.82% | independently audited same-node targeted diagnostic; descriptive three-pair control; small paired diagnostic; descriptive |
 | 5 | concurrency / queue-100000-4-4 / fresh runtime/readiness request | 36066.073 | 11887.314 | 67.04% | independently audited same-node targeted diagnostic; descriptive three-pair control; small paired diagnostic; descriptive |
 | 6 | template-engines / loop-10000 / fresh | 168.238 | 75.854 | 54.91% | independently audited same-node targeted diagnostic; descriptive three-pair control; small paired diagnostic; descriptive |
-| 7 | template-engines / article / source-render | 0.430 | 0.266 | 38.05% | independently audited same-node targeted diagnostic; descriptive three-pair control; small paired diagnostic; descriptive |
-| 8 | scripting / arrays-strings-hash/sort-index/large | 1088.855 | 754.437 | 30.71% | 10 paired measured samples/version; 10/10 pairs and disjoint ranges |
-| 9 | scripting / arrays-strings-hash/scan/large | 110.635 | 93.988 | 15.05% | 10 paired measured samples/version; descriptive median; significance not established |
-| 10 | website-generator / incremental/no-op / 10000pages targeted adjacent paired versions | 932.931 | 813.536 | 12.80% | independently audited same-node targeted diagnostic; all observed ranges disjoint; small paired diagnostic; descriptive |
-| 11 | website-generator / warm-full / 10000pages targeted adjacent paired versions | 3176.786 | 2776.981 | 12.59% | independently audited same-node targeted diagnostic; all observed ranges disjoint; small paired diagnostic; descriptive |
-| 12 | scripting / structured-data/json-parse/small | 6.812 | 5.979 | 12.23% | 10 paired measured samples/version; descriptive median; significance not established |
-| 13 | website-generator / incremental/one-page / 10000pages targeted adjacent paired versions | 920.908 | 821.310 | 10.82% | independently audited same-node targeted diagnostic; all observed ranges disjoint; small paired diagnostic; descriptive |
-| 14 | scripting / dynamic-programming/fibonacci/large | 182.107 | 164.111 | 9.88% | 10 paired measured samples/version; descriptive median; significance not established |
-| 15 | scripting / arrays-strings-hash/sliding-window/large | 339.164 | 307.064 | 9.46% | 10 paired measured samples/version; descriptive median; significance not established |
-| 16 | scripting / arrays-strings-hash/sort-index/small | 10.823 | 9.843 | 9.06% | 10 paired measured samples/version; descriptive median; significance not established |
-| 17 | scripting / arrays-strings-hash/scan/small | 4.901 | 4.541 | 7.34% | 10 paired measured samples/version; descriptive median; significance not established |
-| 18 | scripting / arrays-strings-hash/map-set/large | 295.962 | 278.617 | 5.86% | 10 paired measured samples/version; descriptive median; significance not established |
-| 19 | scripting / arrays-strings-hash/map-set/small | 7.007 | 6.615 | 5.60% | 10 paired measured samples/version; descriptive median; significance not established |
-| 20 | scripting / sanity/loops/large | 92.539 | 88.115 | 4.78% | 10 paired measured samples/version; descriptive median; significance not established |
-| 21 | scripting / sanity/output/small | 3.720 | 3.562 | 4.25% | 10 paired measured samples/version; descriptive median; significance not established |
-| 22 | scripting / sanity/loops/small | 4.945 | 4.780 | 3.35% | 10 paired measured samples/version; descriptive median; significance not established |
-| 23 | scripting / arrays-strings-hash/sliding-window/small | 7.381 | 7.157 | 3.02% | 10 paired measured samples/version; descriptive median; significance not established |
-| 24 | scripting / structured-data/json-traverse/small | 8.969 | 8.772 | 2.19% | 10 paired measured samples/version; descriptive median; significance not established |
-| 25 | scripting / sanity/noop/large | 3.426 | 3.359 | 1.96% | 10 paired measured samples/version; descriptive median; significance not established |
-| 26 | scripting / sanity/output/large | 3.778 | 3.707 | 1.88% | 10 paired measured samples/version; descriptive median; significance not established |
-| 27 | scripting / structured-data/json-traverse/large | 491.211 | 489.025 | 0.45% | 10 paired measured samples/version; descriptive median; significance not established |
+| 7 | build-systems / native/1000/heavy/1/noop | 335.381 | 176.276 | 47.44% | same-node rotated controlled diagnostic;30 measured/version; disjoint ranges |
+| 8 | template-engines / article / source-render | 0.430 | 0.266 | 38.05% | independently audited same-node targeted diagnostic; descriptive three-pair control; small paired diagnostic; descriptive |
+| 9 | scripting / arrays-strings-hash/sort-index/large | 1088.855 | 754.437 | 30.71% | 10 paired measured samples/version; 10/10 pairs and disjoint ranges |
+| 10 | build-systems / tiny/10000/light/4/noop | 640.435 | 539.484 | 15.76% | same-node rotated controlled diagnostic;20 measured/version; overlapping ranges;descriptive median |
+| 11 | scripting / arrays-strings-hash/scan/large | 110.635 | 93.988 | 15.05% | 10 paired measured samples/version; descriptive median; significance not established |
+| 12 | website-generator / incremental/no-op / 10000pages targeted adjacent paired versions | 932.931 | 813.536 | 12.80% | independently audited same-node targeted diagnostic; all observed ranges disjoint; small paired diagnostic; descriptive |
+| 13 | website-generator / warm-full / 10000pages targeted adjacent paired versions | 3176.786 | 2776.981 | 12.59% | independently audited same-node targeted diagnostic; all observed ranges disjoint; small paired diagnostic; descriptive |
+| 14 | scripting / structured-data/json-parse/small | 6.812 | 5.979 | 12.23% | 10 paired measured samples/version; descriptive median; significance not established |
+| 15 | website-generator / incremental/one-page / 10000pages targeted adjacent paired versions | 920.908 | 821.310 | 10.82% | independently audited same-node targeted diagnostic; all observed ranges disjoint; small paired diagnostic; descriptive |
+| 16 | scripting / dynamic-programming/fibonacci/large | 182.107 | 164.111 | 9.88% | 10 paired measured samples/version; descriptive median; significance not established |
+| 17 | scripting / arrays-strings-hash/sliding-window/large | 339.164 | 307.064 | 9.46% | 10 paired measured samples/version; descriptive median; significance not established |
+| 18 | scripting / arrays-strings-hash/sort-index/small | 10.823 | 9.843 | 9.06% | 10 paired measured samples/version; descriptive median; significance not established |
+| 19 | scripting / arrays-strings-hash/scan/small | 4.901 | 4.541 | 7.34% | 10 paired measured samples/version; descriptive median; significance not established |
+| 20 | scripting / arrays-strings-hash/map-set/large | 295.962 | 278.617 | 5.86% | 10 paired measured samples/version; descriptive median; significance not established |
+| 21 | scripting / arrays-strings-hash/map-set/small | 7.007 | 6.615 | 5.60% | 10 paired measured samples/version; descriptive median; significance not established |
+| 22 | scripting / sanity/loops/large | 92.539 | 88.115 | 4.78% | 10 paired measured samples/version; descriptive median; significance not established |
+| 23 | scripting / sanity/output/small | 3.720 | 3.562 | 4.25% | 10 paired measured samples/version; descriptive median; significance not established |
+| 24 | scripting / sanity/loops/small | 4.945 | 4.780 | 3.35% | 10 paired measured samples/version; descriptive median; significance not established |
+| 25 | scripting / arrays-strings-hash/sliding-window/small | 7.381 | 7.157 | 3.02% | 10 paired measured samples/version; descriptive median; significance not established |
+| 26 | scripting / structured-data/json-traverse/small | 8.969 | 8.772 | 2.19% | 10 paired measured samples/version; descriptive median; significance not established |
+| 27 | scripting / sanity/noop/large | 3.426 | 3.359 | 1.96% | 10 paired measured samples/version; descriptive median; significance not established |
+| 28 | scripting / sanity/output/large | 3.778 | 3.707 | 1.88% | 10 paired measured samples/version; descriptive median; significance not established |
+| 29 | scripting / structured-data/json-traverse/large | 491.211 | 489.025 | 0.45% | 10 paired measured samples/version; descriptive median; significance not established |
 
 ## Largest remaining competitive deficits — worst first
 

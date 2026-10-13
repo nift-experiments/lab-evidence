@@ -1,5 +1,5 @@
 {
-  "scope": "eight audited suites; build diagnostics pending; build diagnostic pending",
+  "scope": "complete eight-suite diagnostic sweep; build diagnostic pending",
   "regressions": [
     {
       "benchmark": "scripting",
@@ -45,6 +45,15 @@
       "change_pct": 28.368744060819616,
       "basis": "10 paired measured samples/version",
       "confidence": "descriptive median; significance not established"
+    },
+    {
+      "benchmark": "build-systems",
+      "scenario": "tiny/10000/light/4/full",
+      "old_ms": 13743.691824,
+      "candidate_ms": 16663.643987,
+      "change_pct": 21.24576278624799,
+      "basis": "same-node rotated controlled diagnostic;5 measured/version",
+      "confidence": "disjoint ranges"
     },
     {
       "benchmark": "scripting",
@@ -202,6 +211,15 @@
       "confidence": "small paired diagnostic; descriptive"
     },
     {
+      "benchmark": "build-systems",
+      "scenario": "native/1000/heavy/1/noop",
+      "old_ms": 335.3812475,
+      "candidate_ms": 176.276369,
+      "change_pct": -47.440004378897186,
+      "basis": "same-node rotated controlled diagnostic;30 measured/version",
+      "confidence": "disjoint ranges"
+    },
+    {
       "benchmark": "template-engines",
       "scenario": "article / source-render",
       "old_ms": 0.42996,
@@ -218,6 +236,15 @@
       "change_pct": -30.71277651112876,
       "basis": "10 paired measured samples/version",
       "confidence": "10/10 pairs and disjoint ranges"
+    },
+    {
+      "benchmark": "build-systems",
+      "scenario": "tiny/10000/light/4/noop",
+      "old_ms": 640.4346885,
+      "candidate_ms": 539.484074,
+      "change_pct": -15.762827390946367,
+      "basis": "same-node rotated controlled diagnostic;20 measured/version",
+      "confidence": "overlapping ranges;descriptive median"
     },
     {
       "benchmark": "scripting",

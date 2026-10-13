@@ -1,0 +1,56 @@
+{
+  "newly_verified_behavior": [
+    {
+      "capability": "exactly-once inline filesystem operation",
+      "status": "retained reproducer passes inline/bound currentcandidate",
+      "qualification": "Correctness repair, not universal proof or new native API"
+    }
+  ],
+  "remaining_unsupported": [
+    {
+      "category": "filesystem",
+      "features": [
+        "native SHA256",
+        "native stat mtime",
+        "recursive directory removal"
+      ]
+    },
+    {
+      "category": "templates",
+      "features": [
+        "public reusable prepared-template artifact"
+      ]
+    },
+    {
+      "category": "concurrency",
+      "features": [
+        "public blocking channels/condition API",
+        "public future/thread cancellation; cooperative stop remains distinct"
+      ]
+    },
+    {
+      "category": "task/build",
+      "features": [
+        "outputless tracked task DAG nodes",
+        "declarative environment invalidation",
+        "local/optional remote result restoration",
+        "ensure-vs-force command semantics",
+        "CLI -j override",
+        "complete structured graph query/explain"
+      ]
+    }
+  ],
+  "native_integration_not_established": [
+    "automatic compiler depfile ingestion",
+    "rich multi-output action ownership",
+    "compile databases/toolchain/IDE integrations"
+  ],
+  "existing_supported": [
+    "configured1/2/4workers",
+    "explicit artifact/order/invalidation contracts",
+    ".f policy",
+    "repair after injected failure",
+    "future error propagation and repeated-await behavior"
+  ],
+  "no_general_new_api_claim": true
+}

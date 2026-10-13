@@ -1,0 +1,164 @@
+{
+  "cohorts": [
+    {
+      "kind": "native",
+      "size": 1000,
+      "profile": "heavy",
+      "jobs": 1,
+      "scenario": "noop",
+      "variant": "candidate",
+      "samples": 30,
+      "wall_ms": {
+        "median": 176.276369,
+        "min": 161.697605,
+        "max": 193.514474,
+        "p95": 191.65624695
+      },
+      "cpu_ms": {
+        "median": 172.0255,
+        "min": 157.926,
+        "max": 188.097,
+        "p95": 187.12720000000002
+      },
+      "peak_rss_kib": {
+        "median": 7808.0,
+        "min": 7552,
+        "max": 8064,
+        "p95": 7936.0
+      }
+    },
+    {
+      "kind": "native",
+      "size": 1000,
+      "profile": "heavy",
+      "jobs": 1,
+      "scenario": "noop",
+      "variant": "old",
+      "samples": 30,
+      "wall_ms": {
+        "median": 335.3812475,
+        "min": 312.258088,
+        "max": 399.256892,
+        "p95": 352.31476955
+      },
+      "cpu_ms": {
+        "median": 330.528,
+        "min": 308.009,
+        "max": 395.101,
+        "p95": 347.9831
+      },
+      "peak_rss_kib": {
+        "median": 6784.0,
+        "min": 6656,
+        "max": 6912,
+        "p95": 6832.0
+      }
+    },
+    {
+      "kind": "tiny",
+      "size": 10000,
+      "profile": "light",
+      "jobs": 4,
+      "scenario": "full",
+      "variant": "candidate",
+      "samples": 5,
+      "wall_ms": {
+        "median": 16663.643987,
+        "min": 16007.17707,
+        "max": 17049.145651
+      },
+      "cpu_ms": {
+        "median": 50330.091,
+        "min": 48965.956,
+        "max": 50850.123
+      },
+      "peak_rss_kib": {
+        "median": 31780,
+        "min": 31648,
+        "max": 32036
+      }
+    },
+    {
+      "kind": "tiny",
+      "size": 10000,
+      "profile": "light",
+      "jobs": 4,
+      "scenario": "full",
+      "variant": "old",
+      "samples": 5,
+      "wall_ms": {
+        "median": 13743.691824,
+        "min": 13010.769389,
+        "max": 14544.156927
+      },
+      "cpu_ms": {
+        "median": 43226.293,
+        "min": 40884.691,
+        "max": 46153.311
+      },
+      "peak_rss_kib": {
+        "median": 19492,
+        "min": 19364,
+        "max": 19616
+      }
+    },
+    {
+      "kind": "tiny",
+      "size": 10000,
+      "profile": "light",
+      "jobs": 4,
+      "scenario": "noop",
+      "variant": "candidate",
+      "samples": 20,
+      "wall_ms": {
+        "median": 539.484074,
+        "min": 502.277843,
+        "max": 613.22868,
+        "p95": 597.5454149999999
+      },
+      "cpu_ms": {
+        "median": 1505.6239999999998,
+        "min": 1383.413,
+        "max": 1768.522,
+        "p95": 1691.7088
+      },
+      "peak_rss_kib": {
+        "median": 20132.0,
+        "min": 20000,
+        "max": 20388,
+        "p95": 20266.4
+      }
+    },
+    {
+      "kind": "tiny",
+      "size": 10000,
+      "profile": "light",
+      "jobs": 4,
+      "scenario": "noop",
+      "variant": "old",
+      "samples": 20,
+      "wall_ms": {
+        "median": 640.4346885,
+        "min": 583.623934,
+        "max": 835.368912,
+        "p95": 757.7793796000001
+      },
+      "cpu_ms": {
+        "median": 2020.4765,
+        "min": 1830.731,
+        "max": 2631.403,
+        "p95": 2492.2166
+      },
+      "peak_rss_kib": {
+        "median": 12416.0,
+        "min": 12196,
+        "max": 12544,
+        "p95": 12456.6
+      }
+    }
+  ],
+  "observations": 120,
+  "measured": 110,
+  "warmups": 10,
+  "outliers_removed": 0
+}
