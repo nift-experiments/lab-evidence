@@ -1,0 +1,10 @@
+# Product priorities — interim, not core change authorization
+
+1. **Finish release-blocker verification.** Website fresh builds, shell calls/strings and tiny 10k full/RSS remain open gates. Current cross-node percentages cannot close them. This ranks above a larger peripheral microbenchmark deficit because it affects the candidate release decision.
+2. **Retain and assess the call residual.** Major original regressions recovered, but large calls are +2.59% versus release and slower in eight of ten paired blocks. Overlapping ranges do not prove equality. Keep the residual visible without inflating it into an established broad regression.
+3. **Address hot interpreter/collection throughput.** Current frequency-count, function-call and sliding-window deficits are 137.83×, 136.53× and 104.04× versus LuaJIT. These are persistent competitive weaknesses in common compute paths; no shared causal mechanism is inferred from percentages alone.
+4. **Improve reusable templating capabilities and loop execution.** Large release gains remain, but source-loop throughput is still 15.16× behind Handlebars and public prepared-AST reuse is absent in the frozen matrix. This affects long-lived embedding choices more than fresh CLI startup wins.
+5. **Investigate concurrency scaling, retained runtime and held memory separately.** Tiny-task and scheduling deficits exceed 1,000× and directly favor Go for high-fan-out work. Their product centrality differs from publishing/build regressions. Complete controlled version and memory/reuse diagnostics before labeling a new regression or proposing a common cause.
+6. **Complete native-build, filesystem, shell and task capability judgments.** Add precise gaps and priorities only from their completed audits/probes. Preserve useful explicit contracts and add helpers rather than collapsing ownership/order/invalidation semantics.
+
+This is a provisional ordering by release centrality, frequency, cross-workflow impact, gap magnitude and effect on practitioner choice. No core fixes, new candidate, publication or release are authorized in this phase.

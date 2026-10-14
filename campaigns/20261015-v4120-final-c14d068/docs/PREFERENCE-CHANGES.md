@@ -1,0 +1,17 @@
+# Practitioner preference checkpoint — draft
+
+These are current workflow-specific choices from audited final-candidate evidence, not a release endorsement. Final comparisons, capability findings and the complete preference matrix will be refreshed as the remaining suites close. Prior preference wording must be linked to its original review rather than reconstructed from memory.
+
+| Category / workflow | Human + agent: current choice | Agent-primary: current choice | Evidence and remaining reservation | Status |
+|---|---|---|---|---|
+| Standalone general scripting with libraries | Python | Python | Current Nift frequency-count, calls and sliding-window deficits remain large. LuaJIT is the fastest measured compute peer, but the choice of Python also considers library coverage. Nift remains appropriate for hooks authored inside a Nift project. | Audited data; qualitative draft |
+| Templates within a Nift publishing project | Nift | Nift | Controlled source-loop/fresh-loop/article gains retained; integrated procedural policy is useful. This is not a preference for every standalone templating application. | Audited data and version diagnostics |
+| Standalone Python / Node application with prepared templates | Jinja / Handlebars, respectively | Jinja / Handlebars, respectively | Match the host application; Nift public prepared-AST reuse remains absent in the frozen public-API matrix, and the 10k source loop is 15.16× behind Handlebars. | Audited data; qualitative draft |
+| High-fan-out concurrency and tiny-task throughput | Go | Go | Persistent 10k tiny tasks are 1,740.60× slower in Nift. Exact version/reuse/memory diagnostics remain pending; this current deficit does not establish a new regression. Coarse orchestration in an existing Nift project is a different workload. | Audited current peers; diagnostics pending |
+| Conventional content site / mixed procedural publishing | Provisional Hugo / Nift, respectively | Provisional Hugo / Nift, respectively | Hugo wins this 10k fresh minimal-page comparison; Nift narrowly wins warm full. Nift-only incremental/targeted rows do not prove cross-generator parity. Fresh-build blocker recovery is still pending, so no release preference is finalized. | Audited peers; recovery pending |
+| Native build systems | Pending complete audit | Pending complete audit | Preserve execution order, invalidation and artifact ownership as distinct useful contracts. Do not penalize explicit structure merely for its line count. | Full collection active |
+| Filesystem automation | Pending complete audit | Pending complete audit | Native operations and helper-backed work must remain distinct; capability gaps need explicit evidence. | Full collection active |
+| Interactive shells | Pending complete audit | Pending complete audit | Startup, RC, strings, calls, files and pipelines have distinct boundaries. | Full collection active |
+| Task runners | Pending complete audit | Pending complete audit | Turbo's valid restoration from preflight cache caused a rejected measurement boundary, not a Turbo correctness defect. Its result-restoration capability must not be confused with Nift clean-state skipping. | Clean full restart active |
+
+Useful explicitness includes declared inputs, ordering, invalidation, lifecycle, action identity and artifact ownership. Redundant synchronization without additional meaning is a separate disadvantage. Canonical machine-readable contracts plus concise authoring helpers are preferable to deleting semantics solely to reduce syntax.
