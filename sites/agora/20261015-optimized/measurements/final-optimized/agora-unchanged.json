@@ -1,0 +1,93 @@
+{
+  "label": "agora-unchanged",
+  "command": [
+    "/home/nick/.bun/bin/bun",
+    "tools/build.ts"
+  ],
+  "exitCode": 0,
+  "wallSeconds": 2.3747115079313517,
+  "sampledPeakTreeRssMiB": 180.59375,
+  "maxIndividualProcessRssMiB": 95.21484375,
+  "peak": {
+    "elapsedSeconds": 0.3002194589935243,
+    "phase": "render",
+    "treeRssKiB": 184928.0,
+    "processes": [
+      {
+        "pid": 2867123,
+        "name": "bun",
+        "ppid": 2867120,
+        "pgrp": 2867120,
+        "rssKiB": 17196.0
+      },
+      {
+        "pid": 2867124,
+        "name": "bun",
+        "ppid": 2867123,
+        "pgrp": 2867120,
+        "rssKiB": 64484.0
+      },
+      {
+        "pid": 2867153,
+        "name": "bun",
+        "ppid": 2867124,
+        "pgrp": 2867120,
+        "rssKiB": 28376.0
+      },
+      {
+        "pid": 2867164,
+        "name": "node",
+        "ppid": 2867153,
+        "pgrp": 2867120,
+        "rssKiB": 74872.0
+      }
+    ]
+  },
+  "phaseEvents": [
+    {
+      "elapsedSeconds": 0.15339994500391185,
+      "phase": "render",
+      "line": "[nift-pipeline-start] render"
+    },
+    {
+      "elapsedSeconds": 0.9862603030633181,
+      "phase": "assets",
+      "line": "[nift-pipeline-start] assets"
+    },
+    {
+      "elapsedSeconds": 1.219174450961873,
+      "phase": "registration",
+      "line": "[nift-pipeline-start] registration"
+    },
+    {
+      "elapsedSeconds": 1.3700531730428338,
+      "phase": "composition",
+      "line": "[nift-pipeline-start] composition"
+    }
+  ],
+  "milestones": [],
+  "samples": 68,
+  "requestedSamplingSleepSeconds": 0.02,
+  "memoryDefinition": "Summed RSS of simultaneously observed workload process group plus descendants. Excludes Python observer and GNU time wrapper. Shared pages may be counted more than once; short-lived peaks can be missed. Not PSS or exact physical memory.",
+  "osCaches": "uncontrolled",
+  "observedSamplingGapSeconds": {
+    "median": 0.03491388284601271,
+    "min": 0.03355686506256461,
+    "max": 0.037319545866921544
+  },
+  "phaseAttribution": "Approximate; inferred from buffered command log lines. Verify against phaseEvents and build log.",
+  "componentPhases": [
+    {
+      "phase": "render",
+      "seconds": 0.833001258
+    },
+    {
+      "phase": "assets",
+      "seconds": 0.23285082099999987
+    },
+    {
+      "phase": "registration",
+      "seconds": 0.1470441310000001
+    }
+  ]
+}

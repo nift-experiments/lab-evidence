@@ -1,0 +1,86 @@
+{
+  "label": "agora-unchanged",
+  "command": [
+    "/home/nick/.bun/bin/bun",
+    "tools/build.ts"
+  ],
+  "exitCode": 0,
+  "wallSeconds": 3.982388020027429,
+  "sampledPeakTreeRssMiB": 294.36328125,
+  "maxIndividualProcessRssMiB": 242.7109375,
+  "peak": {
+    "elapsedSeconds": 2.552740053040907,
+    "phase": "assets",
+    "treeRssKiB": 301428.0,
+    "processes": [
+      {
+        "pid": 2535509,
+        "name": "bun",
+        "ppid": 2535506,
+        "pgrp": 2535506,
+        "rssKiB": 17716.0
+      },
+      {
+        "pid": 2535510,
+        "name": "bun",
+        "ppid": 2535509,
+        "pgrp": 2535506,
+        "rssKiB": 35656.0
+      },
+      {
+        "pid": 2535583,
+        "name": "bun",
+        "ppid": 2535510,
+        "pgrp": 2535506,
+        "rssKiB": 248056.0
+      }
+    ]
+  },
+  "phaseEvents": [
+    {
+      "elapsedSeconds": 0.15380289196036756,
+      "phase": "render",
+      "line": "[nift-pipeline-start] render"
+    },
+    {
+      "elapsedSeconds": 1.9425026518292725,
+      "phase": "assets",
+      "line": "[nift-pipeline-start] assets"
+    },
+    {
+      "elapsedSeconds": 2.683911266969517,
+      "phase": "registration",
+      "line": "[nift-pipeline-start] registration"
+    },
+    {
+      "elapsedSeconds": 2.8434231649152935,
+      "phase": "composition",
+      "line": "[nift-pipeline-start] composition"
+    }
+  ],
+  "milestones": [],
+  "samples": 105,
+  "requestedSamplingSleepSeconds": 0.02,
+  "memoryDefinition": "Summed RSS of simultaneously observed workload process group plus descendants. Excludes Python observer and GNU time wrapper. Shared pages may be counted more than once; short-lived peaks can be missed. Not PSS or exact physical memory.",
+  "osCaches": "uncontrolled",
+  "observedSamplingGapSeconds": {
+    "median": 0.03604709601495415,
+    "min": 0.034590459894388914,
+    "max": 0.05177545896731317
+  },
+  "phaseAttribution": "Approximate; inferred from buffered command log lines. Verify against phaseEvents and build log.",
+  "componentPhases": [
+    {
+      "phase": "render",
+      "seconds": 1.7889305750000002
+    },
+    {
+      "phase": "assets",
+      "seconds": 0.741289804
+    },
+    {
+      "phase": "registration",
+      "seconds": 0.15533126900000024
+    }
+  ]
+}

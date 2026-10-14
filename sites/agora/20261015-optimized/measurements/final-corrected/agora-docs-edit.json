@@ -1,0 +1,125 @@
+{
+  "label": "agora-docs-edit",
+  "command": [
+    "/home/nick/.bun/bin/bun",
+    "tools/build.ts"
+  ],
+  "exitCode": 0,
+  "wallSeconds": 12.10958921117708,
+  "sampledPeakTreeRssMiB": 1268.83984375,
+  "maxIndividualProcessRssMiB": 1195.25,
+  "peak": {
+    "elapsedSeconds": 4.263092125067487,
+    "phase": "content",
+    "treeRssKiB": 1299292.0,
+    "processes": [
+      {
+        "pid": 2535651,
+        "name": "bun",
+        "ppid": 2535648,
+        "pgrp": 2535648,
+        "rssKiB": 17776.0
+      },
+      {
+        "pid": 2535652,
+        "name": "bun",
+        "ppid": 2535651,
+        "pgrp": 2535648,
+        "rssKiB": 32660.0
+      },
+      {
+        "pid": 2535677,
+        "name": "bun",
+        "ppid": 2535652,
+        "pgrp": 2535648,
+        "rssKiB": 24920.0
+      },
+      {
+        "pid": 2535777,
+        "name": "bun",
+        "ppid": 2535677,
+        "pgrp": 2535648,
+        "rssKiB": 1223936.0
+      }
+    ]
+  },
+  "phaseEvents": [
+    {
+      "elapsedSeconds": 0.11661661206744611,
+      "phase": "content",
+      "line": "[nift-pipeline-start] content"
+    },
+    {
+      "elapsedSeconds": 4.445449619088322,
+      "phase": "openapi",
+      "line": "[nift-pipeline-start] openapi"
+    },
+    {
+      "elapsedSeconds": 4.4492334111128,
+      "phase": "openapi-sync",
+      "line": "$ node scripts/sync-openapi-assets.mjs"
+    },
+    {
+      "elapsedSeconds": 4.572711918037385,
+      "phase": "payloads",
+      "line": "[nift-pipeline-start] payloads"
+    },
+    {
+      "elapsedSeconds": 5.9034101811703295,
+      "phase": "render",
+      "line": "[nift-pipeline-start] render"
+    },
+    {
+      "elapsedSeconds": 10.03859242098406,
+      "phase": "assets",
+      "line": "[nift-pipeline-start] assets"
+    },
+    {
+      "elapsedSeconds": 10.808201879961416,
+      "phase": "registration",
+      "line": "[nift-pipeline-start] registration"
+    },
+    {
+      "elapsedSeconds": 10.989375749137253,
+      "phase": "composition",
+      "line": "[nift-pipeline-start] composition"
+    }
+  ],
+  "milestones": [],
+  "samples": 324,
+  "requestedSamplingSleepSeconds": 0.02,
+  "memoryDefinition": "Summed RSS of simultaneously observed workload process group plus descendants. Excludes Python observer and GNU time wrapper. Shared pages may be counted more than once; short-lived peaks can be missed. Not PSS or exact physical memory.",
+  "osCaches": "uncontrolled",
+  "observedSamplingGapSeconds": {
+    "median": 0.036246111150830984,
+    "min": 0.03447781107388437,
+    "max": 0.05584223009645939
+  },
+  "phaseAttribution": "Approximate; inferred from buffered command log lines. Verify against phaseEvents and build log.",
+  "componentPhases": [
+    {
+      "phase": "content",
+      "seconds": 4.291164971
+    },
+    {
+      "phase": "openapi",
+      "seconds": 0.12724115699999947
+    },
+    {
+      "phase": "payloads",
+      "seconds": 1.330429829999999
+    },
+    {
+      "phase": "render",
+      "seconds": 4.135037205
+    },
+    {
+      "phase": "assets",
+      "seconds": 0.7695724089999986
+    },
+    {
+      "phase": "registration",
+      "seconds": 0.17687020500000109
+    }
+  ]
+}

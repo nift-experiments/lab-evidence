@@ -1,0 +1,358 @@
+[MDX] generated files in 2.7432310000001507ms
+
+ RUN  v4.1.10 /home/nick/Repositories/nift/nift-experiments/agora-baseline/build
+
+ ❯ scripts/html-to-md-migration.test.ts (10 tests | 10 failed) 1563ms
+     × migrates a supported DITA-OT API directory 170ms
+     × prints detected source type, file count, and planned paths in dry-run without writing 154ms
+     × migrates TypeDoc output with dry-run planning and rewritten links 141ms
+     × migrates Doxygen/Javadoc output with dry-run planning and rewritten links 149ms
+     × migrates iOS doc-generator output with dry-run planning and rewritten links 152ms
+     × migrates Dartdoc output with dry-run planning and rewritten links 145ms
+     × fails unsupported sources without API with a clear actionable error 155ms
+     × refuses dangerous output paths before deleting existing files 161ms
+     × refuses broad in-repo docs output paths before cleanup 148ms
+     × refuses broad temporary and home-child output paths before cleanup 184ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 10 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > migrates a supported DITA-OT API directory
+Error: Command failed: /usr/bin/node /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs --source /tmp/html-to-md-migration-yEZD7a/source --output /tmp/html-to-md-migration-yEZD7a/output --product rtc --platform android
+node:internal/modules/package_json_reader:314
+  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+        ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:855:18)
+    at defaultResolve (node:internal/modules/esm/resolve:985:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v22.22.1
+
+ ❯ runMigration scripts/html-to-md-migration.test.ts:43:10
+     41|
+     42| function runMigration(args: string[]) {
+     43|   return execFileSync(process.execPath, [SCRIPT, ...args], {
+       |          ^
+     44|     encoding: 'utf8',
+     45|     stdio: ['ignore', 'pipe', 'pipe'],
+ ❯ scripts/html-to-md-migration.test.ts:402:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/10]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > prints detected source type, file count, and planned paths in dry-run without writing
+Error: Command failed: /usr/bin/node /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs --source /tmp/html-to-md-migration-73nidZ/source --output /tmp/html-to-md-migration-73nidZ/dry-output --product rtc --platform android --dry-run
+node:internal/modules/package_json_reader:314
+  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+        ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:855:18)
+    at defaultResolve (node:internal/modules/esm/resolve:985:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v22.22.1
+
+ ❯ runMigration scripts/html-to-md-migration.test.ts:43:10
+     41|
+     42| function runMigration(args: string[]) {
+     43|   return execFileSync(process.execPath, [SCRIPT, ...args], {
+       |          ^
+     44|     encoding: 'utf8',
+     45|     stdio: ['ignore', 'pipe', 'pipe'],
+ ❯ scripts/html-to-md-migration.test.ts:437:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/10]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > migrates TypeDoc output with dry-run planning and rewritten links
+Error: Command failed: /usr/bin/node /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs --source /tmp/html-to-md-migration-ZMut4j/typedoc-source --output /tmp/html-to-md-migration-ZMut4j/output-dry --product web --platform typescript --dry-run
+node:internal/modules/package_json_reader:314
+  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+        ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:855:18)
+    at defaultResolve (node:internal/modules/esm/resolve:985:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v22.22.1
+
+ ❯ runMigration scripts/html-to-md-migration.test.ts:43:10
+     41|
+     42| function runMigration(args: string[]) {
+     43|   return execFileSync(process.execPath, [SCRIPT, ...args], {
+       |          ^
+     44|     encoding: 'utf8',
+     45|     stdio: ['ignore', 'pipe', 'pipe'],
+ ❯ expectLaneDryRunAndMigration scripts/html-to-md-migration.test.ts:132:21
+ ❯ scripts/html-to-md-migration.test.ts:465:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/10]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > migrates Doxygen/Javadoc output with dry-run planning and rewritten links
+Error: Command failed: /usr/bin/node /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs --source /tmp/html-to-md-migration-ea91eI/doxygen-source --output /tmp/html-to-md-migration-ea91eI/output-dry --product rtc --platform cpp --dry-run
+node:internal/modules/package_json_reader:314
+  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+        ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:855:18)
+    at defaultResolve (node:internal/modules/esm/resolve:985:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v22.22.1
+
+ ❯ runMigration scripts/html-to-md-migration.test.ts:43:10
+     41|
+     42| function runMigration(args: string[]) {
+     43|   return execFileSync(process.execPath, [SCRIPT, ...args], {
+       |          ^
+     44|     encoding: 'utf8',
+     45|     stdio: ['ignore', 'pipe', 'pipe'],
+ ❯ expectLaneDryRunAndMigration scripts/html-to-md-migration.test.ts:132:21
+ ❯ scripts/html-to-md-migration.test.ts:492:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/10]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > migrates iOS doc-generator output with dry-run planning and rewritten links
+Error: Command failed: /usr/bin/node /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs --source /tmp/html-to-md-migration-K9lBpB/ios-source --output /tmp/html-to-md-migration-K9lBpB/output-dry --product rtc --platform ios --dry-run
+node:internal/modules/package_json_reader:314
+  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+        ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:855:18)
+    at defaultResolve (node:internal/modules/esm/resolve:985:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v22.22.1
+
+ ❯ runMigration scripts/html-to-md-migration.test.ts:43:10
+     41|
+     42| function runMigration(args: string[]) {
+     43|   return execFileSync(process.execPath, [SCRIPT, ...args], {
+       |          ^
+     44|     encoding: 'utf8',
+     45|     stdio: ['ignore', 'pipe', 'pipe'],
+ ❯ expectLaneDryRunAndMigration scripts/html-to-md-migration.test.ts:132:21
+ ❯ scripts/html-to-md-migration.test.ts:525:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/10]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > migrates Dartdoc output with dry-run planning and rewritten links
+Error: Command failed: /usr/bin/node /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs --source /tmp/html-to-md-migration-EJs0fr/dartdoc-source --output /tmp/html-to-md-migration-EJs0fr/output-dry --product rtc --platform dart --dry-run
+node:internal/modules/package_json_reader:314
+  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+        ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:855:18)
+    at defaultResolve (node:internal/modules/esm/resolve:985:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v22.22.1
+
+ ❯ runMigration scripts/html-to-md-migration.test.ts:43:10
+     41|
+     42| function runMigration(args: string[]) {
+     43|   return execFileSync(process.execPath, [SCRIPT, ...args], {
+       |          ^
+     44|     encoding: 'utf8',
+     45|     stdio: ['ignore', 'pipe', 'pipe'],
+ ❯ expectLaneDryRunAndMigration scripts/html-to-md-migration.test.ts:132:21
+ ❯ scripts/html-to-md-migration.test.ts:560:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/10]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > fails unsupported sources without API with a clear actionable error
+AssertionError: expected 'node:internal/modules/package_json_re…' to contain 'Unsupported source structure: RESTful…'
+
+- Expected
++ Received
+
+- Unsupported source structure: RESTful/OpenAPI or other unsupported source layout.
++ node:internal/modules/package_json_reader:314
++   throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
++         ^
++
++ Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
++     at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
++     at packageResolve (node:internal/modules/esm/resolve:768:81)
++     at moduleResolve (node:internal/modules/esm/resolve:855:18)
++     at defaultResolve (node:internal/modules/esm/resolve:985:11)
++     at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
++     at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
++     at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
++     at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
++   code: 'ERR_MODULE_NOT_FOUND'
++ }
++
++ Node.js v22.22.1
++
+
+ ❯ scripts/html-to-md-migration.test.ts:601:20
+    599|     ]);
+    600|
+    601|     expect(output).toContain(
+       |                    ^
+    602|       'Unsupported source structure: RESTful/OpenAPI or other unsuppor…
+    603|     );
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/10]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > refuses dangerous output paths before deleting existing files
+AssertionError: expected 'node:internal/modules/package_json_re…' to contain 'Refusing to delete protected output p…'
+
+- Expected
++ Received
+
+- Refusing to delete protected output path
++ node:internal/modules/package_json_reader:314
++   throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
++         ^
++
++ Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
++     at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
++     at packageResolve (node:internal/modules/esm/resolve:768:81)
++     at moduleResolve (node:internal/modules/esm/resolve:855:18)
++     at defaultResolve (node:internal/modules/esm/resolve:985:11)
++     at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
++     at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
++     at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
++     at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
++   code: 'ERR_MODULE_NOT_FOUND'
++ }
++
++ Node.js v22.22.1
++
+
+ ❯ scripts/html-to-md-migration.test.ts:629:20
+    627|     ]);
+    628|
+    629|     expect(output).toContain('Refusing to delete protected output path…
+       |                    ^
+    630|     await expect(fs.readFile(sentinelPath, 'utf8')).resolves.toBe(
+    631|       'do not delete',
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/10]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > refuses broad in-repo docs output paths before cleanup
+AssertionError: expected 'node:internal/modules/package_json_re…' to contain 'Refusing to delete broad docs output …'
+
+- Expected
++ Received
+
+- Refusing to delete broad docs output path
++ node:internal/modules/package_json_reader:314
++   throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
++         ^
++
++ Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
++     at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
++     at packageResolve (node:internal/modules/esm/resolve:768:81)
++     at moduleResolve (node:internal/modules/esm/resolve:855:18)
++     at defaultResolve (node:internal/modules/esm/resolve:985:11)
++     at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
++     at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
++     at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
++     at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
++   code: 'ERR_MODULE_NOT_FOUND'
++ }
++
++ Node.js v22.22.1
++
+
+ ❯ scripts/html-to-md-migration.test.ts:651:20
+    649|     ]);
+    650|
+    651|     expect(output).toContain('Refusing to delete broad docs output pat…
+       |                    ^
+    652|     expect(output).toContain('content/docs/zh-CN/api-reference/rtc/and…
+    653|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/10]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > refuses broad temporary and home-child output paths before cleanup
+AssertionError: expected 'node:internal/modules/package_json_re…' to contain 'Refusing to delete protected output p…'
+
+- Expected
++ Received
+
+- Refusing to delete protected output path
++ node:internal/modules/package_json_reader:314
++   throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
++         ^
++
++ Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
++     at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
++     at packageResolve (node:internal/modules/esm/resolve:768:81)
++     at moduleResolve (node:internal/modules/esm/resolve:855:18)
++     at defaultResolve (node:internal/modules/esm/resolve:985:11)
++     at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
++     at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
++     at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
++     at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
++   code: 'ERR_MODULE_NOT_FOUND'
++ }
++
++ Node.js v22.22.1
++
+
+ ❯ scripts/html-to-md-migration.test.ts:670:23
+    668|       'android',
+    669|     ]);
+    670|     expect(tmpOutput).toContain('Refusing to delete protected output p…
+       |                       ^
+    671|
+    672|     const homeChildOutput = runMigrationFailure([
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/10]⎯
+
+
+ Test Files  1 failed | 2 passed (3)
+      Tests  10 failed | 36 passed (46)
+   Start at  05:54:30
+   Duration  5.74s (transform 251ms, setup 513ms, import 250ms, tests 3.26s, environment 1.11s)
+

@@ -1,0 +1,11 @@
+{
+  "origin": "http://127.0.0.1:4194",
+  "configuration": "cn, SITE_URL and VITE_SITE_URL equal explicit fixture origin",
+  "hydration": "pass after correcting browser origin exposure",
+  "actualSearch": "Chinese Orama search \u9690\u79c1\u548c\u5b89\u5168 returned correct Chinese route",
+  "clientNavigation": "Search selection navigated to /zh-CN/introduction/security-privacy; heading verified",
+  "consoleWarningsErrors": [],
+  "screenshot": "browser-evidence/cn-hydration-search-navigation.png",
+  "scope": "Isolated CN Start runtime using owned copies of same articles; not actual new CN production origin/provider deployment",
+  "officialOriginResearch": "Current www.shengwang.cn documentation link still targets doc.shengwang.cn; pinned source calls it legacy. No replacement production origin established."
+}

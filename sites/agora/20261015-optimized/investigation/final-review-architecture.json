@@ -1,0 +1,114 @@
+{
+  "review": "Independent focused final architecture review",
+  "mode": "Read-only source inspection; no builds, benchmarks, code edits, deployment, or public evidence upload",
+  "commits": {
+    "agora": "c6bbe6ed3be77358d327dfcf03920ed193179708",
+    "agora-agent": "a30d209836b4df3b34a711c841c7de5b5029f18b"
+  },
+  "instructions_read": [
+    "/home/nick/Repositories/nift/nift-experiments/agora/AGENTS.md",
+    "/home/nick/Repositories/nift/nift-experiments/agora/MIGRATION.md",
+    "/home/nick/Repositories/nift/nift-experiments/agora/HANDOVER.md",
+    "/home/nick/Repositories/nift/nift-experiments/agora/app/AGENTS.md",
+    "/home/nick/Repositories/nift/nift-experiments/agora-agent/AGENTS.md",
+    "/home/nick/Repositories/nift/nift-experiments/agora-agent/README.md"
+  ],
+  "result": "PASS for retained framework architecture, explicit source models, and cache workload distinctions; production-certification qualifications remain",
+  "findings": [
+    {
+      "id": "runtime",
+      "assessment": "Meaningful TanStack Start/Router and React retained, not inert snapshots. Vite uses tanstackStart/react plugins, React deduplication; Router creates generated route tree with intent preloading/scroll restoration. Document route loaders retain locale guards, platform resolution, legacy redirects and SEO. SSR executes actual server.fetch(Request) including redirect handling. Browser article modules load through Fumadocs createClientLoader/useDocsContent with shared React/component bridges.",
+      "evidence": [
+        "/home/nick/Repositories/nift/nift-experiments/agora/app/vite.config.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora/app/src/router.tsx",
+        "/home/nick/Repositories/nift/nift-experiments/agora/app/src/routes/$locale/$tab/$.tsx",
+        "/home/nick/Repositories/nift/nift-experiments/agora/app/src/lib/nift-content-loader.tsx",
+        "/home/nick/Repositories/nift/nift-experiments/agora/app/src/components/docs-shell/DocsContentBody.tsx",
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/render-routes.ts"
+      ]
+    },
+    {
+      "id": "authored-source",
+      "assessment": "Markdown/MDX/includes, structured navigation and OpenAPI remain maintained. Bounded Fumadocs compilation emits independently cached React ESM plus projections, without bundling the application per document. Compact heads and lazy per-document metadata are derived artifacts, not additional maintained authoring. Raw-source hashes now independently invalidate raw search when JavaScript identity is unchanged.",
+      "evidence": [
+        "/home/nick/Repositories/nift/nift-experiments/agora/README.md",
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/compile-content.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/compile-corpus.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/emit-metadata-index.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora/app/src/lib/nift-source.server.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/update-payload.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora-baseline/investigation/raw-source-invalidation-proof.json"
+      ]
+    },
+    {
+      "id": "rendered-source",
+      "assessment": "Maintained React ESM, catalog, raw/processed text projections and runtime bridges are authoritative. Routine preparation publishes these without Markdown compilation. Agent publication identity includes module bytes AND catalog entry, preventing catalog-only edits from disappearing behind an unchanged module. Editing requires coordinated article and catalog projections; preserved React interactivity distinguishes this from maintained HTML alone.",
+      "evidence": [
+        "/home/nick/Repositories/nift/nift-experiments/agora-agent/README.md",
+        "/home/nick/Repositories/nift/nift-experiments/agora-agent/tools/prepare-agent.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora-agent/tools/publish-maintained-content.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora-agent/app/src/lib/nift-source.server.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora-agent/app/src/lib/prerender-content-routes.ts"
+      ]
+    },
+    {
+      "id": "nift-ownership",
+      "assessment": "Complete root command prepares sources/application/SSR/assets/routes and invokes Nift composition. Each Nift output explicitly depends on prepared HTML. Composition copies raw bytes without interpreting MDX/code examples. This is hybrid Nift/TanStack publication, not native Nift markup rendering or replacement of Vite/React compilation.",
+      "evidence": [
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/build.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/register-routes.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/compose.f",
+        "/home/nick/Repositories/nift/nift-experiments/agora/.nift/config.json"
+      ]
+    },
+    {
+      "id": "bounded-runtime",
+      "assessment": "Production React renderer, shared plan and bounded worker lifetimes retained. Existing default128/two workers avoids unsupported larger-batch memory claims; private probes rejected larger/lower-heap configurations. No claim of persistent whole-corpus module caches or achieved aspirational memory target.",
+      "evidence": [
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/run-renderer.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/render-routes.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora/README.md"
+      ]
+    }
+  ],
+  "cache_semantics": {
+    "A": {
+      "label": "Fresh application state",
+      "meaning": "Source-only checkout with installed dependencies retained; derived application/content/payload/SSR/Nift state absent. Authored compiler and application bundle must regenerate; rendered maintained ESM/catalog survive as source inputs. Not cold OS caches.",
+      "evidence": "/home/nick/Repositories/nift/nift-experiments/agora-baseline/tools/final-campaign-optimized.py"
+    },
+    "B": {
+      "label": "Forced full publication with valid reusable artifacts",
+      "meaning": "Root --all explicitly rerenders every route and forces all Nift outputs. Valid content compiler outputs/application bundle may be reused; not equivalent to an application recompilation workload.",
+      "evidence": [
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/prepare.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora-agent/tools/prepare-agent.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/build.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/render-routes.ts"
+      ]
+    },
+    "C": {
+      "label": "Incremental/no-op publication",
+      "meaning": "Input signatures trigger affected compilation/projections/application stages; renderer fingerprints select routes; explicit Nift dependencies select composition. No-op still validates inputs/assets/route inventory; clean render planning retires deleted routes and skips unnecessary worker/finalizer processes.",
+      "evidence": [
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/prepare.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/update-payload.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/run-renderer.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/render-routes.ts",
+        "/home/nick/Repositories/nift/nift-experiments/agora/tools/publish-assets.ts"
+      ]
+    }
+  },
+  "blockers": [],
+  "qualifications": [
+    "This review verifies source architecture, not a new independent browser run or exhaustive cache mutation test. Browser/corpus certification remains separate evidence.",
+    "CN is separately configured and requires an explicit origin; local Chinese fixture does not certify a complete production CN deployment.",
+    "External Algolia/CDN/API behavior and private service/index mutations are not implied by source preservation or local Orama behavior.",
+    "Python preview does not implement hosting redirects/content negotiation; provider deployment precedence and Nift build-image integration remain unverified.",
+    "Complete-pipeline time and aggregate process-tree RSS must remain distinct from isolated Nift cost and max individual process/phase RSS. Performance aspirations are not acceptance facts.",
+    "Final authored raw-source invalidation correctness fix follows captured optimized performance SHA; do not attribute a measured speedup to that patch.",
+    "Three pinned dynamic projection fallback paths preserve upstream public projection metadata/text while retaining working article modules; this is corpus-bounded compatibility.",
+    "Inherited full unit-suite failures remain qualified; focused checks do not make the entire upstream suite green."
+  ],
+  "recommendation": "Architecture is suitable for an honest local Labs draft with explicit cache definitions and qualifications. Public deployment/evidence publication and production readiness are separate gates."
+}

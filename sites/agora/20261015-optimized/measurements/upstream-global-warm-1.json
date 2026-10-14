@@ -1,0 +1,105 @@
+{
+  "label": "upstream-global-warm-1",
+  "command": [
+    "env",
+    "VITE_DOCS_REGION=global",
+    "SITE_URL=https://docs.agora.io",
+    "VITE_SEARCH_RANKING_V2=true",
+    "bun",
+    "run",
+    "build"
+  ],
+  "exitCode": 0,
+  "wallSeconds": 592.0938057580497,
+  "sampledPeakTreeRssMiB": 4966.56640625,
+  "maxIndividualProcessRssMiB": 4941.5078125,
+  "peak": {
+    "elapsedSeconds": 525.3849284308963,
+    "phase": "application-build-and-prerender",
+    "treeRssKiB": 5085764.0,
+    "processes": [
+      {
+        "pid": 2401221,
+        "name": "bun",
+        "ppid": 2401219,
+        "pgrp": 2401219,
+        "rssKiB": 7620.0
+      },
+      {
+        "pid": 2401222,
+        "name": "bun",
+        "ppid": 2401221,
+        "pgrp": 2401219,
+        "rssKiB": 7844.0
+      },
+      {
+        "pid": 2401235,
+        "name": "bash",
+        "ppid": 2401222,
+        "pgrp": 2401219,
+        "rssKiB": 3232.0
+      },
+      {
+        "pid": 2401462,
+        "name": "bun",
+        "ppid": 2401235,
+        "pgrp": 2401219,
+        "rssKiB": 7444.0
+      },
+      {
+        "pid": 2401463,
+        "name": "node",
+        "ppid": 2401462,
+        "pgrp": 2401219,
+        "rssKiB": 5059624.0
+      }
+    ]
+  },
+  "phaseEvents": [
+    {
+      "elapsedSeconds": 0.007010910892859101,
+      "phase": "legacy-redirect-check",
+      "line": "$ bun run legacy-redirects:check && bun run build:static"
+    },
+    {
+      "elapsedSeconds": 0.01016558287665248,
+      "phase": "legacy-redirect-check",
+      "line": "$ node scripts/generate-legacy-redirect-artifacts.mjs --check"
+    },
+    {
+      "elapsedSeconds": 0.1532813438680023,
+      "phase": "openapi-sync",
+      "line": "$ node scripts/sync-openapi-assets.mjs"
+    },
+    {
+      "elapsedSeconds": 0.2511289520189166,
+      "phase": "last-updated",
+      "line": "$ node scripts/generate-docs-last-updated-manifest.mjs"
+    },
+    {
+      "elapsedSeconds": 0.7789601620752364,
+      "phase": "static-payload",
+      "line": "$ TSS_STATIC_PRERENDER=true VITE_TSS_SPA_STATIC_EXPERIMENT=true node scripts/generate-static-docs-payload.mjs"
+    },
+    {
+      "elapsedSeconds": 154.67918209102936,
+      "phase": "application-build-and-prerender",
+      "line": "$ TSS_STATIC_PRERENDER=true VITE_TSS_SPA_STATIC_EXPERIMENT=true vite build"
+    },
+    {
+      "elapsedSeconds": 583.1850051630754,
+      "phase": "route-html",
+      "line": "$ node --experimental-strip-types scripts/generate-static-route-html.mjs"
+    }
+  ],
+  "samples": 17319,
+  "requestedSamplingSleepSeconds": 0.02,
+  "memoryDefinition": "Summed RSS of simultaneously observed workload process group plus descendants. Excludes Python observer and GNU time wrapper. Shared pages may be counted more than once; short-lived peaks can be missed. Not PSS or exact physical memory.",
+  "osCaches": "uncontrolled",
+  "observedSamplingGapSeconds": {
+    "median": 0.03360030660405755,
+    "min": 0.02991728694178164,
+    "max": 0.11792336404323578
+  },
+  "phaseAttribution": "Approximate; inferred from buffered command log lines. Verify against phaseEvents and build log."
+}

@@ -1,0 +1,803 @@
+{
+  "measuredCommits": {
+    "agora": "1dcbbeb",
+    "agora-agent": "cd1dc9e"
+  },
+  "observationsPerScenario": 1,
+  "subsequentCorrectnessChange": "Authored maintained-source hash invalidation; separately validated, not a claimed timing improvement.",
+  "rows": [
+    {
+      "label": "agora-fresh",
+      "wallSeconds": 199.81699553201906,
+      "sampledPeakTreeRssMiB": 1937.05859375,
+      "maxIndividualProcessRssMiB": 1864.484375,
+      "peak": {
+        "elapsedSeconds": 93.92627636203542,
+        "phase": "content",
+        "treeRssKiB": 1983548.0,
+        "processes": [
+          {
+            "pid": 2864496,
+            "name": "bun",
+            "ppid": 2864493,
+            "pgrp": 2864493,
+            "rssKiB": 17916.0
+          },
+          {
+            "pid": 2864497,
+            "name": "bun",
+            "ppid": 2864496,
+            "pgrp": 2864493,
+            "rssKiB": 29484.0
+          },
+          {
+            "pid": 2864519,
+            "name": "bun",
+            "ppid": 2864497,
+            "pgrp": 2864493,
+            "rssKiB": 27396.0
+          },
+          {
+            "pid": 2865330,
+            "name": "bun",
+            "ppid": 2864519,
+            "pgrp": 2864493,
+            "rssKiB": 1908752.0
+          }
+        ]
+      },
+      "phaseEvents": [
+        {
+          "elapsedSeconds": 0.11241773795336485,
+          "phase": "content",
+          "line": "[nift-pipeline-start] content"
+        },
+        {
+          "elapsedSeconds": 132.9992953860201,
+          "phase": "openapi",
+          "line": "[nift-pipeline-start] openapi"
+        },
+        {
+          "elapsedSeconds": 133.00251142214984,
+          "phase": "openapi-sync",
+          "line": "$ node scripts/sync-openapi-assets.mjs"
+        },
+        {
+          "elapsedSeconds": 133.12921607703902,
+          "phase": "payloads",
+          "line": "[nift-pipeline-start] payloads"
+        },
+        {
+          "elapsedSeconds": 151.45268743205816,
+          "phase": "application",
+          "line": "[nift-pipeline-start] application"
+        },
+        {
+          "elapsedSeconds": 151.45586620201357,
+          "phase": "application-build-and-prerender",
+          "line": "$ TSS_STATIC_PRERENDER=true VITE_TSS_SPA_STATIC_EXPERIMENT=true vite build"
+        },
+        {
+          "elapsedSeconds": 156.70609138393775,
+          "phase": "render",
+          "line": "[nift-pipeline-start] render"
+        },
+        {
+          "elapsedSeconds": 197.68841193499975,
+          "phase": "assets",
+          "line": "[nift-pipeline-start] assets"
+        },
+        {
+          "elapsedSeconds": 198.88261311198585,
+          "phase": "registration",
+          "line": "[nift-pipeline-start] registration"
+        },
+        {
+          "elapsedSeconds": 199.25094189192168,
+          "phase": "composition",
+          "line": "[nift-pipeline-start] composition"
+        }
+      ]
+    },
+    {
+      "label": "agora-warm-forced",
+      "wallSeconds": 43.77266019699164,
+      "sampledPeakTreeRssMiB": 750.43359375,
+      "maxIndividualProcessRssMiB": 382.26953125,
+      "peak": {
+        "elapsedSeconds": 37.35735862608999,
+        "phase": "render",
+        "treeRssKiB": 768444.0,
+        "processes": [
+          {
+            "pid": 2866744,
+            "name": "bun",
+            "ppid": 2866741,
+            "pgrp": 2866741,
+            "rssKiB": 17832.0
+          },
+          {
+            "pid": 2866745,
+            "name": "bun",
+            "ppid": 2866744,
+            "pgrp": 2866741,
+            "rssKiB": 33092.0
+          },
+          {
+            "pid": 2866773,
+            "name": "bun",
+            "ppid": 2866745,
+            "pgrp": 2866741,
+            "rssKiB": 30392.0
+          },
+          {
+            "pid": 2866997,
+            "name": "node",
+            "ppid": 2866773,
+            "pgrp": 2866741,
+            "rssKiB": 373832.0
+          },
+          {
+            "pid": 2867008,
+            "name": "node",
+            "ppid": 2866773,
+            "pgrp": 2866741,
+            "rssKiB": 313296.0
+          }
+        ]
+      },
+      "phaseEvents": [
+        {
+          "elapsedSeconds": 0.16556046810001135,
+          "phase": "render",
+          "line": "[nift-pipeline-start] render"
+        },
+        {
+          "elapsedSeconds": 42.8144725500606,
+          "phase": "assets",
+          "line": "[nift-pipeline-start] assets"
+        },
+        {
+          "elapsedSeconds": 43.03152352711186,
+          "phase": "registration",
+          "line": "[nift-pipeline-start] registration"
+        },
+        {
+          "elapsedSeconds": 43.17706985399127,
+          "phase": "composition",
+          "line": "[nift-pipeline-start] composition"
+        }
+      ]
+    },
+    {
+      "label": "agora-unchanged",
+      "wallSeconds": 2.3747115079313517,
+      "sampledPeakTreeRssMiB": 180.59375,
+      "maxIndividualProcessRssMiB": 95.21484375,
+      "peak": {
+        "elapsedSeconds": 0.3002194589935243,
+        "phase": "render",
+        "treeRssKiB": 184928.0,
+        "processes": [
+          {
+            "pid": 2867123,
+            "name": "bun",
+            "ppid": 2867120,
+            "pgrp": 2867120,
+            "rssKiB": 17196.0
+          },
+          {
+            "pid": 2867124,
+            "name": "bun",
+            "ppid": 2867123,
+            "pgrp": 2867120,
+            "rssKiB": 64484.0
+          },
+          {
+            "pid": 2867153,
+            "name": "bun",
+            "ppid": 2867124,
+            "pgrp": 2867120,
+            "rssKiB": 28376.0
+          },
+          {
+            "pid": 2867164,
+            "name": "node",
+            "ppid": 2867153,
+            "pgrp": 2867120,
+            "rssKiB": 74872.0
+          }
+        ]
+      },
+      "phaseEvents": [
+        {
+          "elapsedSeconds": 0.15339994500391185,
+          "phase": "render",
+          "line": "[nift-pipeline-start] render"
+        },
+        {
+          "elapsedSeconds": 0.9862603030633181,
+          "phase": "assets",
+          "line": "[nift-pipeline-start] assets"
+        },
+        {
+          "elapsedSeconds": 1.219174450961873,
+          "phase": "registration",
+          "line": "[nift-pipeline-start] registration"
+        },
+        {
+          "elapsedSeconds": 1.3700531730428338,
+          "phase": "composition",
+          "line": "[nift-pipeline-start] composition"
+        }
+      ]
+    },
+    {
+      "label": "agora-docs-edit",
+      "wallSeconds": 7.510547755053267,
+      "sampledPeakTreeRssMiB": 1213.8515625,
+      "maxIndividualProcessRssMiB": 1131.2734375,
+      "peak": {
+        "elapsedSeconds": 2.414634094107896,
+        "phase": "content",
+        "treeRssKiB": 1242984.0,
+        "processes": [
+          {
+            "pid": 2867247,
+            "name": "bun",
+            "ppid": 2867244,
+            "pgrp": 2867244,
+            "rssKiB": 17664.0
+          },
+          {
+            "pid": 2867248,
+            "name": "bun",
+            "ppid": 2867247,
+            "pgrp": 2867244,
+            "rssKiB": 34836.0
+          },
+          {
+            "pid": 2867273,
+            "name": "bun",
+            "ppid": 2867248,
+            "pgrp": 2867244,
+            "rssKiB": 32060.0
+          },
+          {
+            "pid": 2867364,
+            "name": "bun",
+            "ppid": 2867273,
+            "pgrp": 2867244,
+            "rssKiB": 1158424.0
+          }
+        ]
+      },
+      "phaseEvents": [
+        {
+          "elapsedSeconds": 0.11464081914164126,
+          "phase": "content",
+          "line": "[nift-pipeline-start] content"
+        },
+        {
+          "elapsedSeconds": 2.9214727501384914,
+          "phase": "openapi",
+          "line": "[nift-pipeline-start] openapi"
+        },
+        {
+          "elapsedSeconds": 2.923881211085245,
+          "phase": "openapi-sync",
+          "line": "$ node scripts/sync-openapi-assets.mjs"
+        },
+        {
+          "elapsedSeconds": 3.038350911112502,
+          "phase": "payloads",
+          "line": "[nift-pipeline-start] payloads"
+        },
+        {
+          "elapsedSeconds": 3.789533426053822,
+          "phase": "render",
+          "line": "[nift-pipeline-start] render"
+        },
+        {
+          "elapsedSeconds": 6.086766893044114,
+          "phase": "assets",
+          "line": "[nift-pipeline-start] assets"
+        },
+        {
+          "elapsedSeconds": 6.369301167083904,
+          "phase": "registration",
+          "line": "[nift-pipeline-start] registration"
+        },
+        {
+          "elapsedSeconds": 6.4975494460668415,
+          "phase": "composition",
+          "line": "[nift-pipeline-start] composition"
+        }
+      ]
+    },
+    {
+      "label": "agora-shared-layout",
+      "wallSeconds": 49.630948883946985,
+      "sampledPeakTreeRssMiB": 979.55078125,
+      "maxIndividualProcessRssMiB": 919.41796875,
+      "peak": {
+        "elapsedSeconds": 3.669635657919571,
+        "phase": "application-build-and-prerender",
+        "treeRssKiB": 1003060.0,
+        "processes": [
+          {
+            "pid": 2867926,
+            "name": "bun",
+            "ppid": 2867923,
+            "pgrp": 2867923,
+            "rssKiB": 17728.0
+          },
+          {
+            "pid": 2867927,
+            "name": "bun",
+            "ppid": 2867926,
+            "pgrp": 2867923,
+            "rssKiB": 38288.0
+          },
+          {
+            "pid": 2867986,
+            "name": "bun",
+            "ppid": 2867927,
+            "pgrp": 2867923,
+            "rssKiB": 8280.0
+          },
+          {
+            "pid": 2867987,
+            "name": "node",
+            "ppid": 2867986,
+            "pgrp": 2867923,
+            "rssKiB": 938764.0
+          }
+        ]
+      },
+      "phaseEvents": [
+        {
+          "elapsedSeconds": 0.14755251188762486,
+          "phase": "openapi",
+          "line": "[nift-pipeline-start] openapi"
+        },
+        {
+          "elapsedSeconds": 0.1502676629461348,
+          "phase": "openapi-sync",
+          "line": "$ node scripts/sync-openapi-assets.mjs"
+        },
+        {
+          "elapsedSeconds": 0.26760970684699714,
+          "phase": "payloads",
+          "line": "[nift-pipeline-start] payloads"
+        },
+        {
+          "elapsedSeconds": 0.3253987638745457,
+          "phase": "application",
+          "line": "[nift-pipeline-start] application"
+        },
+        {
+          "elapsedSeconds": 0.3280219929292798,
+          "phase": "application-build-and-prerender",
+          "line": "$ TSS_STATIC_PRERENDER=true VITE_TSS_SPA_STATIC_EXPERIMENT=true vite build"
+        },
+        {
+          "elapsedSeconds": 5.495317452820018,
+          "phase": "render",
+          "line": "[nift-pipeline-start] render"
+        },
+        {
+          "elapsedSeconds": 47.94760207296349,
+          "phase": "assets",
+          "line": "[nift-pipeline-start] assets"
+        },
+        {
+          "elapsedSeconds": 48.22745079593733,
+          "phase": "registration",
+          "line": "[nift-pipeline-start] registration"
+        },
+        {
+          "elapsedSeconds": 48.3816308749374,
+          "phase": "composition",
+          "line": "[nift-pipeline-start] composition"
+        }
+      ]
+    },
+    {
+      "label": "agora-agent-fresh",
+      "wallSeconds": 71.79336021491326,
+      "sampledPeakTreeRssMiB": 1343.03125,
+      "maxIndividualProcessRssMiB": 1295.04296875,
+      "peak": {
+        "elapsedSeconds": 18.042941096937284,
+        "phase": "payloads",
+        "treeRssKiB": 1375264.0,
+        "processes": [
+          {
+            "pid": 2869570,
+            "name": "bun",
+            "ppid": 2869567,
+            "pgrp": 2869567,
+            "rssKiB": 18240.0
+          },
+          {
+            "pid": 2869571,
+            "name": "bun",
+            "ppid": 2869570,
+            "pgrp": 2869567,
+            "rssKiB": 37140.0
+          },
+          {
+            "pid": 2869641,
+            "name": "bun",
+            "ppid": 2869571,
+            "pgrp": 2869567,
+            "rssKiB": 1319884.0
+          }
+        ]
+      },
+      "phaseEvents": [
+        {
+          "elapsedSeconds": 0.8410209850408137,
+          "phase": "maintained-content",
+          "line": "[nift-pipeline-start] maintained-content"
+        },
+        {
+          "elapsedSeconds": 3.4079337019938976,
+          "phase": "openapi",
+          "line": "[nift-pipeline-start] openapi"
+        },
+        {
+          "elapsedSeconds": 3.4122709250077605,
+          "phase": "openapi-sync",
+          "line": "$ node scripts/sync-openapi-assets.mjs"
+        },
+        {
+          "elapsedSeconds": 3.556373346829787,
+          "phase": "payloads",
+          "line": "[nift-pipeline-start] payloads"
+        },
+        {
+          "elapsedSeconds": 22.02000755094923,
+          "phase": "application",
+          "line": "[nift-pipeline-start] application"
+        },
+        {
+          "elapsedSeconds": 22.022871966008097,
+          "phase": "application-build-and-prerender",
+          "line": "$ TSS_STATIC_PRERENDER=true VITE_TSS_SPA_STATIC_EXPERIMENT=true vite build"
+        },
+        {
+          "elapsedSeconds": 27.422838893020526,
+          "phase": "render",
+          "line": "[nift-pipeline-start] render"
+        },
+        {
+          "elapsedSeconds": 69.42648403486237,
+          "phase": "assets",
+          "line": "[nift-pipeline-start] assets"
+        },
+        {
+          "elapsedSeconds": 70.75124172586948,
+          "phase": "registration",
+          "line": "[nift-pipeline-start] registration"
+        },
+        {
+          "elapsedSeconds": 71.23227137397043,
+          "phase": "composition",
+          "line": "[nift-pipeline-start] composition"
+        }
+      ]
+    },
+    {
+      "label": "agora-agent-warm-forced",
+      "wallSeconds": 45.08682300103828,
+      "sampledPeakTreeRssMiB": 748.375,
+      "maxIndividualProcessRssMiB": 402.75,
+      "peak": {
+        "elapsedSeconds": 38.50804576417431,
+        "phase": "render",
+        "treeRssKiB": 766336.0,
+        "processes": [
+          {
+            "pid": 2870192,
+            "name": "bun",
+            "ppid": 2870189,
+            "pgrp": 2870189,
+            "rssKiB": 17744.0
+          },
+          {
+            "pid": 2870193,
+            "name": "bun",
+            "ppid": 2870192,
+            "pgrp": 2870189,
+            "rssKiB": 34672.0
+          },
+          {
+            "pid": 2870219,
+            "name": "bun",
+            "ppid": 2870193,
+            "pgrp": 2870189,
+            "rssKiB": 30088.0
+          },
+          {
+            "pid": 2870466,
+            "name": "node",
+            "ppid": 2870219,
+            "pgrp": 2870189,
+            "rssKiB": 388552.0
+          },
+          {
+            "pid": 2870479,
+            "name": "node",
+            "ppid": 2870219,
+            "pgrp": 2870189,
+            "rssKiB": 295280.0
+          }
+        ]
+      },
+      "phaseEvents": [
+        {
+          "elapsedSeconds": 0.7286324880551547,
+          "phase": "render",
+          "line": "[nift-pipeline-start] render"
+        },
+        {
+          "elapsedSeconds": 43.98793450999074,
+          "phase": "assets",
+          "line": "[nift-pipeline-start] assets"
+        },
+        {
+          "elapsedSeconds": 44.21570531511679,
+          "phase": "registration",
+          "line": "[nift-pipeline-start] registration"
+        },
+        {
+          "elapsedSeconds": 44.40415163617581,
+          "phase": "composition",
+          "line": "[nift-pipeline-start] composition"
+        }
+      ]
+    },
+    {
+      "label": "agora-agent-unchanged",
+      "wallSeconds": 2.7547055820468813,
+      "sampledPeakTreeRssMiB": 304.8359375,
+      "maxIndividualProcessRssMiB": 200.00390625,
+      "peak": {
+        "elapsedSeconds": 0.6886816760525107,
+        "phase": "render",
+        "treeRssKiB": 312152.0,
+        "processes": [
+          {
+            "pid": 2870601,
+            "name": "bun",
+            "ppid": 2870598,
+            "pgrp": 2870598,
+            "rssKiB": 16864.0
+          },
+          {
+            "pid": 2870602,
+            "name": "bun",
+            "ppid": 2870601,
+            "pgrp": 2870598,
+            "rssKiB": 186916.0
+          },
+          {
+            "pid": 2870628,
+            "name": "bun",
+            "ppid": 2870602,
+            "pgrp": 2870598,
+            "rssKiB": 27928.0
+          },
+          {
+            "pid": 2870639,
+            "name": "node",
+            "ppid": 2870628,
+            "pgrp": 2870598,
+            "rssKiB": 80444.0
+          }
+        ]
+      },
+      "phaseEvents": [
+        {
+          "elapsedSeconds": 0.5177000989206135,
+          "phase": "render",
+          "line": "[nift-pipeline-start] render"
+        },
+        {
+          "elapsedSeconds": 1.3508834100794047,
+          "phase": "assets",
+          "line": "[nift-pipeline-start] assets"
+        },
+        {
+          "elapsedSeconds": 1.5787624130025506,
+          "phase": "registration",
+          "line": "[nift-pipeline-start] registration"
+        },
+        {
+          "elapsedSeconds": 1.72175382100977,
+          "phase": "composition",
+          "line": "[nift-pipeline-start] composition"
+        }
+      ]
+    },
+    {
+      "label": "agora-agent-docs-edit",
+      "wallSeconds": 7.242207180010155,
+      "sampledPeakTreeRssMiB": 1125.4140625,
+      "maxIndividualProcessRssMiB": 1080.15234375,
+      "peak": {
+        "elapsedSeconds": 2.4435004428960383,
+        "phase": "maintained-content",
+        "treeRssKiB": 1152424.0,
+        "processes": [
+          {
+            "pid": 2870719,
+            "name": "bun",
+            "ppid": 2870716,
+            "pgrp": 2870716,
+            "rssKiB": 17932.0
+          },
+          {
+            "pid": 2870720,
+            "name": "bun",
+            "ppid": 2870719,
+            "pgrp": 2870716,
+            "rssKiB": 35936.0
+          },
+          {
+            "pid": 2870744,
+            "name": "bun",
+            "ppid": 2870720,
+            "pgrp": 2870716,
+            "rssKiB": 1098556.0
+          }
+        ]
+      },
+      "phaseEvents": [
+        {
+          "elapsedSeconds": 0.47698485292494297,
+          "phase": "maintained-content",
+          "line": "[nift-pipeline-start] maintained-content"
+        },
+        {
+          "elapsedSeconds": 2.7868420069571584,
+          "phase": "openapi",
+          "line": "[nift-pipeline-start] openapi"
+        },
+        {
+          "elapsedSeconds": 2.7900484488345683,
+          "phase": "openapi-sync",
+          "line": "$ node scripts/sync-openapi-assets.mjs"
+        },
+        {
+          "elapsedSeconds": 2.9303352078422904,
+          "phase": "payloads",
+          "line": "[nift-pipeline-start] payloads"
+        },
+        {
+          "elapsedSeconds": 3.728668828960508,
+          "phase": "render",
+          "line": "[nift-pipeline-start] render"
+        },
+        {
+          "elapsedSeconds": 5.907104760874063,
+          "phase": "assets",
+          "line": "[nift-pipeline-start] assets"
+        },
+        {
+          "elapsedSeconds": 6.189631197834387,
+          "phase": "registration",
+          "line": "[nift-pipeline-start] registration"
+        },
+        {
+          "elapsedSeconds": 6.343267561867833,
+          "phase": "composition",
+          "line": "[nift-pipeline-start] composition"
+        }
+      ]
+    },
+    {
+      "label": "agora-agent-shared-layout",
+      "wallSeconds": 52.222180193988606,
+      "sampledPeakTreeRssMiB": 916.68359375,
+      "maxIndividualProcessRssMiB": 858.6875,
+      "peak": {
+        "elapsedSeconds": 3.9785586721263826,
+        "phase": "application-build-and-prerender",
+        "treeRssKiB": 938684.0,
+        "processes": [
+          {
+            "pid": 2871221,
+            "name": "bun",
+            "ppid": 2871218,
+            "pgrp": 2871218,
+            "rssKiB": 18272.0
+          },
+          {
+            "pid": 2871222,
+            "name": "bun",
+            "ppid": 2871221,
+            "pgrp": 2871218,
+            "rssKiB": 33160.0
+          },
+          {
+            "pid": 2871280,
+            "name": "bun",
+            "ppid": 2871222,
+            "pgrp": 2871218,
+            "rssKiB": 8276.0
+          },
+          {
+            "pid": 2871281,
+            "name": "node",
+            "ppid": 2871280,
+            "pgrp": 2871218,
+            "rssKiB": 878976.0
+          }
+        ]
+      },
+      "phaseEvents": [
+        {
+          "elapsedSeconds": 0.49914376507513225,
+          "phase": "openapi",
+          "line": "[nift-pipeline-start] openapi"
+        },
+        {
+          "elapsedSeconds": 0.5019994040485471,
+          "phase": "openapi-sync",
+          "line": "$ node scripts/sync-openapi-assets.mjs"
+        },
+        {
+          "elapsedSeconds": 0.6356388181447983,
+          "phase": "payloads",
+          "line": "[nift-pipeline-start] payloads"
+        },
+        {
+          "elapsedSeconds": 0.687006670050323,
+          "phase": "application",
+          "line": "[nift-pipeline-start] application"
+        },
+        {
+          "elapsedSeconds": 0.6903360181022435,
+          "phase": "application-build-and-prerender",
+          "line": "$ TSS_STATIC_PRERENDER=true VITE_TSS_SPA_STATIC_EXPERIMENT=true vite build"
+        },
+        {
+          "elapsedSeconds": 5.597405213164166,
+          "phase": "render",
+          "line": "[nift-pipeline-start] render"
+        },
+        {
+          "elapsedSeconds": 50.051622902974486,
+          "phase": "assets",
+          "line": "[nift-pipeline-start] assets"
+        },
+        {
+          "elapsedSeconds": 50.309781534131616,
+          "phase": "registration",
+          "line": "[nift-pipeline-start] registration"
+        },
+        {
+          "elapsedSeconds": 50.4348090600688,
+          "phase": "composition",
+          "line": "[nift-pipeline-start] composition"
+        }
+      ]
+    }
+  ],
+  "assessment": "Substantial improvement; diminishing returns reached. Authored source preferred for both maintenance scenarios. Needs further CN production/provider certification before public promotion.",
+  "qualifications": [
+    "Fresh retains installed dependencies; no application/content artifacts; OS cache uncontrolled.",
+    "Forced publication reuses valid compiled artifacts; all HTML rendered/composed.",
+    "Sampled tree RSS sums simultaneous process RSS; shared pages double-count and brief peaks can be missed. Individual process RSS is separate.",
+    "Restricted comparison-only Router timestamps normalization; no production output modified.",
+    "Inherited full unit suite not green. No new upstream benchmarks. No Labs/public benchmark or outreach."
+  ],
+  "finalSourceCommits": {
+    "agora": "c6bbe6e",
+    "agora-agent": "a30d209"
+  },
+  "postCampaignValidation": "Authored frontmatter-comment raw-search test passed; source/projection fixtures restored byte-for-byte; final root production command and Nift up-to-date status pass. Restricted sandbox child pipes fail but ordinary authorized execution passes; no workaround retained."
+}
