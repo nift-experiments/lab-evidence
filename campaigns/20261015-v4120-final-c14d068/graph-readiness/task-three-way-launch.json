@@ -1,0 +1,28 @@
+{
+  "scope": "separate same-node tiny100/full diagnostic; no primary timing overlap",
+  "sources": {
+    "release": "c8d9c266518d115e4f289c5c6a2b94ddd7ee9968",
+    "original": "7f7e487c47a87e871dfef53345e2b71288008bff",
+    "final": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+  },
+  "size": 100,
+  "tiny": true,
+  "jobs": 4,
+  "case": "full",
+  "samples_per_source": 5,
+  "warmups_per_source": 1,
+  "observations": 18,
+  "measured": 15,
+  "warmups": 3,
+  "order": "three sources rotated each round",
+  "affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "output": "/opt/results/task-runners-three-way-c8d9-7f7-c14",
+  "log": "/root/task-three-way.log",
+  "official_1527_independently_audited_before_start": true,
+  "launch_utc": "2026-10-14T23:11:56.235883+00:00"
+}
