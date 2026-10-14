@@ -1,0 +1,23 @@
+{
+  "pass": true,
+  "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "scope": "untimed refresh semantic/capability gates",
+  "edge_path_engines": 5,
+  "inline_execute_count": 1,
+  "repro": {
+    "inline-loop.f": {
+      "execute_count": 1,
+      "stdout_sha256": "f7723593ab38f8e0ec0eeb536339ccbf5e85073407fb02460c8c038687914d45"
+    },
+    "bound-loop.f": {
+      "execute_count": 1,
+      "stdout_sha256": "f7723593ab38f8e0ec0eeb536339ccbf5e85073407fb02460c8c038687914d45"
+    }
+  },
+  "remaining_gaps": [
+    "native SHA-256",
+    "stat timestamp",
+    "recursive directory removal"
+  ],
+  "missing_directory_behavior": "Nift errors; Python empty-success behavior retained as non-equivalence"
+}

@@ -1,0 +1,260 @@
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	﻿2026-10-14T17:31:56.8302537Z ##[group]Run make test-v410-build-pipeline test-v410-file-buffer-parity test-v410-file-buffer-guard test-v410-large-string-parity test-v410-large-string-guard test-v410-filesystem-recipe-parity test-v410-filesystem-recipe-guard test-v410-string-replace-parity test-v410-native-dispatch-parity test-v410-glob-parity test-v410-glob-relative-guard test-v410-glob-prefix-parity test-v410-glob-prefix-guard test-v49-selector-parity test-v49-glob-order test-v49-glob-key-guard test-v49-json-preflight-guard test-runtime-value test-v48-callback-parity test-v48-callback-guard test-v410-sort-factory-parity test-v410-callback-overlay-parity test-v410-callback-overlay-guard test-v410-object-member-parity test-v410-object-member-unit test-v410-object-member-guard test-consumer-snapshots test-dependency-status test-dependency-path-identity test-process-hardening
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:56.8308540Z [36;1mmake test-v410-build-pipeline test-v410-file-buffer-parity test-v410-file-buffer-guard test-v410-large-string-parity test-v410-large-string-guard test-v410-filesystem-recipe-parity test-v410-filesystem-recipe-guard test-v410-string-replace-parity test-v410-native-dispatch-parity test-v410-glob-parity test-v410-glob-relative-guard test-v410-glob-prefix-parity test-v410-glob-prefix-guard test-v49-selector-parity test-v49-glob-order test-v49-glob-key-guard test-v49-json-preflight-guard test-runtime-value test-v48-callback-parity test-v48-callback-guard test-v410-sort-factory-parity test-v410-callback-overlay-parity test-v410-callback-overlay-guard test-v410-object-member-parity test-v410-object-member-unit test-v410-object-member-guard test-consumer-snapshots test-dependency-status test-dependency-path-identity test-process-hardening[0m
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:56.8395384Z shell: /usr/bin/bash -e {0}
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:56.8395652Z env:
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:56.8396020Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:56.8396407Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:56.8396947Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:56.8397427Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:56.8397845Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:56.8398374Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:56.8398722Z ##[endgroup]
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:56.9298681Z CC="cc" CXX="g++" CFLAGS="-O2 -fPIC -Wno-deprecated-declarations" bash scripts/build_vendored_libffi.sh ".build/libffi/x86_64-linux-gnu-cc"
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.0872019Z python3 tests/v410_build_pipeline.py --nift "/home/runner/work/nift/nift/nift"
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.2071588Z PASS custom replaces render; pre/main/post; dependency recording; incremental
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.2502676Z PASS all scripts and content invalidate
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.2615347Z PASS pre-build generates missing content before render
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.2830721Z PASS script-relevant tracked metadata invalidates
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.2871510Z PASS failure pre-build
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.2921959Z PASS repair pre-build
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.3014171Z PASS failure build
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.3077246Z PASS repair build
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.3137636Z PASS failure post-build
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.3202034Z PASS repair post-build
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.3248332Z PASS failure missing-output
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.3310820Z PASS repair missing-output
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.3524787Z PASS sidecars; removal invalidation; conflict; explicit precedence
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.3808431Z PASS chain ordering, targeted closure, clean prerequisites and no invalidation
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.4099042Z PASS diamond ordering, targeted closure, clean prerequisites and no invalidation
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.4255760Z PASS transitive failure propagation; independent branch; recovery
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.4560906Z PASS missing/self/duplicate/cycle/type validation before mutation
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.4706708Z PASS parallel independent branches with deterministic barrier
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:57.4804917Z PASS normal/custom composition
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.1434629Z PASS 10k iterative cycle diagnostic
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.1694877Z PASS transitive closure across a clean intermediate
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.2334974Z PASS same-pass ordinary file invalidation, multiple consumers hash
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.2759684Z PASS same-pass ordinary file invalidation, multiple consumers modified
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.2893997Z PASS generated output alias cache freshness
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.3096585Z PASS tracking serialization, rename references and safe prerequisite removal
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.5351524Z PASS build-auto reloads changed script and dependency graph
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.5605415Z PASS existing project preservation/idempotency ('rewrite', 'redesign')
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.5806928Z PASS existing project preservation/idempotency ('redesign', 'rewrite')
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.5924123Z PASS fresh rewrite
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.5980663Z PASS fresh redesign
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.8547481Z PASS 30 build pipeline groups
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.8678075Z NIFT=/home/runner/work/nift/nift/nift /opt/hostedtoolcache/Python/3.13.16/x64/bin/python3 tests/v410_file_buffer_parity.py
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.9408054Z PASS open-r
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.9468390Z PASS open-rw
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.9512292Z PASS open-w
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.9548672Z PASS open-a
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.9580745Z PASS mutate-write("xy")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.9630655Z PASS mutate-write("")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.9679109Z PASS mutate-write_line("xy")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.9751041Z PASS mutate-write_bytes(bytes([0,255,65]))
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.9787060Z PASS mutate-write(bytes([0,255,65]))
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.9822595Z PASS mutate-write_val(42)
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.9854856Z PASS mutate-append("xy")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.9885705Z PASS mutate-append("")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.9920434Z PASS mutate-prepend("xy")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:58.9980540Z PASS mutate-insert(2,"xy")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0009814Z PASS mutate-insert_before("CD","xy")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0042715Z PASS mutate-insert_after("CD","xy")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0074735Z PASS mutate-replace("CD","xy")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0106888Z PASS mutate-replace("CD","CD")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0139053Z PASS mutate-replace("missing","xy")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0204649Z PASS mutate-replace_once("CD","xy")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0255463Z PASS save-then-revert
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0302401Z PASS overwrite-initial-revert
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0346685Z PASS new-empty-write
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0375627Z PASS append-new-empty-write
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0416090Z PASS reopen-external-edit
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0457596Z PASS opaque-closed-reopen
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0512422Z PASS write-argument-saves
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0570831Z PASS write-argument-reverts
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0590320Z PASS write-argument-closes
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0640860Z PASS closed-write-factory-count
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0687290Z PASS readonly-write-factory-count
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0726611Z PASS failed-save-revert
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0761123Z PASS duplicate-replace-once-error
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0807373Z PASS receiver-factory-count
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0854814Z PASS factory-path-counter
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0898028Z PASS factory-changing-cwd
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0952925Z PASS open-mode-factory-cwd
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.0989563Z PASS closed-file-copy
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.1021426Z PASS closed-file-move
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.1077544Z PASS closed-file-remove
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.1087492Z PASS open-copy-precondition-counter
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.1134004Z PASS copy-invalid-argument
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.1180071Z PASS unknown-file-tag
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.1217102Z PASS nonfile-receiver-counter
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.1255234Z PASS read-val-token-contract
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.1287722Z PASS invalid-mode-arity
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.1335144Z PASS save-argument-arity
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.1367340Z PASS empty-write-return-to-clean
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.1438653Z PASS nested-method-depth-20
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.1508762Z PASS nested-method-depth-40
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.1609023Z PASS nested-method-depth-48
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.1755569Z PASS nested-method-depth-50
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.1905324Z PASS nested-method-depth-60
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.1948019Z PASS stack-named-20
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.2042482Z PASS stack-named-40
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.2149450Z PASS stack-named-48
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.2250849Z PASS stack-named-50
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.2379813Z PASS stack-named-60
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.2632012Z PASS stack-named-80
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.2860776Z PASS stack-named-96
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3181646Z PASS stack-named-110
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3231528Z PASS stack-html_escape-20
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3270351Z PASS stack-html_escape-40
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3302506Z PASS stack-html_escape-48
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3354881Z PASS stack-html_escape-50
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3404371Z PASS stack-html_escape-60
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3476784Z PASS stack-html_escape-80
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3551539Z PASS stack-html_escape-96
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3640390Z PASS stack-html_escape-110
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3651284Z PASS stack-type-20
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3702084Z PASS stack-type-40
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3734119Z PASS stack-type-48
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3771164Z PASS stack-type-50
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3822537Z PASS stack-type-60
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3857139Z PASS stack-type-80
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3913351Z PASS stack-type-96
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.3970174Z PASS stack-type-110
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4005302Z PASS stack-min-20
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4061754Z PASS stack-min-40
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4092909Z PASS stack-min-48
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4145878Z PASS stack-min-50
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4182407Z PASS stack-min-60
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4224716Z PASS stack-min-80
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4272280Z PASS stack-min-96
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4330164Z PASS stack-min-110
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4365968Z PASS stack-method-20
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4402508Z PASS stack-method-40
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4471548Z PASS stack-method-48
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4519089Z PASS stack-method-50
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4590222Z PASS stack-method-60
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4631447Z PASS stack-method-80
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4670052Z PASS stack-method-96
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4720401Z PASS stack-method-110
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4768994Z PASS stack-method-argument-20
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4805672Z PASS stack-method-argument-40
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4876673Z PASS stack-method-argument-48
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4930616Z PASS stack-method-argument-50
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.4974497Z PASS stack-method-argument-60
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.5033348Z PASS stack-method-argument-80
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.5091647Z PASS stack-method-argument-96
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.5157852Z PASS stack-method-argument-110
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.5210106Z PASS write-preserves-string-slots
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.5210840Z PASS 102 exact buffer/factory/cwd/reentry/file-effect contracts
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:31:59.5336431Z g++ -Isrc -Iinclude -Iminifypp/include -Iminifypp/src -Imarkuppp/include -Imarkuppp/vendor/cmark -I.build/libffi/x86_64-linux-gnu-cc/install/include -std=c++17 -O2 -Wall -Wextra -pedantic -pthread tests/v410_file_buffer_guard.cpp src/ProjectOwnership.o src/PackageTransaction.o src/Process.o src/JobControl.o src/RuntimeValue.o src/Value.o src/FileSystem.o src/JsonFile.o src/JsonSchema.o minifypp/src/Minify.o markuppp/src/Markup.o markuppp/src/AsciiDoc.o markuppp/src/ReStructuredText.o src/Parser.o src/ParserAsyncPool.o src/ParserExpression.o src/ParserHelpers.o src/ParserScript.o src/ParserTemplate.o src/ProjectInfo.o src/ProjectRead.o src/ProjectState.o src/WatchList.o src/BuildProgress.o src/Automation.o src/Hooks.o src/Ast.o markuppp/vendor/cmark/blocks.o markuppp/vendor/cmark/buffer.o markuppp/vendor/cmark/cmark.o markuppp/vendor/cmark/cmark_ctype.o markuppp/vendor/cmark/houdini_href_e.o markuppp/vendor/cmark/houdini_html_e.o markuppp/vendor/cmark/houdini_html_u.o markuppp/vendor/cmark/html.o markuppp/vendor/cmark/inlines.o markuppp/vendor/cmark/iterator.o markuppp/vendor/cmark/node.o markuppp/vendor/cmark/references.o markuppp/vendor/cmark/render.o markuppp/vendor/cmark/scanners.o markuppp/vendor/cmark/utf8.o  -ldl .build/libffi/x86_64-linux-gnu-cc/install/lib/libffi.a -o .build/file-buffer-guard
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.4544699Z .build/file-buffer-guard
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.4577391Z PASS saved-state alias, lazy snapshots, no-op writes, revert, retained shell/IDs; cache=32 entries/1089024 conservative bytes
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.4591460Z NIFT=/home/runner/work/nift/nift/nift /opt/hostedtoolcache/Python/3.13.16/x64/bin/python3 tests/v410_large_string_parity.py
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7011973Z PASS payload-8192-Z-q
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7014418Z PASS payload-8192-_-__
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7014701Z PASS payload-8192-_-
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7014916Z PASS payload-8192-_-_
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7015151Z PASS payload-8192-missing-x
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7015387Z PASS payload-16384-Z-q
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7015608Z PASS payload-16384-_-__
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7015829Z PASS payload-16384-_-
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7016033Z PASS payload-16384-_-_
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7016272Z PASS payload-16384-missing-x
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7016518Z PASS payload-32768-Z-q
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7016731Z PASS payload-32768-_-__
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7016947Z PASS payload-32768-_-
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7017153Z PASS payload-32768-_-_
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7017370Z PASS payload-32768-missing-x
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7017646Z PASS payload-65536-Z-q
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7017882Z PASS payload-65536-_-__
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7018099Z PASS payload-65536-_-
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7018306Z PASS payload-65536-_-_
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7018521Z PASS payload-65536-missing-x
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7018762Z PASS payload-131072-Z-q
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7018981Z PASS payload-131072-_-__
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7019199Z PASS payload-131072-_-
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7019542Z PASS payload-131072-_-_
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7019762Z PASS payload-131072-missing-x
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7020011Z PASS shape-.to_upper().replace("A","x")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7020299Z PASS shape-.to_upper().replace("A","x",)
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7020578Z PASS shape-.to_upper().replace(,"A","x")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7020850Z PASS shape-.to_upper().replace("","x")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7021122Z PASS shape-.to_upper(,).replace("A","x")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7021403Z PASS shape-.trim().replace("a","x")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7021678Z PASS shape-.to_lower().replace("a","x")
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7021955Z PASS shape-.replace("a",7)
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7022191Z PASS mixed-body-counts
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7022413Z PASS receiver-factory
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7022622Z PASS argument-factory
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7022829Z PASS nested-error
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7023069Z PASS 37 exact payload/factory/diagnostic contracts
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:06.7176109Z g++ -Isrc -Iinclude -Iminifypp/include -Iminifypp/src -Imarkuppp/include -Imarkuppp/vendor/cmark -I.build/libffi/x86_64-linux-gnu-cc/install/include -std=c++17 -O2 -Wall -Wextra -pedantic -pthread tests/v410_large_string_guard.cpp src/ProjectOwnership.o src/PackageTransaction.o src/Process.o src/JobControl.o src/RuntimeValue.o src/Value.o src/FileSystem.o src/JsonFile.o src/JsonSchema.o minifypp/src/Minify.o markuppp/src/Markup.o markuppp/src/AsciiDoc.o markuppp/src/ReStructuredText.o src/Parser.o src/ParserAsyncPool.o src/ParserExpression.o src/ParserHelpers.o src/ParserScript.o src/ParserTemplate.o src/ProjectInfo.o src/ProjectRead.o src/ProjectState.o src/WatchList.o src/BuildProgress.o src/Automation.o src/Hooks.o src/Ast.o markuppp/vendor/cmark/blocks.o markuppp/vendor/cmark/buffer.o markuppp/vendor/cmark/cmark.o markuppp/vendor/cmark/cmark_ctype.o markuppp/vendor/cmark/houdini_href_e.o markuppp/vendor/cmark/houdini_html_e.o markuppp/vendor/cmark/houdini_html_u.o markuppp/vendor/cmark/html.o markuppp/vendor/cmark/inlines.o markuppp/vendor/cmark/iterator.o markuppp/vendor/cmark/node.o markuppp/vendor/cmark/references.o markuppp/vendor/cmark/render.o markuppp/vendor/cmark/scanners.o markuppp/vendor/cmark/utf8.o  -ldl .build/libffi/x86_64-linux-gnu-cc/install/lib/libffi.a -o .build/large-string-guard
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.1597758Z .build/large-string-guard
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.3829984Z PASS bounded canonical cache: peak owned-capacity allowance=3895604 entries=10
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.3859219Z NIFT=/home/runner/work/nift/nift/nift /opt/hostedtoolcache/Python/3.13.16/x64/bin/python3 tests/v410_filesystem_recipe_parity.py
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.4362031Z PASS stat-prepared
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.4381572Z PASS stat-compatibility
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.4416711Z PASS stat-wrong-arity
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.4469773Z PASS stat-wrong-type
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.4501133Z PASS stat-first-error
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.4535647Z PASS named-stat-prepared
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.4580611Z PASS named-stat-compatibility
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.4621619Z PASS move-order
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.4676528Z PASS move-argument-mutates-source
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.4715124Z PASS move-first-source-error
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.4751507Z PASS move-first-destination-error
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.4812303Z PASS move-wrong-arity
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.4866177Z PASS move-cwd-boundary
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.4905827Z PASS copy-order
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.4923820Z PASS copy-argument-mutates-source
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.4991541Z PASS copy-first-source-error
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5007235Z PASS copy-first-destination-error
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5034540Z PASS copy-wrong-arity
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5065735Z PASS copy-cwd-boundary
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5102642Z PASS move-unmatched-source
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5138873Z PASS move-array-source
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5189048Z PASS move-bad-source-array
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5230368Z PASS move-second-destination-error
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5269644Z PASS move-second-source-error
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5322069Z PASS move-spread
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5375443Z PASS copy-unmatched-source
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5411607Z PASS copy-array-source
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5465119Z PASS copy-bad-source-array
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5514073Z PASS copy-second-destination-error
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5553148Z PASS copy-second-source-error
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5591441Z PASS copy-spread
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5662407Z PASS move-loop-location
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5719904Z PASS move-index-probe-order
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5775295Z PASS move-root-path-replacement
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5834085Z PASS copy-loop-location
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5880982Z PASS copy-index-probe-order
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.5922319Z PASS copy-root-path-replacement
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.7819685Z PASS all 37 exact source-count/order/origin/error/file-effect contracts
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.7820654Z PASS 60 pure-string canonical fallback contracts
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:13.7941078Z g++ -Isrc -Iinclude -Iminifypp/include -Iminifypp/src -Imarkuppp/include -Imarkuppp/vendor/cmark -I.build/libffi/x86_64-linux-gnu-cc/install/include -std=c++17 -O2 -Wall -Wextra -pedantic -pthread -DNIFT_TEST_FS_RECIPE_STATS -MMD -MP -c src/ParserExpression.cpp -o .build/fs-recipe/ParserExpression.o
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:15.2440511Z src/ParserExpression.cpp: In lambda function:
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:15.2454860Z src/ParserExpression.cpp:2180:21: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:15.2480475Z  2180 |                     if(hard_error)*hard_error="cannot index value in '"+ref_source+"'";return false;
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:15.2547102Z       |                     ^~
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:15.2571016Z src/ParserExpression.cpp:2180:88: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:15.2582788Z  2180 |                     if(hard_error)*hard_error="cannot index value in '"+ref_source+"'";return false;
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:15.2600085Z       |                                                                                        ^~~~~~
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:15.7101853Z src/ParserExpression.cpp: In member function ‘bool Parser::evaluate_expression_impl(const std::string&, nift::RuntimeValue&, std::string&, nift::detail::SourceView, const PreparedFilesystemOperation*, OrdinaryArgumentFrame*, int)’:
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:15.7120590Z src/ParserExpression.cpp:1538:214: warning: unused parameter ‘ordinary_arguments’ [-Wunused-parameter]
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:15.7150951Z  1538 | bool Parser::evaluate_expression_impl(const std::string& expression, nift::RuntimeValue& value, std::string& error, nift::detail::SourceView view, const PreparedFilesystemOperation* recipe, OrdinaryArgumentFrame* ordinary_arguments, int inherited_depth) {
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:32:15.7180222Z       |                                                                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:33:10.6237765Z g++ -Isrc -Iinclude -Iminifypp/include -Iminifypp/src -Imarkuppp/include -Imarkuppp/vendor/cmark -I.build/libffi/x86_64-linux-gnu-cc/install/include -std=c++17 -O2 -Wall -Wextra -pedantic -pthread -DNIFT_TEST_FS_RECIPE_STATS -MMD -MP -c src/ParserTemplate.cpp -o .build/fs-recipe/ParserTemplate.o
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:33:11.9301258Z src/ParserTemplate.cpp: In lambda function:
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:33:11.9305222Z src/ParserTemplate.cpp:1686: note: ‘-Wmisleading-indentation’ is disabled from this point onwards, since column-tracking was disabled due to the size of the code/headers
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:33:11.9351929Z  1686 |             lb.is_iteration_selector=true;variable_scopes_.back().emplace(st.name,std::move(lb));++loop_depth_;const bool bok=execute_body(st.body,e);--loop_depth_;pop_json_scope();if(!bok)return false;if(pending_control_.kind==ControlFlow::Break){pending_control_={};break;}if(pending_control_.kind==ControlFlow::Continue){pending_control_={};continue;}}return true;}if(st.kind==nift::ast::StmtKind::Break){pending_control_.kind=ControlFlow::Break;pending_control_.value.reset();return true;}if(st.kind==nift::ast::StmtKind::Continue){pending_control_.kind=ControlFlow::Continue;pending_control_.value.reset();return true;}if(st.kind==nift::ast::StmtKind::Return){nift::RuntimeValue rv;pending_control_.ref_root_slot.reset();pending_control_.ref_path.clear();if(st.expr){if(!nift::ast::evaluate(*st.expr,c,rv,e))return false;VariableBinding rl;std::string locerr;if(bind_location(rl,*st.expr,locerr)&&rl.is_location_ref()&&rl.value){pending_control_.ref_root_slot=rl.ref_root_slot;pending_control_.ref_path=rl.ref_path;}else if(last_call_return_loc_root_&&(rv.is_array()||rv.is_object()||(rv.is_string()&&rv.string.rfind("\x1fnift:",0)==0))){pending_control_.ref_root_slot=last_call_return_loc_root_;pending_control_.ref_path=last_call_return_loc_path_;}pending_control_.value=std::make_shared<nift::RuntimeValue>(std::move(rv));}else pending_control_.value.reset();pending_control_.kind=ControlFlow::Return;return true;}if(st.kind==nift::ast::StmtKind::Expression){if(st.name.empty()){if(!st.expr){e="unsupported prepared expression statement";return false;}nift::RuntimeValue cv;return nift::ast::evaluate(*st.expr,c,cv,e);}return execute_native_call(st,e);}if(st.kind==nift::ast::StmtKind::Declaration){last_call_return_loc_root_.reset();last_call_return_loc_path_.clear();if(!nift::ast::evaluate(*st.expr,c,rhs,e))return false;if(large_num(rhs)){nift::RuntimeValue lege;return c.legacy(st.text,lege,e);}if(variable_scopes_.empty()){e="no scope for declaration: "+st.name;return false;}auto& scope=variable_scopes_.back();if(scope.count(st.name)){e="binding already declared in this scope: "+st.name;return false;}if(last_call_return_loc_root_&&(rhs.is_array()||rhs.is_object()||(rhs.is_string()&&rhs.string.rfind("\x1fnift:",0)==0))){VariableBinding dloc;dloc.ref_root_slot=last_call_return_loc_root_;dloc.ref_path=last_call_return_loc_path_;dloc.sync();if(!dloc.value){e="reference target no longer exists";return false;}dloc.type=nift_binding_type(*dloc.value);dloc.mutable_binding=true;last_call_return_loc_root_.reset();last_call_return_loc_path_.clear();scope.emplace(st.name,std::move(dloc));return true;}auto sp=std::make_shared<nift::RuntimeValue>(std::move(rhs));const int dt=st.decl_type;const int bt=(dt==3)?3:((dt==2)?nift_binding_type(*sp):((dt>=0&&dt!=2&&dt!=3)?dt:nift_binding_type(*sp)));auto ins=scope.emplace(st.name,VariableBinding{sp,bt,true,false});if(st.expr&&(st.expr->kind==nift::ast::Kind::Index||st.expr->kind==nift::ast::Kind::Member)){std::string re;if(!bind_location(ins.first->second,*st.expr,re)&&!re.empty()){e=re;scope.erase(ins.first);return false;}}else if(st.expr&&st.expr->kind==nift::ast::Kind::Binding&&(sp->is_array()||sp->is_object())){auto* src=find_binding(st.expr->name);if(src){src->sync();if(src->value){ins.first->second.value=src->value;*ins.first->second.slot=src->value;}}}return true;}if(st.kind==nift::ast::StmtKind::Assignment){if(!nift::ast::evaluate(*st.expr,c,rhs,e))return false;if(large_num(rhs)){nift::RuntimeValue lege;return c.legacy(st.text,lege,e);}if(st.target)return assign_indexed(*st.target,std::move(rhs),e);return assign_plain(st.name,std::move(rhs),e);}VariableBinding* cb=nullptr;for(auto sc=variable_scopes_.rbegin();sc!=variable_scopes_.rend();++sc){auto it=sc->find(st.name);if(it!=sc->end()){cb=&it->second;break;}}if(!cb){e="assignment to undefined binding: "+st.name;return false;}cb->sync();if(!cb->mutable_binding){e="cannot assign to const binding: "+st.name;return false;}if(cb->value&&cb->value->is_string()&&cb->value->string.rfind("\x1fnift:atomic:",0)==0){nift::RuntimeValue lege;return c.legacy(st.text,lege,e);}if(st.kind==nift::ast::StmtKind::Increment){if(!cb->value->is_number()){e="increment/decrement requires a numeric lvalue";return false;}oldv=*cb->value;if(large_num(oldv)){nift::RuntimeValue lege;return c.legacy(st.text,lege,e);}next=nift::RuntimeValue(oldv.num+(st.op=="++"?1.0:-1.0));return assign_plain(st.name,std::move(next),e);}if(!nift::ast::evaluate(*st.expr,c,rhs,e))return false;if(st.op=="+="&&cb->value->is_string()&&rhs.is_string()){if(cb->value.use_count()==2){cb->value->string.append(rhs.string);last_expression_mutation_=true;return true;}oldv=*cb->value;next=nift::RuntimeValue(oldv.string+rhs.string);}else if(st.op=="+="&&cb->value->is_array()&&rhs.is_array()){oldv=*cb->value;next=nift::RuntimeValue::make_array();next.array.reserve(oldv.array.size()+rhs.array.size());next.array.insert(next.array.end(),oldv.array.begin(),oldv.array.end());next.array.insert(next.array.end(),rhs.array.begin(),rhs.array.end());}else{oldv=*cb->value;if(!oldv.is_number()||!rhs.is_number()){e="arithmetic operators require numeric operands";return false;}if(large_num(oldv)||large_num(rhs)){nift::RuntimeValue lege;return c.legacy(st.text,lege,e);}if(st.op=="+=")next=nift::RuntimeValue(oldv.num+rhs.num);else if(st.op=="-=")next=nift::RuntimeValue(oldv.num-rhs.num);else if(st.op=="*=")next=nift::RuntimeValue(oldv.num*rhs.num);else if(st.op=="/="){if(rhs.num==0){e="division by zero";return false;}next=nift::RuntimeValue(oldv.num/rhs.num);}else{if(rhs.num==0){e="modulo by zero";return false;}next=nift::RuntimeValue(std::fmod(oldv.num,rhs.num));}}return assign_plain(st.name,std::move(next),e);};
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:33:11.9383222Z       | 
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:33:11.9384924Z src/ParserTemplate.cpp:1686: note: adding ‘-flarge-source-files’ will allow for more column-tracking support, at the expense of compilation time and memory
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:33:29.4475234Z g++ -std=c++17 -O2 -Wall -Wextra -pedantic -pthread  src/nift.o src/ProjectOwnership.o src/PackageTransaction.o src/CLI.o src/Process.o src/JobControl.o src/RuntimeValue.o src/Value.o src/FileSystem.o src/JsonFile.o src/JsonSchema.o minifypp/src/Minify.o markuppp/src/Markup.o markuppp/src/AsciiDoc.o markuppp/src/ReStructuredText.o src/Parser.o src/ParserAsyncPool.o src/ParserHelpers.o src/ParserScript.o src/ProjectInfo.o src/ProjectRead.o src/ProjectState.o src/WatchList.o src/BuildProgress.o src/Automation.o src/Hooks.o src/Ast.o markuppp/vendor/cmark/blocks.o markuppp/vendor/cmark/buffer.o markuppp/vendor/cmark/cmark.o markuppp/vendor/cmark/cmark_ctype.o markuppp/vendor/cmark/houdini_href_e.o markuppp/vendor/cmark/houdini_html_e.o markuppp/vendor/cmark/houdini_html_u.o markuppp/vendor/cmark/html.o markuppp/vendor/cmark/inlines.o markuppp/vendor/cmark/iterator.o markuppp/vendor/cmark/node.o markuppp/vendor/cmark/references.o markuppp/vendor/cmark/render.o markuppp/vendor/cmark/scanners.o markuppp/vendor/cmark/utf8.o .build/fs-recipe/ParserExpression.o .build/fs-recipe/ParserTemplate.o -ldl .build/libffi/x86_64-linux-gnu-cc/install/lib/libffi.a -o .build/nift-fs-recipe-guard
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:33:29.6081168Z NIFT_FS_STATS=/home/runner/work/nift/nift/.build/nift-fs-recipe-guard /opt/hostedtoolcache/Python/3.13.16/x64/bin/python3 tests/v410_filesystem_recipe_guard.py
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:33:29.6768999Z Traceback (most recent call last):
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:33:29.6852633Z   File "/home/runner/work/nift/nift/tests/v410_filesystem_recipe_guard.py", line 19, in <module>
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:33:29.6853686Z     assert s['recipes']==0 and s['fallbacks']==1 and s['backends']==1 and s['operands']==2,s
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:33:29.6854206Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:33:29.6854836Z AssertionError: {'prepares': 0, 'recipes': 0, 'backends': 1, 'operands': 2, 'pure': 0, 'rejects': 0, 'fallbacks': 0}
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:33:29.6950514Z make: *** [Makefile:1931: test-v410-filesystem-recipe-guard] Error 1
+linux behavioural corpus	v4.9/v4.10 build, selector, filesystem and JSON contracts	2026-10-14T17:33:29.6968748Z ##[error]Process completed with exit code 2.

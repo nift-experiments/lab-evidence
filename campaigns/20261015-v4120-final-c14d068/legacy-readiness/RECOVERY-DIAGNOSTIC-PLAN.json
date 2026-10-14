@@ -1,0 +1,44 @@
+{
+  "kind": "separate three-way recovery diagnostic, never merged into official",
+  "versions": {
+    "previous_release": "c8d9c266518d115e4f289c5c6a2b94ddd7ee9968",
+    "original_candidate": "7f7e487c47a87e871dfef53345e2b71288008bff",
+    "final_candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+  },
+  "require_full_previous_sha": false,
+  "fresh_clean_builds": true,
+  "same_host_compiler_flags_runtime": true,
+  "affinity": [
+    0
+  ],
+  "cases": {
+    "scripting": [
+      "sanity/function-calls/small",
+      "sanity/function-calls/large"
+    ],
+    "shell": [
+      "function-calls",
+      "string-transform"
+    ],
+    "website": [
+      "10000/application-cold"
+    ]
+  },
+  "sample_policy": {
+    "scripting": {
+      "samples": 10,
+      "warmups": 2
+    },
+    "shell": {
+      "samples": 10,
+      "warmups": 2
+    },
+    "website": {
+      "samples": 5,
+      "warmups": 1
+    }
+  },
+  "ordering": "Adjacent three-version blocks; rotate six permutations across measured rounds; keep per-version/case warmups and all observations. Report imperfect permutation balance for sample counts not divisible by six.",
+  "correctness": "Reuse frozen source and existing semantic/fixture/parity oracles; retain stdout/stderr and all failures; no profiler/install during timing",
+  "profiles": "Only after diagnostic timing if material regressions remain; separate evidence"
+}

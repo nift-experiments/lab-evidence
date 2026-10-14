@@ -1,0 +1,17 @@
+{
+  "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "template_suite": "3c0dcdd1aad3cbb0a0c638c9041233b1e329dc6f",
+  "concurrency_suite": "d6d0cac9e7dd65d12b5bbccd0ec5b542d187c0a6",
+  "filesystem_suite": "75e77bb4bb6fb0b8c49920f641c77b394aec5985",
+  "filesystem_filter_suite": "1ab31488eb949eb8f8cd6d50b0eb9fd59e1ad78e",
+  "core_path": "/opt/nift",
+  "policy": "each suite work/nift-source symlink exact clean core; actual versions manifest override; preserve original clocks/order/fixtures/metrics and full sample counts",
+  "local_memory": "raw wait4 floor retained/unranked; separate postexec/reuse diagnostics",
+  "official_commands": {
+    "template": "NIFT_BENCH_VERSIONS_JSON=<actual manifest> python3 scripts/run.py work/final-official",
+    "concurrency": "python3 scripts/run.py --output work/final-official",
+    "filesystem": "NIFT_BENCH_VERSIONS_JSON=<actual manifest> python3 scripts/run.py --directory work/final-official",
+    "filesystem_filter": "same filesystem command in separately frozen filter clone, serial after primary audits"
+  },
+  "reuse": "separate ten-request retained-runtime diagnostic after timings, preserve all raw trajectories"
+}

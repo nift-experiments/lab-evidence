@@ -1,0 +1,71 @@
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	﻿2026-10-14T17:34:05.1578607Z ##[group]Run make clean
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1579008Z [36;1mmake clean[0m
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1579298Z [36;1mmake test-libffi-source[0m
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1579582Z [36;1mmake warnings-check[0m
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1579925Z [36;1mmake -j2 test-gate6ar-ffi[0m
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1580368Z [36;1mmake -j2 test-v45-ffi test-cp20-bytes test-cp21-bytes test-libffi-static-archive embed[0m
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1580813Z [36;1mmake test-pic-depfiles[0m
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1581174Z [36;1mbash scripts/audit_no_dynamic_libffi.sh nift libnift_c.so[0m
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1581574Z [36;1mmake node-binding python-binding[0m
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1582110Z [36;1mbash scripts/audit_no_dynamic_libffi.sh bindings/node/build/nift_node.node bindings/python/nift/_nift*.so[0m
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1582773Z [36;1mbash scripts/audit_private_libffi.sh libnift_c.so bindings/node/build/nift_node.node bindings/python/nift/_nift*.so[0m
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1583297Z [36;1mbash tests/libffi_private_audit.sh[0m
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1583781Z [36;1mpython3 scripts/check_node_package_licenses.py[0m
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1619615Z shell: /usr/bin/bash -e {0}
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1620022Z env:
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1620348Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1620818Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1621266Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1621650Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1622058Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1622454Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1622785Z   CC: gcc
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1623032Z   CXX: g++
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.1623263Z ##[endgroup]
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.2201821Z rm -f src/nift.o src/ProjectOwnership.o src/PackageTransaction.o src/CLI.o src/Process.o src/JobControl.o src/RuntimeValue.o src/Value.o src/FileSystem.o src/JsonFile.o src/JsonSchema.o minifypp/src/Minify.o markuppp/src/Markup.o markuppp/src/AsciiDoc.o markuppp/src/ReStructuredText.o src/Parser.o src/ParserAsyncPool.o src/ParserExpression.o src/ParserHelpers.o src/ParserScript.o src/ParserTemplate.o src/ProjectInfo.o src/ProjectRead.o src/ProjectState.o src/WatchList.o src/BuildProgress.o src/Automation.o src/Hooks.o src/Ast.o src/embed/Engine.o src/embed/Context.o src/embed/c_abi.o markuppp/vendor/cmark/blocks.o markuppp/vendor/cmark/buffer.o markuppp/vendor/cmark/cmark.o markuppp/vendor/cmark/cmark_ctype.o markuppp/vendor/cmark/houdini_href_e.o markuppp/vendor/cmark/houdini_html_e.o markuppp/vendor/cmark/houdini_html_u.o markuppp/vendor/cmark/html.o markuppp/vendor/cmark/inlines.o markuppp/vendor/cmark/iterator.o markuppp/vendor/cmark/node.o markuppp/vendor/cmark/references.o markuppp/vendor/cmark/render.o markuppp/vendor/cmark/scanners.o markuppp/vendor/cmark/utf8.o src/nift.d src/ProjectOwnership.d src/PackageTransaction.d src/CLI.d src/Process.d src/JobControl.d src/RuntimeValue.d src/Value.d src/FileSystem.d src/JsonFile.d src/JsonSchema.d minifypp/src/Minify.d markuppp/src/Markup.d markuppp/src/AsciiDoc.d markuppp/src/ReStructuredText.d src/Parser.d src/ParserAsyncPool.d src/ParserExpression.d src/ParserHelpers.d src/ParserScript.d src/ParserTemplate.d src/ProjectInfo.d src/ProjectRead.d src/ProjectState.d src/WatchList.d src/BuildProgress.d src/Automation.d src/Hooks.d src/Ast.d src/embed/Engine.d src/embed/Context.d src/embed/c_abi.d markuppp/vendor/cmark/blocks.d markuppp/vendor/cmark/buffer.d markuppp/vendor/cmark/cmark.d markuppp/vendor/cmark/cmark_ctype.d markuppp/vendor/cmark/houdini_href_e.d markuppp/vendor/cmark/houdini_html_e.d markuppp/vendor/cmark/houdini_html_u.d markuppp/vendor/cmark/html.d markuppp/vendor/cmark/inlines.d markuppp/vendor/cmark/iterator.d markuppp/vendor/cmark/node.d markuppp/vendor/cmark/references.d markuppp/vendor/cmark/render.d markuppp/vendor/cmark/scanners.d markuppp/vendor/cmark/utf8.d "nift"
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.2208476Z # Ordinary development clean removes Nift build products but PRESERVES the
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.2213494Z # reusable vendored libffi dependency cache so clean+make does not re-pay
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.2218103Z # the configure/build/install bootstrap. Use `make distclean` (or
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.2223378Z # `make pristine`) for a fully cold state. Genuine removal failures are
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.2228317Z # reported; concurrent `make` + `make clean` on one checkout is explicitly
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.2232582Z # unsupported.
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.2241580Z rm -f libnift_c.a libnift_c.so libnift_c.dylib bindings/go/embed-harness
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.2247533Z rm -rf dist/embed-prefix bindings/node/build bindings/python/build
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.2253477Z rm -f bindings/python/nift/_nift*.so
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.2264531Z rm -rf bindings/csharp/src/Nift/bin bindings/csharp/src/Nift/obj
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.2271072Z rm -rf bindings/csharp/apps/NiftEmbedHarness/bin bindings/csharp/apps/NiftEmbedHarness/obj
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.2276750Z rm -rf bindings/csharp/apps/NiftAspDogfood/bin bindings/csharp/apps/NiftAspDogfood/obj
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.2282260Z rm -rf bindings/csharp/tests/Nift.Tests/bin bindings/csharp/tests/Nift.Tests/obj
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.2287972Z rm -rf bindings/csharp/bench/bin bindings/csharp/bench/obj
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.2759088Z python3 scripts/check_vendored_libffi.py
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.4881087Z CC="gcc" CXX="g++" CFLAGS="-O2 -fPIC -Wno-deprecated-declarations" bash scripts/build_vendored_libffi.sh ".build/libffi/x86_64-linux-gnu-gcc"
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:05.6194134Z BUILD vendored libffi (x86_64-linux-gnu-gcc)
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:11.9448195Z BUILD vendored libffi: done (6s)
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:11.9455238Z   g++: src/nift.cpp
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:11.9507099Z   g++: src/ProjectOwnership.cpp
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:12.4623832Z   g++: src/PackageTransaction.cpp
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:13.2442381Z   g++: src/CLI.cpp
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:15.0194622Z   g++: src/Process.cpp
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:15.4033689Z   g++: src/JobControl.cpp
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:15.8162618Z   g++: src/RuntimeValue.cpp
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:16.2659717Z   g++: src/Value.cpp
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:16.4617656Z   g++: src/FileSystem.cpp
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:16.8846435Z   g++: src/JsonFile.cpp
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:17.3149582Z   g++: src/JsonSchema.cpp
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:18.0554958Z   g++: src/Parser.cpp
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:19.6202281Z   g++: src/ParserAsyncPool.cpp
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:19.8287195Z   g++: src/ParserExpression.cpp
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:20.7722501Z src/ParserExpression.cpp: In lambda function:
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:20.7724260Z src/ParserExpression.cpp:2180:21: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:20.7725077Z  2180 |                     if(hard_error)*hard_error="cannot index value in '"+ref_source+"'";return false;
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:20.7725617Z       |                     ^~
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:20.7726506Z src/ParserExpression.cpp:2180:88: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:20.7727266Z  2180 |                     if(hard_error)*hard_error="cannot index value in '"+ref_source+"'";return false;
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:20.7727856Z       |                                                                                        ^~~~~~
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:21.1012248Z src/ParserExpression.cpp: In member function ‘bool Parser::evaluate_expression_impl(const std::string&, nift::RuntimeValue&, std::string&, nift::detail::SourceView, const PreparedFilesystemOperation*, OrdinaryArgumentFrame*, int)’:
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:21.1014480Z src/ParserExpression.cpp:1538:214: error: unused parameter ‘ordinary_arguments’ [-Werror=unused-parameter]
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:21.1016663Z  1538 | bool Parser::evaluate_expression_impl(const std::string& expression, nift::RuntimeValue& value, std::string& error, nift::detail::SourceView view, const PreparedFilesystemOperation* recipe, OrdinaryArgumentFrame* ordinary_arguments, int inherited_depth) {
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:21.1018388Z       |                                                                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:22.2596688Z cc1plus: all warnings being treated as errors
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:22.2626694Z make: *** [Makefile:249: warnings-check] Error 1
+Linux gcc complete FFI wall	Clean ABI, v4.5, archive, shared, and binding walls	2026-10-14T17:34:22.2642487Z ##[error]Process completed with exit code 2.

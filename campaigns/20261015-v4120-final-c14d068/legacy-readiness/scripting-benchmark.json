@@ -1,0 +1,28 @@
+{
+  "commands": [
+    "taskset -c 0 python3 scripts/campaign.py --nift /opt/campaign/tools/bin/nift --families sanity/noop,sanity/output,sanity/loops,sanity/function-calls,arrays-strings-hash/scan,arrays-strings-hash/frequency-count,arrays-strings-hash/sliding-window,arrays-strings-hash/sort-index,arrays-strings-hash/map-set,dynamic-programming/fibonacci,graphs-trees-search/bfs,structured-data/json-parse,structured-data/json-transform,structured-data/json-traverse,filesystem/traverse --samples 10 --warmups 2 --timeout 180 --output /opt/campaign/evidence/scripting.json",
+    "python3 scripts/summarize.py --input /opt/campaign/evidence/scripting.json --output /opt/campaign/evidence/scripting-summary.json"
+  ],
+  "comparators": {
+    "python": "Ubuntu24.04 exact dpkg pin at provisioning; previous3.12.3",
+    "ruby": "Ubuntu24.04 exact dpkg pin; previous3.2.3",
+    "lua54": "Ubuntu24.04 exact dpkg pin; previous5.4.6",
+    "luajit": "Ubuntu24.04 exact dpkg pin; previous2.1.1703358377",
+    "node": "24.21.0",
+    "bash": "Ubuntu24.04 exact dpkg pin; previous5.2.21"
+  },
+  "baseline": "20261010-v4100,188 jobs/1880 measured/376 warmups",
+  "gates": [
+    "test_measurement.py",
+    "complete pilot all188 jobs minimum5 samples",
+    "summarize.py exact recomputation and every correct flag",
+    "source/oracle SHA-256 recorded each job"
+  ],
+  "candidate_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "core_build": "fresh clean detached clone; make -j2; make install PREFIX=/opt/campaign/tools; record actual compiler/default flags/version/binary+library hashes",
+  "measurement_boundary": "existing frozen harness; singleCPU0; uncontrolled OS cache; keep childRSS versus treeRSS limitation explicit",
+  "status": "ready for source candidate; installed comparator identities and complete correctness pilot pending",
+  "candidate_version": "4.12.0",
+  "previous_plan_sha256": "e10565ee7249f3cf43767500c4bc3c510e01024902f927b9f5c4931f190a63ab",
+  "preservation": "Frozen suite workload sources, sample policy, ordering, affinity and correctness oracles unchanged. Prior accepted comparator versions remain the baseline; actual host inventories must be captured before measurement."
+}

@@ -1,0 +1,55 @@
+{
+  "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "isolated_root": "/tmp/graph-recert-c14d068",
+  "build_suite": "e95bfe88ac9e1eaf67cfeb8f67020fc3373ab81e",
+  "task_suite": "f37b63bd13cf71256607ba4652bcc911e270f94e",
+  "build_counts": {
+    "total": 9348,
+    "measured": 8880,
+    "warmups": 468
+  },
+  "task_counts": {
+    "total": 1527,
+    "measured": 1434,
+    "warmups": 93
+  },
+  "official_results_reused": false,
+  "workload_timer_changes": false,
+  "status": "local preflight running",
+  "three_way_diagnostic": {
+    "sources": [
+      "c8d9c266518d115e4f289c5c6a2b94ddd7ee9968",
+      "7f7e487c47a87e871dfef53345e2b71288008bff",
+      "c14d06835bca515a5281e41da0e40219c2d60ef0"
+    ],
+    "scenarios": [
+      "native1000-heavy-j1-noop",
+      "tiny10000-light-j4-noop",
+      "tiny10000-light-j4-full"
+    ],
+    "samples_per_source": [
+      30,
+      20,
+      5
+    ],
+    "warmups_per_source": [
+      2,
+      2,
+      1
+    ],
+    "observations": 180,
+    "measured": 165,
+    "warmups": 15,
+    "scope": "separate same-node diagnostics after primary timing, fresh artifacts, alternating/rotating three versions"
+  },
+  "candidate_binary_sha256": "a6f54de3b397eff0765825317d80ac702e5e88d70dcc73a75f02022e0575cc1d",
+  "certification_command": "python3 /tmp/graph-recert-c14d068/run-preflight.py",
+  "local_comparators": {
+    "make": "4.4.1",
+    "ninja": "1.13.2",
+    "turbo": "2.11.7",
+    "nx": "23.3.0"
+  },
+  "prior_build_suite": "24671011425ef8bd0b9f05adb1c87682e9ca33b7",
+  "prior_task_suite": "56384cace6821a1541e7773cf1d8ce7a4c688ed8"
+}

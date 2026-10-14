@@ -1,0 +1,49 @@
+{
+  "kind": "local correctness only, not official timing",
+  "candidate_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "binary_sha256": "a6f54de3b397eff0765825317d80ac702e5e88d70dcc73a75f02022e0575cc1d",
+  "scripting": {
+    "expected": 188,
+    "passed": 188
+  },
+  "website": {
+    "expected": 18,
+    "passed": 18
+  },
+  "shell_rc": {
+    "expected": 18,
+    "passed": 18
+  },
+  "shell_matrix_status": "complete PASS",
+  "receipts": {
+    "website.log": "764eee56fe2021f2450b7d8a24127ab83625c2e99a56485f5265b49d913e5f77",
+    "check-scripting.py": "6d94795b9f2a62936434861a863a430b78a77441de6481dcb76b7793036c3b2f",
+    "scripting.log": "2784dd415ee09b09e1d43f1d0c47b541278eea4012e31e91308e7f4890a748a2",
+    "scripting-correctness.json": "82c13dc63016c6a9b191ee3a9ec92a1d5ec6bf5c5880a88bae1e5ef9accbfd89",
+    "rc.json": "01989a38a9f1f8459778b2a7ed299e417669d5ae2c5fdb03e6ff5a7528d81e87",
+    "check-website.py": "e38c47de96f443d5b46b04b153dd138b613145fe287b479e50fd9d8559c1df32",
+    "website-correctness.json": "2d7a619f00e45e9b0a0ce2d1cf787e1cd382802bd8de412a8f5db8e09c88c2fb",
+    "shell-repeated.json": "9b6276fe883a309f5f482046031c8c3c942bd87c64f3eb57aa82e7d1a074e78b",
+    "shell-fresh.json": "da842594aa3240d048b1f597af5bc88ce2021a658dd7ef7674c4ea84c887d0b6",
+    "shell-workloads.json": "0ca7fa61206c487f0cfc2bf32b54f9d27aee9e54a0dee4d3330a8e096f4f10cf",
+    "shell-validation.json": "be9c1e0400d16ab14ec2b7a3712e934939e533fd240f13277de25682fceebe71"
+  },
+  "shell_startup": {
+    "prepared_jobs": 76,
+    "fresh_jobs": 76,
+    "each_samples": 5,
+    "each_warmups": 1,
+    "all_correct": true
+  },
+  "shell_expanded": {
+    "jobs": 141,
+    "measured": 141,
+    "warmups": 0,
+    "summaries": "all fields exactly recomputed",
+    "correctness": "all samples passed frozen output/fixture oracles",
+    "raw_sha256": "0ca7fa61206c487f0cfc2bf32b54f9d27aee9e54a0dee4d3330a8e096f4f10cf"
+  },
+  "measurement_tests": 3,
+  "workload_tests": 8,
+  "all_gates_pass": true
+}

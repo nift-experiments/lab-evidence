@@ -1,0 +1,2452 @@
+{
+  "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "kind": "local-correctness-only",
+  "rows": [
+    {
+      "id": "sanity/noop/small/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/noop/small.f"
+      ],
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "oracle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/noop/large/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/noop/large.f"
+      ],
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "oracle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/output/small/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/output/small.f"
+      ],
+      "source_sha256": "8ed0ac2482e4c80668acd1a7e78f84a22bf0d5db190ba121de64012fa57d40bc",
+      "oracle_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/output/large/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/output/large.f"
+      ],
+      "source_sha256": "8ed0ac2482e4c80668acd1a7e78f84a22bf0d5db190ba121de64012fa57d40bc",
+      "oracle_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/loops/small/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/loops/small.f"
+      ],
+      "source_sha256": "69339e0b9f695ea6ff848d3aacf6d476d0991edee3832ccdf9be95ab0d2a63e7",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/loops/large/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/loops/large.f"
+      ],
+      "source_sha256": "17001bd764deca3758338d11688f75778f2cbef42e5dfdab80dfb06c288821eb",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/function-calls/small/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/function-calls/small.f"
+      ],
+      "source_sha256": "66c5b5cf126ae6b9e47d556a19bba9d7e8896263c3886a5959c254d87acefe62",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/function-calls/large/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/function-calls/large.f"
+      ],
+      "source_sha256": "c15cf8d1cf4880e499521284b3cc1362b90d2c726f7da32212bc004aca7b0201",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/scan/small/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/scan/small.f"
+      ],
+      "source_sha256": "2cceceef3832bd2b845fe2cfe2816ae2063dd4361a8d2b804c624427c7348d3f",
+      "oracle_sha256": "012809f3c6dd9469434a27f69049f79a7051a64d287283a21c7a2eda8560ea8f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "012809f3c6dd9469434a27f69049f79a7051a64d287283a21c7a2eda8560ea8f",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/scan/large/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/scan/large.f"
+      ],
+      "source_sha256": "d534a4621af9af19fcab741093efc8069a49bbd73f9118dbb0f0655086690a7d",
+      "oracle_sha256": "ff64aea4ee338d4d7aa76c5668a1338f1f708da153915bd6cf2d287c93ab91a4",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "ff64aea4ee338d4d7aa76c5668a1338f1f708da153915bd6cf2d287c93ab91a4",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/frequency-count/small/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/small.f"
+      ],
+      "source_sha256": "68df45eb2b5606e0e29e0ad6b9627e9189cda092e415a57ee0c5e13fae7a39fa",
+      "oracle_sha256": "607ac266a3500a2f936ff6123c0b1dbd0fb69d60ae891f867d06fcf5029e5153",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "607ac266a3500a2f936ff6123c0b1dbd0fb69d60ae891f867d06fcf5029e5153",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/frequency-count/large/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/large.f"
+      ],
+      "source_sha256": "3fee2c5577c435c3358795845ed0d16be013b972a511c9be477ff9b3ca6a1807",
+      "oracle_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sliding-window/small/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sliding-window/small.f"
+      ],
+      "source_sha256": "ccc8297280e3ec11c2be0334c760b678024fc97dcbd42a585bf4fee35825b3bc",
+      "oracle_sha256": "834ad1fe4d2e462492d2e245b69739efd19212dba8a3d97ab6c9c4eba88da348",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "834ad1fe4d2e462492d2e245b69739efd19212dba8a3d97ab6c9c4eba88da348",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sliding-window/large/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sliding-window/large.f"
+      ],
+      "source_sha256": "b06a978bd8babe08323df1c2c7a7c232bb5862bf1834adf500587f4165ed0bd9",
+      "oracle_sha256": "11af203612a5b64b2090ad43f2e763ee85ac49a1417583df9bcdc5794020e7d2",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "11af203612a5b64b2090ad43f2e763ee85ac49a1417583df9bcdc5794020e7d2",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sort-index/small/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sort-index/small.f"
+      ],
+      "source_sha256": "52c2055b34a2a62286622e52cff44bbe79cfd4c23c5710e3f5f5675bf2d25515",
+      "oracle_sha256": "acc2bb4062c3240ea98dd342b86ad0a3616c32bce01c590ca49d56ead21274b9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "acc2bb4062c3240ea98dd342b86ad0a3616c32bce01c590ca49d56ead21274b9",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sort-index/large/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sort-index/large.f"
+      ],
+      "source_sha256": "596806050d51a19f09c5f04ca33da352b51af5759434aa89a7d350d8ca33b85b",
+      "oracle_sha256": "9d20e31168f953cf814716be19fcbe4cad26fc3406863c83e32ceb4f96f62509",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "9d20e31168f953cf814716be19fcbe4cad26fc3406863c83e32ceb4f96f62509",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/map-set/small/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/map-set/small.f"
+      ],
+      "source_sha256": "873ce480b65b26bf5d9bd2f21082e7a1334d1477e53febd8ea7cac0fc779477b",
+      "oracle_sha256": "45dd24761ced88fe916720c4ebe4bccd4a3fb24514098c586aa9b2384f22f30b",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "45dd24761ced88fe916720c4ebe4bccd4a3fb24514098c586aa9b2384f22f30b",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/map-set/large/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/map-set/large.f"
+      ],
+      "source_sha256": "6a7787512eebf05b3a4c15bb6950cf6559dfd79b64bb5a6962d8add74979f988",
+      "oracle_sha256": "2a14beffa69b47ab1b793513ca48a0c5115beb0acbd4ce44cf16dcdfdf7b8258",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "2a14beffa69b47ab1b793513ca48a0c5115beb0acbd4ce44cf16dcdfdf7b8258",
+      "stderr": ""
+    },
+    {
+      "id": "dynamic-programming/fibonacci/small/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/dynamic-programming/fibonacci/small.f"
+      ],
+      "source_sha256": "93e049cde19542f91f9817c273ec6fbc013aeca45c23157815c9364e1d51f117",
+      "oracle_sha256": "93a9b2b38d0ff170e51dfa05feafc9832ba25b87d3fabd8e4ffbb0778220cd50",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "93a9b2b38d0ff170e51dfa05feafc9832ba25b87d3fabd8e4ffbb0778220cd50",
+      "stderr": ""
+    },
+    {
+      "id": "dynamic-programming/fibonacci/large/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/dynamic-programming/fibonacci/large.f"
+      ],
+      "source_sha256": "22a474099adba8f48df884993d911bbe04857c546d319123030b1122e00819d7",
+      "oracle_sha256": "46ff2672fc236ce661a4aaf536c0bc1be47698b0ca83ed1a21894081c1bcb99a",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "46ff2672fc236ce661a4aaf536c0bc1be47698b0ca83ed1a21894081c1bcb99a",
+      "stderr": ""
+    },
+    {
+      "id": "graphs-trees-search/bfs/small/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/small.f"
+      ],
+      "source_sha256": "d41efd1989af7ecddbd79c2bad4559b1cedf52bf8157185b406d49b4b166f54f",
+      "oracle_sha256": "a2c6c14110a317833ac8f2fbae7080ee844af7469b2aa702876548dcf4c58077",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "a2c6c14110a317833ac8f2fbae7080ee844af7469b2aa702876548dcf4c58077",
+      "stderr": ""
+    },
+    {
+      "id": "graphs-trees-search/bfs/large/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/large.f"
+      ],
+      "source_sha256": "20808cc9e18b93d241c114df6b17bb1a25fc9072146ae8751c45402de5c625ec",
+      "oracle_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-parse/small/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-parse/small.f"
+      ],
+      "source_sha256": "fdecce5b34b4a2848ca0ef727f59080bc0697fb1a418e21aea93d17999c393f1",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-parse/large/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-parse/large.f"
+      ],
+      "source_sha256": "1d94ffa8a0ad98a2e2d507c4d6377cc0abb1116aa83dfc4bcbcaa0dd1d0e5b68",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-transform/small/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-transform/small.f"
+      ],
+      "source_sha256": "e5c92837f0483d1eac3ec93103d62c825a96d6d68137e33e181b700f1d07a6c2",
+      "oracle_sha256": "2c9f910541b11f5d89d7f8b9af827d9017b9250944bfcf91bfb5ad4c028f332c",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "2c9f910541b11f5d89d7f8b9af827d9017b9250944bfcf91bfb5ad4c028f332c",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-transform/large/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-transform/large.f"
+      ],
+      "source_sha256": "eace4f6a04cbb966d6c0a2c4ef90d69c0eb7a44139fe4807cfeecbd6f75a209c",
+      "oracle_sha256": "1e6ffd8a95fab538ddd645a767e8cc505722d5c8aaf008969f2ed8ab753ff61e",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "1e6ffd8a95fab538ddd645a767e8cc505722d5c8aaf008969f2ed8ab753ff61e",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-traverse/small/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-traverse/small.f"
+      ],
+      "source_sha256": "95eb3a9e1979cc2b0b83914d2312445a13c0876fdffebe61aa85fe3d2ecfc682",
+      "oracle_sha256": "15a47fcd2c3b5d1faf1e53f72336c2a2eb7d55eb2be36a1822543d16ff286511",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "15a47fcd2c3b5d1faf1e53f72336c2a2eb7d55eb2be36a1822543d16ff286511",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-traverse/large/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-traverse/large.f"
+      ],
+      "source_sha256": "c93a36da3b8ab0b7a5269bbfa070bf87751ac0c3137dc12a9ff9c3f5ca1842a5",
+      "oracle_sha256": "2d5c043a952d70ef9564858b25a01a30613abfb3d1562f67ef8d089646bbf786",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "2d5c043a952d70ef9564858b25a01a30613abfb3d1562f67ef8d089646bbf786",
+      "stderr": ""
+    },
+    {
+      "id": "filesystem/traverse/small/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/filesystem/traverse/small.f"
+      ],
+      "source_sha256": "b988602fcd6a43025481c29feaa7d861d9d4929d05d3b3e59d0890bbb8e44965",
+      "oracle_sha256": "64aeb9975f234becd55bb4635e6e2f2da7a6b7bf0a896f0c07763bdfbfb31420",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "64aeb9975f234becd55bb4635e6e2f2da7a6b7bf0a896f0c07763bdfbfb31420",
+      "stderr": ""
+    },
+    {
+      "id": "filesystem/traverse/large/nift",
+      "command": [
+        "/tmp/nift-recert-c14d068/nift",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/filesystem/traverse/large.f"
+      ],
+      "source_sha256": "5fc5ee38d2130cb215246ab3243247099231322ee95ff0f0ea8dc4964735bac5",
+      "oracle_sha256": "f739882f40e2be8022d26517e0b963ab2351687845ebe1cf320efd0d0d3e388a",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "f739882f40e2be8022d26517e0b963ab2351687845ebe1cf320efd0d0d3e388a",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/noop/small/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/noop/small.py"
+      ],
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "oracle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/noop/large/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/noop/large.py"
+      ],
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "oracle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/output/small/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/output/small.py"
+      ],
+      "source_sha256": "8ed0ac2482e4c80668acd1a7e78f84a22bf0d5db190ba121de64012fa57d40bc",
+      "oracle_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/output/large/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/output/large.py"
+      ],
+      "source_sha256": "8ed0ac2482e4c80668acd1a7e78f84a22bf0d5db190ba121de64012fa57d40bc",
+      "oracle_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/loops/small/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/loops/small.py"
+      ],
+      "source_sha256": "ec19c8ad3f5d57918b06292afc844c0f2cd258a8a37a754d3122224fdb5a4a34",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/loops/large/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/loops/large.py"
+      ],
+      "source_sha256": "10af741f115221279ff20c842c158e4001895ede6a74d482b497eaaaafed68a9",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/function-calls/small/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/function-calls/small.py"
+      ],
+      "source_sha256": "a11ec0342fbe7dcd030bd967458cd644647d6abdcb4a0c751ef463bf7f4d49a9",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/function-calls/large/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/function-calls/large.py"
+      ],
+      "source_sha256": "e1ca0ae4c6893782d2b894467953b59266eeff1774f4aa400f54d129dec8e7da",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/scan/small/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/scan/small.py"
+      ],
+      "source_sha256": "d59411fd9cfc39aa538e655d9f8d83f2cd2be716af5b72702362bdddbd001cdf",
+      "oracle_sha256": "012809f3c6dd9469434a27f69049f79a7051a64d287283a21c7a2eda8560ea8f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "012809f3c6dd9469434a27f69049f79a7051a64d287283a21c7a2eda8560ea8f",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/scan/large/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/scan/large.py"
+      ],
+      "source_sha256": "1018a4489daa4fb709d298ca2ba99d06c02d1e2626a9194d07eb1f4943c6ad76",
+      "oracle_sha256": "ff64aea4ee338d4d7aa76c5668a1338f1f708da153915bd6cf2d287c93ab91a4",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "ff64aea4ee338d4d7aa76c5668a1338f1f708da153915bd6cf2d287c93ab91a4",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/frequency-count/small/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/small.py"
+      ],
+      "source_sha256": "48a5e0ca49afc2551d483a42d47ad0904edc5953df6e6634b628121a8238a23c",
+      "oracle_sha256": "607ac266a3500a2f936ff6123c0b1dbd0fb69d60ae891f867d06fcf5029e5153",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "607ac266a3500a2f936ff6123c0b1dbd0fb69d60ae891f867d06fcf5029e5153",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/frequency-count/large/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/large.py"
+      ],
+      "source_sha256": "5abd0a282d2ce6f20c3c2eb80c45185e22006925fe861dcf56fbae5e41398cbf",
+      "oracle_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sliding-window/small/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sliding-window/small.py"
+      ],
+      "source_sha256": "00772f29cfc9a3074e03a57ab254f5a72db33a00940f7d7e5aef12ae3a81b615",
+      "oracle_sha256": "834ad1fe4d2e462492d2e245b69739efd19212dba8a3d97ab6c9c4eba88da348",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "834ad1fe4d2e462492d2e245b69739efd19212dba8a3d97ab6c9c4eba88da348",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sliding-window/large/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sliding-window/large.py"
+      ],
+      "source_sha256": "7cb1467717cb17a7a3d320570be7f4b2fee5f732f8f2077aff7107b07b2320b6",
+      "oracle_sha256": "11af203612a5b64b2090ad43f2e763ee85ac49a1417583df9bcdc5794020e7d2",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "11af203612a5b64b2090ad43f2e763ee85ac49a1417583df9bcdc5794020e7d2",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sort-index/small/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sort-index/small.py"
+      ],
+      "source_sha256": "36630d09dd164d5c4e2a19884aa465c02fbf5a46e71b75fcdab2a2d46b86bcfd",
+      "oracle_sha256": "acc2bb4062c3240ea98dd342b86ad0a3616c32bce01c590ca49d56ead21274b9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "acc2bb4062c3240ea98dd342b86ad0a3616c32bce01c590ca49d56ead21274b9",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sort-index/large/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sort-index/large.py"
+      ],
+      "source_sha256": "cada5fb4a8ecf278aa0d7bcaab4a8c5433dc08bb4d11e4535f0df1d79e470e9a",
+      "oracle_sha256": "9d20e31168f953cf814716be19fcbe4cad26fc3406863c83e32ceb4f96f62509",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "9d20e31168f953cf814716be19fcbe4cad26fc3406863c83e32ceb4f96f62509",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/map-set/small/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/map-set/small.py"
+      ],
+      "source_sha256": "374eef9975b7cca51137d8db84fcdf9b2fbf6095535dc9dce93b5b0cebb74488",
+      "oracle_sha256": "45dd24761ced88fe916720c4ebe4bccd4a3fb24514098c586aa9b2384f22f30b",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "45dd24761ced88fe916720c4ebe4bccd4a3fb24514098c586aa9b2384f22f30b",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/map-set/large/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/map-set/large.py"
+      ],
+      "source_sha256": "499f91094c12cdd3cc05092ff5f9e84cc3ffc803cf1376ab915a6221f5923dd6",
+      "oracle_sha256": "2a14beffa69b47ab1b793513ca48a0c5115beb0acbd4ce44cf16dcdfdf7b8258",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "2a14beffa69b47ab1b793513ca48a0c5115beb0acbd4ce44cf16dcdfdf7b8258",
+      "stderr": ""
+    },
+    {
+      "id": "dynamic-programming/fibonacci/small/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/dynamic-programming/fibonacci/small.py"
+      ],
+      "source_sha256": "f098b76c704d4d4ff056409cb68739a7b9baa9fa7ed0e7fe25ceafbf1a49be4b",
+      "oracle_sha256": "93a9b2b38d0ff170e51dfa05feafc9832ba25b87d3fabd8e4ffbb0778220cd50",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "93a9b2b38d0ff170e51dfa05feafc9832ba25b87d3fabd8e4ffbb0778220cd50",
+      "stderr": ""
+    },
+    {
+      "id": "dynamic-programming/fibonacci/large/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/dynamic-programming/fibonacci/large.py"
+      ],
+      "source_sha256": "a73a55034e38ab8b2140fa72085b2b1771017b5bfb4495ade464f9a08d5f0277",
+      "oracle_sha256": "46ff2672fc236ce661a4aaf536c0bc1be47698b0ca83ed1a21894081c1bcb99a",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "46ff2672fc236ce661a4aaf536c0bc1be47698b0ca83ed1a21894081c1bcb99a",
+      "stderr": ""
+    },
+    {
+      "id": "graphs-trees-search/bfs/small/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/small.py"
+      ],
+      "source_sha256": "2b10e9334cff15c9700cf1877b3d5b3f94344c415879725ba75e34018e3f9a05",
+      "oracle_sha256": "a2c6c14110a317833ac8f2fbae7080ee844af7469b2aa702876548dcf4c58077",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "a2c6c14110a317833ac8f2fbae7080ee844af7469b2aa702876548dcf4c58077",
+      "stderr": ""
+    },
+    {
+      "id": "graphs-trees-search/bfs/large/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/large.py"
+      ],
+      "source_sha256": "46bfdd9d377c39444f0635d957232717674322898be83b31d051db615bb0cf12",
+      "oracle_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-parse/small/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-parse/small.py"
+      ],
+      "source_sha256": "1980a8e79c2fbb83274af0bd2a46279c7c8f93ee7976c0fbc6d3badb0c836803",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-parse/large/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-parse/large.py"
+      ],
+      "source_sha256": "9f888624dee72bb0c75394176be9ba01d525b06e0625878e365497bafc6b157e",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-transform/small/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-transform/small.py"
+      ],
+      "source_sha256": "a65c5385f3e129c0af7a4b53c7bf27274ed8d20111f2bcc0d1159318cbb3e29e",
+      "oracle_sha256": "2c9f910541b11f5d89d7f8b9af827d9017b9250944bfcf91bfb5ad4c028f332c",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "2c9f910541b11f5d89d7f8b9af827d9017b9250944bfcf91bfb5ad4c028f332c",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-transform/large/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-transform/large.py"
+      ],
+      "source_sha256": "6d1481800a942f368063cdf49a45462a471524e43abdd8e5eaf45ad091f55362",
+      "oracle_sha256": "1e6ffd8a95fab538ddd645a767e8cc505722d5c8aaf008969f2ed8ab753ff61e",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "1e6ffd8a95fab538ddd645a767e8cc505722d5c8aaf008969f2ed8ab753ff61e",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-traverse/small/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-traverse/small.py"
+      ],
+      "source_sha256": "64993e307700a15daf04489350dac72d1819d9f5e143cbdc35b79502642f82d3",
+      "oracle_sha256": "15a47fcd2c3b5d1faf1e53f72336c2a2eb7d55eb2be36a1822543d16ff286511",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "15a47fcd2c3b5d1faf1e53f72336c2a2eb7d55eb2be36a1822543d16ff286511",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-traverse/large/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-traverse/large.py"
+      ],
+      "source_sha256": "d59327e80c858c779eba4fa08e9b6f55ee54bd686119d04390b52b305c1a5290",
+      "oracle_sha256": "2d5c043a952d70ef9564858b25a01a30613abfb3d1562f67ef8d089646bbf786",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "2d5c043a952d70ef9564858b25a01a30613abfb3d1562f67ef8d089646bbf786",
+      "stderr": ""
+    },
+    {
+      "id": "filesystem/traverse/small/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/filesystem/traverse/small.py"
+      ],
+      "source_sha256": "9705fa30f79eb0f458687b943bbe3cfe78e94969b8a5a2c16d124e496c8bfd91",
+      "oracle_sha256": "64aeb9975f234becd55bb4635e6e2f2da7a6b7bf0a896f0c07763bdfbfb31420",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "64aeb9975f234becd55bb4635e6e2f2da7a6b7bf0a896f0c07763bdfbfb31420",
+      "stderr": ""
+    },
+    {
+      "id": "filesystem/traverse/large/python",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/filesystem/traverse/large.py"
+      ],
+      "source_sha256": "ae9f3032149a4b4bf0cea2abc44aa68d40145bb9abcd9d38adbf45af26b5014c",
+      "oracle_sha256": "f739882f40e2be8022d26517e0b963ab2351687845ebe1cf320efd0d0d3e388a",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "f739882f40e2be8022d26517e0b963ab2351687845ebe1cf320efd0d0d3e388a",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/noop/small/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/noop/small.rb"
+      ],
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "oracle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/noop/large/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/noop/large.rb"
+      ],
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "oracle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/output/small/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/output/small.rb"
+      ],
+      "source_sha256": "d45560695f58db752b71807474df752bb64a8880017418c31d102d446b43e19b",
+      "oracle_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/output/large/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/output/large.rb"
+      ],
+      "source_sha256": "d45560695f58db752b71807474df752bb64a8880017418c31d102d446b43e19b",
+      "oracle_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/loops/small/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/loops/small.rb"
+      ],
+      "source_sha256": "adbe235200e8ab96dad2e648df4b39862bbffeb69de3304871e398352d9f26fa",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/loops/large/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/loops/large.rb"
+      ],
+      "source_sha256": "8906302b5b00bd892c695b53a9c15f6e6ea26ec366b13d9209ad1ac3fa394683",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/function-calls/small/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/function-calls/small.rb"
+      ],
+      "source_sha256": "cd088fa2372e7187ba493f8a9ae071634b1a540a0e97955cc19d6395b29b672a",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/function-calls/large/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/function-calls/large.rb"
+      ],
+      "source_sha256": "566b1d43eb3b1c1fa4eed2cd7d04af75093146f9b38e512e249813a618ed0959",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/scan/small/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/scan/small.rb"
+      ],
+      "source_sha256": "ee32b53a6adad2c528266beb31be534ecb51211a0099ec7a22713b9ed796a84f",
+      "oracle_sha256": "012809f3c6dd9469434a27f69049f79a7051a64d287283a21c7a2eda8560ea8f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "012809f3c6dd9469434a27f69049f79a7051a64d287283a21c7a2eda8560ea8f",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/scan/large/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/scan/large.rb"
+      ],
+      "source_sha256": "ed03f0deea97fb7629ff4435fb4a20429ac221b10aec93ac51342de2784dc36a",
+      "oracle_sha256": "ff64aea4ee338d4d7aa76c5668a1338f1f708da153915bd6cf2d287c93ab91a4",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "ff64aea4ee338d4d7aa76c5668a1338f1f708da153915bd6cf2d287c93ab91a4",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/frequency-count/small/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/small.rb"
+      ],
+      "source_sha256": "eb02ea7de6ee6d7000cb28141e7b6d88959a737c0063844967fa095276e1796f",
+      "oracle_sha256": "607ac266a3500a2f936ff6123c0b1dbd0fb69d60ae891f867d06fcf5029e5153",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "607ac266a3500a2f936ff6123c0b1dbd0fb69d60ae891f867d06fcf5029e5153",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/frequency-count/large/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/large.rb"
+      ],
+      "source_sha256": "8b5ebafd7bf561c3197fa8157cb193b5de4bbead434cdcfc000395d960c00418",
+      "oracle_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sliding-window/small/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sliding-window/small.rb"
+      ],
+      "source_sha256": "a11dc2e3121b022e49cd051f2cacbdfd10dc97a92ca4f16eed993272dab02d45",
+      "oracle_sha256": "834ad1fe4d2e462492d2e245b69739efd19212dba8a3d97ab6c9c4eba88da348",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "834ad1fe4d2e462492d2e245b69739efd19212dba8a3d97ab6c9c4eba88da348",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sliding-window/large/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sliding-window/large.rb"
+      ],
+      "source_sha256": "28589ff25ea5289ea58accd65c8fa370c98062cdff2ef6c0873c3a4a99c804f7",
+      "oracle_sha256": "11af203612a5b64b2090ad43f2e763ee85ac49a1417583df9bcdc5794020e7d2",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "11af203612a5b64b2090ad43f2e763ee85ac49a1417583df9bcdc5794020e7d2",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sort-index/small/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sort-index/small.rb"
+      ],
+      "source_sha256": "75fc66a7166316db85a93a95909d7f2c900eb8f99a73748826254472c3cc26aa",
+      "oracle_sha256": "acc2bb4062c3240ea98dd342b86ad0a3616c32bce01c590ca49d56ead21274b9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "acc2bb4062c3240ea98dd342b86ad0a3616c32bce01c590ca49d56ead21274b9",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sort-index/large/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sort-index/large.rb"
+      ],
+      "source_sha256": "8baf1e6a362e47c660211483fdf4075affb859ba4508c3c8aa7e992d9af9cb0d",
+      "oracle_sha256": "9d20e31168f953cf814716be19fcbe4cad26fc3406863c83e32ceb4f96f62509",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "9d20e31168f953cf814716be19fcbe4cad26fc3406863c83e32ceb4f96f62509",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/map-set/small/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/map-set/small.rb"
+      ],
+      "source_sha256": "3c1cb6f79e642892723af743c4a667bf571c58969cdd070b8df7e7b19d789b17",
+      "oracle_sha256": "45dd24761ced88fe916720c4ebe4bccd4a3fb24514098c586aa9b2384f22f30b",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "45dd24761ced88fe916720c4ebe4bccd4a3fb24514098c586aa9b2384f22f30b",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/map-set/large/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/map-set/large.rb"
+      ],
+      "source_sha256": "5f452b941c6bca202ba094e47967adb9162df7eabeed91feda525e97f904049a",
+      "oracle_sha256": "2a14beffa69b47ab1b793513ca48a0c5115beb0acbd4ce44cf16dcdfdf7b8258",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "2a14beffa69b47ab1b793513ca48a0c5115beb0acbd4ce44cf16dcdfdf7b8258",
+      "stderr": ""
+    },
+    {
+      "id": "dynamic-programming/fibonacci/small/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/dynamic-programming/fibonacci/small.rb"
+      ],
+      "source_sha256": "45b9434f3ee527126c067ccc593d89b21d7a973dc4d58c39d4841e2ece4b5937",
+      "oracle_sha256": "93a9b2b38d0ff170e51dfa05feafc9832ba25b87d3fabd8e4ffbb0778220cd50",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "93a9b2b38d0ff170e51dfa05feafc9832ba25b87d3fabd8e4ffbb0778220cd50",
+      "stderr": ""
+    },
+    {
+      "id": "dynamic-programming/fibonacci/large/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/dynamic-programming/fibonacci/large.rb"
+      ],
+      "source_sha256": "f9d5ef98b2001e6330df7d7e6fe4b66c9fea569f21429fa72775dcd9dcc20182",
+      "oracle_sha256": "46ff2672fc236ce661a4aaf536c0bc1be47698b0ca83ed1a21894081c1bcb99a",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "46ff2672fc236ce661a4aaf536c0bc1be47698b0ca83ed1a21894081c1bcb99a",
+      "stderr": ""
+    },
+    {
+      "id": "graphs-trees-search/bfs/small/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/small.rb"
+      ],
+      "source_sha256": "db57df03783467a7fa37431da9e3278e149497aad2a80c02b76d7b5191b58309",
+      "oracle_sha256": "a2c6c14110a317833ac8f2fbae7080ee844af7469b2aa702876548dcf4c58077",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "a2c6c14110a317833ac8f2fbae7080ee844af7469b2aa702876548dcf4c58077",
+      "stderr": ""
+    },
+    {
+      "id": "graphs-trees-search/bfs/large/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/large.rb"
+      ],
+      "source_sha256": "8c6dc619f52be337a0c6aefab12db214e8ed18fbdac7b588d95ebdd67cf476eb",
+      "oracle_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-parse/small/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-parse/small.rb"
+      ],
+      "source_sha256": "f7887606097bc94aa366809789e88aba99aeae1bcc8863822bb5f5aa35c673d0",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-parse/large/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-parse/large.rb"
+      ],
+      "source_sha256": "4eddc608c85c568ebf2cfc5d6214881ee0b694c7ae15d4044be5a001eeac766d",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-transform/small/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-transform/small.rb"
+      ],
+      "source_sha256": "3aa14baed22e1ffe058152fdecd7e636e4217f6ec67a442e2501a09438b1d5f0",
+      "oracle_sha256": "2c9f910541b11f5d89d7f8b9af827d9017b9250944bfcf91bfb5ad4c028f332c",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "2c9f910541b11f5d89d7f8b9af827d9017b9250944bfcf91bfb5ad4c028f332c",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-transform/large/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-transform/large.rb"
+      ],
+      "source_sha256": "1930c0f623c40625911d82308d3031a10064de376a662b304b2b604bedfa0caf",
+      "oracle_sha256": "1e6ffd8a95fab538ddd645a767e8cc505722d5c8aaf008969f2ed8ab753ff61e",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "1e6ffd8a95fab538ddd645a767e8cc505722d5c8aaf008969f2ed8ab753ff61e",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-traverse/small/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-traverse/small.rb"
+      ],
+      "source_sha256": "9ab866769ff0cbbdd2dfbb2a1ae1beef8b3fc2c4730fac51c3cce1a5734bd89e",
+      "oracle_sha256": "15a47fcd2c3b5d1faf1e53f72336c2a2eb7d55eb2be36a1822543d16ff286511",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "15a47fcd2c3b5d1faf1e53f72336c2a2eb7d55eb2be36a1822543d16ff286511",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-traverse/large/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-traverse/large.rb"
+      ],
+      "source_sha256": "30beb5b894ff96c85a68d9ed5ee9e2f7055d71cd7b5ac829b4c5804a91652b22",
+      "oracle_sha256": "2d5c043a952d70ef9564858b25a01a30613abfb3d1562f67ef8d089646bbf786",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "2d5c043a952d70ef9564858b25a01a30613abfb3d1562f67ef8d089646bbf786",
+      "stderr": ""
+    },
+    {
+      "id": "filesystem/traverse/small/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/filesystem/traverse/small.rb"
+      ],
+      "source_sha256": "69be310f11bf9c9ccd3debee35e2e122359a55067f52da06cc7305134a74678a",
+      "oracle_sha256": "64aeb9975f234becd55bb4635e6e2f2da7a6b7bf0a896f0c07763bdfbfb31420",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "64aeb9975f234becd55bb4635e6e2f2da7a6b7bf0a896f0c07763bdfbfb31420",
+      "stderr": ""
+    },
+    {
+      "id": "filesystem/traverse/large/ruby",
+      "command": [
+        "/usr/bin/ruby",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/filesystem/traverse/large.rb"
+      ],
+      "source_sha256": "c59a4ecc2e2055c4c56fa1f7bbbf6debd40a9fa9a47f60626b5aa2bff2d14fa4",
+      "oracle_sha256": "f739882f40e2be8022d26517e0b963ab2351687845ebe1cf320efd0d0d3e388a",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "f739882f40e2be8022d26517e0b963ab2351687845ebe1cf320efd0d0d3e388a",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/noop/small/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/noop/small.lua54"
+      ],
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "oracle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/noop/large/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/noop/large.lua54"
+      ],
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "oracle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/output/small/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/output/small.lua54"
+      ],
+      "source_sha256": "8ed0ac2482e4c80668acd1a7e78f84a22bf0d5db190ba121de64012fa57d40bc",
+      "oracle_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/output/large/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/output/large.lua54"
+      ],
+      "source_sha256": "8ed0ac2482e4c80668acd1a7e78f84a22bf0d5db190ba121de64012fa57d40bc",
+      "oracle_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/loops/small/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/loops/small.lua54"
+      ],
+      "source_sha256": "e921db2b2a9b49f839584222e8f27670d9cd5aed794b36bc640b3cb08e6c395c",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/loops/large/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/loops/large.lua54"
+      ],
+      "source_sha256": "f54c9460c9dcd354b9fb45af5e86255afaa6636ec296f905f0ef8ec795688c16",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/function-calls/small/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/function-calls/small.lua54"
+      ],
+      "source_sha256": "03d1779a2a068d1114a9aae5b182f34d21735d082793423664b5f34b121e45ef",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/function-calls/large/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/function-calls/large.lua54"
+      ],
+      "source_sha256": "1393c82964afb515531bfde3af6b66614303159044327e29ecb3333634f1d65c",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/scan/small/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/scan/small.lua54"
+      ],
+      "source_sha256": "dd793bceef0e0977bf6343e6612dd992a585c1d045c62021a1ea7f69a9c75d13",
+      "oracle_sha256": "012809f3c6dd9469434a27f69049f79a7051a64d287283a21c7a2eda8560ea8f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "012809f3c6dd9469434a27f69049f79a7051a64d287283a21c7a2eda8560ea8f",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/scan/large/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/scan/large.lua54"
+      ],
+      "source_sha256": "68e7b322fae4937ab420576840dfcaee2c19449b51a871668dc110763fadf518",
+      "oracle_sha256": "ff64aea4ee338d4d7aa76c5668a1338f1f708da153915bd6cf2d287c93ab91a4",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "ff64aea4ee338d4d7aa76c5668a1338f1f708da153915bd6cf2d287c93ab91a4",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/frequency-count/small/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/small.lua54"
+      ],
+      "source_sha256": "45ff87e04e0c651b1c6e9db458d2f0a1d3bb7ccdeba50c638b4e4597f1a4ab90",
+      "oracle_sha256": "607ac266a3500a2f936ff6123c0b1dbd0fb69d60ae891f867d06fcf5029e5153",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "607ac266a3500a2f936ff6123c0b1dbd0fb69d60ae891f867d06fcf5029e5153",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/frequency-count/large/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/large.lua54"
+      ],
+      "source_sha256": "2818f849c13400a85fa4998c2ffe2311d17837f330ece33737c0b202372a12f8",
+      "oracle_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sliding-window/small/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sliding-window/small.lua54"
+      ],
+      "source_sha256": "b63a23ec2c585e850ed52481fc74af3e66e27284b15c4dc78495935354264bff",
+      "oracle_sha256": "834ad1fe4d2e462492d2e245b69739efd19212dba8a3d97ab6c9c4eba88da348",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "834ad1fe4d2e462492d2e245b69739efd19212dba8a3d97ab6c9c4eba88da348",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sliding-window/large/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sliding-window/large.lua54"
+      ],
+      "source_sha256": "cb17e2a7f3307530b197afd17c2ec4f462e9e67fe39d7ce21b21a5f3544c4057",
+      "oracle_sha256": "11af203612a5b64b2090ad43f2e763ee85ac49a1417583df9bcdc5794020e7d2",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "11af203612a5b64b2090ad43f2e763ee85ac49a1417583df9bcdc5794020e7d2",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sort-index/small/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sort-index/small.lua54"
+      ],
+      "source_sha256": "110a9fc57dde568b09425316aef0fc1f132c29a87b95d890bc20d8a03399f326",
+      "oracle_sha256": "acc2bb4062c3240ea98dd342b86ad0a3616c32bce01c590ca49d56ead21274b9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "acc2bb4062c3240ea98dd342b86ad0a3616c32bce01c590ca49d56ead21274b9",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sort-index/large/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sort-index/large.lua54"
+      ],
+      "source_sha256": "6dcc3e78f69d0d7fd73d55f606584902de8d0211fb3723ceb8835d5bcafbbe7b",
+      "oracle_sha256": "9d20e31168f953cf814716be19fcbe4cad26fc3406863c83e32ceb4f96f62509",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "9d20e31168f953cf814716be19fcbe4cad26fc3406863c83e32ceb4f96f62509",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/map-set/small/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/map-set/small.lua54"
+      ],
+      "source_sha256": "4a38c30bc4f8cca3dd48c0eee8ef9e966dcb2376ef4dd014964ec0f3aa9899c0",
+      "oracle_sha256": "45dd24761ced88fe916720c4ebe4bccd4a3fb24514098c586aa9b2384f22f30b",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "45dd24761ced88fe916720c4ebe4bccd4a3fb24514098c586aa9b2384f22f30b",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/map-set/large/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/map-set/large.lua54"
+      ],
+      "source_sha256": "42fdd0574656bc30fc2d9fe0d46d138e52d0d3f956f1814cd15120c507658d54",
+      "oracle_sha256": "2a14beffa69b47ab1b793513ca48a0c5115beb0acbd4ce44cf16dcdfdf7b8258",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "2a14beffa69b47ab1b793513ca48a0c5115beb0acbd4ce44cf16dcdfdf7b8258",
+      "stderr": ""
+    },
+    {
+      "id": "dynamic-programming/fibonacci/small/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/dynamic-programming/fibonacci/small.lua54"
+      ],
+      "source_sha256": "8de262dbecb930f483ea2ee60fa4a4c495c5a44766a58fc9b233364afd2fd909",
+      "oracle_sha256": "93a9b2b38d0ff170e51dfa05feafc9832ba25b87d3fabd8e4ffbb0778220cd50",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "93a9b2b38d0ff170e51dfa05feafc9832ba25b87d3fabd8e4ffbb0778220cd50",
+      "stderr": ""
+    },
+    {
+      "id": "dynamic-programming/fibonacci/large/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/dynamic-programming/fibonacci/large.lua54"
+      ],
+      "source_sha256": "295679284ede57adbba036e8d3a4d4af3834d0c1b80b06a4008b148948845007",
+      "oracle_sha256": "46ff2672fc236ce661a4aaf536c0bc1be47698b0ca83ed1a21894081c1bcb99a",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "46ff2672fc236ce661a4aaf536c0bc1be47698b0ca83ed1a21894081c1bcb99a",
+      "stderr": ""
+    },
+    {
+      "id": "graphs-trees-search/bfs/small/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/small.lua54"
+      ],
+      "source_sha256": "5c7be830d5727fd7858dd9540e12063e3a4e4e450c802fe3212dfc1ebef441c7",
+      "oracle_sha256": "a2c6c14110a317833ac8f2fbae7080ee844af7469b2aa702876548dcf4c58077",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "a2c6c14110a317833ac8f2fbae7080ee844af7469b2aa702876548dcf4c58077",
+      "stderr": ""
+    },
+    {
+      "id": "graphs-trees-search/bfs/large/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/large.lua54"
+      ],
+      "source_sha256": "d2d561ee224b8894c2172cfa1cde22c22b003161e2cf60940f77e8ad273ee34a",
+      "oracle_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651",
+      "stderr": ""
+    },
+    {
+      "id": "filesystem/traverse/small/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/filesystem/traverse/small.lua54"
+      ],
+      "source_sha256": "3765abac6c61b821c5ae89adec33c79f1f836be710f1020b905921c7ed12a397",
+      "oracle_sha256": "64aeb9975f234becd55bb4635e6e2f2da7a6b7bf0a896f0c07763bdfbfb31420",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "64aeb9975f234becd55bb4635e6e2f2da7a6b7bf0a896f0c07763bdfbfb31420",
+      "stderr": ""
+    },
+    {
+      "id": "filesystem/traverse/large/lua54",
+      "command": [
+        "/usr/bin/lua5.4",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/filesystem/traverse/large.lua54"
+      ],
+      "source_sha256": "efc0a2423a1d5e562e52784f07e2ff78325e638bb0309db0fca947ecc5fa1207",
+      "oracle_sha256": "f739882f40e2be8022d26517e0b963ab2351687845ebe1cf320efd0d0d3e388a",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "f739882f40e2be8022d26517e0b963ab2351687845ebe1cf320efd0d0d3e388a",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/noop/small/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/noop/small.luajit"
+      ],
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "oracle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/noop/large/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/noop/large.luajit"
+      ],
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "oracle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/output/small/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/output/small.luajit"
+      ],
+      "source_sha256": "8ed0ac2482e4c80668acd1a7e78f84a22bf0d5db190ba121de64012fa57d40bc",
+      "oracle_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/output/large/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/output/large.luajit"
+      ],
+      "source_sha256": "8ed0ac2482e4c80668acd1a7e78f84a22bf0d5db190ba121de64012fa57d40bc",
+      "oracle_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/loops/small/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/loops/small.luajit"
+      ],
+      "source_sha256": "e921db2b2a9b49f839584222e8f27670d9cd5aed794b36bc640b3cb08e6c395c",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/loops/large/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/loops/large.luajit"
+      ],
+      "source_sha256": "f54c9460c9dcd354b9fb45af5e86255afaa6636ec296f905f0ef8ec795688c16",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/function-calls/small/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/function-calls/small.luajit"
+      ],
+      "source_sha256": "03d1779a2a068d1114a9aae5b182f34d21735d082793423664b5f34b121e45ef",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/function-calls/large/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/function-calls/large.luajit"
+      ],
+      "source_sha256": "1393c82964afb515531bfde3af6b66614303159044327e29ecb3333634f1d65c",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/scan/small/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/scan/small.luajit"
+      ],
+      "source_sha256": "dd793bceef0e0977bf6343e6612dd992a585c1d045c62021a1ea7f69a9c75d13",
+      "oracle_sha256": "012809f3c6dd9469434a27f69049f79a7051a64d287283a21c7a2eda8560ea8f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "012809f3c6dd9469434a27f69049f79a7051a64d287283a21c7a2eda8560ea8f",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/scan/large/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/scan/large.luajit"
+      ],
+      "source_sha256": "68e7b322fae4937ab420576840dfcaee2c19449b51a871668dc110763fadf518",
+      "oracle_sha256": "ff64aea4ee338d4d7aa76c5668a1338f1f708da153915bd6cf2d287c93ab91a4",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "da3bdb5b88d6e86ea8123ea8bc482b0dd4698d34988a13ef6d9104595d2b034c",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/frequency-count/small/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/small.luajit"
+      ],
+      "source_sha256": "45ff87e04e0c651b1c6e9db458d2f0a1d3bb7ccdeba50c638b4e4597f1a4ab90",
+      "oracle_sha256": "607ac266a3500a2f936ff6123c0b1dbd0fb69d60ae891f867d06fcf5029e5153",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "607ac266a3500a2f936ff6123c0b1dbd0fb69d60ae891f867d06fcf5029e5153",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/frequency-count/large/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/large.luajit"
+      ],
+      "source_sha256": "2818f849c13400a85fa4998c2ffe2311d17837f330ece33737c0b202372a12f8",
+      "oracle_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sliding-window/small/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sliding-window/small.luajit"
+      ],
+      "source_sha256": "b63a23ec2c585e850ed52481fc74af3e66e27284b15c4dc78495935354264bff",
+      "oracle_sha256": "834ad1fe4d2e462492d2e245b69739efd19212dba8a3d97ab6c9c4eba88da348",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "834ad1fe4d2e462492d2e245b69739efd19212dba8a3d97ab6c9c4eba88da348",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sliding-window/large/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sliding-window/large.luajit"
+      ],
+      "source_sha256": "cb17e2a7f3307530b197afd17c2ec4f462e9e67fe39d7ce21b21a5f3544c4057",
+      "oracle_sha256": "11af203612a5b64b2090ad43f2e763ee85ac49a1417583df9bcdc5794020e7d2",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "11af203612a5b64b2090ad43f2e763ee85ac49a1417583df9bcdc5794020e7d2",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sort-index/small/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sort-index/small.luajit"
+      ],
+      "source_sha256": "110a9fc57dde568b09425316aef0fc1f132c29a87b95d890bc20d8a03399f326",
+      "oracle_sha256": "acc2bb4062c3240ea98dd342b86ad0a3616c32bce01c590ca49d56ead21274b9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "acc2bb4062c3240ea98dd342b86ad0a3616c32bce01c590ca49d56ead21274b9",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sort-index/large/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sort-index/large.luajit"
+      ],
+      "source_sha256": "6dcc3e78f69d0d7fd73d55f606584902de8d0211fb3723ceb8835d5bcafbbe7b",
+      "oracle_sha256": "9d20e31168f953cf814716be19fcbe4cad26fc3406863c83e32ceb4f96f62509",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "9d20e31168f953cf814716be19fcbe4cad26fc3406863c83e32ceb4f96f62509",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/map-set/small/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/map-set/small.luajit"
+      ],
+      "source_sha256": "4a38c30bc4f8cca3dd48c0eee8ef9e966dcb2376ef4dd014964ec0f3aa9899c0",
+      "oracle_sha256": "45dd24761ced88fe916720c4ebe4bccd4a3fb24514098c586aa9b2384f22f30b",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "45dd24761ced88fe916720c4ebe4bccd4a3fb24514098c586aa9b2384f22f30b",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/map-set/large/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/map-set/large.luajit"
+      ],
+      "source_sha256": "42fdd0574656bc30fc2d9fe0d46d138e52d0d3f956f1814cd15120c507658d54",
+      "oracle_sha256": "2a14beffa69b47ab1b793513ca48a0c5115beb0acbd4ce44cf16dcdfdf7b8258",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "2a14beffa69b47ab1b793513ca48a0c5115beb0acbd4ce44cf16dcdfdf7b8258",
+      "stderr": ""
+    },
+    {
+      "id": "dynamic-programming/fibonacci/small/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/dynamic-programming/fibonacci/small.luajit"
+      ],
+      "source_sha256": "8de262dbecb930f483ea2ee60fa4a4c495c5a44766a58fc9b233364afd2fd909",
+      "oracle_sha256": "93a9b2b38d0ff170e51dfa05feafc9832ba25b87d3fabd8e4ffbb0778220cd50",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "93a9b2b38d0ff170e51dfa05feafc9832ba25b87d3fabd8e4ffbb0778220cd50",
+      "stderr": ""
+    },
+    {
+      "id": "dynamic-programming/fibonacci/large/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/dynamic-programming/fibonacci/large.luajit"
+      ],
+      "source_sha256": "295679284ede57adbba036e8d3a4d4af3834d0c1b80b06a4008b148948845007",
+      "oracle_sha256": "46ff2672fc236ce661a4aaf536c0bc1be47698b0ca83ed1a21894081c1bcb99a",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "46ff2672fc236ce661a4aaf536c0bc1be47698b0ca83ed1a21894081c1bcb99a",
+      "stderr": ""
+    },
+    {
+      "id": "graphs-trees-search/bfs/small/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/small.luajit"
+      ],
+      "source_sha256": "5c7be830d5727fd7858dd9540e12063e3a4e4e450c802fe3212dfc1ebef441c7",
+      "oracle_sha256": "a2c6c14110a317833ac8f2fbae7080ee844af7469b2aa702876548dcf4c58077",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "a2c6c14110a317833ac8f2fbae7080ee844af7469b2aa702876548dcf4c58077",
+      "stderr": ""
+    },
+    {
+      "id": "graphs-trees-search/bfs/large/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/large.luajit"
+      ],
+      "source_sha256": "d2d561ee224b8894c2172cfa1cde22c22b003161e2cf60940f77e8ad273ee34a",
+      "oracle_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651",
+      "stderr": ""
+    },
+    {
+      "id": "filesystem/traverse/small/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/filesystem/traverse/small.luajit"
+      ],
+      "source_sha256": "3765abac6c61b821c5ae89adec33c79f1f836be710f1020b905921c7ed12a397",
+      "oracle_sha256": "64aeb9975f234becd55bb4635e6e2f2da7a6b7bf0a896f0c07763bdfbfb31420",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "64aeb9975f234becd55bb4635e6e2f2da7a6b7bf0a896f0c07763bdfbfb31420",
+      "stderr": ""
+    },
+    {
+      "id": "filesystem/traverse/large/luajit",
+      "command": [
+        "/usr/bin/luajit",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/filesystem/traverse/large.luajit"
+      ],
+      "source_sha256": "efc0a2423a1d5e562e52784f07e2ff78325e638bb0309db0fca947ecc5fa1207",
+      "oracle_sha256": "f739882f40e2be8022d26517e0b963ab2351687845ebe1cf320efd0d0d3e388a",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "f739882f40e2be8022d26517e0b963ab2351687845ebe1cf320efd0d0d3e388a",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/noop/small/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/noop/small.js"
+      ],
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "oracle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/noop/large/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/noop/large.js"
+      ],
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "oracle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/output/small/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/output/small.js"
+      ],
+      "source_sha256": "96b1bf1f92c65638c1f8a52d537b27b8accd9de260137e7dea5d08d68c0ec707",
+      "oracle_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/output/large/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/output/large.js"
+      ],
+      "source_sha256": "96b1bf1f92c65638c1f8a52d537b27b8accd9de260137e7dea5d08d68c0ec707",
+      "oracle_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/loops/small/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/loops/small.js"
+      ],
+      "source_sha256": "d334b9cb7123a17ef821694008e89c95e484ccd5074a3cfefbfd141c778db838",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/loops/large/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/loops/large.js"
+      ],
+      "source_sha256": "0d937b741f52ec2a1c7971018808fc12fbcb96c6400887864f1f78005d522755",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/function-calls/small/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/function-calls/small.js"
+      ],
+      "source_sha256": "4a132200069d70630899758ee3ab8840e2cef69f9721451a88d95b286b12807f",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/function-calls/large/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/function-calls/large.js"
+      ],
+      "source_sha256": "a4afd298537198dbdeafcaecba92f9194204949209e370a4a9669ca6cdc1cbc4",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/scan/small/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/scan/small.js"
+      ],
+      "source_sha256": "4374d4c75a28ec593609c516f99e5ec187d3a759f362174770bbe6a3ba663600",
+      "oracle_sha256": "012809f3c6dd9469434a27f69049f79a7051a64d287283a21c7a2eda8560ea8f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "012809f3c6dd9469434a27f69049f79a7051a64d287283a21c7a2eda8560ea8f",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/scan/large/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/scan/large.js"
+      ],
+      "source_sha256": "1f4bbd7d6f721fddaa0d79d8981a318008053455e6ba59fc4bee399e3aee14a6",
+      "oracle_sha256": "ff64aea4ee338d4d7aa76c5668a1338f1f708da153915bd6cf2d287c93ab91a4",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "ff64aea4ee338d4d7aa76c5668a1338f1f708da153915bd6cf2d287c93ab91a4",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/frequency-count/small/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/small.js"
+      ],
+      "source_sha256": "543fc45807b7702701b26fd89b29f5c1c99a9fe70d3c512fbed973bc76881964",
+      "oracle_sha256": "607ac266a3500a2f936ff6123c0b1dbd0fb69d60ae891f867d06fcf5029e5153",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "607ac266a3500a2f936ff6123c0b1dbd0fb69d60ae891f867d06fcf5029e5153",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/frequency-count/large/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/large.js"
+      ],
+      "source_sha256": "277493add7ea699498fcd681d63ac885f519ab98c3988f3d1240069b774e3517",
+      "oracle_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sliding-window/small/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sliding-window/small.js"
+      ],
+      "source_sha256": "6cbcb82af8219b41b9ccdf391f7ba1080f298f75f09f9184080c4304aff2c289",
+      "oracle_sha256": "834ad1fe4d2e462492d2e245b69739efd19212dba8a3d97ab6c9c4eba88da348",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "834ad1fe4d2e462492d2e245b69739efd19212dba8a3d97ab6c9c4eba88da348",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sliding-window/large/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sliding-window/large.js"
+      ],
+      "source_sha256": "02ae9716a691a464fe11f0ebb38837f8e9acab20ef8b9e686e56000f26f716e9",
+      "oracle_sha256": "11af203612a5b64b2090ad43f2e763ee85ac49a1417583df9bcdc5794020e7d2",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "11af203612a5b64b2090ad43f2e763ee85ac49a1417583df9bcdc5794020e7d2",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sort-index/small/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sort-index/small.js"
+      ],
+      "source_sha256": "cc696d40355b1ae686893d65f2fafa093bd387cda882d90c52ee12c0ef46f9f1",
+      "oracle_sha256": "acc2bb4062c3240ea98dd342b86ad0a3616c32bce01c590ca49d56ead21274b9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "acc2bb4062c3240ea98dd342b86ad0a3616c32bce01c590ca49d56ead21274b9",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sort-index/large/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sort-index/large.js"
+      ],
+      "source_sha256": "f8ecf95214c45fd0a88047bc5eb00175a01a3090acc4ecc91a905408001788ec",
+      "oracle_sha256": "9d20e31168f953cf814716be19fcbe4cad26fc3406863c83e32ceb4f96f62509",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "9d20e31168f953cf814716be19fcbe4cad26fc3406863c83e32ceb4f96f62509",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/map-set/small/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/map-set/small.js"
+      ],
+      "source_sha256": "df6297b71f0caf59ddfd439bb485c891b7681b409d6bb018826b2168db8eef51",
+      "oracle_sha256": "45dd24761ced88fe916720c4ebe4bccd4a3fb24514098c586aa9b2384f22f30b",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "45dd24761ced88fe916720c4ebe4bccd4a3fb24514098c586aa9b2384f22f30b",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/map-set/large/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/map-set/large.js"
+      ],
+      "source_sha256": "7515a4f698e8341adadb24afeda26d3c85115704116a1ba6cf6813b4cf73acba",
+      "oracle_sha256": "2a14beffa69b47ab1b793513ca48a0c5115beb0acbd4ce44cf16dcdfdf7b8258",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "2a14beffa69b47ab1b793513ca48a0c5115beb0acbd4ce44cf16dcdfdf7b8258",
+      "stderr": ""
+    },
+    {
+      "id": "dynamic-programming/fibonacci/small/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/dynamic-programming/fibonacci/small.js"
+      ],
+      "source_sha256": "b3ecd4771fb9acebce3bbea1d2f2d93786ac9eba51663c02f19413ff368b4bdf",
+      "oracle_sha256": "93a9b2b38d0ff170e51dfa05feafc9832ba25b87d3fabd8e4ffbb0778220cd50",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "93a9b2b38d0ff170e51dfa05feafc9832ba25b87d3fabd8e4ffbb0778220cd50",
+      "stderr": ""
+    },
+    {
+      "id": "dynamic-programming/fibonacci/large/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/dynamic-programming/fibonacci/large.js"
+      ],
+      "source_sha256": "89b5658e6510736e4b5851cdaea3dd3351a5af5b3f990c7a1611cfa8cb1306a8",
+      "oracle_sha256": "46ff2672fc236ce661a4aaf536c0bc1be47698b0ca83ed1a21894081c1bcb99a",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "46ff2672fc236ce661a4aaf536c0bc1be47698b0ca83ed1a21894081c1bcb99a",
+      "stderr": ""
+    },
+    {
+      "id": "graphs-trees-search/bfs/small/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/small.js"
+      ],
+      "source_sha256": "89a5d5fe1f06b26b474221dccb45382fcc394b34f4feff1025dfe1ecba2ba791",
+      "oracle_sha256": "a2c6c14110a317833ac8f2fbae7080ee844af7469b2aa702876548dcf4c58077",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "a2c6c14110a317833ac8f2fbae7080ee844af7469b2aa702876548dcf4c58077",
+      "stderr": ""
+    },
+    {
+      "id": "graphs-trees-search/bfs/large/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/graphs-trees-search/bfs/large.js"
+      ],
+      "source_sha256": "52110c0f8b4e3d15b81024a4d979da687f6433c510b4eee1d5edc05c6896d658",
+      "oracle_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b7c168626fe053af4281c556b8b80043664eedef3bc99f8766c81d8cc1623651",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-parse/small/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-parse/small.js"
+      ],
+      "source_sha256": "db3aa53a61ef96ce04f1886b52d185dce977fbc84e9aa0aca2def7534a79ffc4",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-parse/large/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-parse/large.js"
+      ],
+      "source_sha256": "6e6c7d74bd53683f190cf233c50223198ef1bdda8f0025d78b0d61baec743443",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-transform/small/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-transform/small.js"
+      ],
+      "source_sha256": "04fe998c0806c0574485cea48853927b2fd4819858e9798b909c88b4f6929582",
+      "oracle_sha256": "2c9f910541b11f5d89d7f8b9af827d9017b9250944bfcf91bfb5ad4c028f332c",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "2c9f910541b11f5d89d7f8b9af827d9017b9250944bfcf91bfb5ad4c028f332c",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-transform/large/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-transform/large.js"
+      ],
+      "source_sha256": "bc95ba9c5f749e52cc199e2fe071ab24a4592c7986805949034012b990541742",
+      "oracle_sha256": "1e6ffd8a95fab538ddd645a767e8cc505722d5c8aaf008969f2ed8ab753ff61e",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "1e6ffd8a95fab538ddd645a767e8cc505722d5c8aaf008969f2ed8ab753ff61e",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-traverse/small/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-traverse/small.js"
+      ],
+      "source_sha256": "8273384daf249b4cee6a7a90f1a62714e4fee73233e47504969ba519be21a407",
+      "oracle_sha256": "15a47fcd2c3b5d1faf1e53f72336c2a2eb7d55eb2be36a1822543d16ff286511",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "15a47fcd2c3b5d1faf1e53f72336c2a2eb7d55eb2be36a1822543d16ff286511",
+      "stderr": ""
+    },
+    {
+      "id": "structured-data/json-traverse/large/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/structured-data/json-traverse/large.js"
+      ],
+      "source_sha256": "8797461163ae257c7d61348f81e38f8cad1b8b8df4fd2d238b4c23545b17443b",
+      "oracle_sha256": "2d5c043a952d70ef9564858b25a01a30613abfb3d1562f67ef8d089646bbf786",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "2d5c043a952d70ef9564858b25a01a30613abfb3d1562f67ef8d089646bbf786",
+      "stderr": ""
+    },
+    {
+      "id": "filesystem/traverse/small/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/filesystem/traverse/small.js"
+      ],
+      "source_sha256": "d2350df91c65f787ff836dd632596f2b3677e21ec05315bc76d23e35cd812098",
+      "oracle_sha256": "64aeb9975f234becd55bb4635e6e2f2da7a6b7bf0a896f0c07763bdfbfb31420",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "64aeb9975f234becd55bb4635e6e2f2da7a6b7bf0a896f0c07763bdfbfb31420",
+      "stderr": ""
+    },
+    {
+      "id": "filesystem/traverse/large/node",
+      "command": [
+        "/usr/bin/node",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/filesystem/traverse/large.js"
+      ],
+      "source_sha256": "0c3c6c2d0c29bc131af00016fe116ba56b114ee0a3cbb0107c382c7600d4d20f",
+      "oracle_sha256": "f739882f40e2be8022d26517e0b963ab2351687845ebe1cf320efd0d0d3e388a",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "f739882f40e2be8022d26517e0b963ab2351687845ebe1cf320efd0d0d3e388a",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/noop/small/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/noop/small.sh"
+      ],
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "oracle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/noop/large/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/noop/large.sh"
+      ],
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "oracle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/output/small/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/output/small.sh"
+      ],
+      "source_sha256": "53d6377f3191ca81bb9a4e0644769fce2b0c08ea5db74e7d83e49bfe7dd20e58",
+      "oracle_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/output/large/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/output/large.sh"
+      ],
+      "source_sha256": "53d6377f3191ca81bb9a4e0644769fce2b0c08ea5db74e7d83e49bfe7dd20e58",
+      "oracle_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "bb581d6774019ccca7453c252126b43f8c03f42127b558058b72057f7606d24f",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/loops/small/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/loops/small.sh"
+      ],
+      "source_sha256": "e7946435f96002704627a2625a0a0b721122054fb74b3517e9bd1d25a7a646ff",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/loops/large/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/loops/large.sh"
+      ],
+      "source_sha256": "4060b2e9b05600c17a4dae4bcf14fe53b2aa0bd46e1d6a7bf0c17dbde84bee39",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/function-calls/small/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/function-calls/small.sh"
+      ],
+      "source_sha256": "f3bc00c0e607bafc576432a87543efe50c85b97f5a7dae510ee86686136d7d60",
+      "oracle_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "83c02ac2d48c863dab2ccf6870455aadfc2cec073b8db269b517c879d76aa6d9",
+      "stderr": ""
+    },
+    {
+      "id": "sanity/function-calls/large/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/sanity/function-calls/large.sh"
+      ],
+      "source_sha256": "1f0c22f32b4b590c5c603baa8c5e450a6934009ba3305a1247c4e124f3e0ef25",
+      "oracle_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/scan/small/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/scan/small.sh"
+      ],
+      "source_sha256": "ccd56c6020c9789483a99e7de2d052827de218f590d977af198ecd2cf0506114",
+      "oracle_sha256": "012809f3c6dd9469434a27f69049f79a7051a64d287283a21c7a2eda8560ea8f",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "012809f3c6dd9469434a27f69049f79a7051a64d287283a21c7a2eda8560ea8f",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/scan/large/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/scan/large.sh"
+      ],
+      "source_sha256": "213d72fc37defc8438bfc4329dc4fc5f320501d061311a8d62a171c20911b6af",
+      "oracle_sha256": "ff64aea4ee338d4d7aa76c5668a1338f1f708da153915bd6cf2d287c93ab91a4",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "ff64aea4ee338d4d7aa76c5668a1338f1f708da153915bd6cf2d287c93ab91a4",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/frequency-count/small/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/small.sh"
+      ],
+      "source_sha256": "875bd4e99272c74ff25a08b07e18ee263bcf5702b56a147a7042cbce96b35522",
+      "oracle_sha256": "607ac266a3500a2f936ff6123c0b1dbd0fb69d60ae891f867d06fcf5029e5153",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "607ac266a3500a2f936ff6123c0b1dbd0fb69d60ae891f867d06fcf5029e5153",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/frequency-count/large/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/frequency-count/large.sh"
+      ],
+      "source_sha256": "0676e9caee60a42fa3296c15b11b9421d73419c07c4eb8e1fba9183c671f183e",
+      "oracle_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "b818ee0bb5dda0ff06d35426445b53d151f60dbecac2b4b34f2bdf559de72634",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sliding-window/small/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sliding-window/small.sh"
+      ],
+      "source_sha256": "33485a0e6360ace6e3829ad161d47326ee29c2f3cbdef4edec8643778d93d6c2",
+      "oracle_sha256": "834ad1fe4d2e462492d2e245b69739efd19212dba8a3d97ab6c9c4eba88da348",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "834ad1fe4d2e462492d2e245b69739efd19212dba8a3d97ab6c9c4eba88da348",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sliding-window/large/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sliding-window/large.sh"
+      ],
+      "source_sha256": "7f0142ef0c9caa234ee1fd1ef61d0e85dfb132e378cffa210ae05b5114fd3c0e",
+      "oracle_sha256": "11af203612a5b64b2090ad43f2e763ee85ac49a1417583df9bcdc5794020e7d2",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "11af203612a5b64b2090ad43f2e763ee85ac49a1417583df9bcdc5794020e7d2",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sort-index/small/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sort-index/small.sh"
+      ],
+      "source_sha256": "5da37c3c9770912c1616676d210cc9e570806c1e0856628b5134c503faf2632c",
+      "oracle_sha256": "acc2bb4062c3240ea98dd342b86ad0a3616c32bce01c590ca49d56ead21274b9",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "acc2bb4062c3240ea98dd342b86ad0a3616c32bce01c590ca49d56ead21274b9",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/sort-index/large/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/sort-index/large.sh"
+      ],
+      "source_sha256": "5846da36f02a6a0d6a98631b8e4c4a5ccaa5c32dfcc9fd6f184da9bfbf29a574",
+      "oracle_sha256": "9d20e31168f953cf814716be19fcbe4cad26fc3406863c83e32ceb4f96f62509",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "9d20e31168f953cf814716be19fcbe4cad26fc3406863c83e32ceb4f96f62509",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/map-set/small/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/map-set/small.sh"
+      ],
+      "source_sha256": "9866a610733abf59a788032cdd5199dcca101122bcd713f7502ca4b4f3a5ba96",
+      "oracle_sha256": "45dd24761ced88fe916720c4ebe4bccd4a3fb24514098c586aa9b2384f22f30b",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "45dd24761ced88fe916720c4ebe4bccd4a3fb24514098c586aa9b2384f22f30b",
+      "stderr": ""
+    },
+    {
+      "id": "arrays-strings-hash/map-set/large/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/arrays-strings-hash/map-set/large.sh"
+      ],
+      "source_sha256": "1a04a9b8720ab3c203f6f93156492e206ab4c6c9388dc7ad2f8e223feda361c4",
+      "oracle_sha256": "2a14beffa69b47ab1b793513ca48a0c5115beb0acbd4ce44cf16dcdfdf7b8258",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "2a14beffa69b47ab1b793513ca48a0c5115beb0acbd4ce44cf16dcdfdf7b8258",
+      "stderr": ""
+    },
+    {
+      "id": "filesystem/traverse/small/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/filesystem/traverse/small.sh"
+      ],
+      "source_sha256": "dd7c2c5d268d03d7076e12b3e8396ea8f8b32bb97d90d0f21cfee1856fad7069",
+      "oracle_sha256": "64aeb9975f234becd55bb4635e6e2f2da7a6b7bf0a896f0c07763bdfbfb31420",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "64aeb9975f234becd55bb4635e6e2f2da7a6b7bf0a896f0c07763bdfbfb31420",
+      "stderr": ""
+    },
+    {
+      "id": "filesystem/traverse/large/bash",
+      "command": [
+        "/usr/bin/bash",
+        "/home/nick/Repositories/nift/nift-benchmarks/scripting-benchmark/benchmarks/sources/filesystem/traverse/large.sh"
+      ],
+      "source_sha256": "0c20d351512a13429eda7f900a54244fb023784fec93130586fcda0e5b4222dd",
+      "oracle_sha256": "f739882f40e2be8022d26517e0b963ab2351687845ebe1cf320efd0d0d3e388a",
+      "exit_code": 0,
+      "correct": true,
+      "stdout_sha256": "f739882f40e2be8022d26517e0b963ab2351687845ebe1cf320efd0d0d3e388a",
+      "stderr": ""
+    }
+  ],
+  "complete": true,
+  "all_correct": true
+}
