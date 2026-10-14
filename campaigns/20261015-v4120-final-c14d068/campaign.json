@@ -20,13 +20,14 @@
       "observations_planned": 9348,
       "measured_planned": 8880,
       "warmups_planned": 468,
-      "stage": "local preflight passed",
+      "stage": "waiting for clean candidate build",
       "local_certification": "PASS 324 correctness records; graph-readiness/local-build-certification.json",
-      "cloud": "not provisioned",
+      "cloud": "fresh provisioned",
       "audit": "pending",
       "diagnostics": "pending",
       "evidence": "pending",
-      "teardown": "pending"
+      "teardown": "pending",
+      "linode_id": 108162775
     },
     "concurrency": {
       "suite_sha": "d6d0cac9e7dd65d12b5bbccd0ec5b542d187c0a6",
@@ -34,13 +35,14 @@
       "observations_planned": 11506,
       "measured_planned": 10290,
       "warmups_planned": 1216,
-      "stage": "local preflight passed",
+      "stage": "waiting for clean candidate build",
       "local_certification": "PASS 608 supported certification cells and semantic gates; 32 explicitly excluded cells retained",
-      "cloud": "not provisioned",
+      "cloud": "fresh provisioned",
       "audit": "pending",
       "diagnostics": "pending",
       "evidence": "pending",
-      "teardown": "pending"
+      "teardown": "pending",
+      "linode_id": 108162758
     },
     "filesystem-automation": {
       "suite_sha": "75e77bb4bb6fb0b8c49920f641c77b394aec5985",
@@ -48,13 +50,14 @@
       "observations_planned": 15016,
       "measured_planned": 14264,
       "warmups_planned": 752,
-      "stage": "local preflight passed",
+      "stage": "waiting for clean candidate build",
       "local_certification": "PASS 662 primary + 90 filter cells, independent fixture/distribution audits, edge/exactly-once gates; runtime-readiness/runtime-local-certification.json",
-      "cloud": "not provisioned",
+      "cloud": "fresh provisioned",
       "audit": "pending",
       "diagnostics": "pending",
       "evidence": "pending",
-      "teardown": "pending"
+      "teardown": "pending",
+      "linode_id": 108162735
     },
     "scripting-benchmark": {
       "suite_sha": "f889fff4af94658259932f611d4b0ad681c1eebf",
@@ -62,13 +65,14 @@
       "observations_planned": 2256,
       "measured_planned": 1880,
       "warmups_planned": 376,
-      "stage": "local preflight passed",
+      "stage": "waiting for clean candidate build",
       "local_certification": "PASS; legacy-readiness/local/gates.json",
-      "cloud": "not provisioned",
+      "cloud": "fresh provisioned",
       "audit": "pending",
       "diagnostics": "pending",
       "evidence": "pending",
-      "teardown": "pending"
+      "teardown": "pending",
+      "linode_id": 108162749
     },
     "shell-benchmark": {
       "suite_sha": "aec1349fd0ba986108d9c851944e41e5ed330b6f",
@@ -76,13 +80,14 @@
       "observations_planned": 8566,
       "measured_planned": 7855,
       "warmups_planned": 711,
-      "stage": "local preflight passed",
+      "stage": "waiting for clean candidate build",
       "local_certification": "PASS; legacy-readiness/local/gates.json",
-      "cloud": "not provisioned",
+      "cloud": "fresh provisioned",
       "audit": "pending",
       "diagnostics": "pending",
       "evidence": "pending",
-      "teardown": "pending"
+      "teardown": "pending",
+      "linode_id": 108162738
     },
     "task-runners": {
       "suite_sha": "f37b63bd13cf71256607ba4652bcc911e270f94e",
@@ -90,13 +95,14 @@
       "observations_planned": 1527,
       "measured_planned": 1434,
       "warmups_planned": 93,
-      "stage": "local preflight passed",
+      "stage": "waiting for clean candidate build",
       "local_certification": "PASS 21 semantic records + 186 full smoke observations; independent audit all correct; graph-readiness/local-build-certification.json",
-      "cloud": "not provisioned",
+      "cloud": "fresh provisioned",
       "audit": "pending",
       "diagnostics": "pending",
       "evidence": "pending",
-      "teardown": "pending"
+      "teardown": "pending",
+      "linode_id": 108162743
     },
     "template-engines": {
       "suite_sha": "3c0dcdd1aad3cbb0a0c638c9041233b1e329dc6f",
@@ -104,13 +110,14 @@
       "observations_planned": 18700,
       "measured_planned": 17950,
       "warmups_planned": 750,
-      "stage": "local preflight passed",
+      "stage": "waiting for clean candidate build",
       "local_certification": "PASS 393 supported, 10 semantic, 20 variant checks; runtime-readiness receipts",
-      "cloud": "not provisioned",
+      "cloud": "fresh provisioned",
       "audit": "pending",
       "diagnostics": "pending",
       "evidence": "pending",
-      "teardown": "pending"
+      "teardown": "pending",
+      "linode_id": 108162740
     },
     "website-generator-benchmark": {
       "suite_sha": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
@@ -118,13 +125,14 @@
       "observations_planned": 234,
       "measured_planned": 195,
       "warmups_planned": 39,
-      "stage": "local preflight passed",
+      "stage": "waiting for clean candidate build",
       "local_certification": "PASS; legacy-readiness/local/gates.json",
-      "cloud": "not provisioned",
+      "cloud": "fresh provisioned",
       "audit": "pending",
       "diagnostics": "pending",
       "evidence": "pending",
-      "teardown": "pending"
+      "teardown": "pending",
+      "linode_id": 108162733
     }
   },
   "filesystem_filter_suite_sha": "1ab31488eb949eb8f8cd6d50b0eb9fd59e1ad78e",
@@ -133,6 +141,6 @@
   "publication_authorized": false,
   "tag_release_packages_downloads_authorized": false,
   "ci": "9/9 exact final-SHA workflows independently verified; receipt ci/runs-initial.json",
-  "status": "all eight local preflight gates passed; fresh provisioning authorized",
+  "status": "eight fresh dedicated hosts provisioned; exact-candidate build launch in progress; official timing not started",
   "forensic_scope": "Available interrupted records contain CI/preparation only, not authoritative eight-suite benchmark job executions"
 }
