@@ -4,7 +4,8 @@
     "scripting",
     "template-engines",
     "concurrency",
-    "website-generator"
+    "website-generator",
+    "task-runners"
   ],
   "same_node_version_improvements": [
     {
@@ -85,6 +86,19 @@
       "samples_each": 3,
       "confidence": "descriptive same-node3pairs; schedule ranges overlap, no formal significance",
       "improvement_percent": 69.47557437140956
+    },
+    {
+      "suite": "task-runners",
+      "scenario": "tiny-100-j4/full",
+      "unit": "ms/invocation",
+      "release": 138.332636,
+      "original": 129.031413,
+      "final": 134.851296,
+      "final_vs_release_percent": -2.516644011612712,
+      "final_vs_original_percent": 4.510438864991739,
+      "samples_each": 5,
+      "confidence": "Descriptive same-node rotated five samples/source; overlapping ranges, no formal significance or major regression claim.",
+      "improvement_percent": 2.516644011612712
     }
   ],
   "same_node_version_regressions": [
@@ -162,6 +176,21 @@
       "confidence": "descriptive same-node3pairs; schedule ranges overlap, no formal significance",
       "baseline": "release",
       "change_percent": 8.695247840604692,
+      "classification": "descriptive same-node increase; not formal significance"
+    },
+    {
+      "suite": "task-runners",
+      "scenario": "tiny-100-j4/full",
+      "unit": "ms/invocation",
+      "release": 138.332636,
+      "original": 129.031413,
+      "final": 134.851296,
+      "final_vs_release_percent": -2.516644011612712,
+      "final_vs_original_percent": 4.510438864991739,
+      "samples_each": 5,
+      "confidence": "Descriptive same-node rotated five samples/source; overlapping ranges, no formal significance or major regression claim.",
+      "baseline": "original",
+      "change_percent": 4.510438864991739,
       "classification": "descriptive same-node increase; not formal significance"
     }
   ],
@@ -2613,6 +2642,18 @@
       "final_vs_original_percent": -4.658826430711061,
       "samples_each": 3,
       "confidence": "descriptive same-node3pairs; schedule ranges overlap, no formal significance"
+    },
+    {
+      "suite": "task-runners",
+      "scenario": "tiny-100-j4/full",
+      "unit": "ms/invocation",
+      "release": 138.332636,
+      "original": 129.031413,
+      "final": 134.851296,
+      "final_vs_release_percent": -2.516644011612712,
+      "final_vs_original_percent": 4.510438864991739,
+      "samples_each": 5,
+      "confidence": "Descriptive same-node rotated five samples/source; overlapping ranges, no formal significance or major regression claim."
     }
   ],
   "memory_diagnostic_rows": [
@@ -2645,6 +2686,16 @@
       "final_kib": 17596,
       "final_vs_release_percent": 0.7327684909548937,
       "qualification": "separate same-node diagnostic; quantized raw child peak, no leak claim"
+    },
+    {
+      "suite": "task-runners",
+      "scenario": "tiny-100-j4/full",
+      "metric": "maximum child peak KiB, not aggregate tree",
+      "release_kib": 7680,
+      "original_kib": 7936,
+      "final_kib": 7936,
+      "final_vs_release_percent": 3.3333333333333437,
+      "qualification": "raw quantized diagnostic; original/final equal; no leak claim"
     }
   ],
   "template_memory_control": "Supervisor allocation0\u219264MiB moves noopraw16.75\u219280.75MiB, proving inherited floor; raw retained/unranked.",
@@ -4098,5 +4149,287 @@
       "confidence": "audited same-node minimal-page corpus, exact fresh/warm boundary; not real-site migration or universalSSGranking"
     }
   ],
-  "concurrency_memory_policy": "Inherited wait4floor retained/unranked; heldREADY snapshots/guardedcensor controls separate. Censored elapsed is not a validwall ranking."
+  "concurrency_memory_policy": "Inherited wait4floor retained/unranked; heldREADY snapshots/guardedcensor controls separate. Censored elapsed is not a validwall ranking.",
+  "current_task_comparisons": [
+    {
+      "scenario": "mixed-20-j4/fanout",
+      "nift": 58.448714,
+      "best_peer": "turbo",
+      "peer": 442.416678,
+      "ratio": 0.13211236580009764,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-20-j4/full",
+      "nift": 464.4696025,
+      "best_peer": "nx",
+      "peer": 1125.1945114999999,
+      "ratio": 0.4127904977787479,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-20-j4/leaf",
+      "nift": 56.0989575,
+      "best_peer": "turbo",
+      "peer": 414.06970550000005,
+      "ratio": 0.13548191706577287,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-20-j4/multi-target",
+      "nift": 54.8339725,
+      "best_peer": "turbo",
+      "peer": 435.1529135,
+      "ratio": 0.12601081320807933,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-20-j4/noop",
+      "nift": 7.4320835,
+      "best_peer": "turbo",
+      "peer": 58.386855499999996,
+      "ratio": 0.127290353905084,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-20-j4/shared",
+      "nift": 412.47777,
+      "best_peer": "nx",
+      "peer": 1121.1029205,
+      "ratio": 0.3679214124391357,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-20-j4/target-leaf",
+      "nift": 52.610945,
+      "best_peer": "turbo",
+      "peer": 404.85048500000005,
+      "ratio": 0.12995154248117052,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-20-j4/target-subgraph",
+      "nift": 393.004596,
+      "best_peer": "nx",
+      "peer": 1048.402287,
+      "ratio": 0.3748604909329047,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-20-j4/uncached-full",
+      "nift": 442.1039145,
+      "best_peer": "nx",
+      "peer": 1089.7346085,
+      "ratio": 0.40569870044647666,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-100-j1/full",
+      "nift": 4716.445293,
+      "best_peer": "nx",
+      "peer": 6139.473261,
+      "ratio": 0.7682166030366884,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-100-j2/full",
+      "nift": 2525.477656,
+      "best_peer": "nx",
+      "peer": 3586.495926,
+      "ratio": 0.7041629791607353,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-100-j4/fanout",
+      "nift": 163.844672,
+      "best_peer": "nx",
+      "peer": 928.214506,
+      "ratio": 0.17651595718543964,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-100-j4/full",
+      "nift": 1425.073629,
+      "best_peer": "nx",
+      "peer": 2287.110017,
+      "ratio": 0.6230892341896468,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-100-j4/leaf",
+      "nift": 65.3638475,
+      "best_peer": "turbo",
+      "peer": 431.786673,
+      "ratio": 0.1513799558607498,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-100-j4/noop",
+      "nift": 16.354072000000002,
+      "best_peer": "turbo",
+      "peer": 71.9431425,
+      "ratio": 0.2273194001777168,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-100-j4/shared",
+      "nift": 903.696001,
+      "best_peer": "nx",
+      "peer": 1554.099813,
+      "ratio": 0.581491609123564,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-1000-j4/fanout",
+      "nift": 1449.169013,
+      "best_peer": "nx",
+      "peer": 3372.805099,
+      "ratio": 0.42966283863531357,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-1000-j4/full",
+      "nift": 13410.496777,
+      "best_peer": "nx",
+      "peer": 17838.287497,
+      "ratio": 0.7517816258570418,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-1000-j4/leaf",
+      "nift": 172.43720100000002,
+      "best_peer": "turbo",
+      "peer": 747.921514,
+      "ratio": 0.23055520903226753,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-1000-j4/noop",
+      "nift": 118.41790750000001,
+      "best_peer": "turbo",
+      "peer": 436.1150645,
+      "ratio": 0.271529046206566,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "mixed-1000-j4/shared",
+      "nift": 6798.756708,
+      "best_peer": "nx",
+      "peer": 9865.573508,
+      "ratio": 0.6891395317755105,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "tiny-100-j4/fanout",
+      "nift": 27.705294,
+      "best_peer": "nx",
+      "peer": 758.189681,
+      "ratio": 0.03654137571940919,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "tiny-100-j4/full",
+      "nift": 130.937657,
+      "best_peer": "nx",
+      "peer": 1489.571253,
+      "ratio": 0.08790291618228484,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "tiny-100-j4/leaf",
+      "nift": 18.794365499999998,
+      "best_peer": "turbo",
+      "peer": 385.96586649999995,
+      "ratio": 0.048694372044943514,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "tiny-100-j4/noop",
+      "nift": 14.0900525,
+      "best_peer": "turbo",
+      "peer": 70.0337715,
+      "ratio": 0.20118940045946263,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "tiny-100-j4/one-percent",
+      "nift": 18.317708,
+      "best_peer": "turbo",
+      "peer": 382.282038,
+      "ratio": 0.04791673732784693,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "tiny-1000-j4/fanout",
+      "nift": 238.544289,
+      "best_peer": "nx",
+      "peer": 2566.731168,
+      "ratio": 0.09293699783365861,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "tiny-1000-j4/full",
+      "nift": 1534.467179,
+      "best_peer": "nx",
+      "peer": 10690.134622,
+      "ratio": 0.14354049160822627,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "tiny-1000-j4/leaf",
+      "nift": 104.291642,
+      "best_peer": "turbo",
+      "peer": 683.5100225,
+      "ratio": 0.15258246194919547,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "tiny-1000-j4/noop",
+      "nift": 98.6289605,
+      "best_peer": "turbo",
+      "peer": 412.62814000000003,
+      "ratio": 0.23902625860659915,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    },
+    {
+      "scenario": "tiny-1000-j4/one-percent",
+      "nift": 117.399592,
+      "best_peer": "turbo",
+      "peer": 1432.019175,
+      "ratio": 0.08198185754042016,
+      "boundary": "fresh CLI; C CLOCK_MONOTONIC fork/exec through wait4",
+      "contract_sha256": "c9767141e5e6931a64dd2f58f79ca0612403132ecd46b289ea5a06147a6bc4ae"
+    }
+  ],
+  "task_strength_qualification": "Nift lower wall medians in all31 frozen configurations; maximum-child RSS separately audited, not total tree. Baseline adapter capability boundaries do not certify all current core APIs."
 }

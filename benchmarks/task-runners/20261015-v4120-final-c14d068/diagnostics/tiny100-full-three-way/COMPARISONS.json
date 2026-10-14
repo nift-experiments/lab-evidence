@@ -1,0 +1,43 @@
+{
+  "scope": "separate same-node tiny100 full;5 measured/source; descriptive,no significance claim",
+  "comparisons": [
+    {
+      "baseline": "release",
+      "candidate": "final",
+      "wall_ms": {
+        "baseline": 138.332636,
+        "final": 134.851296,
+        "change_percent": -2.516644011612712
+      },
+      "cpu_ms": {
+        "baseline": 402.135,
+        "final": 386.51,
+        "change_percent": -3.885511084586024
+      },
+      "peak_rss_kib": {
+        "baseline": 7680,
+        "final": 7936,
+        "change_percent": 3.3333333333333437
+      }
+    },
+    {
+      "baseline": "original",
+      "candidate": "final",
+      "wall_ms": {
+        "baseline": 129.031413,
+        "final": 134.851296,
+        "change_percent": 4.510438864991739
+      },
+      "cpu_ms": {
+        "baseline": 397.755,
+        "final": 386.51,
+        "change_percent": -2.8271171952583884
+      },
+      "peak_rss_kib": {
+        "baseline": 7936,
+        "final": 7936,
+        "change_percent": 0.0
+      }
+    }
+  ]
+}

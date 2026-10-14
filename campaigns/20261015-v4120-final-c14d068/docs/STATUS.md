@@ -4,7 +4,7 @@ Candidate: `c14d06835bca515a5281e41da0e40219c2d60ef0`, unreleased Nift v4.12.0. 
 
 ## Engineering findings
 
-Four official suites are now independently audited: scripting, template, concurrency and website. Two hosts are closed; concurrency and website are running separated post-timing diagnostics. Build, filesystem and shell remain collecting. Task completed all 1,527 official observations; local independent audit is collecting.
+Five official suites are independently audited: scripting, template, concurrency, website and task. Four hosts are verified closed. Task diagnostics are complete and awaiting pushed evidence and teardown. Build, filesystem and shell continue their frozen full collections.
 
 Scripting is fully audited: 1,880 measured and 376 warmups. Its separate 72-observation exact-source same-node comparison substantially recovers the major original call regressions. Small calls: release 4.710201 → original 7.374958 → final 4.678490 ms. Large: release193.600459 → original 469.418897 → final 198.619789 ms. Large retains +2.59% (+5.01933ms) versus release and 8/10 final pairs slower; overlapping ranges do not prove equality. Current official competitor deficits still reach 137.83× for frequency-count and 136.53× for large calls versus LuaJIT.
 
@@ -14,7 +14,7 @@ Complete current interim leagues, confidence qualifications and recovery table a
 
 ## Lifecycle and remaining work
 
-Scripting host 108162749 and template host 108162740 are closed after official evidence, audits and all required diagnostics were pushed at 3521529. CLI absence/API404 and per-host known-host removal verified; lifecycle receipts pushed 84656a4. Shared private access remains only for six active campaign hosts.
+Scripting host 108162749 and template host 108162740 are closed after official evidence, audits and all required diagnostics were pushed at 3521529. CLI absence/API404 and per-host known-host removal verified; lifecycle receipts pushed 84656a4. Shared private access remains only for the remaining campaign hosts.
 
 Full collectors active: build 108162775, filesystem 108162735, shell 108162738 and task 108162743. Post-timing diagnostics active: concurrency 108162758 and website 108162733. Frozen total plan 67,153 observations. Task's first 153 observations and failed 154/cache are rejected and preserved for preflight-cache contamination: Turbo restored valid prior outputs but the benchmark required action execution. The authoritative unchanged full 1,527-observation restart uses a fresh exact-suite workspace; no rejected samples reused. Both build and other collectors remain unaffected.
 
@@ -27,3 +27,5 @@ Latest audited competitive results: persistent tiny10k Nift30,949.017ms versusGo
 ## Latest closeout
 
 Task full series independently audited: 1,434 measured +93 warmups; targeted tiny100 full same-node diagnostic queued. Concurrency queue improves69.48% versus release; schedule retains descriptive+8.70% with overlapping ranges. Retained runtime slowdown remains8.07x over ten requests; no root cause established. Held10k timed out beforeREADY and is excluded from rankings. Website and concurrency official+required diagnostic evidence pushed0785ec0; both hosts deleted with CLI absence/API404 and known-host cleanup verified. Four of eight hosts now closed. Build, filesystem and shell continue timing; task remains for its bounded diagnostic. No publication authorized.
+
+Latest task control: release138.333/original129.031/final134.851ms; final−2.52% versus release, +4.51% versus original, overlapping five-sample ranges. All18 diagnostic observations audited. Build checkpoint1998/9348; shell expanded checkpoint423; filesystem rename10000 healthy. These partial counts are not accepted final results.

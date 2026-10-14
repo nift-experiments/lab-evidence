@@ -1,6 +1,6 @@
 # Interim final-candidate recertification
 
-Audited official suites: scripting, template-engines, concurrency, website-generator. Exact-source three-way version diagnostics remain separate from current official peer results and historical cross-node trends. No publication or release is authorized.
+Audited official suites: scripting, template-engines, concurrency, website-generator, task-runners. Exact-source three-way version diagnostics remain separate from current official peer results and historical cross-node trends. No publication or release is authorized.
 
 ## Best same-node wall improvements versus release — complete
 
@@ -11,7 +11,8 @@ Audited official suites: scripting, template-engines, concurrency, website-gener
 | 3 | template-engines / loop-10000/fresh | 158.529676 | 73.741216 | 77.354308 | ms/invocation | 51.21% | -4.90% | 3 |
 | 4 | template-engines / article/source-render | 0.433770 | 0.267626 | 0.268566 | ms/render | 38.09% | -0.35% | 3 |
 | 5 | template-engines / article/fresh | 3.689644 | 3.558491 | 3.507010 | ms/invocation | 4.95% | +1.45% | 3 |
-| 6 | scripting / sanity/function-calls/small | 4.710201 | 7.374958 | 4.678490 | ms/invocation | 0.67% | +36.56% | 10 |
+| 6 | task-runners / tiny-100-j4/full | 138.332636 | 129.031413 | 134.851296 | ms/invocation | 2.52% | -4.51% | 5 |
+| 7 | scripting / sanity/function-calls/small | 4.710201 | 7.374958 | 4.678490 | ms/invocation | 0.67% | +36.56% | 10 |
 
 ## Every measured positive same-node wall change — complete
 
@@ -19,9 +20,10 @@ Audited official suites: scripting, template-engines, concurrency, website-gener
 |---:|---|---|---:|---:|---:|---|
 | 1 | concurrency / schedule-1000 | release | 333.087228 | 362.049988 | 8.70% | descriptive same-node increase; not formal significance |
 | 2 | template-engines / loop-10000/fresh | original | 73.741216 | 77.354308 | 4.90% | descriptive same-node increase; not formal significance |
-| 3 | website-generator / 10000/application-cold | release | 2871.544599 | 2951.495366 | 2.78% | descriptive same-node increase; not formal significance |
-| 4 | scripting / sanity/function-calls/large | release | 193.600459 | 198.619788 | 2.59% | descriptive same-node increase; not formal significance |
-| 5 | template-engines / article/source-render | original | 0.267626 | 0.268566 | 0.35% | descriptive same-node increase; not formal significance |
+| 3 | task-runners / tiny-100-j4/full | original | 129.031413 | 134.851296 | 4.51% | descriptive same-node increase; not formal significance |
+| 4 | website-generator / 10000/application-cold | release | 2871.544599 | 2951.495366 | 2.78% | descriptive same-node increase; not formal significance |
+| 5 | scripting / sanity/function-calls/large | release | 193.600459 | 198.619788 | 2.59% | descriptive same-node increase; not formal significance |
+| 6 | template-engines / article/source-render | original | 0.267626 | 0.268566 | 0.35% | descriptive same-node increase; not formal significance |
 
 Every comparison above uses the same node, exact versions and frozen diagnostic boundaries. Template diagnostics have three measured observations/version and remain descriptive. Scripting has ten; final/release ranges overlap, and large calls are slower in eight of ten paired blocks. Overlapping ranges do not prove equality or eliminate a small regression. Major original call regressions have disjoint ranges and all ten final blocks faster. Near-flat changes are retained. Original/checkpoint and release baselines are explicitly distinguished.
 
