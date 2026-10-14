@@ -7,18 +7,21 @@ Audited official suites: scripting, template-engines, concurrency, website-gener
 | Rank | Suite / scenario | Release | Original | Final | Unit | Improvement vs release | Recovery vs original | Samples/version |
 |---:|---|---:|---:|---:|---|---:|---:|---:|
 | 1 | template-engines / loop-10000/source-render | 118.471604 | 33.514301 | 32.942846 | ms/render | 72.19% | +1.71% | 3 |
-| 2 | template-engines / loop-10000/fresh | 158.529676 | 73.741216 | 77.354308 | ms/invocation | 51.21% | -4.90% | 3 |
-| 3 | template-engines / article/source-render | 0.433770 | 0.267626 | 0.268566 | ms/render | 38.09% | -0.35% | 3 |
-| 4 | template-engines / article/fresh | 3.689644 | 3.558491 | 3.507010 | ms/invocation | 4.95% | +1.45% | 3 |
-| 5 | scripting / sanity/function-calls/small | 4.710201 | 7.374958 | 4.678490 | ms/invocation | 0.67% | +36.56% | 10 |
+| 2 | concurrency / queue-100000-4-4 | 37528.313677 | 12015.063135 | 11455.302198 | ms/request | 69.48% | +4.66% | 3 |
+| 3 | template-engines / loop-10000/fresh | 158.529676 | 73.741216 | 77.354308 | ms/invocation | 51.21% | -4.90% | 3 |
+| 4 | template-engines / article/source-render | 0.433770 | 0.267626 | 0.268566 | ms/render | 38.09% | -0.35% | 3 |
+| 5 | template-engines / article/fresh | 3.689644 | 3.558491 | 3.507010 | ms/invocation | 4.95% | +1.45% | 3 |
+| 6 | scripting / sanity/function-calls/small | 4.710201 | 7.374958 | 4.678490 | ms/invocation | 0.67% | +36.56% | 10 |
 
 ## Every measured positive same-node wall change — complete
 
 | Rank | Suite / scenario | Baseline | Baseline value | Final | Increase | Classification |
 |---:|---|---|---:|---:|---:|---|
-| 1 | template-engines / loop-10000/fresh | original | 73.741216 | 77.354308 | 4.90% | descriptive same-node increase; not formal significance |
-| 2 | scripting / sanity/function-calls/large | release | 193.600459 | 198.619788 | 2.59% | descriptive same-node increase; not formal significance |
-| 3 | template-engines / article/source-render | original | 0.267626 | 0.268566 | 0.35% | descriptive same-node increase; not formal significance |
+| 1 | concurrency / schedule-1000 | release | 333.087228 | 362.049988 | 8.70% | descriptive same-node increase; not formal significance |
+| 2 | template-engines / loop-10000/fresh | original | 73.741216 | 77.354308 | 4.90% | descriptive same-node increase; not formal significance |
+| 3 | website-generator / 10000/application-cold | release | 2871.544599 | 2951.495366 | 2.78% | descriptive same-node increase; not formal significance |
+| 4 | scripting / sanity/function-calls/large | release | 193.600459 | 198.619788 | 2.59% | descriptive same-node increase; not formal significance |
+| 5 | template-engines / article/source-render | original | 0.267626 | 0.268566 | 0.35% | descriptive same-node increase; not formal significance |
 
 Every comparison above uses the same node, exact versions and frozen diagnostic boundaries. Template diagnostics have three measured observations/version and remain descriptive. Scripting has ten; final/release ranges overlap, and large calls are slower in eight of ten paired blocks. Overlapping ranges do not prove equality or eliminate a small regression. Major original call regressions have disjoint ranges and all ten final blocks faster. Near-flat changes are retained. Original/checkpoint and release baselines are explicitly distinguished.
 

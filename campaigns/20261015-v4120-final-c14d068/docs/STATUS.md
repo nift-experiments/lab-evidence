@@ -4,7 +4,7 @@ Candidate: `c14d06835bca515a5281e41da0e40219c2d60ef0`, unreleased Nift v4.12.0. 
 
 ## Engineering findings
 
-Four official suites are now independently audited: scripting, template, concurrency and website. Two hosts are closed; concurrency and website are running separated post-timing diagnostics. Build, task, filesystem and shell remain collecting.
+Four official suites are now independently audited: scripting, template, concurrency and website. Two hosts are closed; concurrency and website are running separated post-timing diagnostics. Build, filesystem and shell remain collecting. Task completed all 1,527 official observations; local independent audit is collecting.
 
 Scripting is fully audited: 1,880 measured and 376 warmups. Its separate 72-observation exact-source same-node comparison substantially recovers the major original call regressions. Small calls: release 4.710201 → original 7.374958 → final 4.678490 ms. Large: release193.600459 → original 469.418897 → final 198.619789 ms. Large retains +2.59% (+5.01933ms) versus release and 8/10 final pairs slower; overlapping ranges do not prove equality. Current official competitor deficits still reach 137.83× for frequency-count and 136.53× for large calls versus LuaJIT.
 
@@ -22,4 +22,4 @@ Timing must finish before any per-host installation, profiling or old-version di
 
 No Labs, tags, releases, packages or download publication is authorized. Labs' 193 baseline files remain unchanged. Historical evidence and interrupted 342 preparation failures are preserved; that available interrupted namespace had no evidenced official suite launches or campaign hosts. All final local/cloud preflight gates passed before official collection.
 
-Latest audited competitive results: persistent tiny10k Nift30,949.017ms versusGo17.781ms (1,740.60×); persistent schedule10k28,018.832ms versusGo17.989ms (1,557.52×). These are current same-node deficits, not claims of a new version regression. Website10k fresh3,015.980ms versusHugo2,623.337ms; warm2,613.877ms versusHugo2,723.813ms. Exact version recovery remains pending. Complete current wall deficit league now contains171rows; memory/capabilities and cross-node trends remain separate.
+Latest audited competitive results: persistent tiny10k Nift30,949.017ms versusGo17.781ms (1,740.60×); persistent schedule10k28,018.832ms versusGo17.989ms (1,557.52×). These are current same-node deficits, not claims of a new version regression. Website10k fresh3,015.980ms versusHugo2,623.337ms; warm2,613.877ms versusHugo2,723.813ms. Website controlled recovery: release2871.545/original3278.509/final2951.495ms; final−9.97% versus original and +2.78% versus release (overlapping ranges). Required website diagnostics complete; evidence push/teardown next. Complete current wall deficit league now contains171rows; memory/capabilities and cross-node trends remain separate.

@@ -71,6 +71,20 @@
       "samples_each": 10,
       "confidence": "Descriptive paired same-node. Final/release ranges overlap; large8/10 pairs slower despite modest residual, small6/10 slower. Original/final ranges disjoint and all10 final faster.",
       "improvement_percent": 0.673240908402839
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-4-4",
+      "unit": "ms/request",
+      "boundary": "isolated booted request",
+      "release": 37528.313677,
+      "original": 12015.063135,
+      "final": 11455.302198,
+      "final_vs_release_percent": -69.47557437140956,
+      "final_vs_original_percent": -4.658826430711061,
+      "samples_each": 3,
+      "confidence": "descriptive same-node3pairs; schedule ranges overlap, no formal significance",
+      "improvement_percent": 69.47557437140956
     }
   ],
   "same_node_version_regressions": [
@@ -117,6 +131,37 @@
       "confidence": "descriptive same-node three-version3samples; no formal significance; checkpoint increases have overlapping ranges",
       "baseline": "original",
       "change_percent": 0.3512364269540491,
+      "classification": "descriptive same-node increase; not formal significance"
+    },
+    {
+      "suite": "website-generator",
+      "scenario": "10000/application-cold",
+      "unit": "ms/invocation",
+      "release": 2871.544599,
+      "original": 3278.509241,
+      "final": 2951.495366,
+      "final_vs_release_percent": 2.7842425650586256,
+      "final_vs_original_percent": -9.974468606355224,
+      "samples_each": 5,
+      "confidence": "Descriptive paired same-node: final/original disjoint ranges, all five faster; final/release overlapping ranges, three of five slower; no equality or formal significance claim.",
+      "baseline": "release",
+      "change_percent": 2.7842425650586256,
+      "classification": "descriptive same-node increase; not formal significance"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "schedule-1000",
+      "unit": "ms/request",
+      "boundary": "isolated booted request",
+      "release": 333.087228,
+      "original": 386.410787,
+      "final": 362.049988,
+      "final_vs_release_percent": 8.695247840604692,
+      "final_vs_original_percent": -6.304378609389094,
+      "samples_each": 3,
+      "confidence": "descriptive same-node3pairs; schedule ranges overlap, no formal significance",
+      "baseline": "release",
+      "change_percent": 8.695247840604692,
       "classification": "descriptive same-node increase; not formal significance"
     }
   ],
@@ -2530,6 +2575,44 @@
       "final_vs_original_percent": 0.3512364269540491,
       "samples_each": 3,
       "confidence": "descriptive same-node three-version3samples; no formal significance; checkpoint increases have overlapping ranges"
+    },
+    {
+      "suite": "website-generator",
+      "scenario": "10000/application-cold",
+      "unit": "ms/invocation",
+      "release": 2871.544599,
+      "original": 3278.509241,
+      "final": 2951.495366,
+      "final_vs_release_percent": 2.7842425650586256,
+      "final_vs_original_percent": -9.974468606355224,
+      "samples_each": 5,
+      "confidence": "Descriptive paired same-node: final/original disjoint ranges, all five faster; final/release overlapping ranges, three of five slower; no equality or formal significance claim."
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "schedule-1000",
+      "unit": "ms/request",
+      "boundary": "isolated booted request",
+      "release": 333.087228,
+      "original": 386.410787,
+      "final": 362.049988,
+      "final_vs_release_percent": 8.695247840604692,
+      "final_vs_original_percent": -6.304378609389094,
+      "samples_each": 3,
+      "confidence": "descriptive same-node3pairs; schedule ranges overlap, no formal significance"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-4-4",
+      "unit": "ms/request",
+      "boundary": "isolated booted request",
+      "release": 37528.313677,
+      "original": 12015.063135,
+      "final": 11455.302198,
+      "final_vs_release_percent": -69.47557437140956,
+      "final_vs_original_percent": -4.658826430711061,
+      "samples_each": 3,
+      "confidence": "descriptive same-node3pairs; schedule ranges overlap, no formal significance"
     }
   ],
   "memory_diagnostic_rows": [
@@ -2552,6 +2635,16 @@
       "final_kib": 7104.0,
       "final_vs_release_percent": 1.83486238532109,
       "qualification": "raw diagnostic peak, small quantized differences; no memory superiority or leak claim"
+    },
+    {
+      "suite": "website-generator",
+      "scenario": "10000/application-cold",
+      "metric": "Linux waited-child peak KiB, not aggregate tree",
+      "release_kib": 17468,
+      "original_kib": 39872,
+      "final_kib": 17596,
+      "final_vs_release_percent": 0.7327684909548937,
+      "qualification": "separate same-node diagnostic; quantized raw child peak, no leak claim"
     }
   ],
   "template_memory_control": "Supervisor allocation0\u219264MiB moves noopraw16.75\u219280.75MiB, proving inherited floor; raw retained/unranked.",

@@ -1,0 +1,658 @@
+{
+  "basis": "cross-node exact frozen workload; not controlled core attribution",
+  "prior_source": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "candidate_source": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "comparisons": [
+    {
+      "tiny": false,
+      "size": 20,
+      "jobs": 4,
+      "case": "fanout",
+      "wall_ms": {
+        "old": 60.5389025,
+        "current": 58.448714,
+        "change_percent": -3.452636922184038
+      },
+      "cpu_ms": {
+        "old": 115.744,
+        "current": 113.265,
+        "change_percent": -2.1417956870334542
+      },
+      "peak_rss_kib": {
+        "old": 17792.0,
+        "current": 17860.0,
+        "change_percent": 0.38219424460430584
+      }
+    },
+    {
+      "tiny": false,
+      "size": 20,
+      "jobs": 4,
+      "case": "full",
+      "wall_ms": {
+        "old": 455.55170599999997,
+        "current": 464.4696025,
+        "change_percent": 1.957603578813072
+      },
+      "cpu_ms": {
+        "old": 1054.6335,
+        "current": 1071.33,
+        "change_percent": 1.5831566131741415
+      },
+      "peak_rss_kib": {
+        "old": 20480.0,
+        "current": 20480.0,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": false,
+      "size": 20,
+      "jobs": 4,
+      "case": "leaf",
+      "wall_ms": {
+        "old": 55.060761,
+        "current": 56.0989575,
+        "change_percent": 1.8855469505770106
+      },
+      "cpu_ms": {
+        "old": 59.537499999999994,
+        "current": 61.7815,
+        "change_percent": 3.769053117782928
+      },
+      "peak_rss_kib": {
+        "old": 17792.0,
+        "current": 17792.0,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": false,
+      "size": 20,
+      "jobs": 4,
+      "case": "multi-target",
+      "wall_ms": {
+        "old": 54.8306565,
+        "current": 54.8339725,
+        "change_percent": 0.006047711648315968
+      },
+      "cpu_ms": {
+        "old": 101.491,
+        "current": 103.4135,
+        "change_percent": 1.8942566335931277
+      },
+      "peak_rss_kib": {
+        "old": 17792.0,
+        "current": 17792.0,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": false,
+      "size": 20,
+      "jobs": 4,
+      "case": "noop",
+      "wall_ms": {
+        "old": 6.9497205,
+        "current": 7.4320835,
+        "change_percent": 6.940753948306266
+      },
+      "cpu_ms": {
+        "old": 11.1005,
+        "current": 12.2725,
+        "change_percent": 10.558082969235617
+      },
+      "peak_rss_kib": {
+        "old": 5888.0,
+        "current": 5888.0,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": false,
+      "size": 20,
+      "jobs": 4,
+      "case": "shared",
+      "wall_ms": {
+        "old": 405.9275525,
+        "current": 412.47777,
+        "change_percent": 1.6136420057369705
+      },
+      "cpu_ms": {
+        "old": 718.5785,
+        "current": 732.4995,
+        "change_percent": 1.937297038528163
+      },
+      "peak_rss_kib": {
+        "old": 17920.0,
+        "current": 17984.0,
+        "change_percent": 0.3571428571428559
+      }
+    },
+    {
+      "tiny": false,
+      "size": 20,
+      "jobs": 4,
+      "case": "target-leaf",
+      "wall_ms": {
+        "old": 54.4369825,
+        "current": 52.610945,
+        "change_percent": -3.3544061704742667
+      },
+      "cpu_ms": {
+        "old": 53.425,
+        "current": 51.8315,
+        "change_percent": -2.982686008423019
+      },
+      "peak_rss_kib": {
+        "old": 17792.0,
+        "current": 17792.0,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": false,
+      "size": 20,
+      "jobs": 4,
+      "case": "target-subgraph",
+      "wall_ms": {
+        "old": 398.738734,
+        "current": 393.004596,
+        "change_percent": -1.4380689687398251
+      },
+      "cpu_ms": {
+        "old": 495.1335,
+        "current": 493.07349999999997,
+        "change_percent": -0.4160494088968014
+      },
+      "peak_rss_kib": {
+        "old": 17920.0,
+        "current": 17920.0,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": false,
+      "size": 20,
+      "jobs": 4,
+      "case": "uncached-full",
+      "wall_ms": {
+        "old": 449.2462445,
+        "current": 442.1039145,
+        "change_percent": -1.5898474583686872
+      },
+      "cpu_ms": {
+        "old": 1022.3245000000001,
+        "current": 1016.784,
+        "change_percent": -0.5419512102077251
+      },
+      "peak_rss_kib": {
+        "old": 20480.0,
+        "current": 20480.0,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": false,
+      "size": 100,
+      "jobs": 1,
+      "case": "full",
+      "wall_ms": {
+        "old": 4759.578682,
+        "current": 4716.445293,
+        "change_percent": -0.9062438480768154
+      },
+      "cpu_ms": {
+        "old": 4762.498,
+        "current": 4718.76,
+        "change_percent": -0.9183835877726199
+      },
+      "peak_rss_kib": {
+        "old": 20480,
+        "current": 20480,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": false,
+      "size": 100,
+      "jobs": 2,
+      "case": "full",
+      "wall_ms": {
+        "old": 2602.623746,
+        "current": 2525.477656,
+        "change_percent": -2.964166069665919
+      },
+      "cpu_ms": {
+        "old": 4960.554,
+        "current": 4815.844,
+        "change_percent": -2.9172144885430185
+      },
+      "peak_rss_kib": {
+        "old": 20480,
+        "current": 20480,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": false,
+      "size": 100,
+      "jobs": 4,
+      "case": "fanout",
+      "wall_ms": {
+        "old": 164.565811,
+        "current": 163.844672,
+        "change_percent": -0.4382070586945841
+      },
+      "cpu_ms": {
+        "old": 532.628,
+        "current": 521.474,
+        "change_percent": -2.09414450610933
+      },
+      "peak_rss_kib": {
+        "old": 17896,
+        "current": 17904,
+        "change_percent": 0.04470272686634136
+      }
+    },
+    {
+      "tiny": false,
+      "size": 100,
+      "jobs": 4,
+      "case": "full",
+      "wall_ms": {
+        "old": 1455.905037,
+        "current": 1425.073629,
+        "change_percent": -2.117679877221279
+      },
+      "cpu_ms": {
+        "old": 4995.505,
+        "current": 4853.412,
+        "change_percent": -2.844417131000765
+      },
+      "peak_rss_kib": {
+        "old": 20480,
+        "current": 20480,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": false,
+      "size": 100,
+      "jobs": 4,
+      "case": "leaf",
+      "wall_ms": {
+        "old": 64.11367050000001,
+        "current": 65.3638475,
+        "change_percent": 1.949938274084606
+      },
+      "cpu_ms": {
+        "old": 84.7135,
+        "current": 87.29249999999999,
+        "change_percent": 3.04437899508343
+      },
+      "peak_rss_kib": {
+        "old": 17792.0,
+        "current": 17792.0,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": false,
+      "size": 100,
+      "jobs": 4,
+      "case": "noop",
+      "wall_ms": {
+        "old": 15.661589,
+        "current": 16.354072000000002,
+        "change_percent": 4.421537303781897
+      },
+      "cpu_ms": {
+        "old": 36.2305,
+        "current": 38.486000000000004,
+        "change_percent": 6.225417810960399
+      },
+      "peak_rss_kib": {
+        "old": 6016.0,
+        "current": 6016.0,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": false,
+      "size": 100,
+      "jobs": 4,
+      "case": "shared",
+      "wall_ms": {
+        "old": 909.355234,
+        "current": 903.696001,
+        "change_percent": -0.6223346815860453
+      },
+      "cpu_ms": {
+        "old": 2693.895,
+        "current": 2648.059,
+        "change_percent": -1.7014768578582196
+      },
+      "peak_rss_kib": {
+        "old": 17920,
+        "current": 17920,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": false,
+      "size": 1000,
+      "jobs": 4,
+      "case": "fanout",
+      "wall_ms": {
+        "old": 1506.14575,
+        "current": 1449.169013,
+        "change_percent": -3.782949757684473
+      },
+      "cpu_ms": {
+        "old": 5729.364,
+        "current": 5471.86,
+        "change_percent": -4.494460467165284
+      },
+      "peak_rss_kib": {
+        "old": 18560,
+        "current": 18432,
+        "change_percent": -0.6896551724137945
+      }
+    },
+    {
+      "tiny": false,
+      "size": 1000,
+      "jobs": 4,
+      "case": "full",
+      "wall_ms": {
+        "old": 13829.67508,
+        "current": 13410.496777,
+        "change_percent": -3.031006155785987
+      },
+      "cpu_ms": {
+        "old": 53499.193,
+        "current": 51619.212,
+        "change_percent": -3.514036183685987
+      },
+      "peak_rss_kib": {
+        "old": 20480,
+        "current": 20352,
+        "change_percent": -0.6249999999999978
+      }
+    },
+    {
+      "tiny": false,
+      "size": 1000,
+      "jobs": 4,
+      "case": "leaf",
+      "wall_ms": {
+        "old": 168.474581,
+        "current": 172.43720100000002,
+        "change_percent": 2.3520580828748416
+      },
+      "cpu_ms": {
+        "old": 364.68,
+        "current": 385.0375,
+        "change_percent": 5.582291323900401
+      },
+      "peak_rss_kib": {
+        "old": 18432.0,
+        "current": 18432.0,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": false,
+      "size": 1000,
+      "jobs": 4,
+      "case": "noop",
+      "wall_ms": {
+        "old": 116.0524805,
+        "current": 118.41790750000001,
+        "change_percent": 2.038239070641845
+      },
+      "cpu_ms": {
+        "old": 317.1705,
+        "current": 332.211,
+        "change_percent": 4.742086669472734
+      },
+      "peak_rss_kib": {
+        "old": 6986.0,
+        "current": 7136.0,
+        "change_percent": 2.1471514457486407
+      }
+    },
+    {
+      "tiny": false,
+      "size": 1000,
+      "jobs": 4,
+      "case": "shared",
+      "wall_ms": {
+        "old": 6995.225954,
+        "current": 6798.756708,
+        "change_percent": -2.808619010907787
+      },
+      "cpu_ms": {
+        "old": 26617.027,
+        "current": 25901.754,
+        "change_percent": -2.6872760808335117
+      },
+      "peak_rss_kib": {
+        "old": 18520,
+        "current": 18560,
+        "change_percent": 0.21598272138227959
+      }
+    },
+    {
+      "tiny": true,
+      "size": 100,
+      "jobs": 4,
+      "case": "fanout",
+      "wall_ms": {
+        "old": 25.310663,
+        "current": 27.705294,
+        "change_percent": 9.460957225814258
+      },
+      "cpu_ms": {
+        "old": 61.226,
+        "current": 64.979,
+        "change_percent": 6.129748799529611
+      },
+      "peak_rss_kib": {
+        "old": 7680,
+        "current": 7808,
+        "change_percent": 1.6666666666666607
+      }
+    },
+    {
+      "tiny": true,
+      "size": 100,
+      "jobs": 4,
+      "case": "full",
+      "wall_ms": {
+        "old": 116.526394,
+        "current": 130.937657,
+        "change_percent": 12.367380904278225
+      },
+      "cpu_ms": {
+        "old": 354.096,
+        "current": 395.488,
+        "change_percent": 11.689485337309646
+      },
+      "peak_rss_kib": {
+        "old": 7808,
+        "current": 7808,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": true,
+      "size": 100,
+      "jobs": 4,
+      "case": "leaf",
+      "wall_ms": {
+        "old": 17.817853,
+        "current": 18.794365499999998,
+        "change_percent": 5.480528434037479
+      },
+      "cpu_ms": {
+        "old": 30.759,
+        "current": 32.292,
+        "change_percent": 4.983907149127087
+      },
+      "peak_rss_kib": {
+        "old": 7808.0,
+        "current": 7680.0,
+        "change_percent": -1.6393442622950838
+      }
+    },
+    {
+      "tiny": true,
+      "size": 100,
+      "jobs": 4,
+      "case": "noop",
+      "wall_ms": {
+        "old": 13.367605000000001,
+        "current": 14.0900525,
+        "change_percent": 5.4044647489209785
+      },
+      "cpu_ms": {
+        "old": 26.3285,
+        "current": 27.761,
+        "change_percent": 5.440872058795598
+      },
+      "peak_rss_kib": {
+        "old": 6016.0,
+        "current": 6016.0,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": true,
+      "size": 100,
+      "jobs": 4,
+      "case": "one-percent",
+      "wall_ms": {
+        "old": 18.06723,
+        "current": 18.317708,
+        "change_percent": 1.3863663660671932
+      },
+      "cpu_ms": {
+        "old": 31.787,
+        "current": 31.294,
+        "change_percent": -1.5509485009595037
+      },
+      "peak_rss_kib": {
+        "old": 7680,
+        "current": 7680,
+        "change_percent": 0.0
+      }
+    },
+    {
+      "tiny": true,
+      "size": 1000,
+      "jobs": 4,
+      "case": "fanout",
+      "wall_ms": {
+        "old": 240.522067,
+        "current": 238.544289,
+        "change_percent": -0.8222854662229384
+      },
+      "cpu_ms": {
+        "old": 681.711,
+        "current": 692.323,
+        "change_percent": 1.5566713754068706
+      },
+      "peak_rss_kib": {
+        "old": 9072,
+        "current": 9076,
+        "change_percent": 0.04409171075838714
+      }
+    },
+    {
+      "tiny": true,
+      "size": 1000,
+      "jobs": 4,
+      "case": "full",
+      "wall_ms": {
+        "old": 1457.302599,
+        "current": 1534.467179,
+        "change_percent": 5.295027954588849
+      },
+      "cpu_ms": {
+        "old": 4574.041,
+        "current": 4807.637,
+        "change_percent": 5.106994012515398
+      },
+      "peak_rss_kib": {
+        "old": 9456,
+        "current": 9332,
+        "change_percent": -1.311336717428091
+      }
+    },
+    {
+      "tiny": true,
+      "size": 1000,
+      "jobs": 4,
+      "case": "leaf",
+      "wall_ms": {
+        "old": 99.9416185,
+        "current": 104.291642,
+        "change_percent": 4.352564592497554
+      },
+      "cpu_ms": {
+        "old": 233.04149999999998,
+        "current": 241.9375,
+        "change_percent": 3.8173458375439617
+      },
+      "peak_rss_kib": {
+        "old": 8432.0,
+        "current": 8562.0,
+        "change_percent": 1.5417457305502813
+      }
+    },
+    {
+      "tiny": true,
+      "size": 1000,
+      "jobs": 4,
+      "case": "noop",
+      "wall_ms": {
+        "old": 94.9035625,
+        "current": 98.6289605,
+        "change_percent": 3.9254564337350306
+      },
+      "cpu_ms": {
+        "old": 226.1135,
+        "current": 241.268,
+        "change_percent": 6.702165063120957
+      },
+      "peak_rss_kib": {
+        "old": 6512.0,
+        "current": 6640.0,
+        "change_percent": 1.9656019656019597
+      }
+    },
+    {
+      "tiny": true,
+      "size": 1000,
+      "jobs": 4,
+      "case": "one-percent",
+      "wall_ms": {
+        "old": 112.5749,
+        "current": 117.399592,
+        "change_percent": 4.2857617461796504
+      },
+      "cpu_ms": {
+        "old": 275.954,
+        "current": 293.366,
+        "change_percent": 6.309747276720024
+      },
+      "peak_rss_kib": {
+        "old": 9072,
+        "current": 9076,
+        "change_percent": 0.04409171075838714
+      }
+    }
+  ]
+}

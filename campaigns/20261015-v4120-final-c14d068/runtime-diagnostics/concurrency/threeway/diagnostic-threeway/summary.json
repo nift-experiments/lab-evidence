@@ -1,0 +1,60 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "case": "schedule-1000",
+      "median_ms": {
+        "prior": 333.087228,
+        "checkpoint": 386.410787,
+        "candidate": 362.049988
+      },
+      "candidate_change_percent": -8.695247840604685,
+      "samples_per_version": 3,
+      "values_ms": {
+        "prior": [
+          324.356849,
+          333.087228,
+          351.366201
+        ],
+        "checkpoint": [
+          299.509121,
+          386.410787,
+          394.798577
+        ],
+        "candidate": [
+          288.030979,
+          362.049988,
+          386.428936
+        ]
+      }
+    },
+    {
+      "case": "queue-100000-4-4",
+      "median_ms": {
+        "prior": 37528.313677,
+        "checkpoint": 12015.063135,
+        "candidate": 11455.302198
+      },
+      "candidate_change_percent": 69.47557437140956,
+      "samples_per_version": 3,
+      "values_ms": {
+        "prior": [
+          37528.313677,
+          38084.542755,
+          37093.833693
+        ],
+        "checkpoint": [
+          11902.524515,
+          12386.79669,
+          12015.063135
+        ],
+        "candidate": [
+          11455.302198,
+          11113.790377,
+          11530.413933
+        ]
+      }
+    }
+  ],
+  "scope": "small descriptive same-node paired control; no statistical significance claim"
+}

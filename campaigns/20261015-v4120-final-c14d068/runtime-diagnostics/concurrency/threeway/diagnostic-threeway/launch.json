@@ -1,0 +1,47 @@
+{
+  "scope": "Separate targeted same-node diagnostic, not official series",
+  "suite_sha": "d6d0cac9e7dd65d12b5bbccd0ec5b542d187c0a6",
+  "identity": {
+    "prior": {
+      "source_sha": "c8d9c266518d115e4f289c5c6a2b94ddd7ee9968",
+      "binary_sha256": "cf1a34cda3e7d09d9a94728995a55cc6473befc7e755701274bc01aa53b19445"
+    },
+    "checkpoint": {
+      "source_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+      "binary_sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606"
+    },
+    "candidate": {
+      "source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "binary_sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb"
+    }
+  },
+  "cases": [
+    {
+      "name": "schedule-1000",
+      "kind": "schedule",
+      "n": 1000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 0,
+      "samples": 50,
+      "warmups": 2
+    },
+    {
+      "name": "queue-100000-4-4",
+      "kind": "queue",
+      "n": 100000,
+      "workers": 4,
+      "iterations": 0,
+      "extra": 4,
+      "samples": 5,
+      "warmups": 2
+    }
+  ],
+  "boundary": "persistent readiness-clock, new runtime per request; scalar/problem work and output serialization remain included",
+  "warmups_per_version_case": 1,
+  "measured_pairs": 3,
+  "order": "three-version rotation by pair, three measured pairs each",
+  "timeout_seconds": 120,
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+  "build_flags": "normal Makefile -std=c++17 -O2 -pthread, no instrumentation"
+}
