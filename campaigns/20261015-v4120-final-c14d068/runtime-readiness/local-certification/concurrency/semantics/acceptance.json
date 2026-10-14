@@ -1,0 +1,12 @@
+{
+  "pass": true,
+  "affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "nift_cancel": "No public future/thread cancellation API in frozen source; explicit cooperative atomic stop token required",
+  "nift_error": "Recoverable future error arrives on await; successful sibling finishes; repeated await re-observes same error",
+  "worker_limits": "Nift/JS/Go active concurrency never exceeds 1/2/4; Python distinct worker process count <= requested max_workers"
+}

@@ -1,0 +1,79 @@
+schedule-10 fresh PASS
+schedule-10 persistent PASS
+schedule-100 fresh PASS
+schedule-100 persistent PASS
+schedule-1000 fresh PASS
+schedule-1000 persistent PASS
+schedule-10000 fresh PASS
+schedule-10000 persistent PASS
+tiny-10 fresh PASS
+tiny-10 persistent PASS
+tiny-100 fresh PASS
+tiny-100 persistent PASS
+tiny-1000 fresh PASS
+tiny-1000 persistent PASS
+tiny-10000 fresh PASS
+tiny-10000 persistent PASS
+fan-10 fresh PASS
+fan-10 persistent PASS
+fan-100 fresh PASS
+fan-100 persistent PASS
+fan-1000 fresh PASS
+fan-1000 persistent PASS
+wait-100 fresh PASS
+wait-100 persistent PASS
+wait-1000 fresh PASS
+wait-1000 persistent PASS
+stagger-100 fresh PASS
+stagger-100 persistent PASS
+mixed-wait-100 fresh PASS
+mixed-wait-100 persistent PASS
+pool-light-1 fresh PASS
+pool-light-1 persistent PASS
+pool-light-2 fresh PASS
+pool-light-2 persistent PASS
+pool-light-4 fresh PASS
+pool-light-4 persistent PASS
+pool-medium-1 fresh PASS
+pool-medium-1 persistent PASS
+pool-medium-2 fresh PASS
+pool-medium-2 persistent PASS
+pool-medium-4 fresh PASS
+pool-medium-4 persistent PASS
+pool-heavy-1 fresh PASS
+pool-heavy-1 persistent PASS
+pool-heavy-2 fresh PASS
+pool-heavy-2 persistent PASS
+pool-heavy-4 fresh PASS
+pool-heavy-4 persistent PASS
+cpu-1 fresh PASS
+cpu-1 persistent PASS
+cpu-2 fresh PASS
+cpu-2 persistent PASS
+cpu-4 fresh PASS
+cpu-4 persistent PASS
+process-10 fresh PASS
+process-10 persistent PASS
+process-100 fresh PASS
+process-100 persistent PASS
+process-1000 fresh PASS
+process-1000 persistent PASS
+process-mixed fresh PASS
+process-mixed persistent PASS
+process-one-failure fresh PASS
+process-one-failure persistent PASS
+process-many-failures fresh PASS
+process-many-failures persistent PASS
+Traceback (most recent call last):
+  File "/tmp/runtime-recert-c14d068/concurrency/scripts/run.py", line 141, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/tmp/runtime-recert-c14d068/concurrency/scripts/run.py", line 130, in main
+    row=trial(e,c,workers[e][:2] if mode=='persistent' else None,timeout=60 if args.certify or args.pilot else 120)
+  File "/tmp/runtime-recert-c14d068/concurrency/scripts/run.py", line 83, in trial
+    if line==b'BOOT':line=reader.line(timeout)
+                          ~~~~~~~~~~~^^^^^^^^^
+  File "/tmp/runtime-recert-c14d068/concurrency/scripts/run.py", line 62, in line
+    if not data:raise RuntimeError('participant exited before complete response')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: participant exited before complete response

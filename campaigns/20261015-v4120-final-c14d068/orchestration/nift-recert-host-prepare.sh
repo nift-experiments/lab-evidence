@@ -19,6 +19,6 @@ make -C /opt/nift -j2 nift > /opt/nift-build.log 2>&1
 python3 - <<'PY'
 import json,hashlib,subprocess
 from pathlib import Path
-p=Path('/opt/nift');r=json.loads(Path('/opt/candidate-checkout.json').read_text());r['version']=subprocess.check_output([str(p/'nift'),'--version'],text=True).strip();r['binary_sha256']=hashlib.sha256((p/'nift').read_bytes()).hexdigest();r['clean_after_build']=not subprocess.check_output(['git','status','--porcelain'],cwd=p,text=True).strip();assert r['clean_after_build'];Path('/opt/candidate-built.json').write_text(json.dumps(r,indent=2)+'\n')
+p=Path('/opt/nift');r=json.loads(Path('/opt/candidate-checkout.json').read_text());r['version']=subprocess.check_output([str(p/'nift'),'--version'],text=True).strip();assert r['version']=='Nift v4.12.0';assert r['compiler'].startswith('g++ (Ubuntu 13.');r['binary_sha256']=hashlib.sha256((p/'nift').read_bytes()).hexdigest();r['clean_after_build']=not subprocess.check_output(['git','status','--porcelain'],cwd=p,text=True).strip();assert r['clean_after_build'];Path('/opt/candidate-built.json').write_text(json.dumps(r,indent=2)+'\n')
 PY
 echo 'CANDIDATE BUILD COMPLETE'

@@ -1,0 +1,12 @@
+{
+  "classification": "isolated wrapper omitted compiling unchanged helper, not candidate failure",
+  "first_attempt": "task-smoke-omitted-helper",
+  "all_failed_attempt_retained": true,
+  "correction": [
+    "cc -O2 scripts/measure.c -o work/measure",
+    "cc -O2 scripts/tiny-body.c -o work/tiny-body"
+  ],
+  "rerun_fresh_output": "/tmp/graph-recert-c14d068/receipts/task-smoke-prepared",
+  "workload_changes": false,
+  "timer_changes": false
+}

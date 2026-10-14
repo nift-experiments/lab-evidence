@@ -1,0 +1,17 @@
+4 | import {spawn} from 'node:child_process';
+5 | const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+6 | function kernel(i,it){let x=i+1;for(let j=0;j<it;j++)x=x*48271%2147483647;return x;}
+7 | async function job(k,i,it,e){
+8 |  if(['wait','memory','stagger','mixed-wait'].includes(k)){await sleep(k==='stagger'?1+i%20:k==='mixed-wait'?(i%10===0?20:1):e);return i;}
+9 |  if(k==='files'){let h=0;for(const b of await readFile(`work/fixtures/${i}.dat`))h=(h*31+b)%1000000007;return h;}
+                                                  ^
+ENOENT: no such file or directory, open 'work/fixtures/0.dat'
+    path: "work/fixtures/0.dat",
+ syscall: "open",
+   errno: -2,
+    code: "ENOENT"
+
+      at async job (/tmp/runtime-recert-c14d068/concurrency/adapters/js.mjs:9:47)
+      at async <anonymous> (/tmp/runtime-recert-c14d068/concurrency/adapters/js.mjs:47:126)
+
+Bun v1.4.3 (Linux x64)
