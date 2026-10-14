@@ -2,7 +2,9 @@
   "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
   "audited_official_suites": [
     "scripting",
-    "template-engines"
+    "template-engines",
+    "concurrency",
+    "website-generator"
   ],
   "same_node_version_improvements": [
     {
@@ -120,6 +122,248 @@
   ],
   "current_same_node_wall_deficits": [
     {
+      "suite": "concurrency",
+      "scenario": "tiny-10000/persistent",
+      "unit": "ms",
+      "nift_value": 30949.016847,
+      "best_peer": "go",
+      "best_peer_value": 17.780683,
+      "deficit": 1740.597751334974,
+      "contract_sha256": "e3ec03d4e6e84c37e2fe9330459b88682a8ccf0fc7f67b21b4c47b00d91bba41",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "schedule-10000/persistent",
+      "unit": "ms",
+      "nift_value": 28018.832465,
+      "best_peer": "go",
+      "best_peer_value": 17.989364,
+      "deficit": 1557.52212612964,
+      "contract_sha256": "af8377c16756c53503a62defe66dd9cc78686c912cb6545d0a5c097128392d02",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "schedule-10000/fresh",
+      "unit": "ms",
+      "nift_value": 31801.965319,
+      "best_peer": "go",
+      "best_peer_value": 29.027007,
+      "deficit": 1095.5991886797008,
+      "contract_sha256": "8b6a770ee18605b7f81f8fb9ba5a9bd37201ea9fd1db2417cea842807bbc2097",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "tiny-10000/fresh",
+      "unit": "ms",
+      "nift_value": 28070.536879,
+      "best_peer": "go",
+      "best_peer_value": 26.473922,
+      "deficit": 1060.3089666502756,
+      "contract_sha256": "48562d398a5843fe025e72630b302031d0c221d6e56b382081b7fa2635ac8c5b",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-8-2/persistent",
+      "unit": "ms",
+      "nift_value": 253.594244,
+      "best_peer": "go",
+      "best_peer_value": 0.962863,
+      "deficit": 263.3752091419028,
+      "contract_sha256": "70e4a7266f8fd4664a26a1a4fa3a5dc50a2440cd3fe7b132082eda987dc1dcf3",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-8-4/persistent",
+      "unit": "ms",
+      "nift_value": 275.163045,
+      "best_peer": "go",
+      "best_peer_value": 1.1599629999999999,
+      "deficit": 237.2170879588401,
+      "contract_sha256": "8a52b8cf1e755fb3bc838493a804c0974dd5146d3c75018431b0a1ef82fca452",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-1-2/persistent",
+      "unit": "ms",
+      "nift_value": 211.751985,
+      "best_peer": "go",
+      "best_peer_value": 1.0000499999999999,
+      "deficit": 211.74139793010352,
+      "contract_sha256": "43482a3530bbf86ddcf303394a30c56ff4f6d45e33ad9ffceada4614111f0b24",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-1-4/persistent",
+      "unit": "ms",
+      "nift_value": 221.8101395,
+      "best_peer": "go",
+      "best_peer_value": 1.064581,
+      "deficit": 208.354403751335,
+      "contract_sha256": "6d76dd64cd57e858eea2ee1e23c305460083afa73ea2cc00e11d982b2eaa2542",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "cpu-1/persistent",
+      "unit": "ms",
+      "nift_value": 10913.01552,
+      "best_peer": "go",
+      "best_peer_value": 52.855408,
+      "deficit": 206.46923243880744,
+      "contract_sha256": "e4ff7407902f026e901388fe0c7825e03edab4b3ab1059e7fda70256d90dccc2",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-8-1/persistent",
+      "unit": "ms",
+      "nift_value": 225.6657535,
+      "best_peer": "go",
+      "best_peer_value": 1.131339,
+      "deficit": 199.4678460655913,
+      "contract_sha256": "7901d79d868c1389d58e056f5ef79a71fd20a98fa4924c4756395284590b196e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "cpu-2/persistent",
+      "unit": "ms",
+      "nift_value": 5409.673228,
+      "best_peer": "go",
+      "best_peer_value": 27.515758,
+      "deficit": 196.60273316839024,
+      "contract_sha256": "953e034ad641433c3a4ab9e37973129c13a87164f08242861ff509e4621de1d1",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-4-4/persistent",
+      "unit": "ms",
+      "nift_value": 11833.785819,
+      "best_peer": "bun",
+      "best_peer_value": 62.231959,
+      "deficit": 190.15608714808414,
+      "contract_sha256": "7a6baf49f77e7c48930c03cb1878540296002d9ee0981a74cc4a63c1292ba273",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "cpu-4/persistent",
+      "unit": "ms",
+      "nift_value": 2866.414489,
+      "best_peer": "go",
+      "best_peer_value": 15.379301,
+      "deficit": 186.38132441780024,
+      "contract_sha256": "1e76cd8856c580fb485528b6c273e8dac1ce43c2210f5493b5f3adc390772141",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "waiting-memory-1000/persistent",
+      "unit": "ms",
+      "nift_value": 2796.157854,
+      "best_peer": "go",
+      "best_peer_value": 15.210809,
+      "deficit": 183.82703076476736,
+      "contract_sha256": "2a31a7560b4d639c5aa79195c722d480c656487308718f43609503ddc07b5a16",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "cpu-1/fresh",
+      "unit": "ms",
+      "nift_value": 10808.905642,
+      "best_peer": "go",
+      "best_peer_value": 60.939035,
+      "deficit": 177.3724451330744,
+      "contract_sha256": "8ca1e8c1a8ef575ecfac6a909f301b83b0623f488e00cb72afdfcc78ccdb1bf5",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "wait-1000/persistent",
+      "unit": "ms",
+      "nift_value": 2579.520181,
+      "best_peer": "go",
+      "best_peer_value": 14.698704,
+      "deficit": 175.49303537237023,
+      "contract_sha256": "62f3ca48fcf929952d28cb7db1e493e1b723c0dc42a7a27e439032c25d9c9d22",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-1-1/persistent",
+      "unit": "ms",
+      "nift_value": 10500.561858,
+      "best_peer": "bun",
+      "best_peer_value": 61.342806,
+      "deficit": 171.17837514638634,
+      "contract_sha256": "33caf858aa7fc23e9f6d97c0c0b90a6e26ddddae6995a8a83ff5c26487b7fc2d",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-1-1/persistent",
+      "unit": "ms",
+      "nift_value": 181.675687,
+      "best_peer": "go",
+      "best_peer_value": 1.100008,
+      "deficit": 165.15851430171418,
+      "contract_sha256": "c306230db2cd89ac5b9be319f9d3414f437927aa2a1b2c0efa87c9e9e094560a",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-4-1/persistent",
+      "unit": "ms",
+      "nift_value": 11683.552651,
+      "best_peer": "bun",
+      "best_peer_value": 70.811035,
+      "deficit": 164.99621352801861,
+      "contract_sha256": "637ddf085158636e2643c9cd3cfe8d75c447ef8eae4616800f529a2d9e411983",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "cpu-2/fresh",
+      "unit": "ms",
+      "nift_value": 5540.975144,
+      "best_peer": "go",
+      "best_peer_value": 33.679906,
+      "deficit": 164.5187235380051,
+      "contract_sha256": "f75a2896d56b93669e600340d1c19ba3461e519ec9e9848879be04004d58fddf",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-1-4/persistent",
+      "unit": "ms",
+      "nift_value": 11340.787264,
+      "best_peer": "bun",
+      "best_peer_value": 76.732899,
+      "deficit": 147.79563149308356,
+      "contract_sha256": "fa93d57c6da330bf6008187b706f4eae45d2ec509a3ef1ec69d431a2fedc38f3",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "atomic-1/persistent",
+      "unit": "ms",
+      "nift_value": 131.817397,
+      "best_peer": "go",
+      "best_peer_value": 0.925158,
+      "deficit": 142.4809567663037,
+      "contract_sha256": "e2c13907f5f7baa1fa265fbcf8934182793098006e782e82f1333fc6b1cce6d6",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
       "suite": "scripting",
       "scenario": "arrays-strings-hash/frequency-count/large",
       "nift_ms": 416.5421275,
@@ -140,6 +384,127 @@
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
     },
     {
+      "suite": "concurrency",
+      "scenario": "wait-1000/fresh",
+      "unit": "ms",
+      "nift_value": 2607.2293954999996,
+      "best_peer": "go",
+      "best_peer_value": 20.7751005,
+      "deficit": 125.49779942099435,
+      "contract_sha256": "54c1165940a03be9ab8ff1e662bb92b4a38c324c03a27dc355f92558518b9837",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-heavy-1/persistent",
+      "unit": "ms",
+      "nift_value": 292.298763,
+      "best_peer": "go",
+      "best_peer_value": 2.418083,
+      "deficit": 120.8803680436114,
+      "contract_sha256": "78a8006b5374c5cf0801c1adc81f63f559fd0066e30b8405938424523f6b6564",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "waiting-memory-1000/fresh",
+      "unit": "ms",
+      "nift_value": 2853.128298,
+      "best_peer": "go",
+      "best_peer_value": 23.763022,
+      "deficit": 120.06588631698443,
+      "contract_sha256": "7bc17efe0e0a527bc87a09237dce300e653e2a0559d1bce2c7edb3de2a17ead2",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-4-4/fresh",
+      "unit": "ms",
+      "nift_value": 11409.927779,
+      "best_peer": "bun",
+      "best_peer_value": 95.760189,
+      "deficit": 119.1510574295128,
+      "contract_sha256": "40ef150e674efb536da25fd97682fc05a835f895328715b9914cdbe441c6531b",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "cpu-4/fresh",
+      "unit": "ms",
+      "nift_value": 2836.492272,
+      "best_peer": "go",
+      "best_peer_value": 24.128136,
+      "deficit": 117.55952768170735,
+      "contract_sha256": "3d8f6f4ddf685bf2d3b19e970470007c6121b7a0351123610b3d40921c79bfa0",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-4-1/fresh",
+      "unit": "ms",
+      "nift_value": 11790.826845,
+      "best_peer": "bun",
+      "best_peer_value": 106.54104,
+      "deficit": 110.66934248999259,
+      "contract_sha256": "2b5a2633083b64cb546bea28cd606016f1fd6417dc04bf0f6dcddfe48bd18eb8",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-1-1/fresh",
+      "unit": "ms",
+      "nift_value": 10301.036211,
+      "best_peer": "bun",
+      "best_peer_value": 94.49064,
+      "deficit": 109.016472012466,
+      "contract_sha256": "d67668893be56c54e4c0afb61fc3a3ad8da26923be201e449f072100ea9874a1",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "fan-1000/persistent",
+      "unit": "ms",
+      "nift_value": 326.725533,
+      "best_peer": "go",
+      "best_peer_value": 3.0121884999999997,
+      "deficit": 108.4678243078081,
+      "contract_sha256": "4ec87091b8edf4f3896849a16373e4078a548dc4cd86ad5b9d026731d35b0bda",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "tiny-1000/persistent",
+      "unit": "ms",
+      "nift_value": 328.279185,
+      "best_peer": "go",
+      "best_peer_value": 3.059819,
+      "deficit": 107.28712548029802,
+      "contract_sha256": "d4add3779cabd17e6141b4f1fa0117c3fa703388b625893e628474918ace586f",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-1-4/fresh",
+      "unit": "ms",
+      "nift_value": 11194.095404,
+      "best_peer": "bun",
+      "best_peer_value": 105.096451,
+      "deficit": 106.51259198086527,
+      "contract_sha256": "f71c3db6bcc9b4576841b23fe542458efe129487cc98a67e13f09a5c74a67e2e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "schedule-1000/persistent",
+      "unit": "ms",
+      "nift_value": 307.2421455,
+      "best_peer": "go",
+      "best_peer_value": 2.9272915,
+      "deficit": 104.9578238108504,
+      "contract_sha256": "fa792c5462e536020b686e35ba99b17f3e1aae80d2e314be0766630d4ba2bf56",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
       "suite": "scripting",
       "scenario": "arrays-strings-hash/sliding-window/large",
       "nift_ms": 250.11562049999998,
@@ -148,6 +513,50 @@
       "deficit": 104.03938378921382,
       "boundary": "fresh process, median10measured",
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-10000-4-4/persistent",
+      "unit": "ms",
+      "nift_value": 1166.0922934999999,
+      "best_peer": "go",
+      "best_peer_value": 12.5924415,
+      "deficit": 92.60255793127965,
+      "contract_sha256": "508b26bdcd9356e99de833b3686906855c91425fbe03c1dd5ebb497de61cbbde",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-10000-4-1/persistent",
+      "unit": "ms",
+      "nift_value": 1122.0983265,
+      "best_peer": "go",
+      "best_peer_value": 12.204426,
+      "deficit": 91.94191734211834,
+      "contract_sha256": "ae8bb4433d9df0708e6d509904a398c25e1e446095895b2ad750e93bc31845ad",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-10000-1-1/persistent",
+      "unit": "ms",
+      "nift_value": 1060.8076535,
+      "best_peer": "go",
+      "best_peer_value": 12.0501155,
+      "deficit": 88.03298636432157,
+      "contract_sha256": "bf845923032f8054e5134c7e5a5aa92f3918933b9632078dbdcd031afaad5ccc",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-10000-1-4/persistent",
+      "unit": "ms",
+      "nift_value": 1125.6212225,
+      "best_peer": "go",
+      "best_peer_value": 12.9023025,
+      "deficit": 87.24188744605856,
+      "contract_sha256": "c31f36e94f32624c7742d9ecba6ea95029a18ceca3cf05a183efa11b3cba87ef",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
     },
     {
       "suite": "scripting",
@@ -160,6 +569,28 @@
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
     },
     {
+      "suite": "concurrency",
+      "scenario": "pool-heavy-2/persistent",
+      "unit": "ms",
+      "nift_value": 150.48778199999998,
+      "best_peer": "go",
+      "best_peer_value": 1.9216365,
+      "deficit": 78.31230412203348,
+      "contract_sha256": "dde3cef19fa6ad55e0e6d2269497aba72fd47b60d541be71f1308b340618370b",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "atomic-2/persistent",
+      "unit": "ms",
+      "nift_value": 75.26708550000001,
+      "best_peer": "go",
+      "best_peer_value": 1.066462,
+      "deficit": 70.57643450962154,
+      "contract_sha256": "835c1bbb6d7b939c4327e2a7e9a5df8a6e75eca1125c18a1e1e900990fca0a12",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
       "suite": "scripting",
       "scenario": "dynamic-programming/fibonacci/large",
       "nift_ms": 141.5248405,
@@ -168,6 +599,17 @@
       "deficit": 68.7160894638124,
       "boundary": "fresh process, median10measured",
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-10000-1-4/fresh",
+      "unit": "ms",
+      "nift_value": 1135.5369715000002,
+      "best_peer": "go",
+      "best_peer_value": 18.202586500000002,
+      "deficit": 62.383275667993665,
+      "contract_sha256": "534ef9442e4460ca98a4fc366c1bddde6973302932acd968435d6c1c7f2f3120",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
     },
     {
       "suite": "scripting",
@@ -180,6 +622,72 @@
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
     },
     {
+      "suite": "concurrency",
+      "scenario": "queue-10000-4-1/fresh",
+      "unit": "ms",
+      "nift_value": 1131.3235275000002,
+      "best_peer": "go",
+      "best_peer_value": 18.851596,
+      "deficit": 60.01208213352334,
+      "contract_sha256": "b19887c70efb1aded7054ff3e49732e49ddacb18683b281ef33c710e90a4361c",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-10000-4-4/fresh",
+      "unit": "ms",
+      "nift_value": 1155.860735,
+      "best_peer": "go",
+      "best_peer_value": 19.3877095,
+      "deficit": 59.61822024411909,
+      "contract_sha256": "b92ec0a0a628bff0233ad6305fa4d11f020655c154913d02d7d9826e336a5124",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-10000-1-1/fresh",
+      "unit": "ms",
+      "nift_value": 1055.3026725,
+      "best_peer": "go",
+      "best_peer_value": 17.841921,
+      "deficit": 59.14736829627258,
+      "contract_sha256": "79789a93802edca7ab53e8ccd49f19455a2a8284458790efbe1f06c5b31f9ca1",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-1000-4-4/persistent",
+      "unit": "ms",
+      "nift_value": 120.439076,
+      "best_peer": "go",
+      "best_peer_value": 2.12254,
+      "deficit": 56.74290048715219,
+      "contract_sha256": "01fad1ef355244605660047024919f5a34190c44c543303473cea564eb4115be",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-1000-1-4/persistent",
+      "unit": "ms",
+      "nift_value": 118.6309795,
+      "best_peer": "go",
+      "best_peer_value": 2.094405,
+      "deficit": 56.64185269802163,
+      "contract_sha256": "42e97a895536db771c5ec1107e42168dd526547e9ef7cd771c2c723e4b3a6102",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-1000-4-1/persistent",
+      "unit": "ms",
+      "nift_value": 120.959751,
+      "best_peer": "go",
+      "best_peer_value": 2.1435459999999997,
+      "deficit": 56.42974351845027,
+      "contract_sha256": "bda7d1f008db906922bbf3eff5eca295478c83314d873ca7ac7e50b55ec133b3",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
       "suite": "scripting",
       "scenario": "sanity/loops/large",
       "nift_ms": 72.592246,
@@ -188,6 +696,17 @@
       "deficit": 51.14959437068887,
       "boundary": "fresh process, median10measured",
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-1000-1-1/persistent",
+      "unit": "ms",
+      "nift_value": 105.574439,
+      "best_peer": "go",
+      "best_peer_value": 2.1561909999999997,
+      "deficit": 48.96339841878572,
+      "contract_sha256": "be6fce887190c71f7ba0c3b9016192afaf937c9543a74111257d643b344adc2d",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
     },
     {
       "suite": "scripting",
@@ -200,6 +719,171 @@
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
     },
     {
+      "suite": "concurrency",
+      "scenario": "pool-heavy-4/persistent",
+      "unit": "ms",
+      "nift_value": 79.3047375,
+      "best_peer": "go",
+      "best_peer_value": 1.8696385000000002,
+      "deficit": 42.41715042774312,
+      "contract_sha256": "7c16cd94cd4e898bfa07619517a7177afcf50e2c78f47a31fa61a575d6d68cce",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "atomic-4/persistent",
+      "unit": "ms",
+      "nift_value": 46.154998,
+      "best_peer": "go",
+      "best_peer_value": 1.096397,
+      "deficit": 42.09697582171421,
+      "contract_sha256": "c7350fe15d6baa3c9957493e8f37b9c0a1ace42d86927e9fdc08773fe69d2b4c",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-heavy-1/fresh",
+      "unit": "ms",
+      "nift_value": 294.397809,
+      "best_peer": "go",
+      "best_peer_value": 7.2668289999999995,
+      "deficit": 40.51255492595188,
+      "contract_sha256": "3eedf31e3e39cb87011c62b50cc65a3101f07d26c6b5a100376f0cbd962ca8ab",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "fan-1000/fresh",
+      "unit": "ms",
+      "nift_value": 332.00852,
+      "best_peer": "go",
+      "best_peer_value": 8.464566000000001,
+      "deficit": 39.22333643567785,
+      "contract_sha256": "bbbd80ce32da741d4eeabf73ac2f4cf005226e4712ede82cc5b2ffe4021966b6",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "tiny-1000/fresh",
+      "unit": "ms",
+      "nift_value": 305.412957,
+      "best_peer": "go",
+      "best_peer_value": 7.801553,
+      "deficit": 39.14771289767563,
+      "contract_sha256": "14bd946e212d8484572fd1cf66002d2ebaafff2305cc171287948a9e74aa848e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "schedule-1000/fresh",
+      "unit": "ms",
+      "nift_value": 262.7284445,
+      "best_peer": "go",
+      "best_peer_value": 7.4816455,
+      "deficit": 35.11639845806648,
+      "contract_sha256": "00ea652964be6caa0ddabeb30df51056fb83577626eebce7bd7016cac3d77410",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-8-2/fresh",
+      "unit": "ms",
+      "nift_value": 268.41258,
+      "best_peer": "go",
+      "best_peer_value": 8.577091,
+      "deficit": 31.294127577753343,
+      "contract_sha256": "8a722d9d65742ec6216351a340559a824a12aeb6e37056bb162ed04c922267de",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-8-4/fresh",
+      "unit": "ms",
+      "nift_value": 274.30816849999997,
+      "best_peer": "go",
+      "best_peer_value": 8.942218,
+      "deficit": 30.675629748682034,
+      "contract_sha256": "7a6d113a5cb440d1aa6caaa26ec5964104cf4685d21d456bd9fa282164eb19db",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "nested-100/persistent",
+      "unit": "ms",
+      "nift_value": 53.652982,
+      "best_peer": "go",
+      "best_peer_value": 1.8547365,
+      "deficit": 28.92754954679546,
+      "contract_sha256": "165acaa2e3f49ccd17ae6644d04114865d284a3dd8c015fe5434f2918a419875",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-8-1/fresh",
+      "unit": "ms",
+      "nift_value": 233.246309,
+      "best_peer": "go",
+      "best_peer_value": 8.172969,
+      "deficit": 28.538748770489647,
+      "contract_sha256": "24d4cf6b4309b2f4ba9c545cd026403466a1be4e39f0d0a4edf417420c276560",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-medium-1/persistent",
+      "unit": "ms",
+      "nift_value": 32.5849915,
+      "best_peer": "go",
+      "best_peer_value": 1.1604145,
+      "deficit": 28.080475985089812,
+      "contract_sha256": "c08bad7744c830018b77bffb80b4c6c47c4ce662116fde4e57d8fd4212858b33",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-1-2/fresh",
+      "unit": "ms",
+      "nift_value": 221.5862755,
+      "best_peer": "go",
+      "best_peer_value": 8.1503355,
+      "deficit": 27.187380875302615,
+      "contract_sha256": "e7b56c9ec2441a9a2f4c8962b70db516f9d2c7aba9c89e2a89ea3d9aec9c36e4",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-1-4/fresh",
+      "unit": "ms",
+      "nift_value": 241.70798200000002,
+      "best_peer": "go",
+      "best_peer_value": 9.0440465,
+      "deficit": 26.72564564987586,
+      "contract_sha256": "32ba157f5ed4e6e55b5408f469cc409dc7c5109ba096cee1522c1362b4aba932",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-1-1/fresh",
+      "unit": "ms",
+      "nift_value": 189.402288,
+      "best_peer": "go",
+      "best_peer_value": 8.400158,
+      "deficit": 22.547467321448003,
+      "contract_sha256": "b174a08bf853975240dc12cd01111a88df3c458b591cb91ca8351af58af186c3",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-light-1/persistent",
+      "unit": "ms",
+      "nift_value": 22.008976,
+      "best_peer": "go",
+      "best_peer_value": 0.985926,
+      "deficit": 22.323152041836813,
+      "contract_sha256": "570b61bf49a57f87821928ee8a5ce79bffedba527970f7ab03f7ee6878f1ca1a",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
       "suite": "scripting",
       "scenario": "arrays-strings-hash/sort-index/large",
       "nift_ms": 511.63084200000003,
@@ -208,6 +892,127 @@
       "deficit": 22.194402701706316,
       "boundary": "fresh process, median10measured",
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "waiting-memory-100/persistent",
+      "unit": "ms",
+      "nift_value": 264.026751,
+      "best_peer": "go",
+      "best_peer_value": 11.963512,
+      "deficit": 22.06933474050095,
+      "contract_sha256": "9e48cae0d524af7960bc604d57e4c59208a40ad6c3506d3e1cb28ea5b2b87676",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "wait-100/persistent",
+      "unit": "ms",
+      "nift_value": 259.227799,
+      "best_peer": "go",
+      "best_peer_value": 11.982601500000001,
+      "deficit": 21.633682719065636,
+      "contract_sha256": "00ec6c00ce270eea466d30c9302bc3881a8c0d5211ae4beeb717f4571a7a0fb6",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-heavy-2/fresh",
+      "unit": "ms",
+      "nift_value": 155.0466265,
+      "best_peer": "go",
+      "best_peer_value": 7.45472,
+      "deficit": 20.798450713105254,
+      "contract_sha256": "67e71089d9f03ed0dffa74bec209f9ef0010df6fec777d1386029a71be0eeae0",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "files-10000/persistent",
+      "unit": "ms",
+      "nift_value": 1446.8240150000001,
+      "best_peer": "go",
+      "best_peer_value": 72.407288,
+      "deficit": 19.981745691124356,
+      "contract_sha256": "bd6d7cbc3b938a41ec942b2e506ee7d4627db46e64500f8addda4b4bbb8b6fb5",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "files-10000/fresh",
+      "unit": "ms",
+      "nift_value": 1461.295712,
+      "best_peer": "go",
+      "best_peer_value": 79.597337,
+      "deficit": 18.358600514487062,
+      "contract_sha256": "be1ed44f6b5a9c9c0f38c79c055b14db61b8c76c5ef309eb084ea490c5e087da",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "files-1000/persistent",
+      "unit": "ms",
+      "nift_value": 145.381531,
+      "best_peer": "go",
+      "best_peer_value": 7.999181,
+      "deficit": 18.174551994760463,
+      "contract_sha256": "3fd5e5e3fd512f8febe68aefadc8d451d6da8e491408d50cb0c43ec8e33b753b",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "atomic-1/fresh",
+      "unit": "ms",
+      "nift_value": 136.9978705,
+      "best_peer": "go",
+      "best_peer_value": 7.806207000000001,
+      "deficit": 17.54986390957862,
+      "contract_sha256": "9e6997654fc02c15fce26e2f7ccf60438b5b22e8adcf7c9b7a16e6182affb36f",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-1000-1-4/fresh",
+      "unit": "ms",
+      "nift_value": 124.76633749999999,
+      "best_peer": "go",
+      "best_peer_value": 7.466129499999999,
+      "deficit": 16.710979564445005,
+      "contract_sha256": "57b802eba53840cb952b68a7da69dfcc25aa3789aa8b47de86a803fcaa1cf089",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-1000-4-4/fresh",
+      "unit": "ms",
+      "nift_value": 127.219796,
+      "best_peer": "go",
+      "best_peer_value": 7.8016155000000005,
+      "deficit": 16.306852856309053,
+      "contract_sha256": "56512f78400b7a12f857287a2907562371c7fa1ccd17a515c7458444206a3c73",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-1000-4-1/fresh",
+      "unit": "ms",
+      "nift_value": 123.899587,
+      "best_peer": "go",
+      "best_peer_value": 7.6016815,
+      "deficit": 16.298971089488557,
+      "contract_sha256": "50190bbd119fa838305dc73547cda0f4f51423e0d1a494ac1897e744e527aa90",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "wait-100/fresh",
+      "unit": "ms",
+      "nift_value": 265.538105,
+      "best_peer": "go",
+      "best_peer_value": 16.308459499999998,
+      "deficit": 16.282231010231225,
+      "contract_sha256": "588a6daa5cc2f00447d89a6366df420f632dac79f3e3cf9fe3aaf6cbd5244fce",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
     },
     {
       "suite": "template-engines",
@@ -221,6 +1026,160 @@
       "confidence": "audited same-node current-vs-peer; not version regression evidence"
     },
     {
+      "suite": "concurrency",
+      "scenario": "pool-medium-2/persistent",
+      "unit": "ms",
+      "nift_value": 18.4454645,
+      "best_peer": "go",
+      "best_peer_value": 1.223501,
+      "deficit": 15.07597010545966,
+      "contract_sha256": "7e05aac8cdbabf9e5092fa697c8d4df9b2714e1b6bd45d9378b44bb87d36e75f",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-1000-1-1/fresh",
+      "unit": "ms",
+      "nift_value": 111.50059300000001,
+      "best_peer": "go",
+      "best_peer_value": 7.568466,
+      "deficit": 14.732257897439192,
+      "contract_sha256": "eb32169abd6d884c0219229ec861aab8134cfe34f3dffc738cdc2b6124ab6a79",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "waiting-memory-100/fresh",
+      "unit": "ms",
+      "nift_value": 274.679833,
+      "best_peer": "go",
+      "best_peer_value": 20.312835,
+      "deficit": 13.522476453926789,
+      "contract_sha256": "83a2de0a099419b45c404912a69f0bc1a2bbc227286c7c46e541036ff4d71f5f",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "schedule-100/persistent",
+      "unit": "ms",
+      "nift_value": 16.4204655,
+      "best_peer": "go",
+      "best_peer_value": 1.2372705000000002,
+      "deficit": 13.27152429480861,
+      "contract_sha256": "39e18a36cd618149fb3eaaf8d5bd03eb5d687476248082fde4ddeaabd994da3e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "stagger-100/persistent",
+      "unit": "ms",
+      "nift_value": 279.9780075,
+      "best_peer": "go",
+      "best_peer_value": 22.0836045,
+      "deficit": 12.67809371880392,
+      "contract_sha256": "035e92540c964e10fa6d22b764c5781f3baf5fd173b869a079ba9050d960764f",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "tiny-100/persistent",
+      "unit": "ms",
+      "nift_value": 14.8006055,
+      "best_peer": "go",
+      "best_peer_value": 1.1893764999999998,
+      "deficit": 12.444003643926042,
+      "contract_sha256": "777fb2a12f3b50109918a1cd3335dd34b62e945ef1c70d03557a7ff6d4435793",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "fan-100/persistent",
+      "unit": "ms",
+      "nift_value": 15.316787,
+      "best_peer": "go",
+      "best_peer_value": 1.3008235,
+      "deficit": 11.774685036056006,
+      "contract_sha256": "e70059ea27f4c2751589ed09827f8e935fc41208b91584041d737d2ee271f74e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "files-100/persistent",
+      "unit": "ms",
+      "nift_value": 22.6971665,
+      "best_peer": "go",
+      "best_peer_value": 1.9600735,
+      "deficit": 11.57975274906783,
+      "contract_sha256": "8c0a128af6d0c2aa0690885ce12d842bfa9041231e63f57ad461215992fa1504",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-light-2/persistent",
+      "unit": "ms",
+      "nift_value": 13.015843499999999,
+      "best_peer": "go",
+      "best_peer_value": 1.1585364999999999,
+      "deficit": 11.23472890150634,
+      "contract_sha256": "d32afcfe8132a9f79e5cd9d5475e02afac23d378b3693ad601757835e45f1dd4",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-heavy-4/fresh",
+      "unit": "ms",
+      "nift_value": 87.258454,
+      "best_peer": "go",
+      "best_peer_value": 8.094154,
+      "deficit": 10.78042918382823,
+      "contract_sha256": "e1f56a94d72d08b0e21fe8b495cc25454902866faf0bf4ad4ab549aec0c3bf06",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "stagger-100/fresh",
+      "unit": "ms",
+      "nift_value": 287.428366,
+      "best_peer": "go",
+      "best_peer_value": 27.0907365,
+      "deficit": 10.609839492551263,
+      "contract_sha256": "dc67ace51e0fbe84d630abde655f73004ec9e621381df0cba797778011fe7a19",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "files-1000/fresh",
+      "unit": "ms",
+      "nift_value": 154.370297,
+      "best_peer": "go",
+      "best_peer_value": 14.786562,
+      "deficit": 10.439904624212172,
+      "contract_sha256": "5179244f83448237a43df7ee8f0dcc28091ce15610a4a97598bcf0e26fba7c0e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "atomic-2/fresh",
+      "unit": "ms",
+      "nift_value": 88.337582,
+      "best_peer": "go",
+      "best_peer_value": 9.706163,
+      "deficit": 9.101184680290244,
+      "contract_sha256": "8609a31e04a6bc2e5788c9fc6fccb6bc3c81de413b2bc37b62284ecf52044ca2",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-medium-4/persistent",
+      "unit": "ms",
+      "nift_value": 11.228839,
+      "best_peer": "go",
+      "best_peer_value": 1.2728365,
+      "deficit": 8.821902106044258,
+      "contract_sha256": "af2c16132c42bda19d9dc28cae441be83d15fdf5c07b2ad166bbb51ed70148f2",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
       "suite": "template-engines",
       "scenario": "collection/source-render",
       "unit": "ms/render",
@@ -232,6 +1191,50 @@
       "confidence": "audited same-node current-vs-peer; not version regression evidence"
     },
     {
+      "suite": "concurrency",
+      "scenario": "nested-10/persistent",
+      "unit": "ms",
+      "nift_value": 7.4980455,
+      "best_peer": "go",
+      "best_peer_value": 1.0446495,
+      "deficit": 7.1775705631410345,
+      "contract_sha256": "cfa915dcfd80170453bfef8e906b682d40656ff0e6eadf6944800f8fe600c88e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "nested-100/fresh",
+      "unit": "ms",
+      "nift_value": 68.968703,
+      "best_peer": "go",
+      "best_peer_value": 9.7548685,
+      "deficit": 7.070182750285152,
+      "contract_sha256": "b152f1a4d2396933d2c6a67ed7947c0503e9a08287126d5dca845762cf2dddfa",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-light-4/persistent",
+      "unit": "ms",
+      "nift_value": 7.9989575,
+      "best_peer": "go",
+      "best_peer_value": 1.227966,
+      "deficit": 6.513989393843153,
+      "contract_sha256": "cb08b7120d36a071b9b16bc64145310f1a46a7b304f7190033864ca826fa4f3b",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-medium-1/fresh",
+      "unit": "ms",
+      "nift_value": 39.6197295,
+      "best_peer": "go",
+      "best_peer_value": 6.222834499999999,
+      "deficit": 6.366830019342472,
+      "contract_sha256": "59bfaa93c6fe162f425518a93c634873129548182f39a078337b33894db8560a",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
       "suite": "scripting",
       "scenario": "structured-data/json-transform/large",
       "nift_ms": 462.8532015,
@@ -240,6 +1243,17 @@
       "deficit": 6.2089980778732965,
       "boundary": "fresh process, median10measured",
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "atomic-4/fresh",
+      "unit": "ms",
+      "nift_value": 56.59078649999999,
+      "best_peer": "go",
+      "best_peer_value": 9.1779275,
+      "deficit": 6.165965736818034,
+      "contract_sha256": "3fbe5122d4cbd6a976c75433668491f417b80671a65ba75d32eaac6ee29b0086",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
     },
     {
       "suite": "scripting",
@@ -283,6 +1297,17 @@
       "confidence": "audited same-node current-vs-peer; not version regression evidence"
     },
     {
+      "suite": "concurrency",
+      "scenario": "pool-light-1/fresh",
+      "unit": "ms",
+      "nift_value": 27.9630675,
+      "best_peer": "go",
+      "best_peer_value": 6.1160645,
+      "deficit": 4.572068770693965,
+      "contract_sha256": "193191fa0886694f99f5c8058b79cb2ccc38d111fc728bbc7bf5aea724196a96",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
       "suite": "scripting",
       "scenario": "arrays-strings-hash/sort-index/small",
       "nift_ms": 6.8470755,
@@ -304,6 +1329,28 @@
       "confidence": "audited same-node current-vs-peer; not version regression evidence"
     },
     {
+      "suite": "concurrency",
+      "scenario": "mixed-wait-100/persistent",
+      "unit": "ms",
+      "nift_value": 89.300608,
+      "best_peer": "go",
+      "best_peer_value": 21.560194,
+      "deficit": 4.141920429843998,
+      "contract_sha256": "72e4dbe0afe516db19ab7e9d4e4f451d82cbe6ea50ebfc682e97575a3206985c",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "schedule-100/fresh",
+      "unit": "ms",
+      "nift_value": 24.932613,
+      "best_peer": "go",
+      "best_peer_value": 6.1022145000000005,
+      "deficit": 4.0858303161909495,
+      "contract_sha256": "f18fb35a9f1a11ca931b10acc6e77647d7607cd5d5fe46f64169427b7f4d6068",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
       "suite": "scripting",
       "scenario": "arrays-strings-hash/sliding-window/small",
       "nift_ms": 5.28731,
@@ -312,6 +1359,50 @@
       "deficit": 3.947566960794305,
       "boundary": "fresh process, median10measured",
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-medium-2/fresh",
+      "unit": "ms",
+      "nift_value": 25.047946500000002,
+      "best_peer": "go",
+      "best_peer_value": 6.736141,
+      "deficit": 3.7184415379666196,
+      "contract_sha256": "d8f79996d19e9904ef54100405200c7fd91fbc3eb42508bfacfce2e69505dbb9",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "tiny-100/fresh",
+      "unit": "ms",
+      "nift_value": 22.9509225,
+      "best_peer": "go",
+      "best_peer_value": 6.296274,
+      "deficit": 3.645159422858662,
+      "contract_sha256": "971aa0fc9605264a3c05e34b2a1df5e7668236e903b38b3798043d50fc73374e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mixed-wait-100/fresh",
+      "unit": "ms",
+      "nift_value": 96.292141,
+      "best_peer": "go",
+      "best_peer_value": 26.669968,
+      "deficit": 3.6105083065716466,
+      "contract_sha256": "8ca2764c4a7451a225c11444e086245d63e68cf7d24c89be1f35be8312d61304",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "fan-100/fresh",
+      "unit": "ms",
+      "nift_value": 21.4874665,
+      "best_peer": "go",
+      "best_peer_value": 6.001262499999999,
+      "deficit": 3.580491021680855,
+      "contract_sha256": "cffa3d9cceec9583199b5648b5cda50cb278cafa8cba833fd3527795f9fb1ce7",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
     },
     {
       "suite": "scripting",
@@ -324,6 +1415,17 @@
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
     },
     {
+      "suite": "concurrency",
+      "scenario": "schedule-10/persistent",
+      "unit": "ms",
+      "nift_value": 3.3855895,
+      "best_peer": "go",
+      "best_peer_value": 0.9958225,
+      "deficit": 3.3997921316298836,
+      "contract_sha256": "12533fae0f9fb5e0e4267dfea9476a9edc7c248d24a4b263c881d93112ee63c2",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
       "suite": "scripting",
       "scenario": "arrays-strings-hash/map-set/small",
       "nift_ms": 4.7012425,
@@ -334,6 +1436,28 @@
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
     },
     {
+      "suite": "concurrency",
+      "scenario": "fan-10/persistent",
+      "unit": "ms",
+      "nift_value": 3.422539,
+      "best_peer": "go",
+      "best_peer_value": 1.016844,
+      "deficit": 3.3658447116765204,
+      "contract_sha256": "fca6ff7a7af9b28ce133851f205eb57e5b3cca51ab54afd32bfe7cd572a73e90",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "tiny-10/persistent",
+      "unit": "ms",
+      "nift_value": 3.455183,
+      "best_peer": "go",
+      "best_peer_value": 1.027099,
+      "deficit": 3.3640213845013966,
+      "contract_sha256": "ad79c5070f43e395ad52340b6f1fbc1099a842588a10ba8f3f7f95f89393a7d2",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
       "suite": "scripting",
       "scenario": "filesystem/traverse/large",
       "nift_ms": 25.004672,
@@ -342,6 +1466,61 @@
       "deficit": 3.2725240096215167,
       "boundary": "fresh process, median10measured",
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "files-100/fresh",
+      "unit": "ms",
+      "nift_value": 25.029017500000002,
+      "best_peer": "go",
+      "best_peer_value": 7.730247,
+      "deficit": 3.237803074080298,
+      "contract_sha256": "157ea2bd23af5905a50dc9ca39aa4b53ca762e055c0196276ed8a15591a50ff1",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "failures/persistent",
+      "unit": "ms",
+      "nift_value": 3.6130435,
+      "best_peer": "go",
+      "best_peer_value": 1.1227825,
+      "deficit": 3.217937133861634,
+      "contract_sha256": "d0628ce5e6c5f4b561e6da570a323ba4f2e19291bbcf9bec828a8709a4a02db3",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-light-2/fresh",
+      "unit": "ms",
+      "nift_value": 18.794958,
+      "best_peer": "go",
+      "best_peer_value": 6.036595500000001,
+      "deficit": 3.113502967028352,
+      "contract_sha256": "bf7a07e44010b643bb534bae20eb4fb8320bace8caaf1276d8e75348a68eac88",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-1000/fresh",
+      "unit": "ms",
+      "nift_value": 986.5839880000001,
+      "best_peer": "go",
+      "best_peer_value": 330.70449299999996,
+      "deficit": 2.9832796617008777,
+      "contract_sha256": "55fa89cbe34d56579f24ffeda8d63b1360b2998a3fc988d6ec86058e2a451a94",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-1000/persistent",
+      "unit": "ms",
+      "nift_value": 1001.1119524999999,
+      "best_peer": "go",
+      "best_peer_value": 336.399241,
+      "deficit": 2.9759637671120664,
+      "contract_sha256": "d8294f6f95091cd592a7412a81099dd6e921630741d1a58d95c43c027dd91a03",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
     },
     {
       "suite": "scripting",
@@ -364,6 +1543,17 @@
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
     },
     {
+      "suite": "concurrency",
+      "scenario": "process-one-failure/persistent",
+      "unit": "ms",
+      "nift_value": 99.52038200000001,
+      "best_peer": "go",
+      "best_peer_value": 37.004439000000005,
+      "deficit": 2.689417396653412,
+      "contract_sha256": "ebe00363c4255d2be88fa3bb2345aa5394a662031749dfa2efbe94fdc3f82c07",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
       "suite": "scripting",
       "scenario": "sanity/loops/small",
       "nift_ms": 3.3462994999999998,
@@ -374,6 +1564,94 @@
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
     },
     {
+      "suite": "concurrency",
+      "scenario": "process-100/persistent",
+      "unit": "ms",
+      "nift_value": 96.9258625,
+      "best_peer": "go",
+      "best_peer_value": 37.5413095,
+      "deficit": 2.581845540044361,
+      "contract_sha256": "5b7a64fe92f3ba81275e88bd345167faeacb5d97c8b35c2ebcf4a8912af151d0",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-medium-4/fresh",
+      "unit": "ms",
+      "nift_value": 17.6772525,
+      "best_peer": "go",
+      "best_peer_value": 7.024010499999999,
+      "deficit": 2.5166893614410175,
+      "contract_sha256": "9227a97530699869ce451e23cbfda2a91f45fc29a338e5caa3eaf5876152f9ab",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-many-failures/persistent",
+      "unit": "ms",
+      "nift_value": 90.311931,
+      "best_peer": "go",
+      "best_peer_value": 35.98956,
+      "deficit": 2.509392473817407,
+      "contract_sha256": "f3d3bf1cb4ab751a995241a083535ff397c71a88bb70aa6faeb2e077b6356d21",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-100/fresh",
+      "unit": "ms",
+      "nift_value": 103.2233555,
+      "best_peer": "go",
+      "best_peer_value": 41.5633165,
+      "deficit": 2.4835206665955063,
+      "contract_sha256": "da3c932a9a3f1ffe568f6a71f0dcf741cbfd7696235d7020e5c00e63f8b639dd",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-one-failure/fresh",
+      "unit": "ms",
+      "nift_value": 106.17081350000001,
+      "best_peer": "go",
+      "best_peer_value": 42.925601,
+      "deficit": 2.4733681305941415,
+      "contract_sha256": "a2d45b265cdf8b95e26f247cd3faff01438e4aa3f45b70d952cf84ac8d5470e7",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-many-failures/fresh",
+      "unit": "ms",
+      "nift_value": 107.49963650000001,
+      "best_peer": "go",
+      "best_peer_value": 44.054327,
+      "deficit": 2.440160679335767,
+      "contract_sha256": "6806002e2a352c20574fbec618bc514e4e68a24f8020d246da4aa7d0cf67c45a",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-10/persistent",
+      "unit": "ms",
+      "nift_value": 12.218935,
+      "best_peer": "go",
+      "best_peer_value": 5.102969,
+      "deficit": 2.39447564741232,
+      "contract_sha256": "90bd719a070bdd7310685c0279e7aa166a918982f66ec9080affe5ea50e93768",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-light-4/fresh",
+      "unit": "ms",
+      "nift_value": 15.331295,
+      "best_peer": "go",
+      "best_peer_value": 6.808737,
+      "deficit": 2.251709090834321,
+      "contract_sha256": "a4ceaee82abbf2128994a6f19a2068ff34a201f032400b3399bf23e3260af888",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
       "suite": "scripting",
       "scenario": "dynamic-programming/fibonacci/small",
       "nift_ms": 2.817063,
@@ -382,6 +1660,17 @@
       "deficit": 2.229885175750917,
       "boundary": "fresh process, median10measured",
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "nested-10/fresh",
+      "unit": "ms",
+      "nift_value": 17.150312999999997,
+      "best_peer": "go",
+      "best_peer_value": 8.0910285,
+      "deficit": 2.1196703237419072,
+      "contract_sha256": "120e10671fdd5e4c154046b9e3927c9018ff5027a7df87cbcebf3e3aca036ac2",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
     },
     {
       "suite": "template-engines",
@@ -468,6 +1757,94 @@
       "confidence": "audited same-node current-vs-peer; not version regression evidence"
     },
     {
+      "suite": "concurrency",
+      "scenario": "schedule-10/fresh",
+      "unit": "ms",
+      "nift_value": 9.247231500000002,
+      "best_peer": "go",
+      "best_peer_value": 5.069082,
+      "deficit": 1.824241844973114,
+      "contract_sha256": "0d90f43ff243c376a1bfea900db5813b5cc6072541fbb833f129595a703a10a8",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "tiny-10/fresh",
+      "unit": "ms",
+      "nift_value": 9.5622615,
+      "best_peer": "go",
+      "best_peer_value": 5.6498845,
+      "deficit": 1.6924702620027012,
+      "contract_sha256": "24191a9087d6f9a09ca07500b0413dfd863af8c0954619c594ccbf466db3164e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-10/fresh",
+      "unit": "ms",
+      "nift_value": 18.3493985,
+      "best_peer": "go",
+      "best_peer_value": 11.066980000000001,
+      "deficit": 1.6580312334530285,
+      "contract_sha256": "80082460d9ff03652e9138456968d0eeb94f589d9c11a39219cf5250f3178b25",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "fan-10/fresh",
+      "unit": "ms",
+      "nift_value": 10.132372,
+      "best_peer": "go",
+      "best_peer_value": 6.1978355,
+      "deficit": 1.6348242866400697,
+      "contract_sha256": "c5ba3844c9f78d2323f5946d578cebea12023a96214e65ed46177e53d6ab852d",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mixed-64/persistent",
+      "unit": "ms",
+      "nift_value": 93.278639,
+      "best_peer": "go",
+      "best_peer_value": 58.539854500000004,
+      "deficit": 1.5934210940001565,
+      "contract_sha256": "7385bacd1be366eb3ed802e23b6837ddf1472ca9b4170faf0104a1a8bdcffd1c",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "failures/fresh",
+      "unit": "ms",
+      "nift_value": 11.877701,
+      "best_peer": "go",
+      "best_peer_value": 7.8232295,
+      "deficit": 1.518260585350334,
+      "contract_sha256": "7a1a291509fabd565536f372547d15d83b545ea2a8445c41ef2cbf1f35774192",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mixed-64/fresh",
+      "unit": "ms",
+      "nift_value": 102.41581500000001,
+      "best_peer": "go",
+      "best_peer_value": 68.2898485,
+      "deficit": 1.4997223928531633,
+      "contract_sha256": "be3ef21babaae0bbe7959d213c0f1a4a002f8c50ac7d6d3126791ba04be84753",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-mixed/persistent",
+      "unit": "ms",
+      "nift_value": 119.138283,
+      "best_peer": "go",
+      "best_peer_value": 79.698537,
+      "deficit": 1.4948616058033788,
+      "contract_sha256": "5667381d7ef8baacae5cf3330887adf600a9528239469e7726935b3944a7567e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
       "suite": "template-engines",
       "scenario": "many-renders-1000/source-render",
       "unit": "ms/render",
@@ -490,6 +1867,17 @@
       "confidence": "audited same-node current-vs-peer; not version regression evidence"
     },
     {
+      "suite": "concurrency",
+      "scenario": "process-mixed/fresh",
+      "unit": "ms",
+      "nift_value": 128.14809350000002,
+      "best_peer": "go",
+      "best_peer_value": 86.62692050000001,
+      "deficit": 1.4793102739927133,
+      "contract_sha256": "6be1d9bd810f9c6e300fa67036e716d0ed32173a163500d58651d71e7f96f28d",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
       "suite": "template-engines",
       "scenario": "many-renders-100/source-render",
       "unit": "ms/render",
@@ -510,6 +1898,26 @@
       "deficit": 1.2386407361647278,
       "contract_sha256": "34c619db42cce1c35af88e6e685ac68b5e1ee7f8ee0c694d7f0966ea374fc80e",
       "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "website-generator",
+      "scenario": "10000/application-cold",
+      "unit": "ms/build",
+      "nift_value": 3015.980494,
+      "best_peer": "Hugo",
+      "best_peer_value": 2623.337268,
+      "deficit": 1.1496731780505471,
+      "confidence": "audited same-node minimal-page corpus, exact fresh/warm boundary; not real-site migration or universalSSGranking"
+    },
+    {
+      "suite": "website-generator",
+      "scenario": "1000/application-cold",
+      "unit": "ms/build",
+      "nift_value": 303.134187,
+      "best_peer": "Hugo",
+      "best_peer_value": 279.860816,
+      "deficit": 1.0831605200493661,
+      "confidence": "audited same-node minimal-page corpus, exact fresh/warm boundary; not real-site migration or universalSSGranking"
     },
     {
       "suite": "template-engines",
@@ -1146,5 +2554,1456 @@
       "qualification": "raw diagnostic peak, small quantized differences; no memory superiority or leak claim"
     }
   ],
-  "template_memory_control": "Supervisor allocation0\u219264MiB moves noopraw16.75\u219280.75MiB, proving inherited floor; raw retained/unranked."
+  "template_memory_control": "Supervisor allocation0\u219264MiB moves noopraw16.75\u219280.75MiB, proving inherited floor; raw retained/unranked.",
+  "current_concurrency_comparisons": [
+    {
+      "suite": "concurrency",
+      "scenario": "schedule-10/fresh",
+      "unit": "ms",
+      "nift_value": 9.247231500000002,
+      "best_peer": "go",
+      "best_peer_value": 5.069082,
+      "deficit": 1.824241844973114,
+      "contract_sha256": "0d90f43ff243c376a1bfea900db5813b5cc6072541fbb833f129595a703a10a8",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "schedule-10/persistent",
+      "unit": "ms",
+      "nift_value": 3.3855895,
+      "best_peer": "go",
+      "best_peer_value": 0.9958225,
+      "deficit": 3.3997921316298836,
+      "contract_sha256": "12533fae0f9fb5e0e4267dfea9476a9edc7c248d24a4b263c881d93112ee63c2",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "schedule-100/fresh",
+      "unit": "ms",
+      "nift_value": 24.932613,
+      "best_peer": "go",
+      "best_peer_value": 6.1022145000000005,
+      "deficit": 4.0858303161909495,
+      "contract_sha256": "f18fb35a9f1a11ca931b10acc6e77647d7607cd5d5fe46f64169427b7f4d6068",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "schedule-100/persistent",
+      "unit": "ms",
+      "nift_value": 16.4204655,
+      "best_peer": "go",
+      "best_peer_value": 1.2372705000000002,
+      "deficit": 13.27152429480861,
+      "contract_sha256": "39e18a36cd618149fb3eaaf8d5bd03eb5d687476248082fde4ddeaabd994da3e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "schedule-1000/fresh",
+      "unit": "ms",
+      "nift_value": 262.7284445,
+      "best_peer": "go",
+      "best_peer_value": 7.4816455,
+      "deficit": 35.11639845806648,
+      "contract_sha256": "00ea652964be6caa0ddabeb30df51056fb83577626eebce7bd7016cac3d77410",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "schedule-1000/persistent",
+      "unit": "ms",
+      "nift_value": 307.2421455,
+      "best_peer": "go",
+      "best_peer_value": 2.9272915,
+      "deficit": 104.9578238108504,
+      "contract_sha256": "fa792c5462e536020b686e35ba99b17f3e1aae80d2e314be0766630d4ba2bf56",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "schedule-10000/fresh",
+      "unit": "ms",
+      "nift_value": 31801.965319,
+      "best_peer": "go",
+      "best_peer_value": 29.027007,
+      "deficit": 1095.5991886797008,
+      "contract_sha256": "8b6a770ee18605b7f81f8fb9ba5a9bd37201ea9fd1db2417cea842807bbc2097",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "schedule-10000/persistent",
+      "unit": "ms",
+      "nift_value": 28018.832465,
+      "best_peer": "go",
+      "best_peer_value": 17.989364,
+      "deficit": 1557.52212612964,
+      "contract_sha256": "af8377c16756c53503a62defe66dd9cc78686c912cb6545d0a5c097128392d02",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "tiny-10/fresh",
+      "unit": "ms",
+      "nift_value": 9.5622615,
+      "best_peer": "go",
+      "best_peer_value": 5.6498845,
+      "deficit": 1.6924702620027012,
+      "contract_sha256": "24191a9087d6f9a09ca07500b0413dfd863af8c0954619c594ccbf466db3164e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "tiny-10/persistent",
+      "unit": "ms",
+      "nift_value": 3.455183,
+      "best_peer": "go",
+      "best_peer_value": 1.027099,
+      "deficit": 3.3640213845013966,
+      "contract_sha256": "ad79c5070f43e395ad52340b6f1fbc1099a842588a10ba8f3f7f95f89393a7d2",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "tiny-100/fresh",
+      "unit": "ms",
+      "nift_value": 22.9509225,
+      "best_peer": "go",
+      "best_peer_value": 6.296274,
+      "deficit": 3.645159422858662,
+      "contract_sha256": "971aa0fc9605264a3c05e34b2a1df5e7668236e903b38b3798043d50fc73374e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "tiny-100/persistent",
+      "unit": "ms",
+      "nift_value": 14.8006055,
+      "best_peer": "go",
+      "best_peer_value": 1.1893764999999998,
+      "deficit": 12.444003643926042,
+      "contract_sha256": "777fb2a12f3b50109918a1cd3335dd34b62e945ef1c70d03557a7ff6d4435793",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "tiny-1000/fresh",
+      "unit": "ms",
+      "nift_value": 305.412957,
+      "best_peer": "go",
+      "best_peer_value": 7.801553,
+      "deficit": 39.14771289767563,
+      "contract_sha256": "14bd946e212d8484572fd1cf66002d2ebaafff2305cc171287948a9e74aa848e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "tiny-1000/persistent",
+      "unit": "ms",
+      "nift_value": 328.279185,
+      "best_peer": "go",
+      "best_peer_value": 3.059819,
+      "deficit": 107.28712548029802,
+      "contract_sha256": "d4add3779cabd17e6141b4f1fa0117c3fa703388b625893e628474918ace586f",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "tiny-10000/fresh",
+      "unit": "ms",
+      "nift_value": 28070.536879,
+      "best_peer": "go",
+      "best_peer_value": 26.473922,
+      "deficit": 1060.3089666502756,
+      "contract_sha256": "48562d398a5843fe025e72630b302031d0c221d6e56b382081b7fa2635ac8c5b",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "tiny-10000/persistent",
+      "unit": "ms",
+      "nift_value": 30949.016847,
+      "best_peer": "go",
+      "best_peer_value": 17.780683,
+      "deficit": 1740.597751334974,
+      "contract_sha256": "e3ec03d4e6e84c37e2fe9330459b88682a8ccf0fc7f67b21b4c47b00d91bba41",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "fan-10/fresh",
+      "unit": "ms",
+      "nift_value": 10.132372,
+      "best_peer": "go",
+      "best_peer_value": 6.1978355,
+      "deficit": 1.6348242866400697,
+      "contract_sha256": "c5ba3844c9f78d2323f5946d578cebea12023a96214e65ed46177e53d6ab852d",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "fan-10/persistent",
+      "unit": "ms",
+      "nift_value": 3.422539,
+      "best_peer": "go",
+      "best_peer_value": 1.016844,
+      "deficit": 3.3658447116765204,
+      "contract_sha256": "fca6ff7a7af9b28ce133851f205eb57e5b3cca51ab54afd32bfe7cd572a73e90",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "fan-100/fresh",
+      "unit": "ms",
+      "nift_value": 21.4874665,
+      "best_peer": "go",
+      "best_peer_value": 6.001262499999999,
+      "deficit": 3.580491021680855,
+      "contract_sha256": "cffa3d9cceec9583199b5648b5cda50cb278cafa8cba833fd3527795f9fb1ce7",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "fan-100/persistent",
+      "unit": "ms",
+      "nift_value": 15.316787,
+      "best_peer": "go",
+      "best_peer_value": 1.3008235,
+      "deficit": 11.774685036056006,
+      "contract_sha256": "e70059ea27f4c2751589ed09827f8e935fc41208b91584041d737d2ee271f74e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "fan-1000/fresh",
+      "unit": "ms",
+      "nift_value": 332.00852,
+      "best_peer": "go",
+      "best_peer_value": 8.464566000000001,
+      "deficit": 39.22333643567785,
+      "contract_sha256": "bbbd80ce32da741d4eeabf73ac2f4cf005226e4712ede82cc5b2ffe4021966b6",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "fan-1000/persistent",
+      "unit": "ms",
+      "nift_value": 326.725533,
+      "best_peer": "go",
+      "best_peer_value": 3.0121884999999997,
+      "deficit": 108.4678243078081,
+      "contract_sha256": "4ec87091b8edf4f3896849a16373e4078a548dc4cd86ad5b9d026731d35b0bda",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "wait-100/fresh",
+      "unit": "ms",
+      "nift_value": 265.538105,
+      "best_peer": "go",
+      "best_peer_value": 16.308459499999998,
+      "deficit": 16.282231010231225,
+      "contract_sha256": "588a6daa5cc2f00447d89a6366df420f632dac79f3e3cf9fe3aaf6cbd5244fce",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "wait-100/persistent",
+      "unit": "ms",
+      "nift_value": 259.227799,
+      "best_peer": "go",
+      "best_peer_value": 11.982601500000001,
+      "deficit": 21.633682719065636,
+      "contract_sha256": "00ec6c00ce270eea466d30c9302bc3881a8c0d5211ae4beeb717f4571a7a0fb6",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "wait-1000/fresh",
+      "unit": "ms",
+      "nift_value": 2607.2293954999996,
+      "best_peer": "go",
+      "best_peer_value": 20.7751005,
+      "deficit": 125.49779942099435,
+      "contract_sha256": "54c1165940a03be9ab8ff1e662bb92b4a38c324c03a27dc355f92558518b9837",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "wait-1000/persistent",
+      "unit": "ms",
+      "nift_value": 2579.520181,
+      "best_peer": "go",
+      "best_peer_value": 14.698704,
+      "deficit": 175.49303537237023,
+      "contract_sha256": "62f3ca48fcf929952d28cb7db1e493e1b723c0dc42a7a27e439032c25d9c9d22",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "stagger-100/fresh",
+      "unit": "ms",
+      "nift_value": 287.428366,
+      "best_peer": "go",
+      "best_peer_value": 27.0907365,
+      "deficit": 10.609839492551263,
+      "contract_sha256": "dc67ace51e0fbe84d630abde655f73004ec9e621381df0cba797778011fe7a19",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "stagger-100/persistent",
+      "unit": "ms",
+      "nift_value": 279.9780075,
+      "best_peer": "go",
+      "best_peer_value": 22.0836045,
+      "deficit": 12.67809371880392,
+      "contract_sha256": "035e92540c964e10fa6d22b764c5781f3baf5fd173b869a079ba9050d960764f",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mixed-wait-100/fresh",
+      "unit": "ms",
+      "nift_value": 96.292141,
+      "best_peer": "go",
+      "best_peer_value": 26.669968,
+      "deficit": 3.6105083065716466,
+      "contract_sha256": "8ca2764c4a7451a225c11444e086245d63e68cf7d24c89be1f35be8312d61304",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mixed-wait-100/persistent",
+      "unit": "ms",
+      "nift_value": 89.300608,
+      "best_peer": "go",
+      "best_peer_value": 21.560194,
+      "deficit": 4.141920429843998,
+      "contract_sha256": "72e4dbe0afe516db19ab7e9d4e4f451d82cbe6ea50ebfc682e97575a3206985c",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-light-1/fresh",
+      "unit": "ms",
+      "nift_value": 27.9630675,
+      "best_peer": "go",
+      "best_peer_value": 6.1160645,
+      "deficit": 4.572068770693965,
+      "contract_sha256": "193191fa0886694f99f5c8058b79cb2ccc38d111fc728bbc7bf5aea724196a96",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-light-1/persistent",
+      "unit": "ms",
+      "nift_value": 22.008976,
+      "best_peer": "go",
+      "best_peer_value": 0.985926,
+      "deficit": 22.323152041836813,
+      "contract_sha256": "570b61bf49a57f87821928ee8a5ce79bffedba527970f7ab03f7ee6878f1ca1a",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-light-2/fresh",
+      "unit": "ms",
+      "nift_value": 18.794958,
+      "best_peer": "go",
+      "best_peer_value": 6.036595500000001,
+      "deficit": 3.113502967028352,
+      "contract_sha256": "bf7a07e44010b643bb534bae20eb4fb8320bace8caaf1276d8e75348a68eac88",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-light-2/persistent",
+      "unit": "ms",
+      "nift_value": 13.015843499999999,
+      "best_peer": "go",
+      "best_peer_value": 1.1585364999999999,
+      "deficit": 11.23472890150634,
+      "contract_sha256": "d32afcfe8132a9f79e5cd9d5475e02afac23d378b3693ad601757835e45f1dd4",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-light-4/fresh",
+      "unit": "ms",
+      "nift_value": 15.331295,
+      "best_peer": "go",
+      "best_peer_value": 6.808737,
+      "deficit": 2.251709090834321,
+      "contract_sha256": "a4ceaee82abbf2128994a6f19a2068ff34a201f032400b3399bf23e3260af888",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-light-4/persistent",
+      "unit": "ms",
+      "nift_value": 7.9989575,
+      "best_peer": "go",
+      "best_peer_value": 1.227966,
+      "deficit": 6.513989393843153,
+      "contract_sha256": "cb08b7120d36a071b9b16bc64145310f1a46a7b304f7190033864ca826fa4f3b",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-medium-1/fresh",
+      "unit": "ms",
+      "nift_value": 39.6197295,
+      "best_peer": "go",
+      "best_peer_value": 6.222834499999999,
+      "deficit": 6.366830019342472,
+      "contract_sha256": "59bfaa93c6fe162f425518a93c634873129548182f39a078337b33894db8560a",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-medium-1/persistent",
+      "unit": "ms",
+      "nift_value": 32.5849915,
+      "best_peer": "go",
+      "best_peer_value": 1.1604145,
+      "deficit": 28.080475985089812,
+      "contract_sha256": "c08bad7744c830018b77bffb80b4c6c47c4ce662116fde4e57d8fd4212858b33",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-medium-2/fresh",
+      "unit": "ms",
+      "nift_value": 25.047946500000002,
+      "best_peer": "go",
+      "best_peer_value": 6.736141,
+      "deficit": 3.7184415379666196,
+      "contract_sha256": "d8f79996d19e9904ef54100405200c7fd91fbc3eb42508bfacfce2e69505dbb9",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-medium-2/persistent",
+      "unit": "ms",
+      "nift_value": 18.4454645,
+      "best_peer": "go",
+      "best_peer_value": 1.223501,
+      "deficit": 15.07597010545966,
+      "contract_sha256": "7e05aac8cdbabf9e5092fa697c8d4df9b2714e1b6bd45d9378b44bb87d36e75f",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-medium-4/fresh",
+      "unit": "ms",
+      "nift_value": 17.6772525,
+      "best_peer": "go",
+      "best_peer_value": 7.024010499999999,
+      "deficit": 2.5166893614410175,
+      "contract_sha256": "9227a97530699869ce451e23cbfda2a91f45fc29a338e5caa3eaf5876152f9ab",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-medium-4/persistent",
+      "unit": "ms",
+      "nift_value": 11.228839,
+      "best_peer": "go",
+      "best_peer_value": 1.2728365,
+      "deficit": 8.821902106044258,
+      "contract_sha256": "af2c16132c42bda19d9dc28cae441be83d15fdf5c07b2ad166bbb51ed70148f2",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-heavy-1/fresh",
+      "unit": "ms",
+      "nift_value": 294.397809,
+      "best_peer": "go",
+      "best_peer_value": 7.2668289999999995,
+      "deficit": 40.51255492595188,
+      "contract_sha256": "3eedf31e3e39cb87011c62b50cc65a3101f07d26c6b5a100376f0cbd962ca8ab",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-heavy-1/persistent",
+      "unit": "ms",
+      "nift_value": 292.298763,
+      "best_peer": "go",
+      "best_peer_value": 2.418083,
+      "deficit": 120.8803680436114,
+      "contract_sha256": "78a8006b5374c5cf0801c1adc81f63f559fd0066e30b8405938424523f6b6564",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-heavy-2/fresh",
+      "unit": "ms",
+      "nift_value": 155.0466265,
+      "best_peer": "go",
+      "best_peer_value": 7.45472,
+      "deficit": 20.798450713105254,
+      "contract_sha256": "67e71089d9f03ed0dffa74bec209f9ef0010df6fec777d1386029a71be0eeae0",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-heavy-2/persistent",
+      "unit": "ms",
+      "nift_value": 150.48778199999998,
+      "best_peer": "go",
+      "best_peer_value": 1.9216365,
+      "deficit": 78.31230412203348,
+      "contract_sha256": "dde3cef19fa6ad55e0e6d2269497aba72fd47b60d541be71f1308b340618370b",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-heavy-4/fresh",
+      "unit": "ms",
+      "nift_value": 87.258454,
+      "best_peer": "go",
+      "best_peer_value": 8.094154,
+      "deficit": 10.78042918382823,
+      "contract_sha256": "e1f56a94d72d08b0e21fe8b495cc25454902866faf0bf4ad4ab549aec0c3bf06",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "pool-heavy-4/persistent",
+      "unit": "ms",
+      "nift_value": 79.3047375,
+      "best_peer": "go",
+      "best_peer_value": 1.8696385000000002,
+      "deficit": 42.41715042774312,
+      "contract_sha256": "7c16cd94cd4e898bfa07619517a7177afcf50e2c78f47a31fa61a575d6d68cce",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "cpu-1/fresh",
+      "unit": "ms",
+      "nift_value": 10808.905642,
+      "best_peer": "go",
+      "best_peer_value": 60.939035,
+      "deficit": 177.3724451330744,
+      "contract_sha256": "8ca1e8c1a8ef575ecfac6a909f301b83b0623f488e00cb72afdfcc78ccdb1bf5",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "cpu-1/persistent",
+      "unit": "ms",
+      "nift_value": 10913.01552,
+      "best_peer": "go",
+      "best_peer_value": 52.855408,
+      "deficit": 206.46923243880744,
+      "contract_sha256": "e4ff7407902f026e901388fe0c7825e03edab4b3ab1059e7fda70256d90dccc2",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "cpu-2/fresh",
+      "unit": "ms",
+      "nift_value": 5540.975144,
+      "best_peer": "go",
+      "best_peer_value": 33.679906,
+      "deficit": 164.5187235380051,
+      "contract_sha256": "f75a2896d56b93669e600340d1c19ba3461e519ec9e9848879be04004d58fddf",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "cpu-2/persistent",
+      "unit": "ms",
+      "nift_value": 5409.673228,
+      "best_peer": "go",
+      "best_peer_value": 27.515758,
+      "deficit": 196.60273316839024,
+      "contract_sha256": "953e034ad641433c3a4ab9e37973129c13a87164f08242861ff509e4621de1d1",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "cpu-4/fresh",
+      "unit": "ms",
+      "nift_value": 2836.492272,
+      "best_peer": "go",
+      "best_peer_value": 24.128136,
+      "deficit": 117.55952768170735,
+      "contract_sha256": "3d8f6f4ddf685bf2d3b19e970470007c6121b7a0351123610b3d40921c79bfa0",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "cpu-4/persistent",
+      "unit": "ms",
+      "nift_value": 2866.414489,
+      "best_peer": "go",
+      "best_peer_value": 15.379301,
+      "deficit": 186.38132441780024,
+      "contract_sha256": "1e76cd8856c580fb485528b6c273e8dac1ce43c2210f5493b5f3adc390772141",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-10/fresh",
+      "unit": "ms",
+      "nift_value": 18.3493985,
+      "best_peer": "go",
+      "best_peer_value": 11.066980000000001,
+      "deficit": 1.6580312334530285,
+      "contract_sha256": "80082460d9ff03652e9138456968d0eeb94f589d9c11a39219cf5250f3178b25",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-10/persistent",
+      "unit": "ms",
+      "nift_value": 12.218935,
+      "best_peer": "go",
+      "best_peer_value": 5.102969,
+      "deficit": 2.39447564741232,
+      "contract_sha256": "90bd719a070bdd7310685c0279e7aa166a918982f66ec9080affe5ea50e93768",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-100/fresh",
+      "unit": "ms",
+      "nift_value": 103.2233555,
+      "best_peer": "go",
+      "best_peer_value": 41.5633165,
+      "deficit": 2.4835206665955063,
+      "contract_sha256": "da3c932a9a3f1ffe568f6a71f0dcf741cbfd7696235d7020e5c00e63f8b639dd",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-100/persistent",
+      "unit": "ms",
+      "nift_value": 96.9258625,
+      "best_peer": "go",
+      "best_peer_value": 37.5413095,
+      "deficit": 2.581845540044361,
+      "contract_sha256": "5b7a64fe92f3ba81275e88bd345167faeacb5d97c8b35c2ebcf4a8912af151d0",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-1000/fresh",
+      "unit": "ms",
+      "nift_value": 986.5839880000001,
+      "best_peer": "go",
+      "best_peer_value": 330.70449299999996,
+      "deficit": 2.9832796617008777,
+      "contract_sha256": "55fa89cbe34d56579f24ffeda8d63b1360b2998a3fc988d6ec86058e2a451a94",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-1000/persistent",
+      "unit": "ms",
+      "nift_value": 1001.1119524999999,
+      "best_peer": "go",
+      "best_peer_value": 336.399241,
+      "deficit": 2.9759637671120664,
+      "contract_sha256": "d8294f6f95091cd592a7412a81099dd6e921630741d1a58d95c43c027dd91a03",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-mixed/fresh",
+      "unit": "ms",
+      "nift_value": 128.14809350000002,
+      "best_peer": "go",
+      "best_peer_value": 86.62692050000001,
+      "deficit": 1.4793102739927133,
+      "contract_sha256": "6be1d9bd810f9c6e300fa67036e716d0ed32173a163500d58651d71e7f96f28d",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-mixed/persistent",
+      "unit": "ms",
+      "nift_value": 119.138283,
+      "best_peer": "go",
+      "best_peer_value": 79.698537,
+      "deficit": 1.4948616058033788,
+      "contract_sha256": "5667381d7ef8baacae5cf3330887adf600a9528239469e7726935b3944a7567e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-one-failure/fresh",
+      "unit": "ms",
+      "nift_value": 106.17081350000001,
+      "best_peer": "go",
+      "best_peer_value": 42.925601,
+      "deficit": 2.4733681305941415,
+      "contract_sha256": "a2d45b265cdf8b95e26f247cd3faff01438e4aa3f45b70d952cf84ac8d5470e7",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-one-failure/persistent",
+      "unit": "ms",
+      "nift_value": 99.52038200000001,
+      "best_peer": "go",
+      "best_peer_value": 37.004439000000005,
+      "deficit": 2.689417396653412,
+      "contract_sha256": "ebe00363c4255d2be88fa3bb2345aa5394a662031749dfa2efbe94fdc3f82c07",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-many-failures/fresh",
+      "unit": "ms",
+      "nift_value": 107.49963650000001,
+      "best_peer": "go",
+      "best_peer_value": 44.054327,
+      "deficit": 2.440160679335767,
+      "contract_sha256": "6806002e2a352c20574fbec618bc514e4e68a24f8020d246da4aa7d0cf67c45a",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "process-many-failures/persistent",
+      "unit": "ms",
+      "nift_value": 90.311931,
+      "best_peer": "go",
+      "best_peer_value": 35.98956,
+      "deficit": 2.509392473817407,
+      "contract_sha256": "f3d3bf1cb4ab751a995241a083535ff397c71a88bb70aa6faeb2e077b6356d21",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "files-100/fresh",
+      "unit": "ms",
+      "nift_value": 25.029017500000002,
+      "best_peer": "go",
+      "best_peer_value": 7.730247,
+      "deficit": 3.237803074080298,
+      "contract_sha256": "157ea2bd23af5905a50dc9ca39aa4b53ca762e055c0196276ed8a15591a50ff1",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "files-100/persistent",
+      "unit": "ms",
+      "nift_value": 22.6971665,
+      "best_peer": "go",
+      "best_peer_value": 1.9600735,
+      "deficit": 11.57975274906783,
+      "contract_sha256": "8c0a128af6d0c2aa0690885ce12d842bfa9041231e63f57ad461215992fa1504",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "files-1000/fresh",
+      "unit": "ms",
+      "nift_value": 154.370297,
+      "best_peer": "go",
+      "best_peer_value": 14.786562,
+      "deficit": 10.439904624212172,
+      "contract_sha256": "5179244f83448237a43df7ee8f0dcc28091ce15610a4a97598bcf0e26fba7c0e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "files-1000/persistent",
+      "unit": "ms",
+      "nift_value": 145.381531,
+      "best_peer": "go",
+      "best_peer_value": 7.999181,
+      "deficit": 18.174551994760463,
+      "contract_sha256": "3fd5e5e3fd512f8febe68aefadc8d451d6da8e491408d50cb0c43ec8e33b753b",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "files-10000/fresh",
+      "unit": "ms",
+      "nift_value": 1461.295712,
+      "best_peer": "go",
+      "best_peer_value": 79.597337,
+      "deficit": 18.358600514487062,
+      "contract_sha256": "be1ed44f6b5a9c9c0f38c79c055b14db61b8c76c5ef309eb084ea490c5e087da",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "files-10000/persistent",
+      "unit": "ms",
+      "nift_value": 1446.8240150000001,
+      "best_peer": "go",
+      "best_peer_value": 72.407288,
+      "deficit": 19.981745691124356,
+      "contract_sha256": "bd6d7cbc3b938a41ec942b2e506ee7d4627db46e64500f8addda4b4bbb8b6fb5",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-1000-1-1/fresh",
+      "unit": "ms",
+      "nift_value": 111.50059300000001,
+      "best_peer": "go",
+      "best_peer_value": 7.568466,
+      "deficit": 14.732257897439192,
+      "contract_sha256": "eb32169abd6d884c0219229ec861aab8134cfe34f3dffc738cdc2b6124ab6a79",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-1000-1-1/persistent",
+      "unit": "ms",
+      "nift_value": 105.574439,
+      "best_peer": "go",
+      "best_peer_value": 2.1561909999999997,
+      "deficit": 48.96339841878572,
+      "contract_sha256": "be6fce887190c71f7ba0c3b9016192afaf937c9543a74111257d643b344adc2d",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-1000-1-4/fresh",
+      "unit": "ms",
+      "nift_value": 124.76633749999999,
+      "best_peer": "go",
+      "best_peer_value": 7.466129499999999,
+      "deficit": 16.710979564445005,
+      "contract_sha256": "57b802eba53840cb952b68a7da69dfcc25aa3789aa8b47de86a803fcaa1cf089",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-1000-1-4/persistent",
+      "unit": "ms",
+      "nift_value": 118.6309795,
+      "best_peer": "go",
+      "best_peer_value": 2.094405,
+      "deficit": 56.64185269802163,
+      "contract_sha256": "42e97a895536db771c5ec1107e42168dd526547e9ef7cd771c2c723e4b3a6102",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-1000-4-1/fresh",
+      "unit": "ms",
+      "nift_value": 123.899587,
+      "best_peer": "go",
+      "best_peer_value": 7.6016815,
+      "deficit": 16.298971089488557,
+      "contract_sha256": "50190bbd119fa838305dc73547cda0f4f51423e0d1a494ac1897e744e527aa90",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-1000-4-1/persistent",
+      "unit": "ms",
+      "nift_value": 120.959751,
+      "best_peer": "go",
+      "best_peer_value": 2.1435459999999997,
+      "deficit": 56.42974351845027,
+      "contract_sha256": "bda7d1f008db906922bbf3eff5eca295478c83314d873ca7ac7e50b55ec133b3",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-1000-4-4/fresh",
+      "unit": "ms",
+      "nift_value": 127.219796,
+      "best_peer": "go",
+      "best_peer_value": 7.8016155000000005,
+      "deficit": 16.306852856309053,
+      "contract_sha256": "56512f78400b7a12f857287a2907562371c7fa1ccd17a515c7458444206a3c73",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-1000-4-4/persistent",
+      "unit": "ms",
+      "nift_value": 120.439076,
+      "best_peer": "go",
+      "best_peer_value": 2.12254,
+      "deficit": 56.74290048715219,
+      "contract_sha256": "01fad1ef355244605660047024919f5a34190c44c543303473cea564eb4115be",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-10000-1-1/fresh",
+      "unit": "ms",
+      "nift_value": 1055.3026725,
+      "best_peer": "go",
+      "best_peer_value": 17.841921,
+      "deficit": 59.14736829627258,
+      "contract_sha256": "79789a93802edca7ab53e8ccd49f19455a2a8284458790efbe1f06c5b31f9ca1",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-10000-1-1/persistent",
+      "unit": "ms",
+      "nift_value": 1060.8076535,
+      "best_peer": "go",
+      "best_peer_value": 12.0501155,
+      "deficit": 88.03298636432157,
+      "contract_sha256": "bf845923032f8054e5134c7e5a5aa92f3918933b9632078dbdcd031afaad5ccc",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-10000-1-4/fresh",
+      "unit": "ms",
+      "nift_value": 1135.5369715000002,
+      "best_peer": "go",
+      "best_peer_value": 18.202586500000002,
+      "deficit": 62.383275667993665,
+      "contract_sha256": "534ef9442e4460ca98a4fc366c1bddde6973302932acd968435d6c1c7f2f3120",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-10000-1-4/persistent",
+      "unit": "ms",
+      "nift_value": 1125.6212225,
+      "best_peer": "go",
+      "best_peer_value": 12.9023025,
+      "deficit": 87.24188744605856,
+      "contract_sha256": "c31f36e94f32624c7742d9ecba6ea95029a18ceca3cf05a183efa11b3cba87ef",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-10000-4-1/fresh",
+      "unit": "ms",
+      "nift_value": 1131.3235275000002,
+      "best_peer": "go",
+      "best_peer_value": 18.851596,
+      "deficit": 60.01208213352334,
+      "contract_sha256": "b19887c70efb1aded7054ff3e49732e49ddacb18683b281ef33c710e90a4361c",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-10000-4-1/persistent",
+      "unit": "ms",
+      "nift_value": 1122.0983265,
+      "best_peer": "go",
+      "best_peer_value": 12.204426,
+      "deficit": 91.94191734211834,
+      "contract_sha256": "ae8bb4433d9df0708e6d509904a398c25e1e446095895b2ad750e93bc31845ad",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-10000-4-4/fresh",
+      "unit": "ms",
+      "nift_value": 1155.860735,
+      "best_peer": "go",
+      "best_peer_value": 19.3877095,
+      "deficit": 59.61822024411909,
+      "contract_sha256": "b92ec0a0a628bff0233ad6305fa4d11f020655c154913d02d7d9826e336a5124",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-10000-4-4/persistent",
+      "unit": "ms",
+      "nift_value": 1166.0922934999999,
+      "best_peer": "go",
+      "best_peer_value": 12.5924415,
+      "deficit": 92.60255793127965,
+      "contract_sha256": "508b26bdcd9356e99de833b3686906855c91425fbe03c1dd5ebb497de61cbbde",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-1-1/fresh",
+      "unit": "ms",
+      "nift_value": 10301.036211,
+      "best_peer": "bun",
+      "best_peer_value": 94.49064,
+      "deficit": 109.016472012466,
+      "contract_sha256": "d67668893be56c54e4c0afb61fc3a3ad8da26923be201e449f072100ea9874a1",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-1-1/persistent",
+      "unit": "ms",
+      "nift_value": 10500.561858,
+      "best_peer": "bun",
+      "best_peer_value": 61.342806,
+      "deficit": 171.17837514638634,
+      "contract_sha256": "33caf858aa7fc23e9f6d97c0c0b90a6e26ddddae6995a8a83ff5c26487b7fc2d",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-1-4/fresh",
+      "unit": "ms",
+      "nift_value": 11194.095404,
+      "best_peer": "bun",
+      "best_peer_value": 105.096451,
+      "deficit": 106.51259198086527,
+      "contract_sha256": "f71c3db6bcc9b4576841b23fe542458efe129487cc98a67e13f09a5c74a67e2e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-1-4/persistent",
+      "unit": "ms",
+      "nift_value": 11340.787264,
+      "best_peer": "bun",
+      "best_peer_value": 76.732899,
+      "deficit": 147.79563149308356,
+      "contract_sha256": "fa93d57c6da330bf6008187b706f4eae45d2ec509a3ef1ec69d431a2fedc38f3",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-4-1/fresh",
+      "unit": "ms",
+      "nift_value": 11790.826845,
+      "best_peer": "bun",
+      "best_peer_value": 106.54104,
+      "deficit": 110.66934248999259,
+      "contract_sha256": "2b5a2633083b64cb546bea28cd606016f1fd6417dc04bf0f6dcddfe48bd18eb8",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-4-1/persistent",
+      "unit": "ms",
+      "nift_value": 11683.552651,
+      "best_peer": "bun",
+      "best_peer_value": 70.811035,
+      "deficit": 164.99621352801861,
+      "contract_sha256": "637ddf085158636e2643c9cd3cfe8d75c447ef8eae4616800f529a2d9e411983",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-4-4/fresh",
+      "unit": "ms",
+      "nift_value": 11409.927779,
+      "best_peer": "bun",
+      "best_peer_value": 95.760189,
+      "deficit": 119.1510574295128,
+      "contract_sha256": "40ef150e674efb536da25fd97682fc05a835f895328715b9914cdbe441c6531b",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "queue-100000-4-4/persistent",
+      "unit": "ms",
+      "nift_value": 11833.785819,
+      "best_peer": "bun",
+      "best_peer_value": 62.231959,
+      "deficit": 190.15608714808414,
+      "contract_sha256": "7a6baf49f77e7c48930c03cb1878540296002d9ee0981a74cc4a63c1292ba273",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "atomic-1/fresh",
+      "unit": "ms",
+      "nift_value": 136.9978705,
+      "best_peer": "go",
+      "best_peer_value": 7.806207000000001,
+      "deficit": 17.54986390957862,
+      "contract_sha256": "9e6997654fc02c15fce26e2f7ccf60438b5b22e8adcf7c9b7a16e6182affb36f",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "atomic-1/persistent",
+      "unit": "ms",
+      "nift_value": 131.817397,
+      "best_peer": "go",
+      "best_peer_value": 0.925158,
+      "deficit": 142.4809567663037,
+      "contract_sha256": "e2c13907f5f7baa1fa265fbcf8934182793098006e782e82f1333fc6b1cce6d6",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-1-1/fresh",
+      "unit": "ms",
+      "nift_value": 189.402288,
+      "best_peer": "go",
+      "best_peer_value": 8.400158,
+      "deficit": 22.547467321448003,
+      "contract_sha256": "b174a08bf853975240dc12cd01111a88df3c458b591cb91ca8351af58af186c3",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-1-1/persistent",
+      "unit": "ms",
+      "nift_value": 181.675687,
+      "best_peer": "go",
+      "best_peer_value": 1.100008,
+      "deficit": 165.15851430171418,
+      "contract_sha256": "c306230db2cd89ac5b9be319f9d3414f437927aa2a1b2c0efa87c9e9e094560a",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-8-1/fresh",
+      "unit": "ms",
+      "nift_value": 233.246309,
+      "best_peer": "go",
+      "best_peer_value": 8.172969,
+      "deficit": 28.538748770489647,
+      "contract_sha256": "24d4cf6b4309b2f4ba9c545cd026403466a1be4e39f0d0a4edf417420c276560",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-8-1/persistent",
+      "unit": "ms",
+      "nift_value": 225.6657535,
+      "best_peer": "go",
+      "best_peer_value": 1.131339,
+      "deficit": 199.4678460655913,
+      "contract_sha256": "7901d79d868c1389d58e056f5ef79a71fd20a98fa4924c4756395284590b196e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "atomic-2/fresh",
+      "unit": "ms",
+      "nift_value": 88.337582,
+      "best_peer": "go",
+      "best_peer_value": 9.706163,
+      "deficit": 9.101184680290244,
+      "contract_sha256": "8609a31e04a6bc2e5788c9fc6fccb6bc3c81de413b2bc37b62284ecf52044ca2",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "atomic-2/persistent",
+      "unit": "ms",
+      "nift_value": 75.26708550000001,
+      "best_peer": "go",
+      "best_peer_value": 1.066462,
+      "deficit": 70.57643450962154,
+      "contract_sha256": "835c1bbb6d7b939c4327e2a7e9a5df8a6e75eca1125c18a1e1e900990fca0a12",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-1-2/fresh",
+      "unit": "ms",
+      "nift_value": 221.5862755,
+      "best_peer": "go",
+      "best_peer_value": 8.1503355,
+      "deficit": 27.187380875302615,
+      "contract_sha256": "e7b56c9ec2441a9a2f4c8962b70db516f9d2c7aba9c89e2a89ea3d9aec9c36e4",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-1-2/persistent",
+      "unit": "ms",
+      "nift_value": 211.751985,
+      "best_peer": "go",
+      "best_peer_value": 1.0000499999999999,
+      "deficit": 211.74139793010352,
+      "contract_sha256": "43482a3530bbf86ddcf303394a30c56ff4f6d45e33ad9ffceada4614111f0b24",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-8-2/fresh",
+      "unit": "ms",
+      "nift_value": 268.41258,
+      "best_peer": "go",
+      "best_peer_value": 8.577091,
+      "deficit": 31.294127577753343,
+      "contract_sha256": "8a722d9d65742ec6216351a340559a824a12aeb6e37056bb162ed04c922267de",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-8-2/persistent",
+      "unit": "ms",
+      "nift_value": 253.594244,
+      "best_peer": "go",
+      "best_peer_value": 0.962863,
+      "deficit": 263.3752091419028,
+      "contract_sha256": "70e4a7266f8fd4664a26a1a4fa3a5dc50a2440cd3fe7b132082eda987dc1dcf3",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "atomic-4/fresh",
+      "unit": "ms",
+      "nift_value": 56.59078649999999,
+      "best_peer": "go",
+      "best_peer_value": 9.1779275,
+      "deficit": 6.165965736818034,
+      "contract_sha256": "3fbe5122d4cbd6a976c75433668491f417b80671a65ba75d32eaac6ee29b0086",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "atomic-4/persistent",
+      "unit": "ms",
+      "nift_value": 46.154998,
+      "best_peer": "go",
+      "best_peer_value": 1.096397,
+      "deficit": 42.09697582171421,
+      "contract_sha256": "c7350fe15d6baa3c9957493e8f37b9c0a1ace42d86927e9fdc08773fe69d2b4c",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-1-4/fresh",
+      "unit": "ms",
+      "nift_value": 241.70798200000002,
+      "best_peer": "go",
+      "best_peer_value": 9.0440465,
+      "deficit": 26.72564564987586,
+      "contract_sha256": "32ba157f5ed4e6e55b5408f469cc409dc7c5109ba096cee1522c1362b4aba932",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-1-4/persistent",
+      "unit": "ms",
+      "nift_value": 221.8101395,
+      "best_peer": "go",
+      "best_peer_value": 1.064581,
+      "deficit": 208.354403751335,
+      "contract_sha256": "6d76dd64cd57e858eea2ee1e23c305460083afa73ea2cc00e11d982b2eaa2542",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-8-4/fresh",
+      "unit": "ms",
+      "nift_value": 274.30816849999997,
+      "best_peer": "go",
+      "best_peer_value": 8.942218,
+      "deficit": 30.675629748682034,
+      "contract_sha256": "7a6d113a5cb440d1aa6caaa26ec5964104cf4685d21d456bd9fa282164eb19db",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mutex-8-4/persistent",
+      "unit": "ms",
+      "nift_value": 275.163045,
+      "best_peer": "go",
+      "best_peer_value": 1.1599629999999999,
+      "deficit": 237.2170879588401,
+      "contract_sha256": "8a52b8cf1e755fb3bc838493a804c0974dd5146d3c75018431b0a1ef82fca452",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "failures/fresh",
+      "unit": "ms",
+      "nift_value": 11.877701,
+      "best_peer": "go",
+      "best_peer_value": 7.8232295,
+      "deficit": 1.518260585350334,
+      "contract_sha256": "7a1a291509fabd565536f372547d15d83b545ea2a8445c41ef2cbf1f35774192",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "failures/persistent",
+      "unit": "ms",
+      "nift_value": 3.6130435,
+      "best_peer": "go",
+      "best_peer_value": 1.1227825,
+      "deficit": 3.217937133861634,
+      "contract_sha256": "d0628ce5e6c5f4b561e6da570a323ba4f2e19291bbcf9bec828a8709a4a02db3",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mixed-64/fresh",
+      "unit": "ms",
+      "nift_value": 102.41581500000001,
+      "best_peer": "go",
+      "best_peer_value": 68.2898485,
+      "deficit": 1.4997223928531633,
+      "contract_sha256": "be3ef21babaae0bbe7959d213c0f1a4a002f8c50ac7d6d3126791ba04be84753",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "mixed-64/persistent",
+      "unit": "ms",
+      "nift_value": 93.278639,
+      "best_peer": "go",
+      "best_peer_value": 58.539854500000004,
+      "deficit": 1.5934210940001565,
+      "contract_sha256": "7385bacd1be366eb3ed802e23b6837ddf1472ca9b4170faf0104a1a8bdcffd1c",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "nested-10/fresh",
+      "unit": "ms",
+      "nift_value": 17.150312999999997,
+      "best_peer": "go",
+      "best_peer_value": 8.0910285,
+      "deficit": 2.1196703237419072,
+      "contract_sha256": "120e10671fdd5e4c154046b9e3927c9018ff5027a7df87cbcebf3e3aca036ac2",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "nested-10/persistent",
+      "unit": "ms",
+      "nift_value": 7.4980455,
+      "best_peer": "go",
+      "best_peer_value": 1.0446495,
+      "deficit": 7.1775705631410345,
+      "contract_sha256": "cfa915dcfd80170453bfef8e906b682d40656ff0e6eadf6944800f8fe600c88e",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "nested-100/fresh",
+      "unit": "ms",
+      "nift_value": 68.968703,
+      "best_peer": "go",
+      "best_peer_value": 9.7548685,
+      "deficit": 7.070182750285152,
+      "contract_sha256": "b152f1a4d2396933d2c6a67ed7947c0503e9a08287126d5dca845762cf2dddfa",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "nested-100/persistent",
+      "unit": "ms",
+      "nift_value": 53.652982,
+      "best_peer": "go",
+      "best_peer_value": 1.8547365,
+      "deficit": 28.92754954679546,
+      "contract_sha256": "165acaa2e3f49ccd17ae6644d04114865d284a3dd8c015fe5434f2918a419875",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "waiting-memory-100/fresh",
+      "unit": "ms",
+      "nift_value": 274.679833,
+      "best_peer": "go",
+      "best_peer_value": 20.312835,
+      "deficit": 13.522476453926789,
+      "contract_sha256": "83a2de0a099419b45c404912a69f0bc1a2bbc227286c7c46e541036ff4d71f5f",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "waiting-memory-100/persistent",
+      "unit": "ms",
+      "nift_value": 264.026751,
+      "best_peer": "go",
+      "best_peer_value": 11.963512,
+      "deficit": 22.06933474050095,
+      "contract_sha256": "9e48cae0d524af7960bc604d57e4c59208a40ad6c3506d3e1cb28ea5b2b87676",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "waiting-memory-1000/fresh",
+      "unit": "ms",
+      "nift_value": 2853.128298,
+      "best_peer": "go",
+      "best_peer_value": 23.763022,
+      "deficit": 120.06588631698443,
+      "contract_sha256": "7bc17efe0e0a527bc87a09237dce300e653e2a0559d1bce2c7edb3de2a17ead2",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    },
+    {
+      "suite": "concurrency",
+      "scenario": "waiting-memory-1000/persistent",
+      "unit": "ms",
+      "nift_value": 2796.157854,
+      "best_peer": "go",
+      "best_peer_value": 15.210809,
+      "deficit": 183.82703076476736,
+      "contract_sha256": "2a31a7560b4d639c5aa79195c722d480c656487308718f43609503ddc07b5a16",
+      "confidence": "audited same-node current-vs-peer, exact scenario/boundary/contract; version effects pending"
+    }
+  ],
+  "current_website_comparisons": [
+    {
+      "suite": "website-generator",
+      "scenario": "100/application-cold",
+      "unit": "ms/build",
+      "nift_value": 29.401403,
+      "best_peer": "Hugo",
+      "best_peer_value": 90.060098,
+      "deficit": 0.32646425723409717,
+      "confidence": "audited same-node minimal-page corpus, exact fresh/warm boundary; not real-site migration or universalSSGranking"
+    },
+    {
+      "suite": "website-generator",
+      "scenario": "100/warm-full",
+      "unit": "ms/build",
+      "nift_value": 27.225408,
+      "best_peer": "Hugo",
+      "best_peer_value": 85.413774,
+      "deficit": 0.31874727839563677,
+      "confidence": "audited same-node minimal-page corpus, exact fresh/warm boundary; not real-site migration or universalSSGranking"
+    },
+    {
+      "suite": "website-generator",
+      "scenario": "1000/application-cold",
+      "unit": "ms/build",
+      "nift_value": 303.134187,
+      "best_peer": "Hugo",
+      "best_peer_value": 279.860816,
+      "deficit": 1.0831605200493661,
+      "confidence": "audited same-node minimal-page corpus, exact fresh/warm boundary; not real-site migration or universalSSGranking"
+    },
+    {
+      "suite": "website-generator",
+      "scenario": "1000/warm-full",
+      "unit": "ms/build",
+      "nift_value": 250.192433,
+      "best_peer": "Hugo",
+      "best_peer_value": 282.727686,
+      "deficit": 0.8849237106549233,
+      "confidence": "audited same-node minimal-page corpus, exact fresh/warm boundary; not real-site migration or universalSSGranking"
+    },
+    {
+      "suite": "website-generator",
+      "scenario": "10000/application-cold",
+      "unit": "ms/build",
+      "nift_value": 3015.980494,
+      "best_peer": "Hugo",
+      "best_peer_value": 2623.337268,
+      "deficit": 1.1496731780505471,
+      "confidence": "audited same-node minimal-page corpus, exact fresh/warm boundary; not real-site migration or universalSSGranking"
+    },
+    {
+      "suite": "website-generator",
+      "scenario": "10000/warm-full",
+      "unit": "ms/build",
+      "nift_value": 2613.876604,
+      "best_peer": "Hugo",
+      "best_peer_value": 2723.813188,
+      "deficit": 0.9596387210090855,
+      "confidence": "audited same-node minimal-page corpus, exact fresh/warm boundary; not real-site migration or universalSSGranking"
+    }
+  ],
+  "concurrency_memory_policy": "Inherited wait4floor retained/unranked; heldREADY snapshots/guardedcensor controls separate. Censored elapsed is not a validwall ranking."
 }

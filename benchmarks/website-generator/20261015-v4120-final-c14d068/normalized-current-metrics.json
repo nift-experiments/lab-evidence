@@ -1,0 +1,596 @@
+{
+  "units": "ms, explicitly labelled MiB childpeak",
+  "rows": [
+    {
+      "pages": 100,
+      "id": "Nift/application-cold",
+      "engine": "Nift",
+      "samples": 5,
+      "wall_ms": {
+        "median": 29.401403,
+        "min": 28.091516,
+        "max": 30.216079,
+        "p90": 30.0622378,
+        "p95": 30.1391584,
+        "p99": 30.20069488
+      },
+      "child_peak_rss_mib_median": 7.0
+    },
+    {
+      "pages": 100,
+      "id": "Hugo/application-cold",
+      "engine": "Hugo",
+      "samples": 5,
+      "wall_ms": {
+        "median": 90.060098,
+        "min": 83.523361,
+        "max": 99.797108,
+        "p90": 97.2249444,
+        "p95": 98.51102619999999,
+        "p99": 99.53989164
+      },
+      "child_peak_rss_mib_median": 49.875
+    },
+    {
+      "pages": 100,
+      "id": "Astro/application-cold",
+      "engine": "Astro",
+      "samples": 5,
+      "wall_ms": {
+        "median": 1976.835132,
+        "min": 1946.097435,
+        "max": 2067.874958,
+        "p90": 2054.7266648,
+        "p95": 2061.3008114,
+        "p99": 2066.5601286799997
+      },
+      "child_peak_rss_mib_median": 374.00390625
+    },
+    {
+      "pages": 100,
+      "id": "VitePress/application-cold",
+      "engine": "VitePress",
+      "samples": 5,
+      "wall_ms": {
+        "median": 3843.070402,
+        "min": 3771.598371,
+        "max": 4140.447366,
+        "p90": 4051.8860832,
+        "p95": 4096.166724600001,
+        "p99": 4131.59123772
+      },
+      "child_peak_rss_mib_median": 366.46484375
+    },
+    {
+      "pages": 100,
+      "id": "Nift/warm-full",
+      "engine": "Nift",
+      "samples": 5,
+      "wall_ms": {
+        "median": 27.225408,
+        "min": 26.331283,
+        "max": 28.531854,
+        "p90": 28.3061924,
+        "p95": 28.419023199999998,
+        "p99": 28.50928784
+      },
+      "child_peak_rss_mib_median": 7.125
+    },
+    {
+      "pages": 100,
+      "id": "Hugo/warm-full",
+      "engine": "Hugo",
+      "samples": 5,
+      "wall_ms": {
+        "median": 85.413774,
+        "min": 83.048833,
+        "max": 89.508729,
+        "p90": 89.1458606,
+        "p95": 89.3272948,
+        "p99": 89.47244216
+      },
+      "child_peak_rss_mib_median": 49.75
+    },
+    {
+      "pages": 100,
+      "id": "Astro/warm-full",
+      "engine": "Astro",
+      "samples": 5,
+      "wall_ms": {
+        "median": 1958.813477,
+        "min": 1942.410744,
+        "max": 1986.794201,
+        "p90": 1975.6402626,
+        "p95": 1981.2172318,
+        "p99": 1985.67880716
+      },
+      "child_peak_rss_mib_median": 372.26953125
+    },
+    {
+      "pages": 100,
+      "id": "VitePress/warm-full",
+      "engine": "VitePress",
+      "samples": 5,
+      "wall_ms": {
+        "median": 3758.085775,
+        "min": 3685.141594,
+        "max": 3861.525362,
+        "p90": 3844.0651036,
+        "p95": 3852.7952327999997,
+        "p99": 3859.7793361599997
+      },
+      "child_peak_rss_mib_median": 365.44140625
+    },
+    {
+      "pages": 100,
+      "id": "Nift/incremental/no-op",
+      "engine": "Nift",
+      "samples": 5,
+      "wall_ms": {
+        "median": 12.060456,
+        "min": 11.671909,
+        "max": 13.751947,
+        "p90": 13.2701902,
+        "p95": 13.5110686,
+        "p99": 13.70377132
+      },
+      "child_peak_rss_mib_median": 6.0
+    },
+    {
+      "pages": 100,
+      "id": "Nift/incremental/one-page",
+      "engine": "Nift",
+      "samples": 5,
+      "wall_ms": {
+        "median": 12.459523,
+        "min": 12.055016,
+        "max": 12.587175,
+        "p90": 12.5815518,
+        "p95": 12.5843634,
+        "p99": 12.58661268
+      },
+      "child_peak_rss_mib_median": 7.125
+    },
+    {
+      "pages": 100,
+      "id": "Nift/incremental/shared-template",
+      "engine": "Nift",
+      "samples": 5,
+      "wall_ms": {
+        "median": 39.479988,
+        "min": 38.402159,
+        "max": 41.032417,
+        "p90": 40.632157400000004,
+        "p95": 40.8322872,
+        "p99": 40.99239104
+      },
+      "child_peak_rss_mib_median": 7.0
+    },
+    {
+      "pages": 1000,
+      "id": "Nift/application-cold",
+      "engine": "Nift",
+      "samples": 5,
+      "wall_ms": {
+        "median": 303.134187,
+        "min": 286.919635,
+        "max": 334.42199,
+        "p90": 323.7281628,
+        "p95": 329.0750764,
+        "p99": 333.35260728
+      },
+      "child_peak_rss_mib_median": 7.67578125
+    },
+    {
+      "pages": 1000,
+      "id": "Hugo/application-cold",
+      "engine": "Hugo",
+      "samples": 5,
+      "wall_ms": {
+        "median": 279.860816,
+        "min": 266.525365,
+        "max": 285.790806,
+        "p90": 284.8495784,
+        "p95": 285.3201922,
+        "p99": 285.69668323999997
+      },
+      "child_peak_rss_mib_median": 67.0
+    },
+    {
+      "pages": 1000,
+      "id": "Astro/application-cold",
+      "engine": "Astro",
+      "samples": 5,
+      "wall_ms": {
+        "median": 6555.92083,
+        "min": 6412.79363,
+        "max": 7107.678038,
+        "p90": 6944.627644,
+        "p95": 7026.152841,
+        "p99": 7091.3729986
+      },
+      "child_peak_rss_mib_median": 766.12890625
+    },
+    {
+      "pages": 1000,
+      "id": "VitePress/application-cold",
+      "engine": "VitePress",
+      "samples": 5,
+      "wall_ms": {
+        "median": 14286.209406,
+        "min": 14001.841315,
+        "max": 14508.282495,
+        "p90": 14481.1012094,
+        "p95": 14494.6918522,
+        "p99": 14505.56436644
+      },
+      "child_peak_rss_mib_median": 676.88671875
+    },
+    {
+      "pages": 1000,
+      "id": "Nift/warm-full",
+      "engine": "Nift",
+      "samples": 5,
+      "wall_ms": {
+        "median": 250.192433,
+        "min": 243.954438,
+        "max": 303.101819,
+        "p90": 287.2180578,
+        "p95": 295.1599384,
+        "p99": 301.51344287999996
+      },
+      "child_peak_rss_mib_median": 7.6796875
+    },
+    {
+      "pages": 1000,
+      "id": "Hugo/warm-full",
+      "engine": "Hugo",
+      "samples": 5,
+      "wall_ms": {
+        "median": 282.727686,
+        "min": 273.94217,
+        "max": 299.555064,
+        "p90": 296.1084788,
+        "p95": 297.83177140000004,
+        "p99": 299.21040548
+      },
+      "child_peak_rss_mib_median": 67.375
+    },
+    {
+      "pages": 1000,
+      "id": "Astro/warm-full",
+      "engine": "Astro",
+      "samples": 5,
+      "wall_ms": {
+        "median": 6875.534957,
+        "min": 6407.810082,
+        "max": 7655.018959,
+        "p90": 7455.2576042,
+        "p95": 7555.1382816,
+        "p99": 7635.04282352
+      },
+      "child_peak_rss_mib_median": 754.31640625
+    },
+    {
+      "pages": 1000,
+      "id": "VitePress/warm-full",
+      "engine": "VitePress",
+      "samples": 5,
+      "wall_ms": {
+        "median": 14298.196847,
+        "min": 13827.624255,
+        "max": 14771.402758,
+        "p90": 14640.7393584,
+        "p95": 14706.0710582,
+        "p99": 14758.33641804
+      },
+      "child_peak_rss_mib_median": 682.37890625
+    },
+    {
+      "pages": 1000,
+      "id": "Nift/incremental/no-op",
+      "engine": "Nift",
+      "samples": 5,
+      "wall_ms": {
+        "median": 87.48865,
+        "min": 86.568063,
+        "max": 108.684763,
+        "p90": 103.6457358,
+        "p95": 106.1652494,
+        "p99": 108.18086028
+      },
+      "child_peak_rss_mib_median": 6.0
+    },
+    {
+      "pages": 1000,
+      "id": "Nift/incremental/one-page",
+      "engine": "Nift",
+      "samples": 5,
+      "wall_ms": {
+        "median": 91.01161,
+        "min": 89.536382,
+        "max": 91.715448,
+        "p90": 91.6470712,
+        "p95": 91.68125959999999,
+        "p99": 91.70861031999999
+      },
+      "child_peak_rss_mib_median": 7.25
+    },
+    {
+      "pages": 1000,
+      "id": "Nift/incremental/shared-template",
+      "engine": "Nift",
+      "samples": 5,
+      "wall_ms": {
+        "median": 349.549065,
+        "min": 344.459751,
+        "max": 371.085893,
+        "p90": 369.8939542,
+        "p95": 370.4899236,
+        "p99": 370.96669912
+      },
+      "child_peak_rss_mib_median": 7.75
+    },
+    {
+      "pages": 10000,
+      "id": "Nift/application-cold",
+      "engine": "Nift",
+      "samples": 5,
+      "wall_ms": {
+        "median": 3015.980494,
+        "min": 2933.360506,
+        "max": 3024.418654,
+        "p90": 3023.2691508,
+        "p95": 3023.8439024,
+        "p99": 3024.30370368
+      },
+      "child_peak_rss_mib_median": 17.18359375
+    },
+    {
+      "pages": 10000,
+      "id": "Hugo/application-cold",
+      "engine": "Hugo",
+      "samples": 5,
+      "wall_ms": {
+        "median": 2623.337268,
+        "min": 2495.495491,
+        "max": 2675.680301,
+        "p90": 2665.8283998,
+        "p95": 2670.7543504,
+        "p99": 2674.69511088
+      },
+      "child_peak_rss_mib_median": 249.75
+    },
+    {
+      "pages": 10000,
+      "id": "Astro/application-cold",
+      "engine": "Astro",
+      "samples": 5,
+      "wall_ms": {
+        "median": 114414.165474,
+        "min": 113299.711675,
+        "max": 115315.717574,
+        "p90": 115179.45415599999,
+        "p95": 115247.585865,
+        "p99": 115302.0912322
+      },
+      "child_peak_rss_mib_median": 3620.6015625
+    },
+    {
+      "pages": 10000,
+      "id": "VitePress/application-cold",
+      "engine": "VitePress",
+      "samples": 5,
+      "wall_ms": {
+        "median": 136858.597323,
+        "min": 136290.607653,
+        "max": 138048.729206,
+        "p90": 137866.4402584,
+        "p95": 137957.5847322,
+        "p99": 138030.50031124
+      },
+      "child_peak_rss_mib_median": 2504.98828125
+    },
+    {
+      "pages": 10000,
+      "id": "Nift/warm-full",
+      "engine": "Nift",
+      "samples": 5,
+      "wall_ms": {
+        "median": 2613.876604,
+        "min": 2516.038179,
+        "max": 7998.730589,
+        "p90": 6626.8547426000005,
+        "p95": 7312.7926658,
+        "p99": 7861.543004359999
+      },
+      "child_peak_rss_mib_median": 16.80859375
+    },
+    {
+      "pages": 10000,
+      "id": "Hugo/warm-full",
+      "engine": "Hugo",
+      "samples": 5,
+      "wall_ms": {
+        "median": 2723.813188,
+        "min": 2659.723873,
+        "max": 5413.951559,
+        "p90": 4381.9348834,
+        "p95": 4897.943221199999,
+        "p99": 5310.74989144
+      },
+      "child_peak_rss_mib_median": 248.375
+    },
+    {
+      "pages": 10000,
+      "id": "Astro/warm-full",
+      "engine": "Astro",
+      "samples": 5,
+      "wall_ms": {
+        "median": 114818.584752,
+        "min": 114127.851896,
+        "max": 120495.334404,
+        "p90": 118299.8940796,
+        "p95": 119397.6142418,
+        "p99": 120275.79037156
+      },
+      "child_peak_rss_mib_median": 3560.078125
+    },
+    {
+      "pages": 10000,
+      "id": "VitePress/warm-full",
+      "engine": "VitePress",
+      "samples": 5,
+      "wall_ms": {
+        "median": 138269.482815,
+        "min": 135658.431781,
+        "max": 142049.123135,
+        "p90": 140886.3227778,
+        "p95": 141467.72295640002,
+        "p99": 141932.84309928
+      },
+      "child_peak_rss_mib_median": 2498.046875
+    },
+    {
+      "pages": 10000,
+      "id": "Nift/incremental/no-op",
+      "engine": "Nift",
+      "samples": 5,
+      "wall_ms": {
+        "median": 842.445613,
+        "min": 830.460871,
+        "max": 862.730101,
+        "p90": 855.2349362,
+        "p95": 858.9825186,
+        "p99": 861.98058452
+      },
+      "child_peak_rss_mib_median": 10.8125
+    },
+    {
+      "pages": 10000,
+      "id": "Nift/incremental/one-page",
+      "engine": "Nift",
+      "samples": 5,
+      "wall_ms": {
+        "median": 858.452265,
+        "min": 830.045948,
+        "max": 882.882202,
+        "p90": 874.5885208,
+        "p95": 878.7353614,
+        "p99": 882.05283388
+      },
+      "child_peak_rss_mib_median": 11.80859375
+    },
+    {
+      "pages": 10000,
+      "id": "Nift/incremental/shared-template",
+      "engine": "Nift",
+      "samples": 5,
+      "wall_ms": {
+        "median": 3488.225112,
+        "min": 3452.649125,
+        "max": 3582.407051,
+        "p90": 3582.2083022,
+        "p95": 3582.3076766,
+        "p99": 3582.3871761200003
+      },
+      "child_peak_rss_mib_median": 17.9375
+    },
+    {
+      "pages": 100,
+      "id": "Nift/100/fresh-full",
+      "engine": "Nift",
+      "cohort": "serial supplemental samehost, independent fullreference",
+      "samples": 5,
+      "wall_ms": {
+        "median": 29.13901,
+        "min": 28.254519,
+        "max": 34.343225,
+        "p90": 32.3436978,
+        "p95": 33.343461399999995,
+        "p99": 34.14327228
+      },
+      "child_peak_rss_mib_median": 7.0
+    },
+    {
+      "pages": 100,
+      "id": "Nift/100/targeted-one-page",
+      "engine": "Nift",
+      "cohort": "serial supplemental samehost, independent fullreference",
+      "samples": 5,
+      "wall_ms": {
+        "median": 5.057552,
+        "min": 4.827894,
+        "max": 6.135839,
+        "p90": 5.9586809999999995,
+        "p95": 6.04726,
+        "p99": 6.118123199999999
+      },
+      "child_peak_rss_mib_median": 7.125
+    },
+    {
+      "pages": 1000,
+      "id": "Nift/1000/fresh-full",
+      "engine": "Nift",
+      "cohort": "serial supplemental samehost, independent fullreference",
+      "samples": 5,
+      "wall_ms": {
+        "median": 303.897154,
+        "min": 292.056953,
+        "max": 393.259083,
+        "p90": 358.1892934,
+        "p95": 375.72418819999996,
+        "p99": 389.75210403999995
+      },
+      "child_peak_rss_mib_median": 7.625
+    },
+    {
+      "pages": 1000,
+      "id": "Nift/1000/targeted-one-page",
+      "engine": "Nift",
+      "cohort": "serial supplemental samehost, independent fullreference",
+      "samples": 5,
+      "wall_ms": {
+        "median": 19.685857,
+        "min": 19.217551,
+        "max": 20.909769,
+        "p90": 20.5198678,
+        "p95": 20.714818400000002,
+        "p99": 20.87077888
+      },
+      "child_peak_rss_mib_median": 7.25
+    },
+    {
+      "pages": 10000,
+      "id": "Nift/10000/fresh-full",
+      "engine": "Nift",
+      "cohort": "serial supplemental samehost, independent fullreference",
+      "samples": 5,
+      "wall_ms": {
+        "median": 3055.462638,
+        "min": 3014.633503,
+        "max": 3091.379814,
+        "p90": 3089.6170328,
+        "p95": 3090.4984234,
+        "p99": 3091.20353588
+      },
+      "child_peak_rss_mib_median": 17.06640625
+    },
+    {
+      "pages": 10000,
+      "id": "Nift/10000/targeted-one-page",
+      "engine": "Nift",
+      "cohort": "serial supplemental samehost, independent fullreference",
+      "samples": 5,
+      "wall_ms": {
+        "median": 151.855018,
+        "min": 149.272076,
+        "max": 159.080501,
+        "p90": 156.9891402,
+        "p95": 158.0348206,
+        "p99": 158.87136492
+      },
+      "child_peak_rss_mib_median": 11.93359375
+    }
+  ]
+}
