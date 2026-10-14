@@ -1,0 +1,4117 @@
+{
+  "note": "Operational rates, not device bandwidth; byte reads/checksums and stream writes include stated work. Files/sec is input-tree rate, not selected-output rate.",
+  "rows": [
+    {
+      "scenario": "walk-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 44540.41419021964
+    },
+    {
+      "scenario": "walk-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 23974.622765903798
+    },
+    {
+      "scenario": "walk-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 18817.893430543558
+    },
+    {
+      "scenario": "walk-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 31992.036286391303
+    },
+    {
+      "scenario": "walk-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 85984.81852044203
+    },
+    {
+      "scenario": "walk-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 42418.63416664033
+    },
+    {
+      "scenario": "walk-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 144689.9302030246
+    },
+    {
+      "scenario": "walk-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 116361.13142582531
+    },
+    {
+      "scenario": "walk-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 111880.11285123223
+    },
+    {
+      "scenario": "walk-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 246880.0533260915
+    },
+    {
+      "scenario": "stat-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 34793.55626121527
+    },
+    {
+      "scenario": "stat-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 21239.49892623713
+    },
+    {
+      "scenario": "stat-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 15165.072956512106
+    },
+    {
+      "scenario": "stat-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 19706.624718882536
+    },
+    {
+      "scenario": "stat-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 57114.06838872817
+    },
+    {
+      "scenario": "stat-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 40965.423953220765
+    },
+    {
+      "scenario": "stat-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 92137.89209510325
+    },
+    {
+      "scenario": "stat-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 51613.05240417727
+    },
+    {
+      "scenario": "stat-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 71898.6964622534
+    },
+    {
+      "scenario": "stat-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 124442.63698427705
+    },
+    {
+      "scenario": "read-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 1770.9861639049466,
+      "source_mib_per_second": 1.178207347812739
+    },
+    {
+      "scenario": "read-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 9616.194594852412,
+      "source_mib_per_second": 6.397492741936724
+    },
+    {
+      "scenario": "read-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 9051.779728343781,
+      "source_mib_per_second": 6.021997011654492
+    },
+    {
+      "scenario": "read-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 14793.441688587342,
+      "source_mib_per_second": 9.841828271826296
+    },
+    {
+      "scenario": "read-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 26779.944403228623,
+      "source_mib_per_second": 17.816247192089353
+    },
+    {
+      "scenario": "read-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 1541.8349285900156,
+      "source_mib_per_second": 1.025756879982371
+    },
+    {
+      "scenario": "read-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 7639.329354582169,
+      "source_mib_per_second": 5.082317502743264
+    },
+    {
+      "scenario": "read-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 17767.016177632213,
+      "source_mib_per_second": 11.820097432628852
+    },
+    {
+      "scenario": "read-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 24164.072311179705,
+      "source_mib_per_second": 16.075951427725755
+    },
+    {
+      "scenario": "read-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 51307.3892388908,
+      "source_mib_per_second": 34.133944256830425
+    },
+    {
+      "scenario": "hash-sha256-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 17632.40059403558
+    },
+    {
+      "scenario": "hash-sha256-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 13716.087334113696
+    },
+    {
+      "scenario": "hash-sha256-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 25753.058046877777
+    },
+    {
+      "scenario": "hash-sha256-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 43765.892216074135
+    },
+    {
+      "scenario": "hash-sha256-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 44783.102224909606
+    },
+    {
+      "scenario": "hash-sha256-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 35343.49958467854
+    },
+    {
+      "scenario": "hash-sha256-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 49717.35435462624
+    },
+    {
+      "scenario": "hash-sha256-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 57264.38525737564
+    },
+    {
+      "scenario": "manifest-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 1708.8658616479845
+    },
+    {
+      "scenario": "manifest-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 9050.098822101583
+    },
+    {
+      "scenario": "manifest-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 9740.630295341462
+    },
+    {
+      "scenario": "manifest-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 11181.054195631887
+    },
+    {
+      "scenario": "manifest-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 38423.19063946525
+    },
+    {
+      "scenario": "manifest-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 1721.6853961245497
+    },
+    {
+      "scenario": "manifest-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 15223.07907690841
+    },
+    {
+      "scenario": "manifest-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 23076.72781230313
+    },
+    {
+      "scenario": "manifest-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 22376.288437876396
+    },
+    {
+      "scenario": "manifest-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 45474.732101531976
+    },
+    {
+      "scenario": "write-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 6498.849433947939,
+      "source_mib_per_second": 4.323575368043978
+    },
+    {
+      "scenario": "write-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 11379.890856604783,
+      "source_mib_per_second": 7.57085024029493
+    },
+    {
+      "scenario": "write-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 10211.167349228745,
+      "source_mib_per_second": 6.793318121740315
+    },
+    {
+      "scenario": "write-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 15517.672021463548,
+      "source_mib_per_second": 10.323646547482463
+    },
+    {
+      "scenario": "write-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 15274.44504237108,
+      "source_mib_per_second": 10.161831723745408
+    },
+    {
+      "scenario": "write-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 9324.212239733031,
+      "source_mib_per_second": 6.203241785466921
+    },
+    {
+      "scenario": "write-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 16023.810870191155,
+      "source_mib_per_second": 10.660372221989965
+    },
+    {
+      "scenario": "write-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 15367.49056240144,
+      "source_mib_per_second": 10.223733345347636
+    },
+    {
+      "scenario": "write-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 25100.80609230701,
+      "source_mib_per_second": 16.699144678109523
+    },
+    {
+      "scenario": "write-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 27281.32957196549,
+      "source_mib_per_second": 18.149810323145985
+    },
+    {
+      "scenario": "overwrite-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 8268.990868313584,
+      "source_mib_per_second": 5.501220731483036
+    },
+    {
+      "scenario": "overwrite-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 10367.017830389472,
+      "source_mib_per_second": 6.897002829055496
+    },
+    {
+      "scenario": "overwrite-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 9717.38359951887,
+      "source_mib_per_second": 6.464812087082255
+    },
+    {
+      "scenario": "overwrite-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 18665.125474812794,
+      "source_mib_per_second": 12.417594462613494
+    },
+    {
+      "scenario": "overwrite-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 17696.404518854757,
+      "source_mib_per_second": 11.773120682099417
+    },
+    {
+      "scenario": "overwrite-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 9299.989683521444,
+      "source_mib_per_second": 6.187126925682602
+    },
+    {
+      "scenario": "overwrite-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 18163.857099414385,
+      "source_mib_per_second": 12.084109032203175
+    },
+    {
+      "scenario": "overwrite-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 17566.76578714262,
+      "source_mib_per_second": 11.686874211416905
+    },
+    {
+      "scenario": "overwrite-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 32372.063259025745,
+      "source_mib_per_second": 21.536589936729772
+    },
+    {
+      "scenario": "overwrite-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 19962.519571004657,
+      "source_mib_per_second": 13.28072896264348
+    },
+    {
+      "scenario": "copy-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 11273.047816717828,
+      "source_mib_per_second": 7.499769360487325
+    },
+    {
+      "scenario": "copy-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 7365.839302695439,
+      "source_mib_per_second": 4.900369165001238
+    },
+    {
+      "scenario": "copy-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 9066.684887076615,
+      "source_mib_per_second": 6.031913163399359
+    },
+    {
+      "scenario": "copy-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 13801.589426922537,
+      "source_mib_per_second": 9.18196562215916
+    },
+    {
+      "scenario": "copy-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 18136.176021744548,
+      "source_mib_per_second": 12.065693276185034
+    },
+    {
+      "scenario": "copy-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 12329.718724222797,
+      "source_mib_per_second": 8.202754766481231
+    },
+    {
+      "scenario": "copy-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 15335.832102696706,
+      "source_mib_per_second": 10.202671503869269
+    },
+    {
+      "scenario": "copy-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 17398.560303931972,
+      "source_mib_per_second": 11.574969928763336
+    },
+    {
+      "scenario": "copy-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 22357.730439059545,
+      "source_mib_per_second": 14.874222521102848
+    },
+    {
+      "scenario": "copy-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 30353.19401500577,
+      "source_mib_per_second": 20.193470139377617
+    },
+    {
+      "scenario": "rename-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 18875.3874291241
+    },
+    {
+      "scenario": "rename-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 17958.88668479473
+    },
+    {
+      "scenario": "rename-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 10634.376163301054
+    },
+    {
+      "scenario": "rename-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 22954.388138733106
+    },
+    {
+      "scenario": "rename-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 40544.48650529474
+    },
+    {
+      "scenario": "rename-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 22210.901572478524
+    },
+    {
+      "scenario": "rename-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 51231.36900822884
+    },
+    {
+      "scenario": "rename-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 38692.052315833476
+    },
+    {
+      "scenario": "rename-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 43049.53430090032
+    },
+    {
+      "scenario": "rename-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 33878.7277738183
+    },
+    {
+      "scenario": "relocate-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 29001.99298795614
+    },
+    {
+      "scenario": "relocate-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 20075.227901515347
+    },
+    {
+      "scenario": "relocate-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 16316.619697645205
+    },
+    {
+      "scenario": "relocate-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 29356.35200121371
+    },
+    {
+      "scenario": "relocate-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 61288.82555165459
+    },
+    {
+      "scenario": "relocate-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 35255.55677813992
+    },
+    {
+      "scenario": "relocate-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 91636.34191022003
+    },
+    {
+      "scenario": "relocate-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 61072.872028758975
+    },
+    {
+      "scenario": "relocate-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 72150.76971162636
+    },
+    {
+      "scenario": "relocate-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 115520.2227969225
+    },
+    {
+      "scenario": "delete-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 17526.75230892177
+    },
+    {
+      "scenario": "delete-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 12637.6569420065
+    },
+    {
+      "scenario": "delete-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 13464.394855227798
+    },
+    {
+      "scenario": "delete-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 22358.632237503232
+    },
+    {
+      "scenario": "delete-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 43015.86463802129
+    },
+    {
+      "scenario": "delete-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 20716.479012311203
+    },
+    {
+      "scenario": "delete-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 47633.8549430985
+    },
+    {
+      "scenario": "delete-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 28472.63990003142
+    },
+    {
+      "scenario": "delete-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 42270.19344362247
+    },
+    {
+      "scenario": "delete-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 46803.04981777466
+    },
+    {
+      "scenario": "generate-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 1343.5529000757965
+    },
+    {
+      "scenario": "generate-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 6036.988738667614
+    },
+    {
+      "scenario": "generate-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 8424.343907463099
+    },
+    {
+      "scenario": "generate-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 10764.60099714652
+    },
+    {
+      "scenario": "generate-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 17784.803486547105
+    },
+    {
+      "scenario": "generate-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 1126.5545695451776
+    },
+    {
+      "scenario": "generate-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 8692.70020851093
+    },
+    {
+      "scenario": "generate-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 12907.982439619265
+    },
+    {
+      "scenario": "generate-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 9154.66199056297
+    },
+    {
+      "scenario": "generate-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 14096.98326954519
+    },
+    {
+      "scenario": "mixed-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 1671.76351139749
+    },
+    {
+      "scenario": "mixed-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 7098.213889925484
+    },
+    {
+      "scenario": "mixed-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 7849.111074827287
+    },
+    {
+      "scenario": "mixed-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 11380.452793164844
+    },
+    {
+      "scenario": "mixed-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 28109.016773859
+    },
+    {
+      "scenario": "mixed-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 1705.3284231470982
+    },
+    {
+      "scenario": "mixed-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 10611.177846577119
+    },
+    {
+      "scenario": "mixed-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 18220.07636689928
+    },
+    {
+      "scenario": "mixed-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 16435.317386769417
+    },
+    {
+      "scenario": "mixed-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 34555.65556346227
+    },
+    {
+      "scenario": "clean-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 866.9794684661933
+    },
+    {
+      "scenario": "clean-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 5461.272600486801
+    },
+    {
+      "scenario": "clean-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 7600.781190048838
+    },
+    {
+      "scenario": "clean-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 7512.772652606011
+    },
+    {
+      "scenario": "clean-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 20489.620798178097
+    },
+    {
+      "scenario": "clean-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 880.7519930977228
+    },
+    {
+      "scenario": "clean-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 7147.134856221481
+    },
+    {
+      "scenario": "clean-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 13663.900432797212
+    },
+    {
+      "scenario": "clean-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 14322.385936482597
+    },
+    {
+      "scenario": "clean-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 22042.756952858654
+    },
+    {
+      "scenario": "filter-1-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 24250.244872910167
+    },
+    {
+      "scenario": "filter-1-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 15825.468378870512
+    },
+    {
+      "scenario": "filter-1-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 12046.60102321179
+    },
+    {
+      "scenario": "filter-1-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 17840.646312380333
+    },
+    {
+      "scenario": "filter-1-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 58984.7625252816
+    },
+    {
+      "scenario": "filter-1-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 26990.795167179367
+    },
+    {
+      "scenario": "filter-1-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 79206.50919092531
+    },
+    {
+      "scenario": "filter-1-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 64830.271432028734
+    },
+    {
+      "scenario": "filter-1-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 80240.33585394976
+    },
+    {
+      "scenario": "filter-1-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 127519.35201806387
+    },
+    {
+      "scenario": "filter-10-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 22170.698995802577
+    },
+    {
+      "scenario": "filter-10-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 19702.89997133228
+    },
+    {
+      "scenario": "filter-10-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 15635.56622248629
+    },
+    {
+      "scenario": "filter-10-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 27158.331688670034
+    },
+    {
+      "scenario": "filter-10-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 61627.2199049018
+    },
+    {
+      "scenario": "filter-10-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 26333.30597302843
+    },
+    {
+      "scenario": "filter-10-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 74093.11874978236
+    },
+    {
+      "scenario": "filter-10-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 62205.50746413215
+    },
+    {
+      "scenario": "filter-10-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 69153.7585413536
+    },
+    {
+      "scenario": "filter-10-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 137042.09439788363
+    },
+    {
+      "scenario": "filter-50-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 21429.632042288722
+    },
+    {
+      "scenario": "filter-50-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 18165.006963282944
+    },
+    {
+      "scenario": "filter-50-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 15879.283905272321
+    },
+    {
+      "scenario": "filter-50-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 27865.07363526831
+    },
+    {
+      "scenario": "filter-50-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 70575.15647217941
+    },
+    {
+      "scenario": "filter-50-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 18596.76682562935
+    },
+    {
+      "scenario": "filter-50-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 63930.25567115708
+    },
+    {
+      "scenario": "filter-50-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 61798.92594702682
+    },
+    {
+      "scenario": "filter-50-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 71449.62865484499
+    },
+    {
+      "scenario": "filter-50-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 124750.42118860954
+    },
+    {
+      "scenario": "mirror-0-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 474.10618754079456
+    },
+    {
+      "scenario": "mirror-0-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 2955.14882272796
+    },
+    {
+      "scenario": "mirror-0-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 5978.436330173207
+    },
+    {
+      "scenario": "mirror-0-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 6613.156618502033
+    },
+    {
+      "scenario": "mirror-0-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 13332.482898690836
+    },
+    {
+      "scenario": "mirror-0-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 807.8459576320533
+    },
+    {
+      "scenario": "mirror-0-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 3541.015259286434
+    },
+    {
+      "scenario": "mirror-0-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 13057.953115445454
+    },
+    {
+      "scenario": "mirror-0-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 13715.95752491651
+    },
+    {
+      "scenario": "mirror-0-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 21399.009003333453
+    },
+    {
+      "scenario": "mirror-1-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 806.0999862385028
+    },
+    {
+      "scenario": "mirror-1-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 5389.7174528477735
+    },
+    {
+      "scenario": "mirror-1-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 7921.337945664375
+    },
+    {
+      "scenario": "mirror-1-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 9974.64077253912
+    },
+    {
+      "scenario": "mirror-1-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 18881.59908111565
+    },
+    {
+      "scenario": "mirror-1-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 626.3466633336338
+    },
+    {
+      "scenario": "mirror-1-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 6687.60327874731
+    },
+    {
+      "scenario": "mirror-1-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 12436.539602997549
+    },
+    {
+      "scenario": "mirror-1-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 12725.073950176627
+    },
+    {
+      "scenario": "mirror-1-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 21242.030892795334
+    },
+    {
+      "scenario": "mirror-10-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 768.898208335001
+    },
+    {
+      "scenario": "mirror-10-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 5145.931701784469
+    },
+    {
+      "scenario": "mirror-10-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 7345.747529125595
+    },
+    {
+      "scenario": "mirror-10-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 8913.699557552478
+    },
+    {
+      "scenario": "mirror-10-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 9330.658146556572
+    },
+    {
+      "scenario": "mirror-10-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 297.0184205932559
+    },
+    {
+      "scenario": "mirror-10-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 6305.765152357974
+    },
+    {
+      "scenario": "mirror-10-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 11668.879125045038
+    },
+    {
+      "scenario": "mirror-10-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 12867.625321052077
+    },
+    {
+      "scenario": "mirror-10-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 6616.86347622772
+    },
+    {
+      "scenario": "mirror-11-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 863.2261611150427
+    },
+    {
+      "scenario": "mirror-11-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 4898.604927772201
+    },
+    {
+      "scenario": "mirror-11-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 6900.359675727809
+    },
+    {
+      "scenario": "mirror-11-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 7852.063603976586
+    },
+    {
+      "scenario": "mirror-11-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 14066.667140244459
+    },
+    {
+      "scenario": "mirror-11-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 829.3828563078533
+    },
+    {
+      "scenario": "mirror-11-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 6419.883560645895
+    },
+    {
+      "scenario": "mirror-11-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 4349.3094094756025
+    },
+    {
+      "scenario": "mirror-11-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 7685.373180087299
+    },
+    {
+      "scenario": "mirror-11-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 9785.333655805744
+    },
+    {
+      "scenario": "mirror-12-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 522.8028736230093
+    },
+    {
+      "scenario": "mirror-12-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 3253.5778163672353
+    },
+    {
+      "scenario": "mirror-12-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 7840.481637650809
+    },
+    {
+      "scenario": "mirror-12-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 8190.209423654963
+    },
+    {
+      "scenario": "mirror-12-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 12975.388387110435
+    },
+    {
+      "scenario": "mirror-12-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 513.0260673695612
+    },
+    {
+      "scenario": "mirror-12-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 5016.09594964899
+    },
+    {
+      "scenario": "mirror-12-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 10260.496880773037
+    },
+    {
+      "scenario": "mirror-12-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 10186.740474083568
+    },
+    {
+      "scenario": "mirror-12-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 14879.203631692215
+    },
+    {
+      "scenario": "detect-mtime-1-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 11155.834230773715
+    },
+    {
+      "scenario": "detect-mtime-1-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 8364.639110489556
+    },
+    {
+      "scenario": "detect-mtime-1-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 14726.82476403945
+    },
+    {
+      "scenario": "detect-mtime-1-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 30050.597091841446
+    },
+    {
+      "scenario": "detect-mtime-1-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 27771.663383222905
+    },
+    {
+      "scenario": "detect-mtime-1-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 25703.51682200073
+    },
+    {
+      "scenario": "detect-mtime-1-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 30607.686226651385
+    },
+    {
+      "scenario": "detect-mtime-1-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 48696.99028251559
+    },
+    {
+      "scenario": "detect-mtime-2-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 17560.1132283125
+    },
+    {
+      "scenario": "detect-mtime-2-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 14055.536799222562
+    },
+    {
+      "scenario": "detect-mtime-2-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 22628.61607547748
+    },
+    {
+      "scenario": "detect-mtime-2-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 44613.98751120648
+    },
+    {
+      "scenario": "detect-mtime-2-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 47138.59978654699
+    },
+    {
+      "scenario": "detect-mtime-2-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 27550.489302200105
+    },
+    {
+      "scenario": "detect-mtime-2-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 40136.57029956411
+    },
+    {
+      "scenario": "detect-mtime-2-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 54422.79348498209
+    },
+    {
+      "scenario": "detect-mtime-3-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 15681.991542670596
+    },
+    {
+      "scenario": "detect-mtime-3-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 12749.770880242397
+    },
+    {
+      "scenario": "detect-mtime-3-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 20266.989209044263
+    },
+    {
+      "scenario": "detect-mtime-3-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 47146.149291110494
+    },
+    {
+      "scenario": "detect-mtime-3-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 46679.034121160286
+    },
+    {
+      "scenario": "detect-mtime-3-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 35843.34736719861
+    },
+    {
+      "scenario": "detect-mtime-3-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 51094.94160589051
+    },
+    {
+      "scenario": "detect-mtime-3-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 74877.33594824957
+    },
+    {
+      "scenario": "detect-hash-1-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 751.4503888609605
+    },
+    {
+      "scenario": "detect-hash-1-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 6220.651007426033
+    },
+    {
+      "scenario": "detect-hash-1-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 8467.637687937948
+    },
+    {
+      "scenario": "detect-hash-1-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 11865.818007541677
+    },
+    {
+      "scenario": "detect-hash-1-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 12919.135012751123
+    },
+    {
+      "scenario": "detect-hash-1-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 886.5101889896108
+    },
+    {
+      "scenario": "detect-hash-1-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 6066.441536168106
+    },
+    {
+      "scenario": "detect-hash-1-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 14852.046805869059
+    },
+    {
+      "scenario": "detect-hash-1-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 13708.801880189594
+    },
+    {
+      "scenario": "detect-hash-1-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 31185.66203012797
+    },
+    {
+      "scenario": "detect-hash-2-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 909.819249175777
+    },
+    {
+      "scenario": "detect-hash-2-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 6326.381928067507
+    },
+    {
+      "scenario": "detect-hash-2-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 9133.788574752123
+    },
+    {
+      "scenario": "detect-hash-2-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 11464.238574565006
+    },
+    {
+      "scenario": "detect-hash-2-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 27672.68154538201
+    },
+    {
+      "scenario": "detect-hash-2-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 936.5129060319132
+    },
+    {
+      "scenario": "detect-hash-2-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 8108.382018018496
+    },
+    {
+      "scenario": "detect-hash-2-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 15947.462424628904
+    },
+    {
+      "scenario": "detect-hash-2-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 14471.729555907048
+    },
+    {
+      "scenario": "detect-hash-2-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 28528.96850005325
+    },
+    {
+      "scenario": "detect-hash-3-1000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 952.8552873729316
+    },
+    {
+      "scenario": "detect-hash-3-1000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 6477.949697308407
+    },
+    {
+      "scenario": "detect-hash-3-1000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 9798.148345925587
+    },
+    {
+      "scenario": "detect-hash-3-1000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 10570.774463985625
+    },
+    {
+      "scenario": "detect-hash-3-1000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 19077.248376292468
+    },
+    {
+      "scenario": "detect-hash-3-1000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 929.169817783499
+    },
+    {
+      "scenario": "detect-hash-3-1000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 7865.456954143482
+    },
+    {
+      "scenario": "detect-hash-3-1000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 15413.641880739287
+    },
+    {
+      "scenario": "detect-hash-3-1000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 14950.116022617913
+    },
+    {
+      "scenario": "detect-hash-3-1000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 29955.163710062054
+    },
+    {
+      "scenario": "walk-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 72855.14967555016
+    },
+    {
+      "scenario": "walk-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 111182.83392190932
+    },
+    {
+      "scenario": "walk-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 135417.54109722632
+    },
+    {
+      "scenario": "walk-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 253182.2476709765
+    },
+    {
+      "scenario": "walk-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 279206.12651952
+    },
+    {
+      "scenario": "walk-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 84606.94708996268
+    },
+    {
+      "scenario": "walk-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 195760.85736208133
+    },
+    {
+      "scenario": "walk-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 257277.06241461777
+    },
+    {
+      "scenario": "walk-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 569306.8461425476
+    },
+    {
+      "scenario": "walk-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 308836.28480449814
+    },
+    {
+      "scenario": "stat-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 49073.633583686395
+    },
+    {
+      "scenario": "stat-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 79915.22018053663
+    },
+    {
+      "scenario": "stat-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 82019.8160531743
+    },
+    {
+      "scenario": "stat-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 121485.58452661434
+    },
+    {
+      "scenario": "stat-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 127011.76313093648
+    },
+    {
+      "scenario": "stat-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 48745.698356636756
+    },
+    {
+      "scenario": "stat-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 108828.11373203914
+    },
+    {
+      "scenario": "stat-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 119801.62480234828
+    },
+    {
+      "scenario": "stat-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 166772.27242864424
+    },
+    {
+      "scenario": "stat-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 156863.3577878602
+    },
+    {
+      "scenario": "read-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 1803.1777677687587,
+      "source_mib_per_second": 1.1996238811449873
+    },
+    {
+      "scenario": "read-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 15060.175756016117,
+      "source_mib_per_second": 10.01928196658787
+    },
+    {
+      "scenario": "read-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 30628.98976666462,
+      "source_mib_per_second": 20.376952420449484
+    },
+    {
+      "scenario": "read-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 31501.623351105016,
+      "source_mib_per_second": 20.95750088666044
+    },
+    {
+      "scenario": "read-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 57388.48774080898,
+      "source_mib_per_second": 38.17959694670519
+    },
+    {
+      "scenario": "read-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 1924.564780421716,
+      "source_mib_per_second": 1.2803806217405216
+    },
+    {
+      "scenario": "read-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 16291.070762784457,
+      "source_mib_per_second": 10.83817573940128
+    },
+    {
+      "scenario": "read-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 38415.382232035205,
+      "source_mib_per_second": 25.557108540599593
+    },
+    {
+      "scenario": "read-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 37996.48703479119,
+      "source_mib_per_second": 25.27842460200342
+    },
+    {
+      "scenario": "read-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 64403.00453154353,
+      "source_mib_per_second": 42.84623714561917
+    },
+    {
+      "scenario": "hash-sha256-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 45845.93427939475
+    },
+    {
+      "scenario": "hash-sha256-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 51467.20335842853
+    },
+    {
+      "scenario": "hash-sha256-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 78182.64687522998
+    },
+    {
+      "scenario": "hash-sha256-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 66868.24589759634
+    },
+    {
+      "scenario": "hash-sha256-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 53164.083842056905
+    },
+    {
+      "scenario": "hash-sha256-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 64541.023546024015
+    },
+    {
+      "scenario": "hash-sha256-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 90700.10302987504
+    },
+    {
+      "scenario": "hash-sha256-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 70043.2779903883
+    },
+    {
+      "scenario": "manifest-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 1874.2535371781
+    },
+    {
+      "scenario": "manifest-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 14783.639601264189
+    },
+    {
+      "scenario": "manifest-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 30537.279926603038
+    },
+    {
+      "scenario": "manifest-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 32732.069332322968
+    },
+    {
+      "scenario": "manifest-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 60793.64400020232
+    },
+    {
+      "scenario": "manifest-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 1823.4257223499494
+    },
+    {
+      "scenario": "manifest-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 16282.143733942112
+    },
+    {
+      "scenario": "manifest-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 37512.74181233861
+    },
+    {
+      "scenario": "manifest-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 36741.46312471711
+    },
+    {
+      "scenario": "manifest-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 61211.36945117941
+    },
+    {
+      "scenario": "write-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 11627.753841930216,
+      "source_mib_per_second": 7.735749321108359
+    },
+    {
+      "scenario": "write-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 20712.891665660987,
+      "source_mib_per_second": 13.779938913312058
+    },
+    {
+      "scenario": "write-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 29124.70416909393,
+      "source_mib_per_second": 19.37617647968285
+    },
+    {
+      "scenario": "write-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 34096.817100653054,
+      "source_mib_per_second": 22.68403969708974
+    },
+    {
+      "scenario": "write-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 33584.26195272951,
+      "source_mib_per_second": 22.343045366500956
+    },
+    {
+      "scenario": "write-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 11584.131553846231,
+      "source_mib_per_second": 7.706728145564204
+    },
+    {
+      "scenario": "write-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 21920.123945148836,
+      "source_mib_per_second": 14.583090271125629
+    },
+    {
+      "scenario": "write-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 33630.08927672184,
+      "source_mib_per_second": 22.37353351539722
+    },
+    {
+      "scenario": "write-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 35738.70341756641,
+      "source_mib_per_second": 23.776359085172963
+    },
+    {
+      "scenario": "write-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 33604.37739222631,
+      "source_mib_per_second": 22.356427830521657
+    },
+    {
+      "scenario": "overwrite-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 10481.110659902792,
+      "source_mib_per_second": 6.972906872127711
+    },
+    {
+      "scenario": "overwrite-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 18706.948308528303,
+      "source_mib_per_second": 12.445418491391509
+    },
+    {
+      "scenario": "overwrite-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 26061.731349303765,
+      "source_mib_per_second": 17.338432111048036
+    },
+    {
+      "scenario": "overwrite-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 44881.523258433415,
+      "source_mib_per_second": 29.858923554499768
+    },
+    {
+      "scenario": "overwrite-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 29079.15603623594,
+      "source_mib_per_second": 19.345874071958725
+    },
+    {
+      "scenario": "overwrite-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 11461.199919116478,
+      "source_mib_per_second": 7.624943793845802
+    },
+    {
+      "scenario": "overwrite-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 20760.553234862487,
+      "source_mib_per_second": 13.811647354736396
+    },
+    {
+      "scenario": "overwrite-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 29827.457346109615,
+      "source_mib_per_second": 19.843706364294118
+    },
+    {
+      "scenario": "overwrite-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 47853.10329982894,
+      "source_mib_per_second": 31.835865842781704
+    },
+    {
+      "scenario": "overwrite-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 30169.165055173173,
+      "source_mib_per_second": 20.071038763512423
+    },
+    {
+      "scenario": "copy-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 15549.986669929427,
+      "source_mib_per_second": 10.345144940321703
+    },
+    {
+      "scenario": "copy-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 18224.80416586802,
+      "source_mib_per_second": 12.12465609179452
+    },
+    {
+      "scenario": "copy-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 20664.974836198147,
+      "source_mib_per_second": 13.748060651523426
+    },
+    {
+      "scenario": "copy-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 28901.984949886715,
+      "source_mib_per_second": 19.228005124131176
+    },
+    {
+      "scenario": "copy-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 36332.575182698085,
+      "source_mib_per_second": 24.171451995325263
+    },
+    {
+      "scenario": "copy-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 15778.96203867017,
+      "source_mib_per_second": 10.49747840707427
+    },
+    {
+      "scenario": "copy-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 19913.804689505847,
+      "source_mib_per_second": 13.248319770240096
+    },
+    {
+      "scenario": "copy-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 23977.591137966716,
+      "source_mib_per_second": 15.95188863548811
+    },
+    {
+      "scenario": "copy-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 32681.6746843094,
+      "source_mib_per_second": 21.74256921746658
+    },
+    {
+      "scenario": "copy-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 38730.23977841097,
+      "source_mib_per_second": 25.766577977580543
+    },
+    {
+      "scenario": "rename-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 25600.206374527676
+    },
+    {
+      "scenario": "rename-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 52664.29428415824
+    },
+    {
+      "scenario": "rename-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 53407.166248337235
+    },
+    {
+      "scenario": "rename-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 63277.654291786974
+    },
+    {
+      "scenario": "rename-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 65215.89899445041
+    },
+    {
+      "scenario": "rename-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 26211.330355521754
+    },
+    {
+      "scenario": "rename-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 59048.21969735709
+    },
+    {
+      "scenario": "rename-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 64866.364715468684
+    },
+    {
+      "scenario": "rename-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 74232.43440131734
+    },
+    {
+      "scenario": "rename-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 67920.47639693826
+    },
+    {
+      "scenario": "relocate-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 41681.88437530305
+    },
+    {
+      "scenario": "relocate-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 87467.30187986999
+    },
+    {
+      "scenario": "relocate-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 91582.9734137742
+    },
+    {
+      "scenario": "relocate-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 133942.35493403385
+    },
+    {
+      "scenario": "relocate-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 151801.57348402977
+    },
+    {
+      "scenario": "relocate-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 44169.10172396774
+    },
+    {
+      "scenario": "relocate-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 119207.78748236455
+    },
+    {
+      "scenario": "relocate-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 146169.00039361848
+    },
+    {
+      "scenario": "relocate-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 183654.24003921385
+    },
+    {
+      "scenario": "relocate-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 173358.51331067467
+    },
+    {
+      "scenario": "delete-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 25787.801276077884
+    },
+    {
+      "scenario": "delete-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 52506.993669021744
+    },
+    {
+      "scenario": "delete-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 50609.88607238912
+    },
+    {
+      "scenario": "delete-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 67031.61852622287
+    },
+    {
+      "scenario": "delete-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 70544.14188571475
+    },
+    {
+      "scenario": "delete-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 26331.37640123802
+    },
+    {
+      "scenario": "delete-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 61297.02030832193
+    },
+    {
+      "scenario": "delete-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 70005.9652082954
+    },
+    {
+      "scenario": "delete-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 76440.26901195808
+    },
+    {
+      "scenario": "delete-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 75985.2425109287
+    },
+    {
+      "scenario": "generate-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 1616.8436074585977
+    },
+    {
+      "scenario": "generate-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 9899.485024433256
+    },
+    {
+      "scenario": "generate-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 17149.556504408505
+    },
+    {
+      "scenario": "generate-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 18392.065168707508
+    },
+    {
+      "scenario": "generate-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 24823.703608454234
+    },
+    {
+      "scenario": "generate-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 1550.171975668185
+    },
+    {
+      "scenario": "generate-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 10159.7015371475
+    },
+    {
+      "scenario": "generate-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 18314.535294307254
+    },
+    {
+      "scenario": "generate-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 20200.115269937778
+    },
+    {
+      "scenario": "generate-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 25431.036874591486
+    },
+    {
+      "scenario": "mixed-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 3450.651828613516
+    },
+    {
+      "scenario": "mixed-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 18523.651593890478
+    },
+    {
+      "scenario": "mixed-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 35197.706325980274
+    },
+    {
+      "scenario": "mixed-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 44257.508987881316
+    },
+    {
+      "scenario": "mixed-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 64340.076319169086
+    },
+    {
+      "scenario": "mixed-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 3404.2852154368347
+    },
+    {
+      "scenario": "mixed-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 24045.8372522237
+    },
+    {
+      "scenario": "mixed-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 40085.8370856984
+    },
+    {
+      "scenario": "mixed-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 48318.331916664
+    },
+    {
+      "scenario": "mixed-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 67253.08261061322
+    },
+    {
+      "scenario": "clean-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 1006.4046644814406
+    },
+    {
+      "scenario": "clean-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 7963.50946042188
+    },
+    {
+      "scenario": "clean-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 19162.68520522066
+    },
+    {
+      "scenario": "clean-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 14487.47667528932
+    },
+    {
+      "scenario": "clean-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 29832.418388474776
+    },
+    {
+      "scenario": "clean-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 1013.6770651711018
+    },
+    {
+      "scenario": "clean-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 8376.836759677366
+    },
+    {
+      "scenario": "clean-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 22325.308739987548
+    },
+    {
+      "scenario": "clean-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 20178.420133299573
+    },
+    {
+      "scenario": "clean-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 31441.501836034357
+    },
+    {
+      "scenario": "filter-1-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 33402.435066242426
+    },
+    {
+      "scenario": "filter-1-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 79627.76440823189
+    },
+    {
+      "scenario": "filter-1-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 95225.9353396092
+    },
+    {
+      "scenario": "filter-1-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 137892.73643943525
+    },
+    {
+      "scenario": "filter-1-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 168669.84029091365
+    },
+    {
+      "scenario": "filter-1-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 35458.22125683984
+    },
+    {
+      "scenario": "filter-1-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 107918.14650324377
+    },
+    {
+      "scenario": "filter-1-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 132103.66486346486
+    },
+    {
+      "scenario": "filter-1-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 192149.35384976034
+    },
+    {
+      "scenario": "filter-1-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 211253.22702507608
+    },
+    {
+      "scenario": "filter-10-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 34162.340137243926
+    },
+    {
+      "scenario": "filter-10-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 76477.20423324575
+    },
+    {
+      "scenario": "filter-10-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 86317.7948268658
+    },
+    {
+      "scenario": "filter-10-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 139595.63054508742
+    },
+    {
+      "scenario": "filter-10-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 161625.447732795
+    },
+    {
+      "scenario": "filter-10-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 31570.60950398661
+    },
+    {
+      "scenario": "filter-10-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 101820.20726277021
+    },
+    {
+      "scenario": "filter-10-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 151899.46637109865
+    },
+    {
+      "scenario": "filter-10-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 190568.8178112935
+    },
+    {
+      "scenario": "filter-10-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 199180.71395291178
+    },
+    {
+      "scenario": "filter-50-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 31893.114080846226
+    },
+    {
+      "scenario": "filter-50-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 77333.71538250965
+    },
+    {
+      "scenario": "filter-50-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 92969.15554888821
+    },
+    {
+      "scenario": "filter-50-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 133273.42781601957
+    },
+    {
+      "scenario": "filter-50-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 160188.14802813757
+    },
+    {
+      "scenario": "filter-50-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 31008.546045214847
+    },
+    {
+      "scenario": "filter-50-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 95325.9394531004
+    },
+    {
+      "scenario": "filter-50-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 141768.72159814293
+    },
+    {
+      "scenario": "filter-50-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 169386.5976039114
+    },
+    {
+      "scenario": "filter-50-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 184709.97089728172
+    },
+    {
+      "scenario": "mirror-0-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 992.5456938027808
+    },
+    {
+      "scenario": "mirror-0-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 6989.948553237713
+    },
+    {
+      "scenario": "mirror-0-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 15210.885889523595
+    },
+    {
+      "scenario": "mirror-0-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 13701.165058978124
+    },
+    {
+      "scenario": "mirror-0-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 21672.93103232518
+    },
+    {
+      "scenario": "mirror-0-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 772.1112409239091
+    },
+    {
+      "scenario": "mirror-0-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 5712.074837767521
+    },
+    {
+      "scenario": "mirror-0-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 16232.163202246355
+    },
+    {
+      "scenario": "mirror-0-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 14637.76883223064
+    },
+    {
+      "scenario": "mirror-0-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 21306.061165964526
+    },
+    {
+      "scenario": "mirror-1-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 676.7679190109427
+    },
+    {
+      "scenario": "mirror-1-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 6522.498078385643
+    },
+    {
+      "scenario": "mirror-1-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 13938.77549535502
+    },
+    {
+      "scenario": "mirror-1-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 13643.909127428378
+    },
+    {
+      "scenario": "mirror-1-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 19004.737554190775
+    },
+    {
+      "scenario": "mirror-1-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 678.956112643583
+    },
+    {
+      "scenario": "mirror-1-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 6029.110124513828
+    },
+    {
+      "scenario": "mirror-1-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 15241.635594242754
+    },
+    {
+      "scenario": "mirror-1-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 17480.10962797586
+    },
+    {
+      "scenario": "mirror-1-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 15144.079179182429
+    },
+    {
+      "scenario": "mirror-10-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 807.6619640497657
+    },
+    {
+      "scenario": "mirror-10-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 6451.224897425911
+    },
+    {
+      "scenario": "mirror-10-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 13688.546834613548
+    },
+    {
+      "scenario": "mirror-10-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 10128.917252900375
+    },
+    {
+      "scenario": "mirror-10-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 15890.292480012678
+    },
+    {
+      "scenario": "mirror-10-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 696.1309843295732
+    },
+    {
+      "scenario": "mirror-10-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 3873.9122091318923
+    },
+    {
+      "scenario": "mirror-10-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 13882.688186210518
+    },
+    {
+      "scenario": "mirror-10-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 15498.201440696997
+    },
+    {
+      "scenario": "mirror-10-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 20120.258017601398
+    },
+    {
+      "scenario": "mirror-11-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 613.5004429046509
+    },
+    {
+      "scenario": "mirror-11-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 4103.878966865017
+    },
+    {
+      "scenario": "mirror-11-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 11984.474137723528
+    },
+    {
+      "scenario": "mirror-11-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 12831.627642179696
+    },
+    {
+      "scenario": "mirror-11-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 13179.690962922616
+    },
+    {
+      "scenario": "mirror-11-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 669.0304741211296
+    },
+    {
+      "scenario": "mirror-11-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 4723.339741050664
+    },
+    {
+      "scenario": "mirror-11-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 13449.185586315214
+    },
+    {
+      "scenario": "mirror-11-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 12815.902332509988
+    },
+    {
+      "scenario": "mirror-11-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 18156.744872578372
+    },
+    {
+      "scenario": "mirror-12-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 654.8552493805347
+    },
+    {
+      "scenario": "mirror-12-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 4967.67947752284
+    },
+    {
+      "scenario": "mirror-12-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 13994.75005704575
+    },
+    {
+      "scenario": "mirror-12-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 12781.62853380059
+    },
+    {
+      "scenario": "mirror-12-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 18818.66790779545
+    },
+    {
+      "scenario": "mirror-12-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 668.7568915656819
+    },
+    {
+      "scenario": "mirror-12-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 5713.052057412044
+    },
+    {
+      "scenario": "mirror-12-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 14422.833752713042
+    },
+    {
+      "scenario": "mirror-12-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 12245.570325963832
+    },
+    {
+      "scenario": "mirror-12-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 18979.68349388703
+    },
+    {
+      "scenario": "detect-mtime-1-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 36384.28715888226
+    },
+    {
+      "scenario": "detect-mtime-1-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 41017.55900995229
+    },
+    {
+      "scenario": "detect-mtime-1-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 48536.04936923861
+    },
+    {
+      "scenario": "detect-mtime-1-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 56938.377438901305
+    },
+    {
+      "scenario": "detect-mtime-1-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 44188.55754182483
+    },
+    {
+      "scenario": "detect-mtime-1-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 44830.918241706466
+    },
+    {
+      "scenario": "detect-mtime-1-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 63600.72583692354
+    },
+    {
+      "scenario": "detect-mtime-1-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 67595.67092448192
+    },
+    {
+      "scenario": "detect-mtime-2-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 41106.25549405658
+    },
+    {
+      "scenario": "detect-mtime-2-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 52088.19951059698
+    },
+    {
+      "scenario": "detect-mtime-2-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 63726.19433928755
+    },
+    {
+      "scenario": "detect-mtime-2-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 76122.6530815135
+    },
+    {
+      "scenario": "detect-mtime-2-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 57828.66278596244
+    },
+    {
+      "scenario": "detect-mtime-2-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 68662.15835512384
+    },
+    {
+      "scenario": "detect-mtime-2-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 80767.1489959654
+    },
+    {
+      "scenario": "detect-mtime-2-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 78428.55957801608
+    },
+    {
+      "scenario": "detect-mtime-3-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 45436.493535663736
+    },
+    {
+      "scenario": "detect-mtime-3-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 34169.27321272491
+    },
+    {
+      "scenario": "detect-mtime-3-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 44990.885948783485
+    },
+    {
+      "scenario": "detect-mtime-3-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 71983.96214599538
+    },
+    {
+      "scenario": "detect-mtime-3-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 57594.19022983215
+    },
+    {
+      "scenario": "detect-mtime-3-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 64155.15817223289
+    },
+    {
+      "scenario": "detect-mtime-3-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 74133.43958335584
+    },
+    {
+      "scenario": "detect-mtime-3-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 84318.30250258492
+    },
+    {
+      "scenario": "detect-hash-1-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 941.3328707633647
+    },
+    {
+      "scenario": "detect-hash-1-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 7531.829464241951
+    },
+    {
+      "scenario": "detect-hash-1-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 18236.154727915415
+    },
+    {
+      "scenario": "detect-hash-1-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 18146.85839110487
+    },
+    {
+      "scenario": "detect-hash-1-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 31706.21065788355
+    },
+    {
+      "scenario": "detect-hash-1-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 921.9130452727526
+    },
+    {
+      "scenario": "detect-hash-1-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 7307.3268542237765
+    },
+    {
+      "scenario": "detect-hash-1-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 20398.93919804467
+    },
+    {
+      "scenario": "detect-hash-1-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 18900.113204118046
+    },
+    {
+      "scenario": "detect-hash-1-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 32175.07658657611
+    },
+    {
+      "scenario": "detect-hash-2-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 918.413710552744
+    },
+    {
+      "scenario": "detect-hash-2-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 7647.287177372454
+    },
+    {
+      "scenario": "detect-hash-2-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 18499.511743311534
+    },
+    {
+      "scenario": "detect-hash-2-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 18410.245274984773
+    },
+    {
+      "scenario": "detect-hash-2-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 29184.189571530074
+    },
+    {
+      "scenario": "detect-hash-2-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 917.787694997369
+    },
+    {
+      "scenario": "detect-hash-2-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 7677.562048520965
+    },
+    {
+      "scenario": "detect-hash-2-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 20009.25043655082
+    },
+    {
+      "scenario": "detect-hash-2-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 19033.743992070085
+    },
+    {
+      "scenario": "detect-hash-2-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 31350.161905873403
+    },
+    {
+      "scenario": "detect-hash-3-10000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 932.7881203560039
+    },
+    {
+      "scenario": "detect-hash-3-10000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 7755.565142071751
+    },
+    {
+      "scenario": "detect-hash-3-10000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 19340.493503791262
+    },
+    {
+      "scenario": "detect-hash-3-10000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 18606.396321607735
+    },
+    {
+      "scenario": "detect-hash-3-10000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 32979.960422926175
+    },
+    {
+      "scenario": "detect-hash-3-10000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 958.5551234223868
+    },
+    {
+      "scenario": "detect-hash-3-10000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 7898.477463340207
+    },
+    {
+      "scenario": "detect-hash-3-10000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 21449.23488605832
+    },
+    {
+      "scenario": "detect-hash-3-10000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 19016.41842957328
+    },
+    {
+      "scenario": "detect-hash-3-10000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 34611.86876837964
+    },
+    {
+      "scenario": "walk-100000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 74697.65139588517
+    },
+    {
+      "scenario": "walk-100000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 158821.57542057984
+    },
+    {
+      "scenario": "walk-100000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 290931.0899543889
+    },
+    {
+      "scenario": "walk-100000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 550953.2987907286
+    },
+    {
+      "scenario": "walk-100000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 314623.8941607234
+    },
+    {
+      "scenario": "walk-100000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 74419.72503146969
+    },
+    {
+      "scenario": "walk-100000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 186749.79502622623
+    },
+    {
+      "scenario": "walk-100000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 438097.8129421174
+    },
+    {
+      "scenario": "walk-100000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 719160.704362966
+    },
+    {
+      "scenario": "walk-100000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 272755.4848189057
+    },
+    {
+      "scenario": "stat-100000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 44564.15868882106
+    },
+    {
+      "scenario": "stat-100000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 98010.69947326276
+    },
+    {
+      "scenario": "stat-100000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 133260.66043173085
+    },
+    {
+      "scenario": "stat-100000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 159061.12756989058
+    },
+    {
+      "scenario": "stat-100000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 132649.57781950492
+    },
+    {
+      "scenario": "stat-100000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 48568.862561854156
+    },
+    {
+      "scenario": "stat-100000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 100558.38654173375
+    },
+    {
+      "scenario": "stat-100000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 140427.45598018783
+    },
+    {
+      "scenario": "stat-100000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 157471.60368111165
+    },
+    {
+      "scenario": "stat-100000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 125480.85644479065
+    },
+    {
+      "scenario": "read-100000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 1484.1611546748138,
+      "source_mib_per_second": 0.9873874869357586
+    },
+    {
+      "scenario": "read-100000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 12512.268576505643,
+      "source_mib_per_second": 8.324202116937958
+    },
+    {
+      "scenario": "read-100000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 29670.900648012233,
+      "source_mib_per_second": 19.739551822713217
+    },
+    {
+      "scenario": "read-100000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 28978.658606593563,
+      "source_mib_per_second": 19.279014820060414
+    },
+    {
+      "scenario": "read-100000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 45425.44306630302,
+      "source_mib_per_second": 30.220784266522397
+    },
+    {
+      "scenario": "read-100000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 1525.9922750233263,
+      "source_mib_per_second": 1.0152170286715245
+    },
+    {
+      "scenario": "read-100000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 12432.830981009676,
+      "source_mib_per_second": 8.271353618957853
+    },
+    {
+      "scenario": "read-100000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 33425.12325647065,
+      "source_mib_per_second": 22.237173064912728
+    },
+    {
+      "scenario": "read-100000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 32412.40918835429,
+      "source_mib_per_second": 21.563431405826524
+    },
+    {
+      "scenario": "read-100000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 47010.6041885683,
+      "source_mib_per_second": 31.27536533541226
+    },
+    {
+      "scenario": "hash-sha256-100000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 43374.00198893741
+    },
+    {
+      "scenario": "hash-sha256-100000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 57375.98080194175
+    },
+    {
+      "scenario": "hash-sha256-100000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 63394.381363967404
+    },
+    {
+      "scenario": "hash-sha256-100000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 57525.643523942854
+    },
+    {
+      "scenario": "hash-sha256-100000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 43399.493223510035
+    },
+    {
+      "scenario": "hash-sha256-100000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 64967.13705912194
+    },
+    {
+      "scenario": "hash-sha256-100000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 87210.61776084993
+    },
+    {
+      "scenario": "hash-sha256-100000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 62146.05823393653
+    },
+    {
+      "scenario": "copy-100000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 12011.201464395881,
+      "source_mib_per_second": 7.990850583612982
+    },
+    {
+      "scenario": "copy-100000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 15188.702180366601,
+      "source_mib_per_second": 10.104788437865965
+    },
+    {
+      "scenario": "copy-100000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 19680.512584870172,
+      "source_mib_per_second": 13.0931144516043
+    },
+    {
+      "scenario": "copy-100000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 27587.59403883185,
+      "source_mib_per_second": 18.353562928666207
+    },
+    {
+      "scenario": "copy-100000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 32028.054618290924,
+      "source_mib_per_second": 21.307726766319036
+    },
+    {
+      "scenario": "copy-100000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 13247.998332210549,
+      "source_mib_per_second": 8.813670765447691
+    },
+    {
+      "scenario": "copy-100000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 15877.096362386226,
+      "source_mib_per_second": 10.562765524292596
+    },
+    {
+      "scenario": "copy-100000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 16871.206444803967,
+      "source_mib_per_second": 11.224130264182326
+    },
+    {
+      "scenario": "copy-100000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 28363.743865938686,
+      "source_mib_per_second": 18.86992237174876
+    },
+    {
+      "scenario": "copy-100000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 30350.196402828315,
+      "source_mib_per_second": 20.191475878346473
+    },
+    {
+      "scenario": "filter-1-100000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 29642.471336670624
+    },
+    {
+      "scenario": "filter-1-100000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 70571.8862954406
+    },
+    {
+      "scenario": "filter-1-100000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 138739.92383266977
+    },
+    {
+      "scenario": "filter-1-100000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 163021.8619163748
+    },
+    {
+      "scenario": "filter-1-100000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 159003.41265685513
+    },
+    {
+      "scenario": "filter-1-100000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 27775.64501715968
+    },
+    {
+      "scenario": "filter-1-100000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 87245.69828890142
+    },
+    {
+      "scenario": "filter-1-100000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 154523.99880393478
+    },
+    {
+      "scenario": "filter-1-100000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 175085.07177912787
+    },
+    {
+      "scenario": "filter-1-100000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 175878.82458331287
+    },
+    {
+      "scenario": "filter-10-100000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 29131.332363289097
+    },
+    {
+      "scenario": "filter-10-100000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 82938.68067980923
+    },
+    {
+      "scenario": "filter-10-100000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 136170.77868012464
+    },
+    {
+      "scenario": "filter-10-100000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 160106.11910425167
+    },
+    {
+      "scenario": "filter-10-100000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 154604.08873641433
+    },
+    {
+      "scenario": "filter-10-100000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 29471.615141825045
+    },
+    {
+      "scenario": "filter-10-100000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 88300.21482488624
+    },
+    {
+      "scenario": "filter-10-100000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 157180.74628028856
+    },
+    {
+      "scenario": "filter-10-100000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 194211.64391793823
+    },
+    {
+      "scenario": "filter-10-100000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 186890.98314231558
+    },
+    {
+      "scenario": "filter-50-100000",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 26273.909580887695
+    },
+    {
+      "scenario": "filter-50-100000",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 81819.5139365645
+    },
+    {
+      "scenario": "filter-50-100000",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 137231.74900043037
+    },
+    {
+      "scenario": "filter-50-100000",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 161396.77077954332
+    },
+    {
+      "scenario": "filter-50-100000",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 156690.81410522247
+    },
+    {
+      "scenario": "filter-50-100000",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 26705.520877944127
+    },
+    {
+      "scenario": "filter-50-100000",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 85837.5472058226
+    },
+    {
+      "scenario": "filter-50-100000",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 141610.1981014658
+    },
+    {
+      "scenario": "filter-50-100000",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 183182.7500907533
+    },
+    {
+      "scenario": "filter-50-100000",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 168829.27513677467
+    },
+    {
+      "scenario": "large-read-10x10485760",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 46.973806466038404,
+      "source_mib_per_second": 469.73806466038405
+    },
+    {
+      "scenario": "large-read-10x10485760",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 93.99894563262662,
+      "source_mib_per_second": 939.9894563262662
+    },
+    {
+      "scenario": "large-read-10x10485760",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 77.86000469059813,
+      "source_mib_per_second": 778.6000469059812
+    },
+    {
+      "scenario": "large-read-10x10485760",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 93.95331409088035,
+      "source_mib_per_second": 939.5331409088035
+    },
+    {
+      "scenario": "large-read-10x10485760",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 143.73923770425094,
+      "source_mib_per_second": 1437.3923770425095
+    },
+    {
+      "scenario": "large-read-10x10485760",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 55.72756705039165,
+      "source_mib_per_second": 557.2756705039164
+    },
+    {
+      "scenario": "large-read-10x10485760",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 217.6613084692146,
+      "source_mib_per_second": 2176.613084692146
+    },
+    {
+      "scenario": "large-read-10x10485760",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 136.53934450164184,
+      "source_mib_per_second": 1365.3934450164184
+    },
+    {
+      "scenario": "large-read-10x10485760",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 185.96262950786198,
+      "source_mib_per_second": 1859.62629507862
+    },
+    {
+      "scenario": "large-read-10x10485760",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 206.49296904862433,
+      "source_mib_per_second": 2064.929690486243
+    },
+    {
+      "scenario": "large-write-10x10485760",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 37.5710537663533,
+      "source_mib_per_second": 375.71053766353305
+    },
+    {
+      "scenario": "large-write-10x10485760",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 56.953599031478994,
+      "source_mib_per_second": 569.53599031479
+    },
+    {
+      "scenario": "large-write-10x10485760",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 38.36013256586676,
+      "source_mib_per_second": 383.60132565866763
+    },
+    {
+      "scenario": "large-write-10x10485760",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 41.12913475253169,
+      "source_mib_per_second": 411.2913475253169
+    },
+    {
+      "scenario": "large-write-10x10485760",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 58.653901294153165,
+      "source_mib_per_second": 586.5390129415316
+    },
+    {
+      "scenario": "large-write-10x10485760",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 30.56751031354676,
+      "source_mib_per_second": 305.67510313546757
+    },
+    {
+      "scenario": "large-write-10x10485760",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 83.14214312525846,
+      "source_mib_per_second": 831.4214312525845
+    },
+    {
+      "scenario": "large-write-10x10485760",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 74.0803045020542,
+      "source_mib_per_second": 740.803045020542
+    },
+    {
+      "scenario": "large-write-10x10485760",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 70.098781520548,
+      "source_mib_per_second": 700.9878152054799
+    },
+    {
+      "scenario": "large-write-10x10485760",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 88.1246251398758,
+      "source_mib_per_second": 881.2462513987581
+    },
+    {
+      "scenario": "large-read-100x1048576",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 446.06104898571067,
+      "source_mib_per_second": 446.06104898571067
+    },
+    {
+      "scenario": "large-read-100x1048576",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 986.3530558440748,
+      "source_mib_per_second": 986.3530558440748
+    },
+    {
+      "scenario": "large-read-100x1048576",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 613.8477672269624,
+      "source_mib_per_second": 613.8477672269624
+    },
+    {
+      "scenario": "large-read-100x1048576",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 721.1146130119319,
+      "source_mib_per_second": 721.1146130119319
+    },
+    {
+      "scenario": "large-read-100x1048576",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 1543.8640412805778,
+      "source_mib_per_second": 1543.8640412805778
+    },
+    {
+      "scenario": "large-read-100x1048576",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 736.585872624739,
+      "source_mib_per_second": 736.585872624739
+    },
+    {
+      "scenario": "large-read-100x1048576",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 3259.0323919792086,
+      "source_mib_per_second": 3259.0323919792086
+    },
+    {
+      "scenario": "large-read-100x1048576",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 1177.3626690039355,
+      "source_mib_per_second": 1177.3626690039355
+    },
+    {
+      "scenario": "large-read-100x1048576",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 1649.4572197105388,
+      "source_mib_per_second": 1649.4572197105388
+    },
+    {
+      "scenario": "large-read-100x1048576",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 2595.4791787935023,
+      "source_mib_per_second": 2595.4791787935023
+    },
+    {
+      "scenario": "large-write-100x1048576",
+      "boundary": "fresh",
+      "engine": "nift",
+      "files_per_second": 304.7619363410464,
+      "source_mib_per_second": 304.7619363410464
+    },
+    {
+      "scenario": "large-write-100x1048576",
+      "boundary": "fresh",
+      "engine": "python",
+      "files_per_second": 803.9806109141542,
+      "source_mib_per_second": 803.9806109141542
+    },
+    {
+      "scenario": "large-write-100x1048576",
+      "boundary": "fresh",
+      "engine": "node",
+      "files_per_second": 487.8647735640052,
+      "source_mib_per_second": 487.8647735640052
+    },
+    {
+      "scenario": "large-write-100x1048576",
+      "boundary": "fresh",
+      "engine": "bun",
+      "files_per_second": 602.3444764933201,
+      "source_mib_per_second": 602.3444764933201
+    },
+    {
+      "scenario": "large-write-100x1048576",
+      "boundary": "fresh",
+      "engine": "go",
+      "files_per_second": 706.6424874335647,
+      "source_mib_per_second": 706.6424874335647
+    },
+    {
+      "scenario": "large-write-100x1048576",
+      "boundary": "booted",
+      "engine": "nift",
+      "files_per_second": 458.0944790545003,
+      "source_mib_per_second": 458.0944790545003
+    },
+    {
+      "scenario": "large-write-100x1048576",
+      "boundary": "booted",
+      "engine": "python",
+      "files_per_second": 1176.0886638189718,
+      "source_mib_per_second": 1176.0886638189718
+    },
+    {
+      "scenario": "large-write-100x1048576",
+      "boundary": "booted",
+      "engine": "node",
+      "files_per_second": 699.6661403078293,
+      "source_mib_per_second": 699.6661403078293
+    },
+    {
+      "scenario": "large-write-100x1048576",
+      "boundary": "booted",
+      "engine": "bun",
+      "files_per_second": 880.2422419607938,
+      "source_mib_per_second": 880.2422419607938
+    },
+    {
+      "scenario": "large-write-100x1048576",
+      "boundary": "booted",
+      "engine": "go",
+      "files_per_second": 902.0134166197199,
+      "source_mib_per_second": 902.0134166197199
+    }
+  ]
+}

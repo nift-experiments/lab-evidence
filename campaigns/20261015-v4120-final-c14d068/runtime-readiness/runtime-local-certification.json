@@ -1,0 +1,41 @@
+{
+  "pass": true,
+  "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "candidate_clean_before_and_after": true,
+  "cli_sha256": "a6f54de3b397eff0765825317d80ac702e5e88d70dcc73a75f02022e0575cc1d",
+  "compiler": "GCC15.2.0 local certification only",
+  "flags": "normal Makefile O2; adapter stdc++17 O2 pthread",
+  "static_library_sha256": "2f1203a672b733a5c8d69a1eab8d51afcc9a6d2ac8fea896eef757188a599973",
+  "shared_library_sha256": "7d9796eb500a2913fd91204a04ebe39637141284155a3bb75e0e59c1ce6f7d40",
+  "template": {
+    "supported_cells": 393,
+    "semantic_gates": 10,
+    "variant_gates": 20,
+    "pass": true
+  },
+  "concurrency": {
+    "supported_cells": 608,
+    "excluded_cells": 32,
+    "semantic_gates": "PASS",
+    "pass": true
+  },
+  "filesystem": {
+    "supported_cells": 662,
+    "scenarios": 68,
+    "small_family_cells": 136,
+    "edge_engines": 5,
+    "exactly_once_inline_and_bound": "PASS",
+    "independent_fixture_and_distribution_audits": "PASS"
+  },
+  "filesystem_filter": {
+    "supported_cells": 90,
+    "scenarios": 9,
+    "independent_fixture_and_distribution_audits": "PASS"
+  },
+  "preparation_failures": "all partial raw/logs preserved local-preparation-failures; missing fixture generation, symlink root and wrong primary Go binary; no Nift correctness defect or workload/oracle change",
+  "fixture_relocation": "workspace-backed real fixture roots; local certification only; official native fresh roots unchanged",
+  "versions_qualification": "local quick environment actual source c14; docs versions retains historical lock only; cloud manifests and actual tool hash/version assertions replace candidate labels before official timing",
+  "memory": "retain original raw inherited-floor fields unranked; separate controls/retained-runtime trajectories required after timing",
+  "official_measurements": false,
+  "cloud_authorization": "parent owns provisioning after all-eight gates"
+}
