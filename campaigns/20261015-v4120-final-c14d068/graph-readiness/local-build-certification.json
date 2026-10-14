@@ -195,5 +195,14 @@
     }
   ],
   "task_semantic_records": 21,
-  "task_smoke": "fresh rerun active; initial missing C helper preparation preserved"
+  "task_smoke": "PASS fresh186 observations; independent audit",
+  "task_smoke_audit": {
+    "observations": 186,
+    "measured": 93,
+    "cells": 93,
+    "all_correct": true
+  },
+  "all_gates_passed": true,
+  "official_results_reused": false,
+  "failed_setup_preserved": "local-preflight/task-smoke-omitted-helper"
 }
