@@ -1,0 +1,41 @@
+{
+  "scope": "Separate targeted same-node diagnostic, official data unchanged",
+  "suite_sha": "3c0dcdd1aad3cbb0a0c638c9041233b1e329dc6f",
+  "prior_sha": "c8d9c266518d115e4f289c5c6a2b94ddd7ee9968",
+  "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "binaries": {
+    "prior": {
+      "source_sha": "c8d9c266518d115e4f289c5c6a2b94ddd7ee9968",
+      "sha256": "d66c8f688bda922c1c6cdecce9a144413c024564dc55b2398e5c119224343f2a"
+    },
+    "checkpoint": {
+      "source_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+      "sha256": "b416f17f445cc366986b07e7291bda96e5351d4832526e632f46276bb38139af"
+    },
+    "candidate": {
+      "source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "sha256": "764e337d89af61f005a6c6d2e1b16b66c8c697ebe520b8fb253d5bf8f230f23c"
+    }
+  },
+  "library_sha256": {
+    "prior": "b10a95409c6aef310419e469092950befd5b7d3b3e66b80ff2cabf38d4010f32",
+    "checkpoint": "5a911d8144969c1452209d4772bcc5cffc7bad0045031ec19ec37366d94eeea2",
+    "candidate": "27affcd336d997f294c2e20deb6eaf8462e71faeb6aa566cd991546553a701f5"
+  },
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+  "build_flags": "normal Makefile embed; adapter -std=c++17 -O2 -pthread, no instrumentation",
+  "cpu": 0,
+  "cases": [
+    "loop-10000",
+    "article"
+  ],
+  "boundaries": [
+    "fresh full invocation",
+    "source-render per operation"
+  ],
+  "measured_pairs": 3,
+  "order": "three-version rotation by pair, three measured pairs each",
+  "persistent_warmups_per_worker": 2,
+  "fresh_warmups_per_version_case": 1,
+  "timeout_seconds": 120
+}

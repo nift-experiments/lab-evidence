@@ -4,8 +4,120 @@
     "scripting",
     "template-engines"
   ],
-  "same_node_version_improvements": [],
-  "same_node_version_regressions": [],
+  "same_node_version_improvements": [
+    {
+      "suite": "template-engines",
+      "scenario": "loop-10000/source-render",
+      "unit": "ms/render",
+      "release": 118.471604,
+      "original": 33.514301,
+      "final": 32.942846,
+      "final_vs_release_percent": -72.19346671460613,
+      "final_vs_original_percent": -1.705107917960158,
+      "samples_each": 3,
+      "confidence": "descriptive same-node three-version3samples; no formal significance; checkpoint increases have overlapping ranges",
+      "improvement_percent": 72.19346671460613
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "loop-10000/fresh",
+      "unit": "ms/invocation",
+      "release": 158.529676,
+      "original": 73.741216,
+      "final": 77.354308,
+      "final_vs_release_percent": -51.20515606175843,
+      "final_vs_original_percent": 4.8996913747666015,
+      "samples_each": 3,
+      "confidence": "descriptive same-node three-version3samples; no formal significance; checkpoint increases have overlapping ranges",
+      "improvement_percent": 51.20515606175843
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "article/source-render",
+      "unit": "ms/render",
+      "release": 0.43377,
+      "original": 0.267626,
+      "final": 0.268566,
+      "final_vs_release_percent": -38.08562141226916,
+      "final_vs_original_percent": 0.3512364269540491,
+      "samples_each": 3,
+      "confidence": "descriptive same-node three-version3samples; no formal significance; checkpoint increases have overlapping ranges",
+      "improvement_percent": 38.08562141226916
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "article/fresh",
+      "unit": "ms/invocation",
+      "release": 3.689644,
+      "original": 3.558491,
+      "final": 3.50701,
+      "final_vs_release_percent": -4.949908446451734,
+      "final_vs_original_percent": -1.4467087313133509,
+      "samples_each": 3,
+      "confidence": "descriptive same-node three-version3samples; no formal significance; checkpoint increases have overlapping ranges",
+      "improvement_percent": 4.949908446451734
+    },
+    {
+      "suite": "scripting",
+      "scenario": "sanity/function-calls/small",
+      "unit": "ms/invocation",
+      "release": 4.710201,
+      "original": 7.3749579999999995,
+      "final": 4.67849,
+      "final_vs_release_percent": -0.673240908402839,
+      "final_vs_original_percent": -36.56248618636201,
+      "samples_each": 10,
+      "confidence": "Descriptive paired same-node. Final/release ranges overlap; large8/10 pairs slower despite modest residual, small6/10 slower. Original/final ranges disjoint and all10 final faster.",
+      "improvement_percent": 0.673240908402839
+    }
+  ],
+  "same_node_version_regressions": [
+    {
+      "suite": "template-engines",
+      "scenario": "loop-10000/fresh",
+      "unit": "ms/invocation",
+      "release": 158.529676,
+      "original": 73.741216,
+      "final": 77.354308,
+      "final_vs_release_percent": -51.20515606175843,
+      "final_vs_original_percent": 4.8996913747666015,
+      "samples_each": 3,
+      "confidence": "descriptive same-node three-version3samples; no formal significance; checkpoint increases have overlapping ranges",
+      "baseline": "original",
+      "change_percent": 4.8996913747666015,
+      "classification": "descriptive same-node increase; not formal significance"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "sanity/function-calls/large",
+      "unit": "ms/invocation",
+      "release": 193.6004585,
+      "original": 469.418897,
+      "final": 198.6197885,
+      "final_vs_release_percent": 2.5926229921609423,
+      "final_vs_original_percent": -57.68815661888448,
+      "samples_each": 10,
+      "confidence": "Descriptive paired same-node. Final/release ranges overlap; large8/10 pairs slower despite modest residual, small6/10 slower. Original/final ranges disjoint and all10 final faster.",
+      "baseline": "release",
+      "change_percent": 2.5926229921609423,
+      "classification": "descriptive same-node increase; not formal significance"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "article/source-render",
+      "unit": "ms/render",
+      "release": 0.43377,
+      "original": 0.267626,
+      "final": 0.268566,
+      "final_vs_release_percent": -38.08562141226916,
+      "final_vs_original_percent": 0.3512364269540491,
+      "samples_each": 3,
+      "confidence": "descriptive same-node three-version3samples; no formal significance; checkpoint increases have overlapping ranges",
+      "baseline": "original",
+      "change_percent": 0.3512364269540491,
+      "classification": "descriptive same-node increase; not formal significance"
+    }
+  ],
   "current_same_node_wall_deficits": [
     {
       "suite": "scripting",
@@ -451,7 +563,7 @@
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
     }
   ],
-  "recovery_status": "Exact release/original/final three-way diagnostic running; no recovery verdict yet",
+  "recovery_status": "Both scripting call blockers substantially recovered versus original. Small release residual\u22120.67%; large+2.59% (+5.01933ms), overlappingranges; all other blocked targets pending.",
   "historical_cross_node_trends": "separate; not substituted for same-node version evidence",
   "memory_capabilities": "separate; not included in wall league",
   "current_template_comparisons": [
@@ -937,5 +1049,102 @@
       "prepared-AST reuse"
     ],
     "memory_floor_unranked": true
-  }
+  },
+  "same_node_threeway_wall": [
+    {
+      "suite": "scripting",
+      "scenario": "sanity/function-calls/small",
+      "unit": "ms/invocation",
+      "release": 4.710201,
+      "original": 7.3749579999999995,
+      "final": 4.67849,
+      "final_vs_release_percent": -0.673240908402839,
+      "final_vs_original_percent": -36.56248618636201,
+      "samples_each": 10,
+      "confidence": "Descriptive paired same-node. Final/release ranges overlap; large8/10 pairs slower despite modest residual, small6/10 slower. Original/final ranges disjoint and all10 final faster."
+    },
+    {
+      "suite": "scripting",
+      "scenario": "sanity/function-calls/large",
+      "unit": "ms/invocation",
+      "release": 193.6004585,
+      "original": 469.418897,
+      "final": 198.6197885,
+      "final_vs_release_percent": 2.5926229921609423,
+      "final_vs_original_percent": -57.68815661888448,
+      "samples_each": 10,
+      "confidence": "Descriptive paired same-node. Final/release ranges overlap; large8/10 pairs slower despite modest residual, small6/10 slower. Original/final ranges disjoint and all10 final faster."
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "loop-10000/fresh",
+      "unit": "ms/invocation",
+      "release": 158.529676,
+      "original": 73.741216,
+      "final": 77.354308,
+      "final_vs_release_percent": -51.20515606175843,
+      "final_vs_original_percent": 4.8996913747666015,
+      "samples_each": 3,
+      "confidence": "descriptive same-node three-version3samples; no formal significance; checkpoint increases have overlapping ranges"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "loop-10000/source-render",
+      "unit": "ms/render",
+      "release": 118.471604,
+      "original": 33.514301,
+      "final": 32.942846,
+      "final_vs_release_percent": -72.19346671460613,
+      "final_vs_original_percent": -1.705107917960158,
+      "samples_each": 3,
+      "confidence": "descriptive same-node three-version3samples; no formal significance; checkpoint increases have overlapping ranges"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "article/fresh",
+      "unit": "ms/invocation",
+      "release": 3.689644,
+      "original": 3.558491,
+      "final": 3.50701,
+      "final_vs_release_percent": -4.949908446451734,
+      "final_vs_original_percent": -1.4467087313133509,
+      "samples_each": 3,
+      "confidence": "descriptive same-node three-version3samples; no formal significance; checkpoint increases have overlapping ranges"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "article/source-render",
+      "unit": "ms/render",
+      "release": 0.43377,
+      "original": 0.267626,
+      "final": 0.268566,
+      "final_vs_release_percent": -38.08562141226916,
+      "final_vs_original_percent": 0.3512364269540491,
+      "samples_each": 3,
+      "confidence": "descriptive same-node three-version3samples; no formal significance; checkpoint increases have overlapping ranges"
+    }
+  ],
+  "memory_diagnostic_rows": [
+    {
+      "suite": "scripting",
+      "scenario": "sanity/function-calls/small",
+      "metric": "Linux wait4 waited-child peak KiB, not aggregate tree",
+      "release_kib": 6912.0,
+      "original_kib": 7040.0,
+      "final_kib": 7168.0,
+      "final_vs_release_percent": 3.703703703703698,
+      "qualification": "raw diagnostic peak, small quantized differences; no memory superiority or leak claim"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "sanity/function-calls/large",
+      "metric": "Linux wait4 waited-child peak KiB, not aggregate tree",
+      "release_kib": 6976.0,
+      "original_kib": 7104.0,
+      "final_kib": 7104.0,
+      "final_vs_release_percent": 1.83486238532109,
+      "qualification": "raw diagnostic peak, small quantized differences; no memory superiority or leak claim"
+    }
+  ],
+  "template_memory_control": "Supervisor allocation0\u219264MiB moves noopraw16.75\u219280.75MiB, proving inherited floor; raw retained/unranked."
 }

@@ -1,0 +1,118 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "case": "loop-10000",
+      "boundary": "fresh",
+      "median_ms": {
+        "prior": 158.529676,
+        "checkpoint": 73.741216,
+        "candidate": 77.354308
+      },
+      "candidate_change_percent": 51.20515606175843,
+      "samples_per_version": 3,
+      "values_ms": {
+        "prior": [
+          159.956731,
+          158.529676,
+          156.590421
+        ],
+        "checkpoint": [
+          73.088032,
+          76.688426,
+          73.741216
+        ],
+        "candidate": [
+          80.39627,
+          77.354308,
+          75.244071
+        ]
+      }
+    },
+    {
+      "case": "loop-10000",
+      "boundary": "source-render",
+      "median_ms": {
+        "prior": 118.471604,
+        "checkpoint": 33.514301,
+        "candidate": 32.942846
+      },
+      "candidate_change_percent": 72.19346671460613,
+      "samples_per_version": 3,
+      "values_ms": {
+        "prior": [
+          118.471604,
+          117.217954,
+          121.114201
+        ],
+        "checkpoint": [
+          33.514301,
+          32.769834,
+          33.864577
+        ],
+        "candidate": [
+          34.737038,
+          32.470718,
+          32.942846
+        ]
+      }
+    },
+    {
+      "case": "article",
+      "boundary": "fresh",
+      "median_ms": {
+        "prior": 3.689644,
+        "checkpoint": 3.558491,
+        "candidate": 3.50701
+      },
+      "candidate_change_percent": 4.9499084464517376,
+      "samples_per_version": 3,
+      "values_ms": {
+        "prior": [
+          3.689644,
+          3.680775,
+          3.700506
+        ],
+        "checkpoint": [
+          3.494851,
+          3.559962,
+          3.558491
+        ],
+        "candidate": [
+          3.50701,
+          3.513891,
+          3.499451
+        ]
+      }
+    },
+    {
+      "case": "article",
+      "boundary": "source-render",
+      "median_ms": {
+        "prior": 0.43377,
+        "checkpoint": 0.267626,
+        "candidate": 0.268566
+      },
+      "candidate_change_percent": 38.08562141226916,
+      "samples_per_version": 3,
+      "values_ms": {
+        "prior": [
+          0.433969,
+          0.4208,
+          0.43377
+        ],
+        "checkpoint": [
+          0.267626,
+          0.285996,
+          0.264766
+        ],
+        "candidate": [
+          0.255206,
+          0.268566,
+          0.333697
+        ]
+      }
+    }
+  ],
+  "scope": "small descriptive paired control; no statistical-significance claim"
+}

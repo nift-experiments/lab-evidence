@@ -1,12 +1,28 @@
 # Interim final-candidate recertification
 
-Two official suites are independently audited: scripting (1,880 measured +376 warmups) and template engines (17,950 measured +750 warmups). Same-node peer deficits are valid. Exact release/original/final recovery diagnostics remain pending; historical cross-node movements are not controlled version effects.
+Audited official suites: scripting, template-engines. Exact-source three-way version diagnostics remain separate from current official peer results and historical cross-node trends. No publication or release is authorized.
 
-## Same-node version improvements and regressions
+## Best same-node wall improvements versus release — complete
 
-No completed three-way version diagnostic yet. No rows are invented.
+| Rank | Suite / scenario | Release | Original | Final | Unit | Improvement vs release | Recovery vs original | Samples/version |
+|---:|---|---:|---:|---:|---|---:|---:|---:|
+| 1 | template-engines / loop-10000/source-render | 118.471604 | 33.514301 | 32.942846 | ms/render | 72.19% | +1.71% | 3 |
+| 2 | template-engines / loop-10000/fresh | 158.529676 | 73.741216 | 77.354308 | ms/invocation | 51.21% | -4.90% | 3 |
+| 3 | template-engines / article/source-render | 0.433770 | 0.267626 | 0.268566 | ms/render | 38.09% | -0.35% | 3 |
+| 4 | template-engines / article/fresh | 3.689644 | 3.558491 | 3.507010 | ms/invocation | 4.95% | +1.45% | 3 |
+| 5 | scripting / sanity/function-calls/small | 4.710201 | 7.374958 | 4.678490 | ms/invocation | 0.67% | +36.56% | 10 |
 
-## Complete current same-node wall deficit league
+## Every measured positive same-node wall change — complete
+
+| Rank | Suite / scenario | Baseline | Baseline value | Final | Increase | Classification |
+|---:|---|---|---:|---:|---:|---|
+| 1 | template-engines / loop-10000/fresh | original | 73.741216 | 77.354308 | 4.90% | descriptive same-node increase; not formal significance |
+| 2 | scripting / sanity/function-calls/large | release | 193.600459 | 198.619788 | 2.59% | descriptive same-node increase; not formal significance |
+| 3 | template-engines / article/source-render | original | 0.267626 | 0.268566 | 0.35% | descriptive same-node increase; not formal significance |
+
+Every comparison above uses the same node, exact versions and frozen diagnostic boundaries. Template diagnostics have three measured observations/version and remain descriptive. Scripting has ten; final/release ranges overlap, and large calls are slower in eight of ten paired blocks. Overlapping ranges do not prove equality or eliminate a small regression. Major original call regressions have disjoint ranges and all ten final blocks faster. Near-flat changes are retained. Original/checkpoint and release baselines are explicitly distinguished.
+
+## Current same-node peer wall deficits — complete
 
 | Rank | Suite / scenario / boundary | Nift | Best peer | Peer | Unit | Nift / peer |
 |---:|---|---:|---|---:|---|---:|
@@ -54,4 +70,16 @@ No completed three-way version diagnostic yet. No rows are invented.
 | 42 | scripting / structured-data/json-traverse/small | 6.2346 | python | 23.9809 | ms/invocation | 0.26× |
 | 43 | scripting / structured-data/json-parse/small | 4.2690 | python | 23.7024 | ms/invocation | 0.18× |
 
-Nift has lower medians than the best other engine in 30 of 43 supported comparable template cells. This covers fresh/source-render boundaries and is not an overall engine ranking or a version-improvement claim. Public parse-only/prepared-AST Nift modes remain unsupported. Raw inherited-floor template memory is retained and unranked. All peer comparisons match workload, boundary, unit and contract. Practitioner judgments and release recommendation remain pending further audited evidence. No publication is authorized.
+## Large gains but still behind
+
+| Scenario | Improvement vs release | Derived old deficit | Current official deficit | Verdict |
+|---|---:|---:|---:|---|
+| template-engines / loop-10000/source-render | 72.19% | 52.69× | 15.16× | Still behind handlebars |
+
+Derived old deficits divide controlled old Nift diagnostic medians by the current official peer median on the same host and matching boundary. These are cross-phase diagnostics, not a simultaneously interleaved old-Nift/peer benchmark. Current deficits use official Nift/peer medians from the same cohort. No cross-node peer denominator is substituted.
+
+## Memory and capabilities remain separate
+
+Supervisor allocation0→64MiB moves noopraw16.75→80.75MiB, proving inherited floor; raw retained/unranked.
+
+Raw scripting call peak-memory diagnostics are retained separately; small quantized differences do not establish a leak or superiority. Nift public parse-only/prepared-AST template modes remain unsupported in this frozen public-API matrix. Nift has lower medians than the best other template engine in 30 of 43 supported matching fresh/source-render cells; this is not an overall engine ranking. Practitioner judgments and the release recommendation remain pending the wider sweep.
