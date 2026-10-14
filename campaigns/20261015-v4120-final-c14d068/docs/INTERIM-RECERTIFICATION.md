@@ -1,44 +1,57 @@
 # Interim final-candidate recertification
 
-Scripting full evidence is independently audited: 1,880 measured and 376 warmups, all 188 participating jobs correct. Current same-node peer deficits are valid; version-recovery conclusions remain pending the exact release/original/final diagnostic. Historical cross-node movements are not treated as controlled version effects.
+Two official suites are independently audited: scripting (1,880 measured +376 warmups) and template engines (17,950 measured +750 warmups). Same-node peer deficits are valid. Exact release/original/final recovery diagnostics remain pending; historical cross-node movements are not controlled version effects.
 
 ## Same-node version improvements and regressions
 
 No completed three-way version diagnostic yet. No rows are invented.
 
-## Complete current same-node scripting wall deficit league
+## Complete current same-node wall deficit league
 
-| Rank | Scenario | Nift ms | Best peer | Peer ms | Nift / peer |
-|---:|---|---:|---|---:|---:|
-| 1 | arrays-strings-hash/frequency-count/large | 416.542 | luajit | 3.022 | 137.83× |
-| 2 | sanity/function-calls/large | 193.726 | luajit | 1.419 | 136.53× |
-| 3 | arrays-strings-hash/sliding-window/large | 250.116 | luajit | 2.404 | 104.04× |
-| 4 | arrays-strings-hash/map-set/large | 212.697 | luajit | 2.633 | 80.77× |
-| 5 | dynamic-programming/fibonacci/large | 141.525 | luajit | 2.060 | 68.72× |
-| 6 | arrays-strings-hash/scan/large | 82.874 | luajit | 1.374 | 60.32× |
-| 7 | sanity/loops/large | 72.592 | luajit | 1.419 | 51.15× |
-| 8 | graphs-trees-search/bfs/large | 799.359 | luajit | 16.932 | 47.21× |
-| 9 | arrays-strings-hash/sort-index/large | 511.631 | python | 23.052 | 22.19× |
-| 10 | structured-data/json-transform/large | 462.853 | node | 74.546 | 6.21× |
-| 11 | graphs-trees-search/bfs/small | 11.405 | lua54 | 1.868 | 6.11× |
-| 12 | structured-data/json-traverse/large | 370.415 | node | 68.608 | 5.40× |
-| 13 | arrays-strings-hash/frequency-count/small | 7.068 | luajit | 1.312 | 5.39× |
-| 14 | arrays-strings-hash/sort-index/small | 6.847 | luajit | 1.508 | 4.54× |
-| 15 | arrays-strings-hash/sliding-window/small | 5.287 | luajit | 1.339 | 3.95× |
-| 16 | sanity/function-calls/small | 4.650 | luajit | 1.301 | 3.57× |
-| 17 | arrays-strings-hash/map-set/small | 4.701 | luajit | 1.395 | 3.37× |
-| 18 | filesystem/traverse/large | 25.005 | luajit | 7.641 | 3.27× |
-| 19 | arrays-strings-hash/scan/small | 3.556 | luajit | 1.291 | 2.76× |
-| 20 | structured-data/json-parse/large | 182.077 | node | 66.988 | 2.72× |
-| 21 | sanity/loops/small | 3.346 | luajit | 1.281 | 2.61× |
-| 22 | dynamic-programming/fibonacci/small | 2.817 | luajit | 1.263 | 2.23× |
-| 23 | sanity/output/small | 2.521 | luajit | 1.217 | 2.07× |
-| 24 | sanity/noop/large | 2.389 | luajit | 1.184 | 2.02× |
-| 25 | sanity/noop/small | 2.463 | luajit | 1.228 | 2.01× |
-| 26 | sanity/output/large | 2.465 | luajit | 1.229 | 2.00× |
-| 27 | filesystem/traverse/small | 3.104 | luajit | 4.614 | 0.67× |
-| 28 | structured-data/json-transform/small | 7.186 | python | 24.470 | 0.29× |
-| 29 | structured-data/json-traverse/small | 6.235 | python | 23.981 | 0.26× |
-| 30 | structured-data/json-parse/small | 4.269 | python | 23.702 | 0.18× |
+| Rank | Suite / scenario / boundary | Nift | Best peer | Peer | Unit | Nift / peer |
+|---:|---|---:|---|---:|---|---:|
+| 1 | scripting / arrays-strings-hash/frequency-count/large | 416.5421 | luajit | 3.0221 | ms/invocation | 137.83× |
+| 2 | scripting / sanity/function-calls/large | 193.7259 | luajit | 1.4189 | ms/invocation | 136.53× |
+| 3 | scripting / arrays-strings-hash/sliding-window/large | 250.1156 | luajit | 2.4040 | ms/invocation | 104.04× |
+| 4 | scripting / arrays-strings-hash/map-set/large | 212.6967 | luajit | 2.6333 | ms/invocation | 80.77× |
+| 5 | scripting / dynamic-programming/fibonacci/large | 141.5248 | luajit | 2.0596 | ms/invocation | 68.72× |
+| 6 | scripting / arrays-strings-hash/scan/large | 82.8741 | luajit | 1.3739 | ms/invocation | 60.32× |
+| 7 | scripting / sanity/loops/large | 72.5922 | luajit | 1.4192 | ms/invocation | 51.15× |
+| 8 | scripting / graphs-trees-search/bfs/large | 799.3592 | luajit | 16.9315 | ms/invocation | 47.21× |
+| 9 | scripting / arrays-strings-hash/sort-index/large | 511.6308 | python | 23.0522 | ms/invocation | 22.19× |
+| 10 | template-engines / loop-10000/source-render | 34.0847 | handlebars | 2.2486 | ms/render | 15.16× |
+| 11 | template-engines / collection/source-render | 7.1487 | handlebars | 0.8673 | ms/render | 8.24× |
+| 12 | scripting / structured-data/json-transform/large | 462.8532 | node | 74.5456 | ms/invocation | 6.21× |
+| 13 | scripting / graphs-trees-search/bfs/small | 11.4051 | lua54 | 1.8680 | ms/invocation | 6.11× |
+| 14 | scripting / structured-data/json-traverse/large | 370.4149 | node | 68.6082 | ms/invocation | 5.40× |
+| 15 | scripting / arrays-strings-hash/frequency-count/small | 7.0682 | luajit | 1.3125 | ms/invocation | 5.39× |
+| 16 | template-engines / loop-1000/source-render | 3.2934 | handlebars | 0.6493 | ms/render | 5.07× |
+| 17 | scripting / arrays-strings-hash/sort-index/small | 6.8471 | luajit | 1.5076 | ms/invocation | 4.54× |
+| 18 | template-engines / literal/source-render | 0.0152 | liquid | 0.0036 | ms/render | 4.21× |
+| 19 | scripting / arrays-strings-hash/sliding-window/small | 5.2873 | luajit | 1.3394 | ms/invocation | 3.95× |
+| 20 | scripting / sanity/function-calls/small | 4.6504 | luajit | 1.3011 | ms/invocation | 3.57× |
+| 21 | scripting / arrays-strings-hash/map-set/small | 4.7012 | luajit | 1.3955 | ms/invocation | 3.37× |
+| 22 | scripting / filesystem/traverse/large | 25.0047 | luajit | 7.6408 | ms/invocation | 3.27× |
+| 23 | scripting / arrays-strings-hash/scan/small | 3.5558 | luajit | 1.2906 | ms/invocation | 2.76× |
+| 24 | scripting / structured-data/json-parse/large | 182.0766 | node | 66.9882 | ms/invocation | 2.72× |
+| 25 | scripting / sanity/loops/small | 3.3463 | luajit | 1.2815 | ms/invocation | 2.61× |
+| 26 | scripting / dynamic-programming/fibonacci/small | 2.8171 | luajit | 1.2633 | ms/invocation | 2.23× |
+| 27 | template-engines / many-templates-100/source-render | 0.0214 | liquid | 0.0102 | ms/render | 2.09× |
+| 28 | template-engines / nested-loops/source-render | 1.0676 | nunjucks | 0.5115 | ms/render | 2.09× |
+| 29 | scripting / sanity/output/small | 2.5214 | luajit | 1.2174 | ms/invocation | 2.07× |
+| 30 | template-engines / many-templates-1000/source-render | 0.0215 | liquid | 0.0105 | ms/render | 2.06× |
+| 31 | scripting / sanity/noop/large | 2.3885 | luajit | 1.1839 | ms/invocation | 2.02× |
+| 32 | scripting / sanity/noop/small | 2.4628 | luajit | 1.2283 | ms/invocation | 2.01× |
+| 33 | scripting / sanity/output/large | 2.4649 | luajit | 1.2294 | ms/invocation | 2.00× |
+| 34 | template-engines / many-templates-10/source-render | 0.0212 | liquid | 0.0108 | ms/render | 1.96× |
+| 35 | template-engines / many-renders-1000/source-render | 0.0225 | liquid | 0.0151 | ms/render | 1.49× |
+| 36 | template-engines / loop-100/source-render | 0.3643 | nunjucks | 0.2449 | ms/render | 1.49× |
+| 37 | template-engines / many-renders-100/source-render | 0.0218 | liquid | 0.0161 | ms/render | 1.35× |
+| 38 | template-engines / includes-8/source-render | 0.1629 | nunjucks | 0.1315 | ms/render | 1.24× |
+| 39 | template-engines / includes-4/source-render | 0.0890 | liquid | 0.0859 | ms/render | 1.04× |
+| 40 | scripting / filesystem/traverse/small | 3.1041 | luajit | 4.6138 | ms/invocation | 0.67× |
+| 41 | scripting / structured-data/json-transform/small | 7.1862 | python | 24.4697 | ms/invocation | 0.29× |
+| 42 | scripting / structured-data/json-traverse/small | 6.2346 | python | 23.9809 | ms/invocation | 0.26× |
+| 43 | scripting / structured-data/json-parse/small | 4.2690 | python | 23.7024 | ms/invocation | 0.18× |
 
-All rows are median fresh-process latency from 10 measured samples. Boundaries include invocation overhead; this is not an overall language ranking. Memory and capabilities remain separate. Practitioner choices are reevaluated after more audited evidence; no release or publication is authorized.
+Nift has lower medians than the best other engine in 30 of 43 supported comparable template cells. This covers fresh/source-render boundaries and is not an overall engine ranking or a version-improvement claim. Public parse-only/prepared-AST Nift modes remain unsupported. Raw inherited-floor template memory is retained and unranked. All peer comparisons match workload, boundary, unit and contract. Practitioner judgments and release recommendation remain pending further audited evidence. No publication is authorized.

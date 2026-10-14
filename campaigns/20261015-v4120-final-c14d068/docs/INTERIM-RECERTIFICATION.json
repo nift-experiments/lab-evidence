@@ -1,7 +1,8 @@
 {
   "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
   "audited_official_suites": [
-    "scripting"
+    "scripting",
+    "template-engines"
   ],
   "same_node_version_improvements": [],
   "same_node_version_regressions": [],
@@ -97,6 +98,28 @@
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
     },
     {
+      "suite": "template-engines",
+      "scenario": "loop-10000/source-render",
+      "unit": "ms/render",
+      "nift_value": 34.084663,
+      "best_peer": "handlebars",
+      "best_peer_value": 2.24859525,
+      "deficit": 15.15820288244405,
+      "contract_sha256": "e45dfb4a9a5b3b71b8450956424c0f83e52264b7c922fc12e6ce7fcf784c8630",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "collection/source-render",
+      "unit": "ms/render",
+      "nift_value": 7.1486675,
+      "best_peer": "handlebars",
+      "best_peer_value": 0.8672774444444444,
+      "deficit": 8.242653542753267,
+      "contract_sha256": "6f453f6305b5e47d88994be8b4563e494c5e6b5831150284ade564126f2002d6",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
       "suite": "scripting",
       "scenario": "structured-data/json-transform/large",
       "nift_ms": 462.8532015,
@@ -137,6 +160,17 @@
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
     },
     {
+      "suite": "template-engines",
+      "scenario": "loop-1000/source-render",
+      "unit": "ms/render",
+      "nift_value": 3.29344325,
+      "best_peer": "handlebars",
+      "best_peer_value": 0.6492709999999999,
+      "deficit": 5.0725248008920785,
+      "contract_sha256": "2788e87503073a37fff8c8c7c775a85d8c49d9b3e0f98ad2f0518ee776837cac",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
       "suite": "scripting",
       "scenario": "arrays-strings-hash/sort-index/small",
       "nift_ms": 6.8470755,
@@ -145,6 +179,17 @@
       "deficit": 4.541788537533021,
       "boundary": "fresh process, median10measured",
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "literal/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.01520485901309164,
+      "best_peer": "liquid",
+      "best_peer_value": 0.00361494414893617,
+      "deficit": 4.206111736903661,
+      "contract_sha256": "4ec88776c8462ac9656fb1ddf1391486c01c43366680f78e133b58418d94d732",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
     },
     {
       "suite": "scripting",
@@ -227,6 +272,28 @@
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
     },
     {
+      "suite": "template-engines",
+      "scenario": "many-templates-100/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.0214165065,
+      "best_peer": "liquid",
+      "best_peer_value": 0.010228712000000001,
+      "deficit": 2.0937637602857526,
+      "contract_sha256": "79f511e3ab412b4dc9430fd77ae9f46b22303f63edea40e848abe2379eb05420",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "nested-loops/source-render",
+      "unit": "ms/render",
+      "nift_value": 1.0675795,
+      "best_peer": "nunjucks",
+      "best_peer_value": 0.5115344642857143,
+      "deficit": 2.087013827095158,
+      "contract_sha256": "c90cefbc9933699e0b4f9f2b1ece618cc6cd2e0c12166a22ee9ad53183f5d38d",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
       "suite": "scripting",
       "scenario": "sanity/output/small",
       "nift_ms": 2.521434,
@@ -235,6 +302,17 @@
       "deficit": 2.0711163498442415,
       "boundary": "fresh process, median10measured",
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "many-templates-1000/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.021515934,
+      "best_peer": "liquid",
+      "best_peer_value": 0.01046493675,
+      "deficit": 2.0560022973860783,
+      "contract_sha256": "ceec9a9376cc6f1a6faad4d9bbd81650a96366bacc838664e757ce0b82db0014",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
     },
     {
       "suite": "scripting",
@@ -265,6 +343,72 @@
       "deficit": 2.0049347971523446,
       "boundary": "fresh process, median10measured",
       "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "many-templates-10/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.021231744047619048,
+      "best_peer": "liquid",
+      "best_peer_value": 0.010844894642857143,
+      "deficit": 1.9577639752916434,
+      "contract_sha256": "5c02ef2bd6dd7efcf8d7f8179279b4cab7a407a755154b2602e88239fecbff0f",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "many-renders-1000/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.022544929499999998,
+      "best_peer": "liquid",
+      "best_peer_value": 0.0151002095,
+      "deficit": 1.4930209743116476,
+      "contract_sha256": "d1b7279ed3a21b29bb86799e8a44340c9aa27e8cc23dee099a8e540f69307865",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "loop-100/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.36432636363636367,
+      "best_peer": "nunjucks",
+      "best_peer_value": 0.2449485681818182,
+      "deficit": 1.4873586171197164,
+      "contract_sha256": "f2b85e64bfa94518a03af7fdb6cd029b043d41119b5bca1f7effe274d47e2313",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "many-renders-100/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.021760675555555553,
+      "best_peer": "liquid",
+      "best_peer_value": 0.016124588750000002,
+      "deficit": 1.3495336775987885,
+      "contract_sha256": "17e5dcdad3c2a9b5e962b528ba3d6fdb1aac565c818cefaf3ddd8a65de84aa78",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "includes-8/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.16287262903225808,
+      "best_peer": "nunjucks",
+      "best_peer_value": 0.13149303448275862,
+      "deficit": 1.2386407361647278,
+      "contract_sha256": "34c619db42cce1c35af88e6e685ac68b5e1ee7f8ee0c694d7f0966ea374fc80e",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "includes-4/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.08904703947368421,
+      "best_peer": "liquid",
+      "best_peer_value": 0.0858501052631579,
+      "deficit": 1.0372385590061504,
+      "contract_sha256": "f758d90a7199f821d2025ae754948878ab4cdf9feeb67967fcfe9c2fbe509374",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
     },
     {
       "suite": "scripting",
@@ -309,5 +453,489 @@
   ],
   "recovery_status": "Exact release/original/final three-way diagnostic running; no recovery verdict yet",
   "historical_cross_node_trends": "separate; not substituted for same-node version evidence",
-  "memory_capabilities": "separate; not included in wall league"
+  "memory_capabilities": "separate; not included in wall league",
+  "current_template_comparisons": [
+    {
+      "suite": "template-engines",
+      "scenario": "literal/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 4.4260660000000005,
+      "best_peer": "nunjucks",
+      "best_peer_value": 50.7022235,
+      "deficit": 0.08729530372568375,
+      "contract_sha256": "bdb19a927f9df279567d4111e9229c332f31eec85139a5afb54790187a561877",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "literal/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.01520485901309164,
+      "best_peer": "liquid",
+      "best_peer_value": 0.00361494414893617,
+      "deficit": 4.206111736903661,
+      "contract_sha256": "4ec88776c8462ac9656fb1ddf1391486c01c43366680f78e133b58418d94d732",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "interpolation/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 4.3276375,
+      "best_peer": "nunjucks",
+      "best_peer_value": 51.8828925,
+      "deficit": 0.08341164671958103,
+      "contract_sha256": "7ef629b4f898159d22a2e3dbf25f3d4a97a2ebaad94099e9b827606c82a5b25c",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "interpolation/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.027960789552238807,
+      "best_peer": "liquid",
+      "best_peer_value": 0.03723288181818182,
+      "deficit": 0.7509703301715634,
+      "contract_sha256": "e6f6641b890b5fb598584af7baae57ea1a2befa5d7f0f8eaddbcf86c85a4e6ca",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "condition/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 4.189169,
+      "best_peer": "nunjucks",
+      "best_peer_value": 51.0503305,
+      "deficit": 0.08205958627437289,
+      "contract_sha256": "3193df4a86309419e12423bee8e51bebafc0c8c68ccdf8a9026a488b070cec4a",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "condition/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.022928817307692306,
+      "best_peer": "liquid",
+      "best_peer_value": 0.03965328947368421,
+      "deficit": 0.5782324143097624,
+      "contract_sha256": "954a7f1909a4b31aa7cd6d4bfd96944caf474c7daa0501691e0ded37ec238b45",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "nested-object/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 4.1874745,
+      "best_peer": "nunjucks",
+      "best_peer_value": 51.195049,
+      "deficit": 0.08179452079438386,
+      "contract_sha256": "040e875f23a26347ade4b90871d375f07502228c25dcacd69bb487a5f2c1eeaa",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "nested-object/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.022863365853658536,
+      "best_peer": "liquid",
+      "best_peer_value": 0.044485961538461544,
+      "deficit": 0.5139456372970919,
+      "contract_sha256": "e38725aa2ffa1a6e6fb2ce0c2738c8960df6c6b058aed76b9caa8b18d2226d39",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "loop-10/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 4.4065069999999995,
+      "best_peer": "nunjucks",
+      "best_peer_value": 52.694765000000004,
+      "deficit": 0.08362324037311865,
+      "contract_sha256": "8d27dc6effd79f9314b0bae55bafc82be68c327d0c35feba37670ef35127f632",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "loop-10/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.06372689230769231,
+      "best_peer": "nunjucks",
+      "best_peer_value": 0.1460995576923077,
+      "deficit": 0.43618812619476943,
+      "contract_sha256": "abe6fb8cb99dad2dcb56d6d3a3166e6d9b09d6b27762baa111eef3b1b9dce2fd",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "loop-100/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 4.8395715,
+      "best_peer": "nunjucks",
+      "best_peer_value": 53.609671,
+      "deficit": 0.09027422496213416,
+      "contract_sha256": "8b0cbe3da79e49bddb400f18da2daf3429a294cdfcedc68d1a1711c16ec80a9d",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "loop-100/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.36432636363636367,
+      "best_peer": "nunjucks",
+      "best_peer_value": 0.2449485681818182,
+      "deficit": 1.4873586171197164,
+      "contract_sha256": "f2b85e64bfa94518a03af7fdb6cd029b043d41119b5bca1f7effe274d47e2313",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "loop-1000/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 11.0243135,
+      "best_peer": "nunjucks",
+      "best_peer_value": 58.7043215,
+      "deficit": 0.18779390031788376,
+      "contract_sha256": "e0ec765378efb129ed265bdbca530f8a667d5581e356ded72e2d331e0f371e99",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "loop-1000/source-render",
+      "unit": "ms/render",
+      "nift_value": 3.29344325,
+      "best_peer": "handlebars",
+      "best_peer_value": 0.6492709999999999,
+      "deficit": 5.0725248008920785,
+      "contract_sha256": "2788e87503073a37fff8c8c7c775a85d8c49d9b3e0f98ad2f0518ee776837cac",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "loop-10000/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 76.750267,
+      "best_peer": "nunjucks",
+      "best_peer_value": 98.82744199999999,
+      "deficit": 0.776608859308531,
+      "contract_sha256": "5168115245490d40259e4e3a9889b71a6ac8f729f6a68ee3e4dfc6667ff2155e",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "loop-10000/source-render",
+      "unit": "ms/render",
+      "nift_value": 34.084663,
+      "best_peer": "handlebars",
+      "best_peer_value": 2.24859525,
+      "deficit": 15.15820288244405,
+      "contract_sha256": "e45dfb4a9a5b3b71b8450956424c0f83e52264b7c922fc12e6ce7fcf784c8630",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "nested-loops/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 6.090866,
+      "best_peer": "nunjucks",
+      "best_peer_value": 53.607629,
+      "deficit": 0.11361938801658249,
+      "contract_sha256": "8f42c73579a6dde911f5adfbd3004a2a10d142f255311b76952b26cadacc6eef",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "nested-loops/source-render",
+      "unit": "ms/render",
+      "nift_value": 1.0675795,
+      "best_peer": "nunjucks",
+      "best_peer_value": 0.5115344642857143,
+      "deficit": 2.087013827095158,
+      "contract_sha256": "c90cefbc9933699e0b4f9f2b1ece618cc6cd2e0c12166a22ee9ad53183f5d38d",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "includes-1/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 4.3987465,
+      "best_peer": "nunjucks",
+      "best_peer_value": 52.8591505,
+      "deficit": 0.08321636761831804,
+      "contract_sha256": "a3bd585ceed365974a41b7a46b5b77f8fbba9fcdd0639b2ee863e9080499ac3e",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "includes-1/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.04338703303964758,
+      "best_peer": "liquid",
+      "best_peer_value": 0.09744805714285715,
+      "deficit": 0.4452324070047179,
+      "contract_sha256": "956724867c09f519c18506fc2bcab898b2a51bf6ea72296533305a19bad91af0",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "includes-1/files",
+      "unit": "ms/render",
+      "nift_value": 0.07812093406593407,
+      "best_peer": "nunjucks",
+      "best_peer_value": 0.18708519230769233,
+      "deficit": 0.4175687722919907,
+      "contract_sha256": "003c7009b365490df32afc0769f5df1bfd989d48bfd0ce4b501fce6ed47433f4",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "includes-4/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 4.439246499999999,
+      "best_peer": "nunjucks",
+      "best_peer_value": 54.1568775,
+      "deficit": 0.08197013389481325,
+      "contract_sha256": "8ac48d678f4e73506878ec216d72a0a745921ec68c29056f59d58cb970d904dc",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "includes-4/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.08904703947368421,
+      "best_peer": "liquid",
+      "best_peer_value": 0.0858501052631579,
+      "deficit": 1.0372385590061504,
+      "contract_sha256": "f758d90a7199f821d2025ae754948878ab4cdf9feeb67967fcfe9c2fbe509374",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "includes-4/files",
+      "unit": "ms/render",
+      "nift_value": 0.16783773295454546,
+      "best_peer": "nunjucks",
+      "best_peer_value": 0.40335925,
+      "deficit": 0.41609987363509193,
+      "contract_sha256": "81ed4c8b4decb2daf00a6269d4d187f85ae75814fb5d7f891224e576e9d4624a",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "includes-8/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 4.8741354999999995,
+      "best_peer": "nunjucks",
+      "best_peer_value": 58.112195,
+      "deficit": 0.08387457228211737,
+      "contract_sha256": "0f970641b1894f32e79dadbfe8539c883e703b2dcca7cb0e329b5f2f5788e9ce",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "includes-8/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.16287262903225808,
+      "best_peer": "nunjucks",
+      "best_peer_value": 0.13149303448275862,
+      "deficit": 1.2386407361647278,
+      "contract_sha256": "34c619db42cce1c35af88e6e685ac68b5e1ee7f8ee0c694d7f0966ea374fc80e",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "includes-8/files",
+      "unit": "ms/render",
+      "nift_value": 0.3003890849056604,
+      "best_peer": "nunjucks",
+      "best_peer_value": 0.6223727692307692,
+      "deficit": 0.4826513943997433,
+      "contract_sha256": "631e0c2efa2269a0771e4cd4e238cbc30b9f67c077b09a3ff657a18b5401b9a7",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "article/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 4.694928,
+      "best_peer": "nunjucks",
+      "best_peer_value": 54.57812800000001,
+      "deficit": 0.08602215158423901,
+      "contract_sha256": "b3e96b3a738cb8a5d47c8a182e51b8fae478ea89732afebdc114e907b65a7182",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "article/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.2748230875,
+      "best_peer": "nunjucks",
+      "best_peer_value": 0.37303165789473686,
+      "deficit": 0.7367285904124266,
+      "contract_sha256": "2524d6a76063220ade900d62816726881e2e7ef6e38033b65ecb0ce383c2d877",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "collection/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 17.6440355,
+      "best_peer": "nunjucks",
+      "best_peer_value": 63.187434499999995,
+      "deficit": 0.27923329439811334,
+      "contract_sha256": "b90a9dfd25b6378127c9bee4c4cd6fbd3694208217a5ab2a8d83184df0e24d5c",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "collection/source-render",
+      "unit": "ms/render",
+      "nift_value": 7.1486675,
+      "best_peer": "handlebars",
+      "best_peer_value": 0.8672774444444444,
+      "deficit": 8.242653542753267,
+      "contract_sha256": "6f453f6305b5e47d88994be8b4563e494c5e6b5831150284ade564126f2002d6",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "many-renders-100/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 6.244083,
+      "best_peer": "liquid",
+      "best_peer_value": 79.1999855,
+      "deficit": 0.07883944625217135,
+      "contract_sha256": "5e6be640e19758d102038eae8e0bc5032eab72b835097431d88b51c8e9e818d3",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "many-renders-100/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.021760675555555553,
+      "best_peer": "liquid",
+      "best_peer_value": 0.016124588750000002,
+      "deficit": 1.3495336775987885,
+      "contract_sha256": "17e5dcdad3c2a9b5e962b528ba3d6fdb1aac565c818cefaf3ddd8a65de84aa78",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "many-renders-1000/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 26.772294000000002,
+      "best_peer": "liquid",
+      "best_peer_value": 172.7177145,
+      "deficit": 0.15500606916611326,
+      "contract_sha256": "66d1bc18b4058bbbc1e3c522b82a2fe9bbc99a9340a733ac1bffda96345c032a",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "many-renders-1000/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.022544929499999998,
+      "best_peer": "liquid",
+      "best_peer_value": 0.0151002095,
+      "deficit": 1.4930209743116476,
+      "contract_sha256": "d1b7279ed3a21b29bb86799e8a44340c9aa27e8cc23dee099a8e540f69307865",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "many-templates-10/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 4.7370565,
+      "best_peer": "nunjucks",
+      "best_peer_value": 54.638252,
+      "deficit": 0.08669853676870921,
+      "contract_sha256": "eca5d7973ddf7d81fd80ba44817e2bf0d431520c264a9da410513d8af852148a",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "many-templates-10/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.021231744047619048,
+      "best_peer": "liquid",
+      "best_peer_value": 0.010844894642857143,
+      "deficit": 1.9577639752916434,
+      "contract_sha256": "5c02ef2bd6dd7efcf8d7f8179279b4cab7a407a755154b2602e88239fecbff0f",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "many-templates-100/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 7.442014,
+      "best_peer": "liquid",
+      "best_peer_value": 82.736114,
+      "deficit": 0.08994879793363271,
+      "contract_sha256": "b3865f344e55b20dad6ddadfe6c1c9dd0634a6f8bf3930d15724b40f08b80d02",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "many-templates-100/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.0214165065,
+      "best_peer": "liquid",
+      "best_peer_value": 0.010228712000000001,
+      "deficit": 2.0937637602857526,
+      "contract_sha256": "79f511e3ab412b4dc9430fd77ae9f46b22303f63edea40e848abe2379eb05420",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "many-templates-1000/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 35.8258335,
+      "best_peer": "liquid",
+      "best_peer_value": 163.706369,
+      "deficit": 0.21884202623784296,
+      "contract_sha256": "a2d3cfed3e0a1a9bbde85579964ecf7d9012f4efee03e48533ed11fcd70a729c",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "many-templates-1000/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.021515934,
+      "best_peer": "liquid",
+      "best_peer_value": 0.01046493675,
+      "deficit": 2.0560022973860783,
+      "contract_sha256": "ceec9a9376cc6f1a6faad4d9bbd81650a96366bacc838664e757ce0b82db0014",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "transform/fresh",
+      "unit": "ms/invocation",
+      "nift_value": 3.9872094999999996,
+      "best_peer": "nunjucks",
+      "best_peer_value": 50.404815,
+      "deficit": 0.07910374237064455,
+      "contract_sha256": "7822f28880b2fcbd5ec11b22d3d9eaa0491577f8838159df2b69940080ce4c82",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    },
+    {
+      "suite": "template-engines",
+      "scenario": "transform/source-render",
+      "unit": "ms/render",
+      "nift_value": 0.021132224860335197,
+      "best_peer": "nunjucks",
+      "best_peer_value": 0.03570512686567164,
+      "deficit": 0.5918540757420632,
+      "contract_sha256": "8dceec5e3da0adeca5dda60c56a762a2f7670d77508db8c039b80e7cc739c3a3",
+      "confidence": "audited same-node current-vs-peer; not version regression evidence"
+    }
+  ],
+  "template_strength_qualification": {
+    "nift_lower_than_best_other": 30,
+    "comparable_supported_cells": 43,
+    "unsupported_public_modes": [
+      "parse-only",
+      "prepared-AST reuse"
+    ],
+    "memory_floor_unranked": true
+  }
 }
