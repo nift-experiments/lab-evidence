@@ -9,3 +9,7 @@ Local gates passed: scripting (188), website (18), shell (RC 18; startup 76 prep
 The complete frozen sample plans total 67,153 observations. Three-way same-node recovery diagnostics remain separate. New cloud tooling uses an isolated namespace and an explicit all-eight preflight gate. The previously approved 20-minute follow-up now tracks this final candidate.
 
 No Labs, tags, releases, packages or download publication is authorized.
+
+All eight official builds independently verified clean exact source, GCC 13 and Nift v4.12.0. Common CLI SHA256: `7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb`. Full frozen timing is authorized per suite only after its pinned-comparator and cloud correctness gates pass. Scripting, website and filesystem gates have passed; other cloud gates remain running. Actual suite affinity is recorded in cloud-affinity-clarification.json.
+
+Six full official collectors are running: build, concurrency, filesystem, scripting, template and website. Shell and task-runner cloud correctness gates remain running; they start official timing only after acceptance. No performance conclusion or release recommendation is issued from partial samples.

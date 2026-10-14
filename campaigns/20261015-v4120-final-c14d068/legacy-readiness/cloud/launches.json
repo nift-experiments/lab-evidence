@@ -1,0 +1,41 @@
+{
+  "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "cli_sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb",
+  "asset_bundle_sha256": "d81229bbe91090316fecc736ac5de73e657d810822b9c0ace50df41244a192b9",
+  "stage": "scripting/website official running; shell correctness pending",
+  "hosts": {
+    "scripting-benchmark": {
+      "id": 108162749,
+      "setup_pid": 6823,
+      "gates_pid": 7793,
+      "official_pid": 8710,
+      "planned_observations": 2256,
+      "output": "/opt/campaign/evidence/official-refresh",
+      "log": "/opt/official-refresh.log",
+      "affinity": [
+        0
+      ]
+    },
+    "shell-benchmark": {
+      "id": 108162738,
+      "setup_pid": 6949,
+      "gates_pid": 7924
+    },
+    "website-generator-benchmark": {
+      "id": 108162733,
+      "setup_pid": 6825,
+      "gates_pid": 7778,
+      "official_pid": 8492,
+      "planned_observations": 234,
+      "output": "/opt/campaign/evidence/official-refresh",
+      "log": "/opt/official-refresh.log",
+      "affinity": [
+        0
+      ]
+    }
+  },
+  "legacy_affinity": [
+    0
+  ],
+  "official_authorized": true
+}

@@ -7,5 +7,5 @@ export NIFT=/opt/nift/nift NIFT_SOURCE_SHA=c14d06835bca515a5281e41da0e40219c2d60
 [ ! -e "$OUTPUT" ]
 cc -O2 scripts/measure.c -o work/measure
 cc -O2 scripts/tiny-body.c -o work/tiny-body
-python3 scripts/campaign-refresh.py --output "$OUTPUT"
+taskset -c 0-3 python3 scripts/campaign-refresh.py --output "$OUTPUT"
 python3 scripts/audit.py "$OUTPUT"

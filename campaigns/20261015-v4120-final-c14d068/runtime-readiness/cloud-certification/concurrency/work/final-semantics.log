@@ -1,0 +1,22 @@
+nift [1,1,0]
+[2,2,0]
+[4,4,0]
+user.probe
+42
+user.probe
+python {"workers": 1, "distinct_worker_processes": 1}
+{"workers": 2, "distinct_worker_processes": 2}
+{"workers": 4, "distinct_worker_processes": 4}
+{"cancel": "CancelledError"}
+node {"workers":1,"max_active":1,"remaining":0}
+{"workers":2,"max_active":2,"remaining":0}
+{"workers":4,"max_active":4,"remaining":0}
+{"cancel":"AbortError"}
+bun {"workers":1,"max_active":1,"remaining":0}
+{"workers":2,"max_active":2,"remaining":0}
+{"workers":4,"max_active":4,"remaining":0}
+{"cancel":"AbortError"}
+go {"workers":1,"max_active":1,"remaining":0}
+{"workers":2,"max_active":2,"remaining":0}
+{"workers":4,"max_active":4,"remaining":0}
+{"cancel":"context canceled"}

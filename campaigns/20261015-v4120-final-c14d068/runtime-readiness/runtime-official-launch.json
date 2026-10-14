@@ -1,0 +1,57 @@
+{
+  "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "cli_sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb",
+  "parent_authorization": "official-timing-authorization.json",
+  "all_cloud_gates": "PASS; collected cloud-certification receipts",
+  "template-engines": {
+    "pid": 10131,
+    "suite_sha": "3c0dcdd1aad3cbb0a0c638c9041233b1e329dc6f",
+    "output": "/opt/template-engines/work/final-official",
+    "log": "/opt/template-engines/work/final-official.log",
+    "cells": 375,
+    "measured": 17950,
+    "warmups": 750,
+    "total": 18700,
+    "affinity": [
+      0
+    ]
+  },
+  "concurrency": {
+    "pid": 27825,
+    "suite_sha": "d6d0cac9e7dd65d12b5bbccd0ec5b542d187c0a6",
+    "output": "/opt/concurrency/work/final-official",
+    "log": "/opt/concurrency/work/final-official.log",
+    "cells": 608,
+    "measured": 10290,
+    "warmups": 1216,
+    "total": 11506,
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "filesystem-automation": {
+    "pid": 10722,
+    "primary_sha": "75e77bb4bb6fb0b8c49920f641c77b394aec5985",
+    "filter_sha": "1ab31488eb949eb8f8cd6d50b0eb9fd59e1ad78e",
+    "primary_output": "/opt/filesystem/suite/work/final-official",
+    "filter_output": "/opt/filesystem/filter-supplement/work/final-official",
+    "log": "/opt/filesystem/suite/work/final-official.log",
+    "cells": 752,
+    "measured": 14264,
+    "warmups": 752,
+    "total": 15016,
+    "sequence": "primary full\u2192independent audits\u2192filter full\u2192independent audits",
+    "completion_marker": "/opt/filesystem/suite/work/final-series-complete.txt",
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "timing_isolation": "no installation/profiling/diagnostics on hosts until timings complete",
+  "post_timing": "independent local audits; then3way/reuse diagnostic"
+}
