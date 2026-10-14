@@ -1,0 +1,68 @@
+{
+  "kind": "frozen-comparator-inventory-not-performance",
+  "suite": "scripting-benchmark",
+  "suite_sha": "f889fff4af94658259932f611d4b0ad681c1eebf",
+  "suite_clean": true,
+  "candidate": {
+    "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+    "branch": "detached exact main candidate",
+    "clean_before_build": true,
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "cc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "build_command": "make -C /opt/nift -j2 nift",
+    "cxxflags": "-std=c++17 -O2 -Wall -Wextra -pedantic -pthread",
+    "cflags": "-std=c99 -O2 -Wall -Wextra -pedantic",
+    "libffi_cflags": "-O2 -fPIC -Wno-deprecated-declarations",
+    "cpu_model": "AMD EPYC 7642 48-Core Processor",
+    "logical_cpus": 4,
+    "kernel": "6.8.0-134-generic",
+    "os": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+    "memory_kib": 8131788,
+    "filesystem": "{\n   \"filesystems\": [\n      {\n         \"fstype\": \"ext4\",\n         \"options\": \"rw,relatime,errors=remount-ro\",\n         \"target\": \"/\"\n      }\n   ]\n}\n",
+    "affinity_policy": "0-3 during official measurements",
+    "release_intended_unchanged": true,
+    "version": "Nift v4.12.0",
+    "binary_sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb",
+    "clean_after_build": true
+  },
+  "comparators": {
+    "nift": {
+      "version": "Nift v4.12.0",
+      "executable": "/opt/campaign/tools/bin/nift",
+      "sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb"
+    },
+    "node": {
+      "version": "v24.21.0",
+      "executable": "/opt/campaign/tools/node-v24.21.0-linux-x64/bin/node",
+      "sha256": "7fde7b8afa198da66257f42ee2001d874c7355631e6d1579a5fb5ef1f246df4c"
+    },
+    "python3": {
+      "version": "Python 3.12.3",
+      "executable": "/usr/bin/python3.12",
+      "sha256": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f"
+    },
+    "ruby": {
+      "version": "ruby 3.2.3 (2024-01-18 revision 52bb2ac0a6) [x86_64-linux-gnu]",
+      "executable": "/usr/bin/ruby3.2",
+      "sha256": "ead53704d7da35c85a28db19070d34e7ecef9461ecf8ae5e9d51ae79125bb731"
+    },
+    "lua5.4": {
+      "version": "Lua 5.4.6  Copyright (C) 1994-2023 Lua.org, PUC-Rio",
+      "executable": "/usr/bin/lua5.4",
+      "sha256": "389e356ce46f205fc7b1856c701a5765205ef18d849ae8fecd8e3c81548264f1"
+    },
+    "luajit": {
+      "version": "LuaJIT 2.1.1703358377 -- Copyright (C) 2005-2023 Mike Pall. https://luajit.org/",
+      "executable": "/usr/bin/luajit",
+      "sha256": "0a700d653c9f38b8bfbc732707815b2833eb65b2c9af5d4f7eb706278f0859ed"
+    },
+    "bash": {
+      "version": "GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)\nCopyright (C) 2022 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n\nThis is free software; you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.",
+      "executable": "/usr/bin/bash",
+      "sha256": "bc5945feb8bd26203ebfafea5ce1878bb2e32cb8fb50ab7ae395cfb1e1aaaef1"
+    }
+  },
+  "policy": "historical comparator pins retained; exact installed Ubuntu package inventory frozen; no latest-version claim",
+  "dpkg_inventory_sha256": "a3fb555f68942b0b6074845e42eb8243897123e1e2596d76ff9c9d6f9442e398",
+  "download_inventory_sha256": "816164f4d7c8a3f8accf183b1beb15584182a97687fb9f933b792ed01d251108"
+}

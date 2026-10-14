@@ -1,0 +1,313 @@
+{
+  "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "audited_official_suites": [
+    "scripting"
+  ],
+  "same_node_version_improvements": [],
+  "same_node_version_regressions": [],
+  "current_same_node_wall_deficits": [
+    {
+      "suite": "scripting",
+      "scenario": "arrays-strings-hash/frequency-count/large",
+      "nift_ms": 416.5421275,
+      "best_peer": "luajit",
+      "best_peer_ms": 3.0220595,
+      "deficit": 137.83386048487793,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "sanity/function-calls/large",
+      "nift_ms": 193.7259145,
+      "best_peer": "luajit",
+      "best_peer_ms": 1.418901,
+      "deficit": 136.53236871353252,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "arrays-strings-hash/sliding-window/large",
+      "nift_ms": 250.11562049999998,
+      "best_peer": "luajit",
+      "best_peer_ms": 2.4040475,
+      "deficit": 104.03938378921382,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "arrays-strings-hash/map-set/large",
+      "nift_ms": 212.696742,
+      "best_peer": "luajit",
+      "best_peer_ms": 2.6332525,
+      "deficit": 80.77339412000937,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "dynamic-programming/fibonacci/large",
+      "nift_ms": 141.5248405,
+      "best_peer": "luajit",
+      "best_peer_ms": 2.059559,
+      "deficit": 68.7160894638124,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "arrays-strings-hash/scan/large",
+      "nift_ms": 82.874099,
+      "best_peer": "luajit",
+      "best_peer_ms": 1.373933,
+      "deficit": 60.31887945045355,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "sanity/loops/large",
+      "nift_ms": 72.592246,
+      "best_peer": "luajit",
+      "best_peer_ms": 1.4192144999999998,
+      "deficit": 51.14959437068887,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "graphs-trees-search/bfs/large",
+      "nift_ms": 799.359229,
+      "best_peer": "luajit",
+      "best_peer_ms": 16.9315365,
+      "deficit": 47.21126337234663,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "arrays-strings-hash/sort-index/large",
+      "nift_ms": 511.63084200000003,
+      "best_peer": "python",
+      "best_peer_ms": 23.052246500000003,
+      "deficit": 22.194402701706316,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "structured-data/json-transform/large",
+      "nift_ms": 462.8532015,
+      "best_peer": "node",
+      "best_peer_ms": 74.545554,
+      "deficit": 6.2089980778732965,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "graphs-trees-search/bfs/small",
+      "nift_ms": 11.405095,
+      "best_peer": "lua54",
+      "best_peer_ms": 1.8679649999999999,
+      "deficit": 6.10562564073738,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "structured-data/json-traverse/large",
+      "nift_ms": 370.4148775,
+      "best_peer": "node",
+      "best_peer_ms": 68.6081985,
+      "deficit": 5.398988540706254,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "arrays-strings-hash/frequency-count/small",
+      "nift_ms": 7.068216,
+      "best_peer": "luajit",
+      "best_peer_ms": 1.3124574999999998,
+      "deficit": 5.385481815601649,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "arrays-strings-hash/sort-index/small",
+      "nift_ms": 6.8470755,
+      "best_peer": "luajit",
+      "best_peer_ms": 1.5075725,
+      "deficit": 4.541788537533021,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "arrays-strings-hash/sliding-window/small",
+      "nift_ms": 5.28731,
+      "best_peer": "luajit",
+      "best_peer_ms": 1.3393845,
+      "deficit": 3.947566960794305,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "sanity/function-calls/small",
+      "nift_ms": 4.6503985,
+      "best_peer": "luajit",
+      "best_peer_ms": 1.3011430000000002,
+      "deficit": 3.5740871679746187,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "arrays-strings-hash/map-set/small",
+      "nift_ms": 4.7012425,
+      "best_peer": "luajit",
+      "best_peer_ms": 1.3954795,
+      "deficit": 3.3689083214765967,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "filesystem/traverse/large",
+      "nift_ms": 25.004672,
+      "best_peer": "luajit",
+      "best_peer_ms": 7.640791,
+      "deficit": 3.2725240096215167,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "arrays-strings-hash/scan/small",
+      "nift_ms": 3.555848,
+      "best_peer": "luajit",
+      "best_peer_ms": 1.2905975,
+      "deficit": 2.75519517122883,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "structured-data/json-parse/large",
+      "nift_ms": 182.0765615,
+      "best_peer": "node",
+      "best_peer_ms": 66.988219,
+      "deficit": 2.718038547942288,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "sanity/loops/small",
+      "nift_ms": 3.3462994999999998,
+      "best_peer": "luajit",
+      "best_peer_ms": 1.281459,
+      "deficit": 2.611319987607875,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "dynamic-programming/fibonacci/small",
+      "nift_ms": 2.817063,
+      "best_peer": "luajit",
+      "best_peer_ms": 1.263322,
+      "deficit": 2.229885175750917,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "sanity/output/small",
+      "nift_ms": 2.521434,
+      "best_peer": "luajit",
+      "best_peer_ms": 1.2174274999999999,
+      "deficit": 2.0711163498442415,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "sanity/noop/large",
+      "nift_ms": 2.3885275,
+      "best_peer": "luajit",
+      "best_peer_ms": 1.183946,
+      "deficit": 2.017429426679933,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "sanity/noop/small",
+      "nift_ms": 2.4627879999999998,
+      "best_peer": "luajit",
+      "best_peer_ms": 1.228271,
+      "deficit": 2.0050851969964283,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "sanity/output/large",
+      "nift_ms": 2.464932,
+      "best_peer": "luajit",
+      "best_peer_ms": 1.2294325000000002,
+      "deficit": 2.0049347971523446,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "filesystem/traverse/small",
+      "nift_ms": 3.1041415,
+      "best_peer": "luajit",
+      "best_peer_ms": 4.6138235000000005,
+      "deficit": 0.6727915578044976,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "structured-data/json-transform/small",
+      "nift_ms": 7.186205,
+      "best_peer": "python",
+      "best_peer_ms": 24.4697095,
+      "deficit": 0.2936775771694388,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "structured-data/json-traverse/small",
+      "nift_ms": 6.2346330000000005,
+      "best_peer": "python",
+      "best_peer_ms": 23.980884000000003,
+      "deficit": 0.2599834518193741,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    },
+    {
+      "suite": "scripting",
+      "scenario": "structured-data/json-parse/small",
+      "nift_ms": 4.2690175,
+      "best_peer": "python",
+      "best_peer_ms": 23.702414,
+      "deficit": 0.1801089753980333,
+      "boundary": "fresh process, median10measured",
+      "confidence": "audited same-node current-vs-peer; not a version regression comparison"
+    }
+  ],
+  "recovery_status": "Exact release/original/final three-way diagnostic running; no recovery verdict yet",
+  "historical_cross_node_trends": "separate; not substituted for same-node version evidence",
+  "memory_capabilities": "separate; not included in wall league"
+}

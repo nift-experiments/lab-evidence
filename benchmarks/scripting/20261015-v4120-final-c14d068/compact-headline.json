@@ -1,0 +1,99 @@
+{
+  "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "source": "independently audited normalized-current-metrics.json",
+  "selected_classes_not_overall_ranking": true,
+  "unit": "ms median, fresh runtime process",
+  "rows": [
+    {
+      "family": "sanity/noop",
+      "size": "small",
+      "values": {
+        "nift": 2.4627879999999998,
+        "python": 18.085504,
+        "ruby": 68.76435599999999,
+        "lua54": 1.3876685,
+        "luajit": 1.228271,
+        "node": 29.194206,
+        "bash": 1.7290935
+      }
+    },
+    {
+      "family": "sanity/loops",
+      "size": "large",
+      "values": {
+        "nift": 72.592246,
+        "python": 25.139816,
+        "ruby": 74.311702,
+        "lua54": 1.9278715,
+        "luajit": 1.4192144999999998,
+        "node": 35.2638245,
+        "bash": 295.9268275
+      }
+    },
+    {
+      "family": "sanity/function-calls",
+      "size": "large",
+      "values": {
+        "nift": 193.7259145,
+        "python": 29.0786415,
+        "ruby": 75.6752025,
+        "lua54": 3.7305764999999997,
+        "luajit": 1.418901,
+        "node": 35.443254499999995,
+        "bash": 518.0850675
+      }
+    },
+    {
+      "family": "arrays-strings-hash/sort-index",
+      "size": "large",
+      "values": {
+        "nift": 511.63084200000003,
+        "python": 23.052246500000003,
+        "ruby": 78.7344305,
+        "lua54": 36.891389000000004,
+        "luajit": 34.9242005,
+        "node": 46.025724499999995,
+        "bash": 211.7632625
+      }
+    },
+    {
+      "family": "graphs-trees-search/bfs",
+      "size": "large",
+      "values": {
+        "nift": 799.359229,
+        "python": 96.860671,
+        "ruby": 121.6648745,
+        "lua54": 35.2808195,
+        "luajit": 16.9315365,
+        "node": 82.2235395,
+        "bash": null
+      }
+    },
+    {
+      "family": "structured-data/json-parse",
+      "size": "large",
+      "values": {
+        "nift": 182.0765615,
+        "python": 79.3432005,
+        "ruby": 174.6076755,
+        "lua54": null,
+        "luajit": null,
+        "node": 66.988219,
+        "bash": null
+      }
+    },
+    {
+      "family": "filesystem/traverse",
+      "size": "large",
+      "values": {
+        "nift": 25.004672,
+        "python": 30.2479275,
+        "ruby": 72.0577365,
+        "lua54": 7.648887,
+        "luajit": 7.640791,
+        "node": 48.928235,
+        "bash": 8.270228
+      }
+    }
+  ]
+}
