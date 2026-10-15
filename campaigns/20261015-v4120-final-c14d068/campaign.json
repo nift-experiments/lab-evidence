@@ -20,11 +20,11 @@
       "observations_planned": 9348,
       "measured_planned": 8880,
       "warmups_planned": 468,
-      "stage": "official9348 independently audited; required180 three-way diagnostic running",
+      "stage": "official+required diagnostics fully independently audited; push/teardown pending",
       "local_certification": "PASS 324 correctness records; graph-readiness/local-build-certification.json",
       "cloud": "exact candidate built and independently verified",
-      "audit": "PASS9348=8880measured+468warmups;291participantcells972cloudrawfiles verified",
-      "diagnostics": "post-timing180 exact release/original/final running",
+      "audit": "PASS9348primary+180diagnostic cloud/local independent,972+403rawfiles verified",
+      "diagnostics": "PASS tinyfull wall\u221210.19% andRSS\u22122.12%vsrelease; heavy noop+11.90%vsoriginal but\u221246.35%vsrelease; nonblocking explicittradeoff",
       "evidence": "canonical benchmarks/build-systems/20261015-v4120-final-c14d068 collected",
       "teardown": "pending",
       "linode_id": 108162775,
@@ -158,7 +158,7 @@
   "publication_authorized": "conditional: user0aea1129 brief authorizes relevant Labs benchmark refresh only after all eight official suites independently audited and no major release-blocking regressions; label unreleased exact candidate",
   "tag_release_packages_downloads_authorized": false,
   "ci": "9/9 exact final-SHA workflows independently verified; receipt ci/runs-initial.json",
-  "status": "all eight official matrices independently audited; final build recovery diagnostic pending; seven original hosts closed",
+  "status": "all eight official and required diagnostics audited; final evidencepush/lifecycle and conditionalLabs pending",
   "forensic_scope": "Available interrupted records contain CI/preparation only, not authoritative eight-suite benchmark job executions",
   "official_cli_sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb",
   "last_reconciled_utc": "2026-10-15T04:32:21.285030+00:00",
@@ -180,5 +180,6 @@
     "filesystem_official_complete": true,
     "filesystem_observations": 15016,
     "build_diagnostic_observations": 81
-  }
+  },
+  "release_recommendation": "RELEASE-READY: no remaining identified material release-blocking regression; recommend release exactc14; no tag/package authorization"
 }

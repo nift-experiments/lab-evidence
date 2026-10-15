@@ -1,0 +1,33 @@
+[
+  {
+    "kind": "native",
+    "size": 1000,
+    "profile": "heavy",
+    "jobs": 1,
+    "cases": [
+      {
+        "name": "noop",
+        "samples": 30,
+        "warmups": 2
+      }
+    ]
+  },
+  {
+    "kind": "tiny",
+    "size": 10000,
+    "profile": "light",
+    "jobs": 4,
+    "cases": [
+      {
+        "name": "noop",
+        "samples": 20,
+        "warmups": 2
+      },
+      {
+        "name": "full",
+        "samples": 5,
+        "warmups": 1
+      }
+    ]
+  }
+]

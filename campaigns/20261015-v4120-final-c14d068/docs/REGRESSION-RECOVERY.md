@@ -9,8 +9,8 @@ Exact clean same-node releases: prior `c8d9c266518d115e4f289c5c6a2b94ddd7ee9968`
 | shell calls | 20.989496 | 44.971487 | 21.655463 | Partial: major original regression recovered | +3.17% |
 | shell strings | 59.695733 | 66.950305 | 18.680012 | Yes; substantially faster than release | -68.71% |
 | website fresh 10k | 2871.544599 | 3278.509241 | 2951.495366 | Partial: near-release recovery | +2.78% |
-| tiny10k full | pending | pending | pending | Pending | pending |
-| tiny child RSS | pending | pending | pending | Pending | pending |
+| tiny10k full | 16676.004755 | 20975.957026 | 14976.488604 | Yes | -10.19% |
+| tiny child RSS (KiB, separate metric) | 17952 | 33312 | 17572 | Yes | -2.12% |
 
 All 72 scripting observations and exact rotation/source/oracles passed independent audit. Final is faster than original in all 10 paired blocks for both sizes, with disjoint ranges. Final/release ranges overlap. Large calls remain +5.01933 ms (+2.59%) and are slower in 8/10 pairs; this residual is retained as a descriptive increase, not dismissed as zero or treated as a formal significance result. Small is −0.031711 ms (−0.67%), with 6/10 final pairs slower: near-flat. Original→final recovery: 36.56% small and 57.69% large.
 
@@ -19,3 +19,5 @@ Template controlled gains versus release remain: 72.19% source-render 10k loop,5
 Website: all 18 diagnostic observations independently audited. Final is 9.97% faster than original, all five paired blocks faster with disjoint ranges. Final remains +79.950767 ms (+2.78%) versus release, overlapping ranges and three of five slower; no exact parity claim. Child peaks release/original/final are 17468/39872/17596 KiB.
 
 Shell all72 diagnostic observations independently audited. Original/final calls disjoint ranges and all10 final faster; release residual+0.665967ms,+3.17%,8/10 slower with overlapping ranges. Strings all10 final faster with disjoint ranges against both baselines; final−72.10% versus original.
+
+Website RSS(KiB) release17468/original39872/final17596, +0.73% release but−55.87% original, major growth recovered. Tiny full RSSrelease17952/original33312/final17572; fulltime and peakchild blockers recovered. Heavy native no-op release406.815/original195.063/final218.274ms: +11.90%original,28/30pairs slower, but−46.35%release all30pairsfaster; explicit bounded tradeoff, no release blocker identified.

@@ -1,11 +1,11 @@
 {
-  "checked_utc": "2026-10-15T05:06:29.795754+00:00",
+  "checked_utc": "2026-10-15T05:34:24.015899+00:00",
   "build": {
     "observations": 9348,
     "expected": 9348,
-    "state": "primary9348 accepted; exact three-way diagnostic active",
+    "state": "primary9348 and required180 same-node diagnostic accepted independently; host eligible after parent scan/push",
     "latest_gate": "all291cells/9348observations accepted",
-    "diagnostic_observations": 81,
+    "diagnostic_observations": 180,
     "diagnostic_expected": 180
   },
   "task": {
@@ -18,6 +18,6 @@
   },
   "new_failures": false,
   "official_complete": true,
-  "three_way_diagnostic": "81/180, native1000 heavy one-worker no-op",
+  "three_way_diagnostic": "complete, independently audited cloud+local",
   "core_or_Labs_changes": false
 }

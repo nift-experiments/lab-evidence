@@ -154,6 +154,45 @@
       "samples_each": 3,
       "confidence": "descriptive same-node threepair; no formal significance",
       "improvement_percent": 88.57813640572617
+    },
+    {
+      "suite": "build-systems",
+      "scenario": "native-1000-heavy-j1/noop",
+      "unit": "ms/invocation",
+      "release": 406.8150255,
+      "original": 195.0625145,
+      "final": 218.2742205,
+      "samples_each": 30,
+      "confidence": "Exact-source same-node rotating independent audit; heavy no-op28/30 slower than original but30/30 faster release; bounded non-blocker, not dismissed as noise",
+      "final_vs_release_percent": -46.345585384480835,
+      "final_vs_original_percent": 11.899624107429418,
+      "improvement_percent": 46.345585384480835
+    },
+    {
+      "suite": "build-systems",
+      "scenario": "tiny-10000-light-j4/full",
+      "unit": "ms/invocation",
+      "release": 16676.004755,
+      "original": 20975.957026,
+      "final": 14976.488604,
+      "samples_each": 5,
+      "confidence": "Exact-source same-node rotating independent audit; heavy no-op28/30 slower than original but30/30 faster release; bounded non-blocker, not dismissed as noise",
+      "final_vs_release_percent": -10.191386821777149,
+      "final_vs_original_percent": -28.60164336989999,
+      "improvement_percent": 10.191386821777149
+    },
+    {
+      "suite": "build-systems",
+      "scenario": "tiny-10000-light-j4/noop",
+      "unit": "ms/invocation",
+      "release": 754.151091,
+      "original": 603.3875230000001,
+      "final": 586.91506,
+      "samples_each": 20,
+      "confidence": "Exact-source same-node rotating independent audit; heavy no-op28/30 slower than original but30/30 faster release; bounded non-blocker, not dismissed as noise",
+      "final_vs_release_percent": -22.175401321537024,
+      "final_vs_original_percent": -2.7299972856747456,
+      "improvement_percent": 22.175401321537024
     }
   ],
   "same_node_version_regressions": [
@@ -277,6 +316,21 @@
       "baseline": "original",
       "change_percent": 1.6304613881849672,
       "classification": "descriptive same-node increase; not formal significance"
+    },
+    {
+      "suite": "build-systems",
+      "scenario": "native-1000-heavy-j1/noop",
+      "unit": "ms/invocation",
+      "release": 406.8150255,
+      "original": 195.0625145,
+      "final": 218.2742205,
+      "samples_each": 30,
+      "confidence": "Exact-source same-node rotating independent audit; heavy no-op28/30 slower than original but30/30 faster release; bounded non-blocker, not dismissed as noise",
+      "final_vs_release_percent": -46.345585384480835,
+      "final_vs_original_percent": 11.899624107429418,
+      "baseline": "original",
+      "change_percent": 11.899624107429418,
+      "classification": "consistent tested-cohort original-relative slowdown; bounded non-blocker relative to release"
     }
   ],
   "current_same_node_wall_deficits": [
@@ -6577,6 +6631,42 @@
       "final_vs_original_percent": -16.60813507763451,
       "samples_each": 3,
       "confidence": "descriptive same-node threepair; no formal significance"
+    },
+    {
+      "suite": "build-systems",
+      "scenario": "native-1000-heavy-j1/noop",
+      "unit": "ms/invocation",
+      "release": 406.8150255,
+      "original": 195.0625145,
+      "final": 218.2742205,
+      "samples_each": 30,
+      "confidence": "Exact-source same-node rotating independent audit; heavy no-op28/30 slower than original but30/30 faster release; bounded non-blocker, not dismissed as noise",
+      "final_vs_release_percent": -46.345585384480835,
+      "final_vs_original_percent": 11.899624107429418
+    },
+    {
+      "suite": "build-systems",
+      "scenario": "tiny-10000-light-j4/full",
+      "unit": "ms/invocation",
+      "release": 16676.004755,
+      "original": 20975.957026,
+      "final": 14976.488604,
+      "samples_each": 5,
+      "confidence": "Exact-source same-node rotating independent audit; heavy no-op28/30 slower than original but30/30 faster release; bounded non-blocker, not dismissed as noise",
+      "final_vs_release_percent": -10.191386821777149,
+      "final_vs_original_percent": -28.60164336989999
+    },
+    {
+      "suite": "build-systems",
+      "scenario": "tiny-10000-light-j4/noop",
+      "unit": "ms/invocation",
+      "release": 754.151091,
+      "original": 603.3875230000001,
+      "final": 586.91506,
+      "samples_each": 20,
+      "confidence": "Exact-source same-node rotating independent audit; heavy no-op28/30 slower than original but30/30 faster release; bounded non-blocker, not dismissed as noise",
+      "final_vs_release_percent": -22.175401321537024,
+      "final_vs_original_percent": -2.7299972856747456
     }
   ],
   "memory_diagnostic_rows": [
@@ -6637,6 +6727,36 @@
       "original_kib": 6912.0,
       "final_kib": 6912.0,
       "qualification": "raw quantized child peak; separate from wall ranking"
+    },
+    {
+      "suite": "build-systems",
+      "scenario": "native-1000-heavy-j1/noop",
+      "metric": "Linux maximum-child high-water KiB; not summed concurrent memory",
+      "release_kib": 6832.0,
+      "original_kib": 8064.0,
+      "final_kib": 6784.0,
+      "final_vs_release_percent": -0.7025761124121788,
+      "qualification": "separate controlled diagnostic, quantized memory; not aggregate tree"
+    },
+    {
+      "suite": "build-systems",
+      "scenario": "tiny-10000-light-j4/full",
+      "metric": "Linux maximum-child high-water KiB; not summed concurrent memory",
+      "release_kib": 17952,
+      "original_kib": 33312,
+      "final_kib": 17572,
+      "final_vs_release_percent": -2.116755793226377,
+      "qualification": "separate controlled diagnostic, quantized memory; not aggregate tree"
+    },
+    {
+      "suite": "build-systems",
+      "scenario": "tiny-10000-light-j4/noop",
+      "metric": "Linux maximum-child high-water KiB; not summed concurrent memory",
+      "release_kib": 12452.0,
+      "original_kib": 21542.0,
+      "final_kib": 12576.0,
+      "final_vs_release_percent": 0.9958239640218469,
+      "qualification": "separate controlled diagnostic, quantized memory; not aggregate tree"
     }
   ],
   "template_memory_control": "Supervisor allocation0\u219264MiB moves noopraw16.75\u219280.75MiB, proving inherited floor; raw retained/unranked.",
@@ -8568,6 +8688,21 @@
       "improvement_percent": 51.20515606175843
     },
     {
+      "suite": "build-systems",
+      "scenario": "native-1000-heavy-j1/noop",
+      "unit": "ms/invocation",
+      "release": 406.8150255,
+      "original": 195.0625145,
+      "final": 218.2742205,
+      "samples_each": 30,
+      "confidence": "Exact-source same-node rotating independent audit; heavy no-op28/30 slower than original but30/30 faster release; bounded non-blocker, not dismissed as noise",
+      "final_vs_release_percent": -46.345585384480835,
+      "final_vs_original_percent": 11.899624107429418,
+      "baseline": "release",
+      "baseline_value": 406.8150255,
+      "improvement_percent": 46.345585384480835
+    },
+    {
       "suite": "template-engines",
       "scenario": "article/source-render",
       "unit": "ms/render",
@@ -8598,6 +8733,36 @@
       "improvement_percent": 36.56248618636201
     },
     {
+      "suite": "build-systems",
+      "scenario": "tiny-10000-light-j4/full",
+      "unit": "ms/invocation",
+      "release": 16676.004755,
+      "original": 20975.957026,
+      "final": 14976.488604,
+      "samples_each": 5,
+      "confidence": "Exact-source same-node rotating independent audit; heavy no-op28/30 slower than original but30/30 faster release; bounded non-blocker, not dismissed as noise",
+      "final_vs_release_percent": -10.191386821777149,
+      "final_vs_original_percent": -28.60164336989999,
+      "baseline": "original",
+      "baseline_value": 20975.957026,
+      "improvement_percent": 28.60164336989999
+    },
+    {
+      "suite": "build-systems",
+      "scenario": "tiny-10000-light-j4/noop",
+      "unit": "ms/invocation",
+      "release": 754.151091,
+      "original": 603.3875230000001,
+      "final": 586.91506,
+      "samples_each": 20,
+      "confidence": "Exact-source same-node rotating independent audit; heavy no-op28/30 slower than original but30/30 faster release; bounded non-blocker, not dismissed as noise",
+      "final_vs_release_percent": -22.175401321537024,
+      "final_vs_original_percent": -2.7299972856747456,
+      "baseline": "release",
+      "baseline_value": 754.151091,
+      "improvement_percent": 22.175401321537024
+    },
+    {
       "suite": "filesystem-automation",
       "scenario": "filter-size-10000/booted",
       "unit": "ms/request",
@@ -8611,6 +8776,21 @@
       "baseline": "original",
       "baseline_value": 385.269169,
       "improvement_percent": 16.60813507763451
+    },
+    {
+      "suite": "build-systems",
+      "scenario": "tiny-10000-light-j4/full",
+      "unit": "ms/invocation",
+      "release": 16676.004755,
+      "original": 20975.957026,
+      "final": 14976.488604,
+      "samples_each": 5,
+      "confidence": "Exact-source same-node rotating independent audit; heavy no-op28/30 slower than original but30/30 faster release; bounded non-blocker, not dismissed as noise",
+      "final_vs_release_percent": -10.191386821777149,
+      "final_vs_original_percent": -28.60164336989999,
+      "baseline": "release",
+      "baseline_value": 16676.004755,
+      "improvement_percent": 10.191386821777149
     },
     {
       "suite": "website-generator",
@@ -8673,6 +8853,21 @@
       "baseline": "original",
       "baseline_value": 12015.063135,
       "improvement_percent": 4.658826430711061
+    },
+    {
+      "suite": "build-systems",
+      "scenario": "tiny-10000-light-j4/noop",
+      "unit": "ms/invocation",
+      "release": 754.151091,
+      "original": 603.3875230000001,
+      "final": 586.91506,
+      "samples_each": 20,
+      "confidence": "Exact-source same-node rotating independent audit; heavy no-op28/30 slower than original but30/30 faster release; bounded non-blocker, not dismissed as noise",
+      "final_vs_release_percent": -22.175401321537024,
+      "final_vs_original_percent": -2.7299972856747456,
+      "baseline": "original",
+      "baseline_value": 603.3875230000001,
+      "improvement_percent": 2.7299972856747456
     },
     {
       "suite": "task-runners",

@@ -1,0 +1,242 @@
+{
+  "cohorts": [
+    {
+      "kind": "native",
+      "size": 1000,
+      "profile": "heavy",
+      "jobs": 1,
+      "scenario": "noop",
+      "variant": "final",
+      "samples": 30,
+      "wall_ms": {
+        "median": 218.2742205,
+        "min": 206.564974,
+        "max": 258.114312,
+        "p95": 252.98108695
+      },
+      "cpu_ms": {
+        "median": 213.345,
+        "min": 201.215,
+        "max": 253.28,
+        "p95": 247.2225
+      },
+      "peak_rss_kib": {
+        "median": 6784.0,
+        "min": 6700,
+        "max": 7040,
+        "p95": 6936.2
+      }
+    },
+    {
+      "kind": "native",
+      "size": 1000,
+      "profile": "heavy",
+      "jobs": 1,
+      "scenario": "noop",
+      "variant": "original",
+      "samples": 30,
+      "wall_ms": {
+        "median": 195.0625145,
+        "min": 179.331046,
+        "max": 230.220859,
+        "p95": 223.20557069999998
+      },
+      "cpu_ms": {
+        "median": 190.74200000000002,
+        "min": 174.844,
+        "max": 224.203,
+        "p95": 217.07704999999999
+      },
+      "peak_rss_kib": {
+        "median": 8064.0,
+        "min": 7808,
+        "max": 8192,
+        "p95": 8134.4
+      }
+    },
+    {
+      "kind": "native",
+      "size": 1000,
+      "profile": "heavy",
+      "jobs": 1,
+      "scenario": "noop",
+      "variant": "release",
+      "samples": 30,
+      "wall_ms": {
+        "median": 406.8150255,
+        "min": 382.977241,
+        "max": 482.66386,
+        "p95": 462.7778715999999
+      },
+      "cpu_ms": {
+        "median": 402.15049999999997,
+        "min": 378.373,
+        "max": 479.167,
+        "p95": 457.1722499999999
+      },
+      "peak_rss_kib": {
+        "median": 6832.0,
+        "min": 6656,
+        "max": 6964,
+        "p95": 6960.0
+      }
+    },
+    {
+      "kind": "tiny",
+      "size": 10000,
+      "profile": "light",
+      "jobs": 4,
+      "scenario": "full",
+      "variant": "final",
+      "samples": 5,
+      "wall_ms": {
+        "median": 14976.488604,
+        "min": 14722.694191,
+        "max": 16329.156708
+      },
+      "cpu_ms": {
+        "median": 46060.919,
+        "min": 45637.878,
+        "max": 49798.479
+      },
+      "peak_rss_kib": {
+        "median": 17572,
+        "min": 17188,
+        "max": 17700
+      }
+    },
+    {
+      "kind": "tiny",
+      "size": 10000,
+      "profile": "light",
+      "jobs": 4,
+      "scenario": "full",
+      "variant": "original",
+      "samples": 5,
+      "wall_ms": {
+        "median": 20975.957026,
+        "min": 20363.005469,
+        "max": 22609.413337
+      },
+      "cpu_ms": {
+        "median": 62165.804,
+        "min": 59177.674,
+        "max": 67070.383
+      },
+      "peak_rss_kib": {
+        "median": 33312,
+        "min": 33184,
+        "max": 33440
+      }
+    },
+    {
+      "kind": "tiny",
+      "size": 10000,
+      "profile": "light",
+      "jobs": 4,
+      "scenario": "full",
+      "variant": "release",
+      "samples": 5,
+      "wall_ms": {
+        "median": 16676.004755,
+        "min": 14352.250934,
+        "max": 17261.501936
+      },
+      "cpu_ms": {
+        "median": 51727.417,
+        "min": 45027.915,
+        "max": 53278.388
+      },
+      "peak_rss_kib": {
+        "median": 17952,
+        "min": 17828,
+        "max": 18848
+      }
+    },
+    {
+      "kind": "tiny",
+      "size": 10000,
+      "profile": "light",
+      "jobs": 4,
+      "scenario": "noop",
+      "variant": "final",
+      "samples": 20,
+      "wall_ms": {
+        "median": 586.91506,
+        "min": 538.589965,
+        "max": 701.270215,
+        "p95": 699.2769478
+      },
+      "cpu_ms": {
+        "median": 1736.1275,
+        "min": 1565.051,
+        "max": 1891.814,
+        "p95": 1880.7322499999998
+      },
+      "peak_rss_kib": {
+        "median": 12576.0,
+        "min": 12320,
+        "max": 12708,
+        "p95": 12708.0
+      }
+    },
+    {
+      "kind": "tiny",
+      "size": 10000,
+      "profile": "light",
+      "jobs": 4,
+      "scenario": "noop",
+      "variant": "original",
+      "samples": 20,
+      "wall_ms": {
+        "median": 603.3875230000001,
+        "min": 556.270704,
+        "max": 799.729267,
+        "p95": 709.3396892000001
+      },
+      "cpu_ms": {
+        "median": 1692.026,
+        "min": 1486.524,
+        "max": 2225.146,
+        "p95": 1854.3876000000002
+      },
+      "peak_rss_kib": {
+        "median": 21542.0,
+        "min": 21408,
+        "max": 21796,
+        "p95": 21788.4
+      }
+    },
+    {
+      "kind": "tiny",
+      "size": 10000,
+      "profile": "light",
+      "jobs": 4,
+      "scenario": "noop",
+      "variant": "release",
+      "samples": 20,
+      "wall_ms": {
+        "median": 754.151091,
+        "min": 696.332028,
+        "max": 940.215514,
+        "p95": 865.3311978
+      },
+      "cpu_ms": {
+        "median": 2309.8909999999996,
+        "min": 2176.608,
+        "max": 2757.064,
+        "p95": 2637.3022499999997
+      },
+      "peak_rss_kib": {
+        "median": 12452.0,
+        "min": 12320,
+        "max": 12708,
+        "p95": 12708.0
+      }
+    }
+  ],
+  "observations": 180,
+  "measured": 165,
+  "warmups": 15,
+  "outliers_removed": 0
+}

@@ -1,0 +1,179 @@
+{
+  "workload": "native1000heavyj1/noop",
+  "basis": "same host/exact sources; 30 measured samples per source; round-matched pairs in rotating three-source control",
+  "headline_difference_of_marginal_medians_percent": 11.899624107429418,
+  "paired_counts_and_ranges": [
+    {
+      "baseline": "original",
+      "metric": "wall_ms",
+      "pairs": 30,
+      "final_higher": 28,
+      "final_lower": 2,
+      "equal": 0,
+      "median_within_round_percent_change": 12.827570517552221,
+      "min_within_round_percent_change": -8.284160732803103,
+      "max_within_round_percent_change": 32.71198501035175,
+      "median_within_round_delta": 25.93375549999999,
+      "min_within_round_delta": -19.071866,
+      "max_within_round_delta": 63.62222299999999
+    },
+    {
+      "baseline": "original",
+      "metric": "cpu_ms",
+      "pairs": 30,
+      "final_higher": 28,
+      "final_lower": 2,
+      "equal": 0,
+      "median_within_round_percent_change": 13.152928085246508,
+      "min_within_round_percent_change": -8.15421738335348,
+      "max_within_round_percent_change": 33.88732066774502,
+      "median_within_round_delta": 25.77749999999999,
+      "min_within_round_delta": -18.28200000000001,
+      "max_within_round_delta": 64.106
+    },
+    {
+      "baseline": "original",
+      "metric": "peak_rss_kib",
+      "pairs": 30,
+      "final_higher": 0,
+      "final_lower": 30,
+      "equal": 0,
+      "median_within_round_percent_change": -14.516129032258062,
+      "min_within_round_percent_change": -18.212890625,
+      "max_within_round_percent_change": -10.911885245901642,
+      "median_within_round_delta": -1152.0,
+      "min_within_round_delta": -1492,
+      "max_within_round_delta": -852
+    },
+    {
+      "baseline": "release",
+      "metric": "wall_ms",
+      "pairs": 30,
+      "final_higher": 0,
+      "final_lower": 30,
+      "equal": 0,
+      "median_within_round_percent_change": -45.605158247886855,
+      "min_within_round_percent_change": -54.80981712614654,
+      "max_within_round_percent_change": -36.86733537699679,
+      "median_within_round_delta": -185.72687,
+      "min_within_round_delta": -264.547179,
+      "max_within_round_delta": -147.881362
+    },
+    {
+      "baseline": "release",
+      "metric": "cpu_ms",
+      "pairs": 30,
+      "final_higher": 0,
+      "final_lower": 30,
+      "equal": 0,
+      "median_within_round_percent_change": -45.938511003481295,
+      "min_within_round_percent_change": -55.55703961249419,
+      "max_within_round_percent_change": -37.571384647953344,
+      "median_within_round_delta": -186.216,
+      "min_within_round_delta": -266.211,
+      "max_within_round_delta": -149.081
+    },
+    {
+      "baseline": "release",
+      "metric": "peak_rss_kib",
+      "pairs": 30,
+      "final_higher": 13,
+      "final_lower": 16,
+      "equal": 1,
+      "median_within_round_percent_change": -0.44005560483351136,
+      "min_within_round_percent_change": -3.7334865020103414,
+      "max_within_round_percent_change": 3.8461538461538547,
+      "median_within_round_delta": -30.0,
+      "min_within_round_delta": -260,
+      "max_within_round_delta": 256
+    }
+  ],
+  "marginal_distributions": [
+    {
+      "kind": "native",
+      "size": 1000,
+      "profile": "heavy",
+      "jobs": 1,
+      "scenario": "noop",
+      "variant": "final",
+      "samples": 30,
+      "wall_ms": {
+        "median": 218.2742205,
+        "min": 206.564974,
+        "max": 258.114312,
+        "p95": 252.98108695
+      },
+      "cpu_ms": {
+        "median": 213.345,
+        "min": 201.215,
+        "max": 253.28,
+        "p95": 247.2225
+      },
+      "peak_rss_kib": {
+        "median": 6784.0,
+        "min": 6700,
+        "max": 7040,
+        "p95": 6936.2
+      }
+    },
+    {
+      "kind": "native",
+      "size": 1000,
+      "profile": "heavy",
+      "jobs": 1,
+      "scenario": "noop",
+      "variant": "original",
+      "samples": 30,
+      "wall_ms": {
+        "median": 195.0625145,
+        "min": 179.331046,
+        "max": 230.220859,
+        "p95": 223.20557069999998
+      },
+      "cpu_ms": {
+        "median": 190.74200000000002,
+        "min": 174.844,
+        "max": 224.203,
+        "p95": 217.07704999999999
+      },
+      "peak_rss_kib": {
+        "median": 8064.0,
+        "min": 7808,
+        "max": 8192,
+        "p95": 8134.4
+      }
+    },
+    {
+      "kind": "native",
+      "size": 1000,
+      "profile": "heavy",
+      "jobs": 1,
+      "scenario": "noop",
+      "variant": "release",
+      "samples": 30,
+      "wall_ms": {
+        "median": 406.8150255,
+        "min": 382.977241,
+        "max": 482.66386,
+        "p95": 462.7778715999999
+      },
+      "cpu_ms": {
+        "median": 402.15049999999997,
+        "min": 378.373,
+        "max": 479.167,
+        "p95": 457.1722499999999
+      },
+      "peak_rss_kib": {
+        "median": 6832.0,
+        "min": 6656,
+        "max": 6964,
+        "p95": 6960.0
+      }
+    }
+  ],
+  "confidence_statement": "A consistent original-relative slowdown is confirmed in this tested cohort (wall and CPU higher in 28/30 matched rounds); not a confidence interval or cross-machine guarantee. Marginal ranges overlap.",
+  "materiality": "A real incremental-latency/CPU tradeoff worth retaining in the remaining-gap list: final median218.274ms versus original195.063ms (+23.212ms), with15.87% less maximum-child RSS.",
+  "build_release_gate": "bounded non-blocker for this release: versus releasedc8d9, wall is46.35% lower and all30pairs are faster; no correctness regression and targeted full-dirty time/RSS recovery verified. Does not claim universal native parity or full original-best latency retention.",
+  "statistical_significance_test_performed": false,
+  "original_or_official_evidence_modified": false
+}
