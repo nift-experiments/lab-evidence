@@ -1,0 +1,73 @@
+[
+  {
+    "page": "website-generator",
+    "graph_title": "Nift v4.12 final: normal all-core builds \u2014 10,000 pages",
+    "asset": "public/benchmarks/website-generator/assets/default-allcore.svg",
+    "generator": "scripts/website_refresh.py \u2192 scripts/plot_startup.py:draw_comparison",
+    "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/campaigns/20261015-website-supplement-c14d068/ANALYSIS-v3.json",
+    "source_campaign": "20261015-website-supplement-c14d068",
+    "nift_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+    "comparators": [
+      "Hugo 0.167.0"
+    ],
+    "classification": "current supplemental all-core",
+    "expected_values": {
+      "fresh": [
+        1.19446785,
+        1.6355435090000001
+      ],
+      "warm-full": [
+        0.803743008,
+        1.436615542
+      ]
+    },
+    "plotted_values": {
+      "fresh": [
+        1.19446785,
+        1.6355435090000001
+      ],
+      "warm-full": [
+        0.803743008,
+        1.436615542
+      ]
+    },
+    "unit": "Median wall seconds",
+    "svg_numeric_labels": "PASS",
+    "validation": "PASS",
+    "regenerated": true,
+    "sha256": "f1bd22c9d7c2fe3d6220838207112cb10439581b64260c00cb8b413c6252a965"
+  },
+  {
+    "page": "website-generator",
+    "graph_title": "Current Nift development workflow \u2014 CPU0 cohorts",
+    "asset": "public/benchmarks/website-generator/assets/incremental-workflow.svg",
+    "generator": "scripts/website_refresh.py \u2192 scripts/plot_startup.py:draw_comparison",
+    "source_data": [
+      "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/website-generator/20261015-v4120-final-c14d068/official-refresh/website-10000.json",
+      "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/website-generator/20261015-v4120-final-c14d068/official-refresh/targeted-builds.json"
+    ],
+    "source_campaign": "20261015-v4120-final-c14d068",
+    "nift_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+    "comparators": [],
+    "classification": "current CPU0 incremental distinct target cohort",
+    "expected_values": {
+      "Nift v4.12 final": [
+        0.842445613,
+        0.858452265,
+        0.151855018
+      ]
+    },
+    "plotted_values": {
+      "Nift v4.12 final": [
+        0.842445613,
+        0.858452265,
+        0.151855018
+      ]
+    },
+    "unit": "Median wall seconds",
+    "svg_numeric_labels": "PASS",
+    "validation": "PASS",
+    "regenerated": true,
+    "sha256": "398a74b5ee526ea9704e4c3d9c0617b25159aea964bb5e001e400c3b6d9bd24a"
+  }
+]

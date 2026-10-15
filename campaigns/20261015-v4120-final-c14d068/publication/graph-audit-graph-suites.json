@@ -1,0 +1,5671 @@
+{
+  "scope": "build-systems and task-runners; public final v4.12 only",
+  "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+  "campaign": "20261015-v4120-final-c14d068",
+  "measurements_or_cloud_work": false,
+  "public_historical_or_recovery_charts": false,
+  "asset_count": 44,
+  "svg_count": 22,
+  "png_count": 22,
+  "changed_assets": [
+    "benchmarks/build-systems/assets/native-noop.svg",
+    "benchmarks/build-systems/assets/native-noop.png",
+    "benchmarks/build-systems/assets/native-leaf.svg",
+    "benchmarks/build-systems/assets/native-leaf.png",
+    "benchmarks/build-systems/assets/native-global.svg",
+    "benchmarks/build-systems/assets/native-global.png",
+    "benchmarks/build-systems/assets/native-full.svg",
+    "benchmarks/build-systems/assets/native-full.png",
+    "benchmarks/build-systems/assets/tiny-noop.svg",
+    "benchmarks/build-systems/assets/tiny-noop.png",
+    "benchmarks/build-systems/assets/tiny-full.svg",
+    "benchmarks/build-systems/assets/tiny-full.png",
+    "benchmarks/build-systems/assets/parallel-heavy.svg",
+    "benchmarks/build-systems/assets/parallel-heavy.png",
+    "benchmarks/build-systems/assets/native-noop-rss.svg",
+    "benchmarks/build-systems/assets/native-noop-rss.png",
+    "benchmarks/build-systems/assets/native-leaf-rss.svg",
+    "benchmarks/build-systems/assets/native-leaf-rss.png",
+    "benchmarks/task-runners/assets/mixed-noop.svg",
+    "benchmarks/task-runners/assets/mixed-noop.png",
+    "benchmarks/task-runners/assets/mixed-leaf.svg",
+    "benchmarks/task-runners/assets/mixed-leaf.png",
+    "benchmarks/task-runners/assets/mixed-fanout.svg",
+    "benchmarks/task-runners/assets/mixed-fanout.png",
+    "benchmarks/task-runners/assets/mixed-shared.svg",
+    "benchmarks/task-runners/assets/mixed-shared.png",
+    "benchmarks/task-runners/assets/mixed-full.svg",
+    "benchmarks/task-runners/assets/mixed-full.png",
+    "benchmarks/task-runners/assets/workers.svg",
+    "benchmarks/task-runners/assets/workers.png",
+    "benchmarks/task-runners/assets/tiny-noop.svg",
+    "benchmarks/task-runners/assets/tiny-noop.png",
+    "benchmarks/task-runners/assets/tiny-leaf.svg",
+    "benchmarks/task-runners/assets/tiny-leaf.png",
+    "benchmarks/task-runners/assets/tiny-fanout.svg",
+    "benchmarks/task-runners/assets/tiny-fanout.png",
+    "benchmarks/task-runners/assets/tiny-full.svg",
+    "benchmarks/task-runners/assets/tiny-full.png",
+    "benchmarks/task-runners/assets/mixed-noop-rss.svg",
+    "benchmarks/task-runners/assets/mixed-noop-rss.png",
+    "benchmarks/task-runners/assets/mixed-leaf-rss.svg",
+    "benchmarks/task-runners/assets/mixed-leaf-rss.png",
+    "benchmarks/task-runners/assets/mixed-full-rss.svg",
+    "benchmarks/task-runners/assets/mixed-full-rss.png"
+  ],
+  "assets": [
+    {
+      "asset": "benchmarks/build-systems/assets/native-noop.svg",
+      "title": "Warm no-op scaling",
+      "generator": "scripts/render_build_systems.py::chart",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "noop",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": true
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            5.5053955,
+            39.544977,
+            249.7916525,
+            599.464199
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            4.512989,
+            18.15188,
+            81.940911,
+            171.846564
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            16.274346,
+            91.18654649999999,
+            398.9715625,
+            793.865002
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            5.5053955,
+            39.544977,
+            249.7916525,
+            599.464199
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            4.512989,
+            18.15188,
+            81.940911,
+            171.846564
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            16.274346,
+            91.18654649999999,
+            398.9715625,
+            793.865002
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "d7cfd4521ba9ab9b92e2d7e768757e1072cc219a44dd7824600996f4c11b4079",
+      "regenerated_sha256": "e85f841936f95951739fde0586096587ce629a47b1886b9da1402c03114052c0",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/native-noop.png",
+      "title": "Warm no-op scaling",
+      "generator": "scripts/render_build_systems.py::chart",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "noop",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": true
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            5.5053955,
+            39.544977,
+            249.7916525,
+            599.464199
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            4.512989,
+            18.15188,
+            81.940911,
+            171.846564
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            16.274346,
+            91.18654649999999,
+            398.9715625,
+            793.865002
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            5.5053955,
+            39.544977,
+            249.7916525,
+            599.464199
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            4.512989,
+            18.15188,
+            81.940911,
+            171.846564
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            16.274346,
+            91.18654649999999,
+            398.9715625,
+            793.865002
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "9b08bac9e33f023ad1c6180b44e1bbc8756e14ede46bd1796236b766faad2440",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "1b51bcd2446419442f5672f2ac1d09fe61182599043a3c96d871c72708cdf3cd",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/native-leaf.svg",
+      "title": "One-file incremental scaling",
+      "generator": "scripts/render_build_systems.py::chart",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "leaf",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            77.7326725,
+            204.766184,
+            912.4160525,
+            2257.8186455
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            81.5028385,
+            193.4231755,
+            800.83008,
+            1513.2470815000001
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            95.1282665,
+            269.9767375,
+            1113.4116705000001,
+            2207.7797135
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            77.7326725,
+            204.766184,
+            912.4160525,
+            2257.8186455
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            81.5028385,
+            193.4231755,
+            800.83008,
+            1513.2470815000001
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            95.1282665,
+            269.9767375,
+            1113.4116705000001,
+            2207.7797135
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "c02eec30c5d5bf014c32110cb44ac7ab21c3821b701cb6088df6e16d7fd6ed7c",
+      "regenerated_sha256": "3dac55360c2a6f1ba137c1f72745af881aca90f350e2ee3520957fafa741f659",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/native-leaf.png",
+      "title": "One-file incremental scaling",
+      "generator": "scripts/render_build_systems.py::chart",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "leaf",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            77.7326725,
+            204.766184,
+            912.4160525,
+            2257.8186455
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            81.5028385,
+            193.4231755,
+            800.83008,
+            1513.2470815000001
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            95.1282665,
+            269.9767375,
+            1113.4116705000001,
+            2207.7797135
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            77.7326725,
+            204.766184,
+            912.4160525,
+            2257.8186455
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            81.5028385,
+            193.4231755,
+            800.83008,
+            1513.2470815000001
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            95.1282665,
+            269.9767375,
+            1113.4116705000001,
+            2207.7797135
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "2ae0d2e6487a9fbb0273408d5f486ed1f22a8fbf8fa3a668968e2bc710ae41ba",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "7d520be387283eee193ec4c59d0c42ed30b4bcfef09bde68cbf744f5913ae80d",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/native-global.svg",
+      "title": "Global-header rebuild scaling",
+      "generator": "scripts/render_build_systems.py::chart",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "global",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            648.4609155,
+            5432.963528,
+            27891.970081,
+            59402.054839
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            703.0481090000001,
+            6223.094892,
+            30885.670739,
+            65274.1938
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            700.5728125,
+            6155.332707,
+            32085.126417,
+            69193.497652
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            648.4609155,
+            5432.963528,
+            27891.970081,
+            59402.054839
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            703.0481090000001,
+            6223.094892,
+            30885.670739,
+            65274.1938
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            700.5728125,
+            6155.332707,
+            32085.126417,
+            69193.497652
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "417ba174a36b0891fc4cbc298eda6d7c3c0471a179c4731b116b1a6fe5946981",
+      "regenerated_sha256": "5a509b33e67bc831a2f8be3e82524e14d88bb41ea38a484501731c3bbc6b7672",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/native-global.png",
+      "title": "Global-header rebuild scaling",
+      "generator": "scripts/render_build_systems.py::chart",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "global",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            648.4609155,
+            5432.963528,
+            27891.970081,
+            59402.054839
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            703.0481090000001,
+            6223.094892,
+            30885.670739,
+            65274.1938
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            700.5728125,
+            6155.332707,
+            32085.126417,
+            69193.497652
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            648.4609155,
+            5432.963528,
+            27891.970081,
+            59402.054839
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            703.0481090000001,
+            6223.094892,
+            30885.670739,
+            65274.1938
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            700.5728125,
+            6155.332707,
+            32085.126417,
+            69193.497652
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "36ba858c4e45dd7a2a0a37fd64839ff3dd5cf8f2b88d78d51b68bcd831f04305",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "92d17a175c6723cfc5a1aa67401539dc777bde40cadcb1fc4c58a9777ae5335f",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/native-full.svg",
+      "title": "Clean full build scaling",
+      "generator": "scripts/render_build_systems.py::chart",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "full",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            729.3116685,
+            5533.921098,
+            28646.417043,
+            58543.314068
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            789.024733,
+            6271.295158,
+            30593.97482,
+            61651.370326
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            784.2937475,
+            6256.289801,
+            31739.125548,
+            68583.898168
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            729.3116685,
+            5533.921098,
+            28646.417043,
+            58543.314068
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            789.024733,
+            6271.295158,
+            30593.97482,
+            61651.370326
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            784.2937475,
+            6256.289801,
+            31739.125548,
+            68583.898168
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "5edd710440f7cb16e3eb26359ad108278af164589e4ffb98054e2343b51de0fd",
+      "regenerated_sha256": "d41cf1804044122acf7fa2df81b04fc25c8708e9014bac767a033e97f097db22",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/native-full.png",
+      "title": "Clean full build scaling",
+      "generator": "scripts/render_build_systems.py::chart",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "full",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            729.3116685,
+            5533.921098,
+            28646.417043,
+            58543.314068
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            789.024733,
+            6271.295158,
+            30593.97482,
+            61651.370326
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            784.2937475,
+            6256.289801,
+            31739.125548,
+            68583.898168
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            729.3116685,
+            5533.921098,
+            28646.417043,
+            58543.314068
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            789.024733,
+            6271.295158,
+            30593.97482,
+            61651.370326
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            784.2937475,
+            6256.289801,
+            31739.125548,
+            68583.898168
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "f4f9b13d5c35311dc051743c430d65bba5253f1c813908d2678dea600072e099",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "372f7554bc2422618c71325af388f1a7b14a62f54fa3a509c1a15eff905215d9",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/tiny-noop.svg",
+      "title": "Tiny-action no-op scaling",
+      "generator": "scripts/render_build_systems.py::chart",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "tiny",
+        "sizes": [
+          100,
+          1000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "noop",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": true
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            2.649192,
+            10.287120999999999,
+            96.95023599999999
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            3.6960735,
+            13.0426275,
+            108.267671
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            11.8530285,
+            68.94713250000001,
+            617.3281025
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            2.649192,
+            10.287120999999999,
+            96.95023599999999
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            3.6960735,
+            13.0426275,
+            108.267671
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            11.8530285,
+            68.94713250000001,
+            617.3281025
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "04d75e4ce5abcefbebba445bf9eb772952784fe01d7561c7165f671cbb971658",
+      "regenerated_sha256": "75b5c7c66b8b8fd9af2c3c4f26914b8d83c77426a86eaac7f208d69d1e491425",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/tiny-noop.png",
+      "title": "Tiny-action no-op scaling",
+      "generator": "scripts/render_build_systems.py::chart",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "tiny",
+        "sizes": [
+          100,
+          1000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "noop",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": true
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            2.649192,
+            10.287120999999999,
+            96.95023599999999
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            3.6960735,
+            13.0426275,
+            108.267671
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            11.8530285,
+            68.94713250000001,
+            617.3281025
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            2.649192,
+            10.287120999999999,
+            96.95023599999999
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            3.6960735,
+            13.0426275,
+            108.267671
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            11.8530285,
+            68.94713250000001,
+            617.3281025
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "3cd5525be43a147df049176f85e279ec62fee2719a4c55a2f5d4f7c6df0da915",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "dd75aa554070f364c4cda70dd2b144fa4707d7dc660742d71df3c1be09247adc",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/tiny-full.svg",
+      "title": "Fully dirty tiny-action scaling",
+      "generator": "scripts/render_build_systems.py::chart",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "tiny",
+        "sizes": [
+          100,
+          1000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "full",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            61.881364,
+            546.006495,
+            6065.28141
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            89.074842,
+            802.615034,
+            8820.171549
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            124.960588,
+            1046.292141,
+            15846.309745
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            61.881364,
+            546.006495,
+            6065.28141
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            89.074842,
+            802.615034,
+            8820.171549
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            124.960588,
+            1046.292141,
+            15846.309745
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "8b92c8e20c3e56062f76e4d86a63256646ef5f99da75852b40101eb1aafc43cc",
+      "regenerated_sha256": "ed1f8e3f1c215bda8879603dad9bb60f297ea8d77a49cca1f42ff796388c2671",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/tiny-full.png",
+      "title": "Fully dirty tiny-action scaling",
+      "generator": "scripts/render_build_systems.py::chart",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "tiny",
+        "sizes": [
+          100,
+          1000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "full",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            61.881364,
+            546.006495,
+            6065.28141
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            89.074842,
+            802.615034,
+            8820.171549
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            124.960588,
+            1046.292141,
+            15846.309745
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            61.881364,
+            546.006495,
+            6065.28141
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            89.074842,
+            802.615034,
+            8820.171549
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            124.960588,
+            1046.292141,
+            15846.309745
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "0628878d1c501ef4b21d7ee96fa78a6560917d55d04d76294a84ad8a9e99938e",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "154db514e9da328686086cef0547ebd064edde4197733711806824f8f4214103",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/parallel-heavy.svg",
+      "title": "Heavy full-build worker comparison",
+      "generator": "scripts/render_build_systems.py::render/parallel-heavy",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "native",
+        "size": 1000,
+        "profile": "heavy",
+        "workers": [
+          1,
+          2,
+          4
+        ],
+        "scenario": "full",
+        "metric": "wall_ms",
+        "unit": "ms"
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "worker_labels": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            57589.249654,
+            29326.793137,
+            14866.715215
+          ],
+          "x": [
+            -0.24,
+            0.76,
+            1.76
+          ]
+        },
+        {
+          "label": "Ninja",
+          "worker_labels": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            58931.576107,
+            30084.082417,
+            15002.577968
+          ],
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "worker_labels": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            58537.590338,
+            30222.055976,
+            15621.579974
+          ],
+          "x": [
+            0.24,
+            1.24,
+            2.24
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            -0.24,
+            0.76,
+            1.76
+          ],
+          "y": [
+            57589.249654,
+            29326.793137,
+            14866.715215
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            58931.576107,
+            30084.082417,
+            15002.577968
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            0.24,
+            1.2399999999999998,
+            2.24
+          ],
+          "y": [
+            58537.590338,
+            30222.055976,
+            15621.579974
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "9b6a45d75eab476aee54777583e5c4b715adf491dfb4c14e290f794913499654",
+      "regenerated_sha256": "7844a37b2a78eaf2ec6c26f06d1935099fc0474b3d3d2d8792373d7f6e506893",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "ordinal grouped bars mapped to worker ticks1,2,4; all centers and medians checked",
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/parallel-heavy.png",
+      "title": "Heavy full-build worker comparison",
+      "generator": "scripts/render_build_systems.py::render/parallel-heavy",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "native",
+        "size": 1000,
+        "profile": "heavy",
+        "workers": [
+          1,
+          2,
+          4
+        ],
+        "scenario": "full",
+        "metric": "wall_ms",
+        "unit": "ms"
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "worker_labels": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            57589.249654,
+            29326.793137,
+            14866.715215
+          ],
+          "x": [
+            -0.24,
+            0.76,
+            1.76
+          ]
+        },
+        {
+          "label": "Ninja",
+          "worker_labels": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            58931.576107,
+            30084.082417,
+            15002.577968
+          ],
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "worker_labels": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            58537.590338,
+            30222.055976,
+            15621.579974
+          ],
+          "x": [
+            0.24,
+            1.24,
+            2.24
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            -0.24,
+            0.76,
+            1.76
+          ],
+          "y": [
+            57589.249654,
+            29326.793137,
+            14866.715215
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "y": [
+            58931.576107,
+            30084.082417,
+            15002.577968
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            0.24,
+            1.2399999999999998,
+            2.24
+          ],
+          "y": [
+            58537.590338,
+            30222.055976,
+            15621.579974
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "c44a03125c762900c7762f1c3af150e5b74c9d3ecbb5fc6a4b40b4982c6702e7",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "ordinal grouped bars mapped to worker ticks1,2,4; all centers and medians checked",
+      "prior_external_png_sha256": "697db585b31c486c770d8cdd8f3abc72dd949fba6e9f978e1ff4c1d970b7f9f1",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/native-noop-rss.svg",
+      "title": "Warm no-op memory scaling",
+      "generator": "scripts/render_build_systems.py::chart",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "noop",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            2.25,
+            4.0,
+            11.625,
+            21.20703125
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            4.5,
+            6.04296875,
+            13.12890625,
+            21.80859375
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            5.875,
+            6.75,
+            12.32421875,
+            19.1484375
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            2.25,
+            4.0,
+            11.625,
+            21.20703125
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            4.5,
+            6.04296875,
+            13.12890625,
+            21.80859375
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            5.875,
+            6.75,
+            12.32421875,
+            19.1484375
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "281cb35d02d6ac778a2566ee6a7313447bb4c58b4708ffaec58b197c741c30d0",
+      "regenerated_sha256": "40972f3ba497f89566dc8a91db14baefed35fc6e59eb42bae12167a07794f27b",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/native-noop-rss.png",
+      "title": "Warm no-op memory scaling",
+      "generator": "scripts/render_build_systems.py::chart",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "noop",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            2.25,
+            4.0,
+            11.625,
+            21.20703125
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            4.5,
+            6.04296875,
+            13.12890625,
+            21.80859375
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            5.875,
+            6.75,
+            12.32421875,
+            19.1484375
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            2.25,
+            4.0,
+            11.625,
+            21.20703125
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            4.5,
+            6.04296875,
+            13.12890625,
+            21.80859375
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            5.875,
+            6.75,
+            12.32421875,
+            19.1484375
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "567aa190b11514fc6207385f501ac2baeedb5d14ae86e5cde8195165a6e22645",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "8c69f8f100d5b8c734c6cd3d600d637356f4ab5bb34deb26a007b75698344273",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/native-leaf-rss.svg",
+      "title": "One-file incremental memory scaling",
+      "generator": "scripts/render_build_systems.py::chart",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "leaf",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.25,
+            55.21484375,
+            239.74609375,
+            469.8671875
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.25,
+            55.21484375,
+            239.625,
+            469.8671875
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.3125,
+            55.21484375,
+            239.685546875,
+            469.86328125
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.25,
+            55.21484375,
+            239.74609375,
+            469.8671875
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.25,
+            55.21484375,
+            239.625,
+            469.8671875
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.3125,
+            55.21484375,
+            239.685546875,
+            469.86328125
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "e2dd8c11d197bbfeb96f7e9ea1f5b58dd5b194200a52f1c0b11891e64ed2e575",
+      "regenerated_sha256": "d714705c9527441ee1f4761ed375b3d7ebc965ebee413c161d75704fd1b7a2b2",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/native-leaf-rss.png",
+      "title": "One-file incremental memory scaling",
+      "generator": "scripts/render_build_systems.py::chart",
+      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "parameters": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "leaf",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.25,
+            55.21484375,
+            239.74609375,
+            469.8671875
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.25,
+            55.21484375,
+            239.625,
+            469.8671875
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.3125,
+            55.21484375,
+            239.685546875,
+            469.86328125
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.25,
+            55.21484375,
+            239.74609375,
+            469.8671875
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.25,
+            55.21484375,
+            239.625,
+            469.8671875
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.3125,
+            55.21484375,
+            239.685546875,
+            469.86328125
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "b5e30711747493322396b944c9f042d04eb35c68f579c742f569cd7e7eaaee6a",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "56165695a4c7d400f7b0a1a0c836a1dbc4336d2d573ecb80e4c3c12ee45169d0",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/build-systems/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/mixed-noop.svg",
+      "title": "Unchanged mixed workflow",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "noop",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": true
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            7.4320835,
+            16.354072000000002,
+            118.41790750000001
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            58.386855499999996,
+            71.9431425,
+            436.1150645
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            616.196203,
+            703.3861975,
+            1736.465205
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            7.4320835,
+            16.354072000000002,
+            118.41790750000001
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            58.386855499999996,
+            71.9431425,
+            436.1150645
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            616.196203,
+            703.3861975,
+            1736.465205
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "2f89c8c58f105fbc8698c66cddd269e760a25d9b478248e39faca699d697d997",
+      "regenerated_sha256": "780c06742ed28f2282a55719024c7c9d2be5872aee608ed949ff381ea5c68bac",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/mixed-noop.png",
+      "title": "Unchanged mixed workflow",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "noop",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": true
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            7.4320835,
+            16.354072000000002,
+            118.41790750000001
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            58.386855499999996,
+            71.9431425,
+            436.1150645
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            616.196203,
+            703.3861975,
+            1736.465205
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            7.4320835,
+            16.354072000000002,
+            118.41790750000001
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            58.386855499999996,
+            71.9431425,
+            436.1150645
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            616.196203,
+            703.3861975,
+            1736.465205
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "dd93c856ff403fcfa4fee321ba9b7712bb4f602e05f399edef98b6f67586d3cd",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "0db5b5fa2e1c6bb0a01612103fe1512d265d939d218a46ff450dc0938cbf5fc9",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/mixed-leaf.svg",
+      "title": "One dirty leaf",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "leaf",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            56.0989575,
+            65.3638475,
+            172.43720100000002
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            414.06970550000005,
+            431.786673,
+            747.921514
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            689.27539,
+            767.16536,
+            1878.9464524999999
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            56.0989575,
+            65.3638475,
+            172.43720100000002
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            414.06970550000005,
+            431.786673,
+            747.921514
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            689.27539,
+            767.16536,
+            1878.9464524999999
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "7fa65c6713e7d50f9d378e7238f6c2cc277a807d88d1188a99f41302022b76c8",
+      "regenerated_sha256": "613ca8e9af8555ad3b2c4bc418e89ce8bd831d3df045b7d5e5c164fd5145209d",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/mixed-leaf.png",
+      "title": "One dirty leaf",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "leaf",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            56.0989575,
+            65.3638475,
+            172.43720100000002
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            414.06970550000005,
+            431.786673,
+            747.921514
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            689.27539,
+            767.16536,
+            1878.9464524999999
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            56.0989575,
+            65.3638475,
+            172.43720100000002
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            414.06970550000005,
+            431.786673,
+            747.921514
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            689.27539,
+            767.16536,
+            1878.9464524999999
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "bfeb36f6e088626b54b41898c6df7c70f76920626c1e06852cf2c9d81c535a2f",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "3de8a0904cb40b77d46a3e9a01b55efd3e0813ebcc0dd4ba88ebdaf32887afde",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/mixed-fanout.svg",
+      "title": "10% task inputs dirty",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "fanout",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            58.448714,
+            163.844672,
+            1449.169013
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            442.416678,
+            1345.674715,
+            11544.649933
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            701.2397025,
+            928.214506,
+            3372.805099
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            58.448714,
+            163.844672,
+            1449.169013
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            442.416678,
+            1345.674715,
+            11544.649933
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            701.2397025,
+            928.214506,
+            3372.805099
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "8508517ea8ab26939d67220b5547a9ecec60d2263481e8b365b665b626a5e1a2",
+      "regenerated_sha256": "3fdafd614d3fff7f1a843cc5be5a0ca47b02bf40d7ae1361e1bc677838e2b001",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/mixed-fanout.png",
+      "title": "10% task inputs dirty",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "fanout",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            58.448714,
+            163.844672,
+            1449.169013
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            442.416678,
+            1345.674715,
+            11544.649933
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            701.2397025,
+            928.214506,
+            3372.805099
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            58.448714,
+            163.844672,
+            1449.169013
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            442.416678,
+            1345.674715,
+            11544.649933
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            701.2397025,
+            928.214506,
+            3372.805099
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "ed3264ece196b2438f047decafb199b9c7b9521b69cf5cbdb67c14877886cae3",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "1ded66b7375806e0c5e4f2cea188068e5c8462017ec69f2a130cb1da6cc06fb5",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/mixed-shared.svg",
+      "title": "Generated prerequisite dirty",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "shared",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            412.47777,
+            903.696001,
+            6798.756708
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            3127.584215,
+            7478.441326,
+            57030.636217
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1121.1029205,
+            1554.099813,
+            9865.573508
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            412.47777,
+            903.696001,
+            6798.756708
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            3127.584215,
+            7478.441326,
+            57030.636217
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1121.1029205,
+            1554.099813,
+            9865.573508
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "8d894e055f8eab85e9da3e7cfe784d343af51ba7037457b02805e8fa75414542",
+      "regenerated_sha256": "dec11ad0bfefb5441e77a5f49aab7f879e816d366ed1dd01a10ae28dc336ce63",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/mixed-shared.png",
+      "title": "Generated prerequisite dirty",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "shared",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            412.47777,
+            903.696001,
+            6798.756708
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            3127.584215,
+            7478.441326,
+            57030.636217
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1121.1029205,
+            1554.099813,
+            9865.573508
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            412.47777,
+            903.696001,
+            6798.756708
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            3127.584215,
+            7478.441326,
+            57030.636217
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1121.1029205,
+            1554.099813,
+            9865.573508
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "fc1c792150b5591cbfa434c333352981a8e43dd3e61a801d128efcde6f883eef",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "1d5d46ac2f0d712caa22d049ad0ba561c21d0aa98253df18941d0155873b22bb",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/mixed-full.svg",
+      "title": "All mixed-task inputs dirty",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "full",
+        "metric": "wall_ms",
+        "unit": "s",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            0.4644696025,
+            1.425073629,
+            13.410496777
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            3.6011724045,
+            12.208815488,
+            112.412416927
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1.1251945115,
+            2.287110017,
+            17.838287497
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            0.4644696025,
+            1.425073629,
+            13.410496777
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            3.6011724045,
+            12.208815488,
+            112.412416927
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1.1251945115,
+            2.287110017,
+            17.838287497
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "d6a8c87d1c6481ac832609bd0da0423dc3f41d776ff0781a2031a576be0bdb86",
+      "regenerated_sha256": "399859a36a690d8c08c9020571ded64fcdcd6ada805b0ef7d6eb0b26263978b4",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/mixed-full.png",
+      "title": "All mixed-task inputs dirty",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "full",
+        "metric": "wall_ms",
+        "unit": "s",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            0.4644696025,
+            1.425073629,
+            13.410496777
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            3.6011724045,
+            12.208815488,
+            112.412416927
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1.1251945115,
+            2.287110017,
+            17.838287497
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            0.4644696025,
+            1.425073629,
+            13.410496777
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            3.6011724045,
+            12.208815488,
+            112.412416927
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1.1251945115,
+            2.287110017,
+            17.838287497
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "1e34dc0522e22bf2c13fef2dbef43c5d8b9d37da7376b5ec174ba37914a9261e",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "ed901cc0de3536274857657b98c91b6e9926b65661b991a97721e28798943847",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/workers.svg",
+      "title": "Mixed workflow worker scaling",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          1,
+          2,
+          4
+        ],
+        "jobs": 4,
+        "case": "full",
+        "metric": "wall_ms",
+        "unit": "s",
+        "workers": true,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            4.716445293,
+            2.525477656,
+            1.425073629
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            35.700830448,
+            19.458066333999998,
+            12.208815488
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            6.139473261,
+            3.586495926,
+            2.287110017
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            4.716445293,
+            2.525477656,
+            1.425073629
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            35.700830448,
+            19.458066333999998,
+            12.208815488
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            6.139473261,
+            3.586495926,
+            2.287110017
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "1d6d830ece324e74b2f1dd94c962b56e43048e655239ce4b2088236659b5d64f",
+      "regenerated_sha256": "dde9e6e16df7f690e948a25dbae0381d01163ab629157b79c3065ce808b4e16e",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/workers.png",
+      "title": "Mixed workflow worker scaling",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          1,
+          2,
+          4
+        ],
+        "jobs": 4,
+        "case": "full",
+        "metric": "wall_ms",
+        "unit": "s",
+        "workers": true,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            4.716445293,
+            2.525477656,
+            1.425073629
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            35.700830448,
+            19.458066333999998,
+            12.208815488
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            6.139473261,
+            3.586495926,
+            2.287110017
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            4.716445293,
+            2.525477656,
+            1.425073629
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            35.700830448,
+            19.458066333999998,
+            12.208815488
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            6.139473261,
+            3.586495926,
+            2.287110017
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "072952f349f07ae10d9f66595a4bcfced6bdabfaf7864c96145e657fcdf5a1f4",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "f06c610ef176c4d222fe12a20738869a193ef4a6d0bdc230c4f9973c9dacfd05",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/tiny-noop.svg",
+      "title": "Unchanged tiny-task graph",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": true,
+        "sizes": [
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "noop",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": true
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            14.0900525,
+            98.6289605
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            70.0337715,
+            412.62814000000003
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            656.8220655,
+            1554.18844
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            14.0900525,
+            98.6289605
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            70.0337715,
+            412.62814000000003
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            656.8220655,
+            1554.18844
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "1cf023e21fc4c4fa392ea458e9dfd24df708be6129d847f888e13ab79d84c06c",
+      "regenerated_sha256": "48124f511cfea82c7b163b907ba7b25f371b302dab68ed8900b5ef41700e9abe",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/tiny-noop.png",
+      "title": "Unchanged tiny-task graph",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": true,
+        "sizes": [
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "noop",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": true
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            14.0900525,
+            98.6289605
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            70.0337715,
+            412.62814000000003
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            656.8220655,
+            1554.18844
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            14.0900525,
+            98.6289605
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            70.0337715,
+            412.62814000000003
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            656.8220655,
+            1554.18844
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "d3377f38d310d01416b2c21286af11431dd663e14e55a77e09f631de2b56c718",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "f80ebdde2e93d2e1fac6c893713067aff7bfb9c1732879cd8fb255534844c4ac",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/tiny-leaf.svg",
+      "title": "One dirty tiny task",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": true,
+        "sizes": [
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "leaf",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            18.794365499999998,
+            104.291642
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            385.96586649999995,
+            683.5100225
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            692.073304,
+            1646.317895
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            18.794365499999998,
+            104.291642
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            385.96586649999995,
+            683.5100225
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            692.073304,
+            1646.317895
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "4302d06f2bedca1a723eb94b7c0f66c9a14b46eb71ca10110644a0a9eb0a576f",
+      "regenerated_sha256": "82be0e68bfdcc2dd797fe5ed1bbd72a258934b4ec95943727c92ab35c504f065",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/tiny-leaf.png",
+      "title": "One dirty tiny task",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": true,
+        "sizes": [
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "leaf",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            18.794365499999998,
+            104.291642
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            385.96586649999995,
+            683.5100225
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            692.073304,
+            1646.317895
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            18.794365499999998,
+            104.291642
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            385.96586649999995,
+            683.5100225
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            692.073304,
+            1646.317895
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "09f966a0737beaf1dd201fa5fe22aa7841663615ac49f168f11846e35a18b6f0",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "c885f480d500aecffd663e71a8ee4410629f57fc6e6baa2fa1dbc9631aed79c2",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/tiny-fanout.svg",
+      "title": "10% tiny-task inputs dirty",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": true,
+        "sizes": [
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "fanout",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            27.705294,
+            238.544289
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1187.426259,
+            10095.796629
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            758.189681,
+            2566.731168
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            27.705294,
+            238.544289
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1187.426259,
+            10095.796629
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            758.189681,
+            2566.731168
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "ef49ea9383d8a321f32416e72650490c8de9ccb38a4034beca18ef1969bd76fd",
+      "regenerated_sha256": "65946d7fd0864c54bfe9ffedda227cf0f9621d502da4c3633aeecbc51c1ff962",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/tiny-fanout.png",
+      "title": "10% tiny-task inputs dirty",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": true,
+        "sizes": [
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "fanout",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            27.705294,
+            238.544289
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1187.426259,
+            10095.796629
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            758.189681,
+            2566.731168
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            27.705294,
+            238.544289
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1187.426259,
+            10095.796629
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            758.189681,
+            2566.731168
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "738a1b4766f5d883728a37539b8879825402c8424e9ccf453313c4be4ebb9bfb",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "8ff3333b72a257db564301742f53ab58244e4fae1935b2e2fafe64138e71aa1c",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/tiny-full.svg",
+      "title": "Fully dirty tiny-task graph",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": true,
+        "sizes": [
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "full",
+        "metric": "wall_ms",
+        "unit": "s",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            0.130937657,
+            1.534467179
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            10.01186938,
+            98.304239675
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1.489571253,
+            10.690134622
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            0.130937657,
+            1.534467179
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            10.01186938,
+            98.304239675
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1.489571253,
+            10.690134622
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "d18437b8081ead41967fcdc0562c9d92786668c5e4a6a7812183551d60ff318e",
+      "regenerated_sha256": "bc8dbef7c35655de82669ce8626e1ef6f3e147dc15e136b295bfeae49320a1e9",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/tiny-full.png",
+      "title": "Fully dirty tiny-task graph",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": true,
+        "sizes": [
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "full",
+        "metric": "wall_ms",
+        "unit": "s",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            0.130937657,
+            1.534467179
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            10.01186938,
+            98.304239675
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1.489571253,
+            10.690134622
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            0.130937657,
+            1.534467179
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            10.01186938,
+            98.304239675
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1.489571253,
+            10.690134622
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "53f8a2cc6eb292f8bfcaf090117f18eb31a685805543c5c6fb164b8d7f4dab6d",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "7cbea70d2a1edc2e304b052f375856ef140058df37775fa4000e9876b1328cd0",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/mixed-noop-rss.svg",
+      "title": "Unchanged workflow memory",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "noop",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            5.75,
+            5.875,
+            6.96875
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            46.234375,
+            49.958984375,
+            108.1328125
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            108.736328125,
+            115.478515625,
+            165.765625
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            5.75,
+            5.875,
+            6.96875
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            46.234375,
+            49.958984375,
+            108.1328125
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            108.736328125,
+            115.478515625,
+            165.765625
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "959b5e8e41421c59f0fd0421f2f73200e120bff952b5c6539b964aca24bf1e6f",
+      "regenerated_sha256": "7a401c06683e76b21490dbfbb7c9b9ddb0735f215833e6ff2dfb35a4be0e1797",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/mixed-noop-rss.png",
+      "title": "Unchanged workflow memory",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "noop",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            5.75,
+            5.875,
+            6.96875
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            46.234375,
+            49.958984375,
+            108.1328125
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            108.736328125,
+            115.478515625,
+            165.765625
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            5.75,
+            5.875,
+            6.96875
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            46.234375,
+            49.958984375,
+            108.1328125
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            108.736328125,
+            115.478515625,
+            165.765625
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "abaa2c67764d5835e916553a007e52c3a375b6c4b5c4863cc882d9513eefd651",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "b56b1741b76a913a36e91ed2907ddd2a9ac7ff0803c3bb2c4bc5542ad56ebd34",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/mixed-leaf-rss.svg",
+      "title": "One dirty leaf memory",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "leaf",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            17.375,
+            17.375,
+            18.0
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            80.86328125,
+            80.845703125,
+            112.08984375
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            108.0625,
+            115.943359375,
+            165.267578125
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            17.375,
+            17.375,
+            18.0
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            80.86328125,
+            80.845703125,
+            112.08984375
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            108.0625,
+            115.943359375,
+            165.267578125
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "d93023ec390f3464536f345f175fa0201d9a4412c1c25f99867ca527bd9140bf",
+      "regenerated_sha256": "6e0f4bad5f55195662762f16d045ab7b77b6388e39ec4df3e3ada0d75600bbec",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/mixed-leaf-rss.png",
+      "title": "One dirty leaf memory",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "leaf",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            17.375,
+            17.375,
+            18.0
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            80.86328125,
+            80.845703125,
+            112.08984375
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            108.0625,
+            115.943359375,
+            165.267578125
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            17.375,
+            17.375,
+            18.0
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            80.86328125,
+            80.845703125,
+            112.08984375
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            108.0625,
+            115.943359375,
+            165.267578125
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "5cf7788b0c48aee1465bb6d51f939eceedeea08ef70e0f0fbe1aa06ff0cbb3f8",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "4f88648f43a1ca0c973dfdbf1a823b609b217cf1f5ea1cf9708f9c90366afe6c",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/mixed-full-rss.svg",
+      "title": "All dirty workflow memory",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "full",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            20.0,
+            20.0,
+            19.875
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            81.720703125,
+            82.19921875,
+            113.046875
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            110.6171875,
+            120.23046875,
+            170.5703125
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            20.0,
+            20.0,
+            19.875
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            81.720703125,
+            82.19921875,
+            113.046875
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            110.6171875,
+            120.23046875,
+            170.5703125
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": "056a4beb9086f527d06c7130d7acba7046e503db7d4e36e653affc093244778c",
+      "regenerated_sha256": "e5718e3fa461c0546d45cfddf135d54c3d9921c170a3d3191d9c588df96cba36",
+      "bytes_changed": true,
+      "format": "svg",
+      "publication_location": "current SVG",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "html_embed_page": "/benchmarks/task-runners/"
+    },
+    {
+      "asset": "benchmarks/task-runners/assets/mixed-full-rss.png",
+      "title": "All dirty workflow memory",
+      "generator": "scripts/render_task_runners.py::chart",
+      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "parameters": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "full",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "workers": false,
+        "log": false
+      },
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            20.0,
+            20.0,
+            19.875
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            81.720703125,
+            82.19921875,
+            113.046875
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            110.6171875,
+            120.23046875,
+            170.5703125
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            20.0,
+            20.0,
+            19.875
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            81.720703125,
+            82.19921875,
+            113.046875
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            110.6171875,
+            120.23046875,
+            170.5703125
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "current-final-only",
+      "regeneration_status": "actually_regenerated",
+      "prior_sha256": null,
+      "regenerated_sha256": "e34a36cf6ca13bea5797065e6835a68f7f92227ebbfe4121b8c12da41be1c647",
+      "bytes_changed": true,
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
+      "prior_external_png_sha256": "da58b2fdd38675f0e63f9e41071f3343b1296b789915630b248afc322dd88b6e",
+      "changed_from_prior_external_png": true,
+      "html_embed_page": "/benchmarks/task-runners/"
+    }
+  ],
+  "html_chart_embeds_expected": 22,
+  "qualitative_html_diagrams": [
+    {
+      "page": "/benchmarks/build-systems/",
+      "title": "Common native build graph",
+      "generator": "scripts/render_build_systems.py::render/dag",
+      "classification": "current qualitative diagram; no historical or quantitative vectors",
+      "verification": "same frozen generated graph roles: inputs/generators/objects/10 archives/executable; not a measured plot",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version_context": "current-final page; shared workload diagram has no per-version data series",
+      "regeneration_status": "actually regenerated as current page HTML by existing generator",
+      "historical": false
+    },
+    {
+      "page": "/benchmarks/task-runners/",
+      "title": "Core workflow lanes",
+      "generator": "scripts/render_task_runners.py::render/console",
+      "classification": "current qualitative HTML graph; no historical or quantitative vectors",
+      "verification": "12 core task roles plus added asset families; explicit links point to current ordering table",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version_context": "current-final page; shared workload diagram has no per-version data series",
+      "regeneration_status": "actually regenerated as current page HTML by existing generator",
+      "historical": false
+    }
+  ],
+  "status": "PASS",
+  "pages": [
+    {
+      "page": "/benchmarks/build-systems/",
+      "current_final_only": true,
+      "current_candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "canonical_cells_verified": 291,
+      "html_quantitative_chart_embeds": 9,
+      "matching_column_count_tables": 13,
+      "unique_ids": true,
+      "graph_references_exist": 27,
+      "historical_public_route_references": 0,
+      "controlled_prior_candidate_comparison_sections": 0,
+      "current_semantic_failure_recovery_section_retained": false,
+      "validated_html_layer": "regenerated Nift content source; parent owns generated-page build and browser checks"
+    },
+    {
+      "page": "/benchmarks/task-runners/",
+      "current_final_only": true,
+      "current_candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "canonical_cells_verified": 93,
+      "html_quantitative_chart_embeds": 13,
+      "matching_column_count_tables": 23,
+      "unique_ids": true,
+      "graph_references_exist": 39,
+      "historical_public_route_references": 0,
+      "controlled_prior_candidate_comparison_sections": 0,
+      "current_semantic_failure_recovery_section_retained": true,
+      "validated_html_layer": "regenerated Nift content source; parent owns generated-page build and browser checks"
+    }
+  ],
+  "html_quantitative_chart_embeds_verified": 22,
+  "current_only_plot_label": "Nift v4.12 final",
+  "svg_and_png_generation": "actual generator output files; vectors captured from Matplotlib lines/bars and compared against independently selected canonical cells",
+  "removed_public_comparison_assets": [
+    "benchmarks/build-systems/assets/candidate-recovery.svg",
+    "benchmarks/build-systems/assets/candidate-recovery.png"
+  ],
+  "external_png_transition": "new PNGs generated locally for parent to archive/externalize; prior immutable PNG hashes retained per asset; no shared finalizer changed",
+  "public_historical_series": "removed by parent; not regenerated or maintained",
+  "generated_html_validation": "pending parent full Nift build; regenerated content sources and actual graph files validated here"
+}
