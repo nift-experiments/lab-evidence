@@ -723,3 +723,131 @@ Filesystem closeout: choose Python for standalone policy, Go for heavy bulk, Nif
 ## Closeout / publication boundary
 
 Finalevidencepush andhostlifecycle receipts appended ascompleted. Official/supplementrawseries immutable. Labsrefresh authorizedconditionally byRELEASE-GATE.json, sourcebeforepublic, graph/table/link/storage/responsive/livebytechecks, preservehistoricalseries/unrelatedreports. No v4.12tag,release,packagesordownloadpublicationauthorized.
+
+## Verified measurement closeout
+
+Official hosts:0remaining. Supplement hosts:0remaining. All10CLIabsences/API404 verified with individual lifecycle receipts. Original sharedSSH/config/privatecloudstate and supplementalindependentaccess/state removed; credentialsourceunchanged. Original finalcleanupreceipt lifecycle/final-access-cleanup.json; supplement counterpart campaigns/20261015-website-supplement-c14d068/lifecycle/final-access-cleanup.json. Finalmeasurement evidence19e3901; laterlifecycle/publicationreceiptcommits append independently.
+
+## Separate current memory deficits — complete eligible cohort
+
+KiB maximum/waited-child high-water, not aggregate process tree; template/concurrency/filesystem inherited-floor raw excluded; missing PTY rows excluded; external helper baseline excluded.
+
+| Rank | Suite/scenario | NiftKiB | BestpeerKiB | Multiple |
+|---:|---|---:|---|---:|
+| 1 | scripting/arrays-strings-hash/sort-index/large | 142302.0 | luajit 3328.0 | 42.76× |
+| 2 | shell/delete-tree-100000 | 108592.0 | bash 3584.0 | 30.30× |
+| 3 | shell/create-small-100000 | 112176.0 | bash 3712.0 | 30.22× |
+| 4 | shell/delete-selected-100000 | 102320.0 | bash 3584.0 | 28.55× |
+| 5 | shell/create-empty-100000 | 45124.0 | bash 3712.0 | 12.16× |
+| 6 | scripting/arrays-strings-hash/map-set/large | 30822.0 | luajit 3456.0 | 8.92× |
+| 7 | scripting/arrays-strings-hash/sliding-window/large | 26140.0 | luajit 3392.0 | 7.71× |
+| 8 | scripting/graphs-trees-search/bfs/large | 33558.0 | luajit 5760.0 | 5.83× |
+| 9 | shell/traverse-100000 | 123136.0 | nu 27344.0 | 4.50× |
+| 10 | shell/delete-selected-10000 | 15948.0 | bash 3584.0 | 4.45× |
+| 11 | scripting/filesystem/traverse/large | 9216.0 | lua54 2560.0 | 3.60× |
+| 12 | build-systems/tiny-100-light-j4/batch10 | 7680.0 | make 2176.0 | 3.53× |
+| 13 | build-systems/tiny-100-light-j4/leaf | 7680.0 | make 2176.0 | 3.53× |
+| 14 | scripting/structured-data/json-parse/large | 125560.0 | python 35828.0 | 3.50× |
+| 15 | scripting/structured-data/json-traverse/large | 125560.0 | python 35830.0 | 3.50× |
+| 16 | build-systems/tiny-100-light-j1/batch10 | 7552.0 | make 2176.0 | 3.47× |
+| 17 | build-systems/tiny-100-light-j1/leaf | 7552.0 | make 2176.0 | 3.47× |
+| 18 | build-systems/tiny-100-light-j2/leaf | 7552.0 | make 2176.0 | 3.47× |
+| 19 | build-systems/tiny-100-light-j2/batch10 | 7424.0 | make 2176.0 | 3.41× |
+| 20 | scripting/arrays-strings-hash/sort-index/small | 8160.0 | lua54 2432.0 | 3.36× |
+| 21 | build-systems/tiny-100-light-j4/full | 7680.0 | make 2304.0 | 3.33× |
+| 22 | shell/concat-small-10000 | 11790.0 | bash 3584.0 | 3.29× |
+| 23 | build-systems/tiny-100-light-j1/full | 7552.0 | make 2304.0 | 3.28× |
+| 24 | build-systems/tiny-100-light-j2/full | 7552.0 | make 2304.0 | 3.28× |
+| 25 | scripting/arrays-strings-hash/sliding-window/small | 7296.0 | lua54 2432.0 | 3.00× |
+| 26 | scripting/arrays-strings-hash/map-set/small | 7168.0 | lua54 2432.0 | 2.95× |
+| 27 | build-systems/tiny-1000-light-j4/leaf | 8192.0 | make 2816.0 | 2.91× |
+| 28 | scripting/graphs-trees-search/bfs/small | 7424.0 | lua54 2560.0 | 2.90× |
+| 29 | scripting/sanity/loops/small | 6976.0 | lua54 2432.0 | 2.87× |
+| 30 | scripting/sanity/function-calls/small | 6976.0 | lua54 2432.0 | 2.87× |
+| 31 | scripting/sanity/function-calls/large | 6976.0 | lua54 2432.0 | 2.87× |
+| 32 | scripting/arrays-strings-hash/frequency-count/small | 6976.0 | lua54 2432.0 | 2.87× |
+| 33 | scripting/dynamic-programming/fibonacci/small | 6976.0 | lua54 2432.0 | 2.87× |
+| 34 | build-systems/tiny-1000-light-j4/batch10 | 8064.0 | make 2816.0 | 2.86× |
+| 35 | scripting/sanity/output/large | 6592.0 | lua54 2304.0 | 2.86× |
+| 36 | scripting/structured-data/json-transform/large | 96610.0 | python 33792.0 | 2.86× |
+| 37 | scripting/sanity/loops/large | 6912.0 | lua54 2432.0 | 2.84× |
+| 38 | scripting/arrays-strings-hash/scan/small | 6912.0 | lua54 2432.0 | 2.84× |
+| 39 | scripting/arrays-strings-hash/scan/large | 6912.0 | lua54 2432.0 | 2.84× |
+| 40 | scripting/arrays-strings-hash/frequency-count/large | 6912.0 | lua54 2432.0 | 2.84× |
+| 41 | scripting/dynamic-programming/fibonacci/large | 6912.0 | lua54 2432.0 | 2.84× |
+| 42 | shell/create-empty-10000 | 10056.0 | bash 3584.0 | 2.81× |
+| 43 | shell/copy-small-10000 | 10056.0 | bash 3584.0 | 2.81× |
+| 44 | shell/rename-selected-10000 | 10054.0 | bash 3584.0 | 2.81× |
+| 45 | scripting/sanity/output/small | 6400.0 | lua54 2304.0 | 2.78× |
+| 46 | build-systems/tiny-100-light-j4/noop | 6016.0 | make 2176.0 | 2.76× |
+| 47 | build-systems/tiny-100-light-j1/noop | 5888.0 | make 2176.0 | 2.71× |
+| 48 | build-systems/tiny-100-light-j2/noop | 5888.0 | make 2176.0 | 2.71× |
+| 49 | shell/metadata-10000 | 10052.0 | bash 3840.0 | 2.62× |
+| 50 | build-systems/native-100-heavy-j1/noop | 6016.0 | make 2304.0 | 2.61× |
+| 51 | build-systems/native-100-heavy-j2/noop | 6016.0 | make 2304.0 | 2.61× |
+| 52 | build-systems/native-100-heavy-j4/noop | 6016.0 | make 2304.0 | 2.61× |
+| 53 | build-systems/native-100-light-j1/noop | 6016.0 | make 2304.0 | 2.61× |
+| 54 | build-systems/native-100-light-j2/noop | 6016.0 | make 2304.0 | 2.61× |
+| 55 | build-systems/native-100-light-j4/noop | 6016.0 | make 2304.0 | 2.61× |
+| 56 | scripting/sanity/noop/small | 6016.0 | lua54 2304.0 | 2.61× |
+| 57 | scripting/sanity/noop/large | 5888.0 | lua54 2304.0 | 2.56× |
+| 58 | scripting/filesystem/traverse/small | 6528.0 | lua54 2560.0 | 2.55× |
+| 59 | build-systems/tiny-1000-light-j4/noop | 6400.0 | make 2816.0 | 2.27× |
+| 60 | shell/delete-selected-1000 | 7540.0 | bash 3584.0 | 2.10× |
+| 61 | build-systems/tiny-1000-light-j4/full | 8448.0 | make 4224.0 | 2.00× |
+| 62 | shell/processes-1 | 7040.0 | bash 3520.0 | 2.00× |
+| 63 | shell/bare/external-100 | 7040.0 | bash 3584.0 | 1.96× |
+| 64 | shell/bare/external-100 | 7040.0 | bash 3584.0 | 1.96× |
+| 65 | shell/processes-10 | 7040.0 | bash 3584.0 | 1.96× |
+| 66 | shell/processes-100 | 7040.0 | bash 3584.0 | 1.96× |
+| 67 | shell/processes-1000 | 7040.0 | bash 3584.0 | 1.96× |
+| 68 | shell/bare/short-pipeline | 6912.0 | bash 3520.0 | 1.96× |
+| 69 | shell/function-calls | 6912.0 | bash 3584.0 | 1.93× |
+| 70 | shell/bare/file-roundtrip | 6784.0 | bash 3520.0 | 1.93× |
+| 71 | shell/bare/native-sum | 6784.0 | bash 3520.0 | 1.93× |
+| 72 | shell/pipeline-8 | 6784.0 | bash 3520.0 | 1.93× |
+| 73 | shell/selected-cleanup | 6880.0 | bash 3584.0 | 1.92× |
+| 74 | shell/bare/command-capture | 6848.0 | bash 3584.0 | 1.91× |
+| 75 | shell/create-empty-1000 | 6800.0 | bash 3584.0 | 1.90× |
+| 76 | shell/bare/command-capture | 6784.0 | bash 3584.0 | 1.89× |
+| 77 | shell/bare/file-roundtrip | 6784.0 | bash 3584.0 | 1.89× |
+| 78 | shell/bare/native-sum | 6784.0 | bash 3584.0 | 1.89× |
+| 79 | shell/bare/short-pipeline | 6784.0 | bash 3584.0 | 1.89× |
+| 80 | shell/pipeline-2 | 6784.0 | bash 3584.0 | 1.89× |
+| 81 | shell/pipeline-4 | 6784.0 | bash 3584.0 | 1.89× |
+| 82 | shell/arithmetic | 6784.0 | bash 3584.0 | 1.89× |
+| 83 | shell/fibonacci-mod | 6784.0 | bash 3584.0 | 1.89× |
+| 84 | shell/string-transform | 6784.0 | bash 3648.0 | 1.86× |
+| 85 | shell/bare/function-string | 6656.0 | bash 3584.0 | 1.86× |
+| 86 | shell/bare/function-string | 6656.0 | bash 3584.0 | 1.86× |
+| 87 | shell/bare/trivial-command | 6144.0 | bash 3456.0 | 1.78× |
+| 88 | shell/bare/trivial-command | 6016.0 | bash 3456.0 | 1.74× |
+| 89 | shell/source-tree-report | 6784.0 | bash 3968.0 | 1.71× |
+| 90 | build-systems/native-1000-heavy-j4/noop | 6912.0 | make 4096.0 | 1.69× |
+| 91 | build-systems/native-1000-light-j4/noop | 6912.0 | make 4096.0 | 1.69× |
+| 92 | build-systems/native-1000-heavy-j1/noop | 6784.0 | make 4096.0 | 1.66× |
+| 93 | build-systems/native-1000-heavy-j2/noop | 6784.0 | make 4096.0 | 1.66× |
+| 94 | shell/bare/immediate-exit | 5376.0 | bash 3456.0 | 1.56× |
+| 95 | shell/bare/immediate-exit | 5376.0 | bash 3456.0 | 1.56× |
+| 96 | build-systems/tiny-10000-light-j4/leaf | 14628.0 | make 9684.0 | 1.51× |
+| 97 | build-systems/tiny-10000-light-j4/batch10 | 14500.0 | make 9684.0 | 1.50× |
+| 98 | build-systems/tiny-10000-light-j4/noop | 12836.0 | make 9684.0 | 1.33× |
+| 99 | shell/log-filter-group | 6848.0 | bash 5888.0 | 1.16× |
+| 100 | build-systems/native-5000-light-j4/noop | 12620.0 | make 11904.0 | 1.06× |
+| 101 | build-systems/native-100-heavy-j2/leaf | 27392.0 | make 27264.0 | 1.00× |
+| 102 | build-systems/native-100-light-j4/leaf | 21824.0 | make 21760.0 | 1.00× |
+| 103 | build-systems/native-100-light-j4/target | 21824.0 | make 21760.0 | 1.00× |
+| 104 | build-systems/native-1000-heavy-j1/full | 56668.0 | make 56536.0 | 1.00× |
+| 105 | build-systems/native-100-light-j4/clean-rebuild | 27520.0 | ninja 27456.0 | 1.00× |
+| 106 | build-systems/native-100-light-j2/clean-rebuild | 27584.0 | make 27520.0 | 1.00× |
+| 107 | build-systems/native-1000-heavy-j4/full | 56668.0 | make 56540.0 | 1.00× |
+| 108 | build-systems/native-1000-heavy-j1/leaf | 56664.0 | make 56540.0 | 1.00× |
+| 109 | build-systems/native-1000-light-j4/medium | 56664.0 | ninja 56540.0 | 1.00× |
+| 110 | build-systems/native-1000-light-j4/batch10 | 56608.0 | make 56540.0 | 1.00× |
+| 111 | build-systems/native-5000-light-j4/global | 245504.0 | make 245372.0 | 1.00× |
+| 112 | build-systems/native-5000-light-j4/full | 245500.0 | make 245376.0 | 1.00× |
+| 113 | build-systems/native-5000-light-j4/leaf | 245438.0 | ninja 245376.0 | 1.00× |
+| 114 | build-systems/native-1000-heavy-j2/leaf | 56540.0 | make 56536.0 | 1.00× |
+| 115 | build-systems/native-1000-light-j4/generated | 56540.0 | make 56536.0 | 1.00× |
+| 116 | build-systems/native-1000-light-j4/batch10pct | 56668.0 | make 56664.0 | 1.00× |
+| 117 | build-systems/native-10000-light-j4/full | 481136.0 | make 481132.0 | 1.00× |
