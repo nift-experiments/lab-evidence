@@ -18,12 +18,18 @@
       "official_complete": true,
       "independent_audit_pass": true,
       "recovery_pid": 16156,
-      "recovery_output": "/opt/campaign/evidence/recovery-three-way-scripting"
+      "recovery_output": "/opt/campaign/evidence/recovery-three-way-scripting",
+      "recovery_complete": true,
+      "recovery_independent_audit_pass": true
     },
     "shell-benchmark": {
       "id": 108162738,
       "setup_pid": 6949,
-      "gates_pid": 7924
+      "gates_pid": 7924,
+      "official_pid": 38809,
+      "planned_observations": 8566,
+      "all_cloud_gates_pass": true,
+      "output": "/opt/campaign/evidence/official-refresh"
     },
     "website-generator-benchmark": {
       "id": 108162733,
@@ -35,7 +41,13 @@
       "log": "/opt/official-refresh.log",
       "affinity": [
         0
-      ]
+      ],
+      "official_complete": true,
+      "independent_audit_pass": true,
+      "recovery_pid": 11863,
+      "recovery_output": "/opt/campaign/evidence/recovery-three-way-website",
+      "recovery_complete": true,
+      "recovery_independent_audit_pass": true
     }
   },
   "legacy_affinity": [

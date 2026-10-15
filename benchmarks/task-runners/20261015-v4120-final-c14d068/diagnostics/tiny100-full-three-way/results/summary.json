@@ -1,0 +1,64 @@
+{
+  "observations": 18,
+  "measured": 15,
+  "warmups": 3,
+  "cohorts": [
+    {
+      "variant": "release",
+      "samples": 5,
+      "wall_ms": {
+        "median": 138.332636,
+        "min": 130.346932,
+        "max": 147.07086
+      },
+      "cpu_ms": {
+        "median": 402.135,
+        "min": 358.634,
+        "max": 417.798
+      },
+      "peak_rss_kib": {
+        "median": 7680,
+        "min": 7680,
+        "max": 8064
+      }
+    },
+    {
+      "variant": "original",
+      "samples": 5,
+      "wall_ms": {
+        "median": 129.031413,
+        "min": 126.683746,
+        "max": 152.536484
+      },
+      "cpu_ms": {
+        "median": 397.755,
+        "min": 386.927,
+        "max": 418.556
+      },
+      "peak_rss_kib": {
+        "median": 7936,
+        "min": 7680,
+        "max": 7936
+      }
+    },
+    {
+      "variant": "final",
+      "samples": 5,
+      "wall_ms": {
+        "median": 134.851296,
+        "min": 126.259176,
+        "max": 149.021791
+      },
+      "cpu_ms": {
+        "median": 386.51,
+        "min": 370.783,
+        "max": 410.075
+      },
+      "peak_rss_kib": {
+        "median": 7936,
+        "min": 7808,
+        "max": 8192
+      }
+    }
+  ]
+}

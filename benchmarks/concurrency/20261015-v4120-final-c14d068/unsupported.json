@@ -1,0 +1,194 @@
+[
+  {
+    "case": "atomic-1",
+    "mode": "fresh",
+    "engine": "python",
+    "reason": "No comparable public shared-memory atomic integer in ordinary CPython"
+  },
+  {
+    "case": "atomic-1",
+    "mode": "persistent",
+    "engine": "python",
+    "reason": "No comparable public shared-memory atomic integer in ordinary CPython"
+  },
+  {
+    "case": "mutex-1-1",
+    "mode": "fresh",
+    "engine": "node",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-1-1",
+    "mode": "fresh",
+    "engine": "bun",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-1-1",
+    "mode": "persistent",
+    "engine": "node",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-1-1",
+    "mode": "persistent",
+    "engine": "bun",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-8-1",
+    "mode": "fresh",
+    "engine": "node",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-8-1",
+    "mode": "fresh",
+    "engine": "bun",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-8-1",
+    "mode": "persistent",
+    "engine": "node",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-8-1",
+    "mode": "persistent",
+    "engine": "bun",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "atomic-2",
+    "mode": "fresh",
+    "engine": "python",
+    "reason": "No comparable public shared-memory atomic integer in ordinary CPython"
+  },
+  {
+    "case": "atomic-2",
+    "mode": "persistent",
+    "engine": "python",
+    "reason": "No comparable public shared-memory atomic integer in ordinary CPython"
+  },
+  {
+    "case": "mutex-1-2",
+    "mode": "fresh",
+    "engine": "node",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-1-2",
+    "mode": "fresh",
+    "engine": "bun",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-1-2",
+    "mode": "persistent",
+    "engine": "node",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-1-2",
+    "mode": "persistent",
+    "engine": "bun",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-8-2",
+    "mode": "fresh",
+    "engine": "bun",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-8-2",
+    "mode": "fresh",
+    "engine": "node",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-8-2",
+    "mode": "persistent",
+    "engine": "bun",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-8-2",
+    "mode": "persistent",
+    "engine": "node",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "atomic-4",
+    "mode": "fresh",
+    "engine": "python",
+    "reason": "No comparable public shared-memory atomic integer in ordinary CPython"
+  },
+  {
+    "case": "atomic-4",
+    "mode": "persistent",
+    "engine": "python",
+    "reason": "No comparable public shared-memory atomic integer in ordinary CPython"
+  },
+  {
+    "case": "mutex-1-4",
+    "mode": "fresh",
+    "engine": "node",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-1-4",
+    "mode": "fresh",
+    "engine": "bun",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-1-4",
+    "mode": "persistent",
+    "engine": "node",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-1-4",
+    "mode": "persistent",
+    "engine": "bun",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-8-4",
+    "mode": "fresh",
+    "engine": "node",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-8-4",
+    "mode": "fresh",
+    "engine": "bun",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-8-4",
+    "mode": "persistent",
+    "engine": "node",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "mutex-8-4",
+    "mode": "persistent",
+    "engine": "bun",
+    "reason": "No standard native mutex/protected-value primitive; no custom lock substituted"
+  },
+  {
+    "case": "waiting-memory-10000",
+    "mode": "fresh",
+    "engine": "nift",
+    "reason": "Outside practical 8GiB host range: local held checkpoint used 13700MiB; no official timing accepted"
+  },
+  {
+    "case": "waiting-memory-10000",
+    "mode": "persistent",
+    "engine": "nift",
+    "reason": "Outside practical 8GiB host range: local held checkpoint used 13700MiB; no official timing accepted"
+  }
+]

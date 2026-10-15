@@ -1,0 +1,56 @@
+{
+  "kind": "frozen-comparator-inventory-not-performance",
+  "suite": "website-generator-benchmark",
+  "suite_sha": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
+  "suite_clean": true,
+  "candidate": {
+    "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+    "branch": "detached exact main candidate",
+    "clean_before_build": true,
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "cc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "build_command": "make -C /opt/nift -j2 nift",
+    "cxxflags": "-std=c++17 -O2 -Wall -Wextra -pedantic -pthread",
+    "cflags": "-std=c99 -O2 -Wall -Wextra -pedantic",
+    "libffi_cflags": "-O2 -fPIC -Wno-deprecated-declarations",
+    "cpu_model": "AMD EPYC 7642 48-Core Processor",
+    "logical_cpus": 4,
+    "kernel": "6.8.0-134-generic",
+    "os": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+    "memory_kib": 8131788,
+    "filesystem": "{\n   \"filesystems\": [\n      {\n         \"fstype\": \"ext4\",\n         \"options\": \"rw,relatime,errors=remount-ro\",\n         \"target\": \"/\"\n      }\n   ]\n}\n",
+    "affinity_policy": "0-3 during official measurements",
+    "release_intended_unchanged": true,
+    "version": "Nift v4.12.0",
+    "binary_sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb",
+    "clean_after_build": true
+  },
+  "comparators": {
+    "nift": {
+      "version": "Nift v4.12.0",
+      "executable": "/opt/campaign/tools/bin/nift",
+      "sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb"
+    },
+    "node": {
+      "version": "v24.21.0",
+      "executable": "/opt/campaign/tools/node-v24.21.0-linux-x64/bin/node",
+      "sha256": "7fde7b8afa198da66257f42ee2001d874c7355631e6d1579a5fb5ef1f246df4c"
+    },
+    "hugo": {
+      "version": "hugo v0.167.0-3fff6fb5c267dacb26280c78dbe8c344054249c8 linux/amd64 BuildDate=2026-09-28T14:50:38Z VendorInfo=gohugoio",
+      "executable": "/opt/campaign/tools/bin/hugo",
+      "sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89"
+    },
+    "astro": {
+      "version": "7.3.6",
+      "lockfile_sha256": "be19c184061d67a3d99d5e75d9d9ef0c869e3d612aee918f529eaf9d635ab43c"
+    },
+    "vitepress": {
+      "version": "1.6.4",
+      "lockfile_sha256": "be19c184061d67a3d99d5e75d9d9ef0c869e3d612aee918f529eaf9d635ab43c"
+    }
+  },
+  "policy": "historical comparator pins retained; exact installed Ubuntu package inventory frozen; no latest-version claim",
+  "dpkg_inventory_sha256": "a3fb555f68942b0b6074845e42eb8243897123e1e2596d76ff9c9d6f9442e398",
+  "download_inventory_sha256": "816164f4d7c8a3f8accf183b1beb15584182a97687fb9f933b792ed01d251108"
+}

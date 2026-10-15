@@ -44,7 +44,7 @@ if [ "$SUITE" = build-systems ]; then
   python3 scripts/certify.py --kind tiny --size 100 --jobs "$jobs" --scenarios noop leaf batch10 batch10pct full --results "$PREPARATION/tiny-j$jobs"
  done
 else
- { node --version; npm --version; work/tools/node_modules/.bin/turbo --version; work/tools/node_modules/.bin/nx --version; sha256sum "$(command -v node)" "$(command -v npm)"; sha256sum docs/tools-package-lock.json; sha256sum "$(readlink -f work/tools/node_modules/.bin/turbo)" "$(readlink -f work/tools/node_modules/.bin/nx)"; find work/tools/node_modules -type f \( -path '*/turbo-linux-64/bin/turbo' -o -name 'nx.linux-x64-gnu.node' \) -exec sha256sum {} \;; } > "$PREPARATION/comparators.txt"
+ { node --version; npm --version; work/tools/node_modules/.bin/turbo --version; work/tools/node_modules/.bin/nx --version; sha256sum "$(command -v node)" "$(command -v npm)"; sha256sum docs/tools-package-lock.json; sha256sum "$(readlink -f work/tools/node_modules/.bin/turbo)" "$(readlink -f work/tools/node_modules/.bin/nx)"; find work/tools/node_modules -type f \( -path '*/@turbo/linux-64/bin/turbo' -o -name 'nx.linux-x64-gnu.node' \) -exec sha256sum {} \;; } > "$PREPARATION/comparators.txt"
  TASK_RUNNER_PROBE_OUTPUT="$PREPARATION/semantic-probe.json" python3 scripts/probe.py
  python3 scripts/campaign-refresh.py --smoke --output "$PREPARATION/full-smoke"
  python3 scripts/audit.py "$PREPARATION/full-smoke"

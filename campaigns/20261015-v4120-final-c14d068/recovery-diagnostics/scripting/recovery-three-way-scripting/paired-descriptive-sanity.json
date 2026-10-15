@@ -1,0 +1,31 @@
+{
+  "rows": [
+    {
+      "case": "sanity/function-calls/small",
+      "release": {
+        "final_delta_ms": -0.0317109999999996,
+        "pairs_final_slower": 6,
+        "ranges_overlap": true
+      },
+      "original": {
+        "final_delta_ms": -2.6964679999999994,
+        "pairs_final_slower": 0,
+        "ranges_overlap": false
+      }
+    },
+    {
+      "case": "sanity/function-calls/large",
+      "release": {
+        "final_delta_ms": 5.0193299999999965,
+        "pairs_final_slower": 8,
+        "ranges_overlap": true
+      },
+      "original": {
+        "final_delta_ms": -270.7991085,
+        "pairs_final_slower": 0,
+        "ranges_overlap": false
+      }
+    }
+  ],
+  "interpretation": "Descriptive paired/range checks, not population significance; tiny final/release differences are not clear regression claims"
+}

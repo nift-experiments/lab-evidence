@@ -1,0 +1,38 @@
+{
+  "scope": "Separate ten-request retained-runtime diagnostic; not pooled with official isolated timings",
+  "case": {
+    "name": "schedule-1000",
+    "kind": "schedule",
+    "n": 1000,
+    "workers": 4,
+    "iterations": 0,
+    "extra": 0,
+    "samples": 50,
+    "warmups": 2
+  },
+  "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "prior_sha": "c8d9c266518d115e4f289c5c6a2b94ddd7ee9968",
+  "checkpoint_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "requests_per_runtime": 10,
+  "engines": [
+    "nift",
+    "python",
+    "node",
+    "bun",
+    "go",
+    "release-nift",
+    "checkpoint-nift"
+  ],
+  "timeout_per_request_seconds": 60,
+  "rss_guard_mib": 6144,
+  "sampler": "same frozen helper5ms sampled process-tree RSS, plus watchdog",
+  "binary_sha256": {
+    "nift": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb",
+    "python": "4e7a6eebdb5bc100c59217d6ee085d04244495113e347e77af4d589b679f63ce",
+    "node": "7fde7b8afa198da66257f42ee2001d874c7355631e6d1579a5fb5ef1f246df4c",
+    "bun": "7ce7d6b654eddeec20afddf2396317fba6dc19ab52788a27e894e1806bf8f24b",
+    "go": "d51a3308ccf4ff3add27a476ca3fd7fdd86453feda0e04fb5688a075e83dc998",
+    "release-nift": "cf1a34cda3e7d09d9a94728995a55cc6473befc7e755701274bc01aa53b19445",
+    "checkpoint-nift": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606"
+  }
+}

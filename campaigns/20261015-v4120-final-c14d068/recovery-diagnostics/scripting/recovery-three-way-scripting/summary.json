@@ -1,0 +1,74 @@
+{
+  "rows": [
+    {
+      "case": "sanity/function-calls/small",
+      "release": {
+        "samples": 10,
+        "median_ms": 4.710201,
+        "min_ms": 4.473042,
+        "max_ms": 4.805776,
+        "p90_ms": 4.7436751,
+        "p95_ms": 4.774725549999999,
+        "p99_ms": 4.79956591,
+        "median_peak_rss_kib": 6912.0
+      },
+      "original": {
+        "samples": 10,
+        "median_ms": 7.3749579999999995,
+        "min_ms": 7.243326,
+        "max_ms": 7.612891,
+        "p90_ms": 7.597492,
+        "p95_ms": 7.6051915,
+        "p99_ms": 7.6113511,
+        "median_peak_rss_kib": 7040.0
+      },
+      "final": {
+        "samples": 10,
+        "median_ms": 4.67849,
+        "min_ms": 4.615324,
+        "max_ms": 4.835998,
+        "p90_ms": 4.8006901,
+        "p95_ms": 4.81834405,
+        "p99_ms": 4.83246721,
+        "median_peak_rss_kib": 7168.0
+      },
+      "final_vs_release_percent": -0.673240908402839,
+      "final_vs_original_percent": -36.56248618636201
+    },
+    {
+      "case": "sanity/function-calls/large",
+      "release": {
+        "samples": 10,
+        "median_ms": 193.6004585,
+        "min_ms": 191.671943,
+        "max_ms": 217.541079,
+        "p90_ms": 203.08721129999998,
+        "p95_ms": 210.31414514999997,
+        "p99_ms": 216.09569223,
+        "median_peak_rss_kib": 6976.0
+      },
+      "original": {
+        "samples": 10,
+        "median_ms": 469.418897,
+        "min_ms": 459.548201,
+        "max_ms": 477.56593,
+        "p90_ms": 476.0645131,
+        "p95_ms": 476.81522155,
+        "p99_ms": 477.41578831,
+        "median_peak_rss_kib": 7104.0
+      },
+      "final": {
+        "samples": 10,
+        "median_ms": 198.6197885,
+        "min_ms": 194.222262,
+        "max_ms": 205.110852,
+        "p90_ms": 204.07617960000002,
+        "p95_ms": 204.5935158,
+        "p99_ms": 205.00738476,
+        "median_peak_rss_kib": 7104.0
+      },
+      "final_vs_release_percent": 2.5926229921609423,
+      "final_vs_original_percent": -57.68815661888448
+    }
+  ]
+}

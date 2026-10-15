@@ -1,0 +1,90 @@
+{
+  "suite": "template-engines",
+  "scope": "same-node exact fresh builds after official timings; incompatible build/API unavailable; no substituted source",
+  "versions": [
+    {
+      "version": "prior",
+      "source_sha": "c8d9c266518d115e4f289c5c6a2b94ddd7ee9968",
+      "supported": true,
+      "normal_build_flags": "Makefile normal -std=c++17 -O2 -Wall -Wextra -pedantic -pthread",
+      "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "cli_sha256": "cf1a34cda3e7d09d9a94728995a55cc6473befc7e755701274bc01aa53b19445",
+      "libraries": {
+        "libnift_c.a": "b10a95409c6aef310419e469092950befd5b7d3b3e66b80ff2cabf38d4010f32",
+        "libnift_c.so": "0e9ae066069f14be723d39e7af6132292454ca8455277ba34c8bb4141cae8672"
+      },
+      "adapter_sha256": "d66c8f688bda922c1c6cdecce9a144413c024564dc55b2398e5c119224343f2a",
+      "receipt_hashes": {
+        "adapter-build.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "adapter-flags.txt": "e8f721b883b15d79ec6b6b5891ded8ca6dc5c93de90fa72c3ffb87e2063b176a",
+        "build-plan.txt": "52f6548d59a2b78867d44410c13e22fe1d0fa7ee9e69685a34166920e9459935",
+        "build.log": "f9a70fef9a45f87b5ff15f12c2f4ca560cb547227dffa02796d54ac5dd2b51e4",
+        "checkout.log": "dd2b31a1fcc8b1fe0a910c557cd07c7e3befad5300ce0d5c6c1a7cb88adfdfd5",
+        "cli-sha256.txt": "5131781b86ebd5d4316bfbd635e0f965f54033956ed1f64d26314cd4fb662ee6",
+        "clone.log": "78cbb9d072afd63d320599ec9f222fbfddf8bc38dc1ae60c7f1bbe2ee504bf02",
+        "compiler.txt": "59d1cbef41d4ae78d5063d525b7aa13d18dc0493ea00537efc19b2ee398cb5a8",
+        "complete.txt": "cde9d35f1450dc46c8c73c5d1656ec819e2fac2ba137b4cb1500a031a4b4c7a0",
+        "embedding-build.log": "135343555860d6d80534b35654e1a56d9b996669207069efce10a5d2d68acd82",
+        "library-adapter-sha256.txt": "db6b7fc534c40685031b880ac6cb8f3a3940e2212b96d46188577987a025dca7",
+        "source-sha.txt": "2fab4a32c13406eaf415fe4fe6dfe51e68a5620f5897d91cd9826c79da5f0dcb",
+        "version.txt": "a5bdffc6bc6eeae2d7c4608ba53ebc3dec7f0a2f791ac45c35d2e6a0ab75dfd0"
+      }
+    },
+    {
+      "version": "checkpoint",
+      "source_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+      "supported": true,
+      "normal_build_flags": "Makefile normal -std=c++17 -O2 -Wall -Wextra -pedantic -pthread",
+      "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "cli_sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606",
+      "libraries": {
+        "libnift_c.a": "5a911d8144969c1452209d4772bcc5cffc7bad0045031ec19ec37366d94eeea2",
+        "libnift_c.so": "777c4fb3a3d348aa4f84db86597976b857ec2e849db438fa7040174956621f49"
+      },
+      "adapter_sha256": "b416f17f445cc366986b07e7291bda96e5351d4832526e632f46276bb38139af",
+      "receipt_hashes": {
+        "adapter-build.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "adapter-flags.txt": "e8f721b883b15d79ec6b6b5891ded8ca6dc5c93de90fa72c3ffb87e2063b176a",
+        "build-plan.txt": "d84d1e7da3f37eb23cd006c8351da40ad11b5e11dd81bfb969fbac43c9091ed0",
+        "build.log": "d97c42d8990f68cb4750768de38665bab727ab2301b0eea2a829e91df4ef8c47",
+        "checkout.log": "ce09e9713b48282a844ffd482fdc18f9117b838486b5d866323e6561e0ccf514",
+        "cli-sha256.txt": "4bc8a67efd8edab62101520c3501407d24e3958b80f27bf349c44b3aa237dd41",
+        "clone.log": "80eac80209e958e5469c281ae81201cf2ff473ee857d89a0a0d5f4bb4b877d94",
+        "compiler.txt": "59d1cbef41d4ae78d5063d525b7aa13d18dc0493ea00537efc19b2ee398cb5a8",
+        "complete.txt": "cde9d35f1450dc46c8c73c5d1656ec819e2fac2ba137b4cb1500a031a4b4c7a0",
+        "embedding-build.log": "2cd4fe4ed092870e608f7513160a008db77f6a6e2f9d1fa11e32dfb332c9496f",
+        "library-adapter-sha256.txt": "3f83fdfd1fd92819b3a770c2e17a8ba6ca5ca8317bb406111c5773fbd2410bae",
+        "source-sha.txt": "3a685571ec3e2c05379106f2cb0921f88432412bde611f29d40991f762a8032d",
+        "version.txt": "a5bdffc6bc6eeae2d7c4608ba53ebc3dec7f0a2f791ac45c35d2e6a0ab75dfd0"
+      }
+    },
+    {
+      "version": "candidate",
+      "source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "supported": true,
+      "normal_build_flags": "Makefile normal -std=c++17 -O2 -Wall -Wextra -pedantic -pthread",
+      "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "cli_sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb",
+      "libraries": {
+        "libnift_c.a": "27affcd336d997f294c2e20deb6eaf8462e71faeb6aa566cd991546553a701f5",
+        "libnift_c.so": "90e9d1e3a17ea779e8cbc5977248ffe4ff831361382f5fd55d27dd9c2d98446b"
+      },
+      "adapter_sha256": "764e337d89af61f005a6c6d2e1b16b66c8c697ebe520b8fb253d5bf8f230f23c",
+      "receipt_hashes": {
+        "adapter-build.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "adapter-flags.txt": "e8f721b883b15d79ec6b6b5891ded8ca6dc5c93de90fa72c3ffb87e2063b176a",
+        "build-plan.txt": "f2d83a34be6c98c221aa931e6ad8d77b4686a6cbf05fbbcd9d76da7ea6d9b0c9",
+        "build.log": "19b3644808b2263ca5221f4f4e978f8a94c4cfd96f21fb0c81a88bf3b8554606",
+        "checkout.log": "2c96b216b2ea1d7ac687ac8d554a0f7b98b673fd49ace5f49e81ce552b56fd5c",
+        "cli-sha256.txt": "0ed5788e755c48b8bb3096fddd293bd297911a91dbc6ce7e08954becd7d7f395",
+        "clone.log": "6f154eadbc7937014fd75656136ce7bb759c0944244fb29900d47c56740e18ff",
+        "compiler.txt": "59d1cbef41d4ae78d5063d525b7aa13d18dc0493ea00537efc19b2ee398cb5a8",
+        "complete.txt": "cde9d35f1450dc46c8c73c5d1656ec819e2fac2ba137b4cb1500a031a4b4c7a0",
+        "embedding-build.log": "0a3209a5539aa8614f3feda41bb54142d3fcbf2ccd385a60933374025cc35dd8",
+        "library-adapter-sha256.txt": "407f56087d4467909668904e12eb562d7eca43fdf789bc6e49b01938cb1464a4",
+        "source-sha.txt": "cd41c2eae2f005855e8a5902f30bcc28f2c12671881ff0b8c72e7516f838c765",
+        "version.txt": "733c1d9292d7531331fd7f4754a8c9f77eb129ca0385e036a85b6b146426f62b"
+      }
+    }
+  ]
+}

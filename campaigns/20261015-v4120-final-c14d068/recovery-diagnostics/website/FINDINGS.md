@@ -1,0 +1,7 @@
+# Same-node fresh-build recovery
+
+Clean exact release c8d9c266, original 7f7e487 and final c14d068 builds on the website host use the same GCC13.3/default flags and captured runtime libraries. Frozen 10,000-page fresh fixture, build-threads1, C supervisor, full route/content oracles and CPU0 are retained. All18 observations (15 measured/3warmups) pass, and independent audit verifies exact three-version ordering, complete sets and all distribution/recovery fields. Five measured rounds cannot perfectly balance six permutations; declared ordering is preserved rather than claiming perfect balance.
+
+Release median2871.545ms, original3278.509ms, final2951.495ms. Final recovers327.014ms (9.97%) relative to original, with disjoint observed ranges. Final/release delta79.951ms (+2.78%), with overlapping ranges. This establishes substantial recovery toward release latency but does not prove exact equality. The primary official and diagnostic cohorts remain separate. No causal commit/allocation claim or population significance is inferred from these five samples.
+
+RSS also returns near release: release17468KiB, original39872KiB, final17596KiB median child peak. No new material residual justifies additional profiling solely to force an equivalence claim. No remaining required website diagnostic needs; retain evidence until parent scan/push/lifecycle gate. No Labs/core changes or release recommendation.

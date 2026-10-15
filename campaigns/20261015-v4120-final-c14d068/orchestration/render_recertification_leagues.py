@@ -1,0 +1,22 @@
+from pathlib import Path
+import json
+root=Path(__file__).resolve().parents[1]
+x=json.loads((root/'docs/INTERIM-RECERTIFICATION.json').read_text())
+s='# Interim final-candidate recertification\n\nAudited official suites: '+', '.join(x['audited_official_suites'])+'. Exact-source three-way version diagnostics remain separate from current official peer results and historical cross-node trends. No publication or release is authorized.\n\n'
+s+='## Best same-node wall improvements versus explicit baseline — complete\n\n| Rank | Suite / scenario | Baseline | Previous | Final | Unit | Improvement | Evidence basis |\n|---:|---|---|---:|---:|---|---:|---|\n'
+for i,a in enumerate(x['all_same_node_wall_improvements'],1):
+ s+=f"| {i} | {a['suite']} / {a['scenario']} | {a['baseline']} | {a['baseline_value']:.6f} | {a['final']:.6f} | {a['unit']} | {a['improvement_percent']:.2f}% | Same node, {a['samples_each']} samples/version; {a['confidence']} |\n"
+s+='\n## Every measured positive same-node wall change — complete\n\n| Rank | Suite / scenario | Baseline | Baseline value | Final | Increase | Classification |\n|---:|---|---|---:|---:|---:|---|\n'
+for i,a in enumerate(sorted(x['same_node_version_regressions'],key=lambda a:a['change_percent'],reverse=True),1):
+ s+=f"| {i} | {a['suite']} / {a['scenario']} | {a['baseline']} | {a[a['baseline']]:.6f} | {a['final']:.6f} | {a['change_percent']:.2f}% | {a['classification']} |\n"
+s+='\nEvery comparison above uses the same node, exact versions and frozen diagnostic boundaries. Template diagnostics have three measured observations/version and remain descriptive. Scripting has ten; final/release ranges overlap, and large calls are slower in eight of ten paired blocks. Overlapping ranges do not prove equality or eliminate a small regression. Major original call regressions have disjoint ranges and all ten final blocks faster. Near-flat changes are retained. Original/checkpoint and release baselines are explicitly distinguished.\n\n'
+s+='## Current same-node peer wall deficits — complete\n\nPrevious controlled peer deficits and their direction are unavailable unless explicitly derived below. Do not substitute historical cross-node ratios. Ratios at or below one are strengths and excluded from this deficit league.\n\n| Rank | Suite / scenario / boundary | Nift | Best peer | Peer | Unit | Nift / peer |\n|---:|---|---:|---|---:|---|---:|\n'
+for i,a in enumerate(sorted(x['current_same_node_wall_deficits'],key=lambda a:a['deficit'],reverse=True),1):
+ nv=a.get('nift_value',a.get('nift_ms'));pv=a.get('best_peer_value',a.get('best_peer_ms'));s+=f"| {i} | {a['suite']} / {a['scenario']} | {nv:.4f} | {a['best_peer']} | {pv:.4f} | {a.get('unit','ms/invocation')} | {a['deficit']:.2f}× |\n"
+s+='\n## Large gains but still behind\n\n| Scenario | Baseline | Improvement | Current deficit | Interpretation |\n|---|---|---:|---:|---|\n'
+for a in x['large_gains_still_behind']:
+ s+=f"| {a['scenario']} | {a['baseline']} | {a['improvement_percent']:.2f}% | {a['current_deficit']:.2f}× | {a['interpretation']} |\n"
+s+='\nDerived old deficits divide controlled old Nift diagnostic medians by the current official peer median on the same host and matching boundary. These are cross-phase diagnostics, not a simultaneously interleaved old-Nift/peer benchmark. Current deficits use official Nift/peer medians from the same cohort. No cross-node peer denominator is substituted.\n\n'
+s+='## Memory and capabilities remain separate\n\n'+x.get('template_memory_control','Memory controls pending.')+'\n\nRaw scripting call peak-memory diagnostics are retained separately; small quantized differences do not establish a leak or superiority. Nift public parse-only/prepared-AST template modes remain unsupported in this frozen public-API matrix. Nift has lower medians than the best other template engine in 30 of 43 supported matching fresh/source-render cells; this is not an overall engine ranking. Task Nift leads all31 official wall and maximum-child RSS configurations. Current direct practitioner choices are maintained in PREFERENCE-CHANGES.md; release recommendation waits for the remaining three suites.\n'
+(root/'docs/INTERIM-RECERTIFICATION.md').write_text(s)
+print(json.dumps({'improvements':len(x['same_node_version_improvements']),'positive_changes':len(x['same_node_version_regressions']),'peer_deficits':len(x['current_same_node_wall_deficits'])}))
