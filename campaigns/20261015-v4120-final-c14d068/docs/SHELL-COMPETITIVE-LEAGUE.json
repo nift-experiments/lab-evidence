@@ -1,0 +1,1895 @@
+{
+  "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "kind": "same-host official wall median league, descriptive",
+  "excluded": "external-baseline helper-only boundary excluded",
+  "aggregation": "No aggregate cross-scenario rank or geometric mean; each scenario independently comparable",
+  "rows": [
+    {
+      "cohort": "shell-repeated.json",
+      "scenario": "bare/immediate-exit",
+      "nift_ms": 2.4251085000000003,
+      "best_peer": "bash",
+      "best_peer_ms": 1.7123085,
+      "nift_over_best_peer": 1.4162801270915844,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 1.7123085,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 2.1860435000000003,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 2.3644165,
+          "implementation": null
+        },
+        {
+          "shell": "nift",
+          "median_ms": 2.4251085000000003,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 13.637729499999999,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-repeated.json",
+      "scenario": "bare/trivial-command",
+      "nift_ms": 2.2017945,
+      "best_peer": "bash",
+      "best_peer_ms": 1.6201765,
+      "nift_over_best_peer": 1.3589843452241162,
+      "nift_rank": 3,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 1.6201765,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 2.0860505,
+          "implementation": null
+        },
+        {
+          "shell": "nift",
+          "median_ms": 2.2017945,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 2.2277885,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 13.568912999999998,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-repeated.json",
+      "scenario": "bare/interactive",
+      "nift_ms": 1.9858655,
+      "best_peer": "bash",
+      "best_peer_ms": 2.089021,
+      "nift_over_best_peer": 0.9506201708838735,
+      "nift_rank": 1,
+      "participants": [
+        {
+          "shell": "nift",
+          "median_ms": 1.9858655,
+          "implementation": null
+        },
+        {
+          "shell": "bash",
+          "median_ms": 2.089021,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 2.8444390000000004,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 17.364889499999997,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 19.3466765,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-repeated.json",
+      "scenario": "empty/interactive",
+      "nift_ms": 1.973784,
+      "best_peer": "bash",
+      "best_peer_ms": 3.6930125,
+      "nift_over_best_peer": 0.5344644785253232,
+      "nift_rank": 1,
+      "participants": [
+        {
+          "shell": "nift",
+          "median_ms": 1.973784,
+          "implementation": null
+        },
+        {
+          "shell": "bash",
+          "median_ms": 3.6930125,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 20.6423405,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 27.531549,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 40.089235,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-repeated.json",
+      "scenario": "light/interactive",
+      "nift_ms": 2.3502865,
+      "best_peer": "bash",
+      "best_peer_ms": 3.833019,
+      "nift_over_best_peer": 0.6131684972080754,
+      "nift_rank": 1,
+      "participants": [
+        {
+          "shell": "nift",
+          "median_ms": 2.3502865,
+          "implementation": null
+        },
+        {
+          "shell": "bash",
+          "median_ms": 3.833019,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 21.0367775,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 27.84847,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 41.1086105,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-repeated.json",
+      "scenario": "moderate/interactive",
+      "nift_ms": 2.770391,
+      "best_peer": "bash",
+      "best_peer_ms": 4.034834999999999,
+      "nift_over_best_peer": 0.6866181640637103,
+      "nift_rank": 1,
+      "participants": [
+        {
+          "shell": "nift",
+          "median_ms": 2.770391,
+          "implementation": null
+        },
+        {
+          "shell": "bash",
+          "median_ms": 4.034834999999999,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 21.0507655,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 27.811601500000002,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 38.5242875,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-repeated.json",
+      "scenario": "bare/function-string",
+      "nift_ms": 2.255546,
+      "best_peer": "bash",
+      "best_peer_ms": 1.723299,
+      "nift_over_best_peer": 1.308853541956445,
+      "nift_rank": 3,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 1.723299,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 2.191195,
+          "implementation": null
+        },
+        {
+          "shell": "nift",
+          "median_ms": 2.255546,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 2.694992,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 14.434874,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-repeated.json",
+      "scenario": "bare/command-capture",
+      "nift_ms": 3.5142905,
+      "best_peer": "bash",
+      "best_peer_ms": 3.119516,
+      "nift_over_best_peer": 1.1265499199234754,
+      "nift_rank": 2,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 3.119516,
+          "implementation": null
+        },
+        {
+          "shell": "nift",
+          "median_ms": 3.5142905,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 3.555862,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 3.8141925,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 14.915752000000001,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-repeated.json",
+      "scenario": "bare/file-roundtrip",
+      "nift_ms": 4.9103525,
+      "best_peer": "bash",
+      "best_peer_ms": 4.0216665,
+      "nift_over_best_peer": 1.220974563654147,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 4.0216665,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 4.4527874999999995,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 4.6376159999999995,
+          "implementation": null
+        },
+        {
+          "shell": "nift",
+          "median_ms": 4.9103525,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 16.668246500000002,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-repeated.json",
+      "scenario": "bare/native-sum",
+      "nift_ms": 3.0410295,
+      "best_peer": "zsh",
+      "best_peer_ms": 3.2350845,
+      "nift_over_best_peer": 0.940015477184599,
+      "nift_rank": 1,
+      "participants": [
+        {
+          "shell": "nift",
+          "median_ms": 3.0410295,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 3.2350845,
+          "implementation": null
+        },
+        {
+          "shell": "bash",
+          "median_ms": 5.099292,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 14.410306,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 107.5834275,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-repeated.json",
+      "scenario": "bare/external-100",
+      "nift_ms": 92.9688965,
+      "best_peer": "fish",
+      "best_peer_ms": 74.40414000000001,
+      "nift_over_best_peer": 1.2495124128845516,
+      "nift_rank": 3,
+      "participants": [
+        {
+          "shell": "fish",
+          "median_ms": 74.40414000000001,
+          "implementation": null
+        },
+        {
+          "shell": "bash",
+          "median_ms": 88.3086705,
+          "implementation": null
+        },
+        {
+          "shell": "nift",
+          "median_ms": 92.9688965,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 94.050067,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 99.0417315,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-repeated.json",
+      "scenario": "bare/short-pipeline",
+      "nift_ms": 5.098266499999999,
+      "best_peer": "bash",
+      "best_peer_ms": 4.3345185,
+      "nift_over_best_peer": 1.1762013473930264,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 4.3345185,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 4.4700415,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 4.786884499999999,
+          "implementation": null
+        },
+        {
+          "shell": "nift",
+          "median_ms": 5.098266499999999,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 16.060338,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-application-cold.json",
+      "scenario": "bare/immediate-exit",
+      "nift_ms": 2.333527,
+      "best_peer": "bash",
+      "best_peer_ms": 1.716529,
+      "nift_over_best_peer": 1.3594451360856707,
+      "nift_rank": 3,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 1.716529,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 2.2001545,
+          "implementation": null
+        },
+        {
+          "shell": "nift",
+          "median_ms": 2.333527,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 2.696545,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 14.025725999999999,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-application-cold.json",
+      "scenario": "bare/trivial-command",
+      "nift_ms": 2.21552,
+      "best_peer": "bash",
+      "best_peer_ms": 1.6212785,
+      "nift_over_best_peer": 1.3665264789485583,
+      "nift_rank": 3,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 1.6212785,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 2.106978,
+          "implementation": null
+        },
+        {
+          "shell": "nift",
+          "median_ms": 2.21552,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 2.5371505,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 13.5673305,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-application-cold.json",
+      "scenario": "bare/interactive",
+      "nift_ms": 1.9991875,
+      "best_peer": "bash",
+      "best_peer_ms": 2.0811975,
+      "nift_over_best_peer": 0.9605948017907958,
+      "nift_rank": 1,
+      "participants": [
+        {
+          "shell": "nift",
+          "median_ms": 1.9991875,
+          "implementation": null
+        },
+        {
+          "shell": "bash",
+          "median_ms": 2.0811975,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 2.9116850000000003,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 17.5028905,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 20.0462195,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-application-cold.json",
+      "scenario": "empty/interactive",
+      "nift_ms": 2.0420565,
+      "best_peer": "bash",
+      "best_peer_ms": 3.703089,
+      "nift_over_best_peer": 0.551446778621848,
+      "nift_rank": 1,
+      "participants": [
+        {
+          "shell": "nift",
+          "median_ms": 2.0420565,
+          "implementation": null
+        },
+        {
+          "shell": "bash",
+          "median_ms": 3.703089,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 20.514554500000003,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 72.75201150000001,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 538.660711,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-application-cold.json",
+      "scenario": "light/interactive",
+      "nift_ms": 2.324148,
+      "best_peer": "bash",
+      "best_peer_ms": 3.8652775,
+      "nift_over_best_peer": 0.6012887819826649,
+      "nift_rank": 1,
+      "participants": [
+        {
+          "shell": "nift",
+          "median_ms": 2.324148,
+          "implementation": null
+        },
+        {
+          "shell": "bash",
+          "median_ms": 3.8652775,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 20.575514499999997,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 68.96472299999999,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 540.5366965000001,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-application-cold.json",
+      "scenario": "moderate/interactive",
+      "nift_ms": 2.7633805000000002,
+      "best_peer": "bash",
+      "best_peer_ms": 4.0797985,
+      "nift_over_best_peer": 0.677332593754324,
+      "nift_rank": 1,
+      "participants": [
+        {
+          "shell": "nift",
+          "median_ms": 2.7633805000000002,
+          "implementation": null
+        },
+        {
+          "shell": "bash",
+          "median_ms": 4.0797985,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 21.1705155,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 68.02446649999999,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 541.2851575,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-application-cold.json",
+      "scenario": "bare/function-string",
+      "nift_ms": 2.2526960000000003,
+      "best_peer": "bash",
+      "best_peer_ms": 1.7072910000000001,
+      "nift_over_best_peer": 1.3194563785552669,
+      "nift_rank": 2,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 1.7072910000000001,
+          "implementation": null
+        },
+        {
+          "shell": "nift",
+          "median_ms": 2.2526960000000003,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 2.4139895,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 2.845405,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 14.1641815,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-application-cold.json",
+      "scenario": "bare/command-capture",
+      "nift_ms": 3.544639,
+      "best_peer": "bash",
+      "best_peer_ms": 2.93225,
+      "nift_over_best_peer": 1.2088461079375907,
+      "nift_rank": 3,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 2.93225,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 3.448168,
+          "implementation": null
+        },
+        {
+          "shell": "nift",
+          "median_ms": 3.544639,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 3.8531395,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 15.166105,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-application-cold.json",
+      "scenario": "bare/file-roundtrip",
+      "nift_ms": 4.878951499999999,
+      "best_peer": "bash",
+      "best_peer_ms": 3.810534,
+      "nift_over_best_peer": 1.2803852425932951,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 3.810534,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 4.430728,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 4.4660779999999995,
+          "implementation": null
+        },
+        {
+          "shell": "nift",
+          "median_ms": 4.878951499999999,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 16.203580000000002,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-application-cold.json",
+      "scenario": "bare/native-sum",
+      "nift_ms": 3.010123,
+      "best_peer": "zsh",
+      "best_peer_ms": 3.4588115,
+      "nift_over_best_peer": 0.8702766831901653,
+      "nift_rank": 1,
+      "participants": [
+        {
+          "shell": "nift",
+          "median_ms": 3.010123,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 3.4588115,
+          "implementation": null
+        },
+        {
+          "shell": "bash",
+          "median_ms": 4.9383925,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 14.3631195,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 108.0042005,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-application-cold.json",
+      "scenario": "bare/external-100",
+      "nift_ms": 90.8336935,
+      "best_peer": "fish",
+      "best_peer_ms": 73.107644,
+      "nift_over_best_peer": 1.242465062887268,
+      "nift_rank": 3,
+      "participants": [
+        {
+          "shell": "fish",
+          "median_ms": 73.107644,
+          "implementation": null
+        },
+        {
+          "shell": "bash",
+          "median_ms": 85.295618,
+          "implementation": null
+        },
+        {
+          "shell": "nift",
+          "median_ms": 90.8336935,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 93.59890200000001,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 102.626331,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-application-cold.json",
+      "scenario": "bare/short-pipeline",
+      "nift_ms": 4.8215615,
+      "best_peer": "bash",
+      "best_peer_ms": 4.190593,
+      "nift_over_best_peer": 1.1505678313307925,
+      "nift_rank": 3,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 4.190593,
+          "implementation": null
+        },
+        {
+          "shell": "fish",
+          "median_ms": 4.6950115,
+          "implementation": null
+        },
+        {
+          "shell": "nift",
+          "median_ms": 4.8215615,
+          "implementation": null
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 4.9604225,
+          "implementation": null
+        },
+        {
+          "shell": "nu",
+          "median_ms": 15.665022,
+          "implementation": null
+        }
+      ],
+      "boundary": "PTY first prompt where interactive; direct C-supervised invocation elsewhere; compare only identical scenario within same prepared/fresh cohort"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "create-empty-1000",
+      "nift_ms": 38.323883,
+      "best_peer": "bash",
+      "best_peer_ms": 34.095471,
+      "nift_over_best_peer": 1.1240168232314491,
+      "nift_rank": 2,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 34.095471,
+          "implementation": "shell redirection"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 38.323883,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 49.936665500000004,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 50.721556500000005,
+          "implementation": "shell redirection"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 52.402747000000005,
+          "implementation": "shell redirection"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "delete-selected-1000",
+      "nift_ms": 25.048482,
+      "best_peer": "bash",
+      "best_peer_ms": 23.0954665,
+      "nift_over_best_peer": 1.084562721432797,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 23.0954665,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 24.6900305,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 24.9312365,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 25.048482,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 64.9039075,
+          "implementation": "native filesystem API"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "create-empty-10000",
+      "nift_ms": 367.9988705,
+      "best_peer": "bash",
+      "best_peer_ms": 330.969178,
+      "nift_over_best_peer": 1.1118826010438954,
+      "nift_rank": 3,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 330.969178,
+          "implementation": "shell redirection"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 358.0476935,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 367.9988705,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 495.548003,
+          "implementation": "shell redirection"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 515.9752745000001,
+          "implementation": "shell redirection"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "delete-selected-10000",
+      "nift_ms": 240.2921945,
+      "best_peer": "fish",
+      "best_peer_ms": 201.88144,
+      "nift_over_best_peer": 1.1902639217354503,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "fish",
+          "median_ms": 201.88144,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 204.119307,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "bash",
+          "median_ms": 204.7537125,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 240.2921945,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 535.5213415000001,
+          "implementation": "native filesystem API"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "create-empty-100000",
+      "nift_ms": 3884.672333,
+      "best_peer": "bash",
+      "best_peer_ms": 3499.295927,
+      "nift_over_best_peer": 1.1101296986706664,
+      "nift_rank": 3,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 3499.295927,
+          "implementation": "shell redirection"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 3600.340846,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 3884.672333,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 5128.173993,
+          "implementation": "shell redirection"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 5260.581807,
+          "implementation": "shell redirection"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "delete-selected-100000",
+      "nift_ms": 2966.726755,
+      "best_peer": "bash",
+      "best_peer_ms": 2218.097213,
+      "nift_over_best_peer": 1.3375097978629489,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 2218.097213,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 2647.867879,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 2670.014133,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 2966.726755,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 6760.080588,
+          "implementation": "native filesystem API"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "create-small-100000",
+      "nift_ms": 10823.532221,
+      "best_peer": "nu",
+      "best_peer_ms": 4769.208977,
+      "nift_over_best_peer": 2.269460674337735,
+      "nift_rank": 5,
+      "participants": [
+        {
+          "shell": "nu",
+          "median_ms": 4769.208977,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "bash",
+          "median_ms": 4905.081115,
+          "implementation": "shell redirection"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 6762.797864,
+          "implementation": "shell redirection"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 8106.876909,
+          "implementation": "shell redirection"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 10823.532221,
+          "implementation": "native filesystem API"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "delete-tree-100000",
+      "nift_ms": 2847.694353,
+      "best_peer": "bash",
+      "best_peer_ms": 2198.877292,
+      "nift_over_best_peer": 1.2950674252540326,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 2198.877292,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 2263.574506,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 2445.669294,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 2847.694353,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 7305.9375,
+          "implementation": "native filesystem API"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "copy-small-10000",
+      "nift_ms": 768.2193440000001,
+      "best_peer": "zsh",
+      "best_peer_ms": 523.084266,
+      "nift_over_best_peer": 1.4686340116374292,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "zsh",
+          "median_ms": 523.084266,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "bash",
+          "median_ms": 524.4493535,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 528.729389,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 768.2193440000001,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 1677.9569555,
+          "implementation": "native filesystem API"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "rename-selected-10000",
+      "nift_ms": 546.786964,
+      "best_peer": "zsh",
+      "best_peer_ms": 344.701957,
+      "nift_over_best_peer": 1.5862601093384567,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "zsh",
+          "median_ms": 344.701957,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 345.9141885,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "bash",
+          "median_ms": 354.74532450000004,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 546.786964,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 1172.9517565,
+          "implementation": "native filesystem API"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "concat-small-10000",
+      "nift_ms": 252.607984,
+      "best_peer": "zsh",
+      "best_peer_ms": 105.009024,
+      "nift_over_best_peer": 2.4055835810834694,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "zsh",
+          "median_ms": 105.009024,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "bash",
+          "median_ms": 105.26739599999999,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 107.6241045,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 252.607984,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 547.6734,
+          "implementation": "native filesystem API"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "metadata-10000",
+      "nift_ms": 118.626861,
+      "best_peer": "fish",
+      "best_peer_ms": 40.652694,
+      "nift_over_best_peer": 2.9180565745532143,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "fish",
+          "median_ms": 40.652694,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 40.855597,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "bash",
+          "median_ms": 41.132464999999996,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 118.626861,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 1799.972583,
+          "implementation": "native filesystem API"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "traverse-100000",
+      "nift_ms": 1032.955331,
+      "best_peer": "nu",
+      "best_peer_ms": 255.039459,
+      "nift_over_best_peer": 4.05017849022335,
+      "nift_rank": 5,
+      "participants": [
+        {
+          "shell": "nu",
+          "median_ms": 255.039459,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "bash",
+          "median_ms": 482.806093,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 483.173854,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 486.089383,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 1032.955331,
+          "implementation": "native filesystem API"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "log-filter-group",
+      "nift_ms": 47.685931,
+      "best_peer": "fish",
+      "best_peer_ms": 45.6456055,
+      "nift_over_best_peer": 1.0446992755962017,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "fish",
+          "median_ms": 45.6456055,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "bash",
+          "median_ms": 45.7575885,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 47.563784999999996,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 47.685931,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 58.846843,
+          "implementation": "common external utilities"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "processes-1",
+      "nift_ms": 3.5277385,
+      "best_peer": "bash",
+      "best_peer_ms": 2.638995,
+      "nift_over_best_peer": 1.3367734686878907,
+      "nift_rank": 3,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 2.638995,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 3.1498135,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 3.5277385,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 3.75038,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 14.647749,
+          "implementation": "common external utilities"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "processes-10",
+      "nift_ms": 11.7661355,
+      "best_peer": "bash",
+      "best_peer_ms": 10.1921845,
+      "nift_over_best_peer": 1.154427247662167,
+      "nift_rank": 3,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 10.1921845,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 10.248128,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 11.7661355,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 12.0551525,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 22.2924765,
+          "implementation": "common external utilities"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "processes-100",
+      "nift_ms": 93.50468950000001,
+      "best_peer": "fish",
+      "best_peer_ms": 73.1390785,
+      "nift_over_best_peer": 1.2784504729574904,
+      "nift_rank": 3,
+      "participants": [
+        {
+          "shell": "fish",
+          "median_ms": 73.1390785,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "bash",
+          "median_ms": 84.23213849999999,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 93.50468950000001,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 95.4189575,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 100.409943,
+          "implementation": "common external utilities"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "processes-1000",
+      "nift_ms": 910.4066315,
+      "best_peer": "fish",
+      "best_peer_ms": 685.030503,
+      "nift_over_best_peer": 1.3290015955683656,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "fish",
+          "median_ms": 685.030503,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 819.0202214999999,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "bash",
+          "median_ms": 849.832769,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 910.4066315,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 973.2559650000001,
+          "implementation": "common external utilities"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "pipeline-2",
+      "nift_ms": 4.8865725,
+      "best_peer": "bash",
+      "best_peer_ms": 4.2129695,
+      "nift_over_best_peer": 1.1598879365255315,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 4.2129695,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 4.620703,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 4.7866805,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 4.8865725,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 16.53416,
+          "implementation": "common external utilities"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "pipeline-4",
+      "nift_ms": 7.2301825,
+      "best_peer": "fish",
+      "best_peer_ms": 6.326008,
+      "nift_over_best_peer": 1.1429297117550279,
+      "nift_rank": 3,
+      "participants": [
+        {
+          "shell": "fish",
+          "median_ms": 6.326008,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "bash",
+          "median_ms": 6.5897655,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 7.2301825,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 7.5140875000000005,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 18.677315999999998,
+          "implementation": "common external utilities"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "pipeline-8",
+      "nift_ms": 11.697128,
+      "best_peer": "fish",
+      "best_peer_ms": 10.419667,
+      "nift_over_best_peer": 1.1226009430051842,
+      "nift_rank": 3,
+      "participants": [
+        {
+          "shell": "fish",
+          "median_ms": 10.419667,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "bash",
+          "median_ms": 11.549528,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 11.697128,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 12.6331645,
+          "implementation": "common external utilities"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 23.1179955,
+          "implementation": "common external utilities"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "arithmetic",
+      "nift_ms": 17.2630465,
+      "best_peer": "zsh",
+      "best_peer_ms": 26.402014,
+      "nift_over_best_peer": 0.6538533954265762,
+      "nift_rank": 1,
+      "participants": [
+        {
+          "shell": "nift",
+          "median_ms": 17.2630465,
+          "implementation": "native shell code"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 26.402014,
+          "implementation": "native shell code"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 30.984744499999998,
+          "implementation": "native shell code"
+        },
+        {
+          "shell": "bash",
+          "median_ms": 66.2096895,
+          "implementation": "native shell code"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 3143.2619560000003,
+          "implementation": "native shell code"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "function-calls",
+      "nift_ms": 21.955654,
+      "best_peer": "nu",
+      "best_peer_ms": 43.813479,
+      "nift_over_best_peer": 0.5011164258378112,
+      "nift_rank": 1,
+      "participants": [
+        {
+          "shell": "nift",
+          "median_ms": 21.955654,
+          "implementation": "native shell code"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 43.813479,
+          "implementation": "native shell code"
+        },
+        {
+          "shell": "bash",
+          "median_ms": 53.0502305,
+          "implementation": "native shell code"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 141.771861,
+          "implementation": "native shell code"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 1353.5770665,
+          "implementation": "native shell code"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "fibonacci-mod",
+      "nift_ms": 4.06897,
+      "best_peer": "zsh",
+      "best_peer_ms": 4.5245055,
+      "nift_over_best_peer": 0.8993181685821799,
+      "nift_rank": 1,
+      "participants": [
+        {
+          "shell": "nift",
+          "median_ms": 4.06897,
+          "implementation": "native shell code"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 4.5245055,
+          "implementation": "native shell code"
+        },
+        {
+          "shell": "bash",
+          "median_ms": 8.094032,
+          "implementation": "native shell code"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 16.035788,
+          "implementation": "native shell code"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 149.60866399999998,
+          "implementation": "native shell code"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "string-transform",
+      "nift_ms": 18.917696499999998,
+      "best_peer": "zsh",
+      "best_peer_ms": 14.440801,
+      "nift_over_best_peer": 1.3100171174715307,
+      "nift_rank": 2,
+      "participants": [
+        {
+          "shell": "zsh",
+          "median_ms": 14.440801,
+          "implementation": "native shell code"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 18.917696499999998,
+          "implementation": "native shell code"
+        },
+        {
+          "shell": "bash",
+          "median_ms": 36.392202999999995,
+          "implementation": "native shell code"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 47.0242195,
+          "implementation": "native shell code"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 832.102436,
+          "implementation": "native shell code"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "source-tree-report",
+      "nift_ms": 229.74145149999998,
+      "best_peer": "bash",
+      "best_peer_ms": 220.3906425,
+      "nift_over_best_peer": 1.042428339488143,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 220.3906425,
+          "implementation": "common find \u2192 xargs/wc \u2192 awk pipeline"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 226.26734,
+          "implementation": "common find \u2192 xargs/wc \u2192 awk pipeline"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 229.36640749999998,
+          "implementation": "common find \u2192 xargs/wc \u2192 awk pipeline"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 229.74145149999998,
+          "implementation": "common find \u2192 xargs/wc \u2192 awk pipeline"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 239.17348950000002,
+          "implementation": "common find \u2192 xargs/wc \u2192 awk pipeline"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    },
+    {
+      "cohort": "shell-workloads.json",
+      "scenario": "selected-cleanup",
+      "nift_ms": 44.7825485,
+      "best_peer": "bash",
+      "best_peer_ms": 32.4980145,
+      "nift_over_best_peer": 1.3780087549656304,
+      "nift_rank": 4,
+      "participants": [
+        {
+          "shell": "bash",
+          "median_ms": 32.4980145,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "zsh",
+          "median_ms": 33.0813,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "fish",
+          "median_ms": 34.6905035,
+          "implementation": "batched GNU utilities"
+        },
+        {
+          "shell": "nift",
+          "median_ms": 44.7825485,
+          "implementation": "native filesystem API"
+        },
+        {
+          "shell": "nu",
+          "median_ms": 108.7410415,
+          "implementation": "native filesystem API"
+        }
+      ],
+      "boundary": "C-supervised fresh invocation; same fixture/semantic postconditions; distinct native/external implementations retained"
+    }
+  ]
+}

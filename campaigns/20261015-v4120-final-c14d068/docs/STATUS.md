@@ -31,3 +31,5 @@ Task full series independently audited: 1,434 measured +93 warmups; targeted tin
 Latest task control: release138.333/original129.031/final134.851ms; final−2.52% versus release, +4.51% versus original, overlapping five-sample ranges. All18 diagnostic observations audited. Build checkpoint1998/9348; shell expanded checkpoint423; filesystem rename10000 healthy. These partial counts are not accepted final results.
 
 Task evidence and controlled diagnostic pushed55cae88; host108162743 deleted, CLI absent/API404 and known-host cleanup verified. Five of eight hosts closed. Only build108162775, filesystem108162735 and shell108162738 remain.
+
+Shell official complete and independently audited:293jobs,7855measured+711warmups=8566. Arithmetic17.263ms and calls21.956ms lead their peer workloads. Remaining traversal4.05xNu,metadata2.92xFish,concatenation2.41xZsh deficits now in complete sorted leagues. External helper-only baselines excluded; startup prepared/fresh distinct. Separate72-observation exact three-way recovery running on idle shell host. Six official suites audited, five hosts closed; build/filesystem continue timing.
