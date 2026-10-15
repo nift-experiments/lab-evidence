@@ -1,0 +1,13 @@
+{
+  "plan_sha256": "3c5276e41d8be1705107aad5d6c800ba702032a43fd683f55605e16bf152310e",
+  "original_sha256": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+  "adapted_sha256": "c444a452fbed82dbaecc3034dd7e85f743bb3a86382470df3a9f2a766cce0113",
+  "diff": "--- /opt/website-publication/suite/scripts/campaign.py\n+++ allcore-memory-adapter\n@@ -12,7 +12,7 @@\n         'Astro':legacy.astro_fixture(base,n,project),'VitePress':legacy.vitepress_fixture(base,n,project)}\n     fs['Nift']=(fs['Nift'][0],[nift,'build','--all'],fs['Nift'][2])\n     p=fs['Nift'][0]/'.nift/config.json'\n-    c=json.loads(p.read_text()); c['config']['build-threads']=1; p.write_text(json.dumps(c))\n+    c=json.loads(p.read_text()); c['config']['build-threads']=-1; p.write_text(json.dumps(c))\n     p=fs['Astro'][0]/'astro.config.mjs'\n     p.write_text('import { defineConfig } from \"astro/config\"; export default defineConfig({ output: \"static\", build: { format: \"file\" } });\\n')\n     p=fs['Hugo'][0]\n@@ -66,7 +66,7 @@\n     result=dict(schema=5,publishable=False,machine=metadata(ROOT),pages=a.pages,\n         workload='minimal generated HTML page throughput; not a real-site migration',\n         notes=['Tool-native sources; VitePress custom minimal theme still hydrates client assets.',\n-               'One CPU affinity recommended; Nift build threads=1; GOMAXPROCS=1.',\n+               'All-core publication: CPU affinity0-3; Nift build threads=-1; Hugo GOMAXPROCS unset.',\n                'Cold means entire fresh fixture; warm-full cleans output and retains internal build state.',\n                'VitePress also generates one 404 page; validated and disclosed, excluded from corpus count.',\n                'wait4 RSS not aggregate tree RSS; see measurement policy.'],\n@@ -82,7 +82,7 @@\n     dest=Path(a.output); dest.parent.mkdir(parents=True,exist_ok=True)\n     def save(): dest.write_text(json.dumps(result,indent=2)+'\\n')\n     with tempfile.TemporaryDirectory(prefix='website-campaign-') as td:\n-        base=Path(td); env=isolated_env(base/'home'); env['GOMAXPROCS']='1'; env['CI']='1'\n+        base=Path(td); env=isolated_env(base/'home'); env.pop('GOMAXPROCS',None); env['CI']='1'\n         warm=fixtures(base/'warm',a.pages,nift,hugo,project)\n         for mode in ('application-cold','warm-full'):\n             jobs={name:dict(id=f'{name}/{mode}',samples=[],command=cmd) for name,(_,cmd,_) in warm.items()}\n",
+  "affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "GOMAXPROCS": "unset"
+}

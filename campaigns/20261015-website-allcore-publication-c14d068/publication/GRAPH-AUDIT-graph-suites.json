@@ -1,0 +1,4928 @@
+{
+  "status": "PASS",
+  "baseline": "c54ea99",
+  "chart_count": 22,
+  "asset_count": 44,
+  "source_cells": {
+    "build-systems": 291,
+    "task-runners": 93
+  },
+  "charts": [
+    {
+      "asset": "public/benchmarks/build-systems/assets/native-noop.svg",
+      "suite": "build-systems",
+      "title": "Warm no-op scaling",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            5.5053955,
+            39.544977,
+            249.7916525,
+            599.464199
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            4.512989,
+            18.15188,
+            81.940911,
+            171.846564
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            16.274346,
+            91.18654649999999,
+            398.9715625,
+            793.865002
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            5.5053955,
+            39.544977,
+            249.7916525,
+            599.464199
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            4.512989,
+            18.15188,
+            81.940911,
+            171.846564
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            16.274346,
+            91.18654649999999,
+            398.9715625,
+            793.865002
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "632a012ed12d184cbcee6bdef3cd4759f569a05b528e6b13fa9abd10d2be8dcc",
+      "sha256": "e4475aeef59ef1f69b5eb7f24a4e23331c60b9e356f73ca3120e37c97ec92040",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/native-noop.png",
+      "suite": "build-systems",
+      "title": "Warm no-op scaling",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            5.5053955,
+            39.544977,
+            249.7916525,
+            599.464199
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            4.512989,
+            18.15188,
+            81.940911,
+            171.846564
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            16.274346,
+            91.18654649999999,
+            398.9715625,
+            793.865002
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            5.5053955,
+            39.544977,
+            249.7916525,
+            599.464199
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            4.512989,
+            18.15188,
+            81.940911,
+            171.846564
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            16.274346,
+            91.18654649999999,
+            398.9715625,
+            793.865002
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "0cb8e1740f33463bfddf490cd145efffaa6b643715d5b6f147823bc05149323f",
+      "sha256": "e225490c86bf1cb03f284738e8edc7a44c924e98c0afc790c0c5080d826a4073",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/native-leaf.svg",
+      "suite": "build-systems",
+      "title": "One-file incremental scaling",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            77.7326725,
+            204.766184,
+            912.4160525,
+            2257.8186455
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            81.5028385,
+            193.4231755,
+            800.83008,
+            1513.2470815000001
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            95.1282665,
+            269.9767375,
+            1113.4116705000001,
+            2207.7797135
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            77.7326725,
+            204.766184,
+            912.4160525,
+            2257.8186455
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            81.5028385,
+            193.4231755,
+            800.83008,
+            1513.2470815000001
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            95.1282665,
+            269.9767375,
+            1113.4116705000001,
+            2207.7797135
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "5e6e7b66b54540404c90f322f1450923750b29f26c54fd933efa54587d67727b",
+      "sha256": "8a47451bdbf9a7336a534327527de069aefc0c086c3a0e85c8faa332ee27e938",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/native-leaf.png",
+      "suite": "build-systems",
+      "title": "One-file incremental scaling",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            77.7326725,
+            204.766184,
+            912.4160525,
+            2257.8186455
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            81.5028385,
+            193.4231755,
+            800.83008,
+            1513.2470815000001
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            95.1282665,
+            269.9767375,
+            1113.4116705000001,
+            2207.7797135
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            77.7326725,
+            204.766184,
+            912.4160525,
+            2257.8186455
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            81.5028385,
+            193.4231755,
+            800.83008,
+            1513.2470815000001
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            95.1282665,
+            269.9767375,
+            1113.4116705000001,
+            2207.7797135
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "bb2368ac491d6b445530d71df957ae503b71125c2d3af9adb68272341a63cbb3",
+      "sha256": "c6526ac336adb982f20a422037f07877e2fb08d3ef2690dedd549ce64c9acaab",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/native-global.svg",
+      "suite": "build-systems",
+      "title": "Global-header rebuild scaling",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            648.4609155,
+            5432.963528,
+            27891.970081,
+            59402.054839
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            703.0481090000001,
+            6223.094892,
+            30885.670739,
+            65274.1938
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            700.5728125,
+            6155.332707,
+            32085.126417,
+            69193.497652
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            648.4609155,
+            5432.963528,
+            27891.970081,
+            59402.054839
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            703.0481090000001,
+            6223.094892,
+            30885.670739,
+            65274.1938
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            700.5728125,
+            6155.332707,
+            32085.126417,
+            69193.497652
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "9190a9d5ba370ab9455990a8341d1bdcd0028a72323e9a02d44f25ab6c2ae427",
+      "sha256": "cb8fb712c55f60e966b1f78365963b55f7db56b4ecc597a7eca03a37749e81eb",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/native-global.png",
+      "suite": "build-systems",
+      "title": "Global-header rebuild scaling",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            648.4609155,
+            5432.963528,
+            27891.970081,
+            59402.054839
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            703.0481090000001,
+            6223.094892,
+            30885.670739,
+            65274.1938
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            700.5728125,
+            6155.332707,
+            32085.126417,
+            69193.497652
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            648.4609155,
+            5432.963528,
+            27891.970081,
+            59402.054839
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            703.0481090000001,
+            6223.094892,
+            30885.670739,
+            65274.1938
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            700.5728125,
+            6155.332707,
+            32085.126417,
+            69193.497652
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "388692580ab9dc8e38e7fb9e1343e05fdb2389a76cbf4bbb4d0c19ac590fe7a4",
+      "sha256": "3203404dca30e35b941c20fd5d6a20c89a68ac8d22525bf26d378e00c2498dc6",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/native-full.svg",
+      "suite": "build-systems",
+      "title": "Clean full build scaling",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            729.3116685,
+            5533.921098,
+            28646.417043,
+            58543.314068
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            789.024733,
+            6271.295158,
+            30593.97482,
+            61651.370326
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            784.2937475,
+            6256.289801,
+            31739.125548,
+            68583.898168
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            729.3116685,
+            5533.921098,
+            28646.417043,
+            58543.314068
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            789.024733,
+            6271.295158,
+            30593.97482,
+            61651.370326
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            784.2937475,
+            6256.289801,
+            31739.125548,
+            68583.898168
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "27de000f9aa012d176d768a39cbf7a7303cdfe287f65f0bad2483d3675846c09",
+      "sha256": "cf1ca3ec6048b11d0239f24483ba4c058b5593a834444ca292cb0235b94ddecb",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/native-full.png",
+      "suite": "build-systems",
+      "title": "Clean full build scaling",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            729.3116685,
+            5533.921098,
+            28646.417043,
+            58543.314068
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            789.024733,
+            6271.295158,
+            30593.97482,
+            61651.370326
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            784.2937475,
+            6256.289801,
+            31739.125548,
+            68583.898168
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            729.3116685,
+            5533.921098,
+            28646.417043,
+            58543.314068
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            789.024733,
+            6271.295158,
+            30593.97482,
+            61651.370326
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            784.2937475,
+            6256.289801,
+            31739.125548,
+            68583.898168
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "96f816da65743a81ffb737c20b59c90219cb99d2a673230f31417f28fc162e1b",
+      "sha256": "6cfd35f71f9569fae871b01674c5f91ec8ec55baf578ccedc79b0af32c2dfc11",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/tiny-noop.svg",
+      "suite": "build-systems",
+      "title": "Tiny-action no-op scaling",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100,
+            1000,
+            10000
+          ],
+          "y": [
+            2.649192,
+            10.287120999999999,
+            96.95023599999999
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100,
+            1000,
+            10000
+          ],
+          "y": [
+            3.6960735,
+            13.0426275,
+            108.267671
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000,
+            10000
+          ],
+          "y": [
+            11.8530285,
+            68.94713250000001,
+            617.3281025
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            2.649192,
+            10.287120999999999,
+            96.95023599999999
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            3.6960735,
+            13.0426275,
+            108.267671
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            11.8530285,
+            68.94713250000001,
+            617.3281025
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "f3e6390f587eb04c63472eda95c3819dd8d649f7b8c9dd053b4516c4afb09e56",
+      "sha256": "2c4607e29b748d439fd596cea383ad19142aae10edca0d38bc62c72b26aa3a9a",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/tiny-noop.png",
+      "suite": "build-systems",
+      "title": "Tiny-action no-op scaling",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100,
+            1000,
+            10000
+          ],
+          "y": [
+            2.649192,
+            10.287120999999999,
+            96.95023599999999
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100,
+            1000,
+            10000
+          ],
+          "y": [
+            3.6960735,
+            13.0426275,
+            108.267671
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000,
+            10000
+          ],
+          "y": [
+            11.8530285,
+            68.94713250000001,
+            617.3281025
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            2.649192,
+            10.287120999999999,
+            96.95023599999999
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            3.6960735,
+            13.0426275,
+            108.267671
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            11.8530285,
+            68.94713250000001,
+            617.3281025
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "1639836a16da7c390a54a8b20f1bc6efeae7794c8c010f3b97d208e36f743914",
+      "sha256": "44f642d44bf61ba504c0063f5f445c685bf470c389a6ce10aa82a02636f9f97e",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/tiny-full.svg",
+      "suite": "build-systems",
+      "title": "Fully dirty tiny-action scaling",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100,
+            1000,
+            10000
+          ],
+          "y": [
+            61.881364,
+            546.006495,
+            6065.28141
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100,
+            1000,
+            10000
+          ],
+          "y": [
+            89.074842,
+            802.615034,
+            8820.171549
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000,
+            10000
+          ],
+          "y": [
+            124.960588,
+            1046.292141,
+            15846.309745
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            61.881364,
+            546.006495,
+            6065.28141
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            89.074842,
+            802.615034,
+            8820.171549
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            124.960588,
+            1046.292141,
+            15846.309745
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "08a199fee951807e6714f47f8349169a9e0958a4b8fe86b8c480ab58f631de17",
+      "sha256": "adc9cedb36b0533c7c5a8003f85ce83e915ec9353c2122904275e126547c0555",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/tiny-full.png",
+      "suite": "build-systems",
+      "title": "Fully dirty tiny-action scaling",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100,
+            1000,
+            10000
+          ],
+          "y": [
+            61.881364,
+            546.006495,
+            6065.28141
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100,
+            1000,
+            10000
+          ],
+          "y": [
+            89.074842,
+            802.615034,
+            8820.171549
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000,
+            10000
+          ],
+          "y": [
+            124.960588,
+            1046.292141,
+            15846.309745
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            61.881364,
+            546.006495,
+            6065.28141
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            89.074842,
+            802.615034,
+            8820.171549
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            10000.0
+          ],
+          "y": [
+            124.960588,
+            1046.292141,
+            15846.309745
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "a5ca90b5c79495056615baaa97e5ead7541a053601d1a94e079cd2e7c4bb1d22",
+      "sha256": "d848c056f28a9be64ae373cc11a7d9974a86d9b5a7c359981c33de79ef4ef47d",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/parallel-heavy.svg",
+      "suite": "build-systems",
+      "title": "Heavy full-build worker comparison",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "workers": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            57589.249654,
+            29326.793137,
+            14866.715215
+          ]
+        },
+        {
+          "label": "Ninja",
+          "workers": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            58931.576107,
+            30084.082417,
+            15002.577968
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "workers": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            58537.590338,
+            30222.055976,
+            15621.579974
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "workers": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            57589.249654,
+            29326.793137,
+            14866.715215
+          ]
+        },
+        {
+          "label": "Ninja",
+          "workers": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            58931.576107,
+            30084.082417,
+            15002.577968
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "workers": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            58537.590338,
+            30222.055976,
+            15621.579974
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "bdd328943d62fdfbf84fad46852cd819bc1d35de288ae600a925078ba88c8f44",
+      "sha256": "807f3139a6ce51a965d9719c6c6d5eefa4a923e0cea906e2c330274b8da15658",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/parallel-heavy.png",
+      "suite": "build-systems",
+      "title": "Heavy full-build worker comparison",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "workers": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            57589.249654,
+            29326.793137,
+            14866.715215
+          ]
+        },
+        {
+          "label": "Ninja",
+          "workers": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            58931.576107,
+            30084.082417,
+            15002.577968
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "workers": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            58537.590338,
+            30222.055976,
+            15621.579974
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "workers": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            57589.249654,
+            29326.793137,
+            14866.715215
+          ]
+        },
+        {
+          "label": "Ninja",
+          "workers": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            58931.576107,
+            30084.082417,
+            15002.577968
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "workers": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            58537.590338,
+            30222.055976,
+            15621.579974
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "8598d95ad4459fdc47fc56daf35d70b67de2869dc221d10cc855d7c843e46202",
+      "sha256": "368268f8722a61c323cf5dd470f9bf56d4e547b21f64e74f36e76e26c790b3f6",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/native-noop-rss.svg",
+      "suite": "build-systems",
+      "title": "Warm no-op memory scaling",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            2.25,
+            4.0,
+            11.625,
+            21.20703125
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            4.5,
+            6.04296875,
+            13.12890625,
+            21.80859375
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            5.875,
+            6.75,
+            12.32421875,
+            19.1484375
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            2.25,
+            4.0,
+            11.625,
+            21.20703125
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            4.5,
+            6.04296875,
+            13.12890625,
+            21.80859375
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            5.875,
+            6.75,
+            12.32421875,
+            19.1484375
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "8df0b72d817aad8127a49201f979c14ac2eec98ef29a396d19bdebe601bbd828",
+      "sha256": "ac8c38a659689e74d0447f34b081b923b67f2e5d147d4bf068a208508187cce8",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/native-noop-rss.png",
+      "suite": "build-systems",
+      "title": "Warm no-op memory scaling",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            2.25,
+            4.0,
+            11.625,
+            21.20703125
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            4.5,
+            6.04296875,
+            13.12890625,
+            21.80859375
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            5.875,
+            6.75,
+            12.32421875,
+            19.1484375
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            2.25,
+            4.0,
+            11.625,
+            21.20703125
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            4.5,
+            6.04296875,
+            13.12890625,
+            21.80859375
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            5.875,
+            6.75,
+            12.32421875,
+            19.1484375
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "432f9f1e3d8957f5644f40d6cee8c5899dec64bbe4ee518558e92fb4bbffb4eb",
+      "sha256": "6dc139f8d3c8261fcfaf7c0b8de38276eb84282fcdf8d04afbf71baedbd1d11a",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/native-leaf-rss.svg",
+      "suite": "build-systems",
+      "title": "One-file incremental memory scaling",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            21.25,
+            55.21484375,
+            239.74609375,
+            469.8671875
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            21.25,
+            55.21484375,
+            239.625,
+            469.8671875
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            21.3125,
+            55.21484375,
+            239.685546875,
+            469.86328125
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.25,
+            55.21484375,
+            239.74609375,
+            469.8671875
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.25,
+            55.21484375,
+            239.625,
+            469.8671875
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.3125,
+            55.21484375,
+            239.685546875,
+            469.86328125
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "236c7d44cac7fb542034445cf175366759740dcd0759e2882ace17baa186c035",
+      "sha256": "914a0322e789a92ed1c2538569caafb621533e9aa9e870dd5cb67d1dc05e4cb9",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/build-systems/assets/native-leaf-rss.png",
+      "suite": "build-systems",
+      "title": "One-file incremental memory scaling",
+      "generator": "scripts/render_build_systems.py",
+      "generator_sha256": "2ac1dceee0f32b01d18bb319f28c1021e432a47412b5adf7cb6121f59c6528ac",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            21.25,
+            55.21484375,
+            239.74609375,
+            469.8671875
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            21.25,
+            55.21484375,
+            239.625,
+            469.8671875
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000,
+            5000,
+            10000
+          ],
+          "y": [
+            21.3125,
+            55.21484375,
+            239.685546875,
+            469.86328125
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "GNU Make",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.25,
+            55.21484375,
+            239.74609375,
+            469.8671875
+          ]
+        },
+        {
+          "label": "Ninja",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.25,
+            55.21484375,
+            239.625,
+            469.8671875
+          ]
+        },
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0,
+            5000.0,
+            10000.0
+          ],
+          "y": [
+            21.3125,
+            55.21484375,
+            239.685546875,
+            469.86328125
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "2500f5d8a1fdd9acba90ceee61e41b53cb955efdb3350fac1d5d35e3a7ffcd42",
+      "sha256": "ef9284585aaf670641fda938dc9fcf03fbb0bcaa0e569a7de5ebd886f4056ae2",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "GNU Make": "4.4.1",
+        "Ninja": "1.13.2"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/mixed-noop.svg",
+      "suite": "task-runners",
+      "title": "Unchanged mixed workflow",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            7.4320835,
+            16.354072000000002,
+            118.41790750000001
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            58.386855499999996,
+            71.9431425,
+            436.1150645
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            616.196203,
+            703.3861975,
+            1736.465205
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            7.4320835,
+            16.354072000000002,
+            118.41790750000001
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            58.386855499999996,
+            71.9431425,
+            436.1150645
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            616.196203,
+            703.3861975,
+            1736.465205
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "3f33ef240073cbc1fd5b1db23da04711f6a513f9930c820a5938f0c17104f482",
+      "sha256": "66ef45b47b8a1976736a296cc5f11f3cbc510b365b2bbe3d54af2afff7d7ea62",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/mixed-noop.png",
+      "suite": "task-runners",
+      "title": "Unchanged mixed workflow",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            7.4320835,
+            16.354072000000002,
+            118.41790750000001
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            58.386855499999996,
+            71.9431425,
+            436.1150645
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            616.196203,
+            703.3861975,
+            1736.465205
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            7.4320835,
+            16.354072000000002,
+            118.41790750000001
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            58.386855499999996,
+            71.9431425,
+            436.1150645
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            616.196203,
+            703.3861975,
+            1736.465205
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "180c7ce5e8bdfefb37204ec4c5d559a16331e3879ce1fab88371435edc85742f",
+      "sha256": "022e6b839cb85a676b6ed5287073f9dc60157c9f93e3a5b96ba61f2f6006b7f0",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/mixed-leaf.svg",
+      "suite": "task-runners",
+      "title": "One dirty leaf",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            56.0989575,
+            65.3638475,
+            172.43720100000002
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            414.06970550000005,
+            431.786673,
+            747.921514
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            689.27539,
+            767.16536,
+            1878.9464524999999
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            56.0989575,
+            65.3638475,
+            172.43720100000002
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            414.06970550000005,
+            431.786673,
+            747.921514
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            689.27539,
+            767.16536,
+            1878.9464524999999
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "1e2d484073cdbe4c618941561f9de60d8f412c963744a8fd94d589cf50c96fd8",
+      "sha256": "da9c20c6168f1e4124f79ba4ee18fd53b16845414e46d66057c6e00ec376fd25",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/mixed-leaf.png",
+      "suite": "task-runners",
+      "title": "One dirty leaf",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            56.0989575,
+            65.3638475,
+            172.43720100000002
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            414.06970550000005,
+            431.786673,
+            747.921514
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            689.27539,
+            767.16536,
+            1878.9464524999999
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            56.0989575,
+            65.3638475,
+            172.43720100000002
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            414.06970550000005,
+            431.786673,
+            747.921514
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            689.27539,
+            767.16536,
+            1878.9464524999999
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "f8456df771275349ce213799ee20d322fe6f96da1eb0b2c3647488a2e2dca6fe",
+      "sha256": "09e2b7012754807ca18a650bf0ed884881ca18781f88357969318bf89e9799c7",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/mixed-fanout.svg",
+      "suite": "task-runners",
+      "title": "10% task inputs dirty",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            58.448714,
+            163.844672,
+            1449.169013
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            442.416678,
+            1345.674715,
+            11544.649933
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            701.2397025,
+            928.214506,
+            3372.805099
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            58.448714,
+            163.844672,
+            1449.169013
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            442.416678,
+            1345.674715,
+            11544.649933
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            701.2397025,
+            928.214506,
+            3372.805099
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "0afe7db1ff41388bb1ceba17139c403af7860b6163e2a368b6d8377c4923b532",
+      "sha256": "f3a76fc59c2dd03cb0633a93f57d17c7b0c078364ba8ff01f095c829e0ce9381",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/mixed-fanout.png",
+      "suite": "task-runners",
+      "title": "10% task inputs dirty",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            58.448714,
+            163.844672,
+            1449.169013
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            442.416678,
+            1345.674715,
+            11544.649933
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            701.2397025,
+            928.214506,
+            3372.805099
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            58.448714,
+            163.844672,
+            1449.169013
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            442.416678,
+            1345.674715,
+            11544.649933
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            701.2397025,
+            928.214506,
+            3372.805099
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "6ac717dfeddc680f18dbd08d438dadb3d1cbfa17e8eefe6f4fb1698e8d7eb06c",
+      "sha256": "ab4c6812d9ac41eb65335cd3eb1cf2fa25a7190de02cf637fe19bf735e694974",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/mixed-shared.svg",
+      "suite": "task-runners",
+      "title": "Generated prerequisite dirty",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            412.47777,
+            903.696001,
+            6798.756708
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            3127.584215,
+            7478.441326,
+            57030.636217
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            1121.1029205,
+            1554.099813,
+            9865.573508
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            412.47777,
+            903.696001,
+            6798.756708
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            3127.584215,
+            7478.441326,
+            57030.636217
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1121.1029205,
+            1554.099813,
+            9865.573508
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "c8f38b84bd793a792c8aa5685e697cd9316aa5805ee82a37e4d9d1dd320dbf9b",
+      "sha256": "d7ac914d10ea4ae51374417f3428eadae24f86354c7e3728af10428f084068cd",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/mixed-shared.png",
+      "suite": "task-runners",
+      "title": "Generated prerequisite dirty",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            412.47777,
+            903.696001,
+            6798.756708
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            3127.584215,
+            7478.441326,
+            57030.636217
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            1121.1029205,
+            1554.099813,
+            9865.573508
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            412.47777,
+            903.696001,
+            6798.756708
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            3127.584215,
+            7478.441326,
+            57030.636217
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1121.1029205,
+            1554.099813,
+            9865.573508
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "cee1677b968be4508798294a0901bbcd1753775bcd9363306c2d4c9fc8d456b1",
+      "sha256": "cc04578c4cf7d3ba9f2e8e626ae83baf6310bab98b807e357b3ae9a0e5c4b65a",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/mixed-full.svg",
+      "suite": "task-runners",
+      "title": "All mixed-task inputs dirty",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            0.4644696025,
+            1.425073629,
+            13.410496777
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            3.6011724045,
+            12.208815488,
+            112.412416927
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            1.1251945115,
+            2.287110017,
+            17.838287497
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            0.4644696025,
+            1.425073629,
+            13.410496777
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            3.6011724045,
+            12.208815488,
+            112.412416927
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1.1251945115,
+            2.287110017,
+            17.838287497
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "102dc2deb3ce65cdacbb02408cd995e56092d9d3939f656f66b601d3bb850495",
+      "sha256": "d8f3f53593130d22667ee94cf67c01f8ea1ae2a1358151d52c266f293479aac0",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/mixed-full.png",
+      "suite": "task-runners",
+      "title": "All mixed-task inputs dirty",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            0.4644696025,
+            1.425073629,
+            13.410496777
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            3.6011724045,
+            12.208815488,
+            112.412416927
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            1.1251945115,
+            2.287110017,
+            17.838287497
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            0.4644696025,
+            1.425073629,
+            13.410496777
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            3.6011724045,
+            12.208815488,
+            112.412416927
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1.1251945115,
+            2.287110017,
+            17.838287497
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "9a44809ea1162c3da13c00f088da2110f8e060207eeab4a36d20d4392de6c7a0",
+      "sha256": "c58abeeb756a0faf358682f19a8b178eadf2d660e788c4f9e3b00f620cab607b",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/workers.svg",
+      "suite": "task-runners",
+      "title": "Mixed workflow worker scaling",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            4.716445293,
+            2.525477656,
+            1.425073629
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            35.700830448,
+            19.458066333999998,
+            12.208815488
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            6.139473261,
+            3.586495926,
+            2.287110017
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            4.716445293,
+            2.525477656,
+            1.425073629
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            35.700830448,
+            19.458066333999998,
+            12.208815488
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            6.139473261,
+            3.586495926,
+            2.287110017
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "d774ed62ec89caa2eae440dad050f6318168e6eb30fe55fa637a066296088760",
+      "sha256": "8ce17096b404dc4265c63e7e3bd910ebb26554d511368f4b447f3c9693c3077c",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/workers.png",
+      "suite": "task-runners",
+      "title": "Mixed workflow worker scaling",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            4.716445293,
+            2.525477656,
+            1.425073629
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            35.700830448,
+            19.458066333999998,
+            12.208815488
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            1,
+            2,
+            4
+          ],
+          "y": [
+            6.139473261,
+            3.586495926,
+            2.287110017
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            4.716445293,
+            2.525477656,
+            1.425073629
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            35.700830448,
+            19.458066333999998,
+            12.208815488
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            1.0,
+            2.0,
+            4.0
+          ],
+          "y": [
+            6.139473261,
+            3.586495926,
+            2.287110017
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "fd1020d4587eade0a6dbde7e78cf8eb04f67703e89adf344b7fa6e74218b9875",
+      "sha256": "8d0673f69ca07a57c97058ca118992cad54fbf153295402c9808d5439267c1fd",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/tiny-noop.svg",
+      "suite": "task-runners",
+      "title": "Unchanged tiny-task graph",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            14.0900525,
+            98.6289605
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            70.0337715,
+            412.62814000000003
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            656.8220655,
+            1554.18844
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            14.0900525,
+            98.6289605
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            70.0337715,
+            412.62814000000003
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            656.8220655,
+            1554.18844
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "a3d6110b756d075a21cf39e642a64c43cd6c60e94a479f2e8009d3c9f380d4ef",
+      "sha256": "fd34079fd9ec8af447f983a921ca6816d9d82820dbf5ce2d9e5b9820c755b31c",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/tiny-noop.png",
+      "suite": "task-runners",
+      "title": "Unchanged tiny-task graph",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            14.0900525,
+            98.6289605
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            70.0337715,
+            412.62814000000003
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            656.8220655,
+            1554.18844
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            14.0900525,
+            98.6289605
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            70.0337715,
+            412.62814000000003
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            656.8220655,
+            1554.18844
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "64144bc11d42031d32f73ae8e988cdf047df0bbd76333ae9a6d2ea3cdc9e11b9",
+      "sha256": "f844929de3e601f2abb2250e7f541f975c36842a1eea9e76b8db686d0d59d8fc",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/tiny-leaf.svg",
+      "suite": "task-runners",
+      "title": "One dirty tiny task",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            18.794365499999998,
+            104.291642
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            385.96586649999995,
+            683.5100225
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            692.073304,
+            1646.317895
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            18.794365499999998,
+            104.291642
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            385.96586649999995,
+            683.5100225
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            692.073304,
+            1646.317895
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "f3351ddf0750dadb57b1f83b659fe48397bc3b7c63b5fd0e11f1a57fb1e799f6",
+      "sha256": "1a4c1bfa84d64c33f5188659d972a8ff1c042dc30139c448fe9bd22fa250458f",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/tiny-leaf.png",
+      "suite": "task-runners",
+      "title": "One dirty tiny task",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            18.794365499999998,
+            104.291642
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            385.96586649999995,
+            683.5100225
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            692.073304,
+            1646.317895
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            18.794365499999998,
+            104.291642
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            385.96586649999995,
+            683.5100225
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            692.073304,
+            1646.317895
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "d6213d14b62d6907c83e45b97a4ae6c9222a5eed1c13dbeb7373c9d5ec0b4c1e",
+      "sha256": "0aa1b59ce5fc849875ed55d5bc8195ed4349666367f5dc9a68b279cc7e9c5048",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/tiny-fanout.svg",
+      "suite": "task-runners",
+      "title": "10% tiny-task inputs dirty",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            27.705294,
+            238.544289
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            1187.426259,
+            10095.796629
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            758.189681,
+            2566.731168
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            27.705294,
+            238.544289
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1187.426259,
+            10095.796629
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            758.189681,
+            2566.731168
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "de2684535716a264dcc66c1fbc5e715ee98894da0d3c2ffdcac99fed63291ce7",
+      "sha256": "ae62a257734cbfca6986f6d5e17bc964ab3d2ba60fd9d7498377d271910daeb6",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/tiny-fanout.png",
+      "suite": "task-runners",
+      "title": "10% tiny-task inputs dirty",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            27.705294,
+            238.544289
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            1187.426259,
+            10095.796629
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            758.189681,
+            2566.731168
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            27.705294,
+            238.544289
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1187.426259,
+            10095.796629
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            758.189681,
+            2566.731168
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "fa46aa1b3e6f7505f8f2325972405d5fc734d4480eab5b8f017c619df4557ade",
+      "sha256": "9f73c58d4fcd2f757a6e817219dc0652438a13a5508a77d7ec0d236a9e5b08a6",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/tiny-full.svg",
+      "suite": "task-runners",
+      "title": "Fully dirty tiny-task graph",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            0.130937657,
+            1.534467179
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            10.01186938,
+            98.304239675
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            1.489571253,
+            10.690134622
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            0.130937657,
+            1.534467179
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            10.01186938,
+            98.304239675
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1.489571253,
+            10.690134622
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "8fe78a9ab07b7772ff0b6b37a60bebb34109a1eb2905e189bc6d9604fd2f9360",
+      "sha256": "e355024cbedb87c61aad4ec2184b5b2ea7e8601b4ecbc7b749c38bb0a8bcd634",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/tiny-full.png",
+      "suite": "task-runners",
+      "title": "Fully dirty tiny-task graph",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            0.130937657,
+            1.534467179
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            10.01186938,
+            98.304239675
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100,
+            1000
+          ],
+          "y": [
+            1.489571253,
+            10.690134622
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            0.130937657,
+            1.534467179
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            10.01186938,
+            98.304239675
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            100.0,
+            1000.0
+          ],
+          "y": [
+            1.489571253,
+            10.690134622
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "3b337903b70a5e22085a29f6830c7eb8dc02585d1c9bafd5156270ad888d7784",
+      "sha256": "a110dc508c043a40f0f53dfcd88ae7d6cd7bc11a2b56d4908e08bfb25929269b",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/mixed-noop-rss.svg",
+      "suite": "task-runners",
+      "title": "Unchanged workflow memory",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            5.75,
+            5.875,
+            6.96875
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            46.234375,
+            49.958984375,
+            108.1328125
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            108.736328125,
+            115.478515625,
+            165.765625
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            5.75,
+            5.875,
+            6.96875
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            46.234375,
+            49.958984375,
+            108.1328125
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            108.736328125,
+            115.478515625,
+            165.765625
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "ab7a13fa016afe6f1e605c4bfcf5c170e40bc3e48127dd9d361abdb3cac0d9b3",
+      "sha256": "4dc7f021373e88117e65cb7126506d151ea0047a697eade3a19a4bde659bdb69",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/mixed-noop-rss.png",
+      "suite": "task-runners",
+      "title": "Unchanged workflow memory",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            5.75,
+            5.875,
+            6.96875
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            46.234375,
+            49.958984375,
+            108.1328125
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            108.736328125,
+            115.478515625,
+            165.765625
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            5.75,
+            5.875,
+            6.96875
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            46.234375,
+            49.958984375,
+            108.1328125
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            108.736328125,
+            115.478515625,
+            165.765625
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "68b2ff4f54efb7e2a17f4f60eb5fc411157b6e722c172068cbe854818915f0af",
+      "sha256": "4ad163d49b71bdbc703a226dd5a051d24ed0cae76a170a3907956081a3bb36d7",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/mixed-leaf-rss.svg",
+      "suite": "task-runners",
+      "title": "One dirty leaf memory",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            17.375,
+            17.375,
+            18.0
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            80.86328125,
+            80.845703125,
+            112.08984375
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            108.0625,
+            115.943359375,
+            165.267578125
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            17.375,
+            17.375,
+            18.0
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            80.86328125,
+            80.845703125,
+            112.08984375
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            108.0625,
+            115.943359375,
+            165.267578125
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "8114dd9c53fb2a1e116407a2d25bec26299a4334d0e2a2d14e7ac525f93d5df0",
+      "sha256": "ce8258a1e0c7fdcc665042e6bb507a9639e643e3093aaba379ffc5886b73261f",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/mixed-leaf-rss.png",
+      "suite": "task-runners",
+      "title": "One dirty leaf memory",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            17.375,
+            17.375,
+            18.0
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            80.86328125,
+            80.845703125,
+            112.08984375
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            108.0625,
+            115.943359375,
+            165.267578125
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            17.375,
+            17.375,
+            18.0
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            80.86328125,
+            80.845703125,
+            112.08984375
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            108.0625,
+            115.943359375,
+            165.267578125
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "215568cb46e983254dcde5ddbd06b1bae1077a724fcea298fc32948bda28d456",
+      "sha256": "8638a586a7886a263cf5fb2ecbf500db840ae7b9bd2f53736745c95d47c9a03b",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/mixed-full-rss.svg",
+      "suite": "task-runners",
+      "title": "All dirty workflow memory",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            20.0,
+            20.0,
+            19.875
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            81.720703125,
+            82.19921875,
+            113.046875
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            110.6171875,
+            120.23046875,
+            170.5703125
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            20.0,
+            20.0,
+            19.875
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            81.720703125,
+            82.19921875,
+            113.046875
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            110.6171875,
+            120.23046875,
+            170.5703125
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "8bf3d8acffd7518dca5c323249c3ca9611afce25546a91b36f2a3094a923e844",
+      "sha256": "01e72c95e0ab49d667b6238ca28d5152cf7e41a282ed17e740906ef2effe0ed3",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    },
+    {
+      "asset": "public/benchmarks/task-runners/assets/mixed-full-rss.png",
+      "suite": "task-runners",
+      "title": "All dirty workflow memory",
+      "generator": "scripts/render_task_runners.py",
+      "generator_sha256": "1079ba2013c86b2c314347a8f914173940d6ee2b344ba727891cd9730aabb246",
+      "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
+      "source_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "evidence_commit": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "classification": "current",
+      "expected_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            20.0,
+            20.0,
+            19.875
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            81.720703125,
+            82.19921875,
+            113.046875
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20,
+            100,
+            1000
+          ],
+          "y": [
+            110.6171875,
+            120.23046875,
+            170.5703125
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "label": "Nift v4.12 final",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            20.0,
+            20.0,
+            19.875
+          ]
+        },
+        {
+          "label": "Turbo",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            81.720703125,
+            82.19921875,
+            113.046875
+          ]
+        },
+        {
+          "label": "Nx",
+          "x": [
+            20.0,
+            100.0,
+            1000.0
+          ],
+          "y": [
+            110.6171875,
+            120.23046875,
+            170.5703125
+          ]
+        }
+      ],
+      "data_verification": "PASS",
+      "regeneration": "actually regenerated",
+      "previous_sha256": "e9d0626cc7be1b3f4d3c58f0f597754483323ce281d79108d0678c4a740294ee",
+      "sha256": "bb23752ffe60b98e99edcab32aad7ab913a3052dd139f1bf17065899acffb175",
+      "visual_inspection": "PASS: inspected all six contact sheets, legends/axes/ticks readable, no clipping; all three series retain separate marker outlines, dash styles and legend keys.",
+      "overlap_policy": "Distinct markers, open faces and dash styles; measured x/y coordinates unchanged. Baseline grouped worker bars preserved.",
+      "comparator_versions": {
+        "Turbo": "2.11.7",
+        "Nx": "23.3.0",
+        "Node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "candidate_version": "Nift v4.12.0 final",
+      "baseline_purpose_preserved": true,
+      "adjacent_table_vectors": "PASS: same canonical cell lookups and unit divisor as verified plotted values",
+      "html_table_structure": "PASS"
+    }
+  ],
+  "missing_cells": [],
+  "removed_charts": [],
+  "visual_qa_sheets": [
+    "/home/nick/Repositories/nift/.lab-tools/tmp/graph-final-render/qa-0.png",
+    "/home/nick/Repositories/nift/.lab-tools/tmp/graph-final-render/qa-1.png",
+    "/home/nick/Repositories/nift/.lab-tools/tmp/graph-final-render/qa-2.png",
+    "/home/nick/Repositories/nift/.lab-tools/tmp/graph-final-render/qa-3.png",
+    "/home/nick/Repositories/nift/.lab-tools/tmp/graph-final-render/qa-4.png",
+    "/home/nick/Repositories/nift/.lab-tools/tmp/graph-final-render/qa-5.png"
+  ],
+  "nonquantitative_html_diagrams": [
+    {
+      "page": "build-systems",
+      "status": "preserved baseline diagram; no quantitative coordinates"
+    },
+    {
+      "page": "task-runners",
+      "status": "preserved baseline diagram; no quantitative coordinates"
+    }
+  ]
+}

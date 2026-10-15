@@ -1,0 +1,102 @@
+{
+  "status": "Verified exact argv against all39new accepted jobs; cleanup boundaries from frozen source",
+  "full_builds": {
+    "Nift": {
+      "argv": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "classification": "forced full rebuild diagnostic; not ordinary incremental publish",
+      "warm_cleanup": [
+        "public/"
+      ],
+      "retained": [
+        ".nift/ internal tracking/metadata",
+        "source/template/config files"
+      ]
+    },
+    "Hugo": {
+      "argv": [
+        "/opt/website-publication/tools/bin/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "warm_cleanup": [
+        "public/",
+        "resources/"
+      ],
+      "retained": [
+        "other application state"
+      ]
+    },
+    "Astro": {
+      "argv": [
+        "/opt/website-publication/suite/node_modules/.bin/astro",
+        "build",
+        "--silent"
+      ],
+      "warm_cleanup": [
+        "dist/",
+        ".astro/"
+      ],
+      "retained": [
+        "shared pinned node_modules/dependency cache"
+      ]
+    },
+    "VitePress": {
+      "argv": [
+        "/opt/website-publication/suite/node_modules/.bin/vitepress",
+        "build",
+        "docs"
+      ],
+      "warm_cleanup": [
+        "docs/.vitepress/dist/",
+        "docs/.vitepress/cache/"
+      ],
+      "retained": [
+        "shared pinned node_modules/dependency cache"
+      ]
+    }
+  },
+  "fresh_scope": "entire new fixture per sample; pinned tools/shared dependencies and OS caches not reset",
+  "normal_publish": {
+    "argv": [
+      "/opt/nift/nift",
+      "build"
+    ],
+    "cases": [
+      "no-op",
+      "one-page",
+      "shared-template"
+    ],
+    "retained": "already-built fixture and outputs; mutate exact leaf/template for changed cases",
+    "oracle": "complete semantic corpus and byte equality with forced full rebuild after every timed sample"
+  },
+  "explicit_target": {
+    "argv": [
+      "/opt/nift/nift",
+      "build",
+      "page-1"
+    ],
+    "cohort": "separate serial cohort on same host",
+    "reference_argv": [
+      "/opt/nift/nift",
+      "build",
+      "--all"
+    ],
+    "fresh_reference_cleanup": [
+      "public/",
+      ".nift/public/"
+    ],
+    "oracle": "changed leaf marker present, all unrelated pages byte-identical, complete output equals full rebuild"
+  },
+  "worker_policy": {
+    "all": "CPU0-3",
+    "Nift": "build-threads=-1",
+    "Hugo": "GOMAXPROCS unset"
+  },
+  "sampling": "1warmup+5measured all39jobs; no old raw substituted",
+  "memory": "waited-child highwater, not aggregate process tree"
+}

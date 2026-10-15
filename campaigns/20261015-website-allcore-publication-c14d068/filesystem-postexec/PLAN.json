@@ -1,0 +1,109 @@
+{
+  "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "suite_sha": "75e77bb4bb6fb0b8c49920f641c77b394aec5985",
+  "host_id": 108212898,
+  "host_plan": "g6-standard-4",
+  "region": "us-east",
+  "host_vcpus": 4,
+  "host_memory_mib": 8192,
+  "host_os": "Ubuntu24.04",
+  "source_protocol": "scripts/postexec_memory_probe.py",
+  "source_protocol_sha256": "a7723e841e41b5ed86b01d548560da8827fa455c9a71f40d8191ceb2bff7ef8e",
+  "adaptation": "Only isolatedsuite rootpath; all launch/request/checkpoint/oracle/order semantics unchanged",
+  "cells": [
+    {
+      "files": 1000,
+      "engine": "nift",
+      "samples": 1
+    },
+    {
+      "files": 1000,
+      "engine": "python",
+      "samples": 1
+    },
+    {
+      "files": 1000,
+      "engine": "node",
+      "samples": 1
+    },
+    {
+      "files": 1000,
+      "engine": "bun",
+      "samples": 1
+    },
+    {
+      "files": 1000,
+      "engine": "go",
+      "samples": 1
+    },
+    {
+      "files": 10000,
+      "engine": "nift",
+      "samples": 1
+    },
+    {
+      "files": 10000,
+      "engine": "python",
+      "samples": 1
+    },
+    {
+      "files": 10000,
+      "engine": "node",
+      "samples": 1
+    },
+    {
+      "files": 10000,
+      "engine": "bun",
+      "samples": 1
+    },
+    {
+      "files": 10000,
+      "engine": "go",
+      "samples": 1
+    },
+    {
+      "files": 100000,
+      "engine": "nift",
+      "samples": 1
+    },
+    {
+      "files": 100000,
+      "engine": "python",
+      "samples": 1
+    },
+    {
+      "files": 100000,
+      "engine": "node",
+      "samples": 1
+    },
+    {
+      "files": 100000,
+      "engine": "bun",
+      "samples": 1
+    },
+    {
+      "files": 100000,
+      "engine": "go",
+      "samples": 1
+    }
+  ],
+  "cell_count": 15,
+  "warmups": 0,
+  "boundary": "FreshprocessBOOT\u2192onewalkrequest\u2192fullresponse exactoracle\u2192/procVmHWM+VmRSS checkpoint beforestdinclose/exit",
+  "memory_unit": "MiB; Linux/proc kB\u00f71024",
+  "metrics": [
+    "postexec_vmhwm_mib",
+    "postexec_vmrss_mib"
+  ],
+  "affinity": "first4allowedCPUs, expected0\u20133",
+  "comparators": {
+    "python": "3.15.0 ordinaryGIL portable",
+    "uv": "0.13.0 installer",
+    "node": "24.21.0",
+    "bun": "1.4.3",
+    "go": "1.27.2"
+  },
+  "library_requirements": "CLIonly; frozenstd-libraryadapters; normal-O2Go compile, noNiftembedlibrary",
+  "timing_gate": "NoSSH/setup/install/collection untilparentconfirmswebsiteofficialtimingANDauditscomplete; samehost, separatelylabelleddiagnostic",
+  "official_prior_data_mutated": false
+}

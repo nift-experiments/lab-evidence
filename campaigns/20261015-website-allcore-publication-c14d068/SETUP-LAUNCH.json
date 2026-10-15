@@ -1,0 +1,29 @@
+{
+  "recorded_utc": "2026-10-15T09:15:36.366211+00:00",
+  "host_id": 108212898,
+  "host_name": "website-allcore-publication",
+  "plan": "g6-standard-4",
+  "region": "us-east",
+  "setup_outer_pid": 1266,
+  "setup_gate_pid": 1276,
+  "log": "/opt/website-publication/evidence/setup-and-gate.log",
+  "official_timing_started": false,
+  "official_observations_planned": 234,
+  "source_assets": {
+    "PLAN.json": "3c5276e41d8be1705107aad5d6c800ba702032a43fd683f55605e16bf152310e",
+    "setup.sh": "4949ee8bf422fdc0a25316fc9245ddb96c437426fd0095978719d8b32a05b2db",
+    "allcore.py": "d66aa6c0acd91c91d136ac70b22c101f6aa32641a7790cf385567de63f2143ff",
+    "gate.py": "d266cf49b0f617b14a8229eede9db2527bbebae739c3115c95271f58941948b0",
+    "controller.sh": "1d4b31097e009231300b175f3e57d63124d4a76cd32ea3e5056d8d6547801489",
+    "identity.py": "9a1a01fb841e86ac88d3c151a27c9d1eba79899e0e82d8dee6e70982444e8a64",
+    "audit.py": "5f2166f3cec3d9d5fba8d58ec2a16e47608449d85d87991572ffb77a543c51a0"
+  },
+  "operational_note": "Frozen isolated_env PATH /opt/campaign/tools/bin resolves via symlink to /opt/website-publication/tools; no measured helper changes. Initial taskset parentPID telemetry raced parent exit; effectivecpuset/procself subsequently verified0-3.",
+  "host_retention": "Retain after website audit for separately authorized15filesystempostexecmetriccells; no teardown withoutroot.",
+  "actual_executed_setup": {
+    "path": "setup-original-executed.sh",
+    "sha256": "d0cacdee26770874fba83d13e110a69691bec0b06c05b76a6eccb26341d9d2fa",
+    "subsequent_explicit_operational_amendment": "create /opt/campaign/tools symlink to /opt/website-publication/tools before tool install/gates; original uploaded setup remains unchanged",
+    "reviewed_reusable_setup": "setup.sh includes the same path alias operation"
+  }
+}

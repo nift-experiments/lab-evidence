@@ -1,0 +1,452 @@
+{
+  "kind": "untimed freshfixture workaccounting, not an extra timing cohort",
+  "rows": [
+    {
+      "engine": "Nift",
+      "pages": 100,
+      "argv": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "worker_policy": {
+        "affinity": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "nift_build_threads": -1,
+        "Hugo_GOMAXPROCS": "unset"
+      },
+      "untimed": true,
+      "correct": true,
+      "semantic_oracle": {
+        "routes": 100,
+        "content_checked": 100
+      },
+      "input_files": 103,
+      "input_bytes": 13474,
+      "public_files": 100,
+      "public_bytes": 12780,
+      "public_html_files": 100,
+      "new_non_public_files": 101,
+      "new_non_public_bytes": 64941,
+      "external_dependency_links": {},
+      "source_model": "HTML content + explicit tracked JSON + template expansion; tracking metadata ownership/dependencies included",
+      "output_extras": "VitePress adds validated404 and hydration/build assets; Astro may retain buildassets; exact paths inmanifest",
+      "manifest": "nift-100-manifest.json"
+    },
+    {
+      "engine": "Hugo",
+      "pages": 100,
+      "argv": [
+        "/opt/website-publication/tools/bin/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "worker_policy": {
+        "affinity": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "nift_build_threads": -1,
+        "Hugo_GOMAXPROCS": "unset"
+      },
+      "untimed": true,
+      "correct": true,
+      "semantic_oracle": {
+        "routes": 100,
+        "content_checked": 100
+      },
+      "input_files": 102,
+      "input_bytes": 10078,
+      "public_files": 100,
+      "public_bytes": 12880,
+      "public_html_files": 100,
+      "new_non_public_files": 1,
+      "new_non_public_bytes": 0,
+      "external_dependency_links": {},
+      "source_model": "Markdown/frontmatter + Go template; Goldmark unsafeHTML enabled; homekind disabled",
+      "output_extras": "VitePress adds validated404 and hydration/build assets; Astro may retain buildassets; exact paths inmanifest",
+      "manifest": "hugo-100-manifest.json"
+    },
+    {
+      "engine": "Astro",
+      "pages": 100,
+      "argv": [
+        "/opt/website-publication/suite/node_modules/.bin/astro",
+        "build",
+        "--silent"
+      ],
+      "worker_policy": {
+        "affinity": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "nift_build_threads": -1,
+        "Hugo_GOMAXPROCS": "unset"
+      },
+      "untimed": true,
+      "correct": true,
+      "semantic_oracle": {
+        "routes": 100,
+        "content_checked": 100
+      },
+      "input_files": 101,
+      "input_bytes": 12903,
+      "public_files": 100,
+      "public_bytes": 12780,
+      "public_html_files": 100,
+      "new_non_public_files": 2,
+      "new_non_public_bytes": 5553,
+      "external_dependency_links": {
+        "node_modules": "/opt/website-publication/suite/node_modules"
+      },
+      "source_model": "Astro file routes; generated HTML source + minimal build config; bundler machinery retained",
+      "output_extras": "VitePress adds validated404 and hydration/build assets; Astro may retain buildassets; exact paths inmanifest",
+      "manifest": "astro-100-manifest.json"
+    },
+    {
+      "engine": "VitePress",
+      "pages": 100,
+      "argv": [
+        "/opt/website-publication/suite/node_modules/.bin/vitepress",
+        "build",
+        "docs"
+      ],
+      "worker_policy": {
+        "affinity": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "nift_build_threads": -1,
+        "Hugo_GOMAXPROCS": "unset"
+      },
+      "untimed": true,
+      "correct": true,
+      "semantic_oracle": {
+        "routes": 100,
+        "content_checked": 100
+      },
+      "input_files": 102,
+      "input_bytes": 4325,
+      "public_files": 306,
+      "public_bytes": 663491,
+      "public_html_files": 101,
+      "new_non_public_files": 0,
+      "new_non_public_bytes": 0,
+      "external_dependency_links": {
+        "node_modules": "/opt/website-publication/suite/node_modules"
+      },
+      "source_model": "Markdown + Vue minimal theme; hydration assets and validated404 retained",
+      "output_extras": "VitePress adds validated404 and hydration/build assets; Astro may retain buildassets; exact paths inmanifest",
+      "manifest": "vitepress-100-manifest.json"
+    },
+    {
+      "engine": "Nift",
+      "pages": 1000,
+      "argv": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "worker_policy": {
+        "affinity": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "nift_build_threads": -1,
+        "Hugo_GOMAXPROCS": "unset"
+      },
+      "untimed": true,
+      "correct": true,
+      "semantic_oracle": {
+        "routes": 1000,
+        "content_checked": 1000
+      },
+      "input_files": 1003,
+      "input_bytes": 134974,
+      "public_files": 1000,
+      "public_bytes": 129780,
+      "public_html_files": 1000,
+      "new_non_public_files": 1001,
+      "new_non_public_bytes": 653541,
+      "external_dependency_links": {},
+      "source_model": "HTML content + explicit tracked JSON + template expansion; tracking metadata ownership/dependencies included",
+      "output_extras": "VitePress adds validated404 and hydration/build assets; Astro may retain buildassets; exact paths inmanifest",
+      "manifest": "nift-1000-manifest.json"
+    },
+    {
+      "engine": "Hugo",
+      "pages": 1000,
+      "argv": [
+        "/opt/website-publication/tools/bin/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "worker_policy": {
+        "affinity": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "nift_build_threads": -1,
+        "Hugo_GOMAXPROCS": "unset"
+      },
+      "untimed": true,
+      "correct": true,
+      "semantic_oracle": {
+        "routes": 1000,
+        "content_checked": 1000
+      },
+      "input_files": 1002,
+      "input_bytes": 101878,
+      "public_files": 1000,
+      "public_bytes": 130780,
+      "public_html_files": 1000,
+      "new_non_public_files": 1,
+      "new_non_public_bytes": 0,
+      "external_dependency_links": {},
+      "source_model": "Markdown/frontmatter + Go template; Goldmark unsafeHTML enabled; homekind disabled",
+      "output_extras": "VitePress adds validated404 and hydration/build assets; Astro may retain buildassets; exact paths inmanifest",
+      "manifest": "hugo-1000-manifest.json"
+    },
+    {
+      "engine": "Astro",
+      "pages": 1000,
+      "argv": [
+        "/opt/website-publication/suite/node_modules/.bin/astro",
+        "build",
+        "--silent"
+      ],
+      "worker_policy": {
+        "affinity": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "nift_build_threads": -1,
+        "Hugo_GOMAXPROCS": "unset"
+      },
+      "untimed": true,
+      "correct": true,
+      "semantic_oracle": {
+        "routes": 1000,
+        "content_checked": 1000
+      },
+      "input_files": 1001,
+      "input_bytes": 129903,
+      "public_files": 1000,
+      "public_bytes": 129780,
+      "public_html_files": 1000,
+      "new_non_public_files": 2,
+      "new_non_public_bytes": 5553,
+      "external_dependency_links": {
+        "node_modules": "/opt/website-publication/suite/node_modules"
+      },
+      "source_model": "Astro file routes; generated HTML source + minimal build config; bundler machinery retained",
+      "output_extras": "VitePress adds validated404 and hydration/build assets; Astro may retain buildassets; exact paths inmanifest",
+      "manifest": "astro-1000-manifest.json"
+    },
+    {
+      "engine": "VitePress",
+      "pages": 1000,
+      "argv": [
+        "/opt/website-publication/suite/node_modules/.bin/vitepress",
+        "build",
+        "docs"
+      ],
+      "worker_policy": {
+        "affinity": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "nift_build_threads": -1,
+        "Hugo_GOMAXPROCS": "unset"
+      },
+      "untimed": true,
+      "correct": true,
+      "semantic_oracle": {
+        "routes": 1000,
+        "content_checked": 1000
+      },
+      "input_files": 1002,
+      "input_bytes": 42125,
+      "public_files": 3006,
+      "public_bytes": 31942091,
+      "public_html_files": 1001,
+      "new_non_public_files": 0,
+      "new_non_public_bytes": 0,
+      "external_dependency_links": {
+        "node_modules": "/opt/website-publication/suite/node_modules"
+      },
+      "source_model": "Markdown + Vue minimal theme; hydration assets and validated404 retained",
+      "output_extras": "VitePress adds validated404 and hydration/build assets; Astro may retain buildassets; exact paths inmanifest",
+      "manifest": "vitepress-1000-manifest.json"
+    },
+    {
+      "engine": "Nift",
+      "pages": 10000,
+      "argv": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "worker_policy": {
+        "affinity": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "nift_build_threads": -1,
+        "Hugo_GOMAXPROCS": "unset"
+      },
+      "untimed": true,
+      "correct": true,
+      "semantic_oracle": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "input_files": 10003,
+      "input_bytes": 1376974,
+      "public_files": 10000,
+      "public_bytes": 1317780,
+      "public_html_files": 10000,
+      "new_non_public_files": 10001,
+      "new_non_public_bytes": 6584541,
+      "external_dependency_links": {},
+      "source_model": "HTML content + explicit tracked JSON + template expansion; tracking metadata ownership/dependencies included",
+      "output_extras": "VitePress adds validated404 and hydration/build assets; Astro may retain buildassets; exact paths inmanifest",
+      "manifest": "nift-10000-manifest.json"
+    },
+    {
+      "engine": "Hugo",
+      "pages": 10000,
+      "argv": [
+        "/opt/website-publication/tools/bin/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "worker_policy": {
+        "affinity": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "nift_build_threads": -1,
+        "Hugo_GOMAXPROCS": "unset"
+      },
+      "untimed": true,
+      "correct": true,
+      "semantic_oracle": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "input_files": 10002,
+      "input_bytes": 1046878,
+      "public_files": 10000,
+      "public_bytes": 1327780,
+      "public_html_files": 10000,
+      "new_non_public_files": 1,
+      "new_non_public_bytes": 0,
+      "external_dependency_links": {},
+      "source_model": "Markdown/frontmatter + Go template; Goldmark unsafeHTML enabled; homekind disabled",
+      "output_extras": "VitePress adds validated404 and hydration/build assets; Astro may retain buildassets; exact paths inmanifest",
+      "manifest": "hugo-10000-manifest.json"
+    },
+    {
+      "engine": "Astro",
+      "pages": 10000,
+      "argv": [
+        "/opt/website-publication/suite/node_modules/.bin/astro",
+        "build",
+        "--silent"
+      ],
+      "worker_policy": {
+        "affinity": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "nift_build_threads": -1,
+        "Hugo_GOMAXPROCS": "unset"
+      },
+      "untimed": true,
+      "correct": true,
+      "semantic_oracle": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "input_files": 10001,
+      "input_bytes": 1317903,
+      "public_files": 10000,
+      "public_bytes": 1317780,
+      "public_html_files": 10000,
+      "new_non_public_files": 2,
+      "new_non_public_bytes": 5553,
+      "external_dependency_links": {
+        "node_modules": "/opt/website-publication/suite/node_modules"
+      },
+      "source_model": "Astro file routes; generated HTML source + minimal build config; bundler machinery retained",
+      "output_extras": "VitePress adds validated404 and hydration/build assets; Astro may retain buildassets; exact paths inmanifest",
+      "manifest": "astro-10000-manifest.json"
+    },
+    {
+      "engine": "VitePress",
+      "pages": 10000,
+      "argv": [
+        "/opt/website-publication/suite/node_modules/.bin/vitepress",
+        "build",
+        "docs"
+      ],
+      "worker_policy": {
+        "affinity": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "nift_build_threads": -1,
+        "Hugo_GOMAXPROCS": "unset"
+      },
+      "untimed": true,
+      "correct": true,
+      "semantic_oracle": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "input_files": 10002,
+      "input_bytes": 429125,
+      "public_files": 30006,
+      "public_bytes": 3018844091,
+      "public_html_files": 10001,
+      "new_non_public_files": 0,
+      "new_non_public_bytes": 0,
+      "external_dependency_links": {
+        "node_modules": "/opt/website-publication/suite/node_modules"
+      },
+      "source_model": "Markdown + Vue minimal theme; hydration assets and validated404 retained",
+      "output_extras": "VitePress adds validated404 and hydration/build assets; Astro may retain buildassets; exact paths inmanifest",
+      "manifest": "vitepress-10000-manifest.json"
+    }
+  ]
+}

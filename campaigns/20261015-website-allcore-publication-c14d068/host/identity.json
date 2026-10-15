@@ -1,0 +1,56 @@
+{
+  "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "suite": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
+  "plan_sha256": "3c5276e41d8be1705107aad5d6c800ba702032a43fd683f55605e16bf152310e",
+  "tools": {
+    "Nift": {
+      "sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb",
+      "version": "Nift v4.12.0"
+    },
+    "Hugo": {
+      "sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "version": "hugo v0.167.0-3fff6fb5c267dacb26280c78dbe8c344054249c8 linux/amd64 BuildDate=2026-09-28T14:50:38Z VendorInfo=gohugoio"
+    },
+    "Node": {
+      "sha256": "7fde7b8afa198da66257f42ee2001d874c7355631e6d1579a5fb5ef1f246df4c",
+      "version": "v24.21.0"
+    }
+  },
+  "worker_policy": {
+    "affinity": "CPU0-3 all processes including all four engines",
+    "nift_build_threads": -1,
+    "hugo_GOMAXPROCS": "unset",
+    "sizes": [
+      100,
+      1000,
+      10000
+    ],
+    "full_modes": [
+      "application-cold",
+      "warm-full"
+    ],
+    "nift_incremental": [
+      "no-op",
+      "one-page",
+      "shared-template"
+    ],
+    "targeted": "separate serial cohort, same host; fresh full reference plus explicit page-1 target at all3sizes",
+    "measured_per_job": 5,
+    "warmups_per_job": 1,
+    "jobs": 39,
+    "measured": 195,
+    "warmups": 39,
+    "observations": 234,
+    "order": "frozen rotating participant order within round; frozen mode/size/case ordering",
+    "clock": "unchanged schema5 C-supervised forkexec-toexit; setup/oracles outside",
+    "rss": "kernel waited-child highwater, not simultaneous process-tree RSS",
+    "oracles": "all routes,title,h1,body; incremental/target full rebuild byte parity and target unrelatedpages unchanged",
+    "node": "24.21.0",
+    "Hugo": "0.167.0",
+    "Astro": "7.3.6",
+    "VitePress": "1.6.4",
+    "no_sampling_profiles_during_timing": true,
+    "failures": "retain failedattemptraw; stop on correctness; no selective reruns"
+  },
+  "source_clean": true
+}

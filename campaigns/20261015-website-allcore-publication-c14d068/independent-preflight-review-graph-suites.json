@@ -1,0 +1,75 @@
+{
+  "status": "PASS source preflight; measured acceptance pending",
+  "reviewer": "independent graph-suites agent",
+  "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "suite_sha": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
+  "plan_sha256": "3c5276e41d8be1705107aad5d6c800ba702032a43fd683f55605e16bf152310e",
+  "reviewed_files": {
+    "PLAN.json": "3c5276e41d8be1705107aad5d6c800ba702032a43fd683f55605e16bf152310e",
+    "allcore.py": "d66aa6c0acd91c91d136ac70b22c101f6aa32641a7790cf385567de63f2143ff",
+    "controller.sh": "1d4b31097e009231300b175f3e57d63124d4a76cd32ea3e5056d8d6547801489",
+    "gate.py": "0bc30882f8ab6790606ca27fb3e161472487dc5e4030843a6b15b170ffc6bd10",
+    "audit.py": "0e76e473a74163000438cbff1ee238ec735beee2395b954f4ce2a8ef6ed5a4f4",
+    "identity.py": "9a1a01fb841e86ac88d3c151a27c9d1eba79899e0e82d8dee6e70982444e8a64",
+    "setup.sh": "4949ee8bf422fdc0a25316fc9245ddb96c437426fd0095978719d8b32a05b2db"
+  },
+  "frozen_source_hashes_verified": {
+    "scripts/campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+    "scripts/targeted_campaign.py": "ae67a829661442bb9f5fbdf10c812868984210ee178c8bcc158b096d2347c5bf",
+    "scripts/benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+    "scripts/campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+    "scripts/measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927",
+    "package.json": "15d0eb1ed6f880efc172ac36c1cb55dfe5887f47501b4e72719d03b155e66519",
+    "package-lock.json": "be19c184061d67a3d99d5e75d9d9ef0c869e3d612aee918f529eaf9d635ab43c"
+  },
+  "matrix": {
+    "pages": [
+      100,
+      1000,
+      10000
+    ],
+    "engines": [
+      "Nift",
+      "Hugo",
+      "Astro",
+      "VitePress"
+    ],
+    "main_jobs": 33,
+    "target_jobs": 6,
+    "jobs": 39,
+    "measured": 195,
+    "warmups": 39,
+    "observations": 234
+  },
+  "checks": {
+    "exact_frozen_source": true,
+    "only_worker_environment_notes_changes": true,
+    "clock_C_supervision_unchanged": true,
+    "fixture_content_unchanged": true,
+    "route_title_h1_body_oracles_unchanged": true,
+    "incremental_target_full_rebuild_parity_unchanged": true,
+    "target_unrelated_outputs_unchanged": true,
+    "rotation_order_unchanged": true,
+    "all_engines_inherit_affinity_0_3": true,
+    "Nift_build_threads_minus1": true,
+    "Hugo_GOMAXPROCS_unset": true,
+    "isolated_PATH_has_pinned_tools_symlink": true,
+    "full_24_case_correctness_required_before_controller": true
+  },
+  "expected_adapter_diffs": [
+    "campaign-expected-adapter.diff",
+    "targeted_campaign-expected-adapter.diff"
+  ],
+  "boundaries": [
+    "All-core means CPU0\u20133 eligible and tool-native worker policy, not proof every workload saturates four CPUs.",
+    "Untimed parity checks use the same frozen measure helper but are outside accepted 234 samples.",
+    "Full-output route/content assertions and incremental byte parity execute in frozen collector; retained samples contain pass flags and full-mode validation counts rather than independently reconstructable rendered HTML trees.",
+    "Final review must compare adapter exact diff/hash, clean exact checkout identity, pinned versions/hashes, per-size job IDs and rounds, all correctness flags and recomputed distributions.",
+    "No cloud access, installs or measurements were performed by this independent review."
+  ],
+  "pending": [
+    "cloud identity and correctness gate receipts",
+    "complete234 raw observations",
+    "independent final acceptance review"
+  ]
+}

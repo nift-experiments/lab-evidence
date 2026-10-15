@@ -1,0 +1,389 @@
+{
+  "pass": true,
+  "kind": "independent local acceptance review",
+  "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "suite_sha": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
+  "plan_sha256": "3c5276e41d8be1705107aad5d6c800ba702032a43fd683f55605e16bf152310e",
+  "observations": 234,
+  "measured": 195,
+  "warmups": 39,
+  "jobs": 39,
+  "files": [
+    {
+      "file": "website-100.json",
+      "sha256": "ef1811f7e2c438e5b15d01d0bcb2df9cb2045c9d10458324599de73e93143991"
+    },
+    {
+      "file": "website-1000.json",
+      "sha256": "b736c0dffbefe2a8be5aa9248d26baed6eee613bd266f82f3f24b52bf9f85c63"
+    },
+    {
+      "file": "website-10000.json",
+      "sha256": "f420e4f034742b17ede75419bb1d50d508bd5218ca98ea6ef0c4cb0df6a3a8a5"
+    },
+    {
+      "file": "targeted-builds.json",
+      "sha256": "415579032738b15cb462f42d67a0e5eafcca5e815c7969cbd7da67f687502934"
+    }
+  ],
+  "adapters": [
+    {
+      "file": "website-100.json",
+      "exact_worker_only_diff": true,
+      "source_sha256": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+      "adapted_sha256": "c444a452fbed82dbaecc3034dd7e85f743bb3a86382470df3a9f2a766cce0113"
+    },
+    {
+      "file": "website-1000.json",
+      "exact_worker_only_diff": true,
+      "source_sha256": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+      "adapted_sha256": "c444a452fbed82dbaecc3034dd7e85f743bb3a86382470df3a9f2a766cce0113"
+    },
+    {
+      "file": "website-10000.json",
+      "exact_worker_only_diff": true,
+      "source_sha256": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+      "adapted_sha256": "c444a452fbed82dbaecc3034dd7e85f743bb3a86382470df3a9f2a766cce0113"
+    },
+    {
+      "file": "targeted-builds.json",
+      "exact_worker_only_diff": true,
+      "source_sha256": "ae67a829661442bb9f5fbdf10c812868984210ee178c8bcc158b096d2347c5bf",
+      "adapted_sha256": "e6383a30b6d317d663470ba3c79f257436403f4b85cd5e35a3e5251ae8503079"
+    }
+  ],
+  "checks": [
+    "collection byte hashes",
+    "exact candidate/suite clean identity",
+    "pinned Node/Hugo/Astro/VitePress",
+    "all-core worker policy and affinity",
+    "all39job IDs and all3sizes",
+    "all234 successful correctness flags",
+    "full-mode per-page route/content counts",
+    "all39 exact argv",
+    "all rounds/warmup classifications",
+    "independent median/min/max/p90/p95/p99/RSS recomputation",
+    "exact worker-only adapter diffs and adapted hashes",
+    "main144participant rotation order from retained log",
+    "24 preflight correctness cases with actual all-core policy",
+    "all12 untimed accounting manifests file counts/byte sums/routes recomputed"
+  ],
+  "rows": [
+    {
+      "file": "website-100.json",
+      "job": "Nift/application-cold",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 17.167773,
+      "median_peak_rss_kib": 7040
+    },
+    {
+      "file": "website-100.json",
+      "job": "Hugo/application-cold",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 80.699759,
+      "median_peak_rss_kib": 50560
+    },
+    {
+      "file": "website-100.json",
+      "job": "Astro/application-cold",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 1848.776813,
+      "median_peak_rss_kib": 406736
+    },
+    {
+      "file": "website-100.json",
+      "job": "VitePress/application-cold",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 2726.760404,
+      "median_peak_rss_kib": 375528
+    },
+    {
+      "file": "website-100.json",
+      "job": "Nift/warm-full",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 14.752961,
+      "median_peak_rss_kib": 7040
+    },
+    {
+      "file": "website-100.json",
+      "job": "Hugo/warm-full",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 80.825699,
+      "median_peak_rss_kib": 50304
+    },
+    {
+      "file": "website-100.json",
+      "job": "Astro/warm-full",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 2023.444916,
+      "median_peak_rss_kib": 406456
+    },
+    {
+      "file": "website-100.json",
+      "job": "VitePress/warm-full",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 2814.711782,
+      "median_peak_rss_kib": 374396
+    },
+    {
+      "file": "website-100.json",
+      "job": "Nift/incremental/no-op",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 8.206755,
+      "median_peak_rss_kib": 5888
+    },
+    {
+      "file": "website-100.json",
+      "job": "Nift/incremental/one-page",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 8.246055,
+      "median_peak_rss_kib": 7040
+    },
+    {
+      "file": "website-100.json",
+      "job": "Nift/incremental/shared-template",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 18.187399,
+      "median_peak_rss_kib": 7040
+    },
+    {
+      "file": "website-1000.json",
+      "job": "Nift/application-cold",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 141.491693,
+      "median_peak_rss_kib": 7680
+    },
+    {
+      "file": "website-1000.json",
+      "job": "Hugo/application-cold",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 236.562288,
+      "median_peak_rss_kib": 67584
+    },
+    {
+      "file": "website-1000.json",
+      "job": "Astro/application-cold",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 6446.273735,
+      "median_peak_rss_kib": 798592
+    },
+    {
+      "file": "website-1000.json",
+      "job": "VitePress/application-cold",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 9379.86779,
+      "median_peak_rss_kib": 717304
+    },
+    {
+      "file": "website-1000.json",
+      "job": "Nift/warm-full",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 107.448251,
+      "median_peak_rss_kib": 7680
+    },
+    {
+      "file": "website-1000.json",
+      "job": "Hugo/warm-full",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 256.832388,
+      "median_peak_rss_kib": 67712
+    },
+    {
+      "file": "website-1000.json",
+      "job": "Astro/warm-full",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 6883.052388,
+      "median_peak_rss_kib": 784780
+    },
+    {
+      "file": "website-1000.json",
+      "job": "VitePress/warm-full",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 9310.096351,
+      "median_peak_rss_kib": 706644
+    },
+    {
+      "file": "website-1000.json",
+      "job": "Nift/incremental/no-op",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 43.623994,
+      "median_peak_rss_kib": 6104
+    },
+    {
+      "file": "website-1000.json",
+      "job": "Nift/incremental/one-page",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 45.905326,
+      "median_peak_rss_kib": 7168
+    },
+    {
+      "file": "website-1000.json",
+      "job": "Nift/incremental/shared-template",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 148.509353,
+      "median_peak_rss_kib": 7992
+    },
+    {
+      "file": "website-10000.json",
+      "job": "Nift/application-cold",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 1266.61183,
+      "median_peak_rss_kib": 17344
+    },
+    {
+      "file": "website-10000.json",
+      "job": "Hugo/application-cold",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 1849.063427,
+      "median_peak_rss_kib": 250876
+    },
+    {
+      "file": "website-10000.json",
+      "job": "Astro/application-cold",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 115959.821431,
+      "median_peak_rss_kib": 3651736
+    },
+    {
+      "file": "website-10000.json",
+      "job": "VitePress/application-cold",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 103915.745249,
+      "median_peak_rss_kib": 2572240
+    },
+    {
+      "file": "website-10000.json",
+      "job": "Nift/warm-full",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 941.237592,
+      "median_peak_rss_kib": 17216
+    },
+    {
+      "file": "website-10000.json",
+      "job": "Hugo/warm-full",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 1753.97189,
+      "median_peak_rss_kib": 246012
+    },
+    {
+      "file": "website-10000.json",
+      "job": "Astro/warm-full",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 112255.826341,
+      "median_peak_rss_kib": 3751948
+    },
+    {
+      "file": "website-10000.json",
+      "job": "VitePress/warm-full",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 96792.422302,
+      "median_peak_rss_kib": 2611812
+    },
+    {
+      "file": "website-10000.json",
+      "job": "Nift/incremental/no-op",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 363.980953,
+      "median_peak_rss_kib": 10940
+    },
+    {
+      "file": "website-10000.json",
+      "job": "Nift/incremental/one-page",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 357.470198,
+      "median_peak_rss_kib": 11968
+    },
+    {
+      "file": "website-10000.json",
+      "job": "Nift/incremental/shared-template",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 1194.407617,
+      "median_peak_rss_kib": 18364
+    },
+    {
+      "file": "targeted-builds.json",
+      "job": "Nift/100/fresh-full",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 15.713548,
+      "median_peak_rss_kib": 7040
+    },
+    {
+      "file": "targeted-builds.json",
+      "job": "Nift/100/targeted-one-page",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 5.990385,
+      "median_peak_rss_kib": 7040
+    },
+    {
+      "file": "targeted-builds.json",
+      "job": "Nift/1000/fresh-full",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 129.102371,
+      "median_peak_rss_kib": 7680
+    },
+    {
+      "file": "targeted-builds.json",
+      "job": "Nift/1000/targeted-one-page",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 21.771493,
+      "median_peak_rss_kib": 7204
+    },
+    {
+      "file": "targeted-builds.json",
+      "job": "Nift/10000/fresh-full",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 1250.864325,
+      "median_peak_rss_kib": 17344
+    },
+    {
+      "file": "targeted-builds.json",
+      "job": "Nift/10000/targeted-one-page",
+      "measured": 5,
+      "warmups": 1,
+      "median_ms": 163.239836,
+      "median_peak_rss_kib": 11968
+    }
+  ],
+  "oracle_boundary": "Frozen collector runs full-route/title/h1/body assertions and incremental/target full-rebuild byte parity. Retained booleans/validation counts certify those executions; rendered output trees are not retained for a second independent HTML oracle replay.",
+  "no_cloud_access": true,
+  "cloud_correctness_cases": 24,
+  "untimed_accounting_cells": 12
+}

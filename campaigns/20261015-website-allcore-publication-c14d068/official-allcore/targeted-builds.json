@@ -1,0 +1,594 @@
+{
+  "schema": 5,
+  "publishable": true,
+  "machine": {
+    "kernel": "6.8.0-134-generic",
+    "os_release": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+    "cpuinfo": "processor\t: 0\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7642 48-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2299.996\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 0\ncpu cores\t: 4\napicid\t\t: 0\ninitial apicid\t: 0\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 4599.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 1\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7642 48-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2299.996\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 1\ncpu cores\t: 4\napicid\t\t: 1\ninitial apicid\t: 1\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 4599.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 2\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7642 48-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2299.996\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 2\ncpu cores\t: 4\napicid\t\t: 2\ninitial apicid\t: 2\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 4599.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 3\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7642 48-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2299.996\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 3\ncpu cores\t: 4\napicid\t\t: 3\ninitial apicid\t: 3\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 4599.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\n",
+    "meminfo": "MemTotal:        8131780 kB\nMemFree:         7311768 kB\nMemAvailable:    7653268 kB\nBuffers:           77988 kB\nCached:           429812 kB\nSwapCached:           40 kB\nActive:           410504 kB\nInactive:         139900 kB\nActive(anon):      43544 kB\nInactive(anon):       40 kB\nActive(file):     366960 kB\nInactive(file):   139860 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507388 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:             31240 kB\nWriteback:             0 kB\nAnonPages:         42656 kB\nMapped:            44968 kB\nShmem:               936 kB\nKReclaimable:     119632 kB\nSlab:             188976 kB\nSReclaimable:     119632 kB\nSUnreclaim:        69344 kB\nKernelStack:        2208 kB\nPageTables:         1836 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573788 kB\nCommitted_AS:     130580 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16256 kB\nVmallocChunk:          0 kB\nPercpu:             2144 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      106356 kB\nDirectMap2M:     3039232 kB\nDirectMap1G:     7340032 kB\n",
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "python": "3.12.3",
+    "revision": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
+    "dirty": false,
+    "cache_policy": "OS caches uncontrolled; no machine-cold claim",
+    "rss_policy": "Linux wait4 waited-child high-water RSS; not aggregate process-tree RSS"
+  },
+  "tools": {
+    "Nift": {
+      "version": "Nift v4.12.0",
+      "sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb"
+    }
+  },
+  "samples": 5,
+  "warmups": 1,
+  "jobs": [
+    {
+      "id": "Nift/100/fresh-full",
+      "pages": 100,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "samples": [
+        {
+          "wall_ms": 28.113451,
+          "peak_rss_kib": 7168,
+          "cpu_ms": 40.49,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e02cf3492f223f061a996f681e5b783c6ca68269d962fc711a198fceba69b74f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true
+        },
+        {
+          "wall_ms": 15.713548,
+          "peak_rss_kib": 7040,
+          "cpu_ms": 39.292,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "44c91118ea7fc07cc4c4e177657fe0df3ebfa2bc5968e8f162f1450f813b099c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 17.45681,
+          "peak_rss_kib": 7040,
+          "cpu_ms": 46.503,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "2ddc590f149f7fe15fd800c755ece1dbb64df688acd6b06be8b33978b9f69824",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 14.769572,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 38.313,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "43c4362f4d2d1b35ca95e79f43f5a44c58d65f5f618ff8427473367ba6c56099",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 14.818222,
+          "peak_rss_kib": 7168,
+          "cpu_ms": 38.451,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "09ddf94d4ee0c5023a5057de4627bf3821b005be5a6b0f4c44b87b1e822d7d4f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 15.932274,
+          "peak_rss_kib": 7040,
+          "cpu_ms": 40.934,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "fe4743504fe71f6d815156414d111959bd7e61e2e48d5d2f3e8f735a70435a1a",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true
+        }
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 15.713548,
+        "min_ms": 14.769572,
+        "max_ms": 17.45681,
+        "p90_ms": 16.8469956,
+        "p95_ms": 17.151902800000002,
+        "p99_ms": 17.39582856,
+        "median_peak_rss_kib": 7040
+      }
+    },
+    {
+      "id": "Nift/100/targeted-one-page",
+      "pages": 100,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "page-1"
+      ],
+      "samples": [
+        {
+          "wall_ms": 6.53882,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 5.615,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "08b8128aa76bcfa4c0bfa4b0928aa210d52dbe4f192ed05ca7ba1ae171f62e74",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true
+        },
+        {
+          "wall_ms": 5.688947,
+          "peak_rss_kib": 7040,
+          "cpu_ms": 4.868,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "0a2922032bb3422a39dbf02efc2d39291d47a46c511076a4d7c23866c33f22d9",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 7.16274,
+          "peak_rss_kib": 7040,
+          "cpu_ms": 6.238,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "fd78ea863e2882d7d34ed6d2dcd74017c9901723a1f8681478f629136dcac8d0",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 5.560582,
+          "peak_rss_kib": 7168,
+          "cpu_ms": 4.742,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "317a891b63766d7797f83c12fb07374d10f81e802f7721636b6c30e775d1ff6a",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 5.990385,
+          "peak_rss_kib": 7168,
+          "cpu_ms": 5.205,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "b19d41b5f37193ab33d3ab64ed23eb64cbec218b9cd7953dd7f20585214fe828",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 6.406457,
+          "peak_rss_kib": 6912,
+          "cpu_ms": 5.56,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "4ad7ba3efbda655e22c3e4f4c7e8a1578d872a71618fb74241c756b8c7d5c65b",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true
+        }
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 5.990385,
+        "min_ms": 5.560582,
+        "max_ms": 7.16274,
+        "p90_ms": 6.8602268,
+        "p95_ms": 7.0114834,
+        "p99_ms": 7.13248868,
+        "median_peak_rss_kib": 7040
+      }
+    },
+    {
+      "id": "Nift/1000/fresh-full",
+      "pages": 1000,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "samples": [
+        {
+          "wall_ms": 119.861466,
+          "peak_rss_kib": 7660,
+          "cpu_ms": 391.124,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "704a7d2364fdc17fb84637f6608559df99b5d39d1ddb75d11a11d91421fc5079",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true
+        },
+        {
+          "wall_ms": 134.966594,
+          "peak_rss_kib": 7680,
+          "cpu_ms": 443.826,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "6002d913ee2a0fb3fd9e3f149f0f70fb205189d145d4d50b2c53656bfeba4611",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 124.123507,
+          "peak_rss_kib": 7680,
+          "cpu_ms": 407.231,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "4c0df8fa663c96e3260137fe09141a3066eff1fe494a6740b1fc40b422239fa2",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 129.102371,
+          "peak_rss_kib": 7808,
+          "cpu_ms": 408.234,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "867c3a5dac275675a875d5f8fb32dd161f4c05fa495fae68bb6b1a3b7fc43e9a",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 124.606686,
+          "peak_rss_kib": 7680,
+          "cpu_ms": 403.391,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "ed6e189349ea65df9e898af72f577f066bbe6f06362e61fba708f0490693f5e0",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 131.350491,
+          "peak_rss_kib": 7552,
+          "cpu_ms": 431.325,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "7be81bc7fdbbe6dbb3244ef38424060ca131bc9574bfa7ab883113ca770b4b99",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true
+        }
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 129.102371,
+        "min_ms": 124.123507,
+        "max_ms": 134.966594,
+        "p90_ms": 133.5201528,
+        "p95_ms": 134.2433734,
+        "p99_ms": 134.82194987999998,
+        "median_peak_rss_kib": 7680
+      }
+    },
+    {
+      "id": "Nift/1000/targeted-one-page",
+      "pages": 1000,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "page-1"
+      ],
+      "samples": [
+        {
+          "wall_ms": 53.103349,
+          "peak_rss_kib": 7296,
+          "cpu_ms": 30.97,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "2c69fb9ae541d3f4b00c1984fd59d7930de7de0fe8468ec89da252858409a6b8",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true
+        },
+        {
+          "wall_ms": 24.722982,
+          "peak_rss_kib": 7200,
+          "cpu_ms": 21.844,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "a4e896ca3c69c10a6d991efb404fd61c39665a13a4f6ada9212b2ed45988d16a",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 21.216669,
+          "peak_rss_kib": 7204,
+          "cpu_ms": 18.61,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "bf56cbcecc05edbb2564b478b9e07fadde997bb81766e734cf1260542cbc0c8c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 21.953559,
+          "peak_rss_kib": 7204,
+          "cpu_ms": 19.211,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "337406e58ec21f796d220743ce6279c8f1bd0ea2efc1966116e4698d03170b80",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 21.771493,
+          "peak_rss_kib": 7168,
+          "cpu_ms": 18.914,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "824c0c18bebfdf154bc69fef4198d0f71ab029d7a54d87a371874913046c8242",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 20.26668,
+          "peak_rss_kib": 7328,
+          "cpu_ms": 17.589,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "a051441973488a464e08f166097e39ddce7c62d9c4902d0ed68e3f6cd7a49b5c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true
+        }
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 21.771493,
+        "min_ms": 20.26668,
+        "max_ms": 24.722982,
+        "p90_ms": 23.6152128,
+        "p95_ms": 24.1690974,
+        "p99_ms": 24.61220508,
+        "median_peak_rss_kib": 7204
+      }
+    },
+    {
+      "id": "Nift/10000/fresh-full",
+      "pages": 10000,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "samples": [
+        {
+          "wall_ms": 1213.273002,
+          "peak_rss_kib": 17472,
+          "cpu_ms": 4053.657,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "1b1596c076c0be0d5159838ee23a0079931abdc9e90aefa66e610a6413d2c365",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true
+        },
+        {
+          "wall_ms": 1228.761789,
+          "peak_rss_kib": 17216,
+          "cpu_ms": 4124.996,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "bebc628716fe0ae783f9e2cfad54f96bc8c037dc512b66bcede9be53a28c6e3b",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 1218.335349,
+          "peak_rss_kib": 17344,
+          "cpu_ms": 4077.155,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "a878fa0ee5311883873f2a1de5c077a94cf95559610732576419f86ff2ca8967",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 1250.864325,
+          "peak_rss_kib": 17344,
+          "cpu_ms": 4191.155,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "659758496d4c0dcd8d5f825e6775f9e9c49b32096b248154eb136dc439b6bd14",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 1711.283984,
+          "peak_rss_kib": 17088,
+          "cpu_ms": 4430.851,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "0a90e9bc09df8b6a158b9bd9a21a114ac41fe565670a3c901378dd75dbf98958",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 1638.930185,
+          "peak_rss_kib": 17472,
+          "cpu_ms": 4342.721,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "4f034f0bc95d8c57f74344ac8a28dbfde3f9ff26b32d4ab81a5ab000da2a28e3",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true
+        }
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 1250.864325,
+        "min_ms": 1218.335349,
+        "max_ms": 1711.283984,
+        "p90_ms": 1682.3424644,
+        "p95_ms": 1696.8132242,
+        "p99_ms": 1708.3898320399999,
+        "median_peak_rss_kib": 17344
+      }
+    },
+    {
+      "id": "Nift/10000/targeted-one-page",
+      "pages": 10000,
+      "command": [
+        "/opt/nift/nift",
+        "build",
+        "page-1"
+      ],
+      "samples": [
+        {
+          "wall_ms": 165.521377,
+          "peak_rss_kib": 11968,
+          "cpu_ms": 156.518,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "cd509921b4f2d51f1a496e4a3f2863a48cd6cdb09100d5ada0c33f2b34d7a784",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 0,
+          "warmup": true,
+          "correct": true
+        },
+        {
+          "wall_ms": 161.292787,
+          "peak_rss_kib": 12096,
+          "cpu_ms": 152.614,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "a7e62c3f6f1ab99223d6ce83eadb06cc747c0fbfa40e06ab1db7088cf8a6da3b",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 1,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 165.859594,
+          "peak_rss_kib": 11968,
+          "cpu_ms": 156.432,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "65f62c754f0c2d3662d685fa1cfb6b11b1e98c4c8fea3677fb600a4d1ad9a67f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 2,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 169.349988,
+          "peak_rss_kib": 12096,
+          "cpu_ms": 164.798,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "51f603466f297463efbfd8e55797d9433f4861da359930f52147ce54aa339a72",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 3,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 162.00408,
+          "peak_rss_kib": 11968,
+          "cpu_ms": 151.21,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "bb1793327f54ee404c62d5bef61151f87307d025e38847c6f54aca6d668d6ea8",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 4,
+          "warmup": false,
+          "correct": true
+        },
+        {
+          "wall_ms": 163.239836,
+          "peak_rss_kib": 11840,
+          "cpu_ms": 157.479,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "10dec77edb9b52bd994e8d76c55f770da0a7c51683c6a293d5ea3a99aff2e094",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "round": 5,
+          "warmup": false,
+          "correct": true
+        }
+      ],
+      "summary": {
+        "samples": 5,
+        "median_ms": 163.239836,
+        "min_ms": 161.292787,
+        "max_ms": 169.349988,
+        "p90_ms": 167.9538304,
+        "p95_ms": 168.6519092,
+        "p99_ms": 169.21037224,
+        "median_peak_rss_kib": 11968
+      }
+    }
+  ],
+  "notes": [
+    "Serial supplemental cohort on the same dedicated host; keep independent raw samples and full-build references, do not pool with main campaign.",
+    "Explicit target builds one changed leaf; other pages must remain byte-identical and complete output match full rebuild.",
+    "Fresh full reference collected on this node for context; CPU0-3, build threads=-1, uncontrolled OS caches."
+  ]
+}

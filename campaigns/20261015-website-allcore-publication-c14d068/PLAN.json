@@ -1,0 +1,53 @@
+{
+  "campaign": "20261015-website-allcore-publication-c14d068",
+  "candidate": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "candidate_cli_sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb",
+  "suite_sha": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
+  "source_files": {
+    "scripts/campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+    "scripts/targeted_campaign.py": "ae67a829661442bb9f5fbdf10c812868984210ee178c8bcc158b096d2347c5bf",
+    "scripts/benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+    "scripts/campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+    "scripts/measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927",
+    "package.json": "15d0eb1ed6f880efc172ac36c1cb55dfe5887f47501b4e72719d03b155e66519",
+    "package-lock.json": "be19c184061d67a3d99d5e75d9d9ef0c869e3d612aee918f529eaf9d635ab43c"
+  },
+  "policy": {
+    "affinity": "CPU0-3 all processes including all four engines",
+    "nift_build_threads": -1,
+    "hugo_GOMAXPROCS": "unset",
+    "sizes": [
+      100,
+      1000,
+      10000
+    ],
+    "full_modes": [
+      "application-cold",
+      "warm-full"
+    ],
+    "nift_incremental": [
+      "no-op",
+      "one-page",
+      "shared-template"
+    ],
+    "targeted": "separate serial cohort, same host; fresh full reference plus explicit page-1 target at all3sizes",
+    "measured_per_job": 5,
+    "warmups_per_job": 1,
+    "jobs": 39,
+    "measured": 195,
+    "warmups": 39,
+    "observations": 234,
+    "order": "frozen rotating participant order within round; frozen mode/size/case ordering",
+    "clock": "unchanged schema5 C-supervised forkexec-toexit; setup/oracles outside",
+    "rss": "kernel waited-child highwater, not simultaneous process-tree RSS",
+    "oracles": "all routes,title,h1,body; incremental/target full rebuild byte parity and target unrelatedpages unchanged",
+    "node": "24.21.0",
+    "Hugo": "0.167.0",
+    "Astro": "7.3.6",
+    "VitePress": "1.6.4",
+    "no_sampling_profiles_during_timing": true,
+    "failures": "retain failedattemptraw; stop on correctness; no selective reruns"
+  },
+  "adapter": "allcore.py: source-hash guarded execution changes ONLY explicit worker/environment assignments and truthful notes; frozen checkout remains clean",
+  "preflight": "correctness gate required before timing; root authorizes launch after identity review"
+}

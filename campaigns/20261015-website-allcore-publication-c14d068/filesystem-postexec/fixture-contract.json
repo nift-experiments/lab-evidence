@@ -1,0 +1,13 @@
+{
+  "files": [
+    1000,
+    10000,
+    100000
+  ],
+  "relative_path": "group{i%20:02d}/depth{i%3}/bucket{i//1000:03d}/f{i:06d}.{[md,json,cpp,txt,dat][i%5]}",
+  "bytes": "seed=id={i:06d};kind=project;value={i*17+3} newline, repeated/truncated to[96,192,384,768,2048][i%5]",
+  "mtime_unix": 1700000000,
+  "oracle": "sorted allfile[relativepath,0,0] plus everydistinctparentdirectory[relativepath,-1,0]",
+  "source": "frozen scripts/fixtures.py",
+  "error_oracle": "nonzeroexit/missingBOOT/wrongrows/hash/incompleteexit invalidatescell; preservefailures"
+}
