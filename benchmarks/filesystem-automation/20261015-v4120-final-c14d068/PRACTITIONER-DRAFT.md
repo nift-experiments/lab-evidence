@@ -1,0 +1,11 @@
+# Filesystem practitioner assessment — final-candidate draft
+
+Human plus agent: I choose **Python** for a new general filesystem automation script, **Go** for throughput-critical bulk processing, and **Nift** for bounded artifact operations already inside a Nift project. Agent-primary: I choose **Nift** for that existing-project bounded workflow when explicit artifact/input/lifecycle contracts help automation; **Python** for standalone general policy and **Go** for heavy bulk work. These are direct conditional choices, not a productivity benchmark.
+
+AI-DX is a primary independent axis. Explicit input, output ownership, action order, invalidation and lifecycle are distinct useful semantics; helpers should remove duplicated synchronization while preserving them. That is a design judgment. This campaign demonstrates exact output/mutation/reset correctness and edge/exactly-once gates, not autonomous edit success or product-native structured diagnostics. The JSON receipts are harness outputs. Declared benchmark requests and bounded fixture destinations are external contracts, not proof that arbitrary mutations are automatically safe.
+
+Failure evidence is narrower than successful correctness: missing paths error for Nift, unsupported APIs are labelled, and every accepted sample has exact output and fixture mutation validation. Partial-state rollback, automatic recovery, arbitrary symlink/security boundaries and comparative debugging/repair were not evaluated. Do not turn exact reset by the harness into a claim of transactional product recovery.
+
+Native/helper boundaries matter. Portable checksum loops include interpreter/policy work; they are not cryptographic SHA256 or device-bandwidth tests. Native SHA256, stat timestamps and recursive directory deletion remain gaps under the frozen probes. External commands can extend functionality but their boundaries/error handling must stay explicit.
+
+The largest audited competitive wall deficits are listed in competitive-wall-gaps.json. These throughput gaps can outweigh Nift's integration/authoring benefit for bulk trees; explicitness does not confer a universal win. Historical cross-node trends are descriptive; exact-source three-way retained-gain diagnostics remain separate. Raw memory with inherited wait4 floor is preserved and unranked. No Labs publication is authorized.
