@@ -851,3 +851,33 @@ KiB maximum/waited-child high-water, not aggregate process tree; template/concur
 | 115 | build-systems/native-1000-light-j4/generated | 56540.0 | make 56536.0 | 1.00× |
 | 116 | build-systems/native-1000-light-j4/batch10pct | 56668.0 | make 56664.0 | 1.00× |
 | 117 | build-systems/native-10000-light-j4/full | 481136.0 | make 481132.0 | 1.00× |
+
+## Final verified publication and lifecycle
+
+RELEASE-READY. I recommend releasing v4.12 exactc14d068. Officialhosts0; supplementhosts0. Original8 andsupplement2 teardownreceipts verifyCLIabsence/API404 andtemporarySSH/knownhost/config/statecleanup.
+
+Labs source12e9ff2 pushedbefore public7999786; https://lab.nift.dev/benchmarks/ andall8reportHTML bytes matchlocalSHA256. Fullbuild,34HTML/868localrefs,graph/data checks,1440/390/320 browserchecks passed; taskhashoverflowfixed. Storage10,359,588bytes belowunchanged11MiBguard. Historicalgraphs linkedimmutably tooldpublic3225ebc andPNGdownloads toevidenceeeb3afe; priorrawseriesimmutable andunrelatedreportsunchanged. NoNifttag/release/packagescreated.
+
+### Individual lifecycle receipts
+
+- build-systems 108162775: CLI absent=True, API=404, known-host cleanup=True; campaigns/20261015-v4120-final-c14d068/lifecycle/build-systems/teardown.json.
+- concurrency 108162758: CLI absent=True, API=404, known-host cleanup=True; campaigns/20261015-v4120-final-c14d068/lifecycle/concurrency/teardown.json.
+- filesystem-automation 108162735: CLI absent=True, API=404, known-host cleanup=True; campaigns/20261015-v4120-final-c14d068/lifecycle/filesystem-automation/teardown.json.
+- scripting-benchmark 108162749: CLI absent=True, API=404, known-host cleanup=True; campaigns/20261015-v4120-final-c14d068/lifecycle/scripting-benchmark/teardown.json.
+- shell-benchmark 108162738: CLI absent=True, API=404, known-host cleanup=True; campaigns/20261015-v4120-final-c14d068/lifecycle/shell-benchmark/teardown.json.
+- task-runners 108162743: CLI absent=True, API=404, known-host cleanup=True; campaigns/20261015-v4120-final-c14d068/lifecycle/task-runners/teardown.json.
+- template-engines 108162740: CLI absent=True, API=404, known-host cleanup=True; campaigns/20261015-v4120-final-c14d068/lifecycle/template-engines/teardown.json.
+- website-generator-benchmark 108162733: CLI absent=True, API=404, known-host cleanup=True; campaigns/20261015-v4120-final-c14d068/lifecycle/website-generator-benchmark/teardown.json.
+- website-diagnostic-a 108192961: CLI absent=True, API=404, known-host cleanup=True; campaigns/20261015-website-supplement-c14d068/lifecycle/website-diagnostic-a/teardown.json.
+- website-diagnostic-b 108192966: CLI absent=True, API=404, known-host cleanup=True; campaigns/20261015-website-supplement-c14d068/lifecycle/website-diagnostic-b/teardown.json.
+
+### Separate controlled build CPU changes
+
+| Scenario | Baseline | PreviousCPUms | FinalCPUms | Change |
+|---|---|---:|---:|---:|
+| native/1000/noop | original | 190.742 | 213.345 | +11.85% |
+| tiny/10000/noop | original | 1692.026 | 1736.128 | +2.61% |
+| tiny/10000/full | release | 51727.417 | 46060.919 | -10.95% |
+| tiny/10000/noop | release | 2309.891 | 1736.128 | -24.84% |
+| tiny/10000/full | original | 62165.804 | 46060.919 | -25.91% |
+| native/1000/noop | release | 402.150 | 213.345 | -46.95% |

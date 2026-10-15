@@ -158,7 +158,7 @@
   "publication_authorized": "conditional: user0aea1129 brief authorizes relevant Labs benchmark refresh only after all eight official suites independently audited and no major release-blocking regressions; label unreleased exact candidate",
   "tag_release_packages_downloads_authorized": false,
   "ci": "9/9 exact final-SHA workflows independently verified; receipt ci/runs-initial.json",
-  "status": "all8official+required diagnostics audited;0originalhosts;0supplementhosts;bothprivateaccesscleaned;conditionalLabsvalidation underway",
+  "status": "complete: allmeasurements/audits/evidencepushed;all10hostsverifiedabsentandprivateaccesscleaned;conditionalLabsrefreshpublishedverified",
   "forensic_scope": "Available interrupted records contain CI/preparation only, not authoritative eight-suite benchmark job executions",
   "official_cli_sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb",
   "last_reconciled_utc": "2026-10-15T04:32:21.285030+00:00",
@@ -181,5 +181,11 @@
     "filesystem_observations": 15016,
     "build_diagnostic_observations": 180
   },
-  "release_recommendation": "RELEASE-READY: no remaining identified material release-blocking regression; recommend release exactc14; no tag/package authorization"
+  "release_recommendation": "RELEASE-READY: no remaining identified material release-blocking regression; recommend release exactc14; no tag/package authorization",
+  "publication_status": {
+    "source_commit": "12e9ff2",
+    "public_commit": "7999786",
+    "live_all9_html_sha256_match": true,
+    "tag_release_packages_created": false
+  }
 }

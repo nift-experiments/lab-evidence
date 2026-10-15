@@ -1,7 +1,5 @@
-# Website supplemental investigation — executing
+# Website supplemental investigation — CLOSED
 
-Two user-authorized fresh dedicated hosts provisioned: A108192961, B108192966. Securehelper /tmp/nift-website-supplement-cloud.py; private state separate from originaleight-suite campaign. Exactsource/tool preparation and planfreeze in progress. No supplemental performance result exists yet. Officialseries unchanged; originalbuild/filesystem timing untouched.
+All276unique retainedtimings/228measured48warmups,552manifests/2.76millionoutputfingerprints and8profileattempts independentlyaudited. Useramendment canceled future1/2/4 rows; originalA121/B48preserved, newv3107and13linkedreplaynotdoublecounted. See EMPIRICAL-FINDINGS.md andCOMPLETION.json.
 
-Direct user amendment: Nift-1 versus Hugounset/default, whole4vCPU host. Stop scheduling unneeded1/2/4 scaling at sample boundary; retain all prior observations and planversions. HostB already completed48 earlier-plan observations, retained as prior-plan diagnostics. Controller amendment is in progress; no official data replaced.
-
-Amendedv3 timings complete107newobservations+13linkedHugo replay rows, allreportedcorrect; independentaudit/collection in progress. All8separateprofileattempts complete. PreliminarynewdefaultcohortA freshNift1194.468/Hugo1635.544ms,warm803.743/1436.616ms. Do notpoolwitholdA121/B48 orofficialsingleCPU. ObservedNift10001internalfiles6,584,541bytes areadditionalwork, not precise attributionofold393msgap.
+Evidencepushed19e3901;A108192961/B108192966 deleted andCLIabsence/API404verified;separateprivateSSH/config/statecleanup complete. AuditedsupplementdistinctfromofficialCPU0series ispublishedinLabs7999786. Noadditionaltimingneeded;exacthistoricalhostcausaldecomposition unresolvedandqualified.
