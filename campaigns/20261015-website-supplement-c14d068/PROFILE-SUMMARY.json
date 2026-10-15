@@ -1,0 +1,658 @@
+{
+  "kind": "instrumentedcounts/leads,notlatencybenchmarks",
+  "rows": [
+    {
+      "engine": "Nift",
+      "mode": "fresh",
+      "syscalls": {
+        "futex": {
+          "calls": 253,
+          "errors": 77
+        },
+        "newfstatat": {
+          "calls": 140033,
+          "errors": 50009
+        },
+        "openat": {
+          "calls": 40020,
+          "errors": 0
+        },
+        "lseek": {
+          "calls": 60019,
+          "errors": 0
+        },
+        "close": {
+          "calls": 40020,
+          "errors": 0
+        },
+        "write": {
+          "calls": 20002,
+          "errors": 0
+        },
+        "readlink": {
+          "calls": 30000,
+          "errors": 30000
+        },
+        "rename": {
+          "calls": 10000,
+          "errors": 0
+        },
+        "chmod": {
+          "calls": 20000,
+          "errors": 0
+        },
+        "read": {
+          "calls": 20011,
+          "errors": 0
+        },
+        "getpid": {
+          "calls": 10000,
+          "errors": 0
+        },
+        "mprotect": {
+          "calls": 534,
+          "errors": 0
+        },
+        "getdents64": {
+          "calls": 18,
+          "errors": 0
+        },
+        "mkdir": {
+          "calls": 6,
+          "errors": 4
+        },
+        "execve": {
+          "calls": 1,
+          "errors": 0
+        },
+        "mmap": {
+          "calls": 34,
+          "errors": 0
+        },
+        "munmap": {
+          "calls": 8,
+          "errors": 0
+        },
+        "rt_sigprocmask": {
+          "calls": 17,
+          "errors": 0
+        },
+        "clone3": {
+          "calls": 4,
+          "errors": 0
+        },
+        "madvise": {
+          "calls": 4,
+          "errors": 0
+        },
+        "fstat": {
+          "calls": 12,
+          "errors": 0
+        },
+        "brk": {
+          "calls": 17,
+          "errors": 0
+        },
+        "rseq": {
+          "calls": 5,
+          "errors": 0
+        },
+        "set_robust_list": {
+          "calls": 5,
+          "errors": 0
+        },
+        "unlink": {
+          "calls": 1,
+          "errors": 0
+        },
+        "fsync": {
+          "calls": 4,
+          "errors": 0
+        },
+        "pread64": {
+          "calls": 2,
+          "errors": 0
+        },
+        "access": {
+          "calls": 1,
+          "errors": 1
+        },
+        "ioctl": {
+          "calls": 3,
+          "errors": 3
+        },
+        "arch_prctl": {
+          "calls": 1,
+          "errors": 0
+        },
+        "set_tid_address": {
+          "calls": 1,
+          "errors": 0
+        },
+        "flock": {
+          "calls": 3,
+          "errors": 0
+        },
+        "rt_sigaction": {
+          "calls": 1,
+          "errors": 0
+        },
+        "getcwd": {
+          "calls": 1,
+          "errors": 0
+        },
+        "prlimit64": {
+          "calls": 1,
+          "errors": 0
+        },
+        "getrandom": {
+          "calls": 1,
+          "errors": 0
+        }
+      },
+      "perf_samples": 368,
+      "lost_samples": 0,
+      "user_symbol_limit": "C++symbolsavailable; hundredsamplesonly"
+    },
+    {
+      "engine": "Nift",
+      "mode": "warm-full",
+      "syscalls": {
+        "futex": {
+          "calls": 380,
+          "errors": 119
+        },
+        "newfstatat": {
+          "calls": 190026,
+          "errors": 30005
+        },
+        "lseek": {
+          "calls": 90018,
+          "errors": 0
+        },
+        "openat": {
+          "calls": 60019,
+          "errors": 0
+        },
+        "close": {
+          "calls": 60019,
+          "errors": 0
+        },
+        "read": {
+          "calls": 40011,
+          "errors": 0
+        },
+        "readlink": {
+          "calls": 30000,
+          "errors": 30000
+        },
+        "write": {
+          "calls": 10001,
+          "errors": 0
+        },
+        "utimensat": {
+          "calls": 10000,
+          "errors": 0
+        },
+        "chmod": {
+          "calls": 10000,
+          "errors": 0
+        },
+        "mprotect": {
+          "calls": 548,
+          "errors": 0
+        },
+        "getdents64": {
+          "calls": 30,
+          "errors": 0
+        },
+        "clone3": {
+          "calls": 4,
+          "errors": 0
+        },
+        "mmap": {
+          "calls": 34,
+          "errors": 0
+        },
+        "munmap": {
+          "calls": 9,
+          "errors": 0
+        },
+        "rt_sigprocmask": {
+          "calls": 17,
+          "errors": 0
+        },
+        "mkdir": {
+          "calls": 2,
+          "errors": 1
+        },
+        "set_robust_list": {
+          "calls": 5,
+          "errors": 0
+        },
+        "rseq": {
+          "calls": 5,
+          "errors": 0
+        },
+        "madvise": {
+          "calls": 4,
+          "errors": 0
+        },
+        "fstat": {
+          "calls": 11,
+          "errors": 0
+        },
+        "brk": {
+          "calls": 17,
+          "errors": 0
+        },
+        "ioctl": {
+          "calls": 3,
+          "errors": 3
+        },
+        "rt_sigaction": {
+          "calls": 1,
+          "errors": 0
+        },
+        "getcwd": {
+          "calls": 1,
+          "errors": 0
+        },
+        "fsync": {
+          "calls": 2,
+          "errors": 0
+        },
+        "flock": {
+          "calls": 3,
+          "errors": 0
+        },
+        "pread64": {
+          "calls": 2,
+          "errors": 0
+        },
+        "access": {
+          "calls": 1,
+          "errors": 1
+        },
+        "execve": {
+          "calls": 1,
+          "errors": 0
+        },
+        "unlink": {
+          "calls": 1,
+          "errors": 0
+        },
+        "arch_prctl": {
+          "calls": 1,
+          "errors": 0
+        },
+        "set_tid_address": {
+          "calls": 1,
+          "errors": 0
+        },
+        "prlimit64": {
+          "calls": 1,
+          "errors": 0
+        },
+        "getrandom": {
+          "calls": 1,
+          "errors": 0
+        }
+      },
+      "perf_samples": 265,
+      "lost_samples": 0,
+      "user_symbol_limit": "C++symbolsavailable; hundredsamplesonly"
+    },
+    {
+      "engine": "Hugo",
+      "mode": "fresh",
+      "syscalls": {
+        "futex": {
+          "calls": 3592,
+          "errors": 328
+        },
+        "nanosleep": {
+          "calls": 24204,
+          "errors": 1
+        },
+        "epoll_pwait": {
+          "calls": 48,
+          "errors": 0
+        },
+        "fcntl": {
+          "calls": 80050,
+          "errors": 0
+        },
+        "openat": {
+          "calls": 20023,
+          "errors": 6
+        },
+        "write": {
+          "calls": 10000,
+          "errors": 0
+        },
+        "close": {
+          "calls": 20016,
+          "errors": 0
+        },
+        "epoll_ctl": {
+          "calls": 20015,
+          "errors": 20010
+        },
+        "newfstatat": {
+          "calls": 20057,
+          "errors": 44
+        },
+        "read": {
+          "calls": 20014,
+          "errors": 0
+        },
+        "tgkill": {
+          "calls": 817,
+          "errors": 0
+        },
+        "rt_sigreturn": {
+          "calls": 817,
+          "errors": 9
+        },
+        "getpid": {
+          "calls": 817,
+          "errors": 0
+        },
+        "getdents64": {
+          "calls": 49,
+          "errors": 0
+        },
+        "mmap": {
+          "calls": 120,
+          "errors": 0
+        },
+        "sched_yield": {
+          "calls": 159,
+          "errors": 0
+        },
+        "prctl": {
+          "calls": 120,
+          "errors": 0
+        },
+        "clone": {
+          "calls": 7,
+          "errors": 0
+        },
+        "rt_sigaction": {
+          "calls": 112,
+          "errors": 0
+        },
+        "pread64": {
+          "calls": 20,
+          "errors": 0
+        },
+        "sigaltstack": {
+          "calls": 16,
+          "errors": 0
+        },
+        "rt_sigprocmask": {
+          "calls": 23,
+          "errors": 0
+        },
+        "sched_getaffinity": {
+          "calls": 12,
+          "errors": 0
+        },
+        "munmap": {
+          "calls": 5,
+          "errors": 0
+        },
+        "gettid": {
+          "calls": 15,
+          "errors": 0
+        },
+        "mkdirat": {
+          "calls": 2,
+          "errors": 0
+        },
+        "ioctl": {
+          "calls": 9,
+          "errors": 9
+        },
+        "flock": {
+          "calls": 2,
+          "errors": 0
+        },
+        "getcwd": {
+          "calls": 3,
+          "errors": 0
+        },
+        "readlinkat": {
+          "calls": 1,
+          "errors": 0
+        },
+        "sysinfo": {
+          "calls": 1,
+          "errors": 0
+        },
+        "epoll_create1": {
+          "calls": 1,
+          "errors": 0
+        },
+        "eventfd2": {
+          "calls": 1,
+          "errors": 0
+        },
+        "fstat": {
+          "calls": 2,
+          "errors": 0
+        },
+        "getuid": {
+          "calls": 1,
+          "errors": 0
+        },
+        "uname": {
+          "calls": 1,
+          "errors": 0
+        },
+        "faccessat2": {
+          "calls": 1,
+          "errors": 0
+        },
+        "madvise": {
+          "calls": 2,
+          "errors": 0
+        },
+        "execve": {
+          "calls": 1,
+          "errors": 0
+        },
+        "arch_prctl": {
+          "calls": 1,
+          "errors": 0
+        },
+        "prlimit64": {
+          "calls": 2,
+          "errors": 0
+        }
+      },
+      "perf_samples": 382,
+      "lost_samples": 0,
+      "user_symbol_limit": "strippedHugouserspaceaddressesnotreliablyattributed"
+    },
+    {
+      "engine": "Hugo",
+      "mode": "warm-full",
+      "syscalls": {
+        "futex": {
+          "calls": 4659,
+          "errors": 293
+        },
+        "nanosleep": {
+          "calls": 29290,
+          "errors": 0
+        },
+        "epoll_pwait": {
+          "calls": 47,
+          "errors": 0
+        },
+        "fcntl": {
+          "calls": 80050,
+          "errors": 0
+        },
+        "openat": {
+          "calls": 20022,
+          "errors": 5
+        },
+        "write": {
+          "calls": 10000,
+          "errors": 0
+        },
+        "close": {
+          "calls": 20016,
+          "errors": 0
+        },
+        "epoll_ctl": {
+          "calls": 20015,
+          "errors": 20010
+        },
+        "read": {
+          "calls": 20014,
+          "errors": 0
+        },
+        "newfstatat": {
+          "calls": 20058,
+          "errors": 45
+        },
+        "tgkill": {
+          "calls": 932,
+          "errors": 0
+        },
+        "rt_sigreturn": {
+          "calls": 932,
+          "errors": 7
+        },
+        "getpid": {
+          "calls": 932,
+          "errors": 0
+        },
+        "sched_yield": {
+          "calls": 184,
+          "errors": 0
+        },
+        "getdents64": {
+          "calls": 49,
+          "errors": 0
+        },
+        "mmap": {
+          "calls": 122,
+          "errors": 0
+        },
+        "prctl": {
+          "calls": 122,
+          "errors": 0
+        },
+        "clone": {
+          "calls": 7,
+          "errors": 0
+        },
+        "pread64": {
+          "calls": 21,
+          "errors": 0
+        },
+        "rt_sigaction": {
+          "calls": 112,
+          "errors": 0
+        },
+        "rt_sigprocmask": {
+          "calls": 23,
+          "errors": 0
+        },
+        "sched_getaffinity": {
+          "calls": 13,
+          "errors": 0
+        },
+        "gettid": {
+          "calls": 15,
+          "errors": 0
+        },
+        "sigaltstack": {
+          "calls": 16,
+          "errors": 0
+        },
+        "getuid": {
+          "calls": 1,
+          "errors": 0
+        },
+        "munmap": {
+          "calls": 5,
+          "errors": 0
+        },
+        "mkdirat": {
+          "calls": 3,
+          "errors": 2
+        },
+        "flock": {
+          "calls": 2,
+          "errors": 0
+        },
+        "ioctl": {
+          "calls": 9,
+          "errors": 9
+        },
+        "fstat": {
+          "calls": 2,
+          "errors": 0
+        },
+        "readlinkat": {
+          "calls": 1,
+          "errors": 0
+        },
+        "getcwd": {
+          "calls": 3,
+          "errors": 0
+        },
+        "prlimit64": {
+          "calls": 2,
+          "errors": 0
+        },
+        "eventfd2": {
+          "calls": 1,
+          "errors": 0
+        },
+        "uname": {
+          "calls": 1,
+          "errors": 0
+        },
+        "epoll_create1": {
+          "calls": 1,
+          "errors": 0
+        },
+        "faccessat2": {
+          "calls": 1,
+          "errors": 0
+        },
+        "madvise": {
+          "calls": 2,
+          "errors": 0
+        },
+        "execve": {
+          "calls": 1,
+          "errors": 0
+        },
+        "sysinfo": {
+          "calls": 1,
+          "errors": 0
+        },
+        "arch_prctl": {
+          "calls": 1,
+          "errors": 0
+        }
+      },
+      "perf_samples": 394,
+      "lost_samples": 0,
+      "user_symbol_limit": "strippedHugouserspaceaddressesnotreliablyattributed"
+    }
+  ],
+  "warnings": [
+    "strace totals include multithread waits and observer distortion; syscall counts do not equal cost",
+    "morewarmcalls canstillbefaster becausepercallcosts/state/filecreationdiffer",
+    "Hugostrippeduserspacesymbolslimitphaseattribution; do notinventMarkdown/GCpercentages"
+  ]
+}

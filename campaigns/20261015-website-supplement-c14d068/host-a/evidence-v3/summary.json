@@ -1,0 +1,412 @@
+{
+  "rows": [
+    {
+      "phase": "defaults-main",
+      "engine": "Nift",
+      "workers": "default",
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "defaults-main-Nift-default-fresh-current-none",
+      "samples": 5,
+      "median_ms": 1194.46785,
+      "min_ms": 1122.922402,
+      "max_ms": 1458.842901,
+      "median_cpu_ms": 3938.726,
+      "median_peak_rss_kib": 17468
+    },
+    {
+      "phase": "defaults-main",
+      "engine": "Nift",
+      "workers": "default",
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "defaults-main-Nift-default-warm-full-current-none",
+      "samples": 5,
+      "median_ms": 803.743008,
+      "min_ms": 782.887015,
+      "max_ms": 847.675902,
+      "median_cpu_ms": 2718.638,
+      "median_peak_rss_kib": 17728
+    },
+    {
+      "phase": "defaults-main",
+      "engine": "Hugo",
+      "workers": "default",
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "defaults-main-Hugo-default-fresh-current-none",
+      "samples": 5,
+      "median_ms": 1635.543509,
+      "min_ms": 1324.988569,
+      "max_ms": 2667.727892,
+      "median_cpu_ms": 3841.195,
+      "median_peak_rss_kib": 250088
+    },
+    {
+      "phase": "defaults-main",
+      "engine": "Hugo",
+      "workers": "default",
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "defaults-main-Hugo-default-warm-full-current-none",
+      "samples": 5,
+      "median_ms": 1436.615542,
+      "min_ms": 1337.353472,
+      "max_ms": 1558.177595,
+      "median_cpu_ms": 3250.87,
+      "median_peak_rss_kib": 246256
+    },
+    {
+      "phase": "replay",
+      "engine": "Hugo",
+      "workers": 1,
+      "mode": "fresh",
+      "harness": "historical",
+      "observer": "none",
+      "affinity": [
+        0
+      ],
+      "job_id": "replay-Hugo-1-fresh-historical-none",
+      "samples": 5,
+      "median_ms": 2750.020077,
+      "min_ms": 2609.359525,
+      "max_ms": 4021.923676,
+      "median_cpu_ms": 2746.171,
+      "median_peak_rss_kib": 253312
+    },
+    {
+      "phase": "replay",
+      "engine": "Hugo",
+      "workers": 1,
+      "mode": "warm-full",
+      "harness": "historical",
+      "observer": "none",
+      "affinity": [
+        0
+      ],
+      "job_id": "replay-Hugo-1-warm-full-historical-none",
+      "samples": 5,
+      "median_ms": 2697.703123,
+      "min_ms": 2492.164865,
+      "max_ms": 2796.450641,
+      "median_cpu_ms": 2694.126,
+      "median_peak_rss_kib": 255744
+    },
+    {
+      "phase": "replay",
+      "engine": "Hugo",
+      "workers": 1,
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0
+      ],
+      "job_id": "replay-Hugo-1-fresh-current-none",
+      "samples": 5,
+      "median_ms": 2644.856984,
+      "min_ms": 2474.044371,
+      "max_ms": 3287.218124,
+      "median_cpu_ms": 2641.292,
+      "median_peak_rss_kib": 255868
+    },
+    {
+      "phase": "replay",
+      "engine": "Hugo",
+      "workers": 1,
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0
+      ],
+      "job_id": "replay-Hugo-1-warm-full-current-none",
+      "samples": 5,
+      "median_ms": 2779.249825,
+      "min_ms": 2529.104915,
+      "max_ms": 2859.409232,
+      "median_cpu_ms": 2775.416,
+      "median_peak_rss_kib": 257024
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Nift",
+      "workers": "default",
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Nift-default-fresh-current-none",
+      "samples": 5,
+      "median_ms": 1211.329244,
+      "min_ms": 1097.190024,
+      "max_ms": 1299.807014,
+      "median_cpu_ms": 4022.551,
+      "median_peak_rss_kib": 17212
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Nift",
+      "workers": "default",
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "GNU-time-only",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Nift-default-fresh-current-GNU-time-only",
+      "samples": 5,
+      "median_ms": 1168.025175999901,
+      "min_ms": 1068.6265360000107,
+      "max_ms": 1268.8220709999314,
+      "median_cpu_ms": 3760.0000000000005,
+      "median_peak_rss_kib": 17468
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Nift",
+      "workers": "default",
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "proc50ms+GNU-time",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Nift-default-fresh-current-proc50ms+GNU-time",
+      "samples": 5,
+      "median_ms": 1116.9248610001432,
+      "min_ms": 1066.0942599999998,
+      "max_ms": 1217.1731060000184,
+      "median_cpu_ms": 3560.0,
+      "median_peak_rss_kib": 17468
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Nift",
+      "workers": "default",
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Nift-default-warm-full-current-none",
+      "samples": 5,
+      "median_ms": 827.313022,
+      "min_ms": 806.288542,
+      "max_ms": 873.752323,
+      "median_cpu_ms": 2841.641,
+      "median_peak_rss_kib": 18112
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Nift",
+      "workers": "default",
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "GNU-time-only",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Nift-default-warm-full-current-GNU-time-only",
+      "samples": 5,
+      "median_ms": 870.5686179998793,
+      "min_ms": 867.8335960000823,
+      "max_ms": 970.1479650000238,
+      "median_cpu_ms": 2830.0,
+      "median_peak_rss_kib": 17984
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Nift",
+      "workers": "default",
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "proc50ms+GNU-time",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Nift-default-warm-full-current-proc50ms+GNU-time",
+      "samples": 5,
+      "median_ms": 865.8334849999392,
+      "min_ms": 861.9831729999987,
+      "max_ms": 1029.0287430000262,
+      "median_cpu_ms": 2840.0,
+      "median_peak_rss_kib": 17980
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Hugo",
+      "workers": "default",
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Hugo-default-fresh-current-none",
+      "samples": 5,
+      "median_ms": 1742.890096,
+      "min_ms": 1622.119837,
+      "max_ms": 2599.054995,
+      "median_cpu_ms": 3895.762,
+      "median_peak_rss_kib": 249088
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Hugo",
+      "workers": "default",
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "GNU-time-only",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Hugo-default-fresh-current-GNU-time-only",
+      "samples": 5,
+      "median_ms": 1835.5395800001588,
+      "min_ms": 1471.2101760001133,
+      "max_ms": 2538.4487599999375,
+      "median_cpu_ms": 4100.0,
+      "median_peak_rss_kib": 238080
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Hugo",
+      "workers": "default",
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "proc50ms+GNU-time",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Hugo-default-fresh-current-proc50ms+GNU-time",
+      "samples": 5,
+      "median_ms": 1421.9757349999327,
+      "min_ms": 1370.0714320000316,
+      "max_ms": 1598.7643380001373,
+      "median_cpu_ms": 3219.9999999999995,
+      "median_peak_rss_kib": 233216
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Hugo",
+      "workers": "default",
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Hugo-default-warm-full-current-none",
+      "samples": 5,
+      "median_ms": 1491.788251,
+      "min_ms": 1428.309847,
+      "max_ms": 1651.852593,
+      "median_cpu_ms": 3380.094,
+      "median_peak_rss_kib": 240116
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Hugo",
+      "workers": "default",
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "GNU-time-only",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Hugo-default-warm-full-current-GNU-time-only",
+      "samples": 5,
+      "median_ms": 1581.7429759999868,
+      "min_ms": 1471.9533400000273,
+      "max_ms": 1827.7732159999687,
+      "median_cpu_ms": 3410.0,
+      "median_peak_rss_kib": 241536
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Hugo",
+      "workers": "default",
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "proc50ms+GNU-time",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Hugo-default-warm-full-current-proc50ms+GNU-time",
+      "samples": 5,
+      "median_ms": 1477.350050000041,
+      "min_ms": 1422.2554100001616,
+      "max_ms": 1624.3101040001875,
+      "median_cpu_ms": 3250.0,
+      "median_peak_rss_kib": 249088
+    }
+  ]
+}

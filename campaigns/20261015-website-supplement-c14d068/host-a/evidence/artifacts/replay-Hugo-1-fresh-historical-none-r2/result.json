@@ -1,0 +1,76 @@
+{
+  "spec": {
+    "phase": "replay",
+    "engine": "Hugo",
+    "workers": 1,
+    "mode": "fresh",
+    "harness": "historical",
+    "observer": "none",
+    "affinity": [
+      0
+    ],
+    "job_id": "replay-Hugo-1-fresh-historical-none",
+    "round": 2,
+    "warmup": false,
+    "id": "replay-Hugo-1-fresh-historical-none-r2"
+  },
+  "warm_policy": "persistent fixture; remove only outputs before each observation, first round warmup initially unbuilt, retain internal state thereafter",
+  "command": [
+    "/opt/supplement/tools/hugo",
+    "--quiet",
+    "--destination",
+    "public"
+  ],
+  "env_controls": {
+    "GOMAXPROCS": "1",
+    "CI": "1"
+  },
+  "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+  "suite_sha": "4947b42c863782ba6be0fdbbd2003d60d6d0d3d4",
+  "harness_sha256": {
+    "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+    "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+    "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+    "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+  },
+  "input": {
+    "files": 10002,
+    "bytes": 1046878,
+    "tree_sha256": "8532899237934a42571a3afcde8049d4d5e993680ac43f719505aa629de4a8a2"
+  },
+  "correct": true,
+  "wall_ms": 2609.359525,
+  "peak_rss_kib": 248064,
+  "cpu_ms": 2605.746,
+  "exit_code": 0,
+  "timeout": false,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "validation": {
+    "routes": 10000,
+    "content_checked": 10000
+  },
+  "output": {
+    "files": 10000,
+    "bytes": 1327780,
+    "tree_sha256": "9d26fd8a9f1b7738c6f6f362a7fe201be050af218445fa23e964bd1c3c28b67e"
+  },
+  "telemetry_before": {
+    "stat": "cpu  72291 302 40727 283399 827 0 192 48 0 0\ncpu0 20253 0 13276 65161 160 0 68 12 0 0\ncpu1 18046 185 9335 71589 327 0 57 11 0 0\ncpu2 18742 116 8398 72021 200 0 33 12 0 0\ncpu3 15249 0 9717 74627 137 0 33 11 0 0\nintr 2350346 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49571 31621 16828 13101 0 303 323 6059 2337 320 354 3050 987 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1681492\nbtime 1792037221\nprocesses 13902\nprocs_running 1\nprocs_blocked 0\nsoftirq 944536 0 85277 1 12786 11 0 15 203180 0 643266\n",
+    "meminfo": "MemTotal:        8131788 kB\nMemFree:         3584980 kB\nMemAvailable:    7576316 kB\nBuffers:          124356 kB\nCached:          3509532 kB\nSwapCached:            0 kB\nActive:           227728 kB\nInactive:        3462984 kB\nActive(anon):      57828 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3462984 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            119676 kB\nWriteback:             0 kB\nAnonPages:         56840 kB\nMapped:            45028 kB\nShmem:               988 kB\nKReclaimable:     667980 kB\nSlab:             776344 kB\nSReclaimable:     667980 kB\nSUnreclaim:       108364 kB\nKernelStack:        2176 kB\nPageTables:         1836 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     146692 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16252 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+    "loadavg": "1.11 1.18 0.84 1/134 13899\n",
+    "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14471 9143 709312 8503 111398 1259464 15093608 42401 0 32346 52329 0 0 0 0 40154 1423\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+    "pressure/cpu": "some avg10=1.01 avg60=1.19 avg300=0.63 total=7510664\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+    "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.02 total=4729743\nfull avg10=0.00 avg60=0.00 avg300=0.01 total=4188381\n",
+    "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+  },
+  "telemetry_after": {
+    "stat": "cpu  72713 302 40929 285299 829 0 192 48 0 0\ncpu0 20674 0 13477 65163 162 0 68 12 0 0\ncpu1 18046 185 9335 72221 327 0 57 11 0 0\ncpu2 18742 116 8399 72653 200 0 33 12 0 0\ncpu3 15249 0 9717 75260 137 0 33 11 0 0\nintr 2360158 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49809 31625 16837 13101 0 306 325 6059 2337 323 356 3050 987 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1688542\nbtime 1792037221\nprocesses 13913\nprocs_running 1\nprocs_blocked 0\nsoftirq 945844 0 85596 1 12796 11 0 15 203437 0 643988\n",
+    "meminfo": "MemTotal:        8131788 kB\nMemFree:         3305680 kB\nMemAvailable:    7408168 kB\nBuffers:          124376 kB\nCached:          3591872 kB\nSwapCached:            0 kB\nActive:           246328 kB\nInactive:        3545340 kB\nActive(anon):      76428 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3545340 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            200944 kB\nWriteback:             0 kB\nAnonPages:         75444 kB\nMapped:            45096 kB\nShmem:               988 kB\nKReclaimable:     696776 kB\nSlab:             807388 kB\nSReclaimable:     696776 kB\nSUnreclaim:       110612 kB\nKernelStack:        2192 kB\nPageTables:         1968 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     164840 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16252 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+    "loadavg": "1.09 1.17 0.85 1/134 13910\n",
+    "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14471 9143 709312 8503 112882 1262417 15131448 42828 0 32382 52756 0 0 0 0 40156 1423\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+    "pressure/cpu": "some avg10=1.55 avg60=1.27 avg300=0.66 total=7645706\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+    "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.02 total=4755184\nfull avg10=0.00 avg60=0.00 avg300=0.01 total=4211369\n",
+    "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+  }
+}

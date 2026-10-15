@@ -1,10 +1,12 @@
 {
-  "checked_utc": "2026-10-15T04:31:20.005941+00:00",
+  "checked_utc": "2026-10-15T05:06:29.795754+00:00",
   "build": {
-    "observations": 9250,
+    "observations": 9348,
     "expected": 9348,
-    "state": "running",
-    "latest_gate": "tiny10000lightj4noop n100 passed"
+    "state": "primary9348 accepted; exact three-way diagnostic active",
+    "latest_gate": "all291cells/9348observations accepted",
+    "diagnostic_observations": 81,
+    "diagnostic_expected": 180
   },
   "task": {
     "observations": 1527,
@@ -15,7 +17,7 @@
     "diagnostic_observations": 18
   },
   "new_failures": false,
-  "official_complete": false,
-  "three_way_diagnostic": "held until full build timing completes",
+  "official_complete": true,
+  "three_way_diagnostic": "81/180, native1000 heavy one-worker no-op",
   "core_or_Labs_changes": false
 }

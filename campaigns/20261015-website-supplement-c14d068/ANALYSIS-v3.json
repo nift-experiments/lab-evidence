@@ -1,0 +1,1291 @@
+{
+  "main": {
+    "Nift": {
+      "fresh": {
+        "samples": 5,
+        "median_ms": 1194.46785,
+        "min_ms": 1122.922402,
+        "max_ms": 1458.842901,
+        "median_cpu_ms": 3938.726,
+        "cpu_wall_percent": 329.7473431369459,
+        "median_peak_rss_kib": 17468
+      },
+      "warm-full": {
+        "samples": 5,
+        "median_ms": 803.743008,
+        "min_ms": 782.887015,
+        "max_ms": 847.675902,
+        "median_cpu_ms": 2718.638,
+        "cpu_wall_percent": 338.2471726584525,
+        "median_peak_rss_kib": 17728
+      },
+      "fresh_minus_warm_ms": 390.72484199999997
+    },
+    "Hugo": {
+      "fresh": {
+        "samples": 5,
+        "median_ms": 1635.543509,
+        "min_ms": 1324.988569,
+        "max_ms": 2667.727892,
+        "median_cpu_ms": 3841.195,
+        "cpu_wall_percent": 234.85740237803725,
+        "median_peak_rss_kib": 250088
+      },
+      "warm-full": {
+        "samples": 5,
+        "median_ms": 1436.615542,
+        "min_ms": 1337.353472,
+        "max_ms": 1558.177595,
+        "median_cpu_ms": 3250.87,
+        "cpu_wall_percent": 226.28670684393862,
+        "median_peak_rss_kib": 246256
+      },
+      "fresh_minus_warm_ms": 198.92796700000008
+    }
+  },
+  "Nift_over_Hugo_fresh": 0.73031860260955,
+  "Nift_over_Hugo_warm": 0.5594697986359388,
+  "observer_controls": [
+    {
+      "engine": "Nift",
+      "mode": "fresh",
+      "observer": "none",
+      "samples": 5,
+      "median_ms": 1211.329244,
+      "min_ms": 1097.190024,
+      "max_ms": 1299.807014,
+      "median_cpu_ms": 4022.551,
+      "cpu_wall_percent": 332.077428157922,
+      "median_peak_rss_kib": 17212,
+      "median_delta_vs_unobserved_ms": 0.0,
+      "percent_vs_unobserved": 0.0
+    },
+    {
+      "engine": "Nift",
+      "mode": "fresh",
+      "observer": "GNU-time-only",
+      "samples": 5,
+      "median_ms": 1168.025175999901,
+      "min_ms": 1068.6265360000107,
+      "max_ms": 1268.8220709999314,
+      "median_cpu_ms": 3760.0000000000005,
+      "cpu_wall_percent": 321.9108694965595,
+      "median_peak_rss_kib": 17468,
+      "median_delta_vs_unobserved_ms": -43.30406800009905,
+      "percent_vs_unobserved": -3.5749213696106397,
+      "median_user_ms": 1070.0,
+      "median_system_ms": 2660.0
+    },
+    {
+      "engine": "Nift",
+      "mode": "fresh",
+      "observer": "proc50ms+GNU-time",
+      "samples": 5,
+      "median_ms": 1116.9248610001432,
+      "min_ms": 1066.0942599999998,
+      "max_ms": 1217.1731060000184,
+      "median_cpu_ms": 3560.0,
+      "cpu_wall_percent": 318.73227325356703,
+      "median_peak_rss_kib": 17468,
+      "median_delta_vs_unobserved_ms": -94.40438299985681,
+      "percent_vs_unobserved": -7.793453635125546,
+      "median_user_ms": 1090.0,
+      "median_system_ms": 2500.0,
+      "median_max_total_sampled_threads_including_time_wrapper": 6,
+      "proc_sample_counts": [
+        24,
+        21,
+        22,
+        22,
+        23
+      ]
+    },
+    {
+      "engine": "Nift",
+      "mode": "warm-full",
+      "observer": "none",
+      "samples": 5,
+      "median_ms": 827.313022,
+      "min_ms": 806.288542,
+      "max_ms": 873.752323,
+      "median_cpu_ms": 2841.641,
+      "cpu_wall_percent": 343.47833582148064,
+      "median_peak_rss_kib": 18112,
+      "median_delta_vs_unobserved_ms": 0.0,
+      "percent_vs_unobserved": 0.0
+    },
+    {
+      "engine": "Nift",
+      "mode": "warm-full",
+      "observer": "GNU-time-only",
+      "samples": 5,
+      "median_ms": 870.5686179998793,
+      "min_ms": 867.8335960000823,
+      "max_ms": 970.1479650000238,
+      "median_cpu_ms": 2830.0,
+      "cpu_wall_percent": 325.07489260316896,
+      "median_peak_rss_kib": 17984,
+      "median_delta_vs_unobserved_ms": 43.25559599987923,
+      "percent_vs_unobserved": 5.228443750989231,
+      "median_user_ms": 1230.0,
+      "median_system_ms": 1630.0
+    },
+    {
+      "engine": "Nift",
+      "mode": "warm-full",
+      "observer": "proc50ms+GNU-time",
+      "samples": 5,
+      "median_ms": 865.8334849999392,
+      "min_ms": 861.9831729999987,
+      "max_ms": 1029.0287430000262,
+      "median_cpu_ms": 2840.0,
+      "cpu_wall_percent": 328.00764225469976,
+      "median_peak_rss_kib": 17980,
+      "median_delta_vs_unobserved_ms": 38.52046299993913,
+      "percent_vs_unobserved": 4.656092914724974,
+      "median_user_ms": 1260.0,
+      "median_system_ms": 1620.0,
+      "median_max_total_sampled_threads_including_time_wrapper": 6,
+      "proc_sample_counts": [
+        17,
+        17,
+        17,
+        20,
+        17
+      ]
+    },
+    {
+      "engine": "Hugo",
+      "mode": "fresh",
+      "observer": "none",
+      "samples": 5,
+      "median_ms": 1742.890096,
+      "min_ms": 1622.119837,
+      "max_ms": 2599.054995,
+      "median_cpu_ms": 3895.762,
+      "cpu_wall_percent": 223.52310159664825,
+      "median_peak_rss_kib": 249088,
+      "median_delta_vs_unobserved_ms": 0.0,
+      "percent_vs_unobserved": 0.0
+    },
+    {
+      "engine": "Hugo",
+      "mode": "fresh",
+      "observer": "GNU-time-only",
+      "samples": 5,
+      "median_ms": 1835.5395800001588,
+      "min_ms": 1471.2101760001133,
+      "max_ms": 2538.4487599999375,
+      "median_cpu_ms": 4100.0,
+      "cpu_wall_percent": 223.36756148835784,
+      "median_peak_rss_kib": 238080,
+      "median_delta_vs_unobserved_ms": 92.64948400015874,
+      "percent_vs_unobserved": 5.315853490291378,
+      "median_user_ms": 2070.0,
+      "median_system_ms": 1960.0
+    },
+    {
+      "engine": "Hugo",
+      "mode": "fresh",
+      "observer": "proc50ms+GNU-time",
+      "samples": 5,
+      "median_ms": 1421.9757349999327,
+      "min_ms": 1370.0714320000316,
+      "max_ms": 1598.7643380001373,
+      "median_cpu_ms": 3219.9999999999995,
+      "cpu_wall_percent": 226.44549556959578,
+      "median_peak_rss_kib": 233216,
+      "median_delta_vs_unobserved_ms": -320.9143610000674,
+      "percent_vs_unobserved": -18.41277093355331,
+      "median_user_ms": 1920.0,
+      "median_system_ms": 1270.0,
+      "median_max_total_sampled_threads_including_time_wrapper": 8,
+      "proc_sample_counts": [
+        30,
+        28,
+        28,
+        28,
+        27
+      ]
+    },
+    {
+      "engine": "Hugo",
+      "mode": "warm-full",
+      "observer": "none",
+      "samples": 5,
+      "median_ms": 1491.788251,
+      "min_ms": 1428.309847,
+      "max_ms": 1651.852593,
+      "median_cpu_ms": 3380.094,
+      "cpu_wall_percent": 226.5800121253268,
+      "median_peak_rss_kib": 240116,
+      "median_delta_vs_unobserved_ms": 0.0,
+      "percent_vs_unobserved": 0.0
+    },
+    {
+      "engine": "Hugo",
+      "mode": "warm-full",
+      "observer": "GNU-time-only",
+      "samples": 5,
+      "median_ms": 1581.7429759999868,
+      "min_ms": 1471.9533400000273,
+      "max_ms": 1827.7732159999687,
+      "median_cpu_ms": 3410.0,
+      "cpu_wall_percent": 215.58496239530817,
+      "median_peak_rss_kib": 241536,
+      "median_delta_vs_unobserved_ms": 89.95472499998687,
+      "percent_vs_unobserved": 6.029992858549926,
+      "median_user_ms": 1980.0,
+      "median_system_ms": 1390.0
+    },
+    {
+      "engine": "Hugo",
+      "mode": "warm-full",
+      "observer": "proc50ms+GNU-time",
+      "samples": 5,
+      "median_ms": 1477.350050000041,
+      "min_ms": 1422.2554100001616,
+      "max_ms": 1624.3101040001875,
+      "median_cpu_ms": 3250.0,
+      "cpu_wall_percent": 219.98848546422087,
+      "median_peak_rss_kib": 249088,
+      "median_delta_vs_unobserved_ms": -14.438200999959008,
+      "percent_vs_unobserved": -0.9678452012395589,
+      "median_user_ms": 1940.0,
+      "median_system_ms": 1350.0,
+      "median_max_total_sampled_threads_including_time_wrapper": 8,
+      "proc_sample_counts": [
+        32,
+        29,
+        28,
+        31,
+        29
+      ]
+    }
+  ],
+  "necessary_CPU0_Hugo_replay": {
+    "historical": {
+      "fresh": {
+        "samples": 5,
+        "median_ms": 2750.020077,
+        "min_ms": 2609.359525,
+        "max_ms": 4021.923676,
+        "median_cpu_ms": 2746.171,
+        "cpu_wall_percent": 99.86003458548566,
+        "median_peak_rss_kib": 253312
+      },
+      "warm-full": {
+        "samples": 5,
+        "median_ms": 2697.703123,
+        "min_ms": 2492.164865,
+        "max_ms": 2796.450641,
+        "median_cpu_ms": 2694.126,
+        "cpu_wall_percent": 99.86740116176973,
+        "median_peak_rss_kib": 255744
+      }
+    },
+    "current": {
+      "fresh": {
+        "samples": 5,
+        "median_ms": 2644.856984,
+        "min_ms": 2474.044371,
+        "max_ms": 3287.218124,
+        "median_cpu_ms": 2641.292,
+        "cpu_wall_percent": 99.86521070811895,
+        "median_peak_rss_kib": 255868
+      },
+      "warm-full": {
+        "samples": 5,
+        "median_ms": 2779.249825,
+        "min_ms": 2529.104915,
+        "max_ms": 2859.409232,
+        "median_cpu_ms": 2775.416,
+        "cpu_wall_percent": 99.86205540194648,
+        "median_peak_rss_kib": 257024
+      }
+    }
+  },
+  "default_host_variance_separate_cohorts": {
+    "Nift": {
+      "host_a": {
+        "samples": 5,
+        "median_ms": 1194.46785,
+        "min_ms": 1122.922402,
+        "max_ms": 1458.842901,
+        "median_cpu_ms": 3938.726,
+        "cpu_wall_percent": 329.7473431369459,
+        "median_peak_rss_kib": 17468
+      },
+      "host_b": {
+        "samples": 5,
+        "median_ms": 1088.732874,
+        "min_ms": 1067.311805,
+        "max_ms": 1107.973344,
+        "median_cpu_ms": 3674.853,
+        "cpu_wall_percent": 337.5348616505539,
+        "median_peak_rss_kib": 17340
+      },
+      "A_over_B_percent": 9.711746427893742
+    },
+    "Hugo": {
+      "host_a": {
+        "samples": 5,
+        "median_ms": 1635.543509,
+        "min_ms": 1324.988569,
+        "max_ms": 2667.727892,
+        "median_cpu_ms": 3841.195,
+        "cpu_wall_percent": 234.85740237803725,
+        "median_peak_rss_kib": 250088
+      },
+      "host_b": {
+        "samples": 5,
+        "median_ms": 1460.816127,
+        "min_ms": 1444.679632,
+        "max_ms": 1636.883457,
+        "median_cpu_ms": 3242.003,
+        "cpu_wall_percent": 221.93094257919566,
+        "median_peak_rss_kib": 235776
+      },
+      "A_over_B_percent": 11.960942843561595
+    }
+  },
+  "host_telemetry_preparation_inclusive_not_timed_only": [
+    {
+      "host": "A",
+      "id": "defaults-main-Nift-default-fresh-current-none-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Nift-default-warm-full-current-none-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.19011406844106463
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Hugo-default-fresh-current-none-r0",
+      "steal_percent": 0.03863987635239567,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Hugo-default-warm-full-current-none-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04631773969430292
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Nift-default-warm-full-current-none-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Hugo-default-fresh-current-none-r1",
+      "steal_percent": 0.04038772213247173,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Hugo-default-warm-full-current-none-r1",
+      "steal_percent": 0.04972650422675286,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Nift-default-fresh-current-none-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.10065425264217413
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Hugo-default-fresh-current-none-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Hugo-default-warm-full-current-none-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Nift-default-fresh-current-none-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.05305039787798409
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Nift-default-warm-full-current-none-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Hugo-default-warm-full-current-none-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.052056220718375845
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Nift-default-fresh-current-none-r3",
+      "steal_percent": 0.05485463521667581,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Nift-default-warm-full-current-none-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Hugo-default-fresh-current-none-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.043668122270742356
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Nift-default-fresh-current-none-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Nift-default-warm-full-current-none-r4",
+      "steal_percent": 0.0481000481000481,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Hugo-default-fresh-current-none-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0511770726714432
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Hugo-default-warm-full-current-none-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Nift-default-warm-full-current-none-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.047687172150691466
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Hugo-default-fresh-current-none-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Hugo-default-warm-full-current-none-r5",
+      "steal_percent": 0.05382131324004306,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "defaults-main-Nift-default-fresh-current-none-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "replay-Hugo-1-warm-full-current-none-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.03885003885003885
+    },
+    {
+      "host": "A",
+      "id": "replay-Hugo-1-fresh-historical-none-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.039416633819471816
+    },
+    {
+      "host": "A",
+      "id": "replay-Hugo-1-fresh-current-none-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "replay-Hugo-1-fresh-historical-none-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04022526146419952
+    },
+    {
+      "host": "A",
+      "id": "replay-Hugo-1-warm-full-historical-none-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "replay-Hugo-1-fresh-current-none-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04022526146419952
+    },
+    {
+      "host": "A",
+      "id": "replay-Hugo-1-warm-full-current-none-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04152823920265781
+    },
+    {
+      "host": "A",
+      "id": "replay-Hugo-1-warm-full-historical-none-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "replay-Hugo-1-fresh-current-none-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "replay-Hugo-1-warm-full-current-none-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04019292604501608
+    },
+    {
+      "host": "A",
+      "id": "replay-Hugo-1-fresh-historical-none-r5",
+      "steal_percent": 0.035855145213338116,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-none-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.055248618784530384
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-GNU-time-only-r0",
+      "steal_percent": 0.05824111822947001,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-proc50ms+GNU-time-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.05837711617046118
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-none-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.1936108422071636
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-GNU-time-only-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.15015015015015015
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-proc50ms+GNU-time-r0",
+      "steal_percent": 0.04101722723543889,
+      "iowait_percent": 0.12305168170631665
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-none-r0",
+      "steal_percent": 0.031545741324921134,
+      "iowait_percent": 0.031545741324921134
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-GNU-time-only-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04580852038479157
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-proc50ms+GNU-time-r0",
+      "steal_percent": 0.0423908435777872,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-none-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-GNU-time-only-r0",
+      "steal_percent": 0.038535645472061654,
+      "iowait_percent": 0.038535645472061654
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-proc50ms+GNU-time-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.044964028776978415
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-GNU-time-only-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.10178117048346055
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-proc50ms+GNU-time-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-none-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04562043795620438
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-GNU-time-only-r1",
+      "steal_percent": 0.045787545787545784,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-proc50ms+GNU-time-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.13679890560875513
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-none-r1",
+      "steal_percent": 0.04164931278633902,
+      "iowait_percent": 0.04164931278633902
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-GNU-time-only-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-proc50ms+GNU-time-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-none-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-GNU-time-only-r1",
+      "steal_percent": 0.05197505197505198,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-proc50ms+GNU-time-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-none-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-proc50ms+GNU-time-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.05405405405405406
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-none-r2",
+      "steal_percent": 0.046490004649000466,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-GNU-time-only-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-proc50ms+GNU-time-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04526935264825713
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-none-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-GNU-time-only-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-proc50ms+GNU-time-r2",
+      "steal_percent": 0.05094243504839532,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-none-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.05128205128205128
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-GNU-time-only-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.05083884087442806
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-proc50ms+GNU-time-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-none-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.05530973451327434
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-GNU-time-only-r2",
+      "steal_percent": 0.0574052812858783,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-none-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.09115770282588878
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-GNU-time-only-r3",
+      "steal_percent": 0.04512635379061372,
+      "iowait_percent": 0.04512635379061372
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-proc50ms+GNU-time-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.09225092250922509
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-none-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-GNU-time-only-r3",
+      "steal_percent": 0.04866180048661801,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-proc50ms+GNU-time-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-none-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04800768122899664
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-GNU-time-only-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-proc50ms+GNU-time-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-none-r3",
+      "steal_percent": 0.05254860746190226,
+      "iowait_percent": 0.05254860746190226
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-GNU-time-only-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-proc50ms+GNU-time-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.056818181818181816
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-GNU-time-only-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-proc50ms+GNU-time-r4",
+      "steal_percent": 0.04384042086804033,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-none-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04518752824220515
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-GNU-time-only-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-proc50ms+GNU-time-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04952947003467063
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-none-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-GNU-time-only-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.045599635202918376
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-proc50ms+GNU-time-r4",
+      "steal_percent": 0.047961630695443645,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-none-r4",
+      "steal_percent": 0.04928536224741252,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-GNU-time-only-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.05652911249293386
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-proc50ms+GNU-time-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-none-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.2281021897810219
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-proc50ms+GNU-time-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-none-r5",
+      "steal_percent": 0.04506534474988734,
+      "iowait_percent": 0.04506534474988734
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-GNU-time-only-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-fresh-current-proc50ms+GNU-time-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.052083333333333336
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-none-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.048851978505129456
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-GNU-time-only-r5",
+      "steal_percent": 0.0513347022587269,
+      "iowait_percent": 0.0513347022587269
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Hugo-default-warm-full-current-proc50ms+GNU-time-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-none-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-GNU-time-only-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.05470459518599562
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-fresh-current-proc50ms+GNU-time-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-none-r5",
+      "steal_percent": 0.04551661356395084,
+      "iowait_percent": 0.18206645425580337
+    },
+    {
+      "host": "A",
+      "id": "default-observer-controls-Nift-default-warm-full-current-GNU-time-only-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-1-fresh-current-none-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.035124692658939236
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-2-fresh-current-none-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-4-fresh-current-none-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04875670404680644
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-default-fresh-current-none-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.05238344683080147
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-1-fresh-current-none-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-2-fresh-current-none-r0",
+      "steal_percent": 0.044682752457551385,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-4-fresh-current-none-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04681647940074907
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-default-fresh-current-none-r0",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04555808656036447
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-2-fresh-current-none-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-4-fresh-current-none-r1",
+      "steal_percent": 0.052056220718375845,
+      "iowait_percent": 0.052056220718375845
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-default-fresh-current-none-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-1-fresh-current-none-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.03672420124862284
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-2-fresh-current-none-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-4-fresh-current-none-r1",
+      "steal_percent": 0.04786979415988511,
+      "iowait_percent": 0.04786979415988511
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-default-fresh-current-none-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-1-fresh-current-none-r1",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-4-fresh-current-none-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-default-fresh-current-none-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.053475935828877004
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-1-fresh-current-none-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.03759398496240601
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-2-fresh-current-none-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-4-fresh-current-none-r2",
+      "steal_percent": 0.050226017076845805,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-default-fresh-current-none-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04677268475210477
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-1-fresh-current-none-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.037778617302606725
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-2-fresh-current-none-r2",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04574565416285453
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-default-fresh-current-none-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-1-fresh-current-none-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.03672420124862284
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-2-fresh-current-none-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-4-fresh-current-none-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.04856726566294318
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-default-fresh-current-none-r3",
+      "steal_percent": 0.2823529411764706,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-1-fresh-current-none-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-2-fresh-current-none-r3",
+      "steal_percent": 0.046104195481788846,
+      "iowait_percent": 0.046104195481788846
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-4-fresh-current-none-r3",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-1-fresh-current-none-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.03787878787878788
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-2-fresh-current-none-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-4-fresh-current-none-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-default-fresh-current-none-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.05002501250625312
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-1-fresh-current-none-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-2-fresh-current-none-r4",
+      "steal_percent": 0.08503401360544217,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-4-fresh-current-none-r4",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-default-fresh-current-none-r4",
+      "steal_percent": 0.05534034311012728,
+      "iowait_percent": 0.05534034311012728
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-2-fresh-current-none-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-4-fresh-current-none-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-default-fresh-current-none-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-1-fresh-current-none-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-2-fresh-current-none-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-4-fresh-current-none-r5",
+      "steal_percent": 0.30045067601402103,
+      "iowait_percent": 0.0500751126690035
+    },
+    {
+      "host": "B",
+      "id": "replication-Nift-default-fresh-current-none-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.05443658138268917
+    },
+    {
+      "host": "B",
+      "id": "replication-Hugo-1-fresh-current-none-r5",
+      "steal_percent": 0.0,
+      "iowait_percent": 0.038535645472061654
+    }
+  ],
+  "qualifications": [
+    "No pooling of PLANv2 samples into new default-main",
+    "Hugo GOMAXPROCS is distinct from worker pool multiplier and OS thread count",
+    "Observer outer Python wall includes wrapper/wait/poll overhead; primary C clock remains authoritative",
+    "Different nominal hosts and sequential phases cannot prove causes of historic47.59% shift",
+    "Profiles and untimed work accounting are separate from measured runs"
+  ]
+}

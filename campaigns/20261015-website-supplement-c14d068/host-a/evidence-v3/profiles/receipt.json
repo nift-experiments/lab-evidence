@@ -1,0 +1,257 @@
+{
+  "kind": "post-timing bounded software CPU/syscall profiles, not timings",
+  "rows": [
+    {
+      "engine": "Nift",
+      "mode": "fresh",
+      "tool": "strace",
+      "command": [
+        "strace",
+        "-f",
+        "-c",
+        "-o",
+        "/opt/supplement/evidence-v3/profiles/Nift-fresh-strace.txt",
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "exit_code": 0,
+      "correct": true,
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "binary_sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "engine": "Nift",
+      "mode": "fresh",
+      "tool": "perf",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/supplement/evidence-v3/profiles/Nift-fresh-perf.data",
+        "--",
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "exit_code": 0,
+      "correct": true,
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "binary_sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "engine": "Nift",
+      "mode": "warm-full",
+      "tool": "strace",
+      "command": [
+        "strace",
+        "-f",
+        "-c",
+        "-o",
+        "/opt/supplement/evidence-v3/profiles/Nift-warm-full-strace.txt",
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "exit_code": 0,
+      "correct": true,
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "binary_sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "engine": "Nift",
+      "mode": "warm-full",
+      "tool": "perf",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/supplement/evidence-v3/profiles/Nift-warm-full-perf.data",
+        "--",
+        "/opt/nift/nift",
+        "build",
+        "--all"
+      ],
+      "exit_code": 0,
+      "correct": true,
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "binary_sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "engine": "Hugo",
+      "mode": "fresh",
+      "tool": "strace",
+      "command": [
+        "strace",
+        "-f",
+        "-c",
+        "-o",
+        "/opt/supplement/evidence-v3/profiles/Hugo-fresh-strace.txt",
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "exit_code": 0,
+      "correct": true,
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "engine": "Hugo",
+      "mode": "fresh",
+      "tool": "perf",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/supplement/evidence-v3/profiles/Hugo-fresh-perf.data",
+        "--",
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "exit_code": 0,
+      "correct": true,
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "engine": "Hugo",
+      "mode": "warm-full",
+      "tool": "strace",
+      "command": [
+        "strace",
+        "-f",
+        "-c",
+        "-o",
+        "/opt/supplement/evidence-v3/profiles/Hugo-warm-full-strace.txt",
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "exit_code": 0,
+      "correct": true,
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    },
+    {
+      "engine": "Hugo",
+      "mode": "warm-full",
+      "tool": "perf",
+      "command": [
+        "perf",
+        "record",
+        "-e",
+        "cpu-clock",
+        "-F",
+        "99",
+        "--call-graph",
+        "dwarf",
+        "-o",
+        "/opt/supplement/evidence-v3/profiles/Hugo-warm-full-perf.data",
+        "--",
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "exit_code": 0,
+      "correct": true,
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      }
+    }
+  ]
+}

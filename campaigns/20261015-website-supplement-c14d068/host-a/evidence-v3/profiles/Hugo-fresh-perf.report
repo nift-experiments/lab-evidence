@@ -1,0 +1,663 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 382  of event 'cpu-clock'
+# Event count (approx.): 3858585820
+#
+# Overhead  Command  Shared Object      Symbol                                       
+# ........  .......  .................  .............................................
+#
+     4.71%  hugo     hugo               [.] 0x0000000000038cde
+            |
+            ---0x438cde
+
+     3.93%  hugo     [kernel.kallsyms]  [k] clear_page_rep
+            |
+            ---clear_page_rep
+               get_page_from_freelist
+               __alloc_pages
+               |          
+                --3.66%--alloc_pages_mpol
+                          |          
+                          |--2.62%--vma_alloc_folio
+                          |          alloc_anon_folio
+                          |          do_anonymous_page
+                          |          handle_pte_fault
+                          |          __handle_mm_fault
+                          |          handle_mm_fault
+                          |          do_user_addr_fault
+                          |          exc_page_fault
+                          |          asm_exc_page_fault
+                          |          |          
+                          |          |--1.05%--0x497c4b
+                          |          |          
+                          |           --0.52%--0x438abe
+                          |          
+                           --1.05%--alloc_pages
+                                     folio_alloc
+                                     filemap_alloc_folio
+                                     __filemap_get_folio
+                                     ext4_da_write_begin
+                                     generic_perform_write
+                                     ext4_buffered_write_iter
+                                     ext4_file_write_iter
+                                     vfs_write
+                                     ksys_write
+                                     __x64_sys_write
+                                     x64_sys_call
+                                     do_syscall_64
+                                     entry_SYSCALL_64_after_hwframe
+                                     0x41552e
+
+     3.14%  hugo     [kernel.kallsyms]  [k] rwsem_spin_on_owner
+            |
+            ---rwsem_spin_on_owner
+               rwsem_optimistic_spin
+               rwsem_down_write_slowpath
+               down_write
+               open_last_lookups
+               path_openat
+               do_filp_open
+               do_sys_openat2
+               __x64_sys_openat
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               0x41552e
+
+     3.14%  hugo     [kernel.kallsyms]  [k] smp_call_function_many_cond
+            |
+            ---smp_call_function_many_cond
+               on_each_cpu_cond_mask
+               native_flush_tlb_multi
+               kvm_flush_tlb_multi
+               flush_tlb_mm_range
+               ptep_clear_flush
+               wp_page_copy
+               do_wp_page
+               handle_pte_fault
+               __handle_mm_fault
+               handle_mm_fault
+               do_user_addr_fault
+               exc_page_fault
+               asm_exc_page_fault
+               |          
+                --2.09%--0x41b945
+
+     1.31%  hugo     [kernel.kallsyms]  [k] do_syscall_64
+            |
+            ---do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               0x41552e
+
+     1.31%  hugo     [kernel.kallsyms]  [k] ext4_match
+            |
+            ---ext4_match
+               |          
+               |--0.79%--ext4_search_dir
+               |          ext4_dx_find_entry
+               |          __ext4_find_entry
+               |          ext4_lookup
+               |          lookup_open.isra.0
+               |          open_last_lookups
+               |          path_openat
+               |          do_filp_open
+               |          do_sys_openat2
+               |          __x64_sys_openat
+               |          x64_sys_call
+               |          do_syscall_64
+               |          entry_SYSCALL_64_after_hwframe
+               |          0x41552e
+               |          
+                --0.52%--ext4_find_dest_de
+                          add_dirent_to_buf
+                          ext4_dx_add_entry
+                          ext4_add_entry
+                          ext4_add_nondir
+                          ext4_create
+                          lookup_open.isra.0
+                          open_last_lookups
+                          path_openat
+                          do_filp_open
+                          do_sys_openat2
+                          __x64_sys_openat
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          0x41552e
+
+     1.31%  hugo     [kernel.kallsyms]  [k] fscrypt_match_name
+            |
+            ---fscrypt_match_name
+               |          
+                --1.05%--ext4_match
+                          |          
+                          |--0.52%--ext4_find_dest_de
+                          |          add_dirent_to_buf
+                          |          ext4_dx_add_entry
+                          |          ext4_add_entry
+                          |          ext4_add_nondir
+                          |          ext4_create
+                          |          lookup_open.isra.0
+                          |          open_last_lookups
+                          |          path_openat
+                          |          do_filp_open
+                          |          do_sys_openat2
+                          |          __x64_sys_openat
+                          |          x64_sys_call
+                          |          do_syscall_64
+                          |          entry_SYSCALL_64_after_hwframe
+                          |          0x41552e
+                          |          
+                           --0.52%--ext4_search_dir
+                                     ext4_dx_find_entry
+                                     __ext4_find_entry
+                                     ext4_lookup
+                                     lookup_open.isra.0
+                                     open_last_lookups
+                                     path_openat
+                                     do_filp_open
+                                     do_sys_openat2
+                                     __x64_sys_openat
+                                     x64_sys_call
+                                     do_syscall_64
+                                     entry_SYSCALL_64_after_hwframe
+                                     0x41552e
+
+     1.31%  hugo     [kernel.kallsyms]  [k] srso_safe_ret
+            |
+            ---srso_safe_ret
+
+     1.05%  hugo     [kernel.kallsyms]  [k] __pv_queued_spin_lock_slowpath
+            |
+            ---__pv_queued_spin_lock_slowpath
+               _raw_spin_lock
+               __pte_offset_map_lock
+               do_anonymous_page
+               handle_pte_fault
+               __handle_mm_fault
+               handle_mm_fault
+               do_user_addr_fault
+               exc_page_fault
+               asm_exc_page_fault
+               |          
+               |--0.52%--0x497c4b
+               |          
+                --0.52%--0x438abe
+
+     1.05%  hugo     [kernel.kallsyms]  [k] ext4_search_dir
+            |
+            ---ext4_search_dir
+               ext4_dx_find_entry
+               __ext4_find_entry
+               ext4_lookup
+               lookup_open.isra.0
+               open_last_lookups
+               path_openat
+               do_filp_open
+               do_sys_openat2
+               __x64_sys_openat
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               0x41552e
+
+     0.79%  hugo     [kernel.kallsyms]  [k] _find_next_zero_bit
+            |
+            ---_find_next_zero_bit
+               |          
+                --0.52%--__ext4_new_inode
+                          ext4_create
+                          lookup_open.isra.0
+                          open_last_lookups
+                          path_openat
+                          do_filp_open
+                          do_sys_openat2
+                          __x64_sys_openat
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          0x41552e
+
+     0.79%  hugo     [kernel.kallsyms]  [k] _raw_spin_lock
+            |
+            ---_raw_spin_lock
+               |          
+                --0.52%--__ext4_new_inode
+                          ext4_create
+                          lookup_open.isra.0
+                          open_last_lookups
+                          path_openat
+                          do_filp_open
+                          do_sys_openat2
+                          __x64_sys_openat
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          0x41552e
+
+     0.79%  hugo     [kernel.kallsyms]  [k] _raw_spin_unlock_irqrestore
+            |
+            ---_raw_spin_unlock_irqrestore
+
+     0.79%  hugo     [kernel.kallsyms]  [k] ext4_do_update_inode.isra.0
+            |
+            ---ext4_do_update_inode.isra.0
+               ext4_mark_iloc_dirty
+               __ext4_mark_inode_dirty
+               |          
+                --0.52%--add_dirent_to_buf
+                          ext4_dx_add_entry
+                          ext4_add_entry
+                          ext4_add_nondir
+                          ext4_create
+                          lookup_open.isra.0
+                          open_last_lookups
+                          path_openat
+                          do_filp_open
+                          do_sys_openat2
+                          __x64_sys_openat
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          0x41552e
+
+     0.79%  hugo     [kernel.kallsyms]  [k] filemap_get_entry
+            |
+            ---filemap_get_entry
+               |          
+                --0.52%--__filemap_get_folio
+                          __find_get_block_slow
+                          find_get_block_common
+                          bdev_getblk
+
+     0.79%  hugo     [kernel.kallsyms]  [k] init_file
+            |
+            ---init_file
+               alloc_empty_file
+               path_openat
+               do_filp_open
+               do_sys_openat2
+               __x64_sys_openat
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               0x41552e
+
+     0.79%  hugo     hugo               [.] 0x000000000001552e
+            |
+            ---0x41552e
+
+     0.79%  hugo     hugo               [.] 0x0000000000038d4d
+            |
+            ---0x438d4d
+
+     0.79%  hugo     hugo               [.] 0x000000000003a50c
+            |
+            ---0x43a50c
+
+     0.79%  hugo     hugo               [.] 0x000000000003abf3
+            |
+            ---0x43abf3
+
+     0.79%  hugo     hugo               [.] 0x0000000000115dc3
+            |
+            ---0x515dc3
+
+     0.79%  hugo     hugo               [.] 0x0000000000824fe4
+            |
+            ---0xc24fe4
+
+     0.52%  hugo     [kernel.kallsyms]  [k] __ext4_handle_dirty_metadata
+            |
+            ---__ext4_handle_dirty_metadata
+
+     0.52%  hugo     [kernel.kallsyms]  [k] __fdget
+            |
+            ---__fdget
+
+     0.52%  hugo     [kernel.kallsyms]  [k] ext4_find_dest_de
+            |
+            ---ext4_find_dest_de
+               add_dirent_to_buf
+               ext4_dx_add_entry
+               ext4_add_entry
+               ext4_add_nondir
+               ext4_create
+               lookup_open.isra.0
+               open_last_lookups
+               path_openat
+               do_filp_open
+               do_sys_openat2
+               __x64_sys_openat
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               0x41552e
+
+     0.52%  hugo     [kernel.kallsyms]  [k] ext4_mark_iloc_dirty
+            |
+            ---ext4_mark_iloc_dirty
+               __ext4_mark_inode_dirty
+
+     0.52%  hugo     [kernel.kallsyms]  [k] filemap_get_read_batch
+            |
+            ---filemap_get_read_batch
+               filemap_get_pages
+               filemap_read
+               generic_file_read_iter
+               ext4_file_read_iter
+               vfs_read
+               ksys_read
+               __x64_sys_read
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               0x41552e
+
+     0.52%  hugo     [kernel.kallsyms]  [k] finish_task_switch.isra.0
+            |
+            ---finish_task_switch.isra.0
+               __schedule
+               schedule
+
+     0.52%  hugo     [kernel.kallsyms]  [k] osq_lock
+            |
+            ---osq_lock
+               rwsem_optimistic_spin
+               rwsem_down_write_slowpath
+               down_write
+               open_last_lookups
+               path_openat
+               do_filp_open
+               do_sys_openat2
+               __x64_sys_openat
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               0x41552e
+
+     0.52%  hugo     hugo               [.] 0x000000000000cd0d
+            |
+            ---0x40cd0d
+
+     0.52%  hugo     hugo               [.] 0x000000000000e9c9
+            |
+            ---0x40e9c9
+
+     0.52%  hugo     hugo               [.] 0x000000000001c8f3
+            |
+            ---0x41c8f3
+
+     0.52%  hugo     hugo               [.] 0x0000000000038c87
+            |
+            ---0x438c87
+
+     0.52%  hugo     hugo               [.] 0x0000000000038cc1
+            |
+            ---0x438cc1
+
+     0.52%  hugo     hugo               [.] 0x0000000000039b22
+            |
+            ---0x439b22
+
+     0.52%  hugo     hugo               [.] 0x000000000003a4ac
+            |
+            ---0x43a4ac
+
+     0.52%  hugo     hugo               [.] 0x0000000000043fbc
+            |
+            ---0x443fbc
+
+     0.52%  hugo     hugo               [.] 0x00000000000a496c
+            |
+            ---0x4a496c
+
+     0.52%  hugo     hugo               [.] 0x0000000000528152
+            |
+            ---0x928152
+
+     0.52%  hugo     hugo               [.] 0x00000000009ae664
+            |
+            ---0xdae664
+
+     0.52%  hugo     hugo               [.] 0x0000000000cd25dc
+            |
+            ---0x10d25dc
+
+     0.52%  hugo     hugo               [.] 0x000000000117d8b1
+            |
+            ---0x157d8b1
+
+     0.52%  hugo     hugo               [.] 0x0000000001186c81
+            |
+            ---0x1586c81
+
+     0.52%  hugo     hugo               [.] 0x00000000011881ee
+            |
+            ---0x15881ee
+
+     0.26%  hugo     [kernel.kallsyms]  [k] __d_add
+     0.26%  hugo     [kernel.kallsyms]  [k] __d_lookup
+     0.26%  hugo     [kernel.kallsyms]  [k] __ext4_check_dir_entry
+     0.26%  hugo     [kernel.kallsyms]  [k] __fput
+     0.26%  hugo     [kernel.kallsyms]  [k] __fput_sync
+     0.26%  hugo     [kernel.kallsyms]  [k] __handle_mm_fault
+     0.26%  hugo     [kernel.kallsyms]  [k] __init_waitqueue_head
+     0.26%  hugo     [kernel.kallsyms]  [k] __lruvec_stat_mod_folio
+     0.26%  hugo     [kernel.kallsyms]  [k] __memcg_slab_free_hook
+     0.26%  hugo     [kernel.kallsyms]  [k] __memcg_slab_post_alloc_hook
+     0.26%  hugo     [kernel.kallsyms]  [k] __raw_callee_save___kvm_vcpu_is_preempted
+     0.26%  hugo     [kernel.kallsyms]  [k] __raw_callee_save___pv_queued_spin_unlock
+     0.26%  hugo     [kernel.kallsyms]  [k] __rcu_read_lock
+     0.26%  hugo     [kernel.kallsyms]  [k] __zone_watermark_ok
+     0.26%  hugo     [kernel.kallsyms]  [k] _copy_from_user
+     0.26%  hugo     [kernel.kallsyms]  [k] _find_next_bit
+     0.26%  hugo     [kernel.kallsyms]  [k] apparmor_file_alloc_security
+     0.26%  hugo     [kernel.kallsyms]  [k] apparmor_task_kill
+     0.26%  hugo     [kernel.kallsyms]  [k] cond_accept_memory
+     0.26%  hugo     [kernel.kallsyms]  [k] current_time
+     0.26%  hugo     [kernel.kallsyms]  [k] d_alloc_parallel
+     0.26%  hugo     [kernel.kallsyms]  [k] do_futex
+     0.26%  hugo     [kernel.kallsyms]  [k] do_open
+     0.26%  hugo     [kernel.kallsyms]  [k] do_user_addr_fault
+     0.26%  hugo     [kernel.kallsyms]  [k] down_read_trylock
+     0.26%  hugo     [kernel.kallsyms]  [k] errseq_sample
+     0.26%  hugo     [kernel.kallsyms]  [k] ext4_add_entry
+     0.26%  hugo     [kernel.kallsyms]  [k] ext4_alloc_inode
+     0.26%  hugo     [kernel.kallsyms]  [k] ext4_block_write_begin
+     0.26%  hugo     [kernel.kallsyms]  [k] ext4_file_write_iter
+     0.26%  hugo     [kernel.kallsyms]  [k] ext4_fill_raw_inode
+     0.26%  hugo     [kernel.kallsyms]  [k] file_close_fd_locked
+     0.26%  hugo     [kernel.kallsyms]  [k] file_modified
+     0.26%  hugo     [kernel.kallsyms]  [k] filemap_read
+     0.26%  hugo     [kernel.kallsyms]  [k] from_kprojid
+     0.26%  hugo     [kernel.kallsyms]  [k] generic_permission
+     0.26%  hugo     [kernel.kallsyms]  [k] get_page_from_freelist
+     0.26%  hugo     [kernel.kallsyms]  [k] handle_pte_fault
+     0.26%  hugo     [kernel.kallsyms]  [k] inode_permission
+     0.26%  hugo     [kernel.kallsyms]  [k] insert_inode_locked
+     0.26%  hugo     [kernel.kallsyms]  [k] irqentry_exit_to_user_mode
+     0.26%  hugo     [kernel.kallsyms]  [k] jbd2_write_access_granted
+     0.26%  hugo     [kernel.kallsyms]  [k] kmem_cache_alloc
+     0.26%  hugo     [kernel.kallsyms]  [k] kmem_cache_alloc_lru
+     0.26%  hugo     [kernel.kallsyms]  [k] lockref_get_not_dead
+     0.26%  hugo     [kernel.kallsyms]  [k] lockref_get_not_zero
+     0.26%  hugo     [kernel.kallsyms]  [k] lookup_bh_lru
+     0.26%  hugo     [kernel.kallsyms]  [k] lookup_open.isra.0
+     0.26%  hugo     [kernel.kallsyms]  [k] mas_next_slot
+     0.26%  hugo     [kernel.kallsyms]  [k] mb_mark_used
+     0.26%  hugo     [kernel.kallsyms]  [k] memset_orig
+     0.26%  hugo     [kernel.kallsyms]  [k] mod_objcg_state
+     0.26%  hugo     [kernel.kallsyms]  [k] native_write_msr
+     0.26%  hugo     [kernel.kallsyms]  [k] nd_jump_root
+     0.26%  hugo     [kernel.kallsyms]  [k] rep_movs_alternative
+     0.26%  hugo     [kernel.kallsyms]  [k] security_inode_getattr
+     0.26%  hugo     [kernel.kallsyms]  [k] set_root
+     0.26%  hugo     [kernel.kallsyms]  [k] shuffle_freelist
+     0.26%  hugo     [kernel.kallsyms]  [k] vfs_fstatat
+     0.26%  hugo     hugo               [.] 0x0000000000007ace
+     0.26%  hugo     hugo               [.] 0x00000000000082e9
+     0.26%  hugo     hugo               [.] 0x0000000000008507
+     0.26%  hugo     hugo               [.] 0x000000000000a184
+     0.26%  hugo     hugo               [.] 0x000000000000a7ab
+     0.26%  hugo     hugo               [.] 0x000000000000c184
+     0.26%  hugo     hugo               [.] 0x000000000000c31b
+     0.26%  hugo     hugo               [.] 0x000000000000ce94
+     0.26%  hugo     hugo               [.] 0x000000000000d67d
+     0.26%  hugo     hugo               [.] 0x000000000000eb21
+     0.26%  hugo     hugo               [.] 0x000000000000ee29
+     0.26%  hugo     hugo               [.] 0x000000000000ef04
+     0.26%  hugo     hugo               [.] 0x000000000001a328
+     0.26%  hugo     hugo               [.] 0x000000000002171b
+     0.26%  hugo     hugo               [.] 0x00000000000229f0
+     0.26%  hugo     hugo               [.] 0x0000000000022b78
+     0.26%  hugo     hugo               [.] 0x0000000000023049
+     0.26%  hugo     hugo               [.] 0x000000000002441f
+     0.26%  hugo     hugo               [.] 0x000000000002489b
+     0.26%  hugo     hugo               [.] 0x0000000000024bcc
+     0.26%  hugo     hugo               [.] 0x0000000000025264
+     0.26%  hugo     hugo               [.] 0x0000000000025271
+     0.26%  hugo     hugo               [.] 0x000000000002599a
+     0.26%  hugo     hugo               [.] 0x0000000000025f50
+     0.26%  hugo     hugo               [.] 0x0000000000025fe8
+     0.26%  hugo     hugo               [.] 0x0000000000026730
+     0.26%  hugo     hugo               [.] 0x000000000002699e
+     0.26%  hugo     hugo               [.] 0x0000000000026b6e
+     0.26%  hugo     hugo               [.] 0x0000000000026e09
+     0.26%  hugo     hugo               [.] 0x0000000000027ee5
+     0.26%  hugo     hugo               [.] 0x000000000002869a
+     0.26%  hugo     hugo               [.] 0x0000000000028718
+     0.26%  hugo     hugo               [.] 0x00000000000287b3
+     0.26%  hugo     hugo               [.] 0x000000000002950d
+     0.26%  hugo     hugo               [.] 0x000000000002a06c
+     0.26%  hugo     hugo               [.] 0x000000000002a0ae
+     0.26%  hugo     hugo               [.] 0x000000000002a144
+     0.26%  hugo     hugo               [.] 0x000000000002b00d
+     0.26%  hugo     hugo               [.] 0x000000000002b69a
+     0.26%  hugo     hugo               [.] 0x00000000000375fa
+     0.26%  hugo     hugo               [.] 0x0000000000037bf5
+     0.26%  hugo     hugo               [.] 0x0000000000038b03
+     0.26%  hugo     hugo               [.] 0x0000000000038c8b
+     0.26%  hugo     hugo               [.] 0x0000000000038cff
+     0.26%  hugo     hugo               [.] 0x0000000000038d3a
+     0.26%  hugo     hugo               [.] 0x0000000000039aef
+     0.26%  hugo     hugo               [.] 0x000000000003a174
+     0.26%  hugo     hugo               [.] 0x000000000003a28d
+     0.26%  hugo     hugo               [.] 0x000000000003a477
+     0.26%  hugo     hugo               [.] 0x000000000003a490
+     0.26%  hugo     hugo               [.] 0x000000000003a4a7
+     0.26%  hugo     hugo               [.] 0x000000000003a4b3
+     0.26%  hugo     hugo               [.] 0x000000000003a619
+     0.26%  hugo     hugo               [.] 0x000000000003bd97
+     0.26%  hugo     hugo               [.] 0x000000000003c120
+     0.26%  hugo     hugo               [.] 0x000000000003ee78
+     0.26%  hugo     hugo               [.] 0x000000000003f3d6
+     0.26%  hugo     hugo               [.] 0x0000000000042a7f
+     0.26%  hugo     hugo               [.] 0x0000000000043ead
+     0.26%  hugo     hugo               [.] 0x000000000004dd1c
+     0.26%  hugo     hugo               [.] 0x000000000004f85a
+     0.26%  hugo     hugo               [.] 0x000000000005256f
+     0.26%  hugo     hugo               [.] 0x000000000005ba5c
+     0.26%  hugo     hugo               [.] 0x000000000005eb41
+     0.26%  hugo     hugo               [.] 0x0000000000062fd1
+     0.26%  hugo     hugo               [.] 0x0000000000067a41
+     0.26%  hugo     hugo               [.] 0x0000000000067c18
+     0.26%  hugo     hugo               [.] 0x000000000006d0bc
+     0.26%  hugo     hugo               [.] 0x0000000000070c37
+     0.26%  hugo     hugo               [.] 0x0000000000072e5e
+     0.26%  hugo     hugo               [.] 0x0000000000073c75
+     0.26%  hugo     hugo               [.] 0x0000000000075796
+     0.26%  hugo     hugo               [.] 0x00000000000822a4
+     0.26%  hugo     hugo               [.] 0x000000000008dcea
+     0.26%  hugo     hugo               [.] 0x000000000008e48e
+     0.26%  hugo     hugo               [.] 0x0000000000090d8b
+     0.26%  hugo     hugo               [.] 0x0000000000097c4b
+     0.26%  hugo     hugo               [.] 0x0000000000097e26
+     0.26%  hugo     hugo               [.] 0x0000000000097e57
+     0.26%  hugo     hugo               [.] 0x0000000000097e69
+     0.26%  hugo     hugo               [.] 0x0000000000098ad7
+     0.26%  hugo     hugo               [.] 0x00000000000a585d
+     0.26%  hugo     hugo               [.] 0x00000000000a81e5
+     0.26%  hugo     hugo               [.] 0x00000000000a8258
+     0.26%  hugo     hugo               [.] 0x00000000000b9d4f
+     0.26%  hugo     hugo               [.] 0x00000000000c2522
+     0.26%  hugo     hugo               [.] 0x00000000000c5724
+     0.26%  hugo     hugo               [.] 0x00000000000da104
+     0.26%  hugo     hugo               [.] 0x00000000000df6e4
+     0.26%  hugo     hugo               [.] 0x0000000000103668
+     0.26%  hugo     hugo               [.] 0x0000000000103cfd
+     0.26%  hugo     hugo               [.] 0x0000000000105a44
+     0.26%  hugo     hugo               [.] 0x0000000000105c55
+     0.26%  hugo     hugo               [.] 0x0000000000108a10
+     0.26%  hugo     hugo               [.] 0x000000000010eb7c
+     0.26%  hugo     hugo               [.] 0x0000000000115da4
+     0.26%  hugo     hugo               [.] 0x000000000011ef24
+     0.26%  hugo     hugo               [.] 0x000000000011f333
+     0.26%  hugo     hugo               [.] 0x0000000000139604
+     0.26%  hugo     hugo               [.] 0x000000000016b559
+     0.26%  hugo     hugo               [.] 0x000000000016f41c
+     0.26%  hugo     hugo               [.] 0x000000000016fa8c
+     0.26%  hugo     hugo               [.] 0x000000000016fce3
+     0.26%  hugo     hugo               [.] 0x0000000000171abf
+     0.26%  hugo     hugo               [.] 0x0000000000172107
+     0.26%  hugo     hugo               [.] 0x00000000001e63c0
+     0.26%  hugo     hugo               [.] 0x00000000004fe7a0
+     0.26%  hugo     hugo               [.] 0x000000000051d665
+     0.26%  hugo     hugo               [.] 0x000000000059bfe4
+     0.26%  hugo     hugo               [.] 0x0000000000654ec1
+     0.26%  hugo     hugo               [.] 0x0000000000654f03
+     0.26%  hugo     hugo               [.] 0x0000000000659615
+     0.26%  hugo     hugo               [.] 0x0000000000660c1f
+     0.26%  hugo     hugo               [.] 0x0000000000667dea
+     0.26%  hugo     hugo               [.] 0x00000000006713c5
+     0.26%  hugo     hugo               [.] 0x000000000067d192
+     0.26%  hugo     hugo               [.] 0x0000000000682959
+     0.26%  hugo     hugo               [.] 0x000000000081591a
+     0.26%  hugo     hugo               [.] 0x000000000081606f
+     0.26%  hugo     hugo               [.] 0x00000000008166b1
+     0.26%  hugo     hugo               [.] 0x00000000008214fb
+     0.26%  hugo     hugo               [.] 0x0000000000824b7d
+     0.26%  hugo     hugo               [.] 0x0000000000825157
+     0.26%  hugo     hugo               [.] 0x000000000082f661
+     0.26%  hugo     hugo               [.] 0x0000000000840204
+     0.26%  hugo     hugo               [.] 0x0000000000920545
+     0.26%  hugo     hugo               [.] 0x0000000000995917
+     0.26%  hugo     hugo               [.] 0x00000000009968d4
+     0.26%  hugo     hugo               [.] 0x0000000000997ca7
+     0.26%  hugo     hugo               [.] 0x00000000009a2001
+     0.26%  hugo     hugo               [.] 0x00000000009b55e9
+     0.26%  hugo     hugo               [.] 0x0000000000caf564
+     0.26%  hugo     hugo               [.] 0x0000000000cb017b
+     0.26%  hugo     hugo               [.] 0x0000000000cb7185
+     0.26%  hugo     hugo               [.] 0x0000000000ccfbe1
+     0.26%  hugo     hugo               [.] 0x0000000000cf41be
+     0.26%  hugo     hugo               [.] 0x0000000000d0c8cf
+     0.26%  hugo     hugo               [.] 0x000000000117b6fb
+     0.26%  hugo     hugo               [.] 0x000000000117d5cd
+     0.26%  hugo     hugo               [.] 0x0000000001182c3c
+     0.26%  hugo     hugo               [.] 0x0000000001182d15
+     0.26%  hugo     hugo               [.] 0x00000000011867b9
+     0.26%  hugo     hugo               [.] 0x0000000001188183
+     0.26%  hugo     hugo               [.] 0x000000000118c585
+     0.26%  hugo     hugo               [.] 0x000000000118f463
+     0.26%  hugo     hugo               [.] 0x00000000011a7c6f
+     0.26%  hugo     hugo               [.] 0x00000000011a7c74
+     0.26%  hugo     hugo               [.] 0x00000000011a8249
+     0.26%  hugo     hugo               [.] 0x00000000011af598
+     0.26%  hugo     hugo               [.] 0x00000000011b77a4
+     0.26%  hugo     hugo               [.] 0x00000000011b8245
+     0.26%  hugo     hugo               [.] 0x00000000011c5d15
+     0.26%  hugo     hugo               [.] 0x00000000011c8201
+     0.26%  hugo     hugo               [.] 0x00000000011e096c
+     0.26%  hugo     hugo               [.] 0x00000000011ea669
+     0.26%  hugo     hugo               [.] 0x0000000001206963
+     0.26%  hugo     hugo               [.] 0x000000000120b3a7
+     0.26%  hugo     hugo               [.] 0x00000000012299c4
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

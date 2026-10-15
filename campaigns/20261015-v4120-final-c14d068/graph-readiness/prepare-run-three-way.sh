@@ -13,7 +13,7 @@ for pair in release:c8d9c266518d115e4f289c5c6a2b94ddd7ee9968 original:7f7e487c47
  git clone https://github.com/nift-dev/nift.git "$destination"
  git -C "$destination" checkout --detach "$sha"
  [ -z "$(git -C "$destination" status --porcelain)" ]
- make -C "$destination" -j4
+ make -C "$destination" -j2 nift
  [ -z "$(git -C "$destination" status --porcelain)" ]
 done
 python3 - <<'IDENTITY'

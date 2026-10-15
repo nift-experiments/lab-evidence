@@ -1,0 +1,122 @@
+{
+  "kind": "untimed full fixture/internal metadata/output accounting after completed host timing",
+  "rows": [
+    {
+      "engine": "Nift",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "snapshots": {
+        "initial": {
+          "files": 10003,
+          "bytes": 1376973,
+          "by_top_directory": {
+            ".nift": 2,
+            "content": 10000,
+            "templates": 1
+          }
+        },
+        "fresh-before": {
+          "files": 10003,
+          "bytes": 1376973,
+          "by_top_directory": {
+            ".nift": 2,
+            "content": 10000,
+            "templates": 1
+          }
+        },
+        "fresh-after": {
+          "files": 30004,
+          "bytes": 9279294,
+          "by_top_directory": {
+            ".nift": 10003,
+            "content": 10000,
+            "public": 10000,
+            "templates": 1
+          }
+        },
+        "warm-full-before": {
+          "files": 20004,
+          "bytes": 7961514,
+          "by_top_directory": {
+            ".nift": 10003,
+            "content": 10000,
+            "templates": 1
+          }
+        },
+        "warm-full-after": {
+          "files": 30004,
+          "bytes": 9279294,
+          "by_top_directory": {
+            ".nift": 10003,
+            "content": 10000,
+            "public": 10000,
+            "templates": 1
+          }
+        }
+      },
+      "semantic_source_note": "Nift HTML with explicit tracked JSON +template vs Hugo Markdown files with YAML front matter and Goldmark unsafe HTML pass-through; same resulting route/title/body contract, different parser/metadata work"
+    },
+    {
+      "engine": "Hugo",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "snapshots": {
+        "initial": {
+          "files": 10002,
+          "bytes": 1046878,
+          "by_top_directory": {
+            "content": 10000,
+            "hugo.toml": 1,
+            "layouts": 1
+          }
+        },
+        "fresh-before": {
+          "files": 10002,
+          "bytes": 1046878,
+          "by_top_directory": {
+            "content": 10000,
+            "hugo.toml": 1,
+            "layouts": 1
+          }
+        },
+        "fresh-after": {
+          "files": 20003,
+          "bytes": 2374658,
+          "by_top_directory": {
+            ".hugo_build.lock": 1,
+            "content": 10000,
+            "hugo.toml": 1,
+            "layouts": 1,
+            "public": 10000
+          }
+        },
+        "warm-full-before": {
+          "files": 10003,
+          "bytes": 1046878,
+          "by_top_directory": {
+            ".hugo_build.lock": 1,
+            "content": 10000,
+            "hugo.toml": 1,
+            "layouts": 1
+          }
+        },
+        "warm-full-after": {
+          "files": 20003,
+          "bytes": 2374658,
+          "by_top_directory": {
+            ".hugo_build.lock": 1,
+            "content": 10000,
+            "hugo.toml": 1,
+            "layouts": 1,
+            "public": 10000
+          }
+        }
+      },
+      "semantic_source_note": "Nift HTML with explicit tracked JSON +template vs Hugo Markdown files with YAML front matter and Goldmark unsafe HTML pass-through; same resulting route/title/body contract, different parser/metadata work"
+    }
+  ]
+}

@@ -11,7 +11,7 @@ out=Path(os.environ['DIAGNOSTIC_OUTPUT']);assert not out.exists();out.mkdir(pare
 os.sched_setaffinity(0,set(map(int,os.environ['CPUS'].split(','))))
 plan=[{'kind':'native','size':1000,'profile':'heavy','jobs':1,'cases':[{'name':'noop','samples':30,'warmups':2}]},{'kind':'tiny','size':10000,'profile':'light','jobs':4,'cases':[{'name':'noop','samples':20,'warmups':2},{'name':'full','samples':5,'warmups':1}]}]
 binaries={'release':'/opt/nift-diagnostic-release/nift','original':'/opt/nift-diagnostic-original/nift','final':'/opt/nift/nift'}
-identity=json.loads(Path(os.environ['DIAGNOSTIC_IDENTITY']).read_text());identity.update(plan=plan,suite_sha='e95bfe88ac9e1eaf67cfeb8f67020fc3373ab81e',affinity=sorted(os.sched_getaffinity(0)),boundary='unchanged C CLOCK_MONOTONIC fork/exec through wait4; reset and correctness outside clock',purpose='screen33.39%tiny10kfull wall/93.34%memory increase and53.47%native1kheavyj1noop improvement',measure_sha256=hashlib.sha256((ROOT/'work/tools/measure').read_bytes()).hexdigest())
+identity=json.loads(Path(os.environ['DIAGNOSTIC_IDENTITY']).read_text());identity.update(plan=plan,suite_sha='e95bfe88ac9e1eaf67cfeb8f67020fc3373ab81e',affinity=sorted(os.sched_getaffinity(0)),boundary='unchanged C CLOCK_MONOTONIC fork/exec through wait4; reset and correctness outside clock',purpose='controlled final candidate recovery against exact released and original sources; full tiny10k wall/CPU/RSS and retained no-op gains',measure_sha256=hashlib.sha256((ROOT/'work/tools/measure').read_bytes()).hexdigest())
 (out/'identity.json').write_text(json.dumps(identity,indent=2)+'\n');(out/'plan.json').write_text(json.dumps(plan,indent=2)+'\n')
 rows=[];compare={};index=0
 for gi,g in enumerate(plan):

@@ -1,0 +1,1325 @@
+{
+  "host": "a",
+  "plan_version": 3,
+  "plan_sha256": "1677a11609312c7395758abbd4e540d4daa545a9bd9fcf13d6b7ab15c78536bc",
+  "original_raw_sha256": "268a265c05dd2d2c8ade04ce57bdac3486923ca43a7f4b9415040291a91a0756",
+  "linked_replay_observations": [
+    {
+      "spec": {
+        "phase": "replay",
+        "engine": "Hugo",
+        "workers": 1,
+        "mode": "fresh",
+        "harness": "historical",
+        "observer": "none",
+        "affinity": [
+          0
+        ],
+        "job_id": "replay-Hugo-1-fresh-historical-none",
+        "round": 0,
+        "warmup": true,
+        "id": "replay-Hugo-1-fresh-historical-none-r0"
+      },
+      "warm_policy": "persistent fixture; remove only outputs before each observation, first round warmup initially unbuilt, retain internal state thereafter",
+      "command": [
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "env_controls": {
+        "GOMAXPROCS": "1",
+        "CI": "1"
+      },
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "suite_sha": "4947b42c863782ba6be0fdbbd2003d60d6d0d3d4",
+      "harness_sha256": {
+        "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+        "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+        "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+        "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+      },
+      "input": {
+        "files": 10002,
+        "bytes": 1046878,
+        "tree_sha256": "8532899237934a42571a3afcde8049d4d5e993680ac43f719505aa629de4a8a2"
+      },
+      "correct": true,
+      "wall_ms": 4593.387506,
+      "peak_rss_kib": 243840,
+      "cpu_ms": 4578.216,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "output": {
+        "files": 10000,
+        "bytes": 1327780,
+        "tree_sha256": "9d26fd8a9f1b7738c6f6f362a7fe201be050af218445fa23e964bd1c3c28b67e"
+      },
+      "telemetry_before": {
+        "stat": "cpu  66379 302 36503 252158 810 0 178 44 0 0\ncpu0 14391 0 9426 65061 150 0 63 9 0 0\ncpu1 18035 185 9207 61217 324 0 52 11 0 0\ncpu2 18727 116 8260 61652 197 0 31 12 0 0\ncpu3 15224 0 9609 64226 136 0 30 11 0 0\nintr 2188249 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49185 30635 15549 12142 0 299 315 6041 2323 296 329 3030 964 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1572145\nbtime 1792037221\nprocesses 13683\nprocs_running 1\nprocs_blocked 0\nsoftirq 864043 0 75403 1 12651 11 0 13 198832 0 577132\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         4038424 kB\nMemAvailable:    7562532 kB\nBuffers:           91460 kB\nCached:          3191624 kB\nSwapCached:            0 kB\nActive:           226884 kB\nInactive:        3112176 kB\nActive(anon):      56984 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3112176 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            215788 kB\nWriteback:             0 kB\nAnonPages:         55996 kB\nMapped:            45020 kB\nShmem:               988 kB\nKReclaimable:     551560 kB\nSlab:             649040 kB\nSReclaimable:     551560 kB\nSUnreclaim:        97480 kB\nKernelStack:        2160 kB\nPageTables:         1836 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     145964 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16252 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.30 1.24 0.82 1/133 13680\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14323 9143 708128 8448 105760 1054800 13295888 37268 0 28931 47136 0 0 0 0 40108 1419\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=0.23 avg60=0.27 avg300=0.24 total=5373071\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.05 total=4622834\nfull avg10=0.00 avg60=0.00 avg300=0.04 total=4087554\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      },
+      "telemetry_after": {
+        "stat": "cpu  66807 302 36758 254691 813 0 178 44 0 0\ncpu0 14816 0 9662 65065 151 0 64 9 0 0\ncpu1 18038 185 9212 62062 326 0 52 11 0 0\ncpu2 18727 116 8272 62483 197 0 31 12 0 0\ncpu3 15224 0 9611 65079 137 0 30 11 0 0\nintr 2201806 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49247 30762 15712 12148 0 301 317 6041 2323 296 329 3032 966 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1583450\nbtime 1792037221\nprocesses 13699\nprocs_running 1\nprocs_blocked 0\nsoftirq 866034 0 75973 1 12659 11 0 13 199155 0 578222\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3781764 kB\nMemAvailable:    7425612 kB\nBuffers:           97660 kB\nCached:          3273952 kB\nSwapCached:            0 kB\nActive:           245436 kB\nInactive:        3200716 kB\nActive(anon):      75536 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3200716 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            255484 kB\nWriteback:             0 kB\nAnonPages:         74548 kB\nMapped:            45064 kB\nShmem:               988 kB\nKReclaimable:     582760 kB\nSlab:             683084 kB\nSReclaimable:     582760 kB\nSUnreclaim:       100324 kB\nKernelStack:        2192 kB\nPageTables:         1948 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     164112 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16252 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.25 1.23 0.82 1/134 13696\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14455 9143 709184 8468 106212 1070797 13434664 37699 0 29096 47587 0 0 0 0 40113 1419\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=2.87 avg60=0.85 avg300=0.37 total=5798334\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.04 total=4633056\nfull avg10=0.00 avg60=0.00 avg300=0.04 total=4097585\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      }
+    },
+    {
+      "spec": {
+        "phase": "replay",
+        "engine": "Hugo",
+        "workers": 1,
+        "mode": "warm-full",
+        "harness": "historical",
+        "observer": "none",
+        "affinity": [
+          0
+        ],
+        "job_id": "replay-Hugo-1-warm-full-historical-none",
+        "round": 0,
+        "warmup": true,
+        "id": "replay-Hugo-1-warm-full-historical-none-r0"
+      },
+      "warm_policy": "persistent fixture; remove only outputs before each observation, first round warmup initially unbuilt, retain internal state thereafter",
+      "command": [
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "env_controls": {
+        "GOMAXPROCS": "1",
+        "CI": "1"
+      },
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "suite_sha": "4947b42c863782ba6be0fdbbd2003d60d6d0d3d4",
+      "harness_sha256": {
+        "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+        "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+        "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+        "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+      },
+      "input": {
+        "files": 10002,
+        "bytes": 1046878,
+        "tree_sha256": "8532899237934a42571a3afcde8049d4d5e993680ac43f719505aa629de4a8a2"
+      },
+      "correct": true,
+      "wall_ms": 3009.604034,
+      "peak_rss_kib": 250624,
+      "cpu_ms": 3005.548,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "output": {
+        "files": 10000,
+        "bytes": 1327780,
+        "tree_sha256": "9d26fd8a9f1b7738c6f6f362a7fe201be050af218445fa23e964bd1c3c28b67e"
+      },
+      "telemetry_before": {
+        "stat": "cpu  66818 302 36800 254851 813 0 179 44 0 0\ncpu0 14826 0 9703 65067 151 0 64 9 0 0\ncpu1 18039 185 9213 62114 326 0 52 11 0 0\ncpu2 18727 116 8272 62536 197 0 31 12 0 0\ncpu3 15224 0 9611 65133 137 0 30 11 0 0\nintr 2202534 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49247 30764 15712 12148 0 301 317 6041 2323 296 329 3032 966 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1583871\nbtime 1792037221\nprocesses 13700\nprocs_running 1\nprocs_blocked 0\nsoftirq 868517 0 76118 1 12659 11 0 13 199179 0 580536\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         4052320 kB\nMemAvailable:    7587404 kB\nBuffers:           97664 kB\nCached:          3194088 kB\nSwapCached:            0 kB\nActive:           226924 kB\nInactive:        3120856 kB\nActive(anon):      57024 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3120856 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            175800 kB\nWriteback:             0 kB\nAnonPages:         56036 kB\nMapped:            45020 kB\nShmem:               988 kB\nKReclaimable:     553856 kB\nSlab:             651764 kB\nSReclaimable:     553856 kB\nSUnreclaim:        97908 kB\nKernelStack:        2176 kB\nPageTables:         1836 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     146136 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16236 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.25 1.23 0.82 1/134 13697\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14455 9143 709184 8468 106214 1070798 13437016 37701 0 29097 47589 0 0 0 0 40113 1419\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=2.87 avg60=0.85 avg300=0.37 total=5821439\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.04 total=4633056\nfull avg10=0.00 avg60=0.00 avg300=0.04 total=4097585\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      },
+      "telemetry_after": {
+        "stat": "cpu  67264 302 37062 256907 813 0 179 45 0 0\ncpu0 15272 0 9938 65068 151 0 64 9 0 0\ncpu1 18039 185 9227 62793 326 0 52 11 0 0\ncpu2 18727 116 8276 63226 197 0 31 12 0 0\ncpu3 15224 0 9620 65818 137 0 30 11 0 0\nintr 2215366 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49250 30924 15724 12192 0 301 318 6042 2323 298 331 3032 966 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1595059\nbtime 1792037221\nprocesses 13711\nprocs_running 2\nprocs_blocked 0\nsoftirq 870313 0 76505 1 12665 11 0 13 199477 0 581641\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3769208 kB\nMemAvailable:    7416160 kB\nBuffers:           98096 kB\nCached:          3276520 kB\nSwapCached:            0 kB\nActive:           245300 kB\nInactive:        3203664 kB\nActive(anon):      75400 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3203664 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            221348 kB\nWriteback:             0 kB\nAnonPages:         74412 kB\nMapped:            45136 kB\nShmem:               988 kB\nKReclaimable:     582916 kB\nSlab:             683432 kB\nSReclaimable:     582916 kB\nSUnreclaim:       100516 kB\nKernelStack:        2192 kB\nPageTables:         1976 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     164260 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16236 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.23 1.23 0.82 2/134 13708\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14455 9143 709184 8468 106433 1083922 13542712 37966 4 29336 47855 0 0 0 0 40114 1419\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=2.93 avg60=1.03 avg300=0.42 total=5995867\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.04 total=4634978\nfull avg10=0.00 avg60=0.00 avg300=0.04 total=4099506\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      }
+    },
+    {
+      "spec": {
+        "phase": "replay",
+        "engine": "Hugo",
+        "workers": 1,
+        "mode": "fresh",
+        "harness": "current",
+        "observer": "none",
+        "affinity": [
+          0
+        ],
+        "job_id": "replay-Hugo-1-fresh-current-none",
+        "round": 0,
+        "warmup": true,
+        "id": "replay-Hugo-1-fresh-current-none-r0"
+      },
+      "warm_policy": "persistent fixture; remove only outputs before each observation, first round warmup initially unbuilt, retain internal state thereafter",
+      "command": [
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "env_controls": {
+        "GOMAXPROCS": "1",
+        "CI": "1"
+      },
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "suite_sha": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
+      "harness_sha256": {
+        "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+        "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+        "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+        "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+      },
+      "input": {
+        "files": 10002,
+        "bytes": 1046878,
+        "tree_sha256": "8532899237934a42571a3afcde8049d4d5e993680ac43f719505aa629de4a8a2"
+      },
+      "correct": true,
+      "wall_ms": 5006.0456,
+      "peak_rss_kib": 241792,
+      "cpu_ms": 4730.963,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "output": {
+        "files": 10000,
+        "bytes": 1327780,
+        "tree_sha256": "9d26fd8a9f1b7738c6f6f362a7fe201be050af218445fa23e964bd1c3c28b67e"
+      },
+      "telemetry_before": {
+        "stat": "cpu  68018 302 37764 261264 817 0 182 45 0 0\ncpu0 16022 0 10581 65080 154 0 65 10 0 0\ncpu1 18043 185 9242 64244 326 0 53 11 0 0\ncpu2 18727 116 8312 64658 198 0 31 12 0 0\ncpu3 15224 0 9627 67281 137 0 31 11 0 0\nintr 2234836 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49264 30944 16158 12253 0 301 318 6042 2323 302 335 3033 967 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1602541\nbtime 1792037221\nprocesses 13732\nprocs_running 1\nprocs_blocked 0\nsoftirq 884644 0 78799 1 12675 11 0 13 200106 0 593039\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3715988 kB\nMemAvailable:    7546980 kB\nBuffers:          106888 kB\nCached:          3402288 kB\nSwapCached:            0 kB\nActive:           227076 kB\nInactive:        3338272 kB\nActive(anon):      57176 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3338272 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            262364 kB\nWriteback:             0 kB\nAnonPages:         56188 kB\nMapped:            45020 kB\nShmem:               988 kB\nKReclaimable:     632348 kB\nSlab:             737040 kB\nSReclaimable:     632348 kB\nSUnreclaim:       104692 kB\nKernelStack:        2176 kB\nPageTables:         1836 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     146140 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16220 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.18 1.22 0.82 1/134 13729\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14462 9143 709240 8489 106956 1113430 13812384 38583 0 29904 48492 0 0 0 0 40121 1420\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=0.69 avg60=0.82 avg300=0.40 total=6073090\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.04 total=4660639\nfull avg10=0.00 avg60=0.00 avg300=0.03 total=4125086\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      },
+      "telemetry_after": {
+        "stat": "cpu  68435 302 38038 264008 818 0 182 46 0 0\ncpu0 16439 0 10834 65110 155 0 65 10 0 0\ncpu1 18043 185 9250 65131 326 0 53 11 0 0\ncpu2 18728 116 8326 65564 198 0 31 12 0 0\ncpu3 15224 0 9627 68201 137 0 32 11 0 0\nintr 2248060 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49378 30962 16315 12253 0 301 319 6047 2327 303 336 3035 969 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1614952\nbtime 1792037221\nprocesses 13743\nprocs_running 1\nprocs_blocked 0\nsoftirq 886508 0 79225 1 12691 11 0 13 200455 0 594112\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3457880 kB\nMemAvailable:    7408380 kB\nBuffers:          112564 kB\nCached:          3484616 kB\nSwapCached:            0 kB\nActive:           245696 kB\nInactive:        3426280 kB\nActive(anon):      75796 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3426280 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            291668 kB\nWriteback:             0 kB\nAnonPages:         74820 kB\nMapped:            45096 kB\nShmem:               988 kB\nKReclaimable:     663848 kB\nSlab:             771368 kB\nSReclaimable:     663848 kB\nSUnreclaim:       107520 kB\nKernelStack:        2192 kB\nPageTables:         1972 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     164288 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16220 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.15 1.21 0.83 1/134 13740\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14465 9143 709264 8490 107805 1130378 13959536 39074 0 30108 48986 0 0 0 0 40125 1420\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=2.87 avg60=1.20 avg300=0.49 total=6408588\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.04 total=4671630\nfull avg10=0.00 avg60=0.00 avg300=0.03 total=4135331\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      }
+    },
+    {
+      "spec": {
+        "phase": "replay",
+        "engine": "Hugo",
+        "workers": 1,
+        "mode": "warm-full",
+        "harness": "current",
+        "observer": "none",
+        "affinity": [
+          0
+        ],
+        "job_id": "replay-Hugo-1-warm-full-current-none",
+        "round": 0,
+        "warmup": true,
+        "id": "replay-Hugo-1-warm-full-current-none-r0"
+      },
+      "warm_policy": "persistent fixture; remove only outputs before each observation, first round warmup initially unbuilt, retain internal state thereafter",
+      "command": [
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "env_controls": {
+        "GOMAXPROCS": "1",
+        "CI": "1"
+      },
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "suite_sha": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
+      "harness_sha256": {
+        "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+        "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+        "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+        "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+      },
+      "input": {
+        "files": 10002,
+        "bytes": 1046878,
+        "tree_sha256": "8532899237934a42571a3afcde8049d4d5e993680ac43f719505aa629de4a8a2"
+      },
+      "correct": true,
+      "wall_ms": 2971.209262,
+      "peak_rss_kib": 257024,
+      "cpu_ms": 2966.92,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "output": {
+        "files": 10000,
+        "bytes": 1327780,
+        "tree_sha256": "9d26fd8a9f1b7738c6f6f362a7fe201be050af218445fa23e964bd1c3c28b67e"
+      },
+      "telemetry_before": {
+        "stat": "cpu  68444 302 38080 264161 818 0 183 46 0 0\ncpu0 16446 0 10876 65111 155 0 65 10 0 0\ncpu1 18044 185 9250 65181 326 0 53 11 0 0\ncpu2 18728 116 8326 65615 198 0 31 12 0 0\ncpu3 15224 0 9627 68252 137 0 32 11 0 0\nintr 2248763 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49378 30964 16315 12253 0 301 319 6047 2327 303 336 3035 969 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1615346\nbtime 1792037221\nprocesses 13744\nprocs_running 1\nprocs_blocked 0\nsoftirq 888973 0 79361 1 12691 11 0 13 200481 0 596415\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3742604 kB\nMemAvailable:    7584412 kB\nBuffers:          112568 kB\nCached:          3404752 kB\nSwapCached:            0 kB\nActive:           227220 kB\nInactive:        3346420 kB\nActive(anon):      57320 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3346420 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            211984 kB\nWriteback:             0 kB\nAnonPages:         56356 kB\nMapped:            45060 kB\nShmem:               988 kB\nKReclaimable:     635016 kB\nSlab:             740116 kB\nSReclaimable:     635016 kB\nSUnreclaim:       105100 kB\nKernelStack:        2176 kB\nPageTables:         1884 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     146136 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16220 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.15 1.21 0.83 1/134 13741\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14465 9143 709264 8490 107807 1130379 13961968 39077 0 30109 48989 0 0 0 0 40125 1420\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=2.35 avg60=1.16 avg300=0.49 total=6418245\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.04 total=4671630\nfull avg10=0.00 avg60=0.00 avg300=0.03 total=4135331\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      },
+      "telemetry_after": {
+        "stat": "cpu  68894 302 38342 266174 818 0 184 46 0 0\ncpu0 16897 0 11092 65114 155 0 65 10 0 0\ncpu1 18044 185 9255 65862 327 0 54 11 0 0\ncpu2 18728 116 8335 66291 198 0 32 12 0 0\ncpu3 15224 0 9658 68905 137 0 32 11 0 0\nintr 2261394 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49383 30979 16315 12575 0 301 319 6047 2327 303 336 3035 969 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1625233\nbtime 1792037221\nprocesses 13755\nprocs_running 2\nprocs_blocked 0\nsoftirq 891200 0 79795 1 12691 11 0 13 200832 0 597857\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3455732 kB\nMemAvailable:    7409044 kB\nBuffers:          112988 kB\nCached:          3487052 kB\nSwapCached:            0 kB\nActive:           246564 kB\nInactive:        3429152 kB\nActive(anon):      76664 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3429152 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            229316 kB\nWriteback:             0 kB\nAnonPages:         75704 kB\nMapped:            45136 kB\nShmem:               988 kB\nKReclaimable:     663788 kB\nSlab:             771336 kB\nSReclaimable:     663788 kB\nSUnreclaim:       107548 kB\nKernelStack:        2192 kB\nPageTables:         1968 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     165284 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16220 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.13 1.20 0.83 2/134 13752\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14465 9143 709264 8490 108149 1148345 14113216 39532 0 30540 49443 0 0 0 0 40127 1421\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=2.27 avg60=1.24 avg300=0.52 total=6563731\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.04 total=4673494\nfull avg10=0.00 avg60=0.00 avg300=0.03 total=4137169\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      }
+    },
+    {
+      "spec": {
+        "phase": "replay",
+        "engine": "Hugo",
+        "workers": 1,
+        "mode": "fresh",
+        "harness": "historical",
+        "observer": "none",
+        "affinity": [
+          0
+        ],
+        "job_id": "replay-Hugo-1-fresh-historical-none",
+        "round": 1,
+        "warmup": false,
+        "id": "replay-Hugo-1-fresh-historical-none-r1"
+      },
+      "warm_policy": "persistent fixture; remove only outputs before each observation, first round warmup initially unbuilt, retain internal state thereafter",
+      "command": [
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "env_controls": {
+        "GOMAXPROCS": "1",
+        "CI": "1"
+      },
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "suite_sha": "4947b42c863782ba6be0fdbbd2003d60d6d0d3d4",
+      "harness_sha256": {
+        "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+        "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+        "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+        "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+      },
+      "input": {
+        "files": 10002,
+        "bytes": 1046878,
+        "tree_sha256": "8532899237934a42571a3afcde8049d4d5e993680ac43f719505aa629de4a8a2"
+      },
+      "correct": true,
+      "wall_ms": 4021.923676,
+      "peak_rss_kib": 242688,
+      "cpu_ms": 4016.778,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "output": {
+        "files": 10000,
+        "bytes": 1327780,
+        "tree_sha256": "9d26fd8a9f1b7738c6f6f362a7fe201be050af218445fa23e964bd1c3c28b67e"
+      },
+      "telemetry_before": {
+        "stat": "cpu  69353 302 38598 268308 819 0 185 46 0 0\ncpu0 17353 0 11338 65123 155 0 65 10 0 0\ncpu1 18044 185 9260 66570 327 0 54 11 0 0\ncpu2 18730 116 8338 66998 198 0 32 12 0 0\ncpu3 15224 0 9660 69616 137 0 32 11 0 0\nintr 2269480 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49386 31024 16362 12575 0 301 319 6048 2328 303 336 3035 969 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1626649\nbtime 1792037221\nprocesses 13766\nprocs_running 1\nprocs_blocked 0\nsoftirq 894589 0 80169 1 12693 11 0 13 201082 0 600620\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3575124 kB\nMemAvailable:    7532360 kB\nBuffers:          113020 kB\nCached:          3491024 kB\nSwapCached:            0 kB\nActive:           227248 kB\nInactive:        3433136 kB\nActive(anon):      57348 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3433136 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            268008 kB\nWriteback:             0 kB\nAnonPages:         56360 kB\nMapped:            45020 kB\nShmem:               988 kB\nKReclaimable:     663728 kB\nSlab:             771252 kB\nSReclaimable:     663728 kB\nSUnreclaim:       107524 kB\nKernelStack:        2176 kB\nPageTables:         1836 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     146304 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16204 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.12 1.20 0.83 1/134 13763\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14465 9143 709264 8490 108244 1154722 14177056 39640 0 30619 49552 0 0 0 0 40129 1421\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=1.02 avg60=1.09 avg300=0.50 total=6594823\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.03 total=4675334\nfull avg10=0.00 avg60=0.00 avg300=0.03 total=4139005\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      },
+      "telemetry_after": {
+        "stat": "cpu  69779 302 38881 270543 819 0 185 46 0 0\ncpu0 17779 0 11557 65126 156 0 65 10 0 0\ncpu1 18044 185 9292 67303 327 0 54 11 0 0\ncpu2 18730 116 8348 67756 198 0 32 12 0 0\ncpu3 15224 0 9683 70357 137 0 32 11 0 0\nintr 2284981 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49391 31303 16370 12879 0 301 320 6050 2329 304 337 3037 971 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1641414\nbtime 1792037221\nprocesses 13777\nprocs_running 1\nprocs_blocked 0\nsoftirq 896766 0 80709 1 12703 11 0 13 201375 0 601954\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3333160 kB\nMemAvailable:    7409676 kB\nBuffers:          118272 kB\nCached:          3573332 kB\nSwapCached:            0 kB\nActive:           245760 kB\nInactive:        3520696 kB\nActive(anon):      75860 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3520696 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            236592 kB\nWriteback:             0 kB\nAnonPages:         74900 kB\nMapped:            45120 kB\nShmem:               988 kB\nKReclaimable:     695448 kB\nSlab:             805852 kB\nSReclaimable:     695448 kB\nSUnreclaim:       110404 kB\nKernelStack:        2192 kB\nPageTables:         1968 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     164452 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16204 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.10 1.19 0.83 1/134 13774\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14467 9143 709280 8491 108842 1188233 14454016 40351 0 31281 50263 0 0 0 0 40131 1421\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=1.68 avg60=1.23 avg300=0.55 total=6818725\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.03 total=4676107\nfull avg10=0.00 avg60=0.00 avg300=0.02 total=4139776\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      }
+    },
+    {
+      "spec": {
+        "phase": "replay",
+        "engine": "Hugo",
+        "workers": 1,
+        "mode": "warm-full",
+        "harness": "historical",
+        "observer": "none",
+        "affinity": [
+          0
+        ],
+        "job_id": "replay-Hugo-1-warm-full-historical-none",
+        "round": 1,
+        "warmup": false,
+        "id": "replay-Hugo-1-warm-full-historical-none-r1"
+      },
+      "warm_policy": "persistent fixture; remove only outputs before each observation, first round warmup initially unbuilt, retain internal state thereafter",
+      "command": [
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "env_controls": {
+        "GOMAXPROCS": "1",
+        "CI": "1"
+      },
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "suite_sha": "4947b42c863782ba6be0fdbbd2003d60d6d0d3d4",
+      "harness_sha256": {
+        "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+        "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+        "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+        "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+      },
+      "input": {
+        "files": 10003,
+        "bytes": 1046878,
+        "tree_sha256": "ff8a865d4e55159232be4f2f2f94a29f77f24d445d3d1a0bf118ef993f8ec231"
+      },
+      "correct": true,
+      "wall_ms": 2697.703123,
+      "peak_rss_kib": 249984,
+      "cpu_ms": 2694.126,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "output": {
+        "files": 10000,
+        "bytes": 1327780,
+        "tree_sha256": "9d26fd8a9f1b7738c6f6f362a7fe201be050af218445fa23e964bd1c3c28b67e"
+      },
+      "telemetry_before": {
+        "stat": "cpu  69790 302 38926 270711 819 0 186 46 0 0\ncpu0 17788 0 11600 65128 156 0 66 10 0 0\ncpu1 18044 185 9292 67359 327 0 54 11 0 0\ncpu2 18732 116 8349 67809 198 0 32 12 0 0\ncpu3 15224 0 9683 70413 137 0 32 11 0 0\nintr 2285742 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49391 31303 16372 12879 0 301 320 6050 2329 304 337 3037 971 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1641945\nbtime 1792037221\nprocesses 13778\nprocs_running 1\nprocs_blocked 0\nsoftirq 901840 0 80859 1 12703 11 0 13 201398 0 606855\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3615800 kB\nMemAvailable:    7583572 kB\nBuffers:          118272 kB\nCached:          3493472 kB\nSwapCached:            0 kB\nActive:           227280 kB\nInactive:        3440836 kB\nActive(anon):      57380 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3440836 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            156908 kB\nWriteback:             0 kB\nAnonPages:         56392 kB\nMapped:            45020 kB\nShmem:               988 kB\nKReclaimable:     666564 kB\nSlab:             774564 kB\nSReclaimable:     666564 kB\nSUnreclaim:       108000 kB\nKernelStack:        2176 kB\nPageTables:         1836 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     146304 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16204 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.10 1.19 0.83 1/134 13775\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14467 9143 709280 8491 108844 1188234 14456512 40353 0 31282 50266 0 0 0 0 40131 1421\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=1.68 avg60=1.23 avg300=0.55 total=6840209\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.03 total=4676107\nfull avg10=0.00 avg60=0.00 avg300=0.02 total=4139776\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      },
+      "telemetry_after": {
+        "stat": "cpu  70200 302 39134 272584 820 0 186 46 0 0\ncpu0 18198 0 11806 65131 156 0 66 11 0 0\ncpu1 18044 185 9292 67983 327 0 54 11 0 0\ncpu2 18732 116 8351 68431 199 0 32 12 0 0\ncpu3 15224 0 9683 71037 137 0 32 11 0 0\nintr 2295484 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49395 31303 16389 12879 0 301 320 6050 2329 305 338 3038 972 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1649349\nbtime 1792037221\nprocesses 13789\nprocs_running 1\nprocs_blocked 0\nsoftirq 905954 0 81237 1 12707 11 0 13 201618 0 610367\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3442960 kB\nMemAvailable:    7412860 kB\nBuffers:          118308 kB\nCached:          3495776 kB\nSwapCached:            0 kB\nActive:           244664 kB\nInactive:        3443196 kB\nActive(anon):      74764 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3443196 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            201504 kB\nWriteback:             0 kB\nAnonPages:         73784 kB\nMapped:            45148 kB\nShmem:               988 kB\nKReclaimable:     666332 kB\nSlab:             774196 kB\nSReclaimable:     666332 kB\nSUnreclaim:       107864 kB\nKernelStack:        2192 kB\nPageTables:         1972 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     163420 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16204 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.09 1.19 0.83 1/134 13786\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14468 9143 709288 8492 108866 1191154 14484832 40393 0 31302 50307 0 0 0 0 40133 1421\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=1.85 avg60=1.30 avg300=0.58 total=6974366\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.03 total=4682613\nfull avg10=0.00 avg60=0.00 avg300=0.02 total=4146281\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      }
+    },
+    {
+      "spec": {
+        "phase": "replay",
+        "engine": "Hugo",
+        "workers": 1,
+        "mode": "fresh",
+        "harness": "current",
+        "observer": "none",
+        "affinity": [
+          0
+        ],
+        "job_id": "replay-Hugo-1-fresh-current-none",
+        "round": 1,
+        "warmup": false,
+        "id": "replay-Hugo-1-fresh-current-none-r1"
+      },
+      "warm_policy": "persistent fixture; remove only outputs before each observation, first round warmup initially unbuilt, retain internal state thereafter",
+      "command": [
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "env_controls": {
+        "GOMAXPROCS": "1",
+        "CI": "1"
+      },
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "suite_sha": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
+      "harness_sha256": {
+        "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+        "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+        "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+        "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+      },
+      "input": {
+        "files": 10002,
+        "bytes": 1046878,
+        "tree_sha256": "8532899237934a42571a3afcde8049d4d5e993680ac43f719505aa629de4a8a2"
+      },
+      "correct": true,
+      "wall_ms": 3287.218124,
+      "peak_rss_kib": 250112,
+      "cpu_ms": 3283.254,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "output": {
+        "files": 10000,
+        "bytes": 1327780,
+        "tree_sha256": "9d26fd8a9f1b7738c6f6f362a7fe201be050af218445fa23e964bd1c3c28b67e"
+      },
+      "telemetry_before": {
+        "stat": "cpu  71058 302 39822 276974 824 0 188 47 0 0\ncpu0 19024 0 12418 65148 159 0 66 11 0 0\ncpu1 18046 185 9328 69440 327 0 55 11 0 0\ncpu2 18738 116 8365 69905 199 0 33 12 0 0\ncpu3 15249 0 9710 72480 137 0 32 11 0 0\nintr 2316320 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49493 31601 16436 13101 0 302 322 6054 2334 319 353 3047 984 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1656978\nbtime 1792037221\nprocesses 13868\nprocs_running 1\nprocs_blocked 0\nsoftirq 924562 0 83120 1 12768 11 0 15 202259 0 626388\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3574116 kB\nMemAvailable:    7557744 kB\nBuffers:          124128 kB\nCached:          3502200 kB\nSwapCached:            0 kB\nActive:           227692 kB\nInactive:        3455400 kB\nActive(anon):      57792 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3455400 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            135888 kB\nWriteback:             0 kB\nAnonPages:         56804 kB\nMapped:            45028 kB\nShmem:               988 kB\nKReclaimable:     667856 kB\nSlab:             776008 kB\nSReclaimable:     667856 kB\nSUnreclaim:       108152 kB\nKernelStack:        2176 kB\nPageTables:         1836 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     146696 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16252 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.07 1.18 0.84 1/134 13865\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14471 9143 709312 8503 110334 1231192 14836840 41572 0 31907 51498 0 0 0 0 40144 1422\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=0.70 avg60=1.09 avg300=0.57 total=7075725\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.03 total=4708228\nfull avg10=0.00 avg60=0.00 avg300=0.02 total=4170062\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      },
+      "telemetry_after": {
+        "stat": "cpu  71479 302 40071 279070 824 0 189 47 0 0\ncpu0 19445 0 12648 65153 159 0 66 11 0 0\ncpu1 18046 185 9333 70139 327 0 55 11 0 0\ncpu2 18738 116 8379 70594 199 0 33 12 0 0\ncpu3 15249 0 9710 73183 137 0 33 11 0 0\nintr 2327968 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49500 31601 16599 13101 0 302 322 6054 2334 319 353 3049 986 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1666630\nbtime 1792037221\nprocesses 13879\nprocs_running 1\nprocs_blocked 0\nsoftirq 926275 0 83492 1 12772 11 0 15 202610 0 627374\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3316040 kB\nMemAvailable:    7411116 kB\nBuffers:          124232 kB\nCached:          3584508 kB\nSwapCached:            0 kB\nActive:           246208 kB\nInactive:        3537828 kB\nActive(anon):      76308 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3537828 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            197568 kB\nWriteback:             0 kB\nAnonPages:         75340 kB\nMapped:            45128 kB\nShmem:               988 kB\nKReclaimable:     696876 kB\nSlab:             807464 kB\nSReclaimable:     696876 kB\nSUnreclaim:       110588 kB\nKernelStack:        2192 kB\nPageTables:         1964 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     164844 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16252 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.14 1.19 0.84 1/134 13876\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14471 9143 709312 8503 110506 1243321 14937584 41773 0 32080 51700 0 0 0 0 40148 1423\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=1.39 avg60=1.18 avg300=0.60 total=7239429\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.02 total=4710814\nfull avg10=0.00 avg60=0.00 avg300=0.02 total=4172574\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      }
+    },
+    {
+      "spec": {
+        "phase": "replay",
+        "engine": "Hugo",
+        "workers": 1,
+        "mode": "warm-full",
+        "harness": "current",
+        "observer": "none",
+        "affinity": [
+          0
+        ],
+        "job_id": "replay-Hugo-1-warm-full-current-none",
+        "round": 1,
+        "warmup": false,
+        "id": "replay-Hugo-1-warm-full-current-none-r1"
+      },
+      "warm_policy": "persistent fixture; remove only outputs before each observation, first round warmup initially unbuilt, retain internal state thereafter",
+      "command": [
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "env_controls": {
+        "GOMAXPROCS": "1",
+        "CI": "1"
+      },
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "suite_sha": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
+      "harness_sha256": {
+        "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+        "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+        "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+        "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+      },
+      "input": {
+        "files": 10003,
+        "bytes": 1046878,
+        "tree_sha256": "ff8a865d4e55159232be4f2f2f94a29f77f24d445d3d1a0bf118ef993f8ec231"
+      },
+      "correct": true,
+      "wall_ms": 2859.409232,
+      "peak_rss_kib": 251264,
+      "cpu_ms": 2855.566,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "output": {
+        "files": 10000,
+        "bytes": 1327780,
+        "tree_sha256": "9d26fd8a9f1b7738c6f6f362a7fe201be050af218445fa23e964bd1c3c28b67e"
+      },
+      "telemetry_before": {
+        "stat": "cpu  71489 302 40118 279246 824 0 189 47 0 0\ncpu0 19453 0 12694 65155 159 0 67 11 0 0\ncpu1 18046 185 9333 70197 327 0 55 11 0 0\ncpu2 18740 116 8379 70650 199 0 33 12 0 0\ncpu3 15249 0 9710 73242 137 0 33 11 0 0\nintr 2328767 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49500 31601 16601 13101 0 302 322 6054 2334 319 353 3049 986 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1667199\nbtime 1792037221\nprocesses 13880\nprocs_running 1\nprocs_blocked 0\nsoftirq 931480 0 83645 1 12772 11 0 15 202639 0 632397\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3596168 kB\nMemAvailable:    7582604 kB\nBuffers:          124232 kB\nCached:          3504672 kB\nSwapCached:            0 kB\nActive:           227716 kB\nInactive:        3458016 kB\nActive(anon):      57816 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3458016 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            117724 kB\nWriteback:             0 kB\nAnonPages:         56828 kB\nMapped:            45028 kB\nShmem:               988 kB\nKReclaimable:     668048 kB\nSlab:             776260 kB\nSReclaimable:     668048 kB\nSUnreclaim:       108212 kB\nKernelStack:        2192 kB\nPageTables:         1836 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     146692 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16252 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.13 1.19 0.84 1/134 13877\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14471 9143 709312 8503 110508 1243322 14940160 41775 0 32081 51702 0 0 0 0 40148 1423\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=1.39 avg60=1.18 avg300=0.60 total=7266369\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.02 total=4710814\nfull avg10=0.00 avg60=0.00 avg300=0.02 total=4172574\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      },
+      "telemetry_after": {
+        "stat": "cpu  71917 302 40365 281188 825 0 190 48 0 0\ncpu0 19881 0 12920 65156 159 0 67 12 0 0\ncpu1 18046 185 9333 70852 327 0 56 11 0 0\ncpu2 18740 116 8395 71288 199 0 33 12 0 0\ncpu3 15249 0 9716 73890 137 0 33 11 0 0\nintr 2341295 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49502 31601 16801 13101 0 302 322 6054 2334 320 354 3050 987 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1678559\nbtime 1792037221\nprocesses 13891\nprocs_running 1\nprocs_blocked 0\nsoftirq 935497 0 84109 1 12776 11 0 15 202932 0 635653\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3423036 kB\nMemAvailable:    7411488 kB\nBuffers:          124260 kB\nCached:          3506952 kB\nSwapCached:            0 kB\nActive:           244980 kB\nInactive:        3460324 kB\nActive(anon):      75080 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3460324 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            119484 kB\nWriteback:             0 kB\nAnonPages:         74120 kB\nMapped:            45096 kB\nShmem:               988 kB\nKReclaimable:     667756 kB\nSlab:             775792 kB\nSReclaimable:     667756 kB\nSUnreclaim:       108036 kB\nKernelStack:        2192 kB\nPageTables:         1972 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     163808 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16252 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.12 1.18 0.84 1/134 13888\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14471 9143 709312 8503 110712 1254284 15036720 42009 0 32294 51936 0 0 0 0 40149 1423\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=2.27 avg60=1.36 avg300=0.65 total=7463051\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.02 total=4713102\nfull avg10=0.00 avg60=0.00 avg300=0.02 total=4172581\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      }
+    },
+    {
+      "spec": {
+        "phase": "replay",
+        "engine": "Hugo",
+        "workers": 1,
+        "mode": "fresh",
+        "harness": "historical",
+        "observer": "none",
+        "affinity": [
+          0
+        ],
+        "job_id": "replay-Hugo-1-fresh-historical-none",
+        "round": 2,
+        "warmup": false,
+        "id": "replay-Hugo-1-fresh-historical-none-r2"
+      },
+      "warm_policy": "persistent fixture; remove only outputs before each observation, first round warmup initially unbuilt, retain internal state thereafter",
+      "command": [
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "env_controls": {
+        "GOMAXPROCS": "1",
+        "CI": "1"
+      },
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "suite_sha": "4947b42c863782ba6be0fdbbd2003d60d6d0d3d4",
+      "harness_sha256": {
+        "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+        "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+        "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+        "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+      },
+      "input": {
+        "files": 10002,
+        "bytes": 1046878,
+        "tree_sha256": "8532899237934a42571a3afcde8049d4d5e993680ac43f719505aa629de4a8a2"
+      },
+      "correct": true,
+      "wall_ms": 2609.359525,
+      "peak_rss_kib": 248064,
+      "cpu_ms": 2605.746,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "output": {
+        "files": 10000,
+        "bytes": 1327780,
+        "tree_sha256": "9d26fd8a9f1b7738c6f6f362a7fe201be050af218445fa23e964bd1c3c28b67e"
+      },
+      "telemetry_before": {
+        "stat": "cpu  72291 302 40727 283399 827 0 192 48 0 0\ncpu0 20253 0 13276 65161 160 0 68 12 0 0\ncpu1 18046 185 9335 71589 327 0 57 11 0 0\ncpu2 18742 116 8398 72021 200 0 33 12 0 0\ncpu3 15249 0 9717 74627 137 0 33 11 0 0\nintr 2350346 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49571 31621 16828 13101 0 303 323 6059 2337 320 354 3050 987 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1681492\nbtime 1792037221\nprocesses 13902\nprocs_running 1\nprocs_blocked 0\nsoftirq 944536 0 85277 1 12786 11 0 15 203180 0 643266\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3584980 kB\nMemAvailable:    7576316 kB\nBuffers:          124356 kB\nCached:          3509532 kB\nSwapCached:            0 kB\nActive:           227728 kB\nInactive:        3462984 kB\nActive(anon):      57828 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3462984 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            119676 kB\nWriteback:             0 kB\nAnonPages:         56840 kB\nMapped:            45028 kB\nShmem:               988 kB\nKReclaimable:     667980 kB\nSlab:             776344 kB\nSReclaimable:     667980 kB\nSUnreclaim:       108364 kB\nKernelStack:        2176 kB\nPageTables:         1836 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     146692 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16252 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.11 1.18 0.84 1/134 13899\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14471 9143 709312 8503 111398 1259464 15093608 42401 0 32346 52329 0 0 0 0 40154 1423\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=1.01 avg60=1.19 avg300=0.63 total=7510664\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.02 total=4729743\nfull avg10=0.00 avg60=0.00 avg300=0.01 total=4188381\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      },
+      "telemetry_after": {
+        "stat": "cpu  72713 302 40929 285299 829 0 192 48 0 0\ncpu0 20674 0 13477 65163 162 0 68 12 0 0\ncpu1 18046 185 9335 72221 327 0 57 11 0 0\ncpu2 18742 116 8399 72653 200 0 33 12 0 0\ncpu3 15249 0 9717 75260 137 0 33 11 0 0\nintr 2360158 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49809 31625 16837 13101 0 306 325 6059 2337 323 356 3050 987 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1688542\nbtime 1792037221\nprocesses 13913\nprocs_running 1\nprocs_blocked 0\nsoftirq 945844 0 85596 1 12796 11 0 15 203437 0 643988\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3305680 kB\nMemAvailable:    7408168 kB\nBuffers:          124376 kB\nCached:          3591872 kB\nSwapCached:            0 kB\nActive:           246328 kB\nInactive:        3545340 kB\nActive(anon):      76428 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3545340 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            200944 kB\nWriteback:             0 kB\nAnonPages:         75444 kB\nMapped:            45096 kB\nShmem:               988 kB\nKReclaimable:     696776 kB\nSlab:             807388 kB\nSReclaimable:     696776 kB\nSUnreclaim:       110612 kB\nKernelStack:        2192 kB\nPageTables:         1968 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     164840 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16252 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.09 1.17 0.85 1/134 13910\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14471 9143 709312 8503 112882 1262417 15131448 42828 0 32382 52756 0 0 0 0 40156 1423\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=1.55 avg60=1.27 avg300=0.66 total=7645706\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.02 total=4755184\nfull avg10=0.00 avg60=0.00 avg300=0.01 total=4211369\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      }
+    },
+    {
+      "spec": {
+        "phase": "replay",
+        "engine": "Hugo",
+        "workers": 1,
+        "mode": "warm-full",
+        "harness": "historical",
+        "observer": "none",
+        "affinity": [
+          0
+        ],
+        "job_id": "replay-Hugo-1-warm-full-historical-none",
+        "round": 2,
+        "warmup": false,
+        "id": "replay-Hugo-1-warm-full-historical-none-r2"
+      },
+      "warm_policy": "persistent fixture; remove only outputs before each observation, first round warmup initially unbuilt, retain internal state thereafter",
+      "command": [
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "env_controls": {
+        "GOMAXPROCS": "1",
+        "CI": "1"
+      },
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "suite_sha": "4947b42c863782ba6be0fdbbd2003d60d6d0d3d4",
+      "harness_sha256": {
+        "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+        "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+        "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+        "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+      },
+      "input": {
+        "files": 10003,
+        "bytes": 1046878,
+        "tree_sha256": "ff8a865d4e55159232be4f2f2f94a29f77f24d445d3d1a0bf118ef993f8ec231"
+      },
+      "correct": true,
+      "wall_ms": 2796.450641,
+      "peak_rss_kib": 258944,
+      "cpu_ms": 2793.018,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "output": {
+        "files": 10000,
+        "bytes": 1327780,
+        "tree_sha256": "9d26fd8a9f1b7738c6f6f362a7fe201be050af218445fa23e964bd1c3c28b67e"
+      },
+      "telemetry_before": {
+        "stat": "cpu  72722 302 40977 285473 829 0 192 48 0 0\ncpu0 20683 0 13525 65165 162 0 68 12 0 0\ncpu1 18046 185 9335 72280 327 0 57 11 0 0\ncpu2 18744 116 8399 72709 200 0 33 12 0 0\ncpu3 15249 0 9717 75318 137 0 33 11 0 0\nintr 2360957 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49809 31625 16839 13101 0 306 325 6059 2337 323 356 3050 987 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1689096\nbtime 1792037221\nprocesses 13914\nprocs_running 1\nprocs_blocked 0\nsoftirq 950923 0 85746 1 12796 11 0 15 203498 0 648856\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3589292 kB\nMemAvailable:    7583096 kB\nBuffers:          124376 kB\nCached:          3512012 kB\nSwapCached:            0 kB\nActive:           227748 kB\nInactive:        3465480 kB\nActive(anon):      57848 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3465480 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            121260 kB\nWriteback:             0 kB\nAnonPages:         56860 kB\nMapped:            45028 kB\nShmem:               988 kB\nKReclaimable:     667952 kB\nSlab:             776168 kB\nSReclaimable:     667952 kB\nSUnreclaim:       108216 kB\nKernelStack:        2176 kB\nPageTables:         1836 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     146692 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16252 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.09 1.17 0.85 1/134 13911\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14471 9143 709312 8503 112884 1262418 15134080 42831 0 32383 52758 0 0 0 0 40156 1423\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=1.45 avg60=1.26 avg300=0.66 total=7673586\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.18 avg60=0.03 avg300=0.03 total=4755184\nfull avg10=0.18 avg60=0.03 avg300=0.02 total=4211369\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      },
+      "telemetry_after": {
+        "stat": "cpu  73125 302 41223 287329 830 0 193 48 0 0\ncpu0 21085 0 13743 65167 163 0 68 12 0 0\ncpu1 18046 185 9337 72904 328 0 57 11 0 0\ncpu2 18744 116 8419 73316 200 0 33 12 0 0\ncpu3 15249 0 9722 75940 137 0 33 11 0 0\nintr 2372432 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49813 31642 17057 13101 0 306 325 6059 2337 324 357 3050 987 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1698620\nbtime 1792037221\nprocesses 13925\nprocs_running 1\nprocs_blocked 0\nsoftirq 955642 0 86189 1 12798 11 0 15 203809 0 652819\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3418748 kB\nMemAvailable:    7414424 kB\nBuffers:          124424 kB\nCached:          3514312 kB\nSwapCached:            0 kB\nActive:           245028 kB\nInactive:        3467828 kB\nActive(anon):      75128 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3467828 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:             98716 kB\nWriteback:             0 kB\nAnonPages:         74196 kB\nMapped:            45140 kB\nShmem:               988 kB\nKReclaimable:     667476 kB\nSlab:             775580 kB\nSReclaimable:     667476 kB\nSUnreclaim:       108104 kB\nKernelStack:        2192 kB\nPageTables:         1972 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     163808 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16252 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.09 1.17 0.85 1/134 13922\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14472 9143 709320 8503 113162 1278388 15273984 43209 0 32635 53137 0 0 0 0 40159 1424\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=1.72 avg60=1.33 avg300=0.69 total=7830193\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.09 avg60=0.02 avg300=0.03 total=4760553\nfull avg10=0.09 avg60=0.02 avg300=0.02 total=4216713\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      }
+    },
+    {
+      "spec": {
+        "phase": "replay",
+        "engine": "Hugo",
+        "workers": 1,
+        "mode": "fresh",
+        "harness": "current",
+        "observer": "none",
+        "affinity": [
+          0
+        ],
+        "job_id": "replay-Hugo-1-fresh-current-none",
+        "round": 2,
+        "warmup": false,
+        "id": "replay-Hugo-1-fresh-current-none-r2"
+      },
+      "warm_policy": "persistent fixture; remove only outputs before each observation, first round warmup initially unbuilt, retain internal state thereafter",
+      "command": [
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "env_controls": {
+        "GOMAXPROCS": "1",
+        "CI": "1"
+      },
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "suite_sha": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
+      "harness_sha256": {
+        "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+        "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+        "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+        "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+      },
+      "input": {
+        "files": 10002,
+        "bytes": 1046878,
+        "tree_sha256": "8532899237934a42571a3afcde8049d4d5e993680ac43f719505aa629de4a8a2"
+      },
+      "correct": true,
+      "wall_ms": 2644.856984,
+      "peak_rss_kib": 252544,
+      "cpu_ms": 2641.292,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "output": {
+        "files": 10000,
+        "bytes": 1327780,
+        "tree_sha256": "9d26fd8a9f1b7738c6f6f362a7fe201be050af218445fa23e964bd1c3c28b67e"
+      },
+      "telemetry_before": {
+        "stat": "cpu  73943 302 41836 291565 831 0 194 49 0 0\ncpu0 21899 0 14330 65181 164 0 69 13 0 0\ncpu1 18046 185 9339 74320 328 0 58 11 0 0\ncpu2 18747 116 8436 74713 200 0 33 12 0 0\ncpu3 15249 0 9729 77350 137 0 33 11 0 0\nintr 2389630 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49819 31679 17267 13101 0 310 330 6063 2340 325 358 3050 987 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1703409\nbtime 1792037221\nprocesses 13946\nprocs_running 1\nprocs_blocked 0\nsoftirq 971500 0 87687 1 12816 11 0 15 204274 0 666696\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3561372 kB\nMemAvailable:    7563912 kB\nBuffers:          124536 kB\nCached:          3520732 kB\nSwapCached:            0 kB\nActive:           227840 kB\nInactive:        3474364 kB\nActive(anon):      57940 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3474364 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            114212 kB\nWriteback:             0 kB\nAnonPages:         56952 kB\nMapped:            45028 kB\nShmem:               988 kB\nKReclaimable:     667804 kB\nSlab:             775992 kB\nSReclaimable:     667804 kB\nSUnreclaim:       108188 kB\nKernelStack:        2176 kB\nPageTables:         1836 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     146696 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16252 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.07 1.16 0.85 1/134 13943\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14472 9143 709320 8503 113415 1294726 15421808 43505 0 32874 53433 0 0 0 0 40165 1424\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=0.62 avg60=1.11 avg300=0.67 total=7921062\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.02 avg60=0.02 avg300=0.02 total=4767374\nfull avg10=0.02 avg60=0.02 avg300=0.01 total=4223532\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      },
+      "telemetry_after": {
+        "stat": "cpu  74353 302 42041 293443 831 0 195 49 0 0\ncpu0 22310 0 14535 65185 164 0 69 13 0 0\ncpu1 18046 185 9340 74944 328 0 58 11 0 0\ncpu2 18747 116 8436 75338 200 0 33 12 0 0\ncpu3 15249 0 9729 77974 137 0 33 11 0 0\nintr 2399081 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49827 31695 17267 13104 0 310 330 6063 2340 331 361 3051 988 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1710116\nbtime 1792037221\nprocesses 13957\nprocs_running 1\nprocs_blocked 1\nsoftirq 972769 0 87981 1 12827 11 0 15 204509 0 667425\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3297892 kB\nMemAvailable:    7411964 kB\nBuffers:          124584 kB\nCached:          3603168 kB\nSwapCached:            0 kB\nActive:           246504 kB\nInactive:        3556816 kB\nActive(anon):      76604 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3556816 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            196448 kB\nWriteback:             0 kB\nAnonPages:         75616 kB\nMapped:            45104 kB\nShmem:               988 kB\nKReclaimable:     696884 kB\nSlab:             807664 kB\nSReclaimable:     696884 kB\nSUnreclaim:       110780 kB\nKernelStack:        2192 kB\nPageTables:         1968 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     164844 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16252 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.06 1.16 0.85 1/134 13954\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14472 9143 709320 8503 113444 1298987 15458576 43544 0 32887 53472 0 0 0 0 40168 1424\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=1.33 avg60=1.20 avg300=0.70 total=8048247\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.01 avg60=0.01 avg300=0.02 total=4770430\nfull avg10=0.01 avg60=0.01 avg300=0.01 total=4226588\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      }
+    },
+    {
+      "spec": {
+        "phase": "replay",
+        "engine": "Hugo",
+        "workers": 1,
+        "mode": "warm-full",
+        "harness": "current",
+        "observer": "none",
+        "affinity": [
+          0
+        ],
+        "job_id": "replay-Hugo-1-warm-full-current-none",
+        "round": 2,
+        "warmup": false,
+        "id": "replay-Hugo-1-warm-full-current-none-r2"
+      },
+      "warm_policy": "persistent fixture; remove only outputs before each observation, first round warmup initially unbuilt, retain internal state thereafter",
+      "command": [
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "env_controls": {
+        "GOMAXPROCS": "1",
+        "CI": "1"
+      },
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "suite_sha": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
+      "harness_sha256": {
+        "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+        "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+        "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+        "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+      },
+      "input": {
+        "files": 10003,
+        "bytes": 1046878,
+        "tree_sha256": "ff8a865d4e55159232be4f2f2f94a29f77f24d445d3d1a0bf118ef993f8ec231"
+      },
+      "correct": true,
+      "wall_ms": 2538.779679,
+      "peak_rss_kib": 258688,
+      "cpu_ms": 2535.226,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "output": {
+        "files": 10000,
+        "bytes": 1327780,
+        "tree_sha256": "9d26fd8a9f1b7738c6f6f362a7fe201be050af218445fa23e964bd1c3c28b67e"
+      },
+      "telemetry_before": {
+        "stat": "cpu  74364 302 42083 293598 832 0 195 49 0 0\ncpu0 22318 0 14575 65188 164 0 69 13 0 0\ncpu1 18046 185 9341 74995 329 0 58 11 0 0\ncpu2 18749 116 8436 75388 200 0 33 12 0 0\ncpu3 15249 0 9729 78026 137 0 33 11 0 0\nintr 2399819 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49827 31698 17274 13104 0 310 330 6064 2341 331 361 3051 988 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1710523\nbtime 1792037221\nprocesses 13958\nprocs_running 1\nprocs_blocked 0\nsoftirq 975249 0 88120 1 12829 11 0 15 204535 0 669738\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3585280 kB\nMemAvailable:    7590604 kB\nBuffers:          124588 kB\nCached:          3523204 kB\nSwapCached:            0 kB\nActive:           228036 kB\nInactive:        3476904 kB\nActive(anon):      58136 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3476904 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            114172 kB\nWriteback:           152 kB\nAnonPages:         57172 kB\nMapped:            45056 kB\nShmem:               988 kB\nKReclaimable:     668048 kB\nSlab:             776280 kB\nSReclaimable:     668048 kB\nSUnreclaim:       108232 kB\nKernelStack:        2192 kB\nPageTables:         1888 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     146692 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16252 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.06 1.16 0.85 1/134 13955\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14472 9143 709320 8503 113453 1298994 15466176 43554 0 32892 53483 0 0 0 0 40169 1424\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=1.33 avg60=1.20 avg300=0.70 total=8063918\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.01 avg60=0.01 avg300=0.02 total=4770432\nfull avg10=0.01 avg60=0.01 avg300=0.01 total=4226589\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      },
+      "telemetry_after": {
+        "stat": "cpu  74794 302 42274 295470 832 0 195 49 0 0\ncpu0 22747 0 14763 65192 165 0 69 13 0 0\ncpu1 18046 185 9342 75618 329 0 58 11 0 0\ncpu2 18750 116 8437 76011 200 0 33 12 0 0\ncpu3 15249 0 9731 78647 137 0 33 11 0 0\nintr 2409901 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49947 31708 17274 13133 0 316 334 6064 2341 333 365 3053 992 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1718131\nbtime 1792037221\nprocesses 13971\nprocs_running 1\nprocs_blocked 0\nsoftirq 978909 0 88524 1 12851 11 0 17 204781 0 672724\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3426616 kB\nMemAvailable:    7434000 kB\nBuffers:          124612 kB\nCached:          3525484 kB\nSwapCached:            0 kB\nActive:           245372 kB\nInactive:        3479184 kB\nActive(anon):      75472 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3479184 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            132344 kB\nWriteback:             0 kB\nAnonPages:         74368 kB\nMapped:            45160 kB\nShmem:               988 kB\nKReclaimable:     667828 kB\nSlab:             775892 kB\nSReclaimable:     667828 kB\nSUnreclaim:       108064 kB\nKernelStack:        2192 kB\nPageTables:         1968 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     163804 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16252 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.06 1.16 0.85 1/134 13968\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14472 9143 709320 8503 114066 1305073 15524488 43782 0 32924 53711 0 0 0 0 40172 1425\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=1.72 avg60=1.28 avg300=0.72 total=8195652\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.01 avg300=0.02 total=4779189\nfull avg10=0.00 avg60=0.01 avg300=0.01 total=4234687\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      }
+    },
+    {
+      "spec": {
+        "phase": "replay",
+        "engine": "Hugo",
+        "workers": 1,
+        "mode": "warm-full",
+        "harness": "historical",
+        "observer": "none",
+        "affinity": [
+          0
+        ],
+        "job_id": "replay-Hugo-1-warm-full-historical-none",
+        "round": 3,
+        "warmup": false,
+        "id": "replay-Hugo-1-warm-full-historical-none-r3"
+      },
+      "warm_policy": "persistent fixture; remove only outputs before each observation, first round warmup initially unbuilt, retain internal state thereafter",
+      "command": [
+        "/opt/supplement/tools/hugo",
+        "--quiet",
+        "--destination",
+        "public"
+      ],
+      "env_controls": {
+        "GOMAXPROCS": "1",
+        "CI": "1"
+      },
+      "binary_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+      "suite_sha": "4947b42c863782ba6be0fdbbd2003d60d6d0d3d4",
+      "harness_sha256": {
+        "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+        "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+        "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+        "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+      },
+      "input": {
+        "files": 10003,
+        "bytes": 1046878,
+        "tree_sha256": "ff8a865d4e55159232be4f2f2f94a29f77f24d445d3d1a0bf118ef993f8ec231"
+      },
+      "correct": true,
+      "wall_ms": 2622.407355,
+      "peak_rss_kib": 259712,
+      "cpu_ms": 2618.873,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation": {
+        "routes": 10000,
+        "content_checked": 10000
+      },
+      "output": {
+        "files": 10000,
+        "bytes": 1327780,
+        "tree_sha256": "9d26fd8a9f1b7738c6f6f362a7fe201be050af218445fa23e964bd1c3c28b67e"
+      },
+      "telemetry_before": {
+        "stat": "cpu  75601 302 42909 299724 834 0 197 49 0 0\ncpu0 23550 0 15370 65204 165 0 70 13 0 0\ncpu1 18046 185 9360 77024 329 0 58 11 0 0\ncpu2 18754 116 8438 77430 200 0 33 12 0 0\ncpu3 15250 0 9739 80064 137 0 33 11 0 0\nintr 2427228 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49955 31917 17287 13165 0 316 334 6066 2343 333 365 3056 995 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1722896\nbtime 1792037221\nprocesses 13992\nprocs_running 1\nprocs_blocked 0\nsoftirq 993093 0 90032 1 12861 11 0 17 205281 0 684890\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3553120 kB\nMemAvailable:    7567236 kB\nBuffers:          124724 kB\nCached:          3531904 kB\nSwapCached:            0 kB\nActive:           228052 kB\nInactive:        3485708 kB\nActive(anon):      58152 kB\nInactive(anon):        0 kB\nActive(file):     169900 kB\nInactive(file):  3485708 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            153688 kB\nWriteback:             0 kB\nAnonPages:         57164 kB\nMapped:            45032 kB\nShmem:               988 kB\nKReclaimable:     668036 kB\nSlab:             776260 kB\nSReclaimable:     668036 kB\nSUnreclaim:       108224 kB\nKernelStack:        2176 kB\nPageTables:         1836 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     146828 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16236 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.04 1.15 0.86 1/134 13989\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14472 9143 709320 8503 114357 1321460 15673264 44103 0 33178 54032 0 0 0 0 40177 1425\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=0.54 avg60=1.03 avg300=0.70 total=8279894\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.01 avg300=0.02 total=4785714\nfull avg10=0.00 avg60=0.01 avg300=0.01 total=4241170\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      },
+      "telemetry_after": {
+        "stat": "cpu  76030 302 43143 301450 834 0 197 49 0 0\ncpu0 23951 0 15561 65209 166 0 70 13 0 0\ncpu1 18066 185 9377 77585 329 0 58 11 0 0\ncpu2 18757 116 8451 78011 201 0 34 12 0 0\ncpu3 15255 0 9752 80644 137 0 33 11 0 0\nintr 2439435 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49957 31997 17343 13253 0 318 337 6072 2350 343 375 3061 1002 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1732931\nbtime 1792037221\nprocesses 14064\nprocs_running 1\nprocs_blocked 0\nsoftirq 998153 0 90567 1 12911 11 0 19 205573 0 689071\n",
+        "meminfo": "MemTotal:        8131788 kB\nMemFree:         3406652 kB\nMemAvailable:    7423016 kB\nBuffers:          124776 kB\nCached:          3534244 kB\nSwapCached:            0 kB\nActive:           245448 kB\nInactive:        3488104 kB\nActive(anon):      75528 kB\nInactive(anon):        0 kB\nActive(file):     169920 kB\nInactive(file):  3488104 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            153692 kB\nWriteback:             0 kB\nAnonPages:         74552 kB\nMapped:            45104 kB\nShmem:               988 kB\nKReclaimable:     667868 kB\nSlab:             776052 kB\nSReclaimable:     667868 kB\nSUnreclaim:       108184 kB\nKernelStack:        2192 kB\nPageTables:         1968 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     163944 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16284 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+        "loadavg": "1.11 1.16 0.86 1/134 14061\n",
+        "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14474 9143 709392 8504 114588 1334524 15789568 44376 0 33410 54307 0 0 0 0 40179 1425\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+        "pressure/cpu": "some avg10=1.38 avg60=1.16 avg300=0.73 total=8421361\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "pressure/io": "some avg10=0.00 avg60=0.01 avg300=0.01 total=4788348\nfull avg10=0.00 avg60=0.01 avg300=0.01 total=4243802\n",
+        "pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=217\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=217\n"
+      }
+    }
+  ],
+  "suite_hashes": {
+    "current": {
+      "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+      "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+      "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+      "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+    },
+    "historical": {
+      "benchmark.py": "1021c431e86a7db1b872e59e94e2faaa94d6adf62120c8230817cc346665f490",
+      "campaign.py": "2c003b771eceb229b499f4c487b07c937e4c8d8a7eb9a572c95172007f3197bc",
+      "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3",
+      "measure.c": "cec68a20d1fbf0edcba32b1cee0f1ac5aa9635af0551cc15ac743cb111f8a927"
+    }
+  },
+  "worker_default_source": "Nift ProjectInfo.cpp hardware_concurrency multiplier; fixture default -1. Hugo unset GOMAXPROCS, actual Go defaults not equated to sampled thread count.",
+  "metadata": {
+    "date": "2026-10-15T04:27:40Z",
+    "uname": "Linux localhost 6.8.0-134-generic #134-Ubuntu SMP PREEMPT_DYNAMIC Fri Jun 26 18:43:11 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+    "cpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           48 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  4\nOn-line CPU(s) list:                     0-3\nVendor ID:                               AuthenticAMD\nBIOS Vendor ID:                          QEMU\nModel name:                              AMD EPYC 7642 48-Core Processor\nBIOS Model name:                         pc-q35-10.1  CPU @ 2.0GHz\nBIOS CPU family:                         1\nCPU family:                              23\nModel:                                   49\nThread(s) per core:                      1\nCore(s) per socket:                      4\nSocket(s):                               1\nStepping:                                0\nBogoMIPS:                                4599.99\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nHypervisor vendor:                       KVM\nVirtualization type:                     full\nL1d cache:                               256 KiB (4 instances)\nL1i cache:                               256 KiB (4 instances)\nL2 cache:                                2 MiB (4 instances)\nL3 cache:                                64 MiB (4 instances)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-3\nVulnerability Gather data sampling:      Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Mitigation; untrained return thunk; SMT disabled\nVulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected",
+    "mount": "{\n   \"filesystems\": [\n      {\n         \"target\": \"/\",\n         \"source\": \"/dev/sda\",\n         \"fstype\": \"ext4\",\n         \"options\": \"rw,relatime,errors=remount-ro\",\n         \"children\": [\n            {\n               \"target\": \"/sys\",\n               \"source\": \"sysfs\",\n               \"fstype\": \"sysfs\",\n               \"options\": \"rw,nosuid,nodev,noexec,relatime\",\n               \"children\": [\n                  {\n                     \"target\": \"/sys/kernel/security\",\n                     \"source\": \"securityfs\",\n                     \"fstype\": \"securityfs\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime\"\n                  },{\n                     \"target\": \"/sys/fs/cgroup\",\n                     \"source\": \"cgroup2\",\n                     \"fstype\": \"cgroup2\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot\"\n                  },{\n                     \"target\": \"/sys/fs/pstore\",\n                     \"source\": \"pstore\",\n                     \"fstype\": \"pstore\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime\"\n                  },{\n                     \"target\": \"/sys/fs/bpf\",\n                     \"source\": \"bpf\",\n                     \"fstype\": \"bpf\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime,mode=700\"\n                  },{\n                     \"target\": \"/sys/kernel/debug\",\n                     \"source\": \"debugfs\",\n                     \"fstype\": \"debugfs\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime\"\n                  },{\n                     \"target\": \"/sys/kernel/tracing\",\n                     \"source\": \"tracefs\",\n                     \"fstype\": \"tracefs\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime\"\n                  },{\n                     \"target\": \"/sys/fs/fuse/connections\",\n                     \"source\": \"fusectl\",\n                     \"fstype\": \"fusectl\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime\"\n                  },{\n                     \"target\": \"/sys/kernel/config\",\n                     \"source\": \"configfs\",\n                     \"fstype\": \"configfs\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime\"\n                  }\n               ]\n            },{\n               \"target\": \"/proc\",\n               \"source\": \"proc\",\n               \"fstype\": \"proc\",\n               \"options\": \"rw,nosuid,nodev,noexec,relatime\",\n               \"children\": [\n                  {\n                     \"target\": \"/proc/sys/fs/binfmt_misc\",\n                     \"source\": \"systemd-1\",\n                     \"fstype\": \"autofs\",\n                     \"options\": \"rw,relatime,fd=32,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=4305\",\n                     \"children\": [\n                        {\n                           \"target\": \"/proc/sys/fs/binfmt_misc\",\n                           \"source\": \"binfmt_misc\",\n                           \"fstype\": \"binfmt_misc\",\n                           \"options\": \"rw,nosuid,nodev,noexec,relatime\"\n                        }\n                     ]\n                  }\n               ]\n            },{\n               \"target\": \"/dev\",\n               \"source\": \"udev\",\n               \"fstype\": \"devtmpfs\",\n               \"options\": \"rw,nosuid,relatime,size=4024064k,nr_inodes=1006016,mode=755,inode64\",\n               \"children\": [\n                  {\n                     \"target\": \"/dev/pts\",\n                     \"source\": \"devpts\",\n                     \"fstype\": \"devpts\",\n                     \"options\": \"rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000\"\n                  },{\n                     \"target\": \"/dev/shm\",\n                     \"source\": \"tmpfs\",\n                     \"fstype\": \"tmpfs\",\n                     \"options\": \"rw,nosuid,nodev,inode64\"\n                  },{\n                     \"target\": \"/dev/hugepages\",\n                     \"source\": \"hugetlbfs\",\n                     \"fstype\": \"hugetlbfs\",\n                     \"options\": \"rw,nosuid,nodev,relatime,pagesize=2M\"\n                  },{\n                     \"target\": \"/dev/mqueue\",\n                     \"source\": \"mqueue\",\n                     \"fstype\": \"mqueue\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime\"\n                  }\n               ]\n            },{\n               \"target\": \"/run\",\n               \"source\": \"tmpfs\",\n               \"fstype\": \"tmpfs\",\n               \"options\": \"rw,nosuid,nodev,noexec,relatime,size=813180k,mode=755,inode64\",\n               \"children\": [\n                  {\n                     \"target\": \"/run/lock\",\n                     \"source\": \"tmpfs\",\n                     \"fstype\": \"tmpfs\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime,size=5120k,inode64\"\n                  },{\n                     \"target\": \"/run/user/0\",\n                     \"source\": \"tmpfs\",\n                     \"fstype\": \"tmpfs\",\n                     \"options\": \"rw,nosuid,nodev,relatime,size=813176k,nr_inodes=203294,mode=700,inode64\"\n                  }\n               ]\n            }\n         ]\n      }\n   ]\n}",
+    "disk": "{\n   \"blockdevices\": [\n      {\n         \"name\": \"sda\",\n         \"type\": \"disk\",\n         \"size\": \"159.5G\",\n         \"rota\": false,\n         \"model\": \"QEMU HARDDISK\"\n      },{\n         \"name\": \"sdb\",\n         \"type\": \"disk\",\n         \"size\": \"496M\",\n         \"rota\": false,\n         \"model\": \"QEMU HARDDISK\"\n      }\n   ]\n}",
+    "filesystem": "Filesystem     Type  1K-blocks    Used Available Use% Mounted on\ntmpfs          tmpfs    813180     976    812204   1% /run\n/dev/sda       ext4  164532852 5688828 150466280   4% /\ntmpfs          tmpfs   4065892       0   4065892   0% /dev/shm\ntmpfs          tmpfs      5120       0      5120   0% /run/lock\ntmpfs          tmpfs    813176      12    813164   1% /run/user/0",
+    "frequency": "",
+    "virtualization": "kvm",
+    "hugo_build": "hugo v0.167.0-3fff6fb5c267dacb26280c78dbe8c344054249c8 linux/amd64 BuildDate=2026-09-28T14:50:38Z VendorInfo=gohugoio",
+    "hugo_help": "hugo is the main command, used to build your Hugo project.\n\nHugo is a Fast and Flexible Static Site Generator\nbuilt with love by spf13 and friends in Go.\n\nComplete documentation is available at https://gohugo.io/.\n\nUsage:\n  hugo [flags]\n  hugo [command]\n\nAvailable Commands:\n  build       Build your project\n  completion  Generate the autocompletion script for the specified shell\n  config      Display project configuration\n  convert     Convert front matter to another format\n  env         Display version and environment info\n  gen         Generate documentation and syntax highlighting styles\n  help        Help about any command\n  import      Import a project from another system\n  list        List content\n  mod         Manage modules\n  new         Create new content\n  server      Start the embedded web server\n  version     Display version\n\nFlags:\n  -b, --baseURL string             hostname (and path) to the root, e.g. https://spf13.com/\n  -D, --buildDrafts                include content marked as draft\n  -E, --buildExpired               include expired content\n  -F, --buildFuture                include content with publishdate in the future\n      --cacheDir string            filesystem path to cache directory\n      --cleanDestinationDir        remove stale files from destination\n      --clock string               set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00\n      --config string              config file (default is hugo.yaml|json|toml)\n      --configDir string           config dir (default \"config\")\n  -c, --contentDir string          filesystem path to content directory\n  -d, --destination string         filesystem path to write files to\n      --disableKinds strings       disable different kind of pages (home, RSS etc.)\n      --enableGitInfo              add Git revision, date, author, and CODEOWNERS info to the pages\n  -e, --environment string         build environment\n      --forceSyncStatic            copy all files when static is changed.\n      --gc                         enable to run some cleanup tasks (remove unused cache files) after the build\n  -h, --help                       help for hugo\n      --ignoreCache                ignore the configured file caches\n      --ignoreVendorPaths string   ignores any _vendor for module paths matching the given Glob pattern\n  -l, --layoutDir string           filesystem path to layout directory\n      --logLevel string            log level (debug|info|warn|error)\n      --minify                     minify any supported output format (HTML, XML etc.)\n      --noBuildLock                don't create .hugo_build.lock file\n      --noChmod                    don't sync permission mode of files\n      --noTimes                    don't sync modification time of files\n      --panicOnWarning             panic on first WARNING log\n      --poll string                set this to a poll interval, e.g --poll 700ms, to use a poll based approach to watch for file system changes\n      --printI18nWarnings          print missing translations\n      --printMemoryUsage           print memory usage to screen at intervals\n      --printPathWarnings          print warnings on duplicate target paths etc.\n      --printUnusedTemplates       print warnings on unused templates.\n      --quiet                      build in quiet mode\n      --renderSegments strings     named segments to render (configured in the segments config)\n  -M, --renderToMemory             render to memory (mostly useful when running the server)\n  -s, --source string              filesystem path to read files relative from\n      --templateMetrics            display metrics about template executions\n      --templateMetricsHints       calculate some improvement hints when combined with --templateMetrics\n  -t, --theme strings              themes to use (located in /themes/THEMENAME/)\n      --themesDir string           filesystem path to themes directory\n      --trace file                 write trace to file (not useful in general)\n  -w, --watch                      watch filesystem for changes and recreate as needed\n\nUse \"hugo [command] --help\" for more information about a command.",
+    "hugo_env": "hugo v0.167.0-3fff6fb5c267dacb26280c78dbe8c344054249c8 linux/amd64 BuildDate=2026-09-28T14:50:38Z VendorInfo=gohugoio\nGOOS=\"linux\"\nGOARCH=\"amd64\"\nGOVERSION=\"go1.27.1\"\naomedia.googlesource.com/aom=\"v3.14.1\"\ncode.videolan.org/videolan/dav1d=\"1.5.3\"\ngithub.com/AOMediaCodec/libavif=\"v1.4.1\"\ngithub.com/KaTeX/KaTeX=\"0.18.4\"\ngithub.com/webmproject/libwebp=\"v1.6.0\"",
+    "hardware_concurrency": "4",
+    "packages": "adduser\t3.137ubuntu1\namd64-microcode\t3.20251202.1ubuntu0.24.04.1\napparmor\t4.0.1really4.0.1-0ubuntu0.24.04.7\napport\t2.28.2-0ubuntu0.1\napport-core-dump-handler\t2.28.2-0ubuntu0.1\napport-symptoms\t0.25\nappstream\t1.0.2-1build6\napt\t2.8.3\napt-utils\t2.8.3\nautoconf\t2.71-3\nautomake\t1:1.16.5-1.3ubuntu1\nautotools-dev\t20220109.1\nbase-files\t13ubuntu10.4\nbase-passwd\t3.6.3build1\nbash\t5.2.21-2ubuntu4\nbash-completion\t1:2.11-8\nbc\t1.07.1-3ubuntu4\nbcache-tools\t1.0.8-5build1\nbind9-dnsutils\t1:9.18.39-0ubuntu0.24.04.5\nbind9-host\t1:9.18.39-0ubuntu0.24.04.5\nbind9-libs:amd64\t1:9.18.39-0ubuntu0.24.04.5\nbinutils\t2.42-4ubuntu2.10\nbinutils-common:amd64\t2.42-4ubuntu2.10\nbinutils-x86-64-linux-gnu\t2.42-4ubuntu2.10\nbolt\t0.9.7-1\nbpfcc-tools\t0.29.1+ds-1ubuntu7\nbpftrace\t0.20.2-1ubuntu4.3\nbsdextrautils\t2.39.3-9ubuntu6.5\nbsdutils\t1:2.39.3-9ubuntu6.5\nbtrfs-progs\t6.6.3-1.1build2\nbuild-essential\t12.10ubuntu1\nbusybox-initramfs\t1:1.36.1-6ubuntu3.1\nbusybox-static\t1:1.36.1-6ubuntu3.1\nbyobu\t6.11-0ubuntu1\nbzip2\t1.0.8-5.1ubuntu0.1\nca-certificates\t20260601~24.04.1\ncloud-guest-utils\t0.33-1\ncloud-init\t26.1-0ubuntu1~24.04.1\ncloud-initramfs-copymods\t0.49~24.04.1\ncloud-initramfs-dyn-netconf\t0.49~24.04.1\ncommand-not-found\t23.04.0\nconsole-setup\t1.226ubuntu1\nconsole-setup-linux\t1.226ubuntu1\ncoreutils\t9.4-3ubuntu6.2\ncpio\t2.15+dfsg-1ubuntu2\ncpp\t4:13.2.0-7ubuntu1\ncpp-13\t13.3.0-6ubuntu2~24.04.1\ncpp-13-x86-64-linux-gnu\t13.3.0-6ubuntu2~24.04.1\ncpp-x86-64-linux-gnu\t4:13.2.0-7ubuntu1\ncron\t3.0pl1-184ubuntu2\ncron-daemon-common\t3.0pl1-184ubuntu2\ncryptsetup\t2:2.7.0-1ubuntu4.2\ncryptsetup-bin\t2:2.7.0-1ubuntu4.2\ncryptsetup-initramfs\t2:2.7.0-1ubuntu4.2\ncurl\t8.5.0-2ubuntu10.16\ndash\t0.5.12-6ubuntu5\ndbus\t1.14.10-4ubuntu4.1\ndbus-bin\t1.14.10-4ubuntu4.1\ndbus-daemon\t1.14.10-4ubuntu4.1\ndbus-session-bus-common\t1.14.10-4ubuntu4.1\ndbus-system-bus-common\t1.14.10-4ubuntu4.1\ndbus-user-session\t1.14.10-4ubuntu4.1\ndebconf\t1.5.86ubuntu1\ndebconf-i18n\t1.5.86ubuntu1\ndebianutils\t5.17build1\ndhcpcd-base\t1:10.0.6-1ubuntu3.2\ndiffutils\t1:3.10-1build1\ndirmngr\t2.4.4-2ubuntu17.4\ndistro-info\t1.7build1\ndistro-info-data\t0.60ubuntu0.6\ndmeventd\t2:1.02.185-3ubuntu3.2\ndmidecode\t3.5-3ubuntu0.1\ndmsetup\t2:1.02.185-3ubuntu3.2\ndosfstools\t4.2-1.1build1\ndpkg\t1.22.6ubuntu6.6\ndpkg-dev\t1.22.6ubuntu6.6\ndracut-install\t060+5-1ubuntu3.3\ne2fsprogs\t1.47.0-2.4~exp1ubuntu4.1\neatmydata\t131-1ubuntu1\ned\t1.20.1-1\neject\t2.39.3-9ubuntu6.5\nethtool\t1:6.7-1build1\nfakeroot\t1.33-1\nfdisk\t2.39.3-9ubuntu6.5\nfile\t1:5.45-3build1\nfinalrd\t9build1\nfindutils\t4.9.0-5build1\nfirmware-sof-signed\t2023.12.1-1ubuntu1.11\nfontconfig-config\t2.15.0-1.1ubuntu2\nfonts-dejavu-core\t2.37-8\nfonts-dejavu-mono\t2.37-8\nfonts-ubuntu-console\t0.869+git20240321-0ubuntu1\nfriendly-recovery\t0.2.42\nftp\t20230507-2build3\nfuse3\t3.14.0-5build1\nfwupd\t2.0.20-1ubuntu2~24.04.2\nfwupd-signed\t1.52+1.4-1\ng++\t4:13.2.0-7ubuntu1\ng++-13\t13.3.0-6ubuntu2~24.04.1\ng++-13-x86-64-linux-gnu\t13.3.0-6ubuntu2~24.04.1\ng++-x86-64-linux-gnu\t4:13.2.0-7ubuntu1\ngawk\t1:5.2.1-2build3\ngcc\t4:13.2.0-7ubuntu1\ngcc-10-base:amd64\t10.5.0-4ubuntu2.1\ngcc-13\t13.3.0-6ubuntu2~24.04.1\ngcc-13-base:amd64\t13.3.0-6ubuntu2~24.04.1\ngcc-13-x86-64-linux-gnu\t13.3.0-6ubuntu2~24.04.1\ngcc-14-base:amd64\t14.2.0-4ubuntu2~24.04.1\ngcc-x86-64-linux-gnu\t4:13.2.0-7ubuntu1\ngdisk\t1.0.10-1build1\ngettext-base\t0.21-14ubuntu2\ngir1.2-girepository-2.0:amd64\t1.80.1-1\ngir1.2-glib-2.0:amd64\t2.80.0-6ubuntu3.8\ngir1.2-packagekitglib-1.0\t1.2.8-2ubuntu1.5\ngit\t1:2.43.0-1ubuntu7.3\ngit-man\t1:2.43.0-1ubuntu7.3\ngnupg\t2.4.4-2ubuntu17.4\ngnupg-l10n\t2.4.4-2ubuntu17.4\ngnupg-utils\t2.4.4-2ubuntu17.4\ngpg\t2.4.4-2ubuntu17.4\ngpg-agent\t2.4.4-2ubuntu17.4\ngpg-wks-client\t2.4.4-2ubuntu17.4\ngpgconf\t2.4.4-2ubuntu17.4\ngpgsm\t2.4.4-2ubuntu17.4\ngpgv\t2.4.4-2ubuntu17.4\ngrep\t3.11-4build1\ngroff-base\t1.23.0-3build2\ngrub-common\t2.12-1ubuntu7.3\ngrub-gfxpayload-lists\t0.7build2\ngrub-pc\t2.12-1ubuntu7.3\ngrub-pc-bin\t2.12-1ubuntu7.3\ngrub2-common\t2.12-1ubuntu7.3\ngzip\t1.12-1ubuntu3.2\nhaveged\t1.9.14-1ubuntu2\nhdparm\t9.65+ds-1build1\nhostname\t3.23+nmu2ubuntu2\nhtop\t3.3.0-4build1\nhwdata\t0.379-1\nibverbs-providers:amd64\t50.0-2ubuntu0.2\nieee-data\t20220827.1\ninetutils-telnet\t2:2.5-3ubuntu4.2\ninfo\t7.1-3build2\ninit\t1.66ubuntu1\ninit-system-helpers\t1.66ubuntu1\ninitramfs-tools\t0.142ubuntu25.8\ninitramfs-tools-bin\t0.142ubuntu25.8\ninitramfs-tools-core\t0.142ubuntu25.8\ninstall-info\t7.1-3build2\nintel-microcode\t3.20260210.0ubuntu0.24.04.1\niotop\t0.6-42-ga14256a-0.2build1\niproute2\t6.1.0-1ubuntu6.4\niptables\t1.8.10-3ubuntu2\niputils-ping\t3:20240117-1ubuntu0.1\niputils-tracepath\t3:20240117-1ubuntu0.1\niso-codes\t4.16.0-1\niucode-tool\t2.3.1-3build1\njavascript-common\t11+nmu1\njq\t1.7.1-3ubuntu0.24.04.2\nkbd\t2.6.4-2ubuntu2\nkeyboard-configuration\t1.226ubuntu1\nkeyboxd\t2.4.4-2ubuntu17.4\nklibc-utils\t2.0.13-4ubuntu0.2\nkmod\t31+20240202-2ubuntu7.2\nkpartx\t0.9.4-5ubuntu8.2\nkrb5-locales\t1.20.1-6ubuntu2.6\nlandscape-common\t24.02-0ubuntu5.7\nless\t590-2ubuntu2.1\nlibacl1:amd64\t2.3.2-1build1.1\nlibaio1t64:amd64\t0.3.113-6build1.1\nlibalgorithm-diff-perl\t1.201-1\nlibalgorithm-diff-xs-perl:amd64\t0.04-8build3\nlibalgorithm-merge-perl\t0.08-5\nlibaom3:amd64\t3.8.2-2ubuntu0.1\nlibapparmor1:amd64\t4.0.1really4.0.1-0ubuntu0.24.04.7\nlibappstream5:amd64\t1.0.2-1build6\nlibapt-pkg6.0t64:amd64\t2.8.3\nlibarchive13t64:amd64\t3.7.2-2ubuntu0.7\nlibargon2-1:amd64\t0~20190702+dfsg-4build1\nlibasan8:amd64\t14.2.0-4ubuntu2~24.04.1\nlibassuan0:amd64\t2.5.6-1build1\nlibatasmart4:amd64\t0.19-5build3\nlibatm1t64:amd64\t1:2.5.1-5.1build1\nlibatomic1:amd64\t14.2.0-4ubuntu2~24.04.1\nlibattr1:amd64\t1:2.5.2-1build1.1\nlibaudit-common\t1:3.1.2-2.1build1.1\nlibaudit1:amd64\t1:3.1.2-2.1build1.1\nlibbinutils:amd64\t2.42-4ubuntu2.10\nlibblkid1:amd64\t2.39.3-9ubuntu6.5\nlibblockdev-crypto3:amd64\t3.1.1-1ubuntu0.1\nlibblockdev-fs3:amd64\t3.1.1-1ubuntu0.1\nlibblockdev-loop3:amd64\t3.1.1-1ubuntu0.1\nlibblockdev-mdraid3:amd64\t3.1.1-1ubuntu0.1\nlibblockdev-nvme3:amd64\t3.1.1-1ubuntu0.1\nlibblockdev-part3:amd64\t3.1.1-1ubuntu0.1\nlibblockdev-swap3:amd64\t3.1.1-1ubuntu0.1\nlibblockdev-utils3:amd64\t3.1.1-1ubuntu0.1\nlibblockdev3:amd64\t3.1.1-1ubuntu0.1\nlibbpf1:amd64\t1:1.3.0-2build2\nlibbpfcc:amd64\t0.29.1+ds-1ubuntu7\nlibbrotli1:amd64\t1.1.0-2build2\nlibbsd0:amd64\t0.12.1-1build1.1\nlibbytesize-common\t2.10-1ubuntu2\nlibbytesize1:amd64\t2.10-1ubuntu2\nlibbz2-1.0:amd64\t1.0.8-5.1ubuntu0.1\nlibc-bin\t2.39-0ubuntu8.7\nlibc-dev-bin\t2.39-0ubuntu8.7\nlibc-devtools\t2.39-0ubuntu8.7\nlibc6:amd64\t2.39-0ubuntu8.7\nlibc6-dev:amd64\t2.39-0ubuntu8.7\nlibcap-ng0:amd64\t0.8.4-2build2\nlibcap2:amd64\t1:2.66-5ubuntu2.4\nlibcap2-bin\t1:2.66-5ubuntu2.4\nlibcbor0.10:amd64\t0.10.2-1.2ubuntu2\nlibcc1-0:amd64\t14.2.0-4ubuntu2~24.04.1\nlibclang-cpp18\t1:18.1.3-1ubuntu1\nlibclang1-18\t1:18.1.3-1ubuntu1\nlibcom-err2:amd64\t1.47.0-2.4~exp1ubuntu4.1\nlibcrypt-dev:amd64\t1:4.4.36-4build1\nlibcrypt1:amd64\t1:4.4.36-4build1\nlibcryptsetup12:amd64\t2:2.7.0-1ubuntu4.2\nlibctf-nobfd0:amd64\t2.42-4ubuntu2.10\nlibctf0:amd64\t2.42-4ubuntu2.10\nlibcurl3t64-gnutls:amd64\t8.5.0-2ubuntu10.16\nlibcurl4t64:amd64\t8.5.0-2ubuntu10.16\nlibdb5.3t64:amd64\t5.3.28+dfsg2-7\nlibdbus-1-3:amd64\t1.14.10-4ubuntu4.1\nlibdbus-glib-1-2:amd64\t0.112-3build2\nlibdebconfclient0:amd64\t0.271ubuntu3\nlibdeflate0:amd64\t1.19-1build1.1\nlibdevmapper-event1.02.1:amd64\t2:1.02.185-3ubuntu3.2\nlibdevmapper1.02.1:amd64\t2:1.02.185-3ubuntu3.2\nlibdpkg-perl\t1.22.6ubuntu6.6\nlibdrm-amdgpu1:amd64\t2.4.125-1ubuntu0.1~24.04.2\nlibdrm-common\t2.4.125-1ubuntu0.1~24.04.2\nlibdrm2:amd64\t2.4.125-1ubuntu0.1~24.04.2\nlibduktape207:amd64\t2.7.0+tests-0ubuntu3\nlibdw1t64:amd64\t0.190-1.1ubuntu0.1\nlibeatmydata1:amd64\t131-1ubuntu1\nlibedit2:amd64\t3.1-20230828-1build1\nlibefiboot1t64:amd64\t38-3.1build1\nlibefivar1t64:amd64\t38-3.1build1\nlibelf1t64:amd64\t0.190-1.1ubuntu0.1\nliberror-perl\t0.17029-2\nlibestr0:amd64\t0.1.11-1build1\nlibevdev2:amd64\t1.13.1+dfsg-1build1\nlibevent-core-2.1-7t64:amd64\t2.1.12-stable-9ubuntu2\nlibexpat1:amd64\t2.6.1-2ubuntu0.6\nlibexpat1-dev:amd64\t2.6.1-2ubuntu0.6\nlibext2fs2t64:amd64\t1.47.0-2.4~exp1ubuntu4.1\nlibfakeroot:amd64\t1.33-1\nlibfastjson4:amd64\t1.2304.0-1build1\nlibfdisk1:amd64\t2.39.3-9ubuntu6.5\nlibffi8:amd64\t3.4.6-1build1\nlibfido2-1:amd64\t1.14.0-1build3\nlibfile-fcntllock-perl\t0.22-4ubuntu5\nlibflashrom1:amd64\t1.3.0-2.1ubuntu2\nlibfontconfig1:amd64\t2.15.0-1.1ubuntu2\nlibfreetype6:amd64\t2.13.2+dfsg-1ubuntu0.1\nlibfribidi0:amd64\t1.0.13-3build1\nlibftdi1-2:amd64\t1.5-6build5\nlibfuse3-3:amd64\t3.14.0-5build1\nlibfwupd2:amd64\t1.9.34-0ubuntu1~24.04.1\nlibfwupd3:amd64\t2.0.20-1ubuntu2~24.04.2\nlibgcc-13-dev:amd64\t13.3.0-6ubuntu2~24.04.1\nlibgcc-s1:amd64\t14.2.0-4ubuntu2~24.04.1\nlibgcrypt20:amd64\t1.10.3-2ubuntu0.1\nlibgd3:amd64\t2.3.3-9ubuntu5\nlibgdbm-compat4t64:amd64\t1.23-5.1build1\nlibgdbm6t64:amd64\t1.23-5.1build1\nlibgirepository-1.0-1:amd64\t1.80.1-1\nlibglib2.0-0t64:amd64\t2.80.0-6ubuntu3.8\nlibglib2.0-bin\t2.80.0-6ubuntu3.8\nlibglib2.0-data\t2.80.0-6ubuntu3.8\nlibgmp10:amd64\t2:6.3.0+dfsg-2ubuntu6.1\nlibgnutls30t64:amd64\t3.8.3-1.1ubuntu3.6\nlibgomp1:amd64\t14.2.0-4ubuntu2~24.04.1\nlibgpg-error0:amd64\t1.47-3build2.1\nlibgpgme11t64:amd64\t1.18.0-4.1ubuntu4\nlibgpm2:amd64\t1.20.7-11\nlibgprofng0:amd64\t2.42-4ubuntu2.10\nlibgssapi-krb5-2:amd64\t1.20.1-6ubuntu2.6\nlibgstreamer1.0-0:amd64\t1.24.2-1ubuntu0.1\nlibgudev-1.0-0:amd64\t1:238-5ubuntu1\nlibgusb2:amd64\t0.4.8-1build2\nlibhavege2:amd64\t1.9.14-1ubuntu2\nlibheif-plugin-aomdec:amd64\t1.17.6-1ubuntu4.5\nlibheif-plugin-aomenc:amd64\t1.17.6-1ubuntu4.5\nlibheif1:amd64\t1.17.6-1ubuntu4.5\nlibhogweed6t64:amd64\t3.9.1-2.2build1.1\nlibhwasan0:amd64\t14.2.0-4ubuntu2~24.04.1\nlibibverbs1:amd64\t50.0-2ubuntu0.2\nlibicu74:amd64\t74.2-1ubuntu3.1\nlibidn2-0:amd64\t2.3.7-2build1.1\nlibimobiledevice6:amd64\t1.3.0-8.1build3\nlibinih1:amd64\t55-1ubuntu2\nlibintl-perl\t1.33-1build3\nlibintl-xs-perl\t1.33-1build3\nlibip4tc2:amd64\t1.8.10-3ubuntu2\nlibip6tc2:amd64\t1.8.10-3ubuntu2\nlibisl23:amd64\t0.26-3build1.1\nlibisns0t64:amd64\t0.101-0.3build3\nlibitm1:amd64\t14.2.0-4ubuntu2~24.04.1\nlibjansson4:amd64\t2.14-2build2\nlibjbig0:amd64\t2.1-6.1ubuntu2\nlibjcat1:amd64\t0.2.3-1~ubuntu0.24.04.1\nlibjpeg-turbo8:amd64\t2.1.5-2ubuntu2\nlibjpeg8:amd64\t8c-2ubuntu11\nlibjq1:amd64\t1.7.1-3ubuntu0.24.04.2\nlibjs-jquery\t3.6.1+dfsg+~3.5.14-1\nlibjs-sphinxdoc\t7.2.6-6\nlibjs-underscore\t1.13.4~dfsg+~1.11.4-3\nlibjson-c5:amd64\t0.17-1build1\nlibjson-glib-1.0-0:amd64\t1.8.0-2build2\nlibjson-glib-1.0-common\t1.8.0-2build2\nlibk5crypto3:amd64\t1.20.1-6ubuntu2.6\nlibkeyutils1:amd64\t1.6.3-3build1\nlibklibc:amd64\t2.0.13-4ubuntu0.2\nlibkmod2:amd64\t31+20240202-2ubuntu7.2\nlibkrb5-3:amd64\t1.20.1-6ubuntu2.6\nlibkrb5support0:amd64\t1.20.1-6ubuntu2.6\nlibksba8:amd64\t1.6.6-1build1\nlibldap-common\t2.6.10+dfsg-0ubuntu0.24.04.1\nlibldap2:amd64\t2.6.10+dfsg-0ubuntu0.24.04.1\nliblerc4:amd64\t4.0.0+ds-4ubuntu2\nlibllvm18:amd64\t1:18.1.3-1ubuntu1\nliblmdb0:amd64\t0.9.31-1build1\nliblocale-gettext-perl\t1.07-6ubuntu5\nliblsan0:amd64\t14.2.0-4ubuntu2~24.04.1\nlibltdl-dev:amd64\t2.4.7-7build1\nlibltdl7:amd64\t2.4.7-7build1\nliblvm2cmd2.03:amd64\t2.03.16-3ubuntu3.2\nliblz4-1:amd64\t1.9.4-1build1.1\nliblzma5:amd64\t5.6.1+really5.4.5-1ubuntu0.3\nliblzo2-2:amd64\t2.10-2build4\nlibmagic-mgc\t1:5.45-3build1\nlibmagic1t64:amd64\t1:5.45-3build1\nlibmaxminddb0:amd64\t1.9.1-1build1\nlibmbim-glib4:amd64\t1.31.2-0ubuntu3.1\nlibmbim-proxy\t1.31.2-0ubuntu3.1\nlibmbim-utils\t1.31.2-0ubuntu3.1\nlibmd0:amd64\t1.1.0-2build1.1\nlibmm-glib0:amd64\t1.23.4-0ubuntu2\nlibmnl0:amd64\t1.0.5-2build1\nlibmodule-find-perl\t0.16-2\nlibmodule-scandeps-perl\t1.35-1ubuntu0.24.04.1\nlibmount1:amd64\t2.39.3-9ubuntu6.5\nlibmpc3:amd64\t1.3.1-1build1.1\nlibmpfr6:amd64\t4.2.1-1build1.1\nlibmspack0t64:amd64\t0.11-1.1build1\nlibncurses6:amd64\t6.4+20240113-1ubuntu2.1\nlibncursesw6:amd64\t6.4+20240113-1ubuntu2.1\nlibnetfilter-conntrack3:amd64\t1.0.9-6build1\nlibnetplan1:amd64\t1.1.2-8ubuntu1~24.04.2\nlibnettle8t64:amd64\t3.9.1-2.2build1.1\nlibnewt0.52:amd64\t0.52.24-2ubuntu2\nlibnfnetlink0:amd64\t1.0.2-2build1\nlibnftables1:amd64\t1.0.9-1ubuntu0.1\nlibnftnl11:amd64\t1.2.6-2build1\nlibnghttp2-14:amd64\t1.59.0-1ubuntu0.4\nlibnl-3-200:amd64\t3.7.0-0.3build1.1\nlibnl-genl-3-200:amd64\t3.7.0-0.3build1.1\nlibnl-route-3-200:amd64\t3.7.0-0.3build1.1\nlibnpth0t64:amd64\t1.6-3.1build1\nlibnsl2:amd64\t1.3.0-3build3\nlibnspr4:amd64\t2:4.35-1.1build1\nlibnss-nis:amd64\t3.1-0ubuntu7\nlibnss-nisplus:amd64\t1.3-5build1\nlibnss-systemd:amd64\t255.4-1ubuntu8.16\nlibnss3:amd64\t2:3.98-1ubuntu0.2\nlibntfs-3g89t64:amd64\t1:2022.10.3-1.2ubuntu3.1\nlibnuma1:amd64\t2.0.18-1ubuntu0.24.04.1\nlibnvme1t64\t1.8-3ubuntu1\nlibonig5:amd64\t6.9.9-1build1\nlibopeniscsiusr\t2.1.9-3ubuntu5.4\nlibp11-kit0:amd64\t0.25.3-4ubuntu2.1\nlibpackagekit-glib2-18:amd64\t1.2.8-2ubuntu1.5\nlibpam-cap:amd64\t1:2.66-5ubuntu2.4\nlibpam-modules:amd64\t1.5.3-5ubuntu5.5\nlibpam-modules-bin\t1.5.3-5ubuntu5.5\nlibpam-runtime\t1.5.3-5ubuntu5.5\nlibpam-systemd:amd64\t255.4-1ubuntu8.16\nlibpam0g:amd64\t1.5.3-5ubuntu5.5\nlibparted2t64:amd64\t3.6-4build1\nlibpcap0.8t64:amd64\t1.10.4-4.1ubuntu3\nlibpci3:amd64\t1:3.10.0-2build1\nlibpcre2-8-0:amd64\t10.42-4ubuntu2.1\nlibperl5.38t64:amd64\t5.38.2-3.2ubuntu0.3\nlibpipeline1:amd64\t1.5.7-2\nlibpkgconf3:amd64\t1.8.1-2build1\nlibplist-2.0-4:amd64\t2.3.0-1~exp2build2\nlibplymouth5:amd64\t24.004.60-1ubuntu7.2\nlibpng16-16t64:amd64\t1.6.43-5ubuntu0.6\nlibpolkit-agent-1-0:amd64\t124-2ubuntu1.24.04.3\nlibpolkit-gobject-1-0:amd64\t124-2ubuntu1.24.04.3\nlibpopt0:amd64\t1.19+dfsg-1build1\nlibproc-processtable-perl:amd64\t0.636-1build3\nlibproc2-0:amd64\t2:4.0.4-4ubuntu3.2\nlibprotobuf-c1:amd64\t1.4.1-1ubuntu4\nlibpsl5t64:amd64\t0.21.2-1.1build1\nlibpython3-dev:amd64\t3.12.3-0ubuntu2.1\nlibpython3-stdlib:amd64\t3.12.3-0ubuntu2.1\nlibpython3.12-dev:amd64\t3.12.3-1ubuntu0.17\nlibpython3.12-minimal:amd64\t3.12.3-1ubuntu0.17\nlibpython3.12-stdlib:amd64\t3.12.3-1ubuntu0.17\nlibpython3.12t64:amd64\t3.12.3-1ubuntu0.17\nlibqmi-glib5:amd64\t1.35.2-0ubuntu2\nlibqmi-proxy\t1.35.2-0ubuntu2\nlibqmi-utils\t1.35.2-0ubuntu2\nlibqrtr-glib0:amd64\t1.2.2-1ubuntu4\nlibquadmath0:amd64\t14.2.0-4ubuntu2~24.04.1\nlibreadline8t64:amd64\t8.2-4build1\nlibreiserfscore0t64\t1:3.6.27-7.1build1\nlibrtmp1:amd64\t2.4+20151223.gitfa8646d.1-2build7\nlibsasl2-2:amd64\t2.1.28+dfsg1-5ubuntu3.1\nlibsasl2-modules:amd64\t2.1.28+dfsg1-5ubuntu3.1\nlibsasl2-modules-db:amd64\t2.1.28+dfsg1-5ubuntu3.1\nlibseccomp2:amd64\t2.5.5-1ubuntu3.1\nlibselinux1:amd64\t3.5-2ubuntu2.1\nlibsemanage-common\t3.5-1build5\nlibsemanage2:amd64\t3.5-1build5\nlibsensors-config\t1:3.6.0-9build1\nlibsensors5:amd64\t1:3.6.0-9build1\nlibsepol2:amd64\t3.5-2build1\nlibsframe1:amd64\t2.42-4ubuntu2.10\nlibsgutils2-1.46-2:amd64\t1.46-3ubuntu4\nlibsharpyuv0:amd64\t1.3.2-0.4build3\nlibsigsegv2:amd64\t2.14-1ubuntu2\nlibslang2:amd64\t2.3.3-3build2\nlibsmartcols1:amd64\t2.39.3-9ubuntu6.5\nlibsodium23:amd64\t1.0.18-1ubuntu0.24.04.1\nlibsort-naturally-perl\t1.03-4\nlibsqlite3-0:amd64\t3.45.1-1ubuntu2.6\nlibss2:amd64\t1.47.0-2.4~exp1ubuntu4.1\nlibssh-4:amd64\t0.10.6-2ubuntu0.4\nlibssl3t64:amd64\t3.0.13-0ubuntu3.11\nlibstdc++-13-dev:amd64\t13.3.0-6ubuntu2~24.04.1\nlibstdc++6:amd64\t14.2.0-4ubuntu2~24.04.1\nlibstemmer0d:amd64\t2.2.0-4build1\nlibsystemd-shared:amd64\t255.4-1ubuntu8.16\nlibsystemd0:amd64\t255.4-1ubuntu8.16\nlibtasn1-6:amd64\t4.19.0-3ubuntu0.24.04.2\nlibtcl8.6:amd64\t8.6.14+dfsg-1build1\nlibterm-readkey-perl\t2.38-2build4\nlibtext-charwidth-perl:amd64\t0.04-11build3\nlibtext-iconv-perl:amd64\t1.7-8build3\nlibtext-wrapi18n-perl\t0.06-10\nlibtiff6:amd64\t4.5.1+git230720-4ubuntu2.5\nlibtinfo6:amd64\t6.4+20240113-1ubuntu2.1\nlibtirpc-common\t1.3.4+ds-1.1build1\nlibtirpc3t64:amd64\t1.3.4+ds-1.1build1\nlibtool\t2.4.7-7build1\nlibtraceevent1:amd64\t1:1.8.2-1ubuntu2.1\nlibtraceevent1-plugin:amd64\t1:1.8.2-1ubuntu2.1\nlibtracefs1:amd64\t1.8.0-1ubuntu1\nlibtsan2:amd64\t14.2.0-4ubuntu2~24.04.1\nlibtss2-esys-3.0.2-0t64:amd64\t4.0.1-7.1ubuntu5.1\nlibtss2-mu-4.0.1-0t64:amd64\t4.0.1-7.1ubuntu5.1\nlibtss2-sys1t64:amd64\t4.0.1-7.1ubuntu5.1\nlibtss2-tcti-cmd0t64:amd64\t4.0.1-7.1ubuntu5.1\nlibtss2-tcti-device0t64:amd64\t4.0.1-7.1ubuntu5.1\nlibtss2-tcti-mssim0t64:amd64\t4.0.1-7.1ubuntu5.1\nlibtss2-tcti-swtpm0t64:amd64\t4.0.1-7.1ubuntu5.1\nlibubsan1:amd64\t14.2.0-4ubuntu2~24.04.1\nlibuchardet0:amd64\t0.0.8-1build1\nlibudev1:amd64\t255.4-1ubuntu8.16\nlibudisks2-0:amd64\t2.10.1-6ubuntu1.3\nlibunistring5:amd64\t1.1-2build1.1\nlibunwind8:amd64\t1.6.2-3build1.1\nlibupower-glib3:amd64\t1.90.3-1\nliburcu8t64:amd64\t0.14.0-3.1build1\nlibusb-1.0-0:amd64\t2:1.0.27-1\nlibusbmuxd6:amd64\t2.0.2-4build3\nlibutempter0:amd64\t1.2.1-3build1\nlibuuid1:amd64\t2.39.3-9ubuntu6.5\nlibuv1t64:amd64\t1.48.0-1.1build1\nlibvolume-key1:amd64\t0.3.12-7build2\nlibwebp7:amd64\t1.3.2-0.4build3\nlibwrap0:amd64\t7.6.q-33\nlibx11-6:amd64\t2:1.8.7-1build1\nlibx11-data\t2:1.8.7-1build1\nlibxau6:amd64\t1:1.0.9-1build6\nlibxcb1:amd64\t1.15-1ubuntu2\nlibxdmcp6:amd64\t1:1.1.3-0ubuntu6\nlibxext6:amd64\t2:1.3.4-1build2\nlibxkbcommon0:amd64\t1.6.0-1build1\nlibxml2:amd64\t2.9.14+dfsg-1.3ubuntu3.8\nlibxmlb2:amd64\t0.3.24-1~ubuntu0.24.04.1\nlibxmlsec1t64:amd64\t1.2.39-5build2\nlibxmlsec1t64-openssl:amd64\t1.2.39-5build2\nlibxmuu1:amd64\t2:1.1.3-3build2\nlibxpm4:amd64\t1:3.5.17-1build2\nlibxslt1.1:amd64\t1.1.39-0exp1ubuntu0.24.04.3\nlibxtables12:amd64\t1.8.10-3ubuntu2\nlibxxhash0:amd64\t0.8.2-2build1\nlibyaml-0-2:amd64\t0.2.5-1build1\nlibzstd1:amd64\t1.5.5+dfsg2-2build1.1\nlinux-base\t4.5ubuntu9+24.04.2\nlinux-firmware\t20240318.git3b128b60-0ubuntu2.27\nlinux-generic\t6.8.0-147.147\nlinux-headers-6.8.0-134\t6.8.0-134.134\nlinux-headers-6.8.0-134-generic\t6.8.0-134.134\nlinux-headers-6.8.0-147\t6.8.0-147.147\nlinux-headers-6.8.0-147-generic\t6.8.0-147.147\nlinux-headers-generic\t6.8.0-147.147\nlinux-image-6.8.0-134-generic\t6.8.0-134.134\nlinux-image-6.8.0-147-generic\t6.8.0-147.147\nlinux-image-generic\t6.8.0-147.147\nlinux-libc-dev:amd64\t6.8.0-147.147\nlinux-modules-6.8.0-134-generic\t6.8.0-134.134\nlinux-modules-6.8.0-147-generic\t6.8.0-147.147\nlinux-modules-extra-6.8.0-134-generic\t6.8.0-134.134\nlinux-modules-extra-6.8.0-147-generic\t6.8.0-147.147\nlinux-tools-6.8.0-134\t6.8.0-134.134\nlinux-tools-6.8.0-134-generic\t6.8.0-134.134\nlinux-tools-6.8.0-147\t6.8.0-147.147\nlinux-tools-6.8.0-147-generic\t6.8.0-147.147\nlinux-tools-common\t6.8.0-147.147\nlinux-tools-generic\t6.8.0-147.147\nlocales\t2.39-0ubuntu8.7\nlogin\t1:4.13+dfsg1-4ubuntu3.2\nlogrotate\t3.21.0-2build1\nlogsave\t1.47.0-2.4~exp1ubuntu4.1\nlsb-release\t12.0-2\nlshw\t02.19.git.2021.06.19.996aaad9c7-2ubuntu0.24.04.1\nlsof\t4.95.0-1build3\nlto-disabled-list\t47\nlvm2\t2.03.16-3ubuntu3.2\nlxd-agent-loader\t0.7ubuntu0.1\nlxd-installer\t4ubuntu0.1\nm4\t1.4.19-4build1\nmake\t4.3-4.1build2\nman-db\t2.12.0-4build2\nmanpages\t6.7-2\nmanpages-dev\t6.7-2\nmawk\t1.3.4.20240123-1build1\nmdadm\t4.3-1ubuntu2.1\nmedia-types\t10.1.0\nmodemmanager\t1.23.4-0ubuntu2\nmotd-news-config\t13ubuntu10.4\nmount\t2.39.3-9ubuntu6.5\nmtr-tiny\t0.95-1.1ubuntu0.1\nmultipath-tools\t0.9.4-5ubuntu8.2\nnano\t7.2-2ubuntu0.2\nncurses-base\t6.4+20240113-1ubuntu2.1\nncurses-bin\t6.4+20240113-1ubuntu2.1\nncurses-term\t6.4+20240113-1ubuntu2.1\nneedrestart\t3.6-7ubuntu4.5\nnetbase\t6.4\nnetcat-openbsd\t1.226-1ubuntu2\nnetplan-generator\t1.1.2-8ubuntu1~24.04.2\nnetplan.io\t1.1.2-8ubuntu1~24.04.2\nnetworkd-dispatcher\t2.2.4-1\nnftables\t1.0.9-1ubuntu0.1\nntfs-3g\t1:2022.10.3-1.2ubuntu3.1\nnumactl\t2.0.18-1ubuntu0.24.04.1\nopen-iscsi\t2.1.9-3ubuntu5.4\nopen-vm-tools\t2:13.0.0-2~ubuntu0.24.04.1\nopenssh-client\t1:9.6p1-3ubuntu13.18\nopenssh-server\t1:9.6p1-3ubuntu13.18\nopenssh-sftp-server\t1:9.6p1-3ubuntu13.18\nopenssl\t3.0.13-0ubuntu3.11\nos-prober\t1.81ubuntu4\noverlayroot\t0.49~24.04.1\npackagekit\t1.2.8-2ubuntu1.5\npackagekit-tools\t1.2.8-2ubuntu1.5\nparted\t3.6-4build1\npasswd\t1:4.13+dfsg1-4ubuntu3.2\npastebinit\t1.6.2-1\npatch\t2.7.6-7build3\npci.ids\t0.0~2024.03.31-1ubuntu0.1\npciutils\t1:3.10.0-2build1\nperl\t5.38.2-3.2ubuntu0.3\nperl-base\t5.38.2-3.2ubuntu0.3\nperl-modules-5.38\t5.38.2-3.2ubuntu0.3\npinentry-curses\t1.2.1-3ubuntu5\npkg-config:amd64\t1.8.1-2build1\npkgconf:amd64\t1.8.1-2build1\npkgconf-bin\t1.8.1-2build1\nplymouth\t24.004.60-1ubuntu7.2\nplymouth-theme-ubuntu-text\t24.004.60-1ubuntu7.2\npolkitd\t124-2ubuntu1.24.04.3\npollinate\t4.33-3.1ubuntu1.3\npowermgmt-base\t1.37ubuntu0.1\nprocps\t2:4.0.4-4ubuntu3.2\npsmisc\t23.7-1build1\npublicsuffix\t20231001.0357-0.1\npython-apt-common\t2.7.7ubuntu5.2\npython-babel-localedata\t2.10.3-3build1\npython3\t3.12.3-0ubuntu2.1\npython3-apport\t2.28.2-0ubuntu0.1\npython3-apt\t2.7.7ubuntu5.2\npython3-attr\t23.2.0-2\npython3-automat\t22.10.0-2\npython3-babel\t2.10.3-3build1\npython3-bcrypt\t3.2.2-1build1\npython3-blinker\t1.7.0-1\npython3-boto3\t1.34.46+dfsg-1ubuntu1\npython3-botocore\t1.34.46+repack-1ubuntu1\npython3-bpfcc\t0.29.1+ds-1ubuntu7\npython3-certifi\t2023.11.17-1\npython3-cffi-backend:amd64\t1.16.0-2build1\npython3-chardet\t5.2.0+dfsg-1\npython3-click\t8.1.6-2\npython3-colorama\t0.4.6-4\npython3-commandnotfound\t23.04.0\npython3-configobj\t5.0.8-3\npython3-constantly\t23.10.4-1\npython3-cryptography\t41.0.7-4ubuntu0.4\npython3-dateutil\t2.8.2-3ubuntu1\npython3-dbus\t1.3.2-5build3\npython3-debconf\t1.5.86ubuntu1\npython3-debian\t0.1.49ubuntu2\npython3-dev\t3.12.3-0ubuntu2.1\npython3-distro\t1.9.0-1\npython3-distro-info\t1.7build1\npython3-distupgrade\t1:24.04.28\npython3-gdbm:amd64\t3.12.3-0ubuntu1\npython3-gi\t3.48.2-1\npython3-hamcrest\t2.1.0-1\npython3-httplib2\t0.20.4-3\npython3-hyperlink\t21.0.0-5\npython3-idna\t3.6-2ubuntu0.1\npython3-incremental\t22.10.0-1\npython3-jinja2\t3.1.2-1ubuntu1.3\npython3-jmespath\t1.0.1-1\npython3-json-pointer\t2.0-0ubuntu1\npython3-jsonpatch\t1.32-3\npython3-jsonschema\t4.10.3-2ubuntu1\npython3-jwt\t2.7.0-1ubuntu0.1\npython3-launchpadlib\t1.11.0-6\npython3-lazr.restfulclient\t0.14.6-1\npython3-lazr.uri\t1.0.6-3\npython3-magic\t2:0.4.27-3\npython3-markdown-it\t3.0.0-2\npython3-markupsafe\t2.1.5-1build2\npython3-mdurl\t0.1.2-1\npython3-minimal\t3.12.3-0ubuntu2.1\npython3-netaddr\t0.8.0-2ubuntu1\npython3-netifaces:amd64\t0.11.0-2build3\npython3-netplan\t1.1.2-8ubuntu1~24.04.2\npython3-newt:amd64\t0.52.24-2ubuntu2\npython3-oauthlib\t3.2.2-1\npython3-openssl\t23.2.0-1ubuntu0.1\npython3-packaging\t24.0-1\npython3-pexpect\t4.9-2\npython3-pip\t24.0+dfsg-1ubuntu1.3\npython3-pip-whl\t24.0+dfsg-1ubuntu1.3\npython3-pkg-resources\t68.1.2-2ubuntu1.2\npython3-problem-report\t2.28.2-0ubuntu0.1\npython3-ptyprocess\t0.7.0-5\npython3-pyasn1\t0.4.8-4ubuntu0.2\npython3-pyasn1-modules\t0.2.8-1\npython3-pygments\t2.17.2+dfsg-1\npython3-pyparsing\t3.1.1-1\npython3-pyrsistent:amd64\t0.20.0-1build2\npython3-requests\t2.31.0+dfsg-1ubuntu1.1\npython3-rich\t13.7.1-1\npython3-s3transfer\t0.10.1-1ubuntu2\npython3-serial\t3.5-2\npython3-service-identity\t24.1.0-1\npython3-setuptools\t68.1.2-2ubuntu1.2\npython3-setuptools-whl\t68.1.2-2ubuntu1.2\npython3-six\t1.16.0-4\npython3-software-properties\t0.99.49.4\npython3-systemd\t235-1build4\npython3-twisted\t24.3.0-1ubuntu0.2\npython3-typing-extensions\t4.10.0-1\npython3-tz\t2024.1-2\npython3-update-manager\t1:24.04.12\npython3-urllib3\t2.0.7-1ubuntu0.7\npython3-venv\t3.12.3-0ubuntu2.1\npython3-wadllib\t1.3.6-5\npython3-wheel\t0.42.0-2\npython3-yaml\t6.0.1-2build2\npython3-zope.interface\t6.1-1build1\npython3.12\t3.12.3-1ubuntu0.17\npython3.12-dev\t3.12.3-1ubuntu0.17\npython3.12-minimal\t3.12.3-1ubuntu0.17\npython3.12-venv\t3.12.3-1ubuntu0.17\nreadline-common\t8.2-4build1\nrpcsvc-proto\t1.4.2-0ubuntu7\nrsync\t3.2.7-1ubuntu1.5\nrsyslog\t8.2312.0-3ubuntu9.2\nrun-one\t1.17-0ubuntu2\nsbsigntool\t0.9.4-3.1ubuntu7\nscreen\t4.9.1-1ubuntu1\nsecureboot-db\t1.9build1\nsed\t4.9-2ubuntu0.24.04.1\nsensible-utils\t0.0.22\nsg3-utils\t1.46-3ubuntu4\nsg3-utils-udev\t1.46-3ubuntu4\nsgml-base\t1.31\nshared-mime-info\t2.4-4\nsnapd\t2.75.2+ubuntu24.04\nsoftware-properties-common\t0.99.49.4\nsosreport\t4.10.2-0ubuntu0~24.04.1\nsquashfs-tools\t1:4.6.1-1build1\nssh-import-id\t5.11-0ubuntu2.24.04.1\nstrace\t6.8-0ubuntu2\nsudo\t1.9.15p5-3ubuntu5.24.04.2\nsysstat\t12.6.1-2\nsystemd\t255.4-1ubuntu8.16\nsystemd-dev\t255.4-1ubuntu8.16\nsystemd-hwe-hwdb\t255.1.7\nsystemd-resolved\t255.4-1ubuntu8.16\nsystemd-sysv\t255.4-1ubuntu8.16\nsystemd-timesyncd\t255.4-1ubuntu8.16\nsysvinit-utils\t3.08-6ubuntu3\ntar\t1.35+dfsg-3ubuntu0.2\ntcl\t8.6.14build1\ntcl8.6\t8.6.14+dfsg-1build1\ntcpdump\t4.99.4-3ubuntu4.24.04.1\ntelnet\t0.17+2.5-3ubuntu4.2\nthermald\t2.5.6-2ubuntu0.24.04.5\nthin-provisioning-tools\t0.9.0-2ubuntu5.1\ntime\t1.9-0.2build1\ntmux\t3.4-1ubuntu0.1\ntnftp\t20230507-2build3\ntpm-udev\t0.6ubuntu1\ntrace-cmd\t3.2-1ubuntu2\ntzdata\t2026b-0ubuntu0.24.04.1\nubuntu-advantage-tools\t37.2ubuntu~24.04\nubuntu-kernel-accessories\t1.539.2\nubuntu-keyring\t2023.11.28.1\nubuntu-minimal\t1.539.2\nubuntu-pro-client\t37.2ubuntu~24.04\nubuntu-pro-client-l10n\t37.2ubuntu~24.04\nubuntu-release-upgrader-core\t1:24.04.28\nubuntu-server\t1.539.2\nubuntu-standard\t1.539.2\nucf\t3.0043+nmu1\nudev\t255.4-1ubuntu8.16\nudisks2\t2.10.1-6ubuntu1.3\nufw\t0.36.2-6\nunattended-upgrades\t2.9.1+nmu4ubuntu1\nunzip\t6.0-28ubuntu4.1\nupdate-manager-core\t1:24.04.12\nupdate-notifier-common\t3.192.68.2\nupower\t1.90.3-1\nusb-modeswitch\t2.6.1-3ubuntu3\nusb-modeswitch-data\t20191128-6\nusb.ids\t2024.03.18-1\nusbmuxd\t1.1.1-5~exp3ubuntu2.1\nusbutils\t1:017-3build1\nutil-linux\t2.39.3-9ubuntu6.5\nuuid-runtime\t2.39.3-9ubuntu6.5\nvim\t2:9.1.0016-1ubuntu7.17\nvim-common\t2:9.1.0016-1ubuntu7.17\nvim-runtime\t2:9.1.0016-1ubuntu7.17\nvim-tiny\t2:9.1.0016-1ubuntu7.17\nwget\t1.21.4-1ubuntu4.1\nwhiptail\t0.52.24-2ubuntu2\nwhois\t5.5.22\nwireless-regdb\t2025.10.07-0ubuntu1~24.04.1\nxauth\t1:1.1.2-1build1\nxdg-user-dirs\t0.18-1build1\nxfsprogs\t6.6.0-1ubuntu2.1\nxkb-data\t2.41-2ubuntu1.1\nxml-core\t0.19\nxxd\t2:9.1.0016-1ubuntu7.17\nxz-utils\t5.6.1+really5.4.5-1ubuntu0.3\nzerofree\t1.1.1-1build5\nzlib1g:amd64\t1:1.3.dfsg-3.1ubuntu2.2\nzlib1g-dev:amd64\t1:1.3.dfsg-3.1ubuntu2.2\nzstd\t1.5.5+dfsg2-2build1.1",
+    "stat": "cpu  76105 302 43659 368477 840 0 201 51 0 0\ncpu0 23960 0 15708 81958 168 0 71 13 0 0\ncpu1 18094 185 9422 94421 330 0 60 12 0 0\ncpu2 18763 116 8699 94663 201 0 34 12 0 0\ncpu3 15286 0 9830 97434 139 0 34 12 0 0\nintr 2461818 70 9 0 0 754 0 0 0 1 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50076 32013 17891 13356 0 349 369 6130 2408 368 404 3100 1037 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nctxt 1753414\nbtime 1792037221\nprocesses 14292\nprocs_running 1\nprocs_blocked 0\nsoftirq 1009361 0 93682 1 13217 11 0 21 209000 0 693429\n",
+    "meminfo": "MemTotal:        8131788 kB\nMemFree:         3523588 kB\nMemAvailable:    7539912 kB\nBuffers:          124864 kB\nCached:          3534632 kB\nSwapCached:            0 kB\nActive:           217568 kB\nInactive:        3488424 kB\nActive(anon):      47484 kB\nInactive(anon):        0 kB\nActive(file):     170084 kB\nInactive(file):  3488424 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               416 kB\nWriteback:             0 kB\nAnonPages:         46560 kB\nMapped:            45888 kB\nShmem:               988 kB\nKReclaimable:     667344 kB\nSlab:             775648 kB\nSReclaimable:     667344 kB\nSUnreclaim:       108304 kB\nKernelStack:        2248 kB\nPageTables:         1916 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     135016 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16348 kB\nVmallocChunk:          0 kB\nPercpu:             2192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      118644 kB\nDirectMap2M:     4075520 kB\nDirectMap1G:     6291456 kB\n",
+    "loadavg": "0.20 0.69 0.72 1/138 14289\n",
+    "diskstats": "   7       0 loop0 11 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   8       0 sda 14476 9143 709496 8524 115781 1373902 16139664 45515 0 34152 55466 0 0 0 0 40190 1426\n   8      16 sdb 253 0 11012 73 0 0 0 0 0 36 73 0 0 0 0 0 0\n",
+    "pressure/cpu": "some avg10=0.17 avg60=0.14 avg300=0.41 total=8518807\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+    "pressure/io": "some avg10=0.00 avg60=0.00 avg300=0.00 total=4814702\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=4268979\n"
+  },
+  "jobs": [
+    {
+      "phase": "defaults-main",
+      "engine": "Nift",
+      "workers": "default",
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "defaults-main-Nift-default-fresh-current-none"
+    },
+    {
+      "phase": "defaults-main",
+      "engine": "Nift",
+      "workers": "default",
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "defaults-main-Nift-default-warm-full-current-none"
+    },
+    {
+      "phase": "defaults-main",
+      "engine": "Hugo",
+      "workers": "default",
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "defaults-main-Hugo-default-fresh-current-none"
+    },
+    {
+      "phase": "defaults-main",
+      "engine": "Hugo",
+      "workers": "default",
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "defaults-main-Hugo-default-warm-full-current-none"
+    },
+    {
+      "phase": "replay",
+      "engine": "Hugo",
+      "workers": 1,
+      "mode": "fresh",
+      "harness": "historical",
+      "observer": "none",
+      "affinity": [
+        0
+      ],
+      "job_id": "replay-Hugo-1-fresh-historical-none"
+    },
+    {
+      "phase": "replay",
+      "engine": "Hugo",
+      "workers": 1,
+      "mode": "warm-full",
+      "harness": "historical",
+      "observer": "none",
+      "affinity": [
+        0
+      ],
+      "job_id": "replay-Hugo-1-warm-full-historical-none"
+    },
+    {
+      "phase": "replay",
+      "engine": "Hugo",
+      "workers": 1,
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0
+      ],
+      "job_id": "replay-Hugo-1-fresh-current-none"
+    },
+    {
+      "phase": "replay",
+      "engine": "Hugo",
+      "workers": 1,
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0
+      ],
+      "job_id": "replay-Hugo-1-warm-full-current-none"
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Nift",
+      "workers": "default",
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Nift-default-fresh-current-none"
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Nift",
+      "workers": "default",
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "GNU-time-only",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Nift-default-fresh-current-GNU-time-only"
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Nift",
+      "workers": "default",
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "proc50ms+GNU-time",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Nift-default-fresh-current-proc50ms+GNU-time"
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Nift",
+      "workers": "default",
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Nift-default-warm-full-current-none"
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Nift",
+      "workers": "default",
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "GNU-time-only",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Nift-default-warm-full-current-GNU-time-only"
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Nift",
+      "workers": "default",
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "proc50ms+GNU-time",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Nift-default-warm-full-current-proc50ms+GNU-time"
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Hugo",
+      "workers": "default",
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Hugo-default-fresh-current-none"
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Hugo",
+      "workers": "default",
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "GNU-time-only",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Hugo-default-fresh-current-GNU-time-only"
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Hugo",
+      "workers": "default",
+      "mode": "fresh",
+      "harness": "current",
+      "observer": "proc50ms+GNU-time",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Hugo-default-fresh-current-proc50ms+GNU-time"
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Hugo",
+      "workers": "default",
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "none",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Hugo-default-warm-full-current-none"
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Hugo",
+      "workers": "default",
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "GNU-time-only",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Hugo-default-warm-full-current-GNU-time-only"
+    },
+    {
+      "phase": "default-observer-controls",
+      "engine": "Hugo",
+      "workers": "default",
+      "mode": "warm-full",
+      "harness": "current",
+      "observer": "proc50ms+GNU-time",
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "job_id": "default-observer-controls-Hugo-default-warm-full-current-proc50ms+GNU-time"
+    }
+  ],
+  "phase_telemetry": {},
+  "complete": false,
+  "all_correct": false
+}
