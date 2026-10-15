@@ -1,0 +1,5 @@
+# Agora Labs publication — 15 October 2026
+
+Published at https://lab.nift.dev/sites/agora/ after explicit user approval. The homepage/card is Agora Docs. Release/source identities and deployed-byte/browser/remote-evidence verification are recorded here. This audit is additive; the immutable benchmark/certification cohort remains pinned to 42a602ad49c455b118f9d85dc2000cdfbfafe7f7 under sites/agora/20261015-optimized. Historical draft-state text in that frozen preparation cohort records its capture context and does not describe current release status. No numerical sample, accepted implementation or evidence payload was changed.
+
+The Pages deployment completed successfully; the first immediate HTTP observation still saw old CDN content, followed by four exact approved-byte matches at canonical URLs. Desktop/mobile checks and real homepage-card activation pass. Every one of97 canonical indexed files and FILES.json was remotely verified. Social announcements and maintainer outreach remain unauthorized. Production-certification and methodology qualifications stay in the public report.
