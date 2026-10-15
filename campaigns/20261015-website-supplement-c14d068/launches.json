@@ -1,0 +1,23 @@
+{
+  "plan_sha256": "847e12b05fd245146c407fc5189b4d456dedb87c1342c0ebc6a0467f843b1d60",
+  "scripts_sha256": {
+    "controller.py": "6a4ae832007b6070681cf666b211b4de7d58290ad2c2669b9b0f9d921836dda8",
+    "run-one.py": "04a0add019a2e8f004302a9825f4672e91a59fe534ad99f0756cd89a926811c4",
+    "profiles.py": "7c904a2a9c99e6fbcdd34949d70b0a14438bce4bdcab23fd3c2c88399c52ca12"
+  },
+  "host_a": {
+    "id": 108192961,
+    "pid": 11987,
+    "status": "timing controller launched afterSETUP_PASS;288planned",
+    "log": "/opt/supplement-controller.log",
+    "output": "/opt/supplement/evidence"
+  },
+  "host_b": {
+    "id": 108192966,
+    "status": "replication timing launched afterSETUP_PASS;48planned",
+    "pid": 11895,
+    "log": "/opt/supplement-controller.log",
+    "output": "/opt/supplement/evidence"
+  },
+  "plan_note": "Warm persistent-fixture policy was fixed before launching A; this receipt adds script hashes/planversion metadata only. No workload/sample/order or clocks changed after launch."
+}

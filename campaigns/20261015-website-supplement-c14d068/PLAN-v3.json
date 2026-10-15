@@ -1,0 +1,92 @@
+{
+  "plan_version": 3,
+  "reason": "explicit direct user scope amendment; stop future unneeded 1/2/4 scaling, preserve every collected original observation",
+  "supersedes_plan_v2_sha256": "847e12b05fd245146c407fc5189b4d456dedb87c1342c0ebc6a0467f843b1d60",
+  "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "fixed_binary_hashes": {
+    "Nift": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb",
+    "Hugo": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89"
+  },
+  "preserved_original": {
+    "host_a_checkpointed": 120,
+    "host_a_completed_uncheckpointed": 1,
+    "host_b_completed": 48,
+    "all_correct": true,
+    "original_raw_namespace": "/opt/supplement/evidence"
+  },
+  "new_main": {
+    "engines": [
+      "Nift",
+      "Hugo"
+    ],
+    "Nift_config_build_threads": -1,
+    "Hugo_GOMAXPROCS": "unset",
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "modes": [
+      "fresh",
+      "warm-full"
+    ],
+    "samples": 5,
+    "warmups": 1,
+    "new_observations": 24,
+    "note": "New explicitly amended default-only cohort, not pooled with original scaling samples"
+  },
+  "necessary_Hugo_CPU0_replay": {
+    "harnesses": [
+      "historical",
+      "current"
+    ],
+    "engines": [
+      "Hugo"
+    ],
+    "GOMAXPROCS": "1 (original accepted pipeline control)",
+    "affinity": [
+      0
+    ],
+    "modes": [
+      "fresh",
+      "warm-full"
+    ],
+    "samples": 5,
+    "warmups": 1,
+    "already_collected_linked": 13,
+    "remaining_new_observations": 11,
+    "note": "Resume only missing exact IDs; preserve original artifact/context, no rerun or overwrites. No future Nift1 replay scheduled."
+  },
+  "observer_controls": {
+    "engines": [
+      "Nift",
+      "Hugo"
+    ],
+    "workers": "defaults only (-1/unset)",
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "modes": [
+      "fresh",
+      "warm-full"
+    ],
+    "observers": [
+      "none",
+      "GNU-time-only",
+      "proc50ms+GNU-time"
+    ],
+    "samples": 5,
+    "warmups": 1,
+    "new_observations": 72,
+    "overhead": "separate control cohort, proc observer wall includes up to50ms final poll delay"
+  },
+  "new_timing_total": 107,
+  "linked_existing_replay": 13,
+  "new_output_namespace": "/opt/supplement/evidence-v3",
+  "profiles": "Only after newtimings finish, bothengines default allcore fresh/warm boundedstrace/perf; no scaling profiling. Work accounting retained; no official/Labs evidence changes",
+  "interpretation": "HostB default rows provide explicitly labelled already-collected hostvariance context; never reclassify or pool original rows into new default cohort"
+}

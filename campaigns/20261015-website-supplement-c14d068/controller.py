@@ -5,7 +5,7 @@ def run(*a):return subprocess.check_output(a,text=True,stderr=subprocess.STDOUT)
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def telemetry():
  data={}
- for label,cmd in {'date':['date','-u','+%FT%TZ'],'uname':['uname','-a'],'cpu':['lscpu'],'mount':['findmnt','-J'],'disk':['lsblk','-J','-o','NAME,TYPE,SIZE,ROTA,MODEL'],'filesystem':['df','-T'],'frequency':['bash','-c','cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_* 2>/dev/null || true'],'virtualization':['systemd-detect-virt'],'hugo_build':['/opt/supplement/tools/hugo','version'],'hugo_help':['/opt/supplement/tools/hugo','help'],'hugo_env':['/opt/supplement/tools/hugo','env'],'packages':['dpkg-query','-W']}.items():
+ for label,cmd in {'date':['date','-u','+%FT%TZ'],'uname':['uname','-a'],'cpu':['lscpu'],'mount':['findmnt','-J'],'disk':['lsblk','-J','-o','NAME,TYPE,SIZE,ROTA,MODEL'],'filesystem':['df','-T'],'frequency':['bash','-c','cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_* 2>/dev/null || true'],'virtualization':['systemd-detect-virt'],'hugo_build':['/opt/supplement/tools/hugo','version'],'hugo_help':['/opt/supplement/tools/hugo','help'],'hugo_env':['/opt/supplement/tools/hugo','env'],'hardware_concurrency':['/opt/nift/nift','eval','hardware_concurrency()','--json'],'packages':['dpkg-query','-W']}.items():
   try:data[label]=run(*cmd)
   except subprocess.CalledProcessError as e:data[label]={'unavailable':e.output}
  for f in ('stat','meminfo','loadavg','diskstats','pressure/cpu','pressure/io'):data[f]=Path('/proc/'+f).read_text()

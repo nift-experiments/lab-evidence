@@ -1,0 +1,129 @@
+{
+  "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "candidate_cli_sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb",
+  "hugo_version": "0.167.0",
+  "hugo_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+  "suite_current": "a2890bc504cf7c55b77cd4fddae17403b7caf8ae",
+  "suite_historical": "4947b42c863782ba6be0fdbbd2003d60d6d0d3d4",
+  "pages": 10000,
+  "samples": 5,
+  "warmups": 1,
+  "hosts": {
+    "website-diagnostic-a": 108192961,
+    "website-diagnostic-b": 108192966
+  },
+  "timing_phases": {
+    "a_scaling": {
+      "engines": [
+        "Nift",
+        "Hugo"
+      ],
+      "workers": [
+        1,
+        2,
+        4,
+        "default"
+      ],
+      "modes": [
+        "fresh",
+        "warm-full"
+      ],
+      "observations": 96,
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "b_replication": {
+      "engines": [
+        "Nift",
+        "Hugo"
+      ],
+      "workers": [
+        1,
+        2,
+        4,
+        "default"
+      ],
+      "modes": [
+        "fresh"
+      ],
+      "observations": 48,
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "a_replay": {
+      "engines": [
+        "Nift",
+        "Hugo"
+      ],
+      "fixture_harness": [
+        "historical",
+        "current"
+      ],
+      "workers": [
+        1
+      ],
+      "modes": [
+        "fresh",
+        "warm-full"
+      ],
+      "observations": 48,
+      "affinity": [
+        0
+      ]
+    },
+    "a_observer_controls": {
+      "engines": [
+        "Nift",
+        "Hugo"
+      ],
+      "workers": [
+        1,
+        4
+      ],
+      "modes": [
+        "fresh",
+        "warm-full"
+      ],
+      "observers": [
+        "none",
+        "GNU-time-only",
+        "proc50ms+GNU-time"
+      ],
+      "observations": 144,
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "ordering": "rotate scenario order each round; all observations/warmups retained; no exclusion based on speed",
+  "default_workers": "Nift fixture configuration -1 maps hardware_concurrency times1, clamped to job count; verify exact ProjectInfo.cpp. Hugo unset GOMAXPROCS uses Go defaults; runtime toolchain/module/source and proc threads captured rather than equating threads to active workers. No invented-j flag.",
+  "clock": "Frozen C-supervisor for primary phases; observer controls explicitly separate; user/system via GNU time, process task/RSS sampled50ms only in declared observed rows; profiler not concurrent with timing",
+  "correctness": "frozen route/content validation10000; all input/output byte/tree hashes/manifests; warm-full persistent fixture, output cleanup before each sample, initially unbuilt round0 warmup then retain internal state (matching frozen primary pipeline); no machine-cold claim",
+  "profiles": "After all timed phases perhost: bounded perf softwareCPU and strace summaries for both engines fresh/warm; report sampling limits/observer overhead; no source modifications",
+  "telemetry": "CPU/kernel/microcode/virtualization/frequency/steal/mount/disk/procstat/cache/memory before/after phases; no privileged cache drops; shared-host noise cannot be fully controlled",
+  "interpretation": "hostshift47.59% and393msfreshgap/402msfreshwarm are hypotheses to reconcile, not causal premises; no official evidence replaced",
+  "counts": {
+    "host_a": 288,
+    "host_b": 48,
+    "all_timing_observations": 336,
+    "all_measured": 280,
+    "all_warmups": 56
+  },
+  "plan_version": 2,
+  "prelaunch_scripts_sha256": {
+    "controller.py": "6a4ae832007b6070681cf666b211b4de7d58290ad2c2669b9b0f9d921836dda8",
+    "run-one.py": "04a0add019a2e8f004302a9825f4672e91a59fe534ad99f0756cd89a926811c4",
+    "profiles.py": "7c904a2a9c99e6fbcdd34949d70b0a14438bce4bdcab23fd3c2c88399c52ca12"
+  }
+}
