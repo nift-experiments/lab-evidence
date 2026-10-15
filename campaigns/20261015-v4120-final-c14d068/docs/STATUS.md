@@ -39,3 +39,5 @@ Shell recovery independently audited72observations: stringsrelease59.696/origina
 Shell complete evidence pushed8630bd0; host108162738 deleted with CLI absent/API404 and per-host known-host cleanup verified. Six hosts now closed. Only build108162775 and filesystem108162735 remain active. Complete leagues:17 baseline-explicit improvements,7positive version changes,205current peer deficits. No publication authorized.
 
 Filesystem official15016 and36 exactthreeway diagnostic observations independently audited. Release improvements stat90.80%,sizefilter88.58%,walk87.02%; stat+1.63% versus original is descriptive3samples. Portable hash detection still49.89xGo. Sevenofficialsuites nowaudited; pushandFS teardownnext. Build9250/9348 remains collecting; website supplementalplanv3 default-only is separate.
+
+Filesystem evidence pushed0c245cf; node108162735 deleted, CLI absence/API404 and known-host cleanup verified. Seven originalhostsclosed; only build108162775 remains. Separate website A/B diagnostics use independentaccess/state.
