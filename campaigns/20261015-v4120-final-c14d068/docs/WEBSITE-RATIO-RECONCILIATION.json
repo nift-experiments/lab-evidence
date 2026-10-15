@@ -1,0 +1,61 @@
+{
+  "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "rows": [
+    {
+      "scenario": "Fresh full",
+      "old_nift_ms": 3853.30905,
+      "old_hugo_ms": 5005.256852,
+      "old_ratio": 0.7698524099637953,
+      "final_nift_ms": 3015.980494,
+      "current_hugo_ms": 2623.337268,
+      "current_ratio": 1.1496731780505471
+    },
+    {
+      "scenario": "Warm full",
+      "old_nift_ms": 6516.465354,
+      "old_hugo_ms": 6455.238639,
+      "old_ratio": 1.0094848104654246,
+      "final_nift_ms": 2613.876604,
+      "current_hugo_ms": 2723.813188,
+      "current_ratio": 0.9596387210090855
+    },
+    {
+      "scenario": "Unchanged/no-op",
+      "old_nift_ms": 1287.937477,
+      "old_hugo_ms": null,
+      "old_ratio": null,
+      "final_nift_ms": 842.445613,
+      "current_hugo_ms": null,
+      "current_ratio": null
+    },
+    {
+      "scenario": "One-page incremental",
+      "old_nift_ms": 1255.110933,
+      "old_hugo_ms": null,
+      "old_ratio": null,
+      "final_nift_ms": 858.452265,
+      "current_hugo_ms": null,
+      "current_ratio": null
+    },
+    {
+      "scenario": "Targeted changed leaf (separate supplemental cohort)",
+      "old_nift_ms": 188.069082,
+      "old_hugo_ms": null,
+      "old_ratio": null,
+      "final_nift_ms": 151.855018,
+      "current_hugo_ms": null,
+      "current_ratio": null
+    }
+  ],
+  "historical_core_sha": "495012966756c9d2910a714c453359c8ff60bab1",
+  "historical_version": "4.7.2",
+  "hugo_version": "0.167.0",
+  "hugo_sha256": "8f6ddd98ff4a21a27b86530eb2e40d305673c26f72b1d57734ef68505cd28f89",
+  "historical_cpu": "AMD EPYC7601",
+  "current_cpu": "AMD EPYC7642",
+  "historical_target_supplement_cpu": "AMD EPYC7542",
+  "comparability": "cross-node historical trends; primary fixture/clock scripts unchanged; same Hugo binary; OS caches uncontrolled",
+  "diagnostic_nift_only_ms": 2951.495366,
+  "official_nift_ms": 3015.980494,
+  "official_hugo_ms": 2623.337268
+}
