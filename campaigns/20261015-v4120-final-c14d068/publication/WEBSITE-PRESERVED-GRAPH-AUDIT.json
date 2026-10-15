@@ -1,0 +1,370 @@
+[
+  {
+    "asset": "public/benchmarks/website-generator/assets/scaling.svg",
+    "title": [
+      "Final v4.12: controlled CPU0 corpus scaling",
+      "Final v4.12: separate targeted cohort"
+    ],
+    "purpose": "Corpus scaling, four peers, three incremental curves and separate targeted cohort",
+    "source_data": [
+      "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/website-generator/20261015-v4120-final-c14d068/official-refresh/website-100.json",
+      "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/website-generator/20261015-v4120-final-c14d068/official-refresh/website-1000.json",
+      "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/website-generator/20261015-v4120-final-c14d068/official-refresh/website-10000.json",
+      "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/website-generator/20261015-v4120-final-c14d068/official-refresh/targeted-builds.json"
+    ],
+    "expected_values": [
+      {
+        "label": "Nift full",
+        "x": [
+          100,
+          1000,
+          10000
+        ],
+        "y": [
+          0.029401403,
+          0.303134187,
+          3.015980494
+        ]
+      },
+      {
+        "label": "Hugo full",
+        "x": [
+          100,
+          1000,
+          10000
+        ],
+        "y": [
+          0.09006009799999999,
+          0.279860816,
+          2.623337268
+        ]
+      },
+      {
+        "label": "Astro full",
+        "x": [
+          100,
+          1000,
+          10000
+        ],
+        "y": [
+          1.976835132,
+          6.55592083,
+          114.414165474
+        ]
+      },
+      {
+        "label": "VitePress full",
+        "x": [
+          100,
+          1000,
+          10000
+        ],
+        "y": [
+          3.843070402,
+          14.286209406,
+          136.858597323
+        ]
+      },
+      {
+        "label": "Nift incremental no-op",
+        "x": [
+          100,
+          1000,
+          10000
+        ],
+        "y": [
+          0.012060456,
+          0.08748865,
+          0.842445613
+        ]
+      },
+      {
+        "label": "Nift incremental one-page",
+        "x": [
+          100,
+          1000,
+          10000
+        ],
+        "y": [
+          0.012459523,
+          0.09101161,
+          0.858452265
+        ]
+      },
+      {
+        "label": "Nift incremental shared-template",
+        "x": [
+          100,
+          1000,
+          10000
+        ],
+        "y": [
+          0.039479988,
+          0.349549065,
+          3.4882251120000003
+        ]
+      },
+      {
+        "label": "Fresh full reference",
+        "x": [
+          100,
+          1000,
+          10000
+        ],
+        "y": [
+          0.02913901,
+          0.303897154,
+          3.055462638
+        ]
+      },
+      {
+        "label": "Explicit target: page-1",
+        "x": [
+          100,
+          1000,
+          10000
+        ],
+        "y": [
+          0.005057552,
+          0.019685856999999998,
+          0.151855018
+        ]
+      }
+    ],
+    "plotted_values": [
+      {
+        "label": "Nift full",
+        "x": [
+          100.0,
+          1000.0,
+          10000.0
+        ],
+        "y": [
+          0.029401403,
+          0.303134187,
+          3.015980494
+        ]
+      },
+      {
+        "label": "Hugo full",
+        "x": [
+          100.0,
+          1000.0,
+          10000.0
+        ],
+        "y": [
+          0.09006009799999999,
+          0.279860816,
+          2.623337268
+        ]
+      },
+      {
+        "label": "Astro full",
+        "x": [
+          100.0,
+          1000.0,
+          10000.0
+        ],
+        "y": [
+          1.976835132,
+          6.55592083,
+          114.414165474
+        ]
+      },
+      {
+        "label": "VitePress full",
+        "x": [
+          100.0,
+          1000.0,
+          10000.0
+        ],
+        "y": [
+          3.843070402,
+          14.286209406,
+          136.858597323
+        ]
+      },
+      {
+        "label": "Nift incremental no-op",
+        "x": [
+          100.0,
+          1000.0,
+          10000.0
+        ],
+        "y": [
+          0.012060456,
+          0.08748865,
+          0.842445613
+        ]
+      },
+      {
+        "label": "Nift incremental one-page",
+        "x": [
+          100.0,
+          1000.0,
+          10000.0
+        ],
+        "y": [
+          0.012459523,
+          0.09101161,
+          0.858452265
+        ]
+      },
+      {
+        "label": "Nift incremental shared-template",
+        "x": [
+          100.0,
+          1000.0,
+          10000.0
+        ],
+        "y": [
+          0.039479988,
+          0.349549065,
+          3.4882251120000003
+        ]
+      },
+      {
+        "label": "Fresh full reference",
+        "x": [
+          100.0,
+          1000.0,
+          10000.0
+        ],
+        "y": [
+          0.02913901,
+          0.303897154,
+          3.055462638
+        ]
+      },
+      {
+        "label": "Explicit target: page-1",
+        "x": [
+          100.0,
+          1000.0,
+          10000.0
+        ],
+        "y": [
+          0.005057552,
+          0.019685856999999998,
+          0.151855018
+        ]
+      }
+    ],
+    "unit": "median seconds; both axes logarithmic",
+    "status": "PASS",
+    "generator": "scripts/render_benchmarks.py / scripts/plot_startup.py:draw_corpus_scaling",
+    "sha256": "4b50223b280ba4f5a5db01f2425ce68becd7eb2458377212692f53b4cf2f54e4",
+    "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+    "classification": "current final measured cohort; never pooled",
+    "regenerated": true
+  },
+  {
+    "asset": "public/benchmarks/website-generator/assets/memory.svg",
+    "title": "Final v4.12: controlled CPU0 memory \u2014 10,000 pages",
+    "purpose": "memory",
+    "source_data": [
+      "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/website-generator/20261015-v4120-final-c14d068/official-refresh/website-10000.json",
+      "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/website-generator/20261015-v4120-final-c14d068/official-refresh/targeted-builds.json"
+    ],
+    "expected_values": {
+      "Fresh fixture": [
+        17.18359375,
+        249.75,
+        3620.6015625,
+        2504.98828125
+      ],
+      "Warm full": [
+        16.80859375,
+        248.375,
+        3560.078125,
+        2498.046875
+      ]
+    },
+    "plotted_values": {
+      "Fresh fixture": [
+        17.18359375,
+        249.75,
+        3620.6015625,
+        2504.98828125
+      ],
+      "Warm full": [
+        16.80859375,
+        248.375,
+        3560.078125,
+        2498.046875
+      ]
+    },
+    "unit": "Median waited-child RSS (MiB)",
+    "status": "PASS",
+    "generator": "scripts/website_refresh.py / scripts/plot_startup.py",
+    "sha256": "1dbd6daf52749d859cb2482f825ed55bcfebf0bb82ac5988fc857e91573fe84a",
+    "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+    "classification": "current final measured cohort; never pooled",
+    "regenerated": true
+  },
+  {
+    "asset": "public/benchmarks/website-generator/assets/default-allcore.svg",
+    "title": "Nift v4.12 final: normal all-core builds \u2014 10,000 pages",
+    "purpose": "default-allcore",
+    "source_data": "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/campaigns/20261015-website-supplement-c14d068/ANALYSIS-v3.json",
+    "expected_values": {
+      "fresh": [
+        1.19446785,
+        1.6355435090000001
+      ],
+      "warm-full": [
+        0.803743008,
+        1.436615542
+      ]
+    },
+    "plotted_values": {
+      "fresh": [
+        1.19446785,
+        1.6355435090000001
+      ],
+      "warm-full": [
+        0.803743008,
+        1.436615542
+      ]
+    },
+    "unit": "Median wall seconds",
+    "status": "PASS",
+    "generator": "scripts/website_refresh.py / scripts/plot_startup.py",
+    "sha256": "f1bd22c9d7c2fe3d6220838207112cb10439581b64260c00cb8b413c6252a965",
+    "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+    "classification": "current final measured cohort; never pooled",
+    "regenerated": true
+  },
+  {
+    "asset": "public/benchmarks/website-generator/assets/incremental-workflow.svg",
+    "title": "Current Nift development workflow \u2014 CPU0 cohorts",
+    "purpose": "incremental-workflow",
+    "source_data": [
+      "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/website-generator/20261015-v4120-final-c14d068/official-refresh/website-10000.json",
+      "/home/nick/Repositories/nift/nift-benchmarks/lab-evidence/benchmarks/website-generator/20261015-v4120-final-c14d068/official-refresh/targeted-builds.json"
+    ],
+    "expected_values": {
+      "Nift v4.12 final": [
+        0.842445613,
+        0.858452265,
+        3.4882251120000003,
+        0.151855018
+      ]
+    },
+    "plotted_values": {
+      "Nift v4.12 final": [
+        0.842445613,
+        0.858452265,
+        3.4882251120000003,
+        0.151855018
+      ]
+    },
+    "unit": "Median wall seconds",
+    "status": "PASS",
+    "generator": "scripts/website_refresh.py / scripts/plot_startup.py",
+    "sha256": "8790e9fd9f30c23be92ad47d341219558e5bc7c06774430aaea1546369f02e05",
+    "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+    "classification": "current final measured cohort; never pooled",
+    "regenerated": true
+  }
+]

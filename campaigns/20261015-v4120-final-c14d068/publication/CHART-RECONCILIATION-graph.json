@@ -1,0 +1,1816 @@
+{
+  "status": "PASS",
+  "policy": "Every historical/current graph purpose preserved; zero removals.",
+  "baseline_current_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+  "historical_original_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+  "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+  "current_data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+  "graph_placements": 45,
+  "preserved_historical_graphs": 22,
+  "regenerated_current_peer_graphs": 22,
+  "updated_complete_version_comparison": 1,
+  "removed_graphs": 0,
+  "current_graphs": 23,
+  "total_svg_png_outputs_or_preserved_artifacts": 90,
+  "coverage_verdict": "All previous corpus sizes, incremental/fanout scenarios, full builds, worker studies, memory plots, tiny-task views and version-comparison series remain.",
+  "actual_vector_verification": "22 current peer charts plus restored three-panel version comparison: every plotted current XY/bar median matches its pinned canonical dataset. Historical outputs are unchanged immutable original bytes.",
+  "entries": [
+    {
+      "old_asset": "benchmarks/build-systems/assets/native-noop.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "d7cfd4521ba9ab9b92e2d7e768757e1072cc219a44dd7824600996f4c11b4079",
+      "title": "Warm no-op scaling",
+      "purpose": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "noop",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": true
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/build-systems/assets/native-noop.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "e85f841936f95951739fde0586096587ce629a47b1886b9da1402c03114052c0",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-noop.svg",
+      "current_equivalent_view": "benchmarks/build-systems/assets/native-noop.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-noop.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "632a012ed12d184cbcee6bdef3cd4759f569a05b528e6b13fa9abd10d2be8dcc",
+      "title": "Warm no-op scaling",
+      "purpose": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "noop",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": true
+      },
+      "old_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-noop.svg",
+      "new_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "current_equivalent_view": "benchmarks/build-systems/assets/native-noop.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/build-systems/assets/native-leaf.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "c02eec30c5d5bf014c32110cb44ac7ab21c3821b701cb6088df6e16d7fd6ed7c",
+      "title": "One-file incremental scaling",
+      "purpose": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "leaf",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/build-systems/assets/native-leaf.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "3dac55360c2a6f1ba137c1f72745af881aca90f350e2ee3520957fafa741f659",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-leaf.svg",
+      "current_equivalent_view": "benchmarks/build-systems/assets/native-leaf.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-leaf.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "5e6e7b66b54540404c90f322f1450923750b29f26c54fd933efa54587d67727b",
+      "title": "One-file incremental scaling",
+      "purpose": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "leaf",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": false
+      },
+      "old_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-leaf.svg",
+      "new_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "current_equivalent_view": "benchmarks/build-systems/assets/native-leaf.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/build-systems/assets/native-global.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "417ba174a36b0891fc4cbc298eda6d7c3c0471a179c4731b116b1a6fe5946981",
+      "title": "Global-header rebuild scaling",
+      "purpose": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "global",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/build-systems/assets/native-global.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "5a509b33e67bc831a2f8be3e82524e14d88bb41ea38a484501731c3bbc6b7672",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-global.svg",
+      "current_equivalent_view": "benchmarks/build-systems/assets/native-global.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-global.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "9190a9d5ba370ab9455990a8341d1bdcd0028a72323e9a02d44f25ab6c2ae427",
+      "title": "Global-header rebuild scaling",
+      "purpose": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "global",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": false
+      },
+      "old_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-global.svg",
+      "new_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "current_equivalent_view": "benchmarks/build-systems/assets/native-global.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/build-systems/assets/native-full.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "5edd710440f7cb16e3eb26359ad108278af164589e4ffb98054e2343b51de0fd",
+      "title": "Clean full build scaling",
+      "purpose": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "full",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/build-systems/assets/native-full.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "d41cf1804044122acf7fa2df81b04fc25c8708e9014bac767a033e97f097db22",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-full.svg",
+      "current_equivalent_view": "benchmarks/build-systems/assets/native-full.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-full.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "27de000f9aa012d176d768a39cbf7a7303cdfe287f65f0bad2483d3675846c09",
+      "title": "Clean full build scaling",
+      "purpose": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "full",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": false
+      },
+      "old_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-full.svg",
+      "new_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "current_equivalent_view": "benchmarks/build-systems/assets/native-full.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/build-systems/assets/tiny-noop.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "04d75e4ce5abcefbebba445bf9eb772952784fe01d7561c7165f671cbb971658",
+      "title": "Tiny-action no-op scaling",
+      "purpose": {
+        "kind": "tiny",
+        "sizes": [
+          100,
+          1000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "noop",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": true
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/build-systems/assets/tiny-noop.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "75b5c7c66b8b8fd9af2c3c4f26914b8d83c77426a86eaac7f208d69d1e491425",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/tiny-noop.svg",
+      "current_equivalent_view": "benchmarks/build-systems/assets/tiny-noop.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/tiny-noop.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "f3e6390f587eb04c63472eda95c3819dd8d649f7b8c9dd053b4516c4afb09e56",
+      "title": "Tiny-action no-op scaling",
+      "purpose": {
+        "kind": "tiny",
+        "sizes": [
+          100,
+          1000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "noop",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": true
+      },
+      "old_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/tiny-noop.svg",
+      "new_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "current_equivalent_view": "benchmarks/build-systems/assets/tiny-noop.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/build-systems/assets/tiny-full.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "8b92c8e20c3e56062f76e4d86a63256646ef5f99da75852b40101eb1aafc43cc",
+      "title": "Fully dirty tiny-action scaling",
+      "purpose": {
+        "kind": "tiny",
+        "sizes": [
+          100,
+          1000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "full",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/build-systems/assets/tiny-full.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "ed1f8e3f1c215bda8879603dad9bb60f297ea8d77a49cca1f42ff796388c2671",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/tiny-full.svg",
+      "current_equivalent_view": "benchmarks/build-systems/assets/tiny-full.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/tiny-full.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "08a199fee951807e6714f47f8349169a9e0958a4b8fe86b8c480ab58f631de17",
+      "title": "Fully dirty tiny-action scaling",
+      "purpose": {
+        "kind": "tiny",
+        "sizes": [
+          100,
+          1000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "full",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "log": false
+      },
+      "old_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/tiny-full.svg",
+      "new_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "current_equivalent_view": "benchmarks/build-systems/assets/tiny-full.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/build-systems/assets/parallel-heavy.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "9b6a45d75eab476aee54777583e5c4b715adf491dfb4c14e290f794913499654",
+      "title": "Heavy full-build worker comparison",
+      "purpose": {
+        "kind": "native",
+        "size": 1000,
+        "profile": "heavy",
+        "workers": [
+          1,
+          2,
+          4
+        ],
+        "scenario": "full",
+        "metric": "wall_ms",
+        "unit": "ms"
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/build-systems/assets/parallel-heavy.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "7844a37b2a78eaf2ec6c26f06d1935099fc0474b3d3d2d8792373d7f6e506893",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/parallel-heavy.svg",
+      "current_equivalent_view": "benchmarks/build-systems/assets/parallel-heavy.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/parallel-heavy.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "bdd328943d62fdfbf84fad46852cd819bc1d35de288ae600a925078ba88c8f44",
+      "title": "Heavy full-build worker comparison",
+      "purpose": {
+        "kind": "native",
+        "size": 1000,
+        "profile": "heavy",
+        "workers": [
+          1,
+          2,
+          4
+        ],
+        "scenario": "full",
+        "metric": "wall_ms",
+        "unit": "ms"
+      },
+      "old_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/parallel-heavy.svg",
+      "new_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "current_equivalent_view": "benchmarks/build-systems/assets/parallel-heavy.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/build-systems/assets/native-noop-rss.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "281cb35d02d6ac778a2566ee6a7313447bb4c58b4708ffaec58b197c741c30d0",
+      "title": "Warm no-op memory scaling",
+      "purpose": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "noop",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/build-systems/assets/native-noop-rss.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "40972f3ba497f89566dc8a91db14baefed35fc6e59eb42bae12167a07794f27b",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-noop-rss.svg",
+      "current_equivalent_view": "benchmarks/build-systems/assets/native-noop-rss.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-noop-rss.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "8df0b72d817aad8127a49201f979c14ac2eec98ef29a396d19bdebe601bbd828",
+      "title": "Warm no-op memory scaling",
+      "purpose": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "noop",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "log": false
+      },
+      "old_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-noop-rss.svg",
+      "new_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "current_equivalent_view": "benchmarks/build-systems/assets/native-noop-rss.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/build-systems/assets/native-leaf-rss.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "e2dd8c11d197bbfeb96f7e9ea1f5b58dd5b194200a52f1c0b11891e64ed2e575",
+      "title": "One-file incremental memory scaling",
+      "purpose": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "leaf",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/build-systems/assets/native-leaf-rss.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "d714705c9527441ee1f4761ed375b3d7ebc965ebee413c161d75704fd1b7a2b2",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-leaf-rss.svg",
+      "current_equivalent_view": "benchmarks/build-systems/assets/native-leaf-rss.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-leaf-rss.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "236c7d44cac7fb542034445cf175366759740dcd0759e2882ace17baa186c035",
+      "title": "One-file incremental memory scaling",
+      "purpose": {
+        "kind": "native",
+        "sizes": [
+          100,
+          1000,
+          5000,
+          10000
+        ],
+        "profile": "light",
+        "jobs": 4,
+        "scenario": "leaf",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "log": false
+      },
+      "old_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-leaf-rss.svg",
+      "new_source": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "current_equivalent_view": "benchmarks/build-systems/assets/native-leaf-rss.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/task-runners/assets/mixed-noop.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "2f89c8c58f105fbc8698c66cddd269e760a25d9b478248e39faca699d697d997",
+      "title": "Unchanged mixed workflow",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "noop",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": true
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/task-runners/assets/mixed-noop.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "780c06742ed28f2282a55719024c7c9d2be5872aee608ed949ff381ea5c68bac",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-noop.svg",
+      "current_equivalent_view": "benchmarks/task-runners/assets/mixed-noop.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-noop.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "3f33ef240073cbc1fd5b1db23da04711f6a513f9930c820a5938f0c17104f482",
+      "title": "Unchanged mixed workflow",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "noop",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": true
+      },
+      "old_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-noop.svg",
+      "new_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "current_equivalent_view": "benchmarks/task-runners/assets/mixed-noop.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/task-runners/assets/mixed-leaf.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "7fa65c6713e7d50f9d378e7238f6c2cc277a807d88d1188a99f41302022b76c8",
+      "title": "One dirty leaf",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "leaf",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/task-runners/assets/mixed-leaf.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "613ca8e9af8555ad3b2c4bc418e89ce8bd831d3df045b7d5e5c164fd5145209d",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-leaf.svg",
+      "current_equivalent_view": "benchmarks/task-runners/assets/mixed-leaf.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-leaf.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "1e2d484073cdbe4c618941561f9de60d8f412c963744a8fd94d589cf50c96fd8",
+      "title": "One dirty leaf",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "leaf",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-leaf.svg",
+      "new_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "current_equivalent_view": "benchmarks/task-runners/assets/mixed-leaf.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/task-runners/assets/mixed-fanout.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "8508517ea8ab26939d67220b5547a9ecec60d2263481e8b365b665b626a5e1a2",
+      "title": "10% task inputs dirty",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "fanout",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/task-runners/assets/mixed-fanout.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "3fdafd614d3fff7f1a843cc5be5a0ca47b02bf40d7ae1361e1bc677838e2b001",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-fanout.svg",
+      "current_equivalent_view": "benchmarks/task-runners/assets/mixed-fanout.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-fanout.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "0afe7db1ff41388bb1ceba17139c403af7860b6163e2a368b6d8377c4923b532",
+      "title": "10% task inputs dirty",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "fanout",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-fanout.svg",
+      "new_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "current_equivalent_view": "benchmarks/task-runners/assets/mixed-fanout.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/task-runners/assets/mixed-shared.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "8d894e055f8eab85e9da3e7cfe784d343af51ba7037457b02805e8fa75414542",
+      "title": "Generated prerequisite dirty",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "shared",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/task-runners/assets/mixed-shared.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "dec11ad0bfefb5441e77a5f49aab7f879e816d366ed1dd01a10ae28dc336ce63",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-shared.svg",
+      "current_equivalent_view": "benchmarks/task-runners/assets/mixed-shared.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-shared.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "c8f38b84bd793a792c8aa5685e697cd9316aa5805ee82a37e4d9d1dd320dbf9b",
+      "title": "Generated prerequisite dirty",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "shared",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-shared.svg",
+      "new_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "current_equivalent_view": "benchmarks/task-runners/assets/mixed-shared.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/task-runners/assets/mixed-full.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "d6a8c87d1c6481ac832609bd0da0423dc3f41d776ff0781a2031a576be0bdb86",
+      "title": "All mixed-task inputs dirty",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "full",
+        "metric": "wall_ms",
+        "unit": "s",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/task-runners/assets/mixed-full.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "399859a36a690d8c08c9020571ded64fcdcd6ada805b0ef7d6eb0b26263978b4",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-full.svg",
+      "current_equivalent_view": "benchmarks/task-runners/assets/mixed-full.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-full.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "102dc2deb3ce65cdacbb02408cd995e56092d9d3939f656f66b601d3bb850495",
+      "title": "All mixed-task inputs dirty",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "full",
+        "metric": "wall_ms",
+        "unit": "s",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-full.svg",
+      "new_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "current_equivalent_view": "benchmarks/task-runners/assets/mixed-full.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/task-runners/assets/workers.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "1d6d830ece324e74b2f1dd94c962b56e43048e655239ce4b2088236659b5d64f",
+      "title": "Mixed workflow worker scaling",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          1,
+          2,
+          4
+        ],
+        "jobs": 4,
+        "case": "full",
+        "metric": "wall_ms",
+        "unit": "s",
+        "workers": true,
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/task-runners/assets/workers.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "dde9e6e16df7f690e948a25dbae0381d01163ab629157b79c3065ce808b4e16e",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/workers.svg",
+      "current_equivalent_view": "benchmarks/task-runners/assets/workers.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/workers.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "d774ed62ec89caa2eae440dad050f6318168e6eb30fe55fa637a066296088760",
+      "title": "Mixed workflow worker scaling",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          1,
+          2,
+          4
+        ],
+        "jobs": 4,
+        "case": "full",
+        "metric": "wall_ms",
+        "unit": "s",
+        "workers": true,
+        "log": false
+      },
+      "old_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/workers.svg",
+      "new_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "current_equivalent_view": "benchmarks/task-runners/assets/workers.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/task-runners/assets/tiny-noop.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "1cf023e21fc4c4fa392ea458e9dfd24df708be6129d847f888e13ab79d84c06c",
+      "title": "Unchanged tiny-task graph",
+      "purpose": {
+        "tiny": true,
+        "sizes": [
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "noop",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": true
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/task-runners/assets/tiny-noop.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "48124f511cfea82c7b163b907ba7b25f371b302dab68ed8900b5ef41700e9abe",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-noop.svg",
+      "current_equivalent_view": "benchmarks/task-runners/assets/tiny-noop.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-noop.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "a3d6110b756d075a21cf39e642a64c43cd6c60e94a479f2e8009d3c9f380d4ef",
+      "title": "Unchanged tiny-task graph",
+      "purpose": {
+        "tiny": true,
+        "sizes": [
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "noop",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": true
+      },
+      "old_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-noop.svg",
+      "new_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "current_equivalent_view": "benchmarks/task-runners/assets/tiny-noop.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/task-runners/assets/tiny-leaf.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "4302d06f2bedca1a723eb94b7c0f66c9a14b46eb71ca10110644a0a9eb0a576f",
+      "title": "One dirty tiny task",
+      "purpose": {
+        "tiny": true,
+        "sizes": [
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "leaf",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/task-runners/assets/tiny-leaf.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "82be0e68bfdcc2dd797fe5ed1bbd72a258934b4ec95943727c92ab35c504f065",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-leaf.svg",
+      "current_equivalent_view": "benchmarks/task-runners/assets/tiny-leaf.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-leaf.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "f3351ddf0750dadb57b1f83b659fe48397bc3b7c63b5fd0e11f1a57fb1e799f6",
+      "title": "One dirty tiny task",
+      "purpose": {
+        "tiny": true,
+        "sizes": [
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "leaf",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-leaf.svg",
+      "new_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "current_equivalent_view": "benchmarks/task-runners/assets/tiny-leaf.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/task-runners/assets/tiny-fanout.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "ef49ea9383d8a321f32416e72650490c8de9ccb38a4034beca18ef1969bd76fd",
+      "title": "10% tiny-task inputs dirty",
+      "purpose": {
+        "tiny": true,
+        "sizes": [
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "fanout",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/task-runners/assets/tiny-fanout.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "65946d7fd0864c54bfe9ffedda227cf0f9621d502da4c3633aeecbc51c1ff962",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-fanout.svg",
+      "current_equivalent_view": "benchmarks/task-runners/assets/tiny-fanout.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-fanout.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "de2684535716a264dcc66c1fbc5e715ee98894da0d3c2ffdcac99fed63291ce7",
+      "title": "10% tiny-task inputs dirty",
+      "purpose": {
+        "tiny": true,
+        "sizes": [
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "fanout",
+        "metric": "wall_ms",
+        "unit": "ms",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-fanout.svg",
+      "new_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "current_equivalent_view": "benchmarks/task-runners/assets/tiny-fanout.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/task-runners/assets/tiny-full.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "d18437b8081ead41967fcdc0562c9d92786668c5e4a6a7812183551d60ff318e",
+      "title": "Fully dirty tiny-task graph",
+      "purpose": {
+        "tiny": true,
+        "sizes": [
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "full",
+        "metric": "wall_ms",
+        "unit": "s",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/task-runners/assets/tiny-full.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "bc8dbef7c35655de82669ce8626e1ef6f3e147dc15e136b295bfeae49320a1e9",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-full.svg",
+      "current_equivalent_view": "benchmarks/task-runners/assets/tiny-full.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-full.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "8fe78a9ab07b7772ff0b6b37a60bebb34109a1eb2905e189bc6d9604fd2f9360",
+      "title": "Fully dirty tiny-task graph",
+      "purpose": {
+        "tiny": true,
+        "sizes": [
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "full",
+        "metric": "wall_ms",
+        "unit": "s",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-full.svg",
+      "new_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "current_equivalent_view": "benchmarks/task-runners/assets/tiny-full.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/task-runners/assets/mixed-noop-rss.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "959b5e8e41421c59f0fd0421f2f73200e120bff952b5c6539b964aca24bf1e6f",
+      "title": "Unchanged workflow memory",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "noop",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/task-runners/assets/mixed-noop-rss.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "7a401c06683e76b21490dbfbb7c9b9ddb0735f215833e6ff2dfb35a4be0e1797",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-noop-rss.svg",
+      "current_equivalent_view": "benchmarks/task-runners/assets/mixed-noop-rss.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-noop-rss.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "ab7a13fa016afe6f1e605c4bfcf5c170e40bc3e48127dd9d361abdb3cac0d9b3",
+      "title": "Unchanged workflow memory",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "noop",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-noop-rss.svg",
+      "new_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "current_equivalent_view": "benchmarks/task-runners/assets/mixed-noop-rss.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/task-runners/assets/mixed-leaf-rss.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "d93023ec390f3464536f345f175fa0201d9a4412c1c25f99867ca527bd9140bf",
+      "title": "One dirty leaf memory",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "leaf",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/task-runners/assets/mixed-leaf-rss.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "6e0f4bad5f55195662762f16d045ab7b77b6388e39ec4df3e3ada0d75600bbec",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-leaf-rss.svg",
+      "current_equivalent_view": "benchmarks/task-runners/assets/mixed-leaf-rss.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-leaf-rss.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "8114dd9c53fb2a1e116407a2d25bec26299a4334d0e2a2d14e7ac525f93d5df0",
+      "title": "One dirty leaf memory",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "leaf",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-leaf-rss.svg",
+      "new_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "current_equivalent_view": "benchmarks/task-runners/assets/mixed-leaf-rss.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/task-runners/assets/mixed-full-rss.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "056a4beb9086f527d06c7130d7acba7046e503db7d4e36e653affc093244778c",
+      "title": "All dirty workflow memory",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "full",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "action": "regenerated",
+      "new_asset": "benchmarks/task-runners/assets/mixed-full-rss.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json"
+      },
+      "new_asset_sha256": "e5718e3fa461c0546d45cfddf135d54c3d9921c170a3d3191d9c588df96cba36",
+      "reason": "Same peer/scaling/incremental/full/worker/memory purpose retained; final canonical medians regenerated and plotted vectors independently checked.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "historical_original_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-full-rss.svg",
+      "current_equivalent_view": "benchmarks/task-runners/assets/mixed-full-rss.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-full-rss.svg",
+      "old_public_commit": "3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e",
+      "old_asset_sha256": "8bf3d8acffd7518dca5c323249c3ca9611afce25546a91b36f2a3094a923e844",
+      "title": "All dirty workflow memory",
+      "purpose": {
+        "tiny": false,
+        "sizes": [
+          20,
+          100,
+          1000
+        ],
+        "jobs": 4,
+        "case": "full",
+        "metric": "peak_rss_kib",
+        "unit": "MiB",
+        "workers": false,
+        "log": false
+      },
+      "old_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "action": "preserved",
+      "new_asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-full-rss.svg",
+      "new_source": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "reason": "Historical report and exact original SVG/PNG remain at their dated placement using immutable original URLs. Nothing is replaced by a latest-only counterpart.",
+      "historical_archive_placement": "/benchmarks/task-runners/series/20261011-v4110/",
+      "current_equivalent_view": "benchmarks/task-runners/assets/mixed-full-rss.svg",
+      "equivalence_limit": "Equivalent chart purpose, distinct historical and final data cohorts. Both remain accessible.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    },
+    {
+      "old_asset": "benchmarks/build-systems/assets/candidate-recovery.svg",
+      "old_public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+      "old_asset_sha256": "fab4192a2e47a10a2a6f268f95da2187e5417adf2346608d8b52ce409b040309",
+      "title": "Controlled release/original/final comparison: heavy no-op, tiny no-op and tiny full",
+      "purpose": {
+        "dimension": "three exact Nift source versions",
+        "workloads": [
+          "heavy1k j1 no-op",
+          "tiny10k j4 no-op",
+          "tiny10k j4 full"
+        ],
+        "metric": "wall_ms"
+      },
+      "old_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/diagnostics/three-way-c8d9-7f7-c14/results/summary.json"
+      },
+      "action": "updated",
+      "new_asset": "benchmarks/build-systems/assets/candidate-recovery.svg",
+      "new_source": {
+        "campaign": "20261015-v4120-final-c14d068",
+        "evidence_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+        "data": "benchmarks/build-systems/20261015-v4120-final-c14d068/diagnostics/three-way-c8d9-7f7-c14/results/summary.json"
+      },
+      "new_asset_sha256": "d849e22b1450b7c28b591287b15731d4f4f7ffbdfe31da8ac56d494058e080ed",
+      "reason": "Complete release/original/final comparison restored with every original series retained and final v4.12 explicitly labelled.",
+      "historical_archive_placement": "same complete version comparison retained on current page",
+      "historical_original_asset": null,
+      "current_equivalent_view": "benchmarks/build-systems/assets/candidate-recovery.svg",
+      "equivalence_limit": "Same chart purpose; historical/primary/controlled cohorts remain distinct and are never pooled.",
+      "no_purpose_removed": true,
+      "svg_and_png_companions_retained": true
+    }
+  ]
+}

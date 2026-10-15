@@ -1,0 +1,1057 @@
+{
+  "pass": true,
+  "baseline_source_parent": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+  "baseline_public_parent": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+  "baseline_graphs": 35,
+  "retained_original_graphs": 35,
+  "removed_graphs": 0,
+  "new_complementary_graphs": 1,
+  "current_and_historical_graphs": 36,
+  "charts": [
+    {
+      "suite": "concurrency",
+      "original_path": "benchmarks/concurrency/assets/cpu.svg",
+      "original_source_path": "content/benchmarks/concurrency/index.html",
+      "original_title": "Use all four cores.",
+      "purpose": "Fixed CPU work at one/two/four workers",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/concurrency/assets/cpu.svg",
+      "new_source": {
+        "generator": "scripts/render_concurrency.py",
+        "data": "content/benchmarks/concurrency/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "bf25b7b61b640ef01a14626a4bad826b84a661650280547ca0b5d2e53d38423e",
+      "new_sha256": "f5964c786cce371c636defa4b2cda7bc796cc7283c08075f336620b9f390d71e",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/concurrency/assets/cpu.png"
+    },
+    {
+      "suite": "concurrency",
+      "original_path": "benchmarks/concurrency/assets/fan.svg",
+      "original_source_path": "content/benchmarks/concurrency/index.html",
+      "original_title": "Fan out. Collect everything.",
+      "purpose": "Unique-ID flat fan-out and exact collection",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/concurrency/assets/fan.svg",
+      "new_source": {
+        "generator": "scripts/render_concurrency.py",
+        "data": "content/benchmarks/concurrency/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "2a259fc59c96a6d08e83bb616d3519e3a8e8aa66a8e67bc5ed1e3943e798b856",
+      "new_sha256": "942de23bdec36a298c138f67d01a2fe83551bc82f6ed2e88369d0dc9d43e6c65",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/concurrency/assets/fan.png"
+    },
+    {
+      "suite": "concurrency",
+      "original_path": "benchmarks/concurrency/assets/files.svg",
+      "original_source_path": "content/benchmarks/concurrency/index.html",
+      "original_title": "Read together.",
+      "purpose": "Cached128-byte file orchestration, four concurrent operations",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/concurrency/assets/files.svg",
+      "new_source": {
+        "generator": "scripts/render_concurrency.py",
+        "data": "content/benchmarks/concurrency/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "e200a4f038579036a12fc072f1858ad95d7c6433dfc0e9463526da9abcf12ca2",
+      "new_sha256": "4bbca7c0df1bf28898d3fc028002262531449468dd6a440861798d4126667e32",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/concurrency/assets/files.png"
+    },
+    {
+      "suite": "concurrency",
+      "original_path": "benchmarks/concurrency/assets/memory.svg",
+      "original_source_path": "content/benchmarks/concurrency/index.html",
+      "original_title": "Keep work alive.",
+      "purpose": "Post-READY held-task RSS; unsupported Nift10k, separate from launch accounting",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/concurrency/assets/memory.svg",
+      "new_source": {
+        "generator": "scripts/render_concurrency.py",
+        "data": "content/benchmarks/concurrency/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "e0de1872477ec5b26ef512a780ccb59fc4d6f6490ed071feb1d05fcb84532cee",
+      "new_sha256": "e337f08ab0a9422d79ca4f90f14b68ac842dee56e870c832b0bc82009a81f175",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/concurrency/assets/memory.png"
+    },
+    {
+      "suite": "concurrency",
+      "original_path": "benchmarks/concurrency/assets/mixed.svg",
+      "original_source_path": "content/benchmarks/concurrency/index.html",
+      "original_title": "Different work, one result.",
+      "purpose": "Mixed CPU/wait/process, nested creation and recoverable outcomes",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/concurrency/assets/mixed.svg",
+      "new_source": {
+        "generator": "scripts/render_concurrency.py",
+        "data": "content/benchmarks/concurrency/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "6edee74d14baf9b458619b3fb5a9e561135e5de2673cc5f6fef05b14a468ed90",
+      "new_sha256": "eaf81ad7449db9f4a4369b78def508f0d171dc0191e32267bf5942ada0103464",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/concurrency/assets/mixed.png"
+    },
+    {
+      "suite": "concurrency",
+      "original_path": "benchmarks/concurrency/assets/pool.svg",
+      "original_source_path": "content/benchmarks/concurrency/index.html",
+      "original_title": "Give the queue a limit.",
+      "purpose": "Fixed64-job dispatch, light/medium/heavy bodies, worker scaling",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/concurrency/assets/pool.svg",
+      "new_source": {
+        "generator": "scripts/render_concurrency.py",
+        "data": "content/benchmarks/concurrency/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "f747a4fc35768631548839e3144d1edd4d90ecb6ded54b80f48651a933d3230f",
+      "new_sha256": "c930f245dcf6b7d8ed941626f32ddee2433b03b793f407e13ae3ba931c3125c5",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/concurrency/assets/pool.png"
+    },
+    {
+      "suite": "concurrency",
+      "original_path": "benchmarks/concurrency/assets/process.svg",
+      "original_source_path": "content/benchmarks/concurrency/index.html",
+      "original_title": "Launch. Capture. Join.",
+      "purpose": "Argv launch/capture/join with checked values and exit statuses",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/concurrency/assets/process.svg",
+      "new_source": {
+        "generator": "scripts/render_concurrency.py",
+        "data": "content/benchmarks/concurrency/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "a23425904ed9ad665d71951d77bfbce447318b089479b4b391587ce52fd08cbc",
+      "new_sha256": "b89d7ac8438001a7ec53fb52e8626ae86044b4b7e47c68fd78fbed82b053751c",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/concurrency/assets/process.png"
+    },
+    {
+      "suite": "concurrency",
+      "original_path": "benchmarks/concurrency/assets/queue.svg",
+      "original_source_path": "content/benchmarks/concurrency/index.html",
+      "original_title": "Talk to each other.",
+      "purpose": "Capacity64 producer/consumer queue throughput and exact messages",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/concurrency/assets/queue.svg",
+      "new_source": {
+        "generator": "scripts/render_concurrency.py",
+        "data": "content/benchmarks/concurrency/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "aef01045705df3051db4b8afa41fa610bce896f41934c1758c66e83251cf90cc",
+      "new_sha256": "8aecb231e7955bb00ddac80176e7b69399fa4e323e5fd5d4210537edab45741e",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/concurrency/assets/queue.png"
+    },
+    {
+      "suite": "concurrency",
+      "original_path": "benchmarks/concurrency/assets/schedule.svg",
+      "original_source_path": "content/benchmarks/concurrency/index.html",
+      "original_title": "Schedule almost nothing.",
+      "purpose": "Zero-work create/join task scaling, isolated booted wall latency",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/concurrency/assets/schedule.svg",
+      "new_source": {
+        "generator": "scripts/render_concurrency.py",
+        "data": "content/benchmarks/concurrency/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "1999406ab14c78435957b42342e402255a2306618c31fd61459d90c1fc03e272",
+      "new_sha256": "b0b0626370af4012aaae4a8cbafd0d4f1adbf96ce7f63fb540526c3072440ed0",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/concurrency/assets/schedule.png"
+    },
+    {
+      "suite": "concurrency",
+      "original_path": "benchmarks/concurrency/assets/speedup.svg",
+      "original_source_path": "content/benchmarks/concurrency/index.html",
+      "original_title": "Same fixed work / CPU speedup",
+      "purpose": "Derived CPU speedup versus one-worker same-work median",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/concurrency/assets/speedup.svg",
+      "new_source": {
+        "generator": "scripts/render_concurrency.py",
+        "data": "content/benchmarks/concurrency/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "5b17c69111dd8b29fc09934f718a7f5bb8688631a1c4d4ef6f2ee9d588fafd61",
+      "new_sha256": "d88b22c3b5e094844509bd9c25468cac39766633aeaeab8574049346e7553089",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/concurrency/assets/speedup.png"
+    },
+    {
+      "suite": "concurrency",
+      "original_path": "benchmarks/concurrency/assets/sync.svg",
+      "original_source_path": "content/benchmarks/concurrency/index.html",
+      "original_title": "Share state carefully.",
+      "purpose": "Exact atomic/mutex increments, unsupported primitives unavailable",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/concurrency/assets/sync.svg",
+      "new_source": {
+        "generator": "scripts/render_concurrency.py",
+        "data": "content/benchmarks/concurrency/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "4890217edb21841e45d628f12a118b646522810d7561a5f4600a245ce2193ee2",
+      "new_sha256": "27c42abf2e10fbd9c7baf5adeac3f83bfaf0983db111db3d032c2b02b91b6962",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/concurrency/assets/sync.png"
+    },
+    {
+      "suite": "concurrency",
+      "original_path": "benchmarks/concurrency/assets/tiny.svg",
+      "original_source_path": "content/benchmarks/concurrency/index.html",
+      "original_title": "A little work in every branch.",
+      "purpose": "Eight recurrence steps per task with task/output overhead",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/concurrency/assets/tiny.svg",
+      "new_source": {
+        "generator": "scripts/render_concurrency.py",
+        "data": "content/benchmarks/concurrency/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "a7e47bda81fe3cdda6487ca589152ae4f1a0a3fade56b92992e02d989a870e1f",
+      "new_sha256": "1ac748592d51332d237fce43f56214c80c80250f8e2a376e062c3333693159be",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/concurrency/assets/tiny.png"
+    },
+    {
+      "suite": "concurrency",
+      "original_path": "benchmarks/concurrency/assets/wait.svg",
+      "original_source_path": "content/benchmarks/concurrency/index.html",
+      "original_title": "Wait together.",
+      "purpose": "Suspended/blocking equivalent waits; distinct execution models",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/concurrency/assets/wait.svg",
+      "new_source": {
+        "generator": "scripts/render_concurrency.py",
+        "data": "content/benchmarks/concurrency/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "65bf5a8f3d5603af1b985d0b75c906da69576111a6dbc96fa1fc767e5f9f7e5e",
+      "new_sha256": "01a77035cf973f754e17c9e2c6812a2b6a022dee86be06fb19d2f4f0d664a6cd",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/concurrency/assets/wait.png"
+    },
+    {
+      "suite": "concurrency",
+      "original_path": "benchmarks/concurrency/assets/worker-memory.svg",
+      "original_source_path": "content/benchmarks/concurrency/index.html",
+      "original_title": "CPU pools / unranked sampled RSS accounting",
+      "purpose": "Unranked sampled CPU-worker process-tree RSS; floor/shared-page caveat",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/concurrency/assets/worker-memory.svg",
+      "new_source": {
+        "generator": "scripts/render_concurrency.py",
+        "data": "content/benchmarks/concurrency/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "6e8b4c4509ea7cee8f699914fe550f73e845e1563d70dd0d017b46427ea51c6d",
+      "new_sha256": "5ba3b3dc1fc3b654d5069887a0854f8f744da2861e81cb33b2b8f556dac12f2d",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/concurrency/assets/worker-memory.png"
+    },
+    {
+      "suite": "filesystem-automation",
+      "original_path": "benchmarks/filesystem-automation/assets/changes.svg",
+      "original_source_path": "content/benchmarks/filesystem-automation/index.html",
+      "original_title": "Change detection / 10k files",
+      "purpose": "Timestamp versus content detection under restored/new timestamps",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/filesystem-automation/assets/changes.svg",
+      "new_source": {
+        "generator": "scripts/render_filesystem.py",
+        "data": "content/benchmarks/filesystem-automation/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "3d8f21e32d19129a76890f16ad628502274518f644b881800192f88abf122df1",
+      "new_sha256": "ff732024b65efdfb2a4e0e441cbb97525daac1b58de070e85c03ae3729a314cb",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/filesystem-automation/assets/changes.png"
+    },
+    {
+      "suite": "filesystem-automation",
+      "original_path": "benchmarks/filesystem-automation/assets/hash.svg",
+      "original_source_path": "content/benchmarks/filesystem-automation/index.html",
+      "original_title": "Native SHA-256 / 10k files",
+      "purpose": "Native SHA256 contract; Nift unsupported",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/filesystem-automation/assets/hash.svg",
+      "new_source": {
+        "generator": "scripts/render_filesystem.py",
+        "data": "content/benchmarks/filesystem-automation/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "778d31136cb784a7b22b671aafcad12877322a0e58a55d4ece5ddc9e6c7d4f8e",
+      "new_sha256": "8d27a0babbdbb226a9c394d3e74543a2bb952bcc5ae7fe6bc9572ac4f6a20693",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/filesystem-automation/assets/hash.png"
+    },
+    {
+      "suite": "filesystem-automation",
+      "original_path": "benchmarks/filesystem-automation/assets/large-read.svg",
+      "original_source_path": "content/benchmarks/filesystem-automation/index.html",
+      "original_title": "100 MiB bulk-read contrast",
+      "purpose": "100MiB bulk-read contrast with endpoint aggregation",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/filesystem-automation/assets/large-read.svg",
+      "new_source": {
+        "generator": "scripts/render_filesystem.py",
+        "data": "content/benchmarks/filesystem-automation/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "7bcfb14b84b49f5f12ab0b69ef3c87acf6b52beb508649a05afb8c930d0a5c3b",
+      "new_sha256": "c5e3bf0d13dac1eb1acb60f95ff5ea9b609014c72d4ed820234a1caff06f0505",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/filesystem-automation/assets/large-read.png"
+    },
+    {
+      "suite": "filesystem-automation",
+      "original_path": "benchmarks/filesystem-automation/assets/memory.svg",
+      "original_source_path": "content/benchmarks/filesystem-automation/index.html",
+      "original_title": "Historical 20261011 post-exec walk high-water mark",
+      "purpose": "Historical post-exec walk VmHWM, one verified request per cell; not current wait4",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "445f4d3545cf031bcce4bf77a2b4a61ffb3b4c4f",
+        "cohort": "20261011-v4110"
+      },
+      "action": "preserved-original-historical-byte-identical",
+      "new_path": "benchmarks/filesystem-automation/assets/memory.svg",
+      "new_source": {
+        "generator": "scripts/render_filesystem.py",
+        "data": "content/benchmarks/filesystem-automation/published.json",
+        "cohort": "20261011-v4110",
+        "nift_source_sha": "445f4d3545cf031bcce4bf77a2b4a61ffb3b4c4f"
+      },
+      "reason": "No final post-exec walk cohort exists; retaining original historical metric preserves its purpose honestly. Added a distinctly named current accounting graph rather than silently relabelling it.",
+      "original_sha256": "1188402c889a9f049ae3009dea769414919fd38dd3508b2e705646673df0826e",
+      "new_sha256": "1188402c889a9f049ae3009dea769414919fd38dd3508b2e705646673df0826e",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/filesystem-automation/assets/memory.png"
+    },
+    {
+      "suite": "filesystem-automation",
+      "original_path": "benchmarks/filesystem-automation/assets/mirror.svg",
+      "original_source_path": "content/benchmarks/filesystem-automation/index.html",
+      "original_title": "Mirror / 10k files",
+      "purpose": "Both-tree fingerprints; content/add/delete variants preserve unchanged timestamps",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/filesystem-automation/assets/mirror.svg",
+      "new_source": {
+        "generator": "scripts/render_filesystem.py",
+        "data": "content/benchmarks/filesystem-automation/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "c13e58aa3feee7cb63745341baadc7d0af47fac12d888455639e657978584a90",
+      "new_sha256": "cbe0d902f2de5e34c922910517b50b19df126d09b254b15e90066cb0f320be02",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/filesystem-automation/assets/mirror.png"
+    },
+    {
+      "suite": "filesystem-automation",
+      "original_path": "benchmarks/filesystem-automation/assets/pipeline.svg",
+      "original_source_path": "content/benchmarks/filesystem-automation/index.html",
+      "original_title": "Project workflows / 10k files",
+      "purpose": "Manifest/generate/mixed checked project tree workflows",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/filesystem-automation/assets/pipeline.svg",
+      "new_source": {
+        "generator": "scripts/render_filesystem.py",
+        "data": "content/benchmarks/filesystem-automation/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "da13feb1342e44e491ca31336bc2792fd5f1d16fc1eb15b4ec8051aacda8b510",
+      "new_sha256": "36d7f6eed0fe201b8bb77cfd054afbea2c100f68e802ffef7f182914c3c5959e",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/filesystem-automation/assets/pipeline.png"
+    },
+    {
+      "suite": "filesystem-automation",
+      "original_path": "benchmarks/filesystem-automation/assets/read.svg",
+      "original_source_path": "content/benchmarks/filesystem-automation/index.html",
+      "original_title": "Small-file read + checksum",
+      "purpose": "Smallfile bytewise portable noncryptographic checksum",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/filesystem-automation/assets/read.svg",
+      "new_source": {
+        "generator": "scripts/render_filesystem.py",
+        "data": "content/benchmarks/filesystem-automation/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "3d3a2d27a162b0ce1f8728682ff497eafa2324089242f3b0f68d1c80198da859",
+      "new_sha256": "2ea9e144430500ebd1a64d02cb31ea8dc1b18edf842c8a7acae6349653fe98e7",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/filesystem-automation/assets/read.png"
+    },
+    {
+      "suite": "filesystem-automation",
+      "original_path": "benchmarks/filesystem-automation/assets/select.svg",
+      "original_source_path": "content/benchmarks/filesystem-automation/index.html",
+      "original_title": "Filtering / 10k files",
+      "purpose": "Stat-before-select name/extension/prefix/size contracts",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/filesystem-automation/assets/select.svg",
+      "new_source": {
+        "generator": "scripts/render_filesystem.py",
+        "data": "content/benchmarks/filesystem-automation/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "f3c4bd644f1e31981f019aaff56d25a807ccd4fd60f39ecb98c92b5d30b1eb4b",
+      "new_sha256": "cd1bcb65f2491645dce508dbf718a6e06258d723d7af5f6ad123db9944bda364",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/filesystem-automation/assets/select.png"
+    },
+    {
+      "suite": "filesystem-automation",
+      "original_path": "benchmarks/filesystem-automation/assets/stat.svg",
+      "original_source_path": "content/benchmarks/filesystem-automation/index.html",
+      "original_title": "Metadata scaling",
+      "purpose": "Exists/type/size metadata scaling",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/filesystem-automation/assets/stat.svg",
+      "new_source": {
+        "generator": "scripts/render_filesystem.py",
+        "data": "content/benchmarks/filesystem-automation/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "61e095b174eb549b4899d64ee6b3bab58bcfdf24afbec9b143f70c1e2d79f461",
+      "new_sha256": "c7d39f1aa82575633a319e2b718287293e4b339e039a952e461471cbfd39417a",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/filesystem-automation/assets/stat.png"
+    },
+    {
+      "suite": "filesystem-automation",
+      "original_path": "benchmarks/filesystem-automation/assets/walk.svg",
+      "original_source_path": "content/benchmarks/filesystem-automation/index.html",
+      "original_title": "Traversal scaling",
+      "purpose": "Exact path inventory at1k/10k/100kfiles",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/filesystem-automation/assets/walk.svg",
+      "new_source": {
+        "generator": "scripts/render_filesystem.py",
+        "data": "content/benchmarks/filesystem-automation/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "88dc5735080dff09c8f43af796e3fe2a94b987518ef70bc734f9775a010967b1",
+      "new_sha256": "8a41c73ae6f11a61ca7c8a743966a0eaa4d95951959db54a2e7d35473e8a16f5",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/filesystem-automation/assets/walk.png"
+    },
+    {
+      "suite": "filesystem-automation",
+      "original_path": "benchmarks/filesystem-automation/assets/write.svg",
+      "original_source_path": "content/benchmarks/filesystem-automation/index.html",
+      "original_title": "Write and copy",
+      "purpose": "Create/overwrite/stream-write/copy distinct contracts",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/filesystem-automation/assets/write.svg",
+      "new_source": {
+        "generator": "scripts/render_filesystem.py",
+        "data": "content/benchmarks/filesystem-automation/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "fad9464607e57e26714b362a4feadcf4933310dda6a3bf666dff8abaea0d89ba",
+      "new_sha256": "8b25ef1b5301e342649f1abcad2b154e689c759f5129a63f8175934c25cd9315",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [],
+      "new_associated_png_path": "benchmarks/filesystem-automation/assets/write.png"
+    },
+    {
+      "suite": "template-engines",
+      "original_path": "benchmarks/template-engines/assets/article.svg",
+      "original_source_path": "content/benchmarks/template-engines/index.html",
+      "original_title": "Persistent preparation + rendering",
+      "purpose": "Realistic article, nested loops, collection and uppercase source rendering",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/template-engines/assets/article.svg",
+      "new_source": {
+        "generator": "scripts/render_template_engines.py",
+        "data": "content/benchmarks/template-engines/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "b268cf1d1603ec11c42fe9fdcb3f9646e26594283c91de7eee41f7bc63fe0d0a",
+      "new_sha256": "584053dad85adc639d85554bb56e79bd8b983ea94bcdce41ca72c559128fb7ae",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [
+        "https://raw.githubusercontent.com/nift-experiments/lab-evidence/eeb3afe865e38f37e0bf78572ed22dcd816b3657/audits/publication/20261015-v4120/assets/benchmarks/template-engines/assets/article.png"
+      ],
+      "new_associated_png_path": "benchmarks/template-engines/assets/article.png"
+    },
+    {
+      "suite": "template-engines",
+      "original_path": "benchmarks/template-engines/assets/fresh-memory.svg",
+      "original_source_path": "content/benchmarks/template-engines/index.html",
+      "original_title": "Unranked fresh-child RSS accounting",
+      "purpose": "Unranked fresh child maximum-RSS distributions with inherited floor",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/template-engines/assets/fresh-memory.svg",
+      "new_source": {
+        "generator": "scripts/render_template_engines.py",
+        "data": "content/benchmarks/template-engines/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "0a9b25cf008fe6d1ee48a18d322a1cbbc5282e40b95f6c55524bb59b21b8b663",
+      "new_sha256": "10fe878843086cb063e9a84ad9a52c92513b5d1ca344ba74f891a5393405c11b",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [
+        "https://raw.githubusercontent.com/nift-experiments/lab-evidence/eeb3afe865e38f37e0bf78572ed22dcd816b3657/audits/publication/20261015-v4120/assets/benchmarks/template-engines/assets/fresh-memory.png"
+      ],
+      "new_associated_png_path": "benchmarks/template-engines/assets/fresh-memory.png"
+    },
+    {
+      "suite": "template-engines",
+      "original_path": "benchmarks/template-engines/assets/fresh.svg",
+      "original_source_path": "content/benchmarks/template-engines/index.html",
+      "original_title": "Fresh end-to-end invocation",
+      "purpose": "Complete invocation, hoststartup and both variants/output",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/template-engines/assets/fresh.svg",
+      "new_source": {
+        "generator": "scripts/render_template_engines.py",
+        "data": "content/benchmarks/template-engines/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "f693f77468261202dceda6e786d10709a16e26205a2dec7e6dc24e1f9ec08f86",
+      "new_sha256": "06458ab027b52954cc912e73acc5ff5f47df9079e309ae73086aacafc2e0acc5",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [
+        "https://raw.githubusercontent.com/nift-experiments/lab-evidence/eeb3afe865e38f37e0bf78572ed22dcd816b3657/audits/publication/20261015-v4120/assets/benchmarks/template-engines/assets/fresh.png"
+      ],
+      "new_associated_png_path": "benchmarks/template-engines/assets/fresh.png"
+    },
+    {
+      "suite": "template-engines",
+      "original_path": "benchmarks/template-engines/assets/includes-files.svg",
+      "original_source_path": "content/benchmarks/template-engines/index.html",
+      "original_title": "File-backed composition",
+      "purpose": "File-backed composition with cache invalidation and warm OS cache",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/template-engines/assets/includes-files.svg",
+      "new_source": {
+        "generator": "scripts/render_template_engines.py",
+        "data": "content/benchmarks/template-engines/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "01a45c7dc927fec225ee7c6379031a71f0a8a9157d0ec3eede671b07fb863ee8",
+      "new_sha256": "a2d628a588baa5559afa85d07ef9941e25f536681ed5fb7e93abc3cc56d9cdcf",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [
+        "https://raw.githubusercontent.com/nift-experiments/lab-evidence/eeb3afe865e38f37e0bf78572ed22dcd816b3657/audits/publication/20261015-v4120/assets/benchmarks/template-engines/assets/includes-files.png"
+      ],
+      "new_associated_png_path": "benchmarks/template-engines/assets/includes-files.png"
+    },
+    {
+      "suite": "template-engines",
+      "original_path": "benchmarks/template-engines/assets/includes-memory.svg",
+      "original_source_path": "content/benchmarks/template-engines/index.html",
+      "original_title": "Memory-backed composition",
+      "purpose": "Memory-backed partial composition; warm partial cache and repeated main preparation",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/template-engines/assets/includes-memory.svg",
+      "new_source": {
+        "generator": "scripts/render_template_engines.py",
+        "data": "content/benchmarks/template-engines/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "cc3eeb33f794a53c5a9c2acd5bf79402a83eb9bddadd5ef8a9337bf3ae6cac6c",
+      "new_sha256": "9097782078bb781098e342729a12820dae8974d50594cc267bc8c635adb1d9ae",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [
+        "https://raw.githubusercontent.com/nift-experiments/lab-evidence/eeb3afe865e38f37e0bf78572ed22dcd816b3657/audits/publication/20261015-v4120/assets/benchmarks/template-engines/assets/includes-memory.png"
+      ],
+      "new_associated_png_path": "benchmarks/template-engines/assets/includes-memory.png"
+    },
+    {
+      "suite": "template-engines",
+      "original_path": "benchmarks/template-engines/assets/loops.svg",
+      "original_source_path": "content/benchmarks/template-engines/index.html",
+      "original_title": "Persistent source preparation + render",
+      "purpose": "Source preparation plus render over record counts, not prepared reuse",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/template-engines/assets/loops.svg",
+      "new_source": {
+        "generator": "scripts/render_template_engines.py",
+        "data": "content/benchmarks/template-engines/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "3247b4e5bd23b0450283a419562c7ea4a5960a93f82c65fadda660cdcbc9e51c",
+      "new_sha256": "9c774102023ef736ed72f9517d6f404f668bf513d908f48abc80656c3b6e95c5",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [
+        "https://raw.githubusercontent.com/nift-experiments/lab-evidence/eeb3afe865e38f37e0bf78572ed22dcd816b3657/audits/publication/20261015-v4120/assets/benchmarks/template-engines/assets/loops.png"
+      ],
+      "new_associated_png_path": "benchmarks/template-engines/assets/loops.png"
+    },
+    {
+      "suite": "template-engines",
+      "original_path": "benchmarks/template-engines/assets/many-templates.svg",
+      "original_source_path": "content/benchmarks/template-engines/index.html",
+      "original_title": "Prepare + render distinct templates",
+      "purpose": "Prepare/render distinct sources, complete workload totals",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/template-engines/assets/many-templates.svg",
+      "new_source": {
+        "generator": "scripts/render_template_engines.py",
+        "data": "content/benchmarks/template-engines/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "460796877cd0ed013ea1f8e29ba299e3d69b7ad9d95c3dfa1624703d59564bef",
+      "new_sha256": "ed287be70a357eadb7d87fef9c9af64c45023cfd7af7ad608d503ef0a9312172",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [
+        "https://raw.githubusercontent.com/nift-experiments/lab-evidence/eeb3afe865e38f37e0bf78572ed22dcd816b3657/audits/publication/20261015-v4120/assets/benchmarks/template-engines/assets/many-templates.png"
+      ],
+      "new_associated_png_path": "benchmarks/template-engines/assets/many-templates.png"
+    },
+    {
+      "suite": "template-engines",
+      "original_path": "benchmarks/template-engines/assets/prepare.svg",
+      "original_source_path": "content/benchmarks/template-engines/index.html",
+      "original_title": "Persistent preparation only",
+      "purpose": "Standalone preparation artifacts; Nift public API unavailable",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/template-engines/assets/prepare.svg",
+      "new_source": {
+        "generator": "scripts/render_template_engines.py",
+        "data": "content/benchmarks/template-engines/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "f46ca5e0378bae341abf70d3f700ca160224900517c6ec605f5e6dfd43eff460",
+      "new_sha256": "9bde918c0e6066966d89f287a8c4c55f4b446bed52437a619c8eac60289cbfbe",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [
+        "https://raw.githubusercontent.com/nift-experiments/lab-evidence/eeb3afe865e38f37e0bf78572ed22dcd816b3657/audits/publication/20261015-v4120/assets/benchmarks/template-engines/assets/prepare.png"
+      ],
+      "new_associated_png_path": "benchmarks/template-engines/assets/prepare.png"
+    },
+    {
+      "suite": "template-engines",
+      "original_path": "benchmarks/template-engines/assets/repeat.svg",
+      "original_source_path": "content/benchmarks/template-engines/index.html",
+      "original_title": "Prepared template, alternating new data",
+      "purpose": "Alternating data100/1000 prepared renders, complete totals",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/template-engines/assets/repeat.svg",
+      "new_source": {
+        "generator": "scripts/render_template_engines.py",
+        "data": "content/benchmarks/template-engines/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "de6a1f3035456916135938c9d038dd25b803d62641b676c6a26c951dc4f44a4c",
+      "new_sha256": "9ce808be82fb58c1f016058f507ed1f1e228d141b5eb61f18c488a4ae52bac6c",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [
+        "https://raw.githubusercontent.com/nift-experiments/lab-evidence/eeb3afe865e38f37e0bf78572ed22dcd816b3657/audits/publication/20261015-v4120/assets/benchmarks/template-engines/assets/repeat.png"
+      ],
+      "new_associated_png_path": "benchmarks/template-engines/assets/repeat.png"
+    },
+    {
+      "suite": "template-engines",
+      "original_path": "benchmarks/template-engines/assets/reuse.svg",
+      "original_source_path": "content/benchmarks/template-engines/index.html",
+      "original_title": "Prepared-template rendering",
+      "purpose": "Prepared-object rendering, Nift unsupported",
+      "old_source": {
+        "source_commit": "973e6fbb1aa3b4708ed1a0abe332cb108f3e671b",
+        "public_commit": "5294d4889bcfbc86f33c7d0152fc101ae7a36ce6",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+        "cohort": "20261015-v4120-final-c14d068"
+      },
+      "action": "retained-same-path-purpose-regenerated-final-data",
+      "new_path": "benchmarks/template-engines/assets/reuse.svg",
+      "new_source": {
+        "generator": "scripts/render_template_engines.py",
+        "data": "content/benchmarks/template-engines/published.json",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Final labels and values refreshed without losing original workload/metric coverage. Historical report routes and evidence retained separately.",
+      "original_sha256": "a87c5655551d1534b35c5d36a37619225f9cdfc5389e8fea9dacdef58ae852d2",
+      "new_sha256": "b9005a0af28f0938b6c40dff61f23187a223d8325aaef022f5d483a54a8f3720",
+      "semantic_continuity": true,
+      "removed": false,
+      "original_associated_png_downloads": [
+        "https://raw.githubusercontent.com/nift-experiments/lab-evidence/eeb3afe865e38f37e0bf78572ed22dcd816b3657/audits/publication/20261015-v4120/assets/benchmarks/template-engines/assets/reuse.png"
+      ],
+      "new_associated_png_path": "benchmarks/template-engines/assets/reuse.png"
+    },
+    {
+      "suite": "filesystem-automation",
+      "original_path": null,
+      "original_title": null,
+      "purpose": "Current full-invocation median wait4 peak accounting for walk scaling; explicitly unranked",
+      "action": "added-current-complement-not-historical-replacement",
+      "new_path": "benchmarks/filesystem-automation/assets/memory-accounting.svg",
+      "new_source": {
+        "generator": "scripts/render_filesystem.py",
+        "data": "content/benchmarks/filesystem-automation/published.json:memory_accounting",
+        "cohort": "20261015-v4120-final-c14d068",
+        "nift_source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0"
+      },
+      "reason": "Current post-exec VmHWM was not measured. Full-invocation wait4 medians are audited but floor-affected; this visibly different metric cannot rank efficiency or substitute for historical postexec memory.",
+      "semantic_continuity": true,
+      "removed": false
+    }
+  ],
+  "inline_analytical_views": [
+    {
+      "suite": "filesystem-automation",
+      "view": "20261011 metadata syscall/count strip",
+      "action": "restored historical with date and original counts",
+      "removed": false
+    },
+    {
+      "suite": "filesystem-automation",
+      "view": "same-node source comparison panels",
+      "action": "restored separately labelled historical release/checkpoint/final control",
+      "removed": false
+    },
+    {
+      "suite": "concurrency",
+      "view": "same-node queue/scheduling source controls",
+      "action": "restored separately labelled diagnostic",
+      "removed": false
+    },
+    {
+      "suite": "template-engines",
+      "view": "same-node loop/article source controls",
+      "action": "restored separately labelled diagnostic",
+      "removed": false
+    }
+  ],
+  "archive_continuity": "Root restores original dated report routes/assets/templates; generators retain navigation links. No historical measurement is silently labelled final.",
+  "archive_scope_note": "This reconciliation proves every pre-removal main-report chart retains a same-path semantic view; root separately restores and inventories older dated report routes/assets."
+}

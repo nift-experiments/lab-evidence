@@ -4991,22 +4991,67 @@
   "checks": [
     {
       "suite": "shell",
-      "current_only": true,
-      "html_sha256": "6b113d05367b5fab3f93ccc547237e3b1f7d55977d6c20fb476fae490e933b88",
+      "current_graphs_final_only": true,
+      "separate_recovery_section_preserved": true,
+      "html_sha256": "340e1797868e3d82b9d5883f5e2241517440624a440f3bd1b566a83ed1112ba9",
       "current_nift_identity": "v4.12.0 final / c14d068",
       "raw_cells": 293
     },
     {
       "suite": "scripting",
-      "current_only": true,
-      "html_sha256": "5ad6cd9c0ed1305a98aeb53fb9213da546ff1a75f7ff4d2e1c8701babf7d228e",
+      "current_graphs_final_only": true,
+      "separate_recovery_section_preserved": true,
+      "html_sha256": "74c75ab349a4c37f1071a042fa2b23a75fd81ff305daff8816c00d9a3b5032b0",
       "current_nift_identity": "v4.12.0 final / c14d068",
       "raw_cells": 188
     }
   ],
-  "historical_source_trees": [],
-  "historical_public_assets": [],
-  "historical_policy": "No historical/recovery result belongs on current public pages; canonical evidence is retained. Historical public assets listed here must be removed by parent before final publication.",
+  "historical_source_trees": [
+    {
+      "path": "content/benchmarks/archives/20261009-v490/shell/index.html",
+      "status": "Historical source only; not a current dataset; parent removes public/tracked historical routes"
+    },
+    {
+      "path": "content/benchmarks/archives/20261008-v480/scripting/index.html",
+      "status": "Historical source only; not a current dataset; parent removes public/tracked historical routes"
+    },
+    {
+      "path": "content/benchmarks/archives/20261008-v480/shell/index.html",
+      "status": "Historical source only; not a current dataset; parent removes public/tracked historical routes"
+    }
+  ],
+  "historical_public_assets": [
+    "public/benchmarks/shell/series/20261008-v480/index.html",
+    "public/benchmarks/shell/series/20261010-pre-c14/index.html",
+    "public/benchmarks/shell/series/20261009-v490/index.html",
+    "public/benchmarks/shell/series/20261009-v490/assets/rc-prepared.png",
+    "public/benchmarks/shell/series/20261009-v490/assets/external-work.svg",
+    "public/benchmarks/shell/series/20261009-v490/assets/external-work.png",
+    "public/benchmarks/shell/series/20261009-v490/assets/startup-distributions.png",
+    "public/benchmarks/shell/series/20261009-v490/assets/style.css",
+    "public/benchmarks/shell/series/20261009-v490/assets/startup-distributions.svg",
+    "public/benchmarks/shell/series/20261009-v490/assets/rc-prepared.svg",
+    "public/benchmarks/shell/series/20261010-pre-c14/assets/workloads.css",
+    "public/benchmarks/shell/series/20261010-pre-c14/assets/style.css",
+    "public/benchmarks/shell/series/20261008-v480/assets/rc-prepared.png",
+    "public/benchmarks/shell/series/20261008-v480/assets/external-work.svg",
+    "public/benchmarks/shell/series/20261008-v480/assets/external-work.png",
+    "public/benchmarks/shell/series/20261008-v480/assets/startup-distributions.png",
+    "public/benchmarks/shell/series/20261008-v480/assets/style.css",
+    "public/benchmarks/shell/series/20261008-v480/assets/startup-distributions.svg",
+    "public/benchmarks/shell/series/20261008-v480/assets/rc-prepared.svg",
+    "public/benchmarks/scripting/series/20261008-v480/index.html",
+    "public/benchmarks/scripting/series/20261010-pre-c14/index.html",
+    "public/benchmarks/scripting/series/20261010-pre-c14/assets/style.css",
+    "public/benchmarks/scripting/series/20261008-v480/assets/noop.png",
+    "public/benchmarks/scripting/series/20261008-v480/assets/loops.png",
+    "public/benchmarks/scripting/series/20261008-v480/assets/traverse.svg",
+    "public/benchmarks/scripting/series/20261008-v480/assets/style.css",
+    "public/benchmarks/scripting/series/20261008-v480/assets/noop.svg",
+    "public/benchmarks/scripting/series/20261008-v480/assets/traverse.png",
+    "public/benchmarks/scripting/series/20261008-v480/assets/loops.svg"
+  ],
+  "historical_policy": "Preserve all historical public/source graphs and separately labeled recovery comparisons. Current official plots use final data only; never pool cohorts.",
   "counts": {
     "static_assets": 12,
     "inline_svg": 94,

@@ -1,13 +1,13 @@
 {
-  "scope": "build-systems and task-runners; public final v4.12 only",
+  "scope": "All build/task historical and current graphs preserved; current peer graphs final-labelled; complete version comparison includes final",
   "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
   "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
   "campaign": "20261015-v4120-final-c14d068",
   "measurements_or_cloud_work": false,
-  "public_historical_or_recovery_charts": false,
-  "asset_count": 44,
-  "svg_count": 22,
-  "png_count": 22,
+  "public_historical_or_recovery_charts": true,
+  "asset_count": 46,
+  "svg_count": 23,
+  "png_count": 23,
   "changed_assets": [
     "benchmarks/build-systems/assets/native-noop.svg",
     "benchmarks/build-systems/assets/native-noop.png",
@@ -59,7 +59,7 @@
       "asset": "benchmarks/build-systems/assets/native-noop.svg",
       "title": "Warm no-op scaling",
       "generator": "scripts/render_build_systems.py::chart",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -180,21 +180,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "d7cfd4521ba9ab9b92e2d7e768757e1072cc219a44dd7824600996f4c11b4079",
       "regenerated_sha256": "e85f841936f95951739fde0586096587ce629a47b1886b9da1402c03114052c0",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "e85f841936f95951739fde0586096587ce629a47b1886b9da1402c03114052c0",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/native-noop.png",
       "title": "Warm no-op scaling",
       "generator": "scripts/render_build_systems.py::chart",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -315,8 +317,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "9b08bac9e33f023ad1c6180b44e1bbc8756e14ede46bd1796236b766faad2440",
       "bytes_changed": true,
@@ -325,13 +327,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "1b51bcd2446419442f5672f2ac1d09fe61182599043a3c96d871c72708cdf3cd",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "9b08bac9e33f023ad1c6180b44e1bbc8756e14ede46bd1796236b766faad2440",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/native-leaf.svg",
       "title": "One-file incremental scaling",
       "generator": "scripts/render_build_systems.py::chart",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -452,21 +456,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "c02eec30c5d5bf014c32110cb44ac7ab21c3821b701cb6088df6e16d7fd6ed7c",
       "regenerated_sha256": "3dac55360c2a6f1ba137c1f72745af881aca90f350e2ee3520957fafa741f659",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "3dac55360c2a6f1ba137c1f72745af881aca90f350e2ee3520957fafa741f659",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/native-leaf.png",
       "title": "One-file incremental scaling",
       "generator": "scripts/render_build_systems.py::chart",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -587,8 +593,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "2ae0d2e6487a9fbb0273408d5f486ed1f22a8fbf8fa3a668968e2bc710ae41ba",
       "bytes_changed": true,
@@ -597,13 +603,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "7d520be387283eee193ec4c59d0c42ed30b4bcfef09bde68cbf744f5913ae80d",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "2ae0d2e6487a9fbb0273408d5f486ed1f22a8fbf8fa3a668968e2bc710ae41ba",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/native-global.svg",
       "title": "Global-header rebuild scaling",
       "generator": "scripts/render_build_systems.py::chart",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -724,21 +732,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "417ba174a36b0891fc4cbc298eda6d7c3c0471a179c4731b116b1a6fe5946981",
       "regenerated_sha256": "5a509b33e67bc831a2f8be3e82524e14d88bb41ea38a484501731c3bbc6b7672",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "5a509b33e67bc831a2f8be3e82524e14d88bb41ea38a484501731c3bbc6b7672",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/native-global.png",
       "title": "Global-header rebuild scaling",
       "generator": "scripts/render_build_systems.py::chart",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -859,8 +869,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "36ba858c4e45dd7a2a0a37fd64839ff3dd5cf8f2b88d78d51b68bcd831f04305",
       "bytes_changed": true,
@@ -869,13 +879,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "92d17a175c6723cfc5a1aa67401539dc777bde40cadcb1fc4c58a9777ae5335f",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "36ba858c4e45dd7a2a0a37fd64839ff3dd5cf8f2b88d78d51b68bcd831f04305",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/native-full.svg",
       "title": "Clean full build scaling",
       "generator": "scripts/render_build_systems.py::chart",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -996,21 +1008,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "5edd710440f7cb16e3eb26359ad108278af164589e4ffb98054e2343b51de0fd",
       "regenerated_sha256": "d41cf1804044122acf7fa2df81b04fc25c8708e9014bac767a033e97f097db22",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "d41cf1804044122acf7fa2df81b04fc25c8708e9014bac767a033e97f097db22",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/native-full.png",
       "title": "Clean full build scaling",
       "generator": "scripts/render_build_systems.py::chart",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -1131,8 +1145,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "f4f9b13d5c35311dc051743c430d65bba5253f1c813908d2678dea600072e099",
       "bytes_changed": true,
@@ -1141,13 +1155,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "372f7554bc2422618c71325af388f1a7b14a62f54fa3a509c1a15eff905215d9",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "f4f9b13d5c35311dc051743c430d65bba5253f1c813908d2678dea600072e099",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/tiny-noop.svg",
       "title": "Tiny-action no-op scaling",
       "generator": "scripts/render_build_systems.py::chart",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -1255,21 +1271,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "04d75e4ce5abcefbebba445bf9eb772952784fe01d7561c7165f671cbb971658",
       "regenerated_sha256": "75b5c7c66b8b8fd9af2c3c4f26914b8d83c77426a86eaac7f208d69d1e491425",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "75b5c7c66b8b8fd9af2c3c4f26914b8d83c77426a86eaac7f208d69d1e491425",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/tiny-noop.png",
       "title": "Tiny-action no-op scaling",
       "generator": "scripts/render_build_systems.py::chart",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -1377,8 +1395,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "3cd5525be43a147df049176f85e279ec62fee2719a4c55a2f5d4f7c6df0da915",
       "bytes_changed": true,
@@ -1387,13 +1405,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "dd75aa554070f364c4cda70dd2b144fa4707d7dc660742d71df3c1be09247adc",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "3cd5525be43a147df049176f85e279ec62fee2719a4c55a2f5d4f7c6df0da915",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/tiny-full.svg",
       "title": "Fully dirty tiny-action scaling",
       "generator": "scripts/render_build_systems.py::chart",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -1501,21 +1521,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "8b92c8e20c3e56062f76e4d86a63256646ef5f99da75852b40101eb1aafc43cc",
       "regenerated_sha256": "ed1f8e3f1c215bda8879603dad9bb60f297ea8d77a49cca1f42ff796388c2671",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "ed1f8e3f1c215bda8879603dad9bb60f297ea8d77a49cca1f42ff796388c2671",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/tiny-full.png",
       "title": "Fully dirty tiny-action scaling",
       "generator": "scripts/render_build_systems.py::chart",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -1623,8 +1645,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "0628878d1c501ef4b21d7ee96fa78a6560917d55d04d76294a84ad8a9e99938e",
       "bytes_changed": true,
@@ -1633,13 +1655,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "154db514e9da328686086cef0547ebd064edde4197733711806824f8f4214103",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "0628878d1c501ef4b21d7ee96fa78a6560917d55d04d76294a84ad8a9e99938e",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/parallel-heavy.svg",
       "title": "Heavy full-build worker comparison",
       "generator": "scripts/render_build_systems.py::render/parallel-heavy",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -1761,21 +1785,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "9b6a45d75eab476aee54777583e5c4b715adf491dfb4c14e290f794913499654",
       "regenerated_sha256": "7844a37b2a78eaf2ec6c26f06d1935099fc0474b3d3d2d8792373d7f6e506893",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "ordinal grouped bars mapped to worker ticks1,2,4; all centers and medians checked",
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "7844a37b2a78eaf2ec6c26f06d1935099fc0474b3d3d2d8792373d7f6e506893",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/parallel-heavy.png",
       "title": "Heavy full-build worker comparison",
       "generator": "scripts/render_build_systems.py::render/parallel-heavy",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -1897,8 +1923,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "c44a03125c762900c7762f1c3af150e5b74c9d3ecbb5fc6a4b40b4982c6702e7",
       "bytes_changed": true,
@@ -1907,13 +1933,15 @@
       "x_mapping_verified": "ordinal grouped bars mapped to worker ticks1,2,4; all centers and medians checked",
       "prior_external_png_sha256": "697db585b31c486c770d8cdd8f3abc72dd949fba6e9f978e1ff4c1d970b7f9f1",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "c44a03125c762900c7762f1c3af150e5b74c9d3ecbb5fc6a4b40b4982c6702e7",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/native-noop-rss.svg",
       "title": "Warm no-op memory scaling",
       "generator": "scripts/render_build_systems.py::chart",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -2034,21 +2062,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "281cb35d02d6ac778a2566ee6a7313447bb4c58b4708ffaec58b197c741c30d0",
       "regenerated_sha256": "40972f3ba497f89566dc8a91db14baefed35fc6e59eb42bae12167a07794f27b",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "40972f3ba497f89566dc8a91db14baefed35fc6e59eb42bae12167a07794f27b",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/native-noop-rss.png",
       "title": "Warm no-op memory scaling",
       "generator": "scripts/render_build_systems.py::chart",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -2169,8 +2199,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "567aa190b11514fc6207385f501ac2baeedb5d14ae86e5cde8195165a6e22645",
       "bytes_changed": true,
@@ -2179,13 +2209,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "8c69f8f100d5b8c734c6cd3d600d637356f4ab5bb34deb26a007b75698344273",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "567aa190b11514fc6207385f501ac2baeedb5d14ae86e5cde8195165a6e22645",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/native-leaf-rss.svg",
       "title": "One-file incremental memory scaling",
       "generator": "scripts/render_build_systems.py::chart",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -2306,21 +2338,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "e2dd8c11d197bbfeb96f7e9ea1f5b58dd5b194200a52f1c0b11891e64ed2e575",
       "regenerated_sha256": "d714705c9527441ee1f4761ed375b3d7ebc965ebee413c161d75704fd1b7a2b2",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "d714705c9527441ee1f4761ed375b3d7ebc965ebee413c161d75704fd1b7a2b2",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/build-systems/assets/native-leaf-rss.png",
       "title": "One-file incremental memory scaling",
       "generator": "scripts/render_build_systems.py::chart",
-      "generator_sha256": "dc2c46ef7e5f29a719d584bb3463031c126eb1b6821f4f940a4a9eaa666f04a8",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
       "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "99431b9ade33e6b91e68caff1f860dac775cbbb8b15ac1ad60a352d59689dc61",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -2441,8 +2475,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "b5e30711747493322396b944c9f042d04eb35c68f579c742f569cd7e7eaaee6a",
       "bytes_changed": true,
@@ -2451,13 +2485,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "56165695a4c7d400f7b0a1a0c836a1dbc4336d2d573ecb80e4c3c12ee45169d0",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/build-systems/"
+      "html_embed_page": "/benchmarks/build-systems/",
+      "latest_regeneration_previous_sha256": "b5e30711747493322396b944c9f042d04eb35c68f579c742f569cd7e7eaaee6a",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/mixed-noop.svg",
       "title": "Unchanged mixed workflow",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -2567,21 +2603,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "2f89c8c58f105fbc8698c66cddd269e760a25d9b478248e39faca699d697d997",
       "regenerated_sha256": "780c06742ed28f2282a55719024c7c9d2be5872aee608ed949ff381ea5c68bac",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "780c06742ed28f2282a55719024c7c9d2be5872aee608ed949ff381ea5c68bac",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/mixed-noop.png",
       "title": "Unchanged mixed workflow",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -2691,8 +2729,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "dd93c856ff403fcfa4fee321ba9b7712bb4f602e05f399edef98b6f67586d3cd",
       "bytes_changed": true,
@@ -2701,13 +2739,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "0db5b5fa2e1c6bb0a01612103fe1512d265d939d218a46ff450dc0938cbf5fc9",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "dd93c856ff403fcfa4fee321ba9b7712bb4f602e05f399edef98b6f67586d3cd",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/mixed-leaf.svg",
       "title": "One dirty leaf",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -2817,21 +2857,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "7fa65c6713e7d50f9d378e7238f6c2cc277a807d88d1188a99f41302022b76c8",
       "regenerated_sha256": "613ca8e9af8555ad3b2c4bc418e89ce8bd831d3df045b7d5e5c164fd5145209d",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "613ca8e9af8555ad3b2c4bc418e89ce8bd831d3df045b7d5e5c164fd5145209d",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/mixed-leaf.png",
       "title": "One dirty leaf",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -2941,8 +2983,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "bfeb36f6e088626b54b41898c6df7c70f76920626c1e06852cf2c9d81c535a2f",
       "bytes_changed": true,
@@ -2951,13 +2993,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "3de8a0904cb40b77d46a3e9a01b55efd3e0813ebcc0dd4ba88ebdaf32887afde",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "bfeb36f6e088626b54b41898c6df7c70f76920626c1e06852cf2c9d81c535a2f",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/mixed-fanout.svg",
       "title": "10% task inputs dirty",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -3067,21 +3111,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "8508517ea8ab26939d67220b5547a9ecec60d2263481e8b365b665b626a5e1a2",
       "regenerated_sha256": "3fdafd614d3fff7f1a843cc5be5a0ca47b02bf40d7ae1361e1bc677838e2b001",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "3fdafd614d3fff7f1a843cc5be5a0ca47b02bf40d7ae1361e1bc677838e2b001",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/mixed-fanout.png",
       "title": "10% task inputs dirty",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -3191,8 +3237,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "ed3264ece196b2438f047decafb199b9c7b9521b69cf5cbdb67c14877886cae3",
       "bytes_changed": true,
@@ -3201,13 +3247,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "1ded66b7375806e0c5e4f2cea188068e5c8462017ec69f2a130cb1da6cc06fb5",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "ed3264ece196b2438f047decafb199b9c7b9521b69cf5cbdb67c14877886cae3",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/mixed-shared.svg",
       "title": "Generated prerequisite dirty",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -3317,21 +3365,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "8d894e055f8eab85e9da3e7cfe784d343af51ba7037457b02805e8fa75414542",
       "regenerated_sha256": "dec11ad0bfefb5441e77a5f49aab7f879e816d366ed1dd01a10ae28dc336ce63",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "dec11ad0bfefb5441e77a5f49aab7f879e816d366ed1dd01a10ae28dc336ce63",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/mixed-shared.png",
       "title": "Generated prerequisite dirty",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -3441,8 +3491,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "fc1c792150b5591cbfa434c333352981a8e43dd3e61a801d128efcde6f883eef",
       "bytes_changed": true,
@@ -3451,13 +3501,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "1d5d46ac2f0d712caa22d049ad0ba561c21d0aa98253df18941d0155873b22bb",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "fc1c792150b5591cbfa434c333352981a8e43dd3e61a801d128efcde6f883eef",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/mixed-full.svg",
       "title": "All mixed-task inputs dirty",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -3567,21 +3619,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "d6a8c87d1c6481ac832609bd0da0423dc3f41d776ff0781a2031a576be0bdb86",
       "regenerated_sha256": "399859a36a690d8c08c9020571ded64fcdcd6ada805b0ef7d6eb0b26263978b4",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "399859a36a690d8c08c9020571ded64fcdcd6ada805b0ef7d6eb0b26263978b4",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/mixed-full.png",
       "title": "All mixed-task inputs dirty",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -3691,8 +3745,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "1e34dc0522e22bf2c13fef2dbef43c5d8b9d37da7376b5ec174ba37914a9261e",
       "bytes_changed": true,
@@ -3701,13 +3755,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "ed901cc0de3536274857657b98c91b6e9926b65661b991a97721e28798943847",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "1e34dc0522e22bf2c13fef2dbef43c5d8b9d37da7376b5ec174ba37914a9261e",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/workers.svg",
       "title": "Mixed workflow worker scaling",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -3817,21 +3873,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "1d6d830ece324e74b2f1dd94c962b56e43048e655239ce4b2088236659b5d64f",
       "regenerated_sha256": "dde9e6e16df7f690e948a25dbae0381d01163ab629157b79c3065ce808b4e16e",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "dde9e6e16df7f690e948a25dbae0381d01163ab629157b79c3065ce808b4e16e",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/workers.png",
       "title": "Mixed workflow worker scaling",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -3941,8 +3999,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "072952f349f07ae10d9f66595a4bcfced6bdabfaf7864c96145e657fcdf5a1f4",
       "bytes_changed": true,
@@ -3951,13 +4009,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "f06c610ef176c4d222fe12a20738869a193ef4a6d0bdc230c4f9973c9dacfd05",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "072952f349f07ae10d9f66595a4bcfced6bdabfaf7864c96145e657fcdf5a1f4",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/tiny-noop.svg",
       "title": "Unchanged tiny-task graph",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -4054,21 +4114,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "1cf023e21fc4c4fa392ea458e9dfd24df708be6129d847f888e13ab79d84c06c",
       "regenerated_sha256": "48124f511cfea82c7b163b907ba7b25f371b302dab68ed8900b5ef41700e9abe",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "48124f511cfea82c7b163b907ba7b25f371b302dab68ed8900b5ef41700e9abe",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/tiny-noop.png",
       "title": "Unchanged tiny-task graph",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -4165,8 +4227,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "d3377f38d310d01416b2c21286af11431dd663e14e55a77e09f631de2b56c718",
       "bytes_changed": true,
@@ -4175,13 +4237,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "f80ebdde2e93d2e1fac6c893713067aff7bfb9c1732879cd8fb255534844c4ac",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "d3377f38d310d01416b2c21286af11431dd663e14e55a77e09f631de2b56c718",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/tiny-leaf.svg",
       "title": "One dirty tiny task",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -4278,21 +4342,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "4302d06f2bedca1a723eb94b7c0f66c9a14b46eb71ca10110644a0a9eb0a576f",
       "regenerated_sha256": "82be0e68bfdcc2dd797fe5ed1bbd72a258934b4ec95943727c92ab35c504f065",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "82be0e68bfdcc2dd797fe5ed1bbd72a258934b4ec95943727c92ab35c504f065",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/tiny-leaf.png",
       "title": "One dirty tiny task",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -4389,8 +4455,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "09f966a0737beaf1dd201fa5fe22aa7841663615ac49f168f11846e35a18b6f0",
       "bytes_changed": true,
@@ -4399,13 +4465,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "c885f480d500aecffd663e71a8ee4410629f57fc6e6baa2fa1dbc9631aed79c2",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "09f966a0737beaf1dd201fa5fe22aa7841663615ac49f168f11846e35a18b6f0",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/tiny-fanout.svg",
       "title": "10% tiny-task inputs dirty",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -4502,21 +4570,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "ef49ea9383d8a321f32416e72650490c8de9ccb38a4034beca18ef1969bd76fd",
       "regenerated_sha256": "65946d7fd0864c54bfe9ffedda227cf0f9621d502da4c3633aeecbc51c1ff962",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "65946d7fd0864c54bfe9ffedda227cf0f9621d502da4c3633aeecbc51c1ff962",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/tiny-fanout.png",
       "title": "10% tiny-task inputs dirty",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -4613,8 +4683,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "738a1b4766f5d883728a37539b8879825402c8424e9ccf453313c4be4ebb9bfb",
       "bytes_changed": true,
@@ -4623,13 +4693,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "8ff3333b72a257db564301742f53ab58244e4fae1935b2e2fafe64138e71aa1c",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "738a1b4766f5d883728a37539b8879825402c8424e9ccf453313c4be4ebb9bfb",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/tiny-full.svg",
       "title": "Fully dirty tiny-task graph",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -4726,21 +4798,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "d18437b8081ead41967fcdc0562c9d92786668c5e4a6a7812183551d60ff318e",
       "regenerated_sha256": "bc8dbef7c35655de82669ce8626e1ef6f3e147dc15e136b295bfeae49320a1e9",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "bc8dbef7c35655de82669ce8626e1ef6f3e147dc15e136b295bfeae49320a1e9",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/tiny-full.png",
       "title": "Fully dirty tiny-task graph",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -4837,8 +4911,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "53f8a2cc6eb292f8bfcaf090117f18eb31a685805543c5c6fb164b8d7f4dab6d",
       "bytes_changed": true,
@@ -4847,13 +4921,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "7cbea70d2a1edc2e304b052f375856ef140058df37775fa4000e9876b1328cd0",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "53f8a2cc6eb292f8bfcaf090117f18eb31a685805543c5c6fb164b8d7f4dab6d",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/mixed-noop-rss.svg",
       "title": "Unchanged workflow memory",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -4963,21 +5039,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "959b5e8e41421c59f0fd0421f2f73200e120bff952b5c6539b964aca24bf1e6f",
       "regenerated_sha256": "7a401c06683e76b21490dbfbb7c9b9ddb0735f215833e6ff2dfb35a4be0e1797",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "7a401c06683e76b21490dbfbb7c9b9ddb0735f215833e6ff2dfb35a4be0e1797",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/mixed-noop-rss.png",
       "title": "Unchanged workflow memory",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -5087,8 +5165,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "abaa2c67764d5835e916553a007e52c3a375b6c4b5c4863cc882d9513eefd651",
       "bytes_changed": true,
@@ -5097,13 +5175,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "b56b1741b76a913a36e91ed2907ddd2a9ac7ff0803c3bb2c4bc5542ad56ebd34",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "abaa2c67764d5835e916553a007e52c3a375b6c4b5c4863cc882d9513eefd651",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/mixed-leaf-rss.svg",
       "title": "One dirty leaf memory",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -5213,21 +5293,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "d93023ec390f3464536f345f175fa0201d9a4412c1c25f99867ca527bd9140bf",
       "regenerated_sha256": "6e0f4bad5f55195662762f16d045ab7b77b6388e39ec4df3e3ada0d75600bbec",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "6e0f4bad5f55195662762f16d045ab7b77b6388e39ec4df3e3ada0d75600bbec",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/mixed-leaf-rss.png",
       "title": "One dirty leaf memory",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -5337,8 +5419,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "5cf7788b0c48aee1465bb6d51f939eceedeea08ef70e0f0fbe1aa06ff0cbb3f8",
       "bytes_changed": true,
@@ -5347,13 +5429,15 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "4f88648f43a1ca0c973dfdbf1a823b609b217cf1f5ea1cf9708f9c90366afe6c",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "5cf7788b0c48aee1465bb6d51f939eceedeea08ef70e0f0fbe1aa06ff0cbb3f8",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/mixed-full-rss.svg",
       "title": "All dirty workflow memory",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -5463,21 +5547,23 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": "056a4beb9086f527d06c7130d7acba7046e503db7d4e36e653affc093244778c",
       "regenerated_sha256": "e5718e3fa461c0546d45cfddf135d54c3d9921c170a3d3191d9c588df96cba36",
       "bytes_changed": true,
       "format": "svg",
       "publication_location": "current SVG",
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "e5718e3fa461c0546d45cfddf135d54c3d9921c170a3d3191d9c588df96cba36",
+      "latest_regeneration_changed_bytes": false
     },
     {
       "asset": "benchmarks/task-runners/assets/mixed-full-rss.png",
       "title": "All dirty workflow memory",
       "generator": "scripts/render_task_runners.py::chart",
-      "generator_sha256": "5af62dfdf5b07fe0f8435a52e26ebe502215622633dabca8ebfb9614ed85a231",
+      "generator_sha256": "c8a7b9c56162b7489ecfd360d74691f0954591421f49b23ef6442e2edbf4085a",
       "source_data": "benchmarks/task-runners/20261015-v4120-final-c14d068/results/summary.json",
       "source_summary_sha256": "465211b62aac63c8ee5f5af8400a0cfe8bbca39ba790117a82ccf8558f821817",
       "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
@@ -5587,8 +5673,8 @@
         }
       ],
       "expected_plotted_data_verified": true,
-      "classification": "current-final-only",
-      "regeneration_status": "actually_regenerated",
+      "classification": "current final peer comparison; historical counterpart retained separately",
+      "regeneration_status": "actually regenerated after preservation override",
       "prior_sha256": null,
       "regenerated_sha256": "e34a36cf6ca13bea5797065e6835a68f7f92227ebbfe4121b8c12da41be1c647",
       "bytes_changed": true,
@@ -5597,10 +5683,272 @@
       "x_mapping_verified": "plotted x coordinates exactly equal canonical corpus sizes or worker labels",
       "prior_external_png_sha256": "da58b2fdd38675f0e63f9e41071f3343b1296b789915630b248afc322dd88b6e",
       "changed_from_prior_external_png": true,
-      "html_embed_page": "/benchmarks/task-runners/"
+      "html_embed_page": "/benchmarks/task-runners/",
+      "latest_regeneration_previous_sha256": "e34a36cf6ca13bea5797065e6835a68f7f92227ebbfe4121b8c12da41be1c647",
+      "latest_regeneration_changed_bytes": false
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/candidate-recovery.svg",
+      "title": "Controlled release/original/final comparison: heavy no-op, tiny no-op and tiny full",
+      "generator": "scripts/render_build_systems.py::render/candidate-recovery",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/diagnostics/three-way-c8d9-7f7-c14/results/summary.json",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "release": "v4.11.0/c8d9c266",
+        "original": "7f7e487 development snapshot",
+        "final": "v4.12.0/c14d068"
+      },
+      "expected_data": [
+        {
+          "case": [
+            "native",
+            1000,
+            "noop"
+          ],
+          "variants": [
+            "release",
+            "original",
+            "final"
+          ],
+          "wall_ms": [
+            406.8150255,
+            195.0625145,
+            218.2742205
+          ]
+        },
+        {
+          "case": [
+            "tiny",
+            10000,
+            "noop"
+          ],
+          "variants": [
+            "release",
+            "original",
+            "final"
+          ],
+          "wall_ms": [
+            754.151091,
+            603.3875230000001,
+            586.91506
+          ]
+        },
+        {
+          "case": [
+            "tiny",
+            10000,
+            "full"
+          ],
+          "variants": [
+            "release",
+            "original",
+            "final"
+          ],
+          "wall_ms": [
+            16676.004755,
+            20975.957026,
+            14976.488604
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "case": [
+            "native",
+            1000,
+            "noop"
+          ],
+          "variants": [
+            "release",
+            "original",
+            "final"
+          ],
+          "wall_ms": [
+            406.8150255,
+            195.0625145,
+            218.2742205
+          ]
+        },
+        {
+          "case": [
+            "tiny",
+            10000,
+            "noop"
+          ],
+          "variants": [
+            "release",
+            "original",
+            "final"
+          ],
+          "wall_ms": [
+            754.151091,
+            603.3875230000001,
+            586.91506
+          ]
+        },
+        {
+          "case": [
+            "tiny",
+            10000,
+            "full"
+          ],
+          "variants": [
+            "release",
+            "original",
+            "final"
+          ],
+          "wall_ms": [
+            16676.004755,
+            20975.957026,
+            14976.488604
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "preserved historical-version comparison including final candidate",
+      "format": "svg",
+      "publication_location": "current SVG",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
+      "regeneration_status": "actually regenerated after preservation override",
+      "latest_regeneration_previous_sha256": "d849e22b1450b7c28b591287b15731d4f4f7ffbdfe31da8ac56d494058e080ed",
+      "regenerated_sha256": "d849e22b1450b7c28b591287b15731d4f4f7ffbdfe31da8ac56d494058e080ed",
+      "latest_regeneration_changed_bytes": false
+    },
+    {
+      "asset": "benchmarks/build-systems/assets/candidate-recovery.png",
+      "title": "Controlled release/original/final comparison: heavy no-op, tiny no-op and tiny full",
+      "generator": "scripts/render_build_systems.py::render/candidate-recovery",
+      "source_data": "benchmarks/build-systems/20261015-v4120-final-c14d068/diagnostics/three-way-c8d9-7f7-c14/results/summary.json",
+      "data_pin": "19e390183b9bcb039abe6aa553ad88a2305b49ee",
+      "campaign": "20261015-v4120-final-c14d068",
+      "candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "candidate_version": "Nift v4.12 final",
+      "comparator_versions": {
+        "release": "v4.11.0/c8d9c266",
+        "original": "7f7e487 development snapshot",
+        "final": "v4.12.0/c14d068"
+      },
+      "expected_data": [
+        {
+          "case": [
+            "native",
+            1000,
+            "noop"
+          ],
+          "variants": [
+            "release",
+            "original",
+            "final"
+          ],
+          "wall_ms": [
+            406.8150255,
+            195.0625145,
+            218.2742205
+          ]
+        },
+        {
+          "case": [
+            "tiny",
+            10000,
+            "noop"
+          ],
+          "variants": [
+            "release",
+            "original",
+            "final"
+          ],
+          "wall_ms": [
+            754.151091,
+            603.3875230000001,
+            586.91506
+          ]
+        },
+        {
+          "case": [
+            "tiny",
+            10000,
+            "full"
+          ],
+          "variants": [
+            "release",
+            "original",
+            "final"
+          ],
+          "wall_ms": [
+            16676.004755,
+            20975.957026,
+            14976.488604
+          ]
+        }
+      ],
+      "plotted_data": [
+        {
+          "case": [
+            "native",
+            1000,
+            "noop"
+          ],
+          "variants": [
+            "release",
+            "original",
+            "final"
+          ],
+          "wall_ms": [
+            406.8150255,
+            195.0625145,
+            218.2742205
+          ]
+        },
+        {
+          "case": [
+            "tiny",
+            10000,
+            "noop"
+          ],
+          "variants": [
+            "release",
+            "original",
+            "final"
+          ],
+          "wall_ms": [
+            754.151091,
+            603.3875230000001,
+            586.91506
+          ]
+        },
+        {
+          "case": [
+            "tiny",
+            10000,
+            "full"
+          ],
+          "variants": [
+            "release",
+            "original",
+            "final"
+          ],
+          "wall_ms": [
+            16676.004755,
+            20975.957026,
+            14976.488604
+          ]
+        }
+      ],
+      "expected_plotted_data_verified": true,
+      "classification": "preserved historical-version comparison including final candidate",
+      "format": "png",
+      "publication_location": "regenerated PNG awaiting parent immutable externalization",
+      "generator_sha256": "c7a6ae7fc98abf50e3dad13455f9df07174b1c7821486711b49b93e43565704a",
+      "regeneration_status": "actually regenerated after preservation override",
+      "latest_regeneration_previous_sha256": "252af9dabb7483fbafaf244a19893de7ee44713d85b7c2728b1032474e007738",
+      "regenerated_sha256": "252af9dabb7483fbafaf244a19893de7ee44713d85b7c2728b1032474e007738",
+      "latest_regeneration_changed_bytes": false
     }
   ],
-  "html_chart_embeds_expected": 22,
+  "html_chart_embeds_expected": 23,
   "qualitative_html_diagrams": [
     {
       "page": "/benchmarks/build-systems/",
@@ -5631,41 +5979,1109 @@
   "pages": [
     {
       "page": "/benchmarks/build-systems/",
-      "current_final_only": true,
       "current_candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
       "canonical_cells_verified": 291,
-      "html_quantitative_chart_embeds": 9,
-      "matching_column_count_tables": 13,
+      "html_quantitative_chart_embeds": 10,
+      "matching_column_count_tables": 14,
       "unique_ids": true,
       "graph_references_exist": 27,
-      "historical_public_route_references": 0,
-      "controlled_prior_candidate_comparison_sections": 0,
+      "historical_public_route_references": 1,
+      "controlled_prior_candidate_comparison_sections": 1,
       "current_semantic_failure_recovery_section_retained": false,
-      "validated_html_layer": "regenerated Nift content source; parent owns generated-page build and browser checks"
+      "validated_html_layer": "regenerated Nift content source; parent owns generated-page build and browser checks",
+      "historical_reports_preserved": true
     },
     {
       "page": "/benchmarks/task-runners/",
-      "current_final_only": true,
       "current_candidate_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
       "canonical_cells_verified": 93,
       "html_quantitative_chart_embeds": 13,
       "matching_column_count_tables": 23,
       "unique_ids": true,
       "graph_references_exist": 39,
-      "historical_public_route_references": 0,
+      "historical_public_route_references": 1,
       "controlled_prior_candidate_comparison_sections": 0,
       "current_semantic_failure_recovery_section_retained": true,
-      "validated_html_layer": "regenerated Nift content source; parent owns generated-page build and browser checks"
+      "validated_html_layer": "regenerated Nift content source; parent owns generated-page build and browser checks",
+      "historical_reports_preserved": true
     }
   ],
-  "html_quantitative_chart_embeds_verified": 22,
+  "html_quantitative_chart_embeds_verified": 23,
   "current_only_plot_label": "Nift v4.12 final",
   "svg_and_png_generation": "actual generator output files; vectors captured from Matplotlib lines/bars and compared against independently selected canonical cells",
-  "removed_public_comparison_assets": [
-    "benchmarks/build-systems/assets/candidate-recovery.svg",
-    "benchmarks/build-systems/assets/candidate-recovery.png"
-  ],
   "external_png_transition": "new PNGs generated locally for parent to archive/externalize; prior immutable PNG hashes retained per asset; no shared finalizer changed",
-  "public_historical_series": "removed by parent; not regenerated or maintained",
-  "generated_html_validation": "pending parent full Nift build; regenerated content sources and actual graph files validated here"
+  "public_historical_series": "Restored by parent, original graph artifacts preserved at immutable URLs",
+  "generated_html_validation": "pending parent full Nift build; regenerated content sources and actual graph files validated here",
+  "zero_graph_purpose_removals": true,
+  "preservation_override": "supersedes prior current-only removal: historical archives restored by parent; version comparison restored by this generator with final included",
+  "latest_generation_actual": true,
+  "historical_preserved_assets": [
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-noop.svg",
+      "title": "Warm no-op scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "632a012ed12d184cbcee6bdef3cd4759f569a05b528e6b13fa9abd10d2be8dcc",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-noop.png",
+      "title": "Warm no-op scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "0cb8e1740f33463bfddf490cd145efffaa6b643715d5b6f147823bc05149323f",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-leaf.svg",
+      "title": "One-file incremental scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "5e6e7b66b54540404c90f322f1450923750b29f26c54fd933efa54587d67727b",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-leaf.png",
+      "title": "One-file incremental scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "bb2368ac491d6b445530d71df957ae503b71125c2d3af9adb68272341a63cbb3",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-global.svg",
+      "title": "Global-header rebuild scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "9190a9d5ba370ab9455990a8341d1bdcd0028a72323e9a02d44f25ab6c2ae427",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-global.png",
+      "title": "Global-header rebuild scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "388692580ab9dc8e38e7fb9e1343e05fdb2389a76cbf4bbb4d0c19ac590fe7a4",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-full.svg",
+      "title": "Clean full build scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "27de000f9aa012d176d768a39cbf7a7303cdfe287f65f0bad2483d3675846c09",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-full.png",
+      "title": "Clean full build scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "96f816da65743a81ffb737c20b59c90219cb99d2a673230f31417f28fc162e1b",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/tiny-noop.svg",
+      "title": "Tiny-action no-op scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "f3e6390f587eb04c63472eda95c3819dd8d649f7b8c9dd053b4516c4afb09e56",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/tiny-noop.png",
+      "title": "Tiny-action no-op scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "1639836a16da7c390a54a8b20f1bc6efeae7794c8c010f3b97d208e36f743914",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/tiny-full.svg",
+      "title": "Fully dirty tiny-action scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "08a199fee951807e6714f47f8349169a9e0958a4b8fe86b8c480ab58f631de17",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/tiny-full.png",
+      "title": "Fully dirty tiny-action scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "a5ca90b5c79495056615baaa97e5ead7541a053601d1a94e079cd2e7c4bb1d22",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/parallel-heavy.svg",
+      "title": "Heavy full-build worker comparison",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "bdd328943d62fdfbf84fad46852cd819bc1d35de288ae600a925078ba88c8f44",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/parallel-heavy.png",
+      "title": "Heavy full-build worker comparison",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "8598d95ad4459fdc47fc56daf35d70b67de2869dc221d10cc855d7c843e46202",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-noop-rss.svg",
+      "title": "Warm no-op memory scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "8df0b72d817aad8127a49201f979c14ac2eec98ef29a396d19bdebe601bbd828",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-noop-rss.png",
+      "title": "Warm no-op memory scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "432f9f1e3d8957f5644f40d6cee8c5899dec64bbe4ee518558e92fb4bbffb4eb",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-leaf-rss.svg",
+      "title": "One-file incremental memory scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "236c7d44cac7fb542034445cf175366759740dcd0759e2882ace17baa186c035",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/build-systems/assets/native-leaf-rss.png",
+      "title": "One-file incremental memory scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261010-v4110-dev",
+        "evidence_pin": "75c1588149a295702ec4006e25efc7ba4f05394f",
+        "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+        "summary_sha256": "71d9a31dc600ac36853c245bcd22b5044b47971e28a110075aad13b6ada29f97"
+      },
+      "campaign": "20261010-v4110-dev",
+      "candidate_sha": "635996b7ff5c725c81ac8ef57b1d146f7ceda642",
+      "comparator_versions": {
+        "make": "4.4.1",
+        "ninja": "1.13.2"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "2500f5d8a1fdd9acba90ceee61e41b53cb955efdb3350fac1d5d35e3a7ffcd42",
+      "publication_location": "/benchmarks/build-systems/series/20261010-v4110-dev/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-noop.svg",
+      "title": "Unchanged mixed workflow",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "3f33ef240073cbc1fd5b1db23da04711f6a513f9930c820a5938f0c17104f482",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-noop.png",
+      "title": "Unchanged mixed workflow",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "180c7ce5e8bdfefb37204ec4c5d559a16331e3879ce1fab88371435edc85742f",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-leaf.svg",
+      "title": "One dirty leaf",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "1e2d484073cdbe4c618941561f9de60d8f412c963744a8fd94d589cf50c96fd8",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-leaf.png",
+      "title": "One dirty leaf",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "f8456df771275349ce213799ee20d322fe6f96da1eb0b2c3647488a2e2dca6fe",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-fanout.svg",
+      "title": "10% task inputs dirty",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "0afe7db1ff41388bb1ceba17139c403af7860b6163e2a368b6d8377c4923b532",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-fanout.png",
+      "title": "10% task inputs dirty",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "6ac717dfeddc680f18dbd08d438dadb3d1cbfa17e8eefe6f4fb1698e8d7eb06c",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-shared.svg",
+      "title": "Generated prerequisite dirty",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "c8f38b84bd793a792c8aa5685e697cd9316aa5805ee82a37e4d9d1dd320dbf9b",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-shared.png",
+      "title": "Generated prerequisite dirty",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "cee1677b968be4508798294a0901bbcd1753775bcd9363306c2d4c9fc8d456b1",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-full.svg",
+      "title": "All mixed-task inputs dirty",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "102dc2deb3ce65cdacbb02408cd995e56092d9d3939f656f66b601d3bb850495",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-full.png",
+      "title": "All mixed-task inputs dirty",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "9a44809ea1162c3da13c00f088da2110f8e060207eeab4a36d20d4392de6c7a0",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/workers.svg",
+      "title": "Mixed workflow worker scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "d774ed62ec89caa2eae440dad050f6318168e6eb30fe55fa637a066296088760",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/workers.png",
+      "title": "Mixed workflow worker scaling",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "fd1020d4587eade0a6dbde7e78cf8eb04f67703e89adf344b7fa6e74218b9875",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-noop.svg",
+      "title": "Unchanged tiny-task graph",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "a3d6110b756d075a21cf39e642a64c43cd6c60e94a479f2e8009d3c9f380d4ef",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-noop.png",
+      "title": "Unchanged tiny-task graph",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "64144bc11d42031d32f73ae8e988cdf047df0bbd76333ae9a6d2ea3cdc9e11b9",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-leaf.svg",
+      "title": "One dirty tiny task",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "f3351ddf0750dadb57b1f83b659fe48397bc3b7c63b5fd0e11f1a57fb1e799f6",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-leaf.png",
+      "title": "One dirty tiny task",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "d6213d14b62d6907c83e45b97a4ae6c9222a5eed1c13dbeb7373c9d5ec0b4c1e",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-fanout.svg",
+      "title": "10% tiny-task inputs dirty",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "de2684535716a264dcc66c1fbc5e715ee98894da0d3c2ffdcac99fed63291ce7",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-fanout.png",
+      "title": "10% tiny-task inputs dirty",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "fa46aa1b3e6f7505f8f2325972405d5fc734d4480eab5b8f017c619df4557ade",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-full.svg",
+      "title": "Fully dirty tiny-task graph",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "8fe78a9ab07b7772ff0b6b37a60bebb34109a1eb2905e189bc6d9604fd2f9360",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/tiny-full.png",
+      "title": "Fully dirty tiny-task graph",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "3b337903b70a5e22085a29f6830c7eb8dc02585d1c9bafd5156270ad888d7784",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-noop-rss.svg",
+      "title": "Unchanged workflow memory",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "ab7a13fa016afe6f1e605c4bfcf5c170e40bc3e48127dd9d361abdb3cac0d9b3",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-noop-rss.png",
+      "title": "Unchanged workflow memory",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "68b2ff4f54efb7e2a17f4f60eb5fc411157b6e722c172068cbe854818915f0af",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-leaf-rss.svg",
+      "title": "One dirty leaf memory",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "8114dd9c53fb2a1e116407a2d25bec26299a4334d0e2a2d14e7ac525f93d5df0",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-leaf-rss.png",
+      "title": "One dirty leaf memory",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "215568cb46e983254dcde5ddbd06b1bae1077a724fcea298fc32948bda28d456",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-full-rss.svg",
+      "title": "All dirty workflow memory",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "svg",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "8bf3d8acffd7518dca5c323249c3ca9611afce25546a91b36f2a3094a923e844",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    },
+    {
+      "asset": "https://raw.githubusercontent.com/nift-dev/lab/3225ebcc5d8cd0b3c1d6b09edc84392c0eb4eb7e/benchmarks/task-runners/assets/mixed-full-rss.png",
+      "title": "All dirty workflow memory",
+      "generator": "original frozen generator, preserved immutable output",
+      "source_data": {
+        "series": "20261011-v4110",
+        "evidence_pin": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+        "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+        "summary_sha256": "98b909109028f9b3f0126e044bed7c7e801c25949d89e83addc55bb8f1e4da44"
+      },
+      "campaign": "20261011-v4110",
+      "candidate_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+      "comparator_versions": {
+        "turbo": "2.11.7",
+        "nx": "23.3.0",
+        "node": "22.22.1",
+        "npm": "9.2.0"
+      },
+      "classification": "historical original graph preserved at dated report",
+      "format": "png",
+      "regeneration_status": "preserved byte-identical immutable original; not relabelled or redrawn as final",
+      "preserved_sha256": "e9d0626cc7be1b3f4d3c58f0f597754483323ce281d79108d0678c4a740294ee",
+      "publication_location": "/benchmarks/task-runners/series/20261011-v4110/",
+      "expected_plotted_data_verification": "Frozen original SVG/PNG bytes unchanged at immutable public commit; old compact data and cohort remain separate from final."
+    }
+  ],
+  "historical_asset_count": 44,
+  "total_current_and_historical_asset_count": 90,
+  "removed_graphs": 0
 }
