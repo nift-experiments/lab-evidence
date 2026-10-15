@@ -265,3 +265,7 @@ Derived old deficits divide controlled old Nift diagnostic medians by the curren
 Supervisor allocation0→64MiB moves noopraw16.75→80.75MiB, proving inherited floor; raw retained/unranked.
 
 Raw scripting call peak-memory diagnostics are retained separately; small quantized differences do not establish a leak or superiority. Nift public parse-only/prepared-AST template modes remain unsupported in this frozen public-API matrix. Nift has lower medians than the best other template engine in 30 of 43 supported matching fresh/source-render cells; this is not an overall engine ranking. Task Nift leads all31 official wall and maximum-child RSS configurations. Current direct practitioner choices are maintained in PREFERENCE-CHANGES.md; release recommendation waits for the remaining three suites.
+
+## AI-DX: separate primary dimension
+
+See AI-DX-SCORECARD.md/JSON for all eight suites and WEBSITE-AI-DX-WORKFLOWS.md for workflow-specific verdicts. Choose Nift for new agent-primary authored/mixed publishing; Hugo for conventional human/theme fit where appropriate. These are bounded qualitative judgments; no measured agent-productivity score. Normal Nift publish may use incremental build; forced full is a separate boundary.

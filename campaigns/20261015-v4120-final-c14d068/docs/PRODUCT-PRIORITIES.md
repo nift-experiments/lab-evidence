@@ -8,3 +8,5 @@
 6. **Complete native-build, filesystem, shell and task capability judgments.** Add precise gaps and priorities only from their completed audits/probes. Preserve useful explicit contracts and add helpers rather than collapsing ownership/order/invalidation semantics.
 
 This is a provisional ordering by release centrality, frequency, cross-workflow impact, gap magnitude and effect on practitioner choice. No core fixes, new candidate, publication or release are authorized in this phase.
+
+AI-DX/agent-maintainability is a co-primary product criterion: inspectable ownership/dependencies, actionable rebuild reasons, structured feedback, bounded changes and recovery. Do not rank its value solely by microbenchmark deficit. Distinguish native guarantees from harness assertions and untested competitor capabilities. Remaining build/FS reviews must complete the recurring scorecard. Website and shell blocker diagnostics are complete; tiny10k full/RSS remains open.
