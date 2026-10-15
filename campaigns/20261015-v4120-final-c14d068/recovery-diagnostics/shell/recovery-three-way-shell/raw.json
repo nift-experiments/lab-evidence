@@ -1,0 +1,2335 @@
+{
+  "kind": "three-way same-node recovery diagnostic; separate from official",
+  "suite": "shell",
+  "versions": {
+    "release": {
+      "source_sha": "c8d9c266518d115e4f289c5c6a2b94ddd7ee9968",
+      "executable": "/opt/recovery-release/nift",
+      "identity": {
+        "version": "Nift v4.11.0",
+        "sha256": "cf1a34cda3e7d09d9a94728995a55cc6473befc7e755701274bc01aa53b19445"
+      },
+      "runtime_library_sha256": {
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33": "1fd75fe70354a416d75aef22bcae68c47bd25d20e2d0568c30b1a9838cf62f11",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6": "1b87a1a50b496cfead2b0ad134c2ff536705c82608db240c7e8aa48d6c0e4217",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1": "d93224d2b0dab4247598be683adca02f5cf00586f99c187579cd7e92058fb7cb",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6": "d8db8739a1633c972cec6a4fe0566bdcec6fd088f98723492ab0361f66238f75",
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2": "1cd555ac46b7887edeaf3c42aac5408c8135e52f6b37870da2cf82d5fe14e829"
+      }
+    },
+    "original": {
+      "source_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+      "executable": "/opt/recovery-original/nift",
+      "identity": {
+        "version": "Nift v4.11.0",
+        "sha256": "671e182ea31f3a23af92dadd738aba43edcb427670e7cf2f0d06b6362d28a606"
+      },
+      "runtime_library_sha256": {
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33": "1fd75fe70354a416d75aef22bcae68c47bd25d20e2d0568c30b1a9838cf62f11",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6": "1b87a1a50b496cfead2b0ad134c2ff536705c82608db240c7e8aa48d6c0e4217",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1": "d93224d2b0dab4247598be683adca02f5cf00586f99c187579cd7e92058fb7cb",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6": "d8db8739a1633c972cec6a4fe0566bdcec6fd088f98723492ab0361f66238f75",
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2": "1cd555ac46b7887edeaf3c42aac5408c8135e52f6b37870da2cf82d5fe14e829"
+      }
+    },
+    "final": {
+      "source_sha": "c14d06835bca515a5281e41da0e40219c2d60ef0",
+      "executable": "/opt/nift/nift",
+      "identity": {
+        "version": "Nift v4.12.0",
+        "sha256": "7dd42dcee5ca4a6965f0823c0ae59198282da1eb77e0fcd4cae93a537870a6fb"
+      },
+      "runtime_library_sha256": {
+        "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33": "1fd75fe70354a416d75aef22bcae68c47bd25d20e2d0568c30b1a9838cf62f11",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6": "1b87a1a50b496cfead2b0ad134c2ff536705c82608db240c7e8aa48d6c0e4217",
+        "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1": "d93224d2b0dab4247598be683adca02f5cf00586f99c187579cd7e92058fb7cb",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6": "d8db8739a1633c972cec6a4fe0566bdcec6fd088f98723492ab0361f66238f75",
+        "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2": "1cd555ac46b7887edeaf3c42aac5408c8135e52f6b37870da2cf82d5fe14e829"
+      }
+    }
+  },
+  "suite_sha": "aec1349fd0ba986108d9c851944e41e5ed330b6f",
+  "machine": {
+    "kernel": "6.8.0-134-generic",
+    "os_release": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+    "cpuinfo": "processor\t: 0\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7642 48-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2299.998\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 0\ncpu cores\t: 4\napicid\t\t: 0\ninitial apicid\t: 0\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 4599.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 1\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7642 48-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2299.998\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 1\ncpu cores\t: 4\napicid\t\t: 1\ninitial apicid\t: 1\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 4599.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 2\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7642 48-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2299.998\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 2\ncpu cores\t: 4\napicid\t\t: 2\ninitial apicid\t: 2\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 4599.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 3\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7642 48-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2299.998\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 3\ncpu cores\t: 4\napicid\t\t: 3\ninitial apicid\t: 3\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 4599.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\n",
+    "meminfo": "MemTotal:        8131780 kB\nMemFree:         4922024 kB\nMemAvailable:    7538968 kB\nBuffers:          194608 kB\nCached:          2557820 kB\nSwapCached:            0 kB\nActive:           263764 kB\nInactive:        2572060 kB\nActive(anon):      84380 kB\nInactive(anon):        0 kB\nActive(file):     179384 kB\nInactive(file):  2572060 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              8668 kB\nWriteback:             0 kB\nAnonPages:         83396 kB\nMapped:            80232 kB\nShmem:               984 kB\nKReclaimable:     175236 kB\nSlab:             242316 kB\nSReclaimable:     175236 kB\nSUnreclaim:        67080 kB\nKernelStack:        2464 kB\nPageTables:         2732 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573788 kB\nCommitted_AS:     431908 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16748 kB\nVmallocChunk:          0 kB\nPercpu:             2384 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      108404 kB\nDirectMap2M:     3037184 kB\nDirectMap1G:     7340032 kB\n",
+    "cpu_affinity": [
+      0
+    ],
+    "python": "3.12.3",
+    "revision": "aec1349fd0ba986108d9c851944e41e5ed330b6f",
+    "dirty": false,
+    "cache_policy": "OS caches uncontrolled; no machine-cold claim",
+    "rss_policy": "Linux wait4 waited-child high-water RSS; not aggregate process-tree RSS"
+  },
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "flags": "Native Make defaults -std=c++17 -O2 -Wall -Wextra -pedantic -pthread; no architecture flags",
+  "cases": [
+    "function-calls",
+    "string-transform"
+  ],
+  "samples": 10,
+  "warmups": 2,
+  "ordering": "Adjacent three-version blocks, six permutations cycled, rotated case order; unequal permutation counts documented when measured rounds not divisible by six",
+  "harness_sha256": {
+    "calibrate.py": "bd3c786ccc0f205a3a05e2fc3091fd7006a9203af2bd1478a73fe9c01a6a1ee4",
+    "suite.py": "8e404275b27d0b862bdf35e44f22af127eeb814c1e6b12ee6f95b30fcc1041eb",
+    "validate_workloads.py": "5349a83631bbc07a92c50b14f876091a41dac32b3e86a2905a039565db9e254f",
+    "workload_suite.py": "67eeb28be3555f859baf201cd02191431e859236425cf77bba9d9c2f0296f663",
+    "workload_campaign.py": "df7f8f8d5f6438631171387bb5bbb586e175a10f88378b506825a91b2899d492",
+    "summarize.py": "0c546990336c15595cfc33b2aa0687e785dfc138781d124fe41a13424ff137ee",
+    "test_workloads.py": "a401daa4902b3776f2be55d136794ab5824a6c560923c2bcdfdda00f60863f69",
+    "test_measurement.py": "8d6c36425e702ba9e2126708fd5c4716988322948f3ba679fe6d4144d3dc8083",
+    "verify_rc.py": "8a525d1128c7596287fa9c39c7e6352daf628da1aaa6ba81ea365a2829c4ff1f",
+    "diagnose_rc.py": "6af18c79e80ed4f4f983f12059b8668efd8685fd197ab94325e6d44a708056c2",
+    "benchmark.py": "9d14e97be73fcdcf389e7a8f944e94f6eb0578f26d029d15c66e30f769110cec",
+    "campaign_measure.py": "f64bb2a15cae01df506ff4de20201b0a69ddb82f5f7cd6074030a1282500c6e3"
+  },
+  "official_raw_sha256": {
+    "shell-fresh-summary.json": "ba78fb41da4692757d1908ad45e497838749caaed8aaa7543c1557a65c7ae74d",
+    "workload-validation.json": "141722a3299ed1e67b12d0d47b6dc8083b165a2dabf6f8d8367aeed8c44ac462",
+    "shell-application-cold.json": "a0a785f8282e6ff1214ecf9baea4e41c3953efccbf4c3edcecb8eab9fa9b69a9",
+    "rc-before.json": "db2d33a5fd65abf9f33f10f6aa234ff4627de1ed9f2ba54b183a073f66fa2192",
+    "rc-after.json": "82575bceb3da6b74e32b81b5f15e0c328f11a5950acf132b65560db375af6aad",
+    "shell-repeated.json": "62c6e4f5881129ebac72c2fcc60943955ee9e3c2474a3fdf72895160f292f5dd",
+    "shell-repeated-summary.json": "c4f6fb0573461ca842753c843301df7275874b3247c96fad12148dd8b5b2fe4e",
+    "shell-workloads.json": "cd0d7c0768c3c45cf7d00f2eaf438cbdc73c27737f48f2d85a18afeabb49580f"
+  },
+  "observations": [
+    {
+      "wall_ms": 21.81703,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 21.544,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 0,
+      "case": "function-calls",
+      "version": "release",
+      "warmup": true,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 45.67488,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 45.296,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 0,
+      "case": "function-calls",
+      "version": "original",
+      "warmup": true,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 21.898522,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 21.631,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 0,
+      "case": "function-calls",
+      "version": "final",
+      "warmup": true,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 59.329806,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 59.015,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 0,
+      "case": "string-transform",
+      "version": "release",
+      "warmup": true,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 18.715272,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 18.471,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 0,
+      "case": "string-transform",
+      "version": "final",
+      "warmup": true,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 79.421875,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 78.932,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 0,
+      "case": "string-transform",
+      "version": "original",
+      "warmup": true,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 68.835065,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 68.423,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 1,
+      "case": "string-transform",
+      "version": "original",
+      "warmup": true,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 59.858307,
+      "peak_rss_kib": 6784,
+      "cpu_ms": 59.512,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 1,
+      "case": "string-transform",
+      "version": "release",
+      "warmup": true,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 19.464275,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 19.18,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 1,
+      "case": "string-transform",
+      "version": "final",
+      "warmup": true,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 21.454155,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 21.208,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 1,
+      "case": "function-calls",
+      "version": "release",
+      "warmup": true,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 30.451034,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 30.06,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 1,
+      "case": "function-calls",
+      "version": "final",
+      "warmup": true,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 48.707016,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 48.141,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 1,
+      "case": "function-calls",
+      "version": "original",
+      "warmup": true,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 21.922642,
+      "peak_rss_kib": 6784,
+      "cpu_ms": 21.696,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 2,
+      "case": "function-calls",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 48.500012,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 48.26,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 2,
+      "case": "function-calls",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 24.145195,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 23.895,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 2,
+      "case": "function-calls",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 63.889623,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 63.607,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 2,
+      "case": "string-transform",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 19.859883,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 19.652,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 2,
+      "case": "string-transform",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 67.549101,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 67.264,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 2,
+      "case": "string-transform",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 65.200816,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 64.957,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 3,
+      "case": "string-transform",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 60.689832,
+      "peak_rss_kib": 6784,
+      "cpu_ms": 60.417,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 3,
+      "case": "string-transform",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 18.948877,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 18.559,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 3,
+      "case": "string-transform",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 20.518265,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 20.312,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 3,
+      "case": "function-calls",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 22.246538,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 22.009,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 3,
+      "case": "function-calls",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 44.770933,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 44.531,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 3,
+      "case": "function-calls",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 44.267393,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 44.018,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 4,
+      "case": "function-calls",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 20.527716,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 20.321,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 4,
+      "case": "function-calls",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 21.434443,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 21.237,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 4,
+      "case": "function-calls",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 66.884968,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 66.592,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 4,
+      "case": "string-transform",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 18.509699,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 18.286,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 4,
+      "case": "string-transform",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 58.898948,
+      "peak_rss_kib": 6784,
+      "cpu_ms": 58.68,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 4,
+      "case": "string-transform",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 18.651291,
+      "peak_rss_kib": 6656,
+      "cpu_ms": 18.422,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 5,
+      "case": "string-transform",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 62.972014,
+      "peak_rss_kib": 6784,
+      "cpu_ms": 62.693,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 5,
+      "case": "string-transform",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 67.5433,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 67.175,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 5,
+      "case": "string-transform",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 47.80685,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 47.515,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 5,
+      "case": "function-calls",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 21.78882,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 21.577,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 5,
+      "case": "function-calls",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 22.263019,
+      "peak_rss_kib": 6784,
+      "cpu_ms": 22.03,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 5,
+      "case": "function-calls",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 22.29372,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 22.081,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 6,
+      "case": "function-calls",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 20.924544,
+      "peak_rss_kib": 6784,
+      "cpu_ms": 20.718,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 6,
+      "case": "function-calls",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 45.575738,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 45.319,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 6,
+      "case": "function-calls",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 18.708732,
+      "peak_rss_kib": 6784,
+      "cpu_ms": 18.453,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 6,
+      "case": "string-transform",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 67.015641,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 66.749,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 6,
+      "case": "string-transform",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 60.492518,
+      "peak_rss_kib": 6784,
+      "cpu_ms": 60.261,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 6,
+      "case": "string-transform",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 58.476571,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 58.237,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 7,
+      "case": "string-transform",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 64.422882,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 64.107,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 7,
+      "case": "string-transform",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 18.61571,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 18.407,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 7,
+      "case": "string-transform",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 21.054576,
+      "peak_rss_kib": 6784,
+      "cpu_ms": 20.861,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 7,
+      "case": "function-calls",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 45.172041,
+      "peak_rss_kib": 7168,
+      "cpu_ms": 44.941,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 7,
+      "case": "function-calls",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 21.938282,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 21.707,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 7,
+      "case": "function-calls",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 20.780212,
+      "peak_rss_kib": 6784,
+      "cpu_ms": 20.571,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 8,
+      "case": "function-calls",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 44.733182,
+      "peak_rss_kib": 7168,
+      "cpu_ms": 44.507,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 8,
+      "case": "function-calls",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 21.124827,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 20.92,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 8,
+      "case": "function-calls",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 58.592413,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 58.36,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 8,
+      "case": "string-transform",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 18.160082,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 17.944,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 8,
+      "case": "string-transform",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 64.958642,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 64.695,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 8,
+      "case": "string-transform",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 64.94977,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 64.697,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 9,
+      "case": "string-transform",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 62.729668,
+      "peak_rss_kib": 6784,
+      "cpu_ms": 62.471,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 9,
+      "case": "string-transform",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 19.157281,
+      "peak_rss_kib": 6784,
+      "cpu_ms": 18.922,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 9,
+      "case": "string-transform",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 21.119777,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 20.889,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 9,
+      "case": "function-calls",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 21.522105,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 21.312,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 9,
+      "case": "function-calls",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 44.438026,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 44.196,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 9,
+      "case": "function-calls",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 44.546627,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 44.285,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 10,
+      "case": "function-calls",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 20.920742,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 20.704,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 10,
+      "case": "function-calls",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 21.163178,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 20.968,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 10,
+      "case": "function-calls",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 70.307782,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 70.004,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 10,
+      "case": "string-transform",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 18.750063,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 18.509,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 10,
+      "case": "string-transform",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 58.852957,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 58.614,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 10,
+      "case": "string-transform",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 18.137941,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 17.915,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 11,
+      "case": "string-transform",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 58.589232,
+      "peak_rss_kib": 6784,
+      "cpu_ms": 58.333,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 11,
+      "case": "string-transform",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 67.089662,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 66.77,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "6ba4e7a4472692082045c8161bb01a1e1e083017dcb9fdde6c1ee40d91ab5bad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 11,
+      "case": "string-transform",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "s := \"alpha\"; i := 0; while(i < 5000) { s=\"alpha\".to_upper().replace(\"A\",\"a\"); i+=1 }; print(s)"
+      ],
+      "stdout_text": "aLPHa\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "261dc34d07da1bf60b1783a9122cece130a6ca5b76d5cfe7fa901c2d4de2db05"
+    },
+    {
+      "wall_ms": 48.502161,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 48.204,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 11,
+      "case": "function-calls",
+      "version": "original",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-original/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 24.871788,
+      "peak_rss_kib": 7040,
+      "cpu_ms": 24.578,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 11,
+      "case": "function-calls",
+      "version": "final",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/nift/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    },
+    {
+      "wall_ms": 21.054447,
+      "peak_rss_kib": 6912,
+      "cpu_ms": 20.827,
+      "exit_code": 0,
+      "timeout": false,
+      "stdout_sha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "round": 11,
+      "case": "function-calls",
+      "version": "release",
+      "warmup": false,
+      "correct": true,
+      "command": [
+        "/opt/recovery-release/nift",
+        "-e",
+        "fn(inc(x)) { return x+1 }; s := 0; i := 0; while(i < 10000) { s = inc(s); i += 1 }; print(s)"
+      ],
+      "stdout_text": "10000\n",
+      "stderr_text": "",
+      "validation": {
+        "targets": 0,
+        "distractors": 0,
+        "unexpected_survivors": 0,
+        "unexpected_deletions": 0,
+        "all_distractor_content_metadata_unchanged": true,
+        "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "oracle": "all paths and bytes checked; keeper mode/mtime/inode checked"
+      },
+      "source_sha256": "0e063f4c78254faaa6abd85435396b6364f55e848ef2dbd5df4169b54ff10b1c"
+    }
+  ],
+  "complete": true,
+  "all_correct": true
+}

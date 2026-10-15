@@ -9,3 +9,5 @@ Same-host official strengths: prepared non-login prompt Nift1.986ms versus Bash2
 Concrete peer gaps persist: traversal100k Nift1032.955ms versus Nu255.039ms (4.05×); metadata10k118.627 versus Fish40.653ms (2.92×); concatenation10k252.608 versus Zsh105.009ms (2.41×); small-file creation100k10823.532 versus Nu4769.209ms (2.27×). These are same-fixture end-to-end semantic comparisons with native/external implementation differences disclosed. Helper-only external-baseline is excluded from the league. No cross-scenario aggregate rank is meaningful.
 
 Exact three-way calls/strings recovery remains pending; it must qualify release-engine conclusions independently of this peer league. No final engineering verdict or publication is made here.
+
+Matched recovery is now complete: final calls21.655ms vsrelease20.989ms/original44.971ms; final strings18.680ms vsrelease59.696ms/original66.950ms. Calls recover near release (small overlapping+3.17% residual); strings improve68.71% beyond release in this fixed specimen. Full findings/raw/audit remain in recovery-diagnostics/shell.

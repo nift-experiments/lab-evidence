@@ -1,0 +1,9 @@
+# Exact same-node shell recovery
+
+Clean exact release c8d9c266, original 7f7e487 and final c14d068 source builds, same GCC13.3/default Make flags and captured runtime libraries, reuse frozen current calls/string sources, invocation, fixture and semantic oracles on CPU0. All72 observations (60 measured/12warmups) pass. Independent audit checks adjacent three-version blocks, declared six-permutation rotation, full counts, all distribution/recovery fields; original official raw remains unchanged.
+
+Calls: release20.989496ms, original44.971487ms, final21.655463ms. Final improves23.316025ms (51.85%) over original, all ten paired observations faster and disjoint ranges. Final/release residual0.665967ms (+3.17%), overlapping observed ranges, eight of ten final pairs slower. This supports substantial recovery to near release latency, not proof of exact equality or a significant residual regression.
+
+Strings: release59.695733ms, original66.950305ms, final18.680012ms. Final improves48.270293ms (72.10%) over original and41.015722ms (68.71%) over release. Both comparisons have disjoint ranges and all ten final pairs faster. This is a substantial improvement beyond simple recovery for this fixed specimen, not a universal string-performance claim.
+
+No extra profile/install campaign is justified by the small overlapping calls residual alone. The remaining official peer gaps (notably traversal/metadata/concat) remain real and separate; calls recovery does not erase them. For bounded Nift-owned/mixed agent-maintained workflows I prefer Nift's programmability and explicit contracts, while compatibility or domain-specific interactive/data models can favor Bash/Zsh/Fish/Nu. No further required shell diagnostic needs remain. Parent owns scan/push/teardown; no Labs/core edits or overall release recommendation.

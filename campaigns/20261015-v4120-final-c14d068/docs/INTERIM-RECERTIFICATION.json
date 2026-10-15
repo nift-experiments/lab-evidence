@@ -100,6 +100,19 @@
       "samples_each": 5,
       "confidence": "Descriptive same-node rotated five samples/source; overlapping ranges, no formal significance or major regression claim.",
       "improvement_percent": 2.516644011612712
+    },
+    {
+      "suite": "shell",
+      "scenario": "string-transform",
+      "unit": "ms/invocation",
+      "release": 59.695733,
+      "original": 66.9503045,
+      "final": 18.6800115,
+      "final_vs_release_percent": -68.70796192417974,
+      "final_vs_original_percent": -72.09869075352749,
+      "samples_each": 10,
+      "confidence": "All10 final pairs faster than original with disjoint ranges. Strings also all10 faster than release with disjoint ranges; calls/release overlap and8/10 final slower, residual descriptive.",
+      "improvement_percent": 68.70796192417974
     }
   ],
   "same_node_version_regressions": [
@@ -192,6 +205,21 @@
       "confidence": "Descriptive same-node rotated five samples/source; overlapping ranges, no formal significance or major regression claim.",
       "baseline": "original",
       "change_percent": 4.510438864991739,
+      "classification": "descriptive same-node increase; not formal significance"
+    },
+    {
+      "suite": "shell",
+      "scenario": "function-calls",
+      "unit": "ms/invocation",
+      "release": 20.9894955,
+      "original": 44.971486999999996,
+      "final": 21.6554625,
+      "final_vs_release_percent": 3.172858537738543,
+      "final_vs_original_percent": -51.846238706761014,
+      "samples_each": 10,
+      "confidence": "All10 final pairs faster than original with disjoint ranges. Strings also all10 faster than release with disjoint ranges; calls/release overlap and8/10 final slower, residual descriptive.",
+      "baseline": "release",
+      "change_percent": 3.172858537738543,
       "classification": "descriptive same-node increase; not formal significance"
     }
   ],
@@ -3443,6 +3471,30 @@
       "final_vs_original_percent": 4.510438864991739,
       "samples_each": 5,
       "confidence": "Descriptive same-node rotated five samples/source; overlapping ranges, no formal significance or major regression claim."
+    },
+    {
+      "suite": "shell",
+      "scenario": "function-calls",
+      "unit": "ms/invocation",
+      "release": 20.9894955,
+      "original": 44.971486999999996,
+      "final": 21.6554625,
+      "final_vs_release_percent": 3.172858537738543,
+      "final_vs_original_percent": -51.846238706761014,
+      "samples_each": 10,
+      "confidence": "All10 final pairs faster than original with disjoint ranges. Strings also all10 faster than release with disjoint ranges; calls/release overlap and8/10 final slower, residual descriptive."
+    },
+    {
+      "suite": "shell",
+      "scenario": "string-transform",
+      "unit": "ms/invocation",
+      "release": 59.695733,
+      "original": 66.9503045,
+      "final": 18.6800115,
+      "final_vs_release_percent": -68.70796192417974,
+      "final_vs_original_percent": -72.09869075352749,
+      "samples_each": 10,
+      "confidence": "All10 final pairs faster than original with disjoint ranges. Strings also all10 faster than release with disjoint ranges; calls/release overlap and8/10 final slower, residual descriptive."
     }
   ],
   "memory_diagnostic_rows": [
@@ -3485,6 +3537,24 @@
       "final_kib": 7936,
       "final_vs_release_percent": 3.3333333333333437,
       "qualification": "raw quantized diagnostic; original/final equal; no leak claim"
+    },
+    {
+      "suite": "shell",
+      "scenario": "function-calls",
+      "metric": "waited-child peak KiB, not aggregate tree",
+      "release_kib": 6912.0,
+      "original_kib": 7040.0,
+      "final_kib": 7040.0,
+      "qualification": "raw quantized child peak; separate from wall ranking"
+    },
+    {
+      "suite": "shell",
+      "scenario": "string-transform",
+      "metric": "waited-child peak KiB, not aggregate tree",
+      "release_kib": 6784.0,
+      "original_kib": 6912.0,
+      "final_kib": 6912.0,
+      "qualification": "raw quantized child peak; separate from wall ranking"
     }
   ],
   "template_memory_control": "Supervisor allocation0\u219264MiB moves noopraw16.75\u219280.75MiB, proving inherited floor; raw retained/unranked.",
@@ -5280,6 +5350,21 @@
       "improvement_percent": 72.19346671460613
     },
     {
+      "suite": "shell",
+      "scenario": "string-transform",
+      "unit": "ms/invocation",
+      "release": 59.695733,
+      "original": 66.9503045,
+      "final": 18.6800115,
+      "final_vs_release_percent": -68.70796192417974,
+      "final_vs_original_percent": -72.09869075352749,
+      "samples_each": 10,
+      "confidence": "All10 final pairs faster than original with disjoint ranges. Strings also all10 faster than release with disjoint ranges; calls/release overlap and8/10 final slower, residual descriptive.",
+      "baseline": "original",
+      "baseline_value": 66.9503045,
+      "improvement_percent": 72.09869075352749
+    },
+    {
       "suite": "concurrency",
       "scenario": "queue-100000-4-4",
       "unit": "ms/request",
@@ -5296,6 +5381,21 @@
       "improvement_percent": 69.47557437140956
     },
     {
+      "suite": "shell",
+      "scenario": "string-transform",
+      "unit": "ms/invocation",
+      "release": 59.695733,
+      "original": 66.9503045,
+      "final": 18.6800115,
+      "final_vs_release_percent": -68.70796192417974,
+      "final_vs_original_percent": -72.09869075352749,
+      "samples_each": 10,
+      "confidence": "All10 final pairs faster than original with disjoint ranges. Strings also all10 faster than release with disjoint ranges; calls/release overlap and8/10 final slower, residual descriptive.",
+      "baseline": "release",
+      "baseline_value": 59.695733,
+      "improvement_percent": 68.70796192417974
+    },
+    {
       "suite": "scripting",
       "scenario": "sanity/function-calls/large",
       "unit": "ms/invocation",
@@ -5309,6 +5409,21 @@
       "baseline": "original",
       "baseline_value": 469.418897,
       "improvement_percent": 57.68815661888448
+    },
+    {
+      "suite": "shell",
+      "scenario": "function-calls",
+      "unit": "ms/invocation",
+      "release": 20.9894955,
+      "original": 44.971486999999996,
+      "final": 21.6554625,
+      "final_vs_release_percent": 3.172858537738543,
+      "final_vs_original_percent": -51.846238706761014,
+      "samples_each": 10,
+      "confidence": "All10 final pairs faster than original with disjoint ranges. Strings also all10 faster than release with disjoint ranges; calls/release overlap and8/10 final slower, residual descriptive.",
+      "baseline": "original",
+      "baseline_value": 44.971486999999996,
+      "improvement_percent": 51.846238706761014
     },
     {
       "suite": "template-engines",

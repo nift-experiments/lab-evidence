@@ -33,3 +33,5 @@ Latest task control: release138.333/original129.031/final134.851ms; final−2.52
 Task evidence and controlled diagnostic pushed55cae88; host108162743 deleted, CLI absent/API404 and known-host cleanup verified. Five of eight hosts closed. Only build108162775, filesystem108162735 and shell108162738 remain.
 
 Shell official complete and independently audited:293jobs,7855measured+711warmups=8566. Arithmetic17.263ms and calls21.956ms lead their peer workloads. Remaining traversal4.05xNu,metadata2.92xFish,concatenation2.41xZsh deficits now in complete sorted leagues. External helper-only baselines excluded; startup prepared/fresh distinct. Separate72-observation exact three-way recovery running on idle shell host. Six official suites audited, five hosts closed; build/filesystem continue timing.
+
+Shell recovery independently audited72observations: stringsrelease59.696/original66.950/final18.680ms,−68.71% versus release; callsrelease20.989/original44.971/final21.655ms,−51.85% versus original but+3.17% release residual (8/10 slower, overlap). All required shell work complete; push then teardown.
