@@ -1,0 +1,27 @@
+
+ RUN  v4.1.10 /home/nick/Repositories/nift/nift-experiments/agora/app
+
+ ❯ src/lib/docs-content-render-regressions.test.tsx (3 tests | 1 failed) 3364ms
+     × renders IoT authentication code tabs as interactive MDX components 1640ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/lib/docs-content-render-regressions.test.tsx > docs content render regressions > renders IoT authentication code tabs as interactive MDX components
+AssertionError: expected undefined to be defined
+ ❯ renderDocsPage src/lib/docs-content-render-regressions.test.tsx:13:16
+     11|   const page = source.getPage(slugs, locale);
+     12|
+     13|   expect(page).toBeDefined();
+       |                ^
+     14|   expect(page?.type).toBe('docs');
+     15|
+ ❯ src/lib/docs-content-render-regressions.test.tsx:42:7
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 2 passed (3)
+   Start at  08:11:13
+   Duration  5.09s (transform 1.31s, setup 153ms, import 894ms, tests 3.36s, environment 346ms)
+

@@ -1,0 +1,83 @@
+{
+  "review": "Independent correctness/certification; no builds, benchmarks, deployment, external mutations or source edits",
+  "models": {
+    "agora": {
+      "head": "c6bbe6ed3be77358d327dfcf03920ed193179708",
+      "gitStatus": "",
+      "articles": 1657,
+      "privateServerMetadataPublished": [],
+      "hostingRedirectsExact": true,
+      "hostingConditionalRoutesExact": true,
+      "bulkRedirectBytesExact": true,
+      "configChangedKeys": [
+        "outputDirectory",
+        "installCommand"
+      ]
+    },
+    "agora-agent": {
+      "head": "a30d209836b4df3b34a711c841c7de5b5029f18b",
+      "gitStatus": "",
+      "articles": 1657,
+      "privateServerMetadataPublished": [],
+      "hostingRedirectsExact": true,
+      "hostingConditionalRoutesExact": true,
+      "bulkRedirectBytesExact": true,
+      "configChangedKeys": [
+        "outputDirectory",
+        "installCommand"
+      ]
+    }
+  },
+  "confirmedUpstream": {
+    "43HistoricalUnitFailures": {
+      "classification": "Confirmed upstream reproduction in same named focused tests; 10 undeclared cheerio dependency CLI failures, 32 source/navigation/search/audit failures, 1 HappyDOM storage assertion",
+      "evidence": "final-correctness-unit-classification.json plus named baseline logs"
+    },
+    "IoTStaleRenderingAssertion": "Baseline content render log independently reproduces the same failure",
+    "SearchAndLLMOrdering": "upstream-repeatability.md; repeated original outputs differ",
+    "persistedDarkHydrationDefect": {
+      "observedByParent": "Rendered workingpreview4191 persistedDark causes React#418 recovery; Light author4190 previouslyclean",
+      "status": "CONFIRMED INHERITED: matched frozen original browser reproduces same persistedDark hydration failure",
+      "sourceEvidence": "Bothmodels root,ThemeProvider,DocsShell andtheme-preference byte-identical pinnedupstream. next-themes returnsundefinedserverresolvedTheme, initializesclientresolvedTheme fromlocalStorage. DocsShell selectsSun/Moonlabelsubtree immediatelywithout mountedguard. HTML suppressHydrationWarning covers only rootattributes.",
+      "noSourceChanges": true,
+      "baselineBrowserEvidence": "final-theme-hydration-proof.json: frozen4192 Light zeroerrors; UI Dark thenreload React#418 with recovered article, matching agent4191",
+      "qualification": "Representative clean Light hydration passes; persistedDark triggers retained upstream React recovery. Do not claim universally clean hydration."
+    }
+  },
+  "resolvedMigrationRegressions": {
+    "historicalDirectMDXLoader": [
+      "Two direct-render failures absent from baseline subsequently pass lazy-metadata-direct-render-tests.log (2 passed, remaining IoT inherited)",
+      "Loader suite initial environment failure now passes lazy-metadata-runtime-tests.log (7 passed)"
+    ],
+    "authoredRawOnlySourceInvalidation": {
+      "evidence": "raw-source-invalidation-proof.json",
+      "sameCompiledModule": true,
+      "correctRawSearchProjection": true,
+      "scope": "Post-campaign source fix, not measured performance claim"
+    },
+    "CNBrowserOriginMismatch": "cn-browser-proof.json: configured SITE_URL=VITE_SITE_URL; actual Chinese hydration, Orama results and client navigation pass"
+  },
+  "intentionalArchitecture": [
+    "React/TanStack maintained; content-addressed modules replace per-article Vite chunks",
+    "Derived compact heads/per-document metadata private; full server projection catalog retained",
+    "Agent source retains compiled modules and coordinated maintained raw/processed metadata",
+    "Git dates imported seed plus explicit edit workflow"
+  ],
+  "hosting": {
+    "localEvidence": "certification/hosting-http-emulation.json: 20 passing cases, explicitly subset emulator",
+    "retainedContract": "393 redirects, 65 conditional routes, 1000 bulk redirects; only outputDirectory/installCommand differ from pinned Vercel config",
+    "cachePolicy": "Pinned Vercel configs contain no headers/Cache-Control/Vary directives; no application src Cache-Control strings found. Provider defaults/project dashboard behavior unknown, so exact CDN cache parity unproven. Accept-negotiated HTML/Markdown cache separation requires real-provider certification.",
+    "supportedDeployment": "Root public static publication plus retained Vercel configuration. Build image must explicitly provide verified Nift CLI; install command installs app dependencies only. Existing generated pages/assets and missing-page404 supported; Python preview cannot prove provider rules or redirect precedence.",
+    "officialDocumentation": "https://vercel.com/docs/project-configuration/vercel-json",
+    "qualification": "Current official docs permit routes alongside redirects/rewrites/headers; no legacy incompatibility assumed. No deployment/schema acceptance/exact precedence certification performed."
+  },
+  "gaps": [
+    "No authoritative replacement CN production origin; localhost fixture demonstrates runtime, not full regional deployment",
+    "Private Algolia/index writes and live external-service workflows untested; Orama fallback exercised",
+    "Original CDN URLs retained; not complete offline mirror",
+    "Full historical suite not rerun green;43 failures independently reproduced upstream; other3 historical migration/test failures have focused passing evidence",
+    "Real host cache/redirect precedence/Accept negotiation/build-image certification still outstanding",
+    "Retained upstream persistedDark hydration defect: React#418 recovery occurs in frozen original and migrated browser. No universal clean-hydration claim."
+  ],
+  "decision": "Technically successful reproducible global migration, with matched inherited persistedDark hydration defect explicitly retained. No new material migration regression found; actual hosting and fullregional production certification remain qualified."
+}

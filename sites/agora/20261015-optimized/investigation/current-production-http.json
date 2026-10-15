@@ -1,0 +1,57 @@
+{
+  "captured_utc": "2026-10-14T22:11:47.486186+00:00",
+  "scope": "Read-only current upstream public behavior; not frozen-source parity or Nift-provider deployment certification. Bounded response-prefix reads.",
+  "requests": [
+    {
+      "path": "/en/introduction/about-agora",
+      "accept": "text/html",
+      "status": 200,
+      "final_url": "https://docs.agora.io/en/introduction/about-agora",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Server": "nginx",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "X-Vercel-Cache": "HIT"
+      },
+      "prefix_bytes": 256
+    },
+    {
+      "path": "/en/introduction/about-agora",
+      "accept": "text/markdown",
+      "status": 200,
+      "final_url": "https://docs.agora.io/en/introduction/about-agora",
+      "headers": {
+        "Content-Type": "text/markdown; charset=utf-8",
+        "Server": "nginx",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "X-Vercel-Cache": "MISS"
+      },
+      "prefix_bytes": 256
+    },
+    {
+      "path": "/en/introduction/about-agora.md",
+      "accept": "*/*",
+      "status": 200,
+      "final_url": "https://docs.agora.io/en/introduction/about-agora.md",
+      "headers": {
+        "Content-Type": "text/markdown; charset=utf-8",
+        "Server": "nginx",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "X-Vercel-Cache": "HIT"
+      },
+      "prefix_bytes": 256
+    },
+    {
+      "path": "/__nift-certification-not-found__",
+      "accept": "text/html",
+      "status": 404,
+      "final_url": "https://docs.agora.io/__nift-certification-not-found__",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Server": "nginx",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "X-Vercel-Cache": "HIT"
+      }
+    }
+  ]
+}

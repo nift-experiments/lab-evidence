@@ -1,0 +1,65 @@
+/** Representative CN source/React/router/search fixtures, never a regional production build. */
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { pathToFileURL } from 'node:url';
+import { plugin } from 'bun';
+const model = process.argv[2] ?? 'agora';
+if (!['agora', 'agora-agent'].includes(model)) throw new Error('Unknown model');
+const base = path.resolve(import.meta.dir, '../..'); const repo = path.join(base, model); const app = path.join(repo, 'app');
+process.chdir(app);
+process.env.VITE_DOCS_REGION = 'cn'; process.env.SITE_URL = 'http://127.0.0.1:4199'; process.env.NIFT_CONTENT_ROOT = path.join(app, 'public');
+plugin({ name: 'private-cn-source-fixture-raw', setup(builder) {
+  builder.onResolve({ filter: /\?raw$/ }, (args) => ({ path: path.resolve(path.dirname(args.importer), args.path.slice(0, -4)), namespace: 'fixture-raw' }));
+  builder.onLoad({ filter: /.*/, namespace: 'fixture-raw' }, async ({ path: file }) => ({ contents: `export default ${JSON.stringify(await fs.readFile(file, 'utf8'))}`, loader: 'js' }));
+} });
+const local = (file: string) => import(path.join(app, 'src', file));
+const dependency = (name: string) => import(Bun.resolveSync(name, app));
+const React = await dependency('react'); const jsx = await dependency('react/jsx-runtime');
+const mdx = await local('components/mdx.tsx'); const planCards = await local('components/mdx/PlanCards.tsx');
+const { getOverviewMDXComponents } = await local('components/docs-overview/mdx-components.tsx');
+(globalThis as any).__NIFT_RUNTIME = { react: React, jsx, mdx, planCards };
+const region = await local('lib/site-region.ts');
+const { getSitemapBaseUrl } = await local('lib/sitemap.ts');
+const { getDocsSearchProvider, shouldSyncAlgoliaSearch } = await local('lib/search/search-provider.ts');
+if (region.DOCS_REGION !== 'cn' || region.getPublishedDocsLocales().join() !== 'zh-CN' || region.getDocsHomePath() !== '/zh-CN/introduction') throw new Error('Regional publication contract mismatch');
+if (getSitemapBaseUrl() !== process.env.SITE_URL || getDocsSearchProvider('cn', true) !== 'orama' || shouldSyncAlgoliaSearch('cn')) throw new Error('CN origin/search contract mismatch');
+const { source } = await local('lib/source.server.ts');
+const { loadDocsPagePayload, loadDocsSearchIndex } = await local('lib/docs-page.server.ts');
+const { createRouter, createRootRoute, createRoute, createMemoryHistory, RouterContextProvider } = await dependency('@tanstack/react-router');
+const { RootProvider } = await dependency('fumadocs-ui/provider/tanstack');
+const { renderToReadableStream } = await dependency('react-dom/server');
+const catalog = JSON.parse(await fs.readFile(path.join(app, 'public/__nift/content-metadata.json'), 'utf8'));
+const manifest = JSON.parse(await fs.readFile(path.join(app, 'public/__nift/content-manifest.json'), 'utf8'));
+const fixtures = ['zh-CN/introduction/about-agora.mdx', 'zh-CN/introduction/security-privacy.md', 'zh-CN/realtime-media/rtm/index.mdx'];
+const output = path.join(base, 'agora-baseline/investigation/certification/cn-source-fixtures', model); await fs.mkdir(output, { recursive: true });
+const rendered = [];
+for (const contentPath of fixtures) {
+  if (!catalog[contentPath] || !manifest[contentPath]) throw new Error(`Missing maintained Chinese source ${contentPath}`);
+  const slugs = contentPath.replace(/^zh-CN\//, '').replace(/\.(md|mdx)$/, '').split('/'); if (slugs.at(-1) === 'index') slugs.pop();
+  const page = source.getPage(slugs, 'zh-CN'); if (!page || !page.url.startsWith('/zh-CN/')) throw new Error(`Missing CN route ${contentPath}`);
+  const module = await import(pathToFileURL(path.join(app, 'public', manifest[contentPath])).href);
+  const root = createRootRoute({ component: () => null });
+  const route = createRoute({ getParentRoute: () => root, path: page.url, component: () => null });
+  const router = createRouter({ routeTree: root.addChildren([route]), history: createMemoryHistory({ initialEntries: [page.url] }), isServer: true });
+  await router.load();
+  const article = React.createElement('article', { lang: 'zh-CN' }, React.createElement('h1', null, catalog[contentPath].frontmatter.title), React.createElement(module.default, { components: mdx.getMDXComponents(getOverviewMDXComponents(), { contentPath }) }));
+  const stream = await renderToReadableStream(React.createElement(RouterContextProvider, { router }, React.createElement(RootProvider, { i18n: { locale: 'zh-CN' } }, article)));
+  await stream.allReady; const html = await new Response(stream).text();
+  if (!html.includes('lang="zh-CN"') || !/[\u3400-\u9fff]/.test(html) || html.includes('docs-content-skeleton')) throw new Error(`Chinese React body failed ${contentPath}`);
+  const payload = await loadDocsPagePayload('zh-CN', slugs[0], slugs.slice(1));
+  if (!payload || payload.title !== catalog[contentPath].frontmatter.title) throw new Error(`CN page payload mismatch ${contentPath}`);
+  const file = `${rendered.length + 1}.html`; await fs.writeFile(path.join(output, file), html);
+  rendered.push({ source: contentPath, route: page.url, title: payload.title, htmlFile: file, bytes: Buffer.byteLength(html), navigationAvailable: Boolean(payload.sidebar?.length || payload.tabs?.length) });
+}
+const searchEntries = await loadDocsSearchIndex('zh-CN');
+if (!searchEntries.length || searchEntries.some((entry: any) => !entry.url.startsWith('/zh-CN/'))) throw new Error('CN search localization mismatch');
+if ((await loadDocsSearchIndex('en')).length) throw new Error('CN published search unexpectedly exposes English');
+const { createOramaDocsClient } = await local('lib/search/orama-client.ts');
+const search = createOramaDocsClient({ pages: searchEntries });
+const indexedFixture = rendered.find((fixture) => searchEntries.some((entry: any) => entry.url === fixture.route));
+if (!indexedFixture) throw new Error('No representative Chinese fixture is exposed by upstream navigation/search policy');
+const query = indexedFixture.title; const hits = await search.search(query);
+if (!hits.some((hit: any) => hit.url === indexedFixture.route)) { console.error(JSON.stringify({ query, target: indexedFixture.route, hits: hits.map((hit:any)=>({url:hit.url,title:hit.title})).slice(0, 5) })); throw new Error(`Orama Chinese title query misses ${query}`); }
+const tree = source.getPageTree('zh-CN');
+const report = { model, passed: true, scope: 'Representative CN source-derived payload/navigation/search plus retained MDX React rendering under an isolated TanStack Router context. Not a full regional Start application build, hydration/browser certification, deployed host or asserted production origin.', origin: process.env.SITE_URL, originMode: 'explicit-localhost-fixture', publishedLocales: region.getPublishedDocsLocales(), docsHome: region.getDocsHomePath(), rendered, navigationTreeAvailable: Boolean(tree.children?.length), search: { provider: 'orama', algoliaSync: false, entries: searchEntries.length, query, target: indexedFixture.route, hitCount: hits.length, targetFound: true, EnglishPublishedEntries: 0, indexingPolicy: 'Existing upstream navigation eligibility; direct routes need not be indexed.' } };
+await fs.writeFile(path.join(output, 'report.json'), JSON.stringify(report, null, 2) + '\n'); console.log(JSON.stringify(report));

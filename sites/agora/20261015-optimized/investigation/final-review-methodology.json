@@ -1,0 +1,612 @@
+{
+  "review": "Independent performance methodology review for LOCAL Labs preparation only; no benchmarks, source modifications, deployment, public evidence upload or outreach.",
+  "status": "Usable measured engineering evidence with mandatory qualifications below; no methodological defect found in simultaneous descendant RSS accounting.",
+  "provenance": {
+    "upstreamSha": "3c6552914e6cec74ab5d9c38b3bd4eeb51871d13",
+    "measuredMigrationShas": {
+      "agora": "1dcbbeb634d701821a598600f24357c856cf5163",
+      "agora-agent": "cd1dc9e602add307b81b36258ca0481dd00348b8"
+    },
+    "finalSourceShas": {
+      "agora": "c6bbe6ed3be77358d327dfcf03920ed193179708",
+      "agora-agent": "a30d209836b4df3b34a711c841c7de5b5029f18b"
+    },
+    "postMeasurementDifferences": {
+      "agora": "HANDOVER/STATUS plus authored raw-source hash invalidation correctness patch in tools/update-payload.ts. Tested separately in investigation/raw-source-invalidation-proof.json. Timing cost on final revision was not remeasured.",
+      "agora-agent": "HANDOVER/STATUS only; production implementation unchanged."
+    },
+    "environmentAtInitialCapture": {
+      "node": "v22.22.1",
+      "bun": "1.4.3",
+      "nift": "Nift v4.12.0",
+      "platform": "Linux-7.0.0-29-generic-x86_64-with-glibc2.43",
+      "lockSha256": "334ce781de73af6eea89879c88fe740992e71239d6c78b9a2e8445b1a87bf563",
+      "gitShallow": false
+    },
+    "hardwareAtReviewOnly": {
+      "capturedAtUtc": "2026-10-14T22:08:04.224036+00:00",
+      "cpuModel": "12th Gen Intel(R) Core(TM) i7-12700H",
+      "logicalCpus": "20",
+      "coresPerSocket": "14",
+      "sockets": "1",
+      "affinityCpus": 20,
+      "memTotalKiB": 64088128,
+      "memAvailableAtReviewKiB": 17347572,
+      "limitation": "Post-campaign read-only snapshot. Initial source manifest records OS/toolchain but no CPU/RAM. Available memory, CPU frequency/governor/load and affinity during the measured runs were not recorded; do not present review-time available RAM as historical."
+    }
+  },
+  "sampleDesign": {
+    "repeats": 1,
+    "scenariosPerModel": 5,
+    "labels": "Individual observations, not medians or five-sample ranges. Latest user authorizes a small final set; single observations remain accurately labelled.",
+    "serialization": "Driver completes one scenario at a time, with unmeasured restoration between edits. Internal renderer worker concurrency remains included in aggregate memory.",
+    "fresh": "Source-only GitHub checkout with installed frozen dependencies and no pipeline-state; complete build reconstructs generated content/payload/application/rendering products. Dependency setup excluded, OS caches uncontrolled.",
+    "warmForced": "--all rerenders every route and forces Nift composition while valid content/payload/application products are reused. Neither a no-op nor a fresh full recompilation.",
+    "unchanged": "Full production command on unchanged inputs, including scanning and fixed planner/publication/composition cost.",
+    "docsEdit": "Authored prose versus coordinated maintained React ESM and catalog projection changes. No application bundling in recorded edit observations.",
+    "sharedLayout": "Shared CSS edit; application bundling and whole-route SSR both run.",
+    "upstream": "Two warm complete upstream production observations only. No upstream fresh, unchanged-only or incremental values are invented."
+  },
+  "memoryMethod": {
+    "primary": "Summed simultaneous RSS of workload process-group members and transitive descendants sampled from /proc, excluding Python observer/GNU time. Counts concurrent renderer workers. Shared pages counted repeatedly; brief peaks can be missed. Not PSS/exact physical memory.",
+    "secondary": "GNU time maximum individual process/phase RSS, not aggregate peak; phase maxima must not be added.",
+    "sampling": "Requested20ms sleep plus scan/write overhead; actual observed gap statistics are recorded per observation.",
+    "wall": "Measured command completion timestamp, independent of post-exit trace/log summarization.",
+    "phase": "Approximate peak phase inferred from buffered log markers. Component costs come from pipeline phase logs; separately account rounded composition timing and remaining startup/wrapper overhead.",
+    "limitations": "Detached/reparented processes that leave the group can escape ancestry capture; no such behavior demonstrated for these builds. Process comm/PID/RSS are captured, complete command lines are not."
+  },
+  "measurements": [
+    {
+      "model": "agora",
+      "scenario": "fresh",
+      "observations": 1,
+      "wallSeconds": 199.81699553201906,
+      "aggregateRssMiB": 1937.05859375,
+      "individualRssMiB": 1864.484375,
+      "exitCode": 0,
+      "peakPhaseApproximate": "content",
+      "dominantProcessAtPeak": {
+        "pid": 2865330,
+        "comm": "bun",
+        "rssMiB": 1864.015625
+      },
+      "dominantWallPhase": {
+        "phase": "content",
+        "seconds": 132.846545206
+      },
+      "componentPhases": [
+        {
+          "phase": "content",
+          "seconds": 132.846545206
+        },
+        {
+          "phase": "openapi",
+          "seconds": 0.1299410870000138
+        },
+        {
+          "phase": "payloads",
+          "seconds": 18.323288237
+        },
+        {
+          "phase": "application",
+          "seconds": 5.253272518999991
+        },
+        {
+          "phase": "render",
+          "seconds": 40.982289614999985
+        },
+        {
+          "phase": "assets",
+          "seconds": 1.1940447870000208
+        },
+        {
+          "phase": "registration",
+          "seconds": 0.36504681100000747
+        }
+      ],
+      "compositionSecondsLoggedRounded": 0.564,
+      "observedSamplingGapSeconds": {
+        "median": 0.036038635415025055,
+        "min": 0.03343276516534388,
+        "max": 0.09245432214811444
+      },
+      "evidence": "measurements/final-optimized/agora-fresh.json"
+    },
+    {
+      "model": "agora",
+      "scenario": "warm-forced",
+      "observations": 1,
+      "wallSeconds": 43.77266019699164,
+      "aggregateRssMiB": 750.43359375,
+      "individualRssMiB": 382.26953125,
+      "exitCode": 0,
+      "peakPhaseApproximate": "render",
+      "dominantProcessAtPeak": {
+        "pid": 2866997,
+        "comm": "node",
+        "rssMiB": 365.0703125
+      },
+      "dominantWallPhase": {
+        "phase": "render",
+        "seconds": 42.649001415
+      },
+      "componentPhases": [
+        {
+          "phase": "render",
+          "seconds": 42.649001415
+        },
+        {
+          "phase": "assets",
+          "seconds": 0.21700748899999597
+        },
+        {
+          "phase": "registration",
+          "seconds": 0.14273477700000511
+        }
+      ],
+      "compositionSecondsLoggedRounded": 0.593,
+      "observedSamplingGapSeconds": {
+        "median": 0.0370592949911952,
+        "min": 0.03414706792682409,
+        "max": 0.10049055120907724
+      },
+      "evidence": "measurements/final-optimized/agora-warm-forced.json"
+    },
+    {
+      "model": "agora",
+      "scenario": "unchanged",
+      "observations": 1,
+      "wallSeconds": 2.3747115079313517,
+      "aggregateRssMiB": 180.59375,
+      "individualRssMiB": 95.21484375,
+      "exitCode": 0,
+      "peakPhaseApproximate": "render",
+      "dominantProcessAtPeak": {
+        "pid": 2867164,
+        "comm": "node",
+        "rssMiB": 73.1171875
+      },
+      "dominantWallPhase": {
+        "phase": "render",
+        "seconds": 0.833001258
+      },
+      "componentPhases": [
+        {
+          "phase": "render",
+          "seconds": 0.833001258
+        },
+        {
+          "phase": "assets",
+          "seconds": 0.23285082099999987
+        },
+        {
+          "phase": "registration",
+          "seconds": 0.1470441310000001
+        }
+      ],
+      "compositionSecondsLoggedRounded": 1.003,
+      "observedSamplingGapSeconds": {
+        "median": 0.03491388284601271,
+        "min": 0.03355686506256461,
+        "max": 0.037319545866921544
+      },
+      "evidence": "measurements/final-optimized/agora-unchanged.json"
+    },
+    {
+      "model": "agora",
+      "scenario": "docs-edit",
+      "observations": 1,
+      "wallSeconds": 7.510547755053267,
+      "aggregateRssMiB": 1213.8515625,
+      "individualRssMiB": 1131.2734375,
+      "exitCode": 0,
+      "peakPhaseApproximate": "content",
+      "dominantProcessAtPeak": {
+        "pid": 2867364,
+        "comm": "bun",
+        "rssMiB": 1131.2734375
+      },
+      "dominantWallPhase": {
+        "phase": "content",
+        "seconds": 2.7688054309999997
+      },
+      "componentPhases": [
+        {
+          "phase": "content",
+          "seconds": 2.7688054309999997
+        },
+        {
+          "phase": "openapi",
+          "seconds": 0.11675898800000005
+        },
+        {
+          "phase": "payloads",
+          "seconds": 0.7508854890000002
+        },
+        {
+          "phase": "render",
+          "seconds": 2.2971461890000002
+        },
+        {
+          "phase": "assets",
+          "seconds": 0.2824385080000002
+        },
+        {
+          "phase": "registration",
+          "seconds": 0.12472298000000046
+        }
+      ],
+      "compositionSecondsLoggedRounded": 1.011,
+      "observedSamplingGapSeconds": {
+        "median": 0.03544194204732776,
+        "min": 0.03328318381682038,
+        "max": 0.04843831202015281
+      },
+      "evidence": "measurements/final-optimized/agora-docs-edit.json"
+    },
+    {
+      "model": "agora",
+      "scenario": "shared-layout",
+      "observations": 1,
+      "wallSeconds": 49.630948883946985,
+      "aggregateRssMiB": 979.55078125,
+      "individualRssMiB": 919.41796875,
+      "exitCode": 0,
+      "peakPhaseApproximate": "application-build-and-prerender",
+      "dominantProcessAtPeak": {
+        "pid": 2867987,
+        "comm": "node",
+        "rssMiB": 916.76171875
+      },
+      "dominantWallPhase": {
+        "phase": "render",
+        "seconds": 42.452217713
+      },
+      "componentPhases": [
+        {
+          "phase": "openapi",
+          "seconds": 0.120135673
+        },
+        {
+          "phase": "payloads",
+          "seconds": 0.057822676999999996
+        },
+        {
+          "phase": "application",
+          "seconds": 5.169760542
+        },
+        {
+          "phase": "render",
+          "seconds": 42.452217713
+        },
+        {
+          "phase": "assets",
+          "seconds": 0.27987509500000307
+        },
+        {
+          "phase": "registration",
+          "seconds": 0.15141424600000028
+        }
+      ],
+      "compositionSecondsLoggedRounded": 1.247,
+      "observedSamplingGapSeconds": {
+        "median": 0.036932459101080894,
+        "min": 0.033869378035888076,
+        "max": 0.10383207490667701
+      },
+      "evidence": "measurements/final-optimized/agora-shared-layout.json"
+    },
+    {
+      "model": "agora-agent",
+      "scenario": "fresh",
+      "observations": 1,
+      "wallSeconds": 71.79336021491326,
+      "aggregateRssMiB": 1343.03125,
+      "individualRssMiB": 1295.04296875,
+      "exitCode": 0,
+      "peakPhaseApproximate": "payloads",
+      "dominantProcessAtPeak": {
+        "pid": 2869641,
+        "comm": "bun",
+        "rssMiB": 1288.94921875
+      },
+      "dominantWallPhase": {
+        "phase": "render",
+        "seconds": 42.003471281
+      },
+      "componentPhases": [
+        {
+          "phase": "maintained-content",
+          "seconds": 2.448624455
+        },
+        {
+          "phase": "openapi",
+          "seconds": 0.1484753090000004
+        },
+        {
+          "phase": "payloads",
+          "seconds": 18.463480988
+        },
+        {
+          "phase": "application",
+          "seconds": 5.402792334999998
+        },
+        {
+          "phase": "render",
+          "seconds": 42.003471281
+        },
+        {
+          "phase": "assets",
+          "seconds": 1.3245197200000112
+        },
+        {
+          "phase": "registration",
+          "seconds": 0.4774266820000048
+        }
+      ],
+      "compositionSecondsLoggedRounded": 0.559,
+      "observedSamplingGapSeconds": {
+        "median": 0.0368892471306026,
+        "min": 0.03364790207706392,
+        "max": 0.08612526999786496
+      },
+      "evidence": "measurements/final-optimized/agora-agent-fresh.json"
+    },
+    {
+      "model": "agora-agent",
+      "scenario": "warm-forced",
+      "observations": 1,
+      "wallSeconds": 45.08682300103828,
+      "aggregateRssMiB": 748.375,
+      "individualRssMiB": 402.75,
+      "exitCode": 0,
+      "peakPhaseApproximate": "render",
+      "dominantProcessAtPeak": {
+        "pid": 2870466,
+        "comm": "node",
+        "rssMiB": 379.4453125
+      },
+      "dominantWallPhase": {
+        "phase": "render",
+        "seconds": 43.25947777
+      },
+      "componentPhases": [
+        {
+          "phase": "render",
+          "seconds": 43.25947777
+        },
+        {
+          "phase": "assets",
+          "seconds": 0.22772556999999505
+        },
+        {
+          "phase": "registration",
+          "seconds": 0.18384066000000165
+        }
+      ],
+      "compositionSecondsLoggedRounded": 0.68,
+      "observedSamplingGapSeconds": {
+        "median": 0.03756766114383936,
+        "min": 0.03451866703107953,
+        "max": 0.1281959170009941
+      },
+      "evidence": "measurements/final-optimized/agora-agent-warm-forced.json"
+    },
+    {
+      "model": "agora-agent",
+      "scenario": "unchanged",
+      "observations": 1,
+      "wallSeconds": 2.7547055820468813,
+      "aggregateRssMiB": 304.8359375,
+      "individualRssMiB": 200.00390625,
+      "exitCode": 0,
+      "peakPhaseApproximate": "render",
+      "dominantProcessAtPeak": {
+        "pid": 2870602,
+        "comm": "bun",
+        "rssMiB": 182.53515625
+      },
+      "dominantWallPhase": {
+        "phase": "render",
+        "seconds": 0.833316432
+      },
+      "componentPhases": [
+        {
+          "phase": "render",
+          "seconds": 0.833316432
+        },
+        {
+          "phase": "assets",
+          "seconds": 0.2278496150000001
+        },
+        {
+          "phase": "registration",
+          "seconds": 0.13963294900000006
+        }
+      ],
+      "compositionSecondsLoggedRounded": 1.031,
+      "observedSamplingGapSeconds": {
+        "median": 0.03525106096640229,
+        "min": 0.034144006902351975,
+        "max": 0.04836851707659662
+      },
+      "evidence": "measurements/final-optimized/agora-agent-unchanged.json"
+    },
+    {
+      "model": "agora-agent",
+      "scenario": "docs-edit",
+      "observations": 1,
+      "wallSeconds": 7.242207180010155,
+      "aggregateRssMiB": 1125.4140625,
+      "individualRssMiB": 1080.15234375,
+      "exitCode": 0,
+      "peakPhaseApproximate": "maintained-content",
+      "dominantProcessAtPeak": {
+        "pid": 2870744,
+        "comm": "bun",
+        "rssMiB": 1072.80859375
+      },
+      "dominantWallPhase": {
+        "phase": "maintained-content",
+        "seconds": 2.275800104
+      },
+      "componentPhases": [
+        {
+          "phase": "maintained-content",
+          "seconds": 2.275800104
+        },
+        {
+          "phase": "openapi",
+          "seconds": 0.1433432459999999
+        },
+        {
+          "phase": "payloads",
+          "seconds": 0.7980640920000001
+        },
+        {
+          "phase": "render",
+          "seconds": 2.1784612720000003
+        },
+        {
+          "phase": "assets",
+          "seconds": 0.2822296270000006
+        },
+        {
+          "phase": "registration",
+          "seconds": 0.1499145410000001
+        }
+      ],
+      "compositionSecondsLoggedRounded": 0.897,
+      "observedSamplingGapSeconds": {
+        "median": 0.035654366947710514,
+        "min": 0.032026165863499045,
+        "max": 0.04465569811873138
+      },
+      "evidence": "measurements/final-optimized/agora-agent-docs-edit.json"
+    },
+    {
+      "model": "agora-agent",
+      "scenario": "shared-layout",
+      "observations": 1,
+      "wallSeconds": 52.222180193988606,
+      "aggregateRssMiB": 916.68359375,
+      "individualRssMiB": 858.6875,
+      "exitCode": 0,
+      "peakPhaseApproximate": "application-build-and-prerender",
+      "dominantProcessAtPeak": {
+        "pid": 2871281,
+        "comm": "node",
+        "rssMiB": 858.375
+      },
+      "dominantWallPhase": {
+        "phase": "render",
+        "seconds": 44.454188205
+      },
+      "componentPhases": [
+        {
+          "phase": "openapi",
+          "seconds": 0.13666492799999996
+        },
+        {
+          "phase": "payloads",
+          "seconds": 0.05126567
+        },
+        {
+          "phase": "application",
+          "seconds": 4.910287214
+        },
+        {
+          "phase": "render",
+          "seconds": 44.454188205
+        },
+        {
+          "phase": "assets",
+          "seconds": 0.25799015400000647
+        },
+        {
+          "phase": "registration",
+          "seconds": 0.12256239700000152
+        }
+      ],
+      "compositionSecondsLoggedRounded": 1.785,
+      "observedSamplingGapSeconds": {
+        "median": 0.03743787296116352,
+        "min": 0.032365923980250955,
+        "max": 0.15727222012355924
+      },
+      "evidence": "measurements/final-optimized/agora-agent-shared-layout.json"
+    }
+  ],
+  "acceptedUpstreamObservations": [
+    {
+      "wallSeconds": 592.0938057580497,
+      "aggregateRssMiB": 4966.56640625,
+      "individualRssMiB": 4941.5078125,
+      "command": [
+        "env",
+        "VITE_DOCS_REGION=global",
+        "SITE_URL=https://docs.agora.io",
+        "VITE_SEARCH_RANKING_V2=true",
+        "bun",
+        "run",
+        "build"
+      ],
+      "evidence": "measurements/upstream-global-warm-1.json"
+    },
+    {
+      "wallSeconds": 607.1425950359553,
+      "aggregateRssMiB": 5078.75390625,
+      "individualRssMiB": 5053.8671875,
+      "command": [
+        "env",
+        "VITE_DOCS_REGION=global",
+        "SITE_URL=https://docs.agora.io",
+        "VITE_SEARCH_RANKING_V2=true",
+        "bun",
+        "run",
+        "build"
+      ],
+      "evidence": "measurements/upstream-global-warm-2.json"
+    }
+  ],
+  "restoration": {
+    "receipt": "measurements/final-optimized/restoration-certification.json",
+    "nonHtmlBytes": "Exact after warm/restoration; no missing/extra paths.",
+    "html": "Raw HTML is not byte-identical due Start route updatedAt timestamps. Narrow normalization only inside the exact $tsr-stream-barrier script yields zero differences across2017HTML paths. Timestamp counts recorded:one page0fields,three pages1field,2013pages3fields.",
+    "boundary": "Normalization proves limited published equivalence at restored baseline inputs; modified-input incremental-versus-clean checks and browser parity are separate evidence."
+  },
+  "assessment": {
+    "benefits": "Fresh authored and maintained React-source pipelines substantially improve observed wall/RSS relative to accepted unconditional upstream warm production observations, with explicitly different cache semantics. Warm forced memory is below1GiB for both recorded observations.",
+    "weaknesses": "Warm forced43.77/45.09s misses10s and20s goals. Fresh199.82/71.79s remains expensive. Document7.51/7.24s and unchanged2.37/2.75s miss subsecond goals; document memory remains above1GiB. Source compilation, payload preparation and full route SSR costs remain visible.",
+    "recommendation": "A credible retained-TanStack engineering integration worth evaluating, not an unconditional production migration recommendation or proof that every desired target passed."
+  },
+  "packaging": {
+    "canonicalUpstreamAndToolchain": "source-manifest.json; upstream pinned Git tree at3c6552914e6cec74ab5d9c38b3bd4eeb51871d13, upstream/package.json +bun.lock +LICENSE",
+    "canonicalHardware": "No historical standalone hardware receipt found; review-time snapshot in this receipt is explicitly labelled.",
+    "upstreamMeasurements": [
+      "measurements/upstream-global-warm-1.json",
+      ".jsonl/.log/.time siblings",
+      "measurements/upstream-global-warm-2.json",
+      ".jsonl/.log/.time siblings"
+    ],
+    "migrationMeasurements": "measurements/final-optimized/*.json plus corresponding .jsonl/.log/.time, fresh output manifests, clean-status and restoration receipts",
+    "methodologyCode": [
+      "tools/measure.py",
+      "tools/final-campaign-optimized.py"
+    ],
+    "publicationScope": [
+      "global-output-manifest-1.json",
+      "investigation/final-optimized-independent-accounting.json",
+      "investigation/optimized-working-corpus-audit.json"
+    ],
+    "sourceDeltaCorrectness": "investigation/raw-source-invalidation-proof.json",
+    "storage": "Raw traces/logs/output manifests belong in canonical evidence storage, not the Labs website repository. Public evidence push and deployment remain unapproved."
+  },
+  "blockersForUnqualifiedPublication": [
+    "Do not attribute measured authored values directly to finalc6bbe6e without the post-measurement correctness-patch disclosure.",
+    "Do not present individual observations as medians, ranges or established stability.",
+    "Do not invent incumbent fresh/incremental benchmarks or conflate warm forced reuse with fresh regeneration.",
+    "Do not call normalized HTML byte-identical or sampled RSS exact physical/aggregate allocation.",
+    "Complete report references must resolve to actually authorized/published evidence; local private files are not public provenance links."
+  ]
+}

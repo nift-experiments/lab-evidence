@@ -1,0 +1,2249 @@
+[MDX] generated files in 2.551152000000002ms
+
+ RUN  v4.1.10 /home/nick/Repositories/nift/nift-experiments/agora-baseline/build
+
+ ❯ src/lib/docs-content-regressions.test.ts (80 tests | 17 failed) 15360ms
+     × keeps AI interrupt agent quickstart link on the Video Calling SDK quickstart 23ms
+     × keeps AI build interrupt links in shape the conversation 4ms
+     × keeps AI regional restriction media zone links on the Video SDK geofencing page 11ms
+     × keeps AI filler words MCP servers link on the Conversational AI join API 10ms
+     × keeps Ares ASR pricing link in the AI reference pricing page 2ms
+     × keeps block-style lists and notes out of GFM table cells 187ms
+     × keeps web connection status management free of shared prerequisite and implementation headings 1ms
+     × separates the reconnection platform group from the implementation platform group 1ms
+     × keeps PR 285 code and table recovery pages from regressing to placeholders 1ms
+     × keeps app size optimization extension lists collapsed across products 2ms
+     × keeps voice calling markdown free of hidden and ambiguous rendering syntax 25ms
+     × keeps IoT SDK compatibility table cells readable without raw HTML lists 1ms
+     × keeps video quickstart free of the broken gradle code fence structure 1ms
+     × keeps voice quickstart free of isolated directive closers in setup steps 0ms
+     × keeps realtime video get-started-sdk sections that were missing in the PDF review 0ms
+     × keeps nested and repeated AI model callouts rendered as callout containers 1ms
+     × keeps CodeBlockTab panels code-only 48ms
+ ❯ scripts/audit-api-ref-docs-links.test.ts (30 tests | 1 failed) 315ms
+     × normalizes invalid concurrency values to the default worker count 224ms
+ ❯ src/lib/search/golden-search-queries.test.ts (119 tests | 2 failed) 1010ms
+     × keeps every relative expected title attached to its authoritative indexed route 8ms
+       × returns guide with the real target in the top three 22ms
+ ❯ scripts/html-to-md-migration.test.ts (10 tests | 10 failed) 1452ms
+     × migrates a supported DITA-OT API directory 181ms
+     × prints detected source type, file count, and planned paths in dry-run without writing 169ms
+     × migrates TypeDoc output with dry-run planning and rewritten links 133ms
+     × migrates Doxygen/Javadoc output with dry-run planning and rewritten links 131ms
+     × migrates iOS doc-generator output with dry-run planning and rewritten links 148ms
+     × migrates Dartdoc output with dry-run planning and rewritten links 129ms
+     × fails unsupported sources without API with a clear actionable error 146ms
+     × refuses dangerous output paths before deleting existing files 138ms
+     × refuses broad in-repo docs output paths before cleanup 144ms
+     × refuses broad temporary and home-child output paths before cleanup 131ms
+ ❯ src/lib/legacy-sitemap/legacy-sitemap-audit.test.ts (11 tests | 1 failed) 108ms
+     × targets existing new docs portal pages 9ms
+ ❯ src/lib/overview-link-integrity.test.ts (8 tests | 1 failed) 20ms
+     × groups real-time media overview cards by application scenario and supporting capability 10ms
+ ❯ scripts/generate-legacy-redirect-artifacts.test.ts (6 tests | 3 failed) 1127ms
+     × accepts a semantically identical minified vercel.json 195ms
+     × keeps query-specific preserveSearch false rules out of bulk redirects 198ms
+     × spills query-preserving redirects beyond the bulk limit into vercel.json 167ms
+ ❯ src/lib/docs-journeys.test.ts (6 tests | 1 failed) 38ms
+     × keeps internal links under /en/ai pointed at existing docs routes 32ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 36 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  scripts/audit-api-ref-docs-links.test.ts > audit-api-ref-docs-links crawling > normalizes invalid concurrency values to the default worker count
+AssertionError: expected Error: spawnSync /usr/bin/node EPERM { …(5) } to be undefined
+
+- Expected:
+undefined
+
++ Received:
+Error {
+  "message": "spawnSync /usr/bin/node EPERM",
+  "errno": -1,
+  "code": "EPERM",
+  "syscall": "spawnSync /usr/bin/node",
+  "path": "/usr/bin/node",
+  "spawnargs": [
+    "--eval",
+    "
+          import { crawlApiRefEntry } from './scripts/audit-api-ref-docs-links.mjs';
+
+          const pages = new Map([
+            [
+              'https://api-ref.agora.io/en/video-sdk/web/4.x/index.html',
+              '<a href=\"https://docs.agora.io/en/video-sdk/web/start?platform=Web\">Start</a>',
+            ],
+          ]);
+
+          const fetchImpl = async (url) => {
+            const body = pages.get(String(url));
+            if (!body) {
+              return new Response('', { status: 404 });
+            }
+            return new Response(body, {
+              status: 200,
+              headers: { 'content-type': 'text/html' },
+            });
+          };
+
+          const report = await crawlApiRefEntry({
+            entry: {
+              groupTitle: 'Voice & Video',
+              entryTitle: 'Web',
+              entryUrl: 'https://api-ref.agora.io/en/video-sdk/web/4.x/index.html',
+              scopeUrl: 'https://api-ref.agora.io/en/video-sdk/web/4.x/',
+            },
+            fetchImpl,
+            concurrency: Number.NaN,
+            timeoutMs: 1000,
+          });
+
+          if (
+            report.pagesVisited !== 1 ||
+            report.docsLinkOccurrences[0]?.docsSearch !== '?platform=Web'
+          ) {
+            process.exit(1);
+          }
+        ",
+  ],
+}
+
+ ❯ scripts/audit-api-ref-docs-links.test.ts:210:26
+    208|     );
+    209|
+    210|     expect(result.error).toBeUndefined();
+       |                          ^
+    211|     expect(result.status).toBe(0);
+    212|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/36]⎯
+
+ FAIL  scripts/generate-legacy-redirect-artifacts.test.ts > generate-legacy-redirect-artifacts > accepts a semantically identical minified vercel.json
+AssertionError: expected '' to contain '[legacy-redirects] Vercel query redir…'
+
+- Expected
++ Received
+
+- [legacy-redirects] Vercel query redirect routes:
+
+ ❯ scripts/generate-legacy-redirect-artifacts.test.ts:100:34
+     98|     await writeFile(vercelPath, `${JSON.stringify(config)}\n`, 'utf8');
+     99|
+    100|     expect(checkArtifacts(root)).toContain(
+       |                                  ^
+    101|       '[legacy-redirects] Vercel query redirect routes:',
+    102|     );
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/36]⎯
+
+ FAIL  scripts/generate-legacy-redirect-artifacts.test.ts > generate-legacy-redirect-artifacts > keeps query-specific preserveSearch false rules out of bulk redirects
+AssertionError: expected '' to contain '[legacy-redirects] Vercel query redir…'
+
+- Expected
++ Received
+
+- [legacy-redirects] Vercel query redirect routes:
+
+ ❯ scripts/generate-legacy-redirect-artifacts.test.ts:154:37
+    152|     );
+    153|
+    154|     expect(generateArtifacts(root)).toContain(
+       |                                     ^
+    155|       '[legacy-redirects] Vercel query redirect routes:',
+    156|     );
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/36]⎯
+
+ FAIL  scripts/generate-legacy-redirect-artifacts.test.ts > generate-legacy-redirect-artifacts > spills query-preserving redirects beyond the bulk limit into vercel.json
+AssertionError: expected '' to contain '[legacy-redirects] Vercel bulk redire…'
+
+- Expected
++ Received
+
+- [legacy-redirects] Vercel bulk redirects: 1000
+
+ ❯ scripts/generate-legacy-redirect-artifacts.test.ts:291:37
+    289|     await writeFile(posthogObservedRedirectsPath, '[]\n', 'utf8');
+    290|
+    291|     expect(generateArtifacts(root)).toContain(
+       |                                     ^
+    292|       '[legacy-redirects] Vercel bulk redirects: 1000',
+    293|     );
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/36]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > migrates a supported DITA-OT API directory
+Error: Command failed: /usr/bin/node /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs --source /tmp/html-to-md-migration-RDZ90j/source --output /tmp/html-to-md-migration-RDZ90j/output --product rtc --platform android
+node:internal/modules/package_json_reader:314
+  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+        ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:855:18)
+    at defaultResolve (node:internal/modules/esm/resolve:985:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v22.22.1
+
+ ❯ runMigration scripts/html-to-md-migration.test.ts:43:10
+     41|
+     42| function runMigration(args: string[]) {
+     43|   return execFileSync(process.execPath, [SCRIPT, ...args], {
+       |          ^
+     44|     encoding: 'utf8',
+     45|     stdio: ['ignore', 'pipe', 'pipe'],
+ ❯ scripts/html-to-md-migration.test.ts:402:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/36]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > prints detected source type, file count, and planned paths in dry-run without writing
+Error: Command failed: /usr/bin/node /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs --source /tmp/html-to-md-migration-hkHfwy/source --output /tmp/html-to-md-migration-hkHfwy/dry-output --product rtc --platform android --dry-run
+node:internal/modules/package_json_reader:314
+  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+        ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:855:18)
+    at defaultResolve (node:internal/modules/esm/resolve:985:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v22.22.1
+
+ ❯ runMigration scripts/html-to-md-migration.test.ts:43:10
+     41|
+     42| function runMigration(args: string[]) {
+     43|   return execFileSync(process.execPath, [SCRIPT, ...args], {
+       |          ^
+     44|     encoding: 'utf8',
+     45|     stdio: ['ignore', 'pipe', 'pipe'],
+ ❯ scripts/html-to-md-migration.test.ts:437:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/36]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > migrates TypeDoc output with dry-run planning and rewritten links
+Error: Command failed: /usr/bin/node /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs --source /tmp/html-to-md-migration-719r7a/typedoc-source --output /tmp/html-to-md-migration-719r7a/output-dry --product web --platform typescript --dry-run
+node:internal/modules/package_json_reader:314
+  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+        ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:855:18)
+    at defaultResolve (node:internal/modules/esm/resolve:985:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v22.22.1
+
+ ❯ runMigration scripts/html-to-md-migration.test.ts:43:10
+     41|
+     42| function runMigration(args: string[]) {
+     43|   return execFileSync(process.execPath, [SCRIPT, ...args], {
+       |          ^
+     44|     encoding: 'utf8',
+     45|     stdio: ['ignore', 'pipe', 'pipe'],
+ ❯ expectLaneDryRunAndMigration scripts/html-to-md-migration.test.ts:132:21
+ ❯ scripts/html-to-md-migration.test.ts:465:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/36]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > migrates Doxygen/Javadoc output with dry-run planning and rewritten links
+Error: Command failed: /usr/bin/node /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs --source /tmp/html-to-md-migration-MNZy0Z/doxygen-source --output /tmp/html-to-md-migration-MNZy0Z/output-dry --product rtc --platform cpp --dry-run
+node:internal/modules/package_json_reader:314
+  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+        ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:855:18)
+    at defaultResolve (node:internal/modules/esm/resolve:985:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v22.22.1
+
+ ❯ runMigration scripts/html-to-md-migration.test.ts:43:10
+     41|
+     42| function runMigration(args: string[]) {
+     43|   return execFileSync(process.execPath, [SCRIPT, ...args], {
+       |          ^
+     44|     encoding: 'utf8',
+     45|     stdio: ['ignore', 'pipe', 'pipe'],
+ ❯ expectLaneDryRunAndMigration scripts/html-to-md-migration.test.ts:132:21
+ ❯ scripts/html-to-md-migration.test.ts:492:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/36]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > migrates iOS doc-generator output with dry-run planning and rewritten links
+Error: Command failed: /usr/bin/node /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs --source /tmp/html-to-md-migration-OkOZ96/ios-source --output /tmp/html-to-md-migration-OkOZ96/output-dry --product rtc --platform ios --dry-run
+node:internal/modules/package_json_reader:314
+  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+        ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:855:18)
+    at defaultResolve (node:internal/modules/esm/resolve:985:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v22.22.1
+
+ ❯ runMigration scripts/html-to-md-migration.test.ts:43:10
+     41|
+     42| function runMigration(args: string[]) {
+     43|   return execFileSync(process.execPath, [SCRIPT, ...args], {
+       |          ^
+     44|     encoding: 'utf8',
+     45|     stdio: ['ignore', 'pipe', 'pipe'],
+ ❯ expectLaneDryRunAndMigration scripts/html-to-md-migration.test.ts:132:21
+ ❯ scripts/html-to-md-migration.test.ts:525:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/36]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > migrates Dartdoc output with dry-run planning and rewritten links
+Error: Command failed: /usr/bin/node /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs --source /tmp/html-to-md-migration-1SGBI0/dartdoc-source --output /tmp/html-to-md-migration-1SGBI0/output-dry --product rtc --platform dart --dry-run
+node:internal/modules/package_json_reader:314
+  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+        ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:855:18)
+    at defaultResolve (node:internal/modules/esm/resolve:985:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v22.22.1
+
+ ❯ runMigration scripts/html-to-md-migration.test.ts:43:10
+     41|
+     42| function runMigration(args: string[]) {
+     43|   return execFileSync(process.execPath, [SCRIPT, ...args], {
+       |          ^
+     44|     encoding: 'utf8',
+     45|     stdio: ['ignore', 'pipe', 'pipe'],
+ ❯ expectLaneDryRunAndMigration scripts/html-to-md-migration.test.ts:132:21
+ ❯ scripts/html-to-md-migration.test.ts:560:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/36]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > fails unsupported sources without API with a clear actionable error
+AssertionError: expected 'node:internal/modules/package_json_re…' to contain 'Unsupported source structure: RESTful…'
+
+- Expected
++ Received
+
+- Unsupported source structure: RESTful/OpenAPI or other unsupported source layout.
++ node:internal/modules/package_json_reader:314
++   throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
++         ^
++
++ Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
++     at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
++     at packageResolve (node:internal/modules/esm/resolve:768:81)
++     at moduleResolve (node:internal/modules/esm/resolve:855:18)
++     at defaultResolve (node:internal/modules/esm/resolve:985:11)
++     at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
++     at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
++     at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
++     at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
++   code: 'ERR_MODULE_NOT_FOUND'
++ }
++
++ Node.js v22.22.1
++
+
+ ❯ scripts/html-to-md-migration.test.ts:601:20
+    599|     ]);
+    600|
+    601|     expect(output).toContain(
+       |                    ^
+    602|       'Unsupported source structure: RESTful/OpenAPI or other unsuppor…
+    603|     );
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/36]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > refuses dangerous output paths before deleting existing files
+AssertionError: expected 'node:internal/modules/package_json_re…' to contain 'Refusing to delete protected output p…'
+
+- Expected
++ Received
+
+- Refusing to delete protected output path
++ node:internal/modules/package_json_reader:314
++   throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
++         ^
++
++ Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
++     at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
++     at packageResolve (node:internal/modules/esm/resolve:768:81)
++     at moduleResolve (node:internal/modules/esm/resolve:855:18)
++     at defaultResolve (node:internal/modules/esm/resolve:985:11)
++     at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
++     at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
++     at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
++     at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
++   code: 'ERR_MODULE_NOT_FOUND'
++ }
++
++ Node.js v22.22.1
++
+
+ ❯ scripts/html-to-md-migration.test.ts:629:20
+    627|     ]);
+    628|
+    629|     expect(output).toContain('Refusing to delete protected output path…
+       |                    ^
+    630|     await expect(fs.readFile(sentinelPath, 'utf8')).resolves.toBe(
+    631|       'do not delete',
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/36]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > refuses broad in-repo docs output paths before cleanup
+AssertionError: expected 'node:internal/modules/package_json_re…' to contain 'Refusing to delete broad docs output …'
+
+- Expected
++ Received
+
+- Refusing to delete broad docs output path
++ node:internal/modules/package_json_reader:314
++   throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
++         ^
++
++ Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
++     at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
++     at packageResolve (node:internal/modules/esm/resolve:768:81)
++     at moduleResolve (node:internal/modules/esm/resolve:855:18)
++     at defaultResolve (node:internal/modules/esm/resolve:985:11)
++     at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
++     at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
++     at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
++     at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
++   code: 'ERR_MODULE_NOT_FOUND'
++ }
++
++ Node.js v22.22.1
++
+
+ ❯ scripts/html-to-md-migration.test.ts:651:20
+    649|     ]);
+    650|
+    651|     expect(output).toContain('Refusing to delete broad docs output pat…
+       |                    ^
+    652|     expect(output).toContain('content/docs/zh-CN/api-reference/rtc/and…
+    653|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/36]⎯
+
+ FAIL  scripts/html-to-md-migration.test.ts > html-to-md-migration > refuses broad temporary and home-child output paths before cleanup
+AssertionError: expected 'node:internal/modules/package_json_re…' to contain 'Refusing to delete protected output p…'
+
+- Expected
++ Received
+
+- Refusing to delete protected output path
++ node:internal/modules/package_json_reader:314
++   throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
++         ^
++
++ Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'cheerio' imported from /home/nick/Repositories/nift/nift-experiments/agora-baseline/build/scripts/html-to-md-migration.mjs
++     at Object.getPackageJSONURL (node:internal/modules/package_json_reader:314:9)
++     at packageResolve (node:internal/modules/esm/resolve:768:81)
++     at moduleResolve (node:internal/modules/esm/resolve:855:18)
++     at defaultResolve (node:internal/modules/esm/resolve:985:11)
++     at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
++     at ModuleLoader.resolve (node:internal/modules/esm/loader:708:38)
++     at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:310:38)
++     at ModuleJob._link (node:internal/modules/esm/module_job:182:49) {
++   code: 'ERR_MODULE_NOT_FOUND'
++ }
++
++ Node.js v22.22.1
++
+
+ ❯ scripts/html-to-md-migration.test.ts:670:23
+    668|       'android',
+    669|     ]);
+    670|     expect(tmpOutput).toContain('Refusing to delete protected output p…
+       |                       ^
+    671|
+    672|     const homeChildOutput = runMigrationFailure([
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[14/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > keeps AI interrupt agent quickstart link on the Video Calling SDK quickstart
+AssertionError: expected '---\ntitle: Interrupt the agent mid-r…' to contain '[Quickstart](../../../realtime-media/…'
+
+- Expected
++ Received
+
+- [Quickstart](../../../realtime-media/video/quickstart)
++ ---
++ title: Interrupt the agent mid-response
++ description: Interrupt the agent to start a new round of conversation.
++ ---
++ When interacting with an agent, you may need to interrupt the agent to begin a new round of conversation. The Agora Conversational AI Engine supports agent interruption in the following ways:
++
++ - **Voice interruption**: The engine detects user voice input and automatically stops the agent’s response.
++ - **Manual interruption**: Your app can explicitly stop the agent by calling a REST API or client SDK method—typically triggered by a button tap or custom command.
++
++ This page describes how to implement agent interruption in your app.
++
++ ## Voice interruption
++
++ Conversational AI Engine supports an intelligent interruption feature that allows a user's voice input to automatically interrupt the speaking agent. This enables quicker response times and more natural, fluid interactions.
++
++ To customize interruption behavior, configure turn detection when starting a conversational AI agent. To enable AIVAD-based interruption, set the end of speech mode to `"semantic"`. The following example shows how to configure turn detection:
++
++ <Tabs defaultValue="python" groupId="ai-sdk-language" persist>
++ <TabsList>
++   <TabsTrigger value="python">Python SDK</TabsTrigger>
++   <TabsTrigger value="typescript">TypeScript SDK</TabsTrigger>
++   <TabsTrigger value="go">Go SDK</TabsTrigger>
++   <TabsTrigger value="rest-api">REST API</TabsTrigger>
++ </TabsList>
++
++ <TabsContent value="python">
++
++ ```python
++ # ... other agent configuration ...
++ .with_turn_detection({
++     'mode': 'default',
++     'config': {
++         'speech_threshold': 0.5,
++         'start_of_speech': {
++             'mode': 'vad',
++             'vad_config': {
++                 'interrupt_duration_ms': 160,
++                 'speaking_interrupt_duration_ms': 320,
++                 'prefix_padding_ms': 800,
++             },
++         },
++         'end_of_speech': {
++             'mode': 'semantic',
++             'semantic_config': {
++                 'silence_duration_ms': 320,
++                 'max_wait_ms': 3000,
++             },
++         },
++     },
++ })
++ # ... continue with .create_session() ...
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="typescript">
++
++ ```typescript
++ // ... other agent configuration ...
++ .withTurnDetection({
++   mode: 'default',
++   config: {
++     speech_threshold: 0.5,
++     start_of_speech: {
++       mode: 'vad',
++       vad_config: {
++         interrupt_duration_ms: 160,
++         speaking_interrupt_duration_ms: 320,
++         prefix_padding_ms: 800,
++       },
++     },
++     end_of_speech: {
++       mode: 'semantic',
++       semantic_config: {
++         silence_duration_ms: 320,
++         max_wait_ms: 3000,
++       },
++     },
++   },
++ })
++ // ... continue with .createSession() ...
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="go">
++
++ ```go
++ // ... other agent configuration ...
++ .WithTurnDetection(&agentkit.TurnDetectionConfig{
++     Mode: Agora.String("default"),
++     Config: &agentkit.TurnDetectionNestedConfig{
++         SpeechThreshold: Agora.Float64(0.5),
++         StartOfSpeech: &agentkit.StartOfSpeechConfig{
++             Mode: Agora.StartAgentsRequestPropertiesTurnDetectionConfigStartOfSpeechModeVad,
++             VadConfig: &agentkit.StartOfSpeechVadConfig{
++                 InterruptDurationMs:         Agora.Int(160),
++                 SpeakingInterruptDurationMs: Agora.Int(320),
++                 PrefixPaddingMs:             Agora.Int(800),
++             },
++         },
++         EndOfSpeech: &agentkit.EndOfSpeechConfig{
++             Mode: Agora.StartAgentsRequestPropertiesTurnDetectionConfigEndOfSpeechModeSemantic.Ptr(),
++             SemanticConfig: &agentkit.EndOfSpeechSemanticConfig{
++                 SilenceDurationMs: Agora.Int(320),
++                 MaxWaitMs:         Agora.Int(3000),
++             },
++         },
++     },
++ })
++ // ... continue with .CreateSession() ...
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="rest-api">
++
++ ```bash
++ curl --request post \
++ --url https://api.agora.io/api/conversational-ai-agent/v2/projects/:appid/join \
++ --header 'Authorization: Basic <your_base64_encoded_credentials>' \
++ --data '
++ {
++   "name": "unique_name",
++   "properties": {
++     "channel": "channel_name",
++     "token": "token",
++     "agent_rtc_uid": "1001",
++     "remote_rtc_uids": ["1002"],
++     "turn_detection": {
++       "mode": "default",
++       "config": {
++         "speech_threshold": 0.5,
++         "start_of_speech": {
++           "mode": "vad",
++           "vad_config": {
++             "interrupt_duration_ms": 160,
++             "speaking_interrupt_duration_ms": 320,
++             "prefix_padding_ms": 800
++           }
++         },
++         "end_of_speech": {
++           "mode": "semantic",
++           "semantic_config": {
++             "silence_duration_ms": 320,
++             "max_wait_ms": 3000
++           }
++         }
++       }
++     },
++     "llm": {
++       "url": "https://api.openai.com/v1/chat/completions",
++       "api_key": "",
++       "system_messages": [
++         {
++           "role": "system",
++           "content": "You are a helpful assistant."
++         }
++       ],
++       "params": {
++         "model": "gpt-4o-mini"
++       }
++     },
++     "tts": {
++       "vendor": "microsoft",
++       "params": {
++         "key": "",
++         "region": "eastus",
++         "voice_name": "en-US-AndrewMultilingualNeural"
++       }
++     },
++     "asr": {
++       "language": "en-US"
++     }
++   }
++ }'
++ ```
++
++ If the request succeeds, the API returns a `200` status code and a response body like the following:
++
++ ```json
++ {
++   "agent_id": "1NT29X10YHxxxxxWJOXLYHNYB",
++   "create_ts": 1737111452,
++   "status": "RUNNING"
++ }
++ ```
++
++ </TabsContent>
++ </Tabs>
++
++ ## Manual interruption
++
++ Conversational AI Engine supports actively triggering an interruption by calling RESTful APIs or client component APIs. This allows users to interrupt the agent through a button click or a specific command.
++
++ ### Server-side interruption
++
++ Use the [Interrupt agent](/en/api-reference/api-ref/conversational-ai/interrupt) API to manually initiate an interruption request.
++
++ <Tabs defaultValue="python" groupId="ai-sdk-language" persist>
++ <TabsList>
++   <TabsTrigger value="python">Python SDK</TabsTrigger>
++   <TabsTrigger value="typescript">TypeScript SDK</TabsTrigger>
++   <TabsTrigger value="go">Go SDK</TabsTrigger>
++   <TabsTrigger value="rest-api">REST API</TabsTrigger>
++ </TabsList>
++
++ <TabsContent value="python">
++
++ ```python
++ session.interrupt()
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="typescript">
++
++ ```typescript
++ await session.interrupt();
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="go">
++
++ ```go
++ if err := session.Interrupt(ctx); err != nil {
++     log.Fatal(err)
++ }
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="rest-api">
++
++ ```bash
++ curl --request post \
++ --url https://api.agora.io/api/conversational-ai-agent/v2/projects/:appid/agents/:agentId/interrupt \
++ --header 'Authorization: Basic <credentials>' \
++ --data '{}'
++ ```
++
++ If the request is successful, the API returns a 200 status code and the following response body:
++
++ ```json
++ {
++   "agent_id": "1NT29XxxxxxxxxELWEHC8OS",
++   "channel": "test_channel",
++   "start_ts": 1744877089
++ }
++ ```
++
++ </TabsContent>
++ </Tabs>
++
++ ### Call the client toolkit API
++
++ Agora provides a set of flexible, scalable and standardized client components for its conversational AI engine. These components support iOS, Android, and Web platforms and encapsulate scenario-based APIs. You can use them to integrate Agora Real-Time Communication (RTC) and Signaling capabilities, enabling the following features:
++
++ - Interrupt the agent
++ - Display real-time transcript
++ - Receive event notifications
++ - Optimize audio (Android and iOS only)
++
++ Before you begin, make sure you:
++
++ - Integrate RTC SDK v4.5.1 or later and follow the [Quickstart](../../../realtime-media/rtc/get-started-sdk) guide to implement basic real-time audio and video features.
++ - Enable Signaling for your project in the Agora Console and follow the [Signaling Quickstart](/en/realtime-media/rtm/quickstart) to implement real-time messaging.
++ - Implement the basic logic to communicate with a conversational AI agent.
++ - Ensure that the RTC engine instance is initialized and the app is logged in to Signaling. The toolkit does not handle initialization, lifecycle management, authentication, or login for RTC SDK or Signaling.
++
++ <Tabs defaultValue="android" groupId="ai-toolkit-platform" persist>
++ <TabsList>
++   <TabsTrigger value="android">Android</TabsTrigger>
++   <TabsTrigger value="ios">iOS</TabsTrigger>
++   <TabsTrigger value="web">Web</TabsTrigger>
++ </TabsList>
++
++ <TabsContent value="android">
++
++ 1. Add the toolkit to your project using Maven or source code. See [Install the Android toolkit](/en/api-reference/api-ref/conversational-ai/client-toolkit/android#installation).
++ 2. Create a configuration object for the RTC engine and Signaling client instances, then use it to initialize the component instance.
++
++    ```kotlin
++    // Create a configuration object for the RTC and RTM instances
++    val config = ConversationalAIAPIConfig(
++        rtcEngine = rtcEngine,
++        rtmClient = rtmClient,
++        renderMode = TranscriptRenderMode.Word,
++        enableLog = true,
++        enableRenderModeFallback = true
++    )
++
++    // Create the component instance
++    val api = ConversationalAIAPIImpl(config)
++    ```
++
++ 3. Call [Start a conversational AI agent](/en/api-reference/api-ref/conversational-ai/join) using the following parameter settings:
++
++    - `advanced_features.enable_rtm: true`: Start Signaling (Required)
++    - `parameters.data_channel: "rtm"`: Enable the RTM data transmission channel (Required)
++    - `parameters.enable_metrics: true`: Receive agent performance data (Enabled on demand)
++    - `parameters.enable_error_message: true`: Receive agent error events (Enable on demand)
++
++    After the call is successful, the agent joins the specified RTC channel and the user can start interacting with the agent.
++
++ 4. Call the `interrupt` method to interrupt the agent.
++
++    ```kotlin
++    api.interrupt("agentId") { error -> /* ... */ }
++    ```
++
++ 5. When the agent interaction ends, destroy the component instance to release all resources.
++
++    ```kotlin
++    api.destroy()
++    ```
++
++ </TabsContent>
++
++ <TabsContent value="ios">
++
++ 1. Add the toolkit to your project using CocoaPods, Swift Package Manager, or source code. See [Install the iOS toolkit](/en/api-reference/api-ref/conversational-ai/client-toolkit/ios#installation).
++ 2. Create a configuration object for the RTC engine and Signaling client instances, then use it to initialize the component instance.
++
++    ```swift
++    // Create a configuration object for the RTC and RTM instances
++    let config = ConversationalAIAPIConfig(
++        rtcEngine: rtcEngine,
++        rtmEngine: rtmEngine,
++        renderMode: .words,
++        enableLog: true,
++        enableRenderModeFallback: true
++    )
++
++    // Create the component instance
++    convoAIAPI = ConversationalAIAPIImpl(config: config)
++    ```
++
++ 3. Call [Start a conversational AI agent](/en/api-reference/api-ref/conversational-ai/join) using the following parameter settings:
++
++    - `advanced_features.enable_rtm: true`: Start Signaling (Required)
++    - `parameters.data_channel: "rtm"`: Enable the RTM data transmission channel (Required)
++    - `parameters.enable_metrics: true`: Receive agent performance data (Enabled on demand)
++    - `parameters.enable_error_message: true`: Receive agent error events (Enable on demand)
++
++    After the call is successful, the agent joins the specified RTC channel and the user can start interacting with the agent.
++
++ 4. Call the `interrupt` method to interrupt the agent.
++
++    ```swift
++    convoAIAPI.interrupt(agentUserId: "\(agentUid)") { error in
++        if let error = error {
++            print("Interruption failed: \(error.message)")
++        } else {
++            print("Interruption succeeded")
++        }
++    }
++    ```
++
++ 5. When the agent interaction ends, destroy the component instance to release all resources.
++
++    ```swift
++    convoAIAPI.destroy()
++    ```
++
++ </TabsContent>
++
++ <TabsContent value="web">
++
++ 1. Add the toolkit to your project using a package manager or source code. See [Install the Web toolkit](/en/api-reference/api-ref/conversational-ai/client-toolkit/web#installation).
++ 2. Create a configuration object for the RTC engine and Signaling client instances, then use it to initialize the component instance.
++
++    ```ts
++    // Create a configuration object for the RTC and RTM instances
++    const config: IConversationalAIAPIConfig = {
++      rtcEngine,
++      rtmEngine,
++      renderMode: ETranscriptHelperMode.WORD,
++      enableLog: true,
++      enableRenderModeFallback: true,
++    }
++
++    // Initialize the component instance
++    const conversationalAIAPI = await ConversationalAIAPI.init(config)
++    ```
++
++ 3. Call [Start a conversational AI agent](/en/api-reference/api-ref/conversational-ai/join) using the following parameter settings:
++
++    - `advanced_features.enable_rtm: true`: Start Signaling (Required)
++    - `parameters.data_channel: "rtm"`: Enable the RTM data transmission channel (Required)
++    - `parameters.enable_metrics: true`: Receive agent performance data (Enabled on demand)
++    - `parameters.enable_error_message: true`: Receive agent error events (Enable on demand)
++
++    After the call is successful, the agent joins the specified RTC channel and the user can start interacting with the agent.
++
++ 4. Call the `interrupt` method to interrupt the agent.
++
++    ```ts
++    await conversationalAIAPI.interrupt(`${agent_rtc_uid}`)
++    ```
++
++ 5. When the agent interaction ends, destroy the component instance to release all resources.
++
++    ```ts
++    conversationalAIAPI.destroy()
++    ```
++ </TabsContent>
++ </Tabs>
++
++ ## Reference
++
++ ### Sample project
++
++ Agora provides a [sample project](https://github.com/AgoraIO-Community/Conversational-AI-Demo/) for your reference. Download or view the source code for a complete example.
++
++ ### API reference
++
++ #### RESTful API
++
++ - [Start a conversational AI Agent](/en/api-reference/api-ref/conversational-ai/join)
++ - [Interrupt the Agent](/en/api-reference/api-ref/conversational-ai/interrupt)
++
++ #### Toolkit
++
++ <Tabs defaultValue="android" groupId="ai-toolkit-platform" persist>
++ <TabsList>
++   <TabsTrigger value="android">Android</TabsTrigger>
++   <TabsTrigger value="ios">iOS</TabsTrigger>
++   <TabsTrigger value="web">Web</TabsTrigger>
++ </TabsList>
++
++ <TabsContent value="android">
++
++ - [`interrupt`](/en/api-reference/api-ref/conversational-ai/client-toolkit/android#interrupt)
++ - [`destroy`](/en/api-reference/api-ref/conversational-ai/client-toolkit/android#destroy)
++
++ </TabsContent>
++
++ <TabsContent value="ios">
++
++ - [`interrupt`](/en/api-reference/api-ref/conversational-ai/client-toolkit/ios#interrupt)
++ - [`destroy`](/en/api-reference/api-ref/conversational-ai/client-toolkit/ios#destroy)
++
++ </TabsContent>
++
++ <TabsContent value="web">
++
++ - [`interrupt`](/en/api-reference/api-ref/conversational-ai/client-toolkit/web#interrupt)
++ - [`destroy`](/en/api-reference/api-ref/conversational-ai/client-toolkit/web#destroy)
++
++ </TabsContent>
++ </Tabs>
++
+
+ ❯ src/lib/docs-content-regressions.test.ts:187:21
+    185|     );
+    186|
+    187|     expect(content).toContain(
+       |                     ^
+    188|       '[Quickstart](../../../realtime-media/video/quickstart)',
+    189|     );
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[15/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > keeps AI build interrupt links in shape the conversation
+AssertionError: expected [ Array(1) ] to deeply equal []
+
+- Expected
++ Received
+
+- []
++ [
++   "content/docs/en/ai/build/shape-the-conversation/asr-keywords.mdx:3257",
++ ]
+
+ ❯ src/lib/docs-content-regressions.test.ts:229:23
+    227|     });
+    228|
+    229|     expect(offenders).toEqual([]);
+       |                       ^
+    230|   });
+    231|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[16/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > keeps AI regional restriction media zone links on the Video SDK geofencing page
+AssertionError: expected '---\ntitle: Restrict where agent can …' to contain '[Restrict media zones](../../realtime…'
+
+- Expected
++ Received
+
+- [Restrict media zones](../../realtime-media/video/build/manage-connection-and-quality/geofencing)
++ ---
++ title: Restrict where agent can run
++ description: Configure regional access restrictions to ensure agents only access servers in designated regions.
++ ---
++
++ import { Parameter, ParameterList } from '@/components/mdx';
++
++ To comply with laws and regulations in different countries and regions, the Conversational AI Engine supports regional access restrictions. When you enable regional access restrictions, the Conversational AI Engine only accesses Agora servers in the designated region, regardless of the user's location.
++
++ For example, if you specify North America as the access region, two users who initiate calls from North America and Singapore have different experiences:
++
++ | Specified access region | User location | Actual access region | User experience |
++ |:-------|:-------|:-------|:-------|
++ | North America | North America | North America | Normal quality. |
++ | North America | Singapore     | North America | Quality may be significantly impacted. Cross-regional public internet connections between the designated region and the user's location can result in poor network quality. If all servers in the specified region are unavailable, the service returns an error. |
++
++ ## Understand the tech
++
++ When regional access restrictions are disabled, the Conversational AI Engine automatically selects the nearest server to deploy the agent based on the IP address of the LLM URL and supports failover:
++
++ 1. **Intelligent deployment**: The system automatically deploys the Conversational AI Engine service in the region that corresponds to the IP address of the configured LLM URL.
++ 1. **Nearest available region**: If no server is available in the corresponding region, the system automatically selects the nearest available region.
++ 1. **Failover**: When a service becomes unavailable in a region, the system automatically switches to another available region.
++
++     :::caution[Caution]
++     When you enable regional access restrictions, the system strictly limits access to the specified region and does not perform cross-regional failover.
++     :::
++
++ ## Implementation
++
++ ### Configure regional access
++
++ To configure region access restrictions, set `properties.geofence` when you [Start a conversational AI agent](/en/api-reference/api-ref/conversational-ai/join).
++
++ <ParameterList title="properties.geofence">
++   <Parameter
++     name="area"
++     type="string"
++     required
++     possibleValues="GLOBAL, NORTH_AMERICA, EUROPE, ASIA, INDIA, JAPAN"
++   >
++     The allowed region for server access.
++   </Parameter>
++   <Parameter
++     name="exclude_area"
++     type="string"
++     required={false}
++     possibleValues="NORTH_AMERICA, EUROPE, ASIA, INDIA, JAPAN"
++   >
++     The excluded region. Only available when `area` is set to `GLOBAL`.
++   </Parameter>
++ </ParameterList>
++
++ ### Configuration examples
++
++ Refer to the following examples to understand `geofence` configuration.
++
++ #### Restrict access to North America only
++
++ <Tabs defaultValue="python" groupId="ai-sdk-language" persist>
++ <TabsList>
++   <TabsTrigger value="python">Python SDK</TabsTrigger>
++   <TabsTrigger value="typescript">TypeScript SDK</TabsTrigger>
++   <TabsTrigger value="go">Go SDK</TabsTrigger>
++   <TabsTrigger value="rest-api">REST API</TabsTrigger>
++ </TabsList>
++
++ <TabsContent value="python">
++
++ ```python
++ from agora_agent import Agent
++ from agora_agent.agentkit import GeofenceConfig
++
++ # client is your configured Agora client
++ agent = (
++     Agent(client)
++     .with_llm(...)  # configure your LLM vendor
++     .with_tts(...)  # configure your TTS vendor
++     .with_geofence(GeofenceConfig(
++         area='NORTH_AMERICA',
++     ))
++ )
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="typescript">
++
++ ```typescript
++ import { Agent } from 'agora-agents';
++
++ // client is your configured Agora client
++ const agent = new Agent({ client })
++   .withLlm(/* configure your LLM vendor */)
++   .withTts(/* configure your TTS vendor */)
++   .withGeofence({
++     area: 'NORTH_AMERICA',
++   });
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="go">
++
++ ```go
++ import "github.com/AgoraIO/agora-agents-go/v2/agentkit"
++
++ // client is your configured *agentkit.AgoraClient
++ agent := agentkit.NewAgent(client).
++     WithLlm(/* configure your LLM vendor */).
++     WithTts(/* configure your TTS vendor */).
++     WithGeofence(&agentkit.GeofenceConfig{
++         Area: agentkit.GeofenceAreaNorthAmerica,
++     })
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="rest-api">
++
++ Use the following request body when you [Start a conversational AI agent](/en/api-reference/api-ref/conversational-ai/join):
++
++ ```json
++ {
++   "name": "customer_service",
++   "properties": {
++     "channel": "test_channel",
++     "token": "your_rtc_token",
++     "agent_rtc_uid": "123",
++     "remote_rtc_uids": ["456"],
++     "geofence": {
++       "area": "NORTH_AMERICA"
++     },
++     "llm": {
++       // ... LLM configuration
++     },
++     "tts": {
++       // ... TTS configuration
++     }
++   }
++ }
++ ```
++
++ </TabsContent>
++ </Tabs>
++
++ #### Allow global access but exclude India
++
++ <Tabs defaultValue="python" groupId="ai-sdk-language" persist>
++ <TabsList>
++   <TabsTrigger value="python">Python SDK</TabsTrigger>
++   <TabsTrigger value="typescript">TypeScript SDK</TabsTrigger>
++   <TabsTrigger value="go">Go SDK</TabsTrigger>
++   <TabsTrigger value="rest-api">REST API</TabsTrigger>
++ </TabsList>
++
++ <TabsContent value="python">
++
++ ```python
++ from agora_agent import Agent
++ from agora_agent.agentkit import GeofenceConfig
++
++ # client is your configured Agora client
++ agent = (
++     Agent(client)
++     .with_llm(...)  # configure your LLM vendor
++     .with_tts(...)  # configure your TTS vendor
++     .with_geofence(GeofenceConfig(
++         area='GLOBAL',
++         exclude_area='INDIA',
++     ))
++ )
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="typescript">
++
++ ```typescript
++ import { Agent } from 'agora-agents';
++
++ // client is your configured Agora client
++ const agent = new Agent({ client })
++   .withLlm(/* configure your LLM vendor */)
++   .withTts(/* configure your TTS vendor */)
++   .withGeofence({
++     area: 'GLOBAL',
++     exclude_area: 'INDIA',
++   });
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="go">
++
++ ```go
++ import "github.com/AgoraIO/agora-agents-go/v2/agentkit"
++
++ // client is your configured *agentkit.AgoraClient
++ agent := agentkit.NewAgent(client).
++     WithLlm(/* configure your LLM vendor */).
++     WithTts(/* configure your TTS vendor */).
++     WithGeofence(&agentkit.GeofenceConfig{
++         Area:        agentkit.GeofenceAreaGlobal,
++         ExcludeArea: agentkit.GeofenceExcludeAreaIndia.Ptr(),
++     })
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="rest-api">
++
++ Use the following request body when you [Start a conversational AI agent](/en/api-reference/api-ref/conversational-ai/join):
++
++ ```json
++ {
++   "name": "customer_service",
++   "properties": {
++     "channel": "test_channel",
++     "token": "your_rtc_token",
++     "agent_rtc_uid": "123",
++     "remote_rtc_uids": ["456"],
++     "geofence": {
++       "area": "GLOBAL",
++       "exclude_area": "INDIA"
++     },
++     "llm": {
++       // ... LLM configuration
++     },
++     "tts": {
++       // ... TTS configuration
++     }
++   }
++ }
++ ```
++
++ </TabsContent>
++ </Tabs>
++
++ ### Configure RTC regional access 
++
++ The Conversational AI Engine and Agora RTC services are independent, and their regional access restriction configurations are separate. To implement complete end-to-end regional access restrictions and ensure that the entire call chain with the agent is confined to a specified region, you must also configure RTC regional access restrictions. For more information, see [Restrict media zones](../../realtime-media/rtc/build/manage-connection-and-quality/geofencing).
++
++ ## Data residency
++
++ In addition to configuring regional access restrictions for the Conversational AI Engine, some LLM, TTS, and ASR vendors offer data residency services in different regions. You can ensure that data is not transferred across regions by configuring the URLs used by the LLM, TTS, and ASR modules.
++
++ For example, ElevenLabs supports selecting data processing regions through different URL endpoints. For more information, see the [ElevenLabs documentation](https://elevenlabs.io/docs/overview/administration/data-residency).
++
++ The following example shows how to configure the ElevenLabs TTS service using a URL endpoint for the European region:
++
++ ```json
++ {
++   "properties": {
++     "tts": {
++       "vendor": {
++         "name": "elevenlabs"
++       },
++       "url": "wss://api.eu.elevenlabs.io/v1/text-to-speech/{voice_id}/stream-input"
++     }
++   }
++ }
++ ```
++
++ ## Best practices
++
++ To ensure that data remains entirely within the designated region, follow these recommendations:
++
++ 1. **Configure regional restrictions for the Conversational AI Engine**: Use the `geofence` object to restrict server access regions.
++ 2. **Configure RTC regional restrictions**: Configure the corresponding regional access restrictions in the RTC SDK.
++ 3. **Select regional AI services**: When configuring LLM, TTS, and ASR services, select a provider that supports regional data residency and use the corresponding regional URL endpoint.
++ 4. **Verify the configuration**: Before deploying to production, thoroughly test that regional access restrictions work correctly and that data is not transferred across regions.
++
++ ## Considerations
++
++ Keep the following in mind when implementing regional access restrictions:
++
++ - **Performance impact**: Regional access restrictions may affect user experience. If a user's location is far from the designated region, network latency may increase.
++ - **Service availability**: When regional access restrictions are enabled and the server in the specified region is unavailable or lacks sufficient resources, the service returns an error and does not automatically switch to another region.
++ - **Configuration consistency**: Ensure that the regional configurations of the Conversational AI Engine, RTC SDK, and LLM, TTS, and ASR services are consistent to prevent data transfer across regions.
++ - **Compliance requirements**: Before configuring regional access restrictions, understand the legal and regulatory requirements of the target region to ensure that the configuration complies with local data protection and privacy regulations.
++
+
+ ❯ src/lib/docs-content-regressions.test.ts:267:21
+    265|     const content = readDoc('ai/best-practices/regional-restrictions.m…
+    266|
+    267|     expect(content).toContain(
+       |                     ^
+    268|       '[Restrict media zones](../../realtime-media/video/build/manage-…
+    269|     );
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[17/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > keeps AI filler words MCP servers link on the Conversational AI join API
+AssertionError: expected '---\ntitle: Talking while waiting\nde…' to contain '[MCP servers](/en/api-reference/api-r…'
+
+- Expected
++ Received
+
+- [MCP servers](/en/api-reference/api-ref/conversational-ai/join#request-body-properties-llm-mcp-servers)
++ ---
++ title: Talking while waiting
++ description: Use filler words to fill silence during LLM processing and create more natural conversations.
++ ---
++ In conversational AI, delays in LLM responses may cause users to wonder if the agent is still processing, repeat their question, or disengage entirely. Filler words address this by playing short phrases while the agent waits for the LLM to generate a response. This keeps the conversation flowing, reduces user anxiety, and creates a more human-like interaction.
++
++ Common use cases for filler words include:
++
++ - **MCP tool calls**: When the agent invokes tools through an [MCP server](../tools/mcp-tools), response times can increase significantly. Filler words bridge this gap while the agent waits for tool results.
++ - **Complex queries**: Queries that require more LLM processing time benefit from a brief acknowledgment to signal that the agent is working on a response.
++ - **Customer service scenarios**: In support interactions, filler words such as "Let me look into that for you" reassure users that their request is being handled.
++
++ ## Understand the tech
++
++ You configure filler words as part of the agent's configuration. Their behavior depends on the content mode you choose and how the engine times playback against the main LLM response.
++
++ ### Filler word modes
++
++ Specify where filler word content comes from:
++
++ - **Static** (default): Selects a phrase from a predefined list. This is also the behavior when no mode is set.
++ - **Generated**: Dynamically generates a filler phrase from the recent conversation. You can use only the message that triggered the current turn or widen the window to multiple recent messages. If generation doesn't produce a usable phrase in time, the agent plays a static phrase instead.
++
++ :::info
++ Generated mode must be set explicitly, and you still need to configure a static fallback list. The filler-word generation service is Agora-hosted, and you don't need to configure an additional model, endpoint, or credentials.
++ :::
++
++ ### Filler word selection and playback
++
++ For qualifying speech input or a [custom instruction](/en/api-reference/api-ref/conversational-ai/think), the engine starts the main LLM request and dynamic filler word generation at the same time:
++
++ 1. If the main LLM produces playable content before the response wait threshold elapses, the agent plays the main reply directly, without playing a filler word.
++ 2. If the main LLM is still waiting when the threshold elapses and a dynamic filler word is already ready, the agent plays the dynamic filler word.
++ 3. If the dynamic filler word isn't ready, generation failed, or the content is invalid, the agent plays a static fallback filler word instead. The same fallback applies when the current message has no usable text, the engine can't locate the current message, or the input exceeds the effective capacity of the hosted generation model.
++ 4. Playing a filler word doesn't cancel, discard, or restart the main LLM request. The agent continues into the main reply once it's ready.
++
++ The agent plays at most one filler word per turn. A dynamic filler word that arrives late doesn't replace content that's already been selected, and it doesn't trigger a second playback. Prefetch turns don't trigger filler words.
++
++ When you use static mode, or don't set a mode, the engine doesn't start dynamic filler word generation at all. Once the main LLM's wait time reaches the response wait threshold, the agent selects and plays a static phrase directly.
++
++ ## Prerequisites
++
++ - Use the [Agora CLI](/en/introduction/agora-cli) to create or select an Agora project, and verify project readiness:
++
++   ```bash
++   agora login
++   agora project create conv-ai-tutorial
++   agora project use conv-ai-tutorial
++   agora project doctor
++   ```
++
++ - Implemented the basic logic for interacting with a conversational AI agent by following the [quickstart](../../get-started/quickstart).
++
++ ## Implementation
++
++ Configure static or generated filler words, depending on the mode you want to use.
++
++ ### Configure static filler words
++
++ The following example configures filler words to play a random phrase when the LLM takes longer than 1.5 seconds to respond:
++
++ <Tabs defaultValue="python" groupId="ai-sdk-language" persist>
++ <TabsList>
++   <TabsTrigger value="python">Python SDK</TabsTrigger>
++   <TabsTrigger value="typescript">TypeScript SDK</TabsTrigger>
++   <TabsTrigger value="go">Go SDK</TabsTrigger>
++   <TabsTrigger value="rest-api">REST API</TabsTrigger>
++ </TabsList>
++
++ <TabsContent value="python">
++
++ ```python
++ from agora_agent import (
++     FillerWordsConfig,
++     FillerWordsContent,
++     FillerWordsContentStaticConfig,
++     FillerWordsTrigger,
++     FillerWordsTriggerFixedTimeConfig,
++ )
++
++ # ... other agent configuration ...
++ .with_filler_words(FillerWordsConfig(
++     enable=True,
++     trigger=FillerWordsTrigger(
++         fixed_time_config=FillerWordsTriggerFixedTimeConfig(response_wait_ms=1500),
++     ),
++     content=FillerWordsContent(
++         mode='static',
++         static_config=FillerWordsContentStaticConfig(
++             phrases=[
++                 'Let me look into that.',
++                 'One moment, please.',
++                 'Sure, give me a second.',
++                 'Hmmm, let me check.',
++             ],
++             selection_rule='shuffle',
++         ),
++     ),
++ ))
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="typescript">
++
++ ```typescript
++ import type { FillerWordsConfig } from 'agora-agents';
++
++ const fillerWords: FillerWordsConfig = {
++   enable: true,
++   trigger: {
++     fixed_time_config: { response_wait_ms: 1500 },
++   },
++   content: {
++     mode: 'static',
++     static_config: {
++       phrases: [
++         'Let me look into that.',
++         'One moment, please.',
++         'Sure, give me a second.',
++         'Hmmm, let me check.',
++       ],
++       selection_rule: 'shuffle',
++     },
++   },
++ };
++
++ // ... other agent configuration ...
++ .withFillerWords(fillerWords);
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="go">
++
++ ```go
++ fillerWords := &agentkit.FillerWordsConfig{
++     Enable: Agora.Bool(true),
++     Trigger: &agentkit.FillerWordsTrigger{
++         FixedTimeConfig: &agentkit.FillerWordsTriggerFixedTimeConfig{
++             ResponseWaitMs: Agora.Int(1500),
++         },
++     },
++     Content: &agentkit.FillerWordsContent{
++         Mode: agentkit.FillerWordsContentModeStatic.Ptr(),
++         StaticConfig: &agentkit.FillerWordsContentStaticConfig{
++             Phrases: []string{
++                 "Let me look into that.",
++                 "One moment, please.",
++                 "Sure, give me a second.",
++                 "Hmmm, let me check.",
++             },
++             SelectionRule: agentkit.FillerWordsSelectionRuleShuffle.Ptr(),
++         },
++     },
++ }
++
++ // ... other agent configuration ...
++ WithFillerWords(fillerWords)
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="rest-api">
++
++ Add the following `filler_words` object to `properties` in your [Start a conversational AI agent](/en/api-reference/api-ref/conversational-ai/join) request body:
++
++ ```json
++ "filler_words": {
++   "enable": true,
++   "trigger": {
++     "fixed_time_config": {
++       "response_wait_ms": 1500
++     }
++   },
++   "content": {
++     "mode": "static",
++     "static_config": {
++       "phrases": [
++         "Let me look into that.",
++         "One moment, please.",
++         "Sure, give me a second.",
++         "Hmmm, let me check."
++       ],
++       "selection_rule": "shuffle"
++     }
++   }
++ }
++ ```
++
++ </TabsContent>
++ </Tabs>
++
++ **Field reference**
++
++ | Parameter | Type | Required | Description |
++ |---|---|---|---|
++ | `enable` | Boolean | No | Whether to enable filler words. Requires `content.static_config` when set to `true`. Defaults to `false`. |
++ | `trigger.fixed_time_config.response_wait_ms` | Integer | No | LLM response wait threshold in milliseconds, from `100` to `10000`. Defaults to `1500`. |
++ | `content.mode` | String | No | Content mode. Set to `static` or omit for static filler words. Defaults to `static`. |
++ | `content.static_config` | Object | Yes | Static filler word configuration. Required whenever filler words are enabled. |
++ | `content.static_config.phrases` | Array of String | Yes | List of static filler words. Supports 1 to 100 non-empty strings, each up to 20 words or 20 non-Latin characters. |
++ | `content.static_config.selection_rule` | String | No | Selection rule for choosing phrases. Accepts `shuffle` or `round_robin`. Defaults to `shuffle`. |
++
++ The static phrase list supports 1 to 100 non-empty strings. Each phrase supports up to 20 words (Latin scripts) or 20 characters (Chinese and other non-Latin scripts).
++
++ Choose a response wait threshold based on your use case:
++
++ - **Lower values** (500-1000 ms): Better for fast-paced interactions where silence is more noticeable.
++ - **Higher values** (1500-3000 ms): Suitable for scenarios where users expect some processing time, such as complex queries or data lookups.
++
++ ### Configure generated filler words
++
++ Set the content mode to generated, and keep a static fallback configured:
++
++ <Tabs defaultValue="python" groupId="ai-sdk-language" persist>
++ <TabsList>
++   <TabsTrigger value="python">Python SDK</TabsTrigger>
++   <TabsTrigger value="typescript">TypeScript SDK</TabsTrigger>
++   <TabsTrigger value="go">Go SDK</TabsTrigger>
++   <TabsTrigger value="rest-api">REST API</TabsTrigger>
++ </TabsList>
++
++ <TabsContent value="python">
++
++ ```python
++ from agora_agent import (
++     FillerWordsConfig,
++     FillerWordsContent,
++     FillerWordsContentGeneratedConfig,
++     FillerWordsContentStaticConfig,
++     FillerWordsTrigger,
++     FillerWordsTriggerFixedTimeConfig,
++ )
++
++ # ... other agent configuration ...
++ .with_filler_words(FillerWordsConfig(
++     enable=True,
++     trigger=FillerWordsTrigger(
++         fixed_time_config=FillerWordsTriggerFixedTimeConfig(response_wait_ms=1500),
++     ),
++     content=FillerWordsContent(
++         mode='generated',
++         static_config=FillerWordsContentStaticConfig(
++             phrases=['Let me look into that.', "I'm on it."],
++             selection_rule='shuffle',
++         ),
++         generated_config=FillerWordsContentGeneratedConfig(
++             prompt='Generate a short, natural filler phrase indicating you are processing the request. Do not answer the question directly.',
++             context_message_limit=4,
++             history_character_limit=1000,
++         ),
++     ),
++ ))
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="typescript">
++
++ ```typescript
++ import type { FillerWordsConfig } from 'agora-agents';
++
++ const fillerWords: FillerWordsConfig = {
++   enable: true,
++   trigger: {
++     fixed_time_config: { response_wait_ms: 1500 },
++   },
++   content: {
++     mode: 'generated',
++     static_config: {
++       phrases: ['Let me look into that.', "I'm on it."],
++       selection_rule: 'shuffle',
++     },
++     generated_config: {
++       prompt: 'Generate a short, natural filler phrase indicating you are processing the request. Do not answer the question directly.',
++       context_message_limit: 4,
++       history_character_limit: 1000,
++     },
++   },
++ };
++
++ // ... other agent configuration ...
++ .withFillerWords(fillerWords);
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="go">
++
++ ```go
++ fillerWords := &agentkit.FillerWordsConfig{
++     Enable: Agora.Bool(true),
++     Trigger: &agentkit.FillerWordsTrigger{
++         FixedTimeConfig: &agentkit.FillerWordsTriggerFixedTimeConfig{
++             ResponseWaitMs: Agora.Int(1500),
++         },
++     },
++     Content: &agentkit.FillerWordsContent{
++         Mode: agentkit.FillerWordsContentModeGenerated.Ptr(),
++         StaticConfig: &agentkit.FillerWordsContentStaticConfig{
++             Phrases:       []string{"Let me look into that.", "I'm on it."},
++             SelectionRule: agentkit.FillerWordsSelectionRuleShuffle.Ptr(),
++         },
++         GeneratedConfig: &agentkit.FillerWordsContentGeneratedConfig{
++             Prompt:                Agora.String("Generate a short, natural filler phrase indicating you are processing the request. Do not answer the question directly."),
++             ContextMessageLimit:   Agora.Int(4),
++             HistoryCharacterLimit: Agora.Int(1000),
++         },
++     },
++ }
++
++ // ... other agent configuration ...
++ WithFillerWords(fillerWords)
++ ```
++
++ </TabsContent>
++
++ <TabsContent value="rest-api">
++
++ Add the following `filler_words` object to `properties` in your [Start a conversational AI agent](/en/api-reference/api-ref/conversational-ai/join) request body:
++
++ ```json
++ "filler_words": {
++   "enable": true,
++   "trigger": {
++     "fixed_time_config": {
++       "response_wait_ms": 1500
++     }
++   },
++   "content": {
++     "mode": "generated",
++     "static_config": {
++       "phrases": [
++         "Let me look into that.",
++         "I'm on it."
++       ],
++       "selection_rule": "shuffle"
++     },
++     "generated_config": {
++       "prompt": "Generate a short, natural filler phrase indicating you are processing the request. Do not answer the question directly.",
++       "context_message_limit": 4,
++       "history_character_limit": 1000
++     }
++   }
++ }
++ ```
++
++ </TabsContent>
++ </Tabs>
++
++ **Field reference**
++
++ | Parameter | Type | Required | Description |
++ |---|---|---|---|
++ | `enable` | Boolean | No | Whether to enable filler words. Requires a static fallback phrase list when set to `true`. Defaults to `false`. |
++ | `trigger.fixed_time_config.response_wait_ms` | Integer | No | LLM response wait threshold in milliseconds, from `100` to `10000`. Defaults to `1500`. |
++ | `content.mode` | String | Yes | Set to `generated` to enable generated filler words. |
++ | `content.static_config` | Object | Yes | Static fallback configuration. Used whenever the generated filler word isn't available. |
++ | `content.static_config.phrases` | Array of String | Yes | Static fallback phrases, supporting 1 to 100 non-empty strings, each up to 20 words or 20 non-Latin characters. |
++ | `content.generated_config` | Object | No | Generated filler word configuration. Uses the default prompt and context limits when omitted. |
++ | `content.generated_config.prompt` | String | No | Prompt used to generate the filler word. Fully replaces Agora's default prompt, and applies over the same conversation context window. |
++ | `content.generated_config.context_message_limit` | Integer | No | How many of the most recent conversation messages to use for generation, counting the current turn's message. Accepts `1` to `6`. Defaults to `1`. |
++ | `content.generated_config.history_character_limit` | Integer | No | Maximum combined characters of the earlier messages in the window. Accepts `0` to `10000`. Defaults to `1000`. |
++
++ Filler-word generation is Agora-hosted, so there's no model provider field to configure. Generation runs in parallel with the main LLM request, and falls back to the static phrase list if it isn't ready by the response wait threshold. Providing `generated_config` while `content.mode` is `static` or omitted returns `InvalidFieldValue`.
++
++ #### Widen the conversation window
++
++ By default, the generator reads only the message that triggered the current turn. Use `context_message_limit` and `history_character_limit` together to widen that window:
++
++ - `context_message_limit` sets how many of the most recent conversation messages the generator receives, counting the current turn's message. It accepts `1` to `6` and defaults to `1`. Earlier user and agent messages are only included when you set it to `2` or higher.
++ - `history_character_limit` caps the combined length of the earlier messages in the window. It counts Unicode code points, and doesn't count the current turn's message against the limit. It accepts `0` to `10000` and defaults to `1000`. Set it to `0` to leave the earlier messages uncapped, which still leaves the complete input bounded by the generation model's effective input capacity.
++ - When the input exceeds either limit, the oldest messages in the window are dropped whole, and messages are never truncated. If a filler phrase still can't be generated, the agent plays a static fallback phrase.
++
++ :::info
++ Widening the window sends earlier messages to the generation service. This increases the volume of input text, and the generated phrase may be less accurate or restate earlier parts of the conversation. Omit `context_message_limit` or set it to `1` to send the current turn's message only.
++ :::
++
++ ## Best practices
++
++ Keep the following tips in mind when configuring filler words:
++
++ - **Keep phrases short and natural**: Use brief, conversational phrases that sound like something a person would say.
++ - **Match phrasing to your use case**: For customer support agents, use reassuring phrases like "Let me look into that for you." For casual assistants, use informal phrases like "Hmm, one sec."
++ - **Tune the trigger threshold**: Start with a response wait threshold of 1500 ms and adjust based on your LLM's typical response time. If your agent frequently invokes tools, consider a lower threshold to cover longer processing times.
++ - **Provide enough variety**: Include at least 4-6 phrases to avoid sounding repetitive. Use `shuffle` selection to maximize variety across conversation turns.
++ - **Keep a solid static fallback**: When using generated mode, still provide a well-chosen static phrase list, since it plays whenever generation isn't ready in time.
++ - **Widen the context window only when you need it**: The default single-message window suits most agents and keeps the generation input small. Raise `context_message_limit` when filler phrases need to reflect an ongoing multi-turn exchange, such as a support agent working through a troubleshooting sequence.
++
++ ## References
++
++ - [Start a conversational AI agent](/en/api-reference/api-ref/conversational-ai/join)
++
+
+ ❯ src/lib/docs-content-regressions.test.ts:289:21
+    287|     const content = readDoc('ai/build/shape-the-conversation/filler-wo…
+    288|
+    289|     expect(content).toContain(
+       |                     ^
+    290|       '[MCP servers](/en/api-reference/api-ref/conversational-ai/join#…
+    291|     );
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[18/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > keeps Ares ASR pricing link in the AI reference pricing page
+AssertionError: expected '---\ntitle: ARES\ndescription: >\n In…' to contain '[pricing](../../reference/pricing)'
+
+- Expected
++ Received
+
+- [pricing](../../reference/pricing)
++ ---
++ title: ARES
++ description: >
++  Integrate ARES ASR into Conversational AI Engine.
++ ---
++
++ Adaptive Recognition Engine for Speech (ARES) provides built-in real-time speech-to-text, offering seamless integration with low latency and reliable performance for conversational AI applications.
++
++ ### Sample configuration
++
++ The following example shows how to configure ARES ASR when starting a conversational AI agent.
++
++ <Tabs defaultValue="python" groupId="ai-sdk-language" persist>
++ <TabsList>
++   <TabsTrigger value="python">Python SDK</TabsTrigger>
++   <TabsTrigger value="typescript">TypeScript SDK</TabsTrigger>
++   <TabsTrigger value="go">Go SDK</TabsTrigger>
++   <TabsTrigger value="rest-api">REST API</TabsTrigger>
++ </TabsList>
++ <TabsContent value="python">
++
++ ```python
++ from agora_agent import Agent, AresSTT
++
++ # client is your configured Agora client
++ agent = (
++     Agent(client)
++     .with_stt(AresSTT(
++         keywords=['Agora', 'Conversational AI', 'RTC'],
++     ))
++     .with_llm(...)  # configure your LLM vendor
++     .with_tts(...)  # configure your TTS vendor
++ )
++ ```
++
++ `AresSTT` has no `language` parameter. ARES uses the recognition language set through the agent's turn detection configuration, using `with_turn_detection()`, which defaults to `en-US`.
++
++ </TabsContent>
++
++ <TabsContent value="typescript">
++
++ ```typescript
++ import { Agent, AresSTT } from 'agora-agents';
++
++ // client is your configured Agora client
++ const agent = new Agent({ client })
++   .withStt(new AresSTT({
++     keywords: ['Agora', 'Conversational AI', 'RTC'],
++   }))
++   .withLlm(/* configure your LLM vendor */)
++   .withTts(/* configure your TTS vendor */);
++ ```
++
++ `AresSTT` has no `language` option. ARES uses the recognition language set through the agent's turn detection configuration, using `withTurnDetection()`, which defaults to `en-US`.
++
++ </TabsContent>
++
++ <TabsContent value="go">
++
++ ```go
++ import (
++     "github.com/AgoraIO/agora-agents-go/v2/agentkit"
++     "github.com/AgoraIO/agora-agents-go/v2/agentkit/vendors"
++ )
++
++ // client is your configured Agora client
++ agent := agentkit.NewAgent(client).WithStt(
++     vendors.NewAresSTT(vendors.AresSTTOptions{
++         Keywords: []string{"Agora", "Conversational AI", "RTC"},
++     }),
++ ).WithLlm(/* configure your LLM vendor */).
++   WithTts(/* configure your TTS vendor */)
++ ```
++
++ `AresSTTOptions` has no `Language` field. ARES uses the recognition language set through the agent's turn detection configuration, using `WithTurnDetection()`, which defaults to `en-US`.
++
++ </TabsContent>
++
++ <TabsContent value="rest-api">
++
++ Use the following `asr` configuration in your request:
++
++ ```json
++ "asr": {
++   "vendor": "ares",
++   "language": "en-US",
++   "keywords": ["Agora", "Conversational AI", "RTC"]
++ }
++ ```
++
++ </TabsContent>
++ </Tabs>
++
++ ### Key parameters
++
++ <ParameterList title="asr" required={true}>
++  <Parameter name="vendor" type="string" required={true}>
++  ASR provider. Set to `ares` to use Adaptive Recognition Engine for Speech.
++  </Parameter>
++  <Parameter name="language" type="string" required={true}>
++   The BCP-47 language tag identifying the primary language used for agent interaction.
++   See [Supported languages](/en/realtime-media/speech-to-text/reference/supported-languages#real-time-transcription) for the complete list.
++  </Parameter>
++  <Parameter name="keywords" type="array[string]" required={false}>
++  Keywords used to improve ASR recognition accuracy for specific terms, such as brand names, product names, or industry jargon. Supports up to 128 keywords. See [Configure ASR keywords](../../build/shape-the-conversation/asr-keywords) for details.
++  </Parameter>
++ </ParameterList>
++
+
+ ❯ src/lib/docs-content-regressions.test.ts:407:21
+    405|     const content = readDoc('ai/models/asr/ares.mdx');
+    406|
+    407|     expect(content).toContain('[pricing](../../reference/pricing)');
+       |                     ^
+    408|     expect(content).not.toContain('[pricing](/en/ai/pricing)');
+    409|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[19/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > keeps block-style lists and notes out of GFM table cells
+AssertionError: expected [ Array(1) ] to deeply equal []
+
+- Expected
++ Received
+
+- []
++ [
++   "content/docs/en/realtime-media/iot/reference/supported-platforms.mdx:12:   | Linux | <ul><li>x86_64: gcc 2.6.35 or higher.</li><li>ARM:<ul><li>arm-linux-gnueabi 4.4.x or higher</li><li>arm-linux-gnueabihf 4.8.x or higher</li><li>aarch64-linux-gnu 4.8.x or higher</li><li>arm-linux-musleabihf 5.2.x or higher</li><li>arm-linux-musleabi 5.5.x or higher</li><li>aarch64-linux-musl 5.5.x or higher</li><li>arm-linux-uclibceabi 4.4.x or higher</li><li>arm-linux-uclibceabihf 4.8.x or higher</li></ul></li><li>MIPS: mips-linux-uclibceabihf 4.7.x or higher.</li></ul> | - |",
++ ]
+
+ ❯ src/lib/docs-content-regressions.test.ts:515:25
+    513|       }
+    514|
+    515|       expect(offenders).toEqual([]);
+       |                         ^
+    516|     },
+    517|     SOURCE_LOADER_TEST_TIMEOUT,
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[20/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > keeps web connection status management free of shared prerequisite and implementation headings
+Error: ENOENT: no such file or directory, open '/home/nick/Repositories/nift/nift-experiments/agora-baseline/build/content/docs/en/realtime-media/video/build/manage-connection-and-quality/connection-status-management.mdx'
+ ❯ readDoc src/lib/docs-content-regressions.test.ts:119:12
+    117|
+    118|   function readDoc(relativePath: string) {
+    119|     return readFileSync(resolve(docsRoot, relativePath), 'utf8');
+       |            ^
+    120|   }
+    121|
+ ❯ src/lib/docs-content-regressions.test.ts:700:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[21/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > separates the reconnection platform group from the implementation platform group
+Error: ENOENT: no such file or directory, open '/home/nick/Repositories/nift/nift-experiments/agora-baseline/build/content/docs/en/realtime-media/video/build/manage-connection-and-quality/connection-status-management.mdx'
+ ❯ readDoc src/lib/docs-content-regressions.test.ts:119:12
+    117|
+    118|   function readDoc(relativePath: string) {
+    119|     return readFileSync(resolve(docsRoot, relativePath), 'utf8');
+       |            ^
+    120|   }
+    121|
+ ❯ src/lib/docs-content-regressions.test.ts:710:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > keeps PR 285 code and table recovery pages from regressing to placeholders
+Error: ENOENT: no such file or directory, open '/home/nick/Repositories/nift/nift-experiments/agora-baseline/build/content/docs/en/realtime-media/broadcast-streaming/build/optimize-quality-and-connection/optimize-multihost-video.mdx'
+ ❯ readDoc src/lib/docs-content-regressions.test.ts:119:12
+    117|
+    118|   function readDoc(relativePath: string) {
+    119|     return readFileSync(resolve(docsRoot, relativePath), 'utf8');
+       |            ^
+    120|   }
+    121|
+ ❯ src/lib/docs-content-regressions.test.ts:727:23
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[23/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > keeps app size optimization extension lists collapsed across products
+AssertionError: expected [ '<Accordion title=', …(151) ] to have a length of 144 but got 152
+
+- Expected
++ Received
+
+- 144
++ 152
+
+ ❯ src/lib/docs-content-regressions.test.ts:1025:57
+    1023|
+    1024|       expect(content.match(/<Accordions>/g) ?? []).toHaveLength(8);
+    1025|       expect(content.match(/<Accordion title=/g) ?? []).toHaveLength(1…
+       |                                                         ^
+    1026|       expect(content).not.toContain('**AI Noise Suppression**');
+    1027|       expect(content).not.toContain('**Voice Driver**');
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[24/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > keeps voice calling markdown free of hidden and ambiguous rendering syntax
+AssertionError: expected [ …(2) ] to deeply equal []
+
+- Expected
++ Received
+
+- []
++ [
++   "content/docs/en/realtime-media/rtc/build/authenticate-users/deploy-token-server.mdx: shell command is labeled as go",
++   "content/docs/en/realtime-media/rtc/build/authenticate-users/integrate-token-generation.mdx: shell command is labeled as go",
++ ]
+
+ ❯ src/lib/docs-content-regressions.test.ts:1216:23
+    1214|       '|Log |Media server logs generated by the Agora servers when acc…
+    1215|     );
+    1216|     expect(offenders).toEqual([]);
+       |                       ^
+    1217|   });
+    1218|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[25/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > keeps IoT SDK compatibility table cells readable without raw HTML lists
+AssertionError: expected undefined to be defined
+ ❯ src/lib/docs-content-regressions.test.ts:1350:20
+    1348|       );
+    1349|
+    1350|       expect(page).toBeDefined();
+       |                    ^
+    1351|       expect(page?.type).toBe('docs');
+    1352|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[26/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > keeps video quickstart free of the broken gradle code fence structure
+Error: ENOENT: no such file or directory, open '/home/nick/Repositories/nift/nift-experiments/agora-baseline/build/content/docs/en/realtime-media/video/get-started-sdk.mdx'
+ ❯ src/lib/docs-content-regressions.test.ts:1543:20
+    1541|
+    1542|   it('keeps video quickstart free of the broken gradle code fence stru…
+    1543|     const source = readFileSync(
+       |                    ^
+    1544|       resolve(docsRoot, 'realtime-media/video/get-started-sdk.mdx'),
+    1545|       'utf8',
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[27/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > keeps voice quickstart free of isolated directive closers in setup steps
+Error: ENOENT: no such file or directory, open '/home/nick/Repositories/nift/nift-experiments/agora-baseline/build/content/docs/en/realtime-media/voice/quickstart.mdx'
+ ❯ src/lib/docs-content-regressions.test.ts:1558:20
+    1556|
+    1557|   it('keeps voice quickstart free of isolated directive closers in set…
+    1558|     const source = readFileSync(
+       |                    ^
+    1559|       resolve(docsRoot, 'realtime-media/voice/quickstart.mdx'),
+    1560|       'utf8',
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[28/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > keeps realtime video get-started-sdk sections that were missing in the PDF review
+Error: ENOENT: no such file or directory, open '/home/nick/Repositories/nift/nift-experiments/agora-baseline/build/content/docs/en/realtime-media/video/get-started-sdk.mdx'
+ ❯ src/lib/docs-content-regressions.test.ts:1576:20
+    1574|
+    1575|   it('keeps realtime video get-started-sdk sections that were missing …
+    1576|     const source = readFileSync(
+       |                    ^
+    1577|       resolve(docsRoot, 'realtime-media/video/get-started-sdk.mdx'),
+    1578|       'utf8',
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[29/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > keeps nested and repeated AI model callouts rendered as callout containers
+AssertionError: expected [ …(2) ] to have a length of 3 but got 2
+
+- Expected
++ Received
+
+- 3
++ 2
+
+ ❯ src/lib/docs-content-regressions.test.ts:2025:9
+    2023|       expect(
+    2024|         akoolProcessed.match(/<CalloutContainer type="info">/g) ?? [],
+    2025|       ).toHaveLength(3);
+       |         ^
+    2026|       expect(akoolProcessed).toContain('sales@agora.io');
+    2027|       expect(deepgramProcessed).toContain('<CalloutContainer type="war…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[30/36]⎯
+
+ FAIL  src/lib/docs-content-regressions.test.ts > docs content regressions > keeps CodeBlockTab panels code-only
+AssertionError: expected [ …(36) ] to deeply equal []
+
+- Expected
++ Received
+
+- []
++ [
++   "content/docs/en/realtime-media/rtc/build/capture-and-render-video/screen-sharing.mdx:1692 Since Apple does not support capturing the screen in the main process of the app, you create a separate extension for th",
++   "content/docs/en/realtime-media/rtc/build/capture-and-render-video/screen-sharing.mdx:1760 Agora currently supports the following two screen sharing options on the macOS and Windows platforms: - Share a specific",
++   "content/docs/en/realtime-media/rtc/build/capture-and-render-video/screen-sharing.mdx:1788 - Start screen sharing 1. Set the parameters according to your application use-case and call `startScreenCapture` to sta",
++   "content/docs/en/realtime-media/rtc/build/capture-and-render-video/screen-sharing.mdx:1823 When enabling screen sharing on Android, you only need to call the `startScreenCapture` method. Refer to the `screen_sha",
++   "content/docs/en/realtime-media/rtc/build/capture-and-render-video/screen-sharing.mdx:1829 1. Get the screen ID or the window ID To get the **Display ID** or **Window ID**, call the `getScreenCaptureSources` met",
++   "content/docs/en/realtime-media/rtc/build/capture-and-render-video/screen-sharing.mdx:1935 - Before starting screen sharing, call the `setAudioScenario` method and set the **audio scenario** to `audioScenarioGam",
++   "content/docs/en/realtime-media/rtc/build/capture-and-render-video/screen-sharing.mdx:1943 - Before starting screen sharing, call the `setAudioScenario` method and set the **audio scenario** to `audioScenarioGam",
++   "content/docs/en/realtime-media/rtc/build/capture-and-render-video/screen-sharing.mdx:2031 When enabling screen sharing on Android, you only need to call the `startScreenCapture` method. Refer to the [screen sha",
++   "content/docs/en/realtime-media/rtc/build/capture-and-render-video/screen-sharing.mdx:2037 Since Apple does not support capturing the screen in the main process of the app, you create a separate extension for th",
++   "content/docs/en/realtime-media/rtc/build/capture-and-render-video/screen-sharing.mdx:2229 You use the iOS native `ReplayKit` framework in the extension to record the screen, and then add the screen sharing stre",
++   "content/docs/en/realtime-media/rtc/build/capture-and-render-video/screen-sharing.mdx:2237 Windows or macOS systems assign a unique **Display ID** to each screen and a unique **Window ID** to each window. Agora ",
++   "content/docs/en/realtime-media/rtc/build/capture-and-render-video/screen-sharing.mdx:2259 When enabling screen sharing on Android, call the `StartScreenCapture` method. Depending on the actual business use-case",
++   "content/docs/en/realtime-media/rtc/build/capture-and-render-video/screen-sharing.mdx:2301 Since Apple does not support capturing the screen in the main process of the app, you create a separate extension for th",
++   "content/docs/en/realtime-media/rtc/build/capture-and-render-video/screen-sharing.mdx:2401 Windows and macOS systems assign a unique **Display ID** to each screen and a unique **Window ID** to each window. Agora",
++   "content/docs/en/realtime-media/rtc/build/join-and-manage-channels/compile-run-sample-project.mdx:110 - A machine running macOS, Windows, or Linux - [Java Development Kit (JDK) 11](https://openjdk.org/projects/jdk/11/) or ",
++   "content/docs/en/realtime-media/rtc/build/join-and-manage-channels/compile-run-sample-project.mdx:117 - A machine running macOS - Xcode 10 or later - CocoaPods - A physical or virtual mobile device running iOS 9.0 or later",
++   "content/docs/en/realtime-media/rtc/build/join-and-manage-channels/compile-run-sample-project.mdx:618 1. In the path of the Blueprint API example, double-click **AgoraBPExample.uproject** to open the project. 1. Double-cli",
++   "content/docs/en/realtime-media/rtc/build/join-and-manage-channels/compile-run-sample-project.mdx:634 1. In the path of the Blueprint API example,, double-click **AgoraBPExample.uproject** to open the project. ![](https://",
++   "content/docs/en/realtime-media/rtc/build/join-and-manage-channels/compile-run-sample-project.mdx:814 1. In the C++ API example folder, double-click `AgoraExample.uproject` to open the project. 1. Double-click **MainLevel*",
++   "content/docs/en/realtime-media/rtc/build/join-and-manage-channels/compile-run-sample-project.mdx:830 1. In the C++ API example folder, double-click `AgoraExample.uproject` to open the project. 1. Choose **BasicVideoCallSc",
++   "content/docs/en/realtime-media/rtc/build/optimize-and-operate/app-size-optimization.mdx:3844 If your target platform is Android, use Gradle's `packagingOptions.exclude` properties to exclude unnecessary extension ",
++   "content/docs/en/realtime-media/rtc/build/optimize-and-operate/app-size-optimization.mdx:3868 If your target platform is iOS or macOS, follow these steps to reduce the size of your app: 1. Add the following script ",
++   "content/docs/en/realtime-media/rtc/build/optimize-and-operate/app-size-optimization.mdx:4583 If your target platform is Android, use Gradle's `packagingOptions.exclude` properties to exclude unnecessary extension ",
++   "content/docs/en/realtime-media/rtc/build/optimize-and-operate/app-size-optimization.mdx:4607 If your target platform is iOS or macOS, follow these steps to reduce the size of your app: 1. Add the following script ",
++   "content/docs/en/realtime-media/rtc/reference/supported-platforms.mdx:102 | Browser | Version requirements | Receiving audio and video Streams | Publishing audio and video streams | Screen shari",
++   "content/docs/en/realtime-media/rtc/reference/supported-platforms.mdx:112 | Browser | Version requirements | Receiving audio and video Streams | Publishing audio and video streams | Screen shari",
++   "content/docs/en/realtime-media/rtc/reference/supported-platforms.mdx:121 | Browser | Version requirements | Receiving audio and video Streams | Publishing audio and video streams | Screen shari",
++   "content/docs/en/realtime-media/rtc/reference/supported-platforms.mdx:140 | Browser | Version requirements | Receiving audio and video Streams | Publishing audio and video streams | Screen shari",
++   "content/docs/en/realtime-media/rtc/reference/supported-platforms.mdx:149 iOS only supports the system WebView. Therefore, support for the Web SDK is only related to the iOS system version. - iO",
++   "content/docs/en/realtime-media/rtc/reference/supported-platforms.mdx:172 | Browser | Version requirements | Receiving audio and video Streams | Publishing audio and video streams | Screen shari",
++   "content/docs/en/realtime-media/rtc/voice-quickstart.mdx:4252 - A machine running macOS, Windows, or Linux - [Java Development Kit (JDK) 11](https://openjdk.org/projects/jdk/11/) or ",
++   "content/docs/en/realtime-media/rtc/voice-quickstart.mdx:4261 - A machine running macOS - Xcode 10 or later - CocoaPods - A physical or virtual mobile device running iOS 9.0 or later",
++   "content/docs/en/realtime-media/rtc/voice-quickstart.mdx:4449 On Android devices, pop up a prompt box to obtain permission to use the microphone.",
++   "content/docs/en/realtime-media/rtc/voice-quickstart.mdx:4468 In Xcode, open the `info.plist` file and add the following content to the list on the right to obtain the corresponding ",
++   "content/docs/en/realtime-media/rtc/voice-quickstart.mdx:4827 To run the app on an Android device: 1. Turn on the developer options of the Android device and connect the Android devi",
++   "content/docs/en/realtime-media/rtc/voice-quickstart.mdx:4837 To run on the app on an iOS device: 1. Open the `ProjectName/ios/ProjectName.xcworkspace` folder using Xcode. 1. Connect",
++ ]
+
+ ❯ src/lib/docs-content-regressions.test.ts:2084:24
+    2082|     }
+    2083|
+    2084|     expect(violations).toEqual([]);
+       |                        ^
+    2085|   });
+    2086|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[31/36]⎯
+
+ FAIL  src/lib/docs-journeys.test.ts > docs journeys > keeps internal links under /en/ai pointed at existing docs routes
+AssertionError: expected [ { …(4) }, { …(4) }, { …(4) }, …(1) ] to deeply equal []
+
+- Expected
++ Received
+
+- []
++ [
++   {
++     "file": "en/ai/best-practices/audio-setup.mdx",
++     "kind": "root",
++     "normalized": "/en/realtime-media/rtc/build/optimize-and-operate/app-size-optimization/android",
++     "raw": "/en/realtime-media/rtc/build/optimize-and-operate/app-size-optimization/android",
++   },
++   {
++     "file": "en/ai/best-practices/audio-setup.mdx",
++     "kind": "root",
++     "normalized": "/en/realtime-media/rtc/build/optimize-and-operate/app-size-optimization/ios",
++     "raw": "/en/realtime-media/rtc/build/optimize-and-operate/app-size-optimization/ios",
++   },
++   {
++     "file": "en/ai/best-practices/audio-setup.mdx",
++     "kind": "root",
++     "normalized": "/en/realtime-media/rtc/build/enhance-the-audio-experience/ai-noise-suppression/web",
++     "raw": "/en/realtime-media/rtc/build/enhance-the-audio-experience/ai-noise-suppression/web",
++   },
++   {
++     "file": "en/ai/best-practices/audio-setup.mdx",
++     "kind": "root",
++     "normalized": "/en/realtime-media/rtc/build/enhance-the-audio-experience/ai-noise-suppression/web",
++     "raw": "/en/realtime-media/rtc/build/enhance-the-audio-experience/ai-noise-suppression/web",
++   },
++ ]
+
+ ❯ src/lib/docs-journeys.test.ts:90:22
+     88|     }
+     89|
+     90|     expect(failures).toEqual([]);
+       |                      ^
+     91|   }, 15_000);
+     92|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[32/36]⎯
+
+ FAIL  src/lib/overview-link-integrity.test.ts > overview entry links > groups real-time media overview cards by application scenario and supporting capability
+AssertionError: expected { …(5) } to match object { …(2) }
+(3 matching properties omitted from actual)
+
+- Expected
++ Received
+
+@@ -1,11 +1,8 @@
+  {
+    "Build live interaction": [
+-     "Interactive Live Streaming",
+-     "Broadcast Streaming",
+-     "Video Calling",
+-     "Voice Calling",
++     "Realtime Communication",
+    ],
+    "Extend live interaction": [
+      "Signaling",
+      "Chat",
+      "Whiteboard",
+
+ ❯ src/lib/overview-link-integrity.test.ts:185:7
+    183|     expect(
+    184|       extractSolutionCardTitlesByHeading('en/realtime-media/overview.m…
+    185|     ).toMatchObject({
+       |       ^
+    186|       'Build live interaction': [
+    187|         'Interactive Live Streaming',
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[33/36]⎯
+
+ FAIL  src/lib/legacy-sitemap/legacy-sitemap-audit.test.ts > legacy sitemap compatibility audit > targets existing new docs portal pages
+AssertionError: expected [ …(49) ] to deeply equal []
+
+- Expected
++ Received
+
+- []
++ [
++   "/en/realtime-media/agora-analytics/build/manage-agora-account",
++   "/en/realtime-media/im/get-started/manage-agora-account",
++   "/en/realtime-media/im/get-started/manage-agora-account",
++   "/en/realtime-media/rtc/manage-agora-account",
++   "/en/realtime-media/cloud-recording/manage-agora-account",
++   "/en/realtime-media/transcoding/build/manage-agora-account",
++   "/en/realtime-media/transcoding/reference/status-codes",
++   "/en/ai/reference/enable-conversational-ai",
++   "/en/realtime-media/marketplace/manage-agora-account",
++   "/en/realtime-media/marketplace/manage-agora-account",
++   "/en/realtime-media/marketplace/manage-agora-account",
++   "/en/realtime-media/marketplace/manage-agora-account",
++   "/en/realtime-media/marketplace/manage-agora-account",
++   "/en/realtime-media/marketplace/manage-agora-account",
++   "/en/realtime-media/marketplace/manage-agora-account",
++   "/en/realtime-media/flexible-classroom/build/manage-agora-account",
++   "/en/realtime-media/rtc/manage-agora-account",
++   "/en/realtime-media/whiteboard/build/manage-agora-account",
++   "/en/realtime-media/whiteboard/build/manage-agora-account",
++   "/en/realtime-media/whiteboard/build/manage-agora-account",
++   "/en/realtime-media/iot/build/set-up-authentication-and-security/authentication-workflow",
++   "/en/realtime-media/iot/build/set-up-authentication-and-security/authentication-workflow",
++   "/en/realtime-media/iot/build/stream-and-optimize-media/ensure-channel-quality",
++   "/en/realtime-media/iot/build/stream-and-optimize-media/ensure-channel-quality",
++   "/en/realtime-media/iot/reference/licensing",
++   "/en/realtime-media/iot/reference/licensing",
++   "/en/realtime-media/iot/build/set-up-authentication-and-security/media-stream-encryption",
++   "/en/realtime-media/iot/build/set-up-authentication-and-security/media-stream-encryption",
++   "/en/realtime-media/iot/build/stream-and-optimize-media/multi-channel-streaming",
++   "/en/realtime-media/iot/build/stream-and-optimize-media/multi-channel-streaming",
++   "/en/realtime-media/iot/build/manage-agora-account",
++   "/en/realtime-media/iot/build/manage-agora-account",
++   "/en/realtime-media/iot/reference/cloud-proxy-allowed-ips",
++   "/en/realtime-media/iot/reference/cloud-proxy-allowed-ips",
++   "/en/realtime-media/iot/reference/communicate-with-rtc-sdk",
++   "/en/realtime-media/iot/reference/communicate-with-rtc-sdk",
++   "/en/realtime-media/iot/build/set-up-authentication-and-security/authentication-workflow",
++   "/en/realtime-media/iot/build/set-up-authentication-and-security/authentication-workflow",
++   "/en/realtime-media/rtmp-gateway/build/manage-agora-account",
++   "/en/realtime-media/media-pull/build/manage-agora-account",
++   "/en/realtime-media/media-push/build/manage-agora-account",
++   "/en/realtime-media/on-premise-recording/manage-agora-account",
++   "/en/realtime-media/on-premise-recording/manage-agora-account",
++   "/en/realtime-media/speech-to-text/reference/manage-agora-account",
++   "/en/realtime-media/rtc-server-sdk/build/manage-agora-account",
++   "/en/realtime-media/rtm/manage-agora-account",
++   "/en/realtime-media/rtm/console-overview",
++   "/en/realtime-media/rtc/manage-agora-account",
++   "/en/realtime-media/rtc/manage-agora-account",
++ ]
+
+ ❯ src/lib/legacy-sitemap/legacy-sitemap-audit.test.ts:198:28
+    196|       .filter((target) => !docsPortalUrls.has(target));
+    197|
+    198|     expect(missingTargets).toEqual([]);
+       |                            ^
+    199|   });
+    200|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[34/36]⎯
+
+ FAIL  src/lib/search/golden-search-queries.test.ts > Global search golden queries > keeps every relative expected title attached to its authoritative indexed route
+AssertionError: expected [ 'signaling quickstart' ] to deeply equal []
+
+- Expected
++ Received
+
+- []
++ [
++   "signaling quickstart",
++ ]
+
+ ❯ src/lib/search/golden-search-queries.test.ts:733:24
+    731|     });
+    732|
+    733|     expect(mismatches).toEqual([]);
+       |                        ^
+    734|   });
+    735|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[35/36]⎯
+
+ FAIL  src/lib/search/golden-search-queries.test.ts > Global search golden queries > 'signaling quickstart' > returns guide with the real target in the top three
+AssertionError: expected 'quickstart' to contain 'signaling quickstart'
+
+Expected: "signaling quickstart"
+Received: "quickstart"
+
+ ❯ src/lib/search/golden-search-queries.test.ts:799:51
+    797|         expectedResult && resultContainsExpectedUrl(expectedResult, go…
+    798|       ).toBe(true);
+    799|       expect(expectedResult?.title.toLowerCase()).toContain(
+       |                                                   ^
+    800|         goldenCase.expectedTitle?.toLowerCase(),
+    801|       );
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[36/36]⎯
+
+
+ Test Files  8 failed (8)
+      Tests  36 failed | 234 passed (270)
+   Start at  05:52:36
+   Duration  28.65s (transform 11.11s, setup 1.15s, import 4.85s, tests 19.43s, environment 2.00s)
+

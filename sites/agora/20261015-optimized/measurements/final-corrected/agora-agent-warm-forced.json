@@ -1,0 +1,101 @@
+{
+  "label": "agora-agent-warm-forced",
+  "command": [
+    "/home/nick/.bun/bin/bun",
+    "tools/build.ts",
+    "--all"
+  ],
+  "exitCode": 0,
+  "wallSeconds": 92.27788064302877,
+  "sampledPeakTreeRssMiB": 1054.90234375,
+  "maxIndividualProcessRssMiB": 526.80078125,
+  "peak": {
+    "elapsedSeconds": 77.27686732704751,
+    "phase": "render",
+    "treeRssKiB": 1080220.0,
+    "processes": [
+      {
+        "pid": 2538023,
+        "name": "bun",
+        "ppid": 2538020,
+        "pgrp": 2538020,
+        "rssKiB": 17804.0
+      },
+      {
+        "pid": 2538024,
+        "name": "bun",
+        "ppid": 2538023,
+        "pgrp": 2538020,
+        "rssKiB": 32776.0
+      },
+      {
+        "pid": 2538048,
+        "name": "bun",
+        "ppid": 2538024,
+        "pgrp": 2538020,
+        "rssKiB": 28668.0
+      },
+      {
+        "pid": 2538338,
+        "name": "node",
+        "ppid": 2538048,
+        "pgrp": 2538020,
+        "rssKiB": 468764.0
+      },
+      {
+        "pid": 2538398,
+        "name": "node",
+        "ppid": 2538048,
+        "pgrp": 2538020,
+        "rssKiB": 532208.0
+      }
+    ]
+  },
+  "phaseEvents": [
+    {
+      "elapsedSeconds": 0.952983422903344,
+      "phase": "render",
+      "line": "[nift-pipeline-start] render"
+    },
+    {
+      "elapsedSeconds": 89.54631475405768,
+      "phase": "assets",
+      "line": "[nift-pipeline-start] assets"
+    },
+    {
+      "elapsedSeconds": 91.17843751003966,
+      "phase": "registration",
+      "line": "[nift-pipeline-start] registration"
+    },
+    {
+      "elapsedSeconds": 91.44670105096884,
+      "phase": "composition",
+      "line": "[nift-pipeline-start] composition"
+    }
+  ],
+  "milestones": [],
+  "samples": 2410,
+  "requestedSamplingSleepSeconds": 0.02,
+  "memoryDefinition": "Summed RSS of simultaneously observed workload process group plus descendants. Excludes Python observer and GNU time wrapper. Shared pages may be counted more than once; short-lived peaks can be missed. Not PSS or exact physical memory.",
+  "osCaches": "uncontrolled",
+  "observedSamplingGapSeconds": {
+    "median": 0.037013590103015304,
+    "min": 0.0335251500364393,
+    "max": 0.05999344680458307
+  },
+  "phaseAttribution": "Approximate; inferred from buffered command log lines. Verify against phaseEvents and build log.",
+  "componentPhases": [
+    {
+      "phase": "render",
+      "seconds": 88.593521127
+    },
+    {
+      "phase": "assets",
+      "seconds": 1.631945120000004
+    },
+    {
+      "phase": "registration",
+      "seconds": 0.26550491899999906
+    }
+  ]
+}

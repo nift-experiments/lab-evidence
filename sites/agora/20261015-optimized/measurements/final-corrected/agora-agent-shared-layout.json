@@ -1,0 +1,188 @@
+{
+  "label": "agora-agent-shared-layout",
+  "command": [
+    "/home/nick/.bun/bin/bun",
+    "tools/build.ts"
+  ],
+  "exitCode": 0,
+  "wallSeconds": 108.23635128093883,
+  "sampledPeakTreeRssMiB": 1088.78125,
+  "maxIndividualProcessRssMiB": 1013.96875,
+  "peak": {
+    "elapsedSeconds": 10.912692676996812,
+    "phase": "render",
+    "treeRssKiB": 1114912.0,
+    "processes": [
+      {
+        "pid": 2539101,
+        "name": "bun",
+        "ppid": 2539098,
+        "pgrp": 2539098,
+        "rssKiB": 17908.0
+      },
+      {
+        "pid": 2539102,
+        "name": "bun",
+        "ppid": 2539101,
+        "pgrp": 2539098,
+        "rssKiB": 36624.0
+      },
+      {
+        "pid": 2539225,
+        "name": "bun",
+        "ppid": 2539102,
+        "pgrp": 2539098,
+        "rssKiB": 28816.0
+      },
+      {
+        "pid": 2539248,
+        "name": "node",
+        "ppid": 2539225,
+        "pgrp": 2539098,
+        "rssKiB": 512764.0
+      },
+      {
+        "pid": 2539249,
+        "name": "node",
+        "ppid": 2539225,
+        "pgrp": 2539098,
+        "rssKiB": 518800.0
+      }
+    ]
+  },
+  "phaseEvents": [
+    {
+      "elapsedSeconds": 0.4843864128924906,
+      "phase": "openapi",
+      "line": "[nift-pipeline-start] openapi"
+    },
+    {
+      "elapsedSeconds": 0.48794941301457584,
+      "phase": "openapi-sync",
+      "line": "$ node scripts/sync-openapi-assets.mjs"
+    },
+    {
+      "elapsedSeconds": 0.6353827209677547,
+      "phase": "payloads",
+      "line": "[nift-pipeline-start] payloads"
+    },
+    {
+      "elapsedSeconds": 1.756766346981749,
+      "phase": "application",
+      "line": "[nift-pipeline-start] application"
+    },
+    {
+      "elapsedSeconds": 1.760189370950684,
+      "phase": "application-build-and-prerender",
+      "line": "$ TSS_STATIC_PRERENDER=true VITE_TSS_SPA_STATIC_EXPERIMENT=true vite build"
+    },
+    {
+      "elapsedSeconds": 8.576011659111828,
+      "phase": "render",
+      "line": "[nift-pipeline-start] render"
+    },
+    {
+      "elapsedSeconds": 105.26204577693716,
+      "phase": "assets",
+      "line": "[nift-pipeline-start] assets"
+    },
+    {
+      "elapsedSeconds": 107.00371193001047,
+      "phase": "registration",
+      "line": "[nift-pipeline-start] registration"
+    },
+    {
+      "elapsedSeconds": 107.26312367804348,
+      "phase": "composition",
+      "line": "[nift-pipeline-start] composition"
+    }
+  ],
+  "milestones": [
+    {
+      "elapsedSeconds": 3.3552250920329243,
+      "phase": "application-build-and-prerender",
+      "line": "vite v8.1.5 building client environment for production..."
+    },
+    {
+      "elapsedSeconds": 5.0711814479436725,
+      "phase": "application-build-and-prerender",
+      "line": "transforming...\u2713 3310 modules transformed."
+    },
+    {
+      "elapsedSeconds": 5.499762757914141,
+      "phase": "application-build-and-prerender",
+      "line": "rendering chunks..."
+    },
+    {
+      "elapsedSeconds": 5.90488211507909,
+      "phase": "application-build-and-prerender",
+      "line": "\u2713 built in 2.55s"
+    },
+    {
+      "elapsedSeconds": 5.905656208051369,
+      "phase": "application-build-and-prerender",
+      "line": "vite v8.1.5 building ssr environment for production..."
+    },
+    {
+      "elapsedSeconds": 6.621289212955162,
+      "phase": "application-build-and-prerender",
+      "line": "transforming...\u2713 244 modules transformed."
+    },
+    {
+      "elapsedSeconds": 6.699184767901897,
+      "phase": "application-build-and-prerender",
+      "line": "rendering chunks..."
+    },
+    {
+      "elapsedSeconds": 6.829136663116515,
+      "phase": "application-build-and-prerender",
+      "line": "\u2713 built in 923ms"
+    },
+    {
+      "elapsedSeconds": 6.909633527975529,
+      "phase": "application-build-and-prerender",
+      "line": "[prerender] Prerendering pages..."
+    },
+    {
+      "elapsedSeconds": 6.9106303548906,
+      "phase": "application-build-and-prerender",
+      "line": "[prerender] Concurrency: 20"
+    }
+  ],
+  "samples": 2876,
+  "requestedSamplingSleepSeconds": 0.02,
+  "memoryDefinition": "Summed RSS of simultaneously observed workload process group plus descendants. Excludes Python observer and GNU time wrapper. Shared pages may be counted more than once; short-lived peaks can be missed. Not PSS or exact physical memory.",
+  "osCaches": "uncontrolled",
+  "observedSamplingGapSeconds": {
+    "median": 0.036701531847938895,
+    "min": 0.033605897100642323,
+    "max": 0.08341535902582109
+  },
+  "phaseAttribution": "Approximate; inferred from buffered command log lines. Verify against phaseEvents and build log.",
+  "componentPhases": [
+    {
+      "phase": "openapi",
+      "seconds": 0.151152675
+    },
+    {
+      "phase": "payloads",
+      "seconds": 1.121220518
+    },
+    {
+      "phase": "application",
+      "seconds": 6.819135651
+    },
+    {
+      "phase": "render",
+      "seconds": 96.686002002
+    },
+    {
+      "phase": "assets",
+      "seconds": 1.7416323199999897
+    },
+    {
+      "phase": "registration",
+      "seconds": 0.25506705699999294
+    }
+  ]
+}

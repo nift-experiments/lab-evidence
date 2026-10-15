@@ -1,0 +1,86 @@
+{
+  "label": "agora-agent-unchanged",
+  "command": [
+    "/home/nick/.bun/bin/bun",
+    "tools/build.ts"
+  ],
+  "exitCode": 0,
+  "wallSeconds": 4.471024977974594,
+  "sampledPeakTreeRssMiB": 291.57421875,
+  "maxIndividualProcessRssMiB": 238.5546875,
+  "peak": {
+    "elapsedSeconds": 2.9776385189034045,
+    "phase": "assets",
+    "treeRssKiB": 298572.0,
+    "processes": [
+      {
+        "pid": 2538545,
+        "name": "bun",
+        "ppid": 2538542,
+        "pgrp": 2538542,
+        "rssKiB": 17936.0
+      },
+      {
+        "pid": 2538546,
+        "name": "bun",
+        "ppid": 2538545,
+        "pgrp": 2538542,
+        "rssKiB": 38596.0
+      },
+      {
+        "pid": 2538626,
+        "name": "bun",
+        "ppid": 2538546,
+        "pgrp": 2538542,
+        "rssKiB": 242040.0
+      }
+    ]
+  },
+  "phaseEvents": [
+    {
+      "elapsedSeconds": 0.6208100279327482,
+      "phase": "render",
+      "line": "[nift-pipeline-start] render"
+    },
+    {
+      "elapsedSeconds": 2.418382147094235,
+      "phase": "assets",
+      "line": "[nift-pipeline-start] assets"
+    },
+    {
+      "elapsedSeconds": 3.1440383601002395,
+      "phase": "registration",
+      "line": "[nift-pipeline-start] registration"
+    },
+    {
+      "elapsedSeconds": 3.3145173939410597,
+      "phase": "composition",
+      "line": "[nift-pipeline-start] composition"
+    }
+  ],
+  "milestones": [],
+  "samples": 123,
+  "requestedSamplingSleepSeconds": 0.02,
+  "memoryDefinition": "Summed RSS of simultaneously observed workload process group plus descendants. Excludes Python observer and GNU time wrapper. Shared pages may be counted more than once; short-lived peaks can be missed. Not PSS or exact physical memory.",
+  "osCaches": "uncontrolled",
+  "observedSamplingGapSeconds": {
+    "median": 0.036028936970978975,
+    "min": 0.034739618888124824,
+    "max": 0.04632405214942992
+  },
+  "phaseAttribution": "Approximate; inferred from buffered command log lines. Verify against phaseEvents and build log.",
+  "componentPhases": [
+    {
+      "phase": "render",
+      "seconds": 1.797765227
+    },
+    {
+      "phase": "assets",
+      "seconds": 0.7254877220000003
+    },
+    {
+      "phase": "registration",
+      "seconds": 0.16746102400000018
+    }
+  ]
+}

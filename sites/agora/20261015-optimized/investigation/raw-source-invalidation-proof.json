@@ -1,0 +1,71 @@
+{
+  "scope": "Targeted authored-only correctness proof; no full publication or benchmark rerun",
+  "source_path": "en/ai/best-practices/audio-setup.mdx",
+  "search_route": "/en/ai/best-practices/audio-setup",
+  "edit": "Inserted one YAML frontmatter comment: # Nift correctness probe: raw-source-only change",
+  "before_patch": {
+    "compiled_sources": 1,
+    "module_url_unchanged": true,
+    "updater": "no changed compiled modules",
+    "raw_search_stale": true
+  },
+  "after_patch": {
+    "compiled_sources": 1,
+    "module_url_unchanged": true,
+    "updated_sources": 1,
+    "canonical_payloads": 1,
+    "raw_search_stale": false,
+    "search_content_exactly_matches_edited_source": true
+  },
+  "fix": "Seed and compare content compiler documents[path].sourceHash independently of compiled module URL; authored tools/update-payload.ts only",
+  "restoration": {
+    ".generated/content-compiler": {
+      "file_count": 6,
+      "backup_inventory_sha256": "ea7b671419546b0e5ea7d4a4dffc81a5cb3830b3de098e9f3a2c465511e1ef72",
+      "restored_inventory_sha256_at_proof_closeout": "ea7b671419546b0e5ea7d4a4dffc81a5cb3830b3de098e9f3a2c465511e1ef72",
+      "captured_byte_equality": true
+    },
+    ".generated/payload-llm-fragments.json": {
+      "backup_sha256": "8529ec93256be4456780926bdf4c814a3b6b4503519fcd3f54d3ca7002daa93e",
+      "restored_sha256_at_proof_closeout": "8529ec93256be4456780926bdf4c814a3b6b4503519fcd3f54d3ca7002daa93e",
+      "captured_byte_equality": true
+    },
+    "app/public/__nift": {
+      "file_count": 3050,
+      "backup_inventory_sha256": "4702eac20167b782de19075f4aa624fc688de6f01a414c5854797c0833c5c5c5",
+      "restored_inventory_sha256_at_proof_closeout": "4702eac20167b782de19075f4aa624fc688de6f01a414c5854797c0833c5c5c5",
+      "captured_byte_equality": true
+    },
+    "app/public/__static/docs-search/en.json": {
+      "backup_sha256": "3689f3d1d6a7959463a912b4110a1173304432e3ce767c29e1849d1cc01b0eaa",
+      "restored_sha256_at_proof_closeout": "3689f3d1d6a7959463a912b4110a1173304432e3ce767c29e1849d1cc01b0eaa",
+      "captured_byte_equality": true
+    },
+    "app/public/llms-full.txt": {
+      "backup_sha256": "5abab70a1d1b8b32ef13a6708fcab5d04482a1b5cec8cd933503af497d540f01",
+      "restored_sha256_at_proof_closeout": "5abab70a1d1b8b32ef13a6708fcab5d04482a1b5cec8cd933503af497d540f01",
+      "captured_byte_equality": true
+    },
+    "app/public/en/ai/best-practices/audio-setup.md": {
+      "backup_sha256": "db545e5856c96db549e09d51464a0a39e945a0470126eefc94524c834143c760",
+      "restored_sha256_at_proof_closeout": "db545e5856c96db549e09d51464a0a39e945a0470126eefc94524c834143c760",
+      "captured_byte_equality": true
+    },
+    "app/public/__static/docs/en/ai/best-practices/audio-setup.json": {
+      "backup_sha256": "2dc1ae98d374b37c387fa90e58dd29058f607b3d8fc4f4ec6cdb822e43256336",
+      "restored_sha256_at_proof_closeout": "2dc1ae98d374b37c387fa90e58dd29058f607b3d8fc4f4ec6cdb822e43256336",
+      "captured_byte_equality": true
+    },
+    "maintained-source": {
+      "backup_sha256": "d3cd60ad076c8ec441be09f9f5bb5fc21b4724e7124083018fa4932e89c4ed7a",
+      "restored_sha256_at_proof_closeout": "d3cd60ad076c8ec441be09f9f5bb5fc21b4724e7124083018fa4932e89c4ed7a",
+      "captured_byte_equality": true
+    }
+  },
+  "restoration_hash_basis": "Hashes derived from preserved backup bytes. Independent byte/hash inventory comparison captured at proof closeout passed every listed target; hashes represent that closeout, not later concurrent generated workspace state. Directory inventory hash is SHA256 of compact sorted JSON mapping relative file paths to SHA256.",
+  "payload_state_exception": "Reseeded after restoration to add sourceHashes; direct clean updater exits before expensive imports",
+  "clean_updater": "no changed compiled modules or maintained sources",
+  "backup_before_patch": "/tmp/agora-raw-invalidation-backup-zmx2xqct",
+  "backup_patched_proof": "/tmp/agora-raw-invalidation-backup-g7szbfjk",
+  "qualification": "Correctness patch follows captured performance campaign source SHA; no performance improvement claimed"
+}
